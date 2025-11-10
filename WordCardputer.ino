@@ -35,7 +35,7 @@ String selectJsonFile() {
 
     File root = SD.open("/jp_words_study");
     if (!root || !root.isDirectory()) {
-        canvas.println("❌ 无法打开 /jp_words_study/");
+        canvas.println("无法打开 /jp_words_study/");
         canvas.pushSprite(0, 0);
         delay(3000);
         return "";
@@ -65,18 +65,18 @@ String selectJsonFile() {
     while (!selected) {
         canvas.fillSprite(BLACK);
         canvas.setTextColor(GREEN);
-        canvas.setTextDatum(top_center);
-        canvas.drawString("选择词库文件", canvas.width() / 2, 10);
+        canvas.setTextDatum(top_left);
+        canvas.drawString("选择词库文件", 8, 8); // 左上角标题
         canvas.setTextColor(WHITE);
 
         for (int i = 0; i < files.size(); i++) {
             int y = 40 + i * 24;
             if (i == index) {
                 canvas.setTextColor(YELLOW);
-                canvas.drawString("> " + files[i], canvas.width() / 2, y);
+                canvas.drawString("> " + files[i], 8, y);
                 canvas.setTextColor(WHITE);
             } else {
-                canvas.drawString(files[i], canvas.width() / 2, y);
+                canvas.drawString("  " + files[i], 8, y);
             }
         }
 
