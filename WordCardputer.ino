@@ -1,7 +1,13 @@
 #include "M5Cardputer.h"
 #include "M5GFX.h"
+#include <SPI.h>
 #include <SD.h>
 #include <ArduinoJson.h>
+
+#define SD_SPI_SCK_PIN  40
+#define SD_SPI_MISO_PIN 39
+#define SD_SPI_MOSI_PIN 14
+#define SD_SPI_CS_PIN   12
 
 M5Canvas canvas(&M5Cardputer.Display);
 
@@ -18,15 +24,98 @@ int wordIndex = 0;
 bool showMeaning = false;
 
 // ------------------- 工具函数 -------------------
-void loadWordsFromJSON() {
-    if (!SD.begin()) {
-        Serial.println("❌ SD 卡初始化失败");
-        return;
+String selectJsonFile() {
+    M5Cardputer.Display.fillScreen(BLACK);
+    M5Canvas canvas(&M5Cardputer.Display);
+    canvas.createSprite(M5Cardputer.Display.width(), M5Cardputer.Display.height());
+    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setTextSize(1.2);
+
+    std::vector<String> files;
+
+    File root = SD.open("/jp_words_study");
+    if (!root || !root.isDirectory()) {
+        canvas.println("❌ 无法打开 /jp_words_study/");
+        canvas.pushSprite(0, 0);
+        delay(3000);
+        return "";
     }
 
-    File file = SD.open("/jp_words_study/words.json");
+    while (true) {
+        File entry = root.openNextFile();
+        if (!entry) break;
+        String name = entry.name();
+        if (name.endsWith(".json")) {
+            files.push_back(name);
+        }
+        entry.close();
+    }
+    root.close();
+
+    if (files.empty()) {
+        canvas.println("未找到任何 JSON 文件");
+        canvas.pushSprite(0, 0);
+        delay(3000);
+        return "";
+    }
+
+    int index = 0;
+    bool selected = false;
+
+    while (!selected) {
+        canvas.fillSprite(BLACK);
+        canvas.setTextColor(GREEN);
+        canvas.setTextDatum(top_center);
+        canvas.drawString("选择词库文件", canvas.width() / 2, 10);
+        canvas.setTextColor(WHITE);
+
+        for (int i = 0; i < files.size(); i++) {
+            int y = 40 + i * 24;
+            if (i == index) {
+                canvas.setTextColor(YELLOW);
+                canvas.drawString("> " + files[i], canvas.width() / 2, y);
+                canvas.setTextColor(WHITE);
+            } else {
+                canvas.drawString(files[i], canvas.width() / 2, y);
+            }
+        }
+
+        canvas.pushSprite(0, 0);
+
+        M5Cardputer.update();
+        if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
+            auto status = M5Cardputer.Keyboard.keysState();
+
+            for (auto c : status.word) {
+                if (c == ';') index = (index - 1 + files.size()) % files.size();  // 上
+                if (c == '.') index = (index + 1) % files.size();                 // 下
+                if (c == ',') index = (index - 1 + files.size()) % files.size();  // 左(备用)
+                if (c == '/') index = (index + 1) % files.size();                 // 右(备用)
+            }
+
+            if (status.enter) {
+                selected = true;
+                break;
+            }
+        }
+
+        delay(60);
+    }
+
+    canvas.fillSprite(BLACK);
+    canvas.setTextColor(CYAN);
+    canvas.drawString("加载中...", canvas.width() / 2, canvas.height() / 2);
+    canvas.pushSprite(0, 0);
+
+    String chosen = "/jp_words_study/" + files[index];
+    Serial.printf("✅ 已选择: %s\n", chosen.c_str());
+    return chosen;
+}
+
+void loadWordsFromJSON(String filepath) {
+    File file = SD.open(filepath);
     if (!file) {
-        Serial.println("❌ 未找到文件 /jp_words_study/words.json");
+        Serial.println("未找到文件: " + filepath);
         return;
     }
 
@@ -36,7 +125,7 @@ void loadWordsFromJSON() {
 
     StaticJsonDocument<16384> doc;
     if (deserializeJson(doc, jsonString)) {
-        Serial.println("❌ JSON 解析失败");
+        Serial.println("JSON 解析失败");
         return;
     }
 
@@ -118,10 +207,27 @@ void setup() {
     M5Cardputer.begin(cfg, true);
     Serial.begin(115200);
 
+    // ✅ 手动初始化 SPI 与 SD 卡
+    SPI.begin(SD_SPI_SCK_PIN, SD_SPI_MISO_PIN, SD_SPI_MOSI_PIN, SD_SPI_CS_PIN);
+    if (!SD.begin(SD_SPI_CS_PIN, SPI, 25000000)) {
+        M5Cardputer.Display.println("SD 初始化失败");
+        while (1) delay(10);
+    }
+
+    if (!SD.exists("/jp_words_study")) {
+        M5Cardputer.Display.println("未找到 /jp_words_study 文件夹");
+        while (1) delay(10);
+    }
+
+    // ✅ 初始化显示
     canvas.createSprite(M5Cardputer.Display.width(), M5Cardputer.Display.height());
     canvas.setTextFont(&fonts::efontCN_16);
 
-    loadWordsFromJSON();
+    // ✅ 选择词库
+    String filePath = selectJsonFile();
+    if (filePath.length() == 0) return;
+
+    loadWordsFromJSON(filePath);
     randomSeed(millis());
     wordIndex = pickWeightedRandom();
     drawWord();
