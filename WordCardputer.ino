@@ -22,6 +22,7 @@ struct Word {
 std::vector<Word> words;
 int wordIndex = 0;
 bool showMeaning = false;
+bool showJPFirst = true;  // true=先显示日语, false=先显示中文
 
 // ------------------- 工具函数 -------------------
 String selectJsonFile() {
@@ -171,32 +172,50 @@ void drawWord() {
 
     Word &w = words[wordIndex];
 
-    // 假名
-    canvas.setTextSize(2.2);
-    canvas.setTextColor(CYAN);
-    canvas.drawString(w.jp, canvas.width()/2, canvas.height()/2 - 25);
+    if (showJPFirst) {
+        // === 模式1：显示日语，隐藏中文 ===
+        canvas.setTextSize(2.2);
+        canvas.setTextColor(CYAN);
+        canvas.drawString(w.jp, canvas.width()/2, canvas.height()/2 - 25);
 
-    // Tone
-    canvas.setTextSize(1.3);
-    canvas.setTextColor(GREEN);
-    canvas.drawString("Tone: " + String(w.tone), canvas.width()/2, canvas.height()/2 + 5);
+        canvas.setTextSize(1.3);
+        canvas.setTextColor(GREEN);
+        canvas.drawString("Tone: " + String(w.tone), canvas.width()/2, canvas.height()/2 + 5);
 
-    // 显示释义
-    if (showMeaning) {
-        if (w.kanji.length() > 0) {
-            // canvas.setTextColor(ORANGE);
-            // canvas.setTextSize(1.6);
-            // canvas.drawString(w.kanji, canvas.width()/2, canvas.height()/2 + 40);
+        if (showMeaning) {
+            canvas.setTextColor(YELLOW);
+            canvas.setTextSize(1.5);
+            canvas.drawString(w.zh, canvas.width()/2, canvas.height()/2 + 40);
         }
+    } else {
+        // === 模式2：显示中文，隐藏日语 ===
+        canvas.setTextSize(2.0);
         canvas.setTextColor(YELLOW);
-        canvas.setTextSize(1.5);
-        canvas.drawString(w.zh, canvas.width()/2, canvas.height()/2 + 40);
+        canvas.drawString(w.zh, canvas.width()/2, canvas.height()/2 - 10);
+        
+        if (w.kanji.length() > 0) {
+            canvas.setTextColor(ORANGE);
+            canvas.setTextSize(1.6);
+            canvas.drawString(w.kanji, canvas.width()/2, canvas.height()/2 + 20);
+        }
+
+        if (showMeaning) {
+            canvas.setTextColor(CYAN);
+            canvas.setTextSize(1.8);
+            canvas.drawString(w.jp, canvas.width()/2, canvas.height()/2 + 40);
+        }
     }
 
     // 熟练度提示
     canvas.setTextColor(TFT_DARKGREY);
     canvas.setTextSize(1.0);
     canvas.drawString("Score: " + String(words[wordIndex].score), 50, 15);
+
+    // 底部提示栏
+    canvas.setTextDatum(bottom_center);
+    canvas.setTextColor(TFT_LIGHTGREY);
+    canvas.setTextSize(1.0);
+    canvas.drawString("Go:释义   Enter:记住   Del:不熟", canvas.width()/2, canvas.height() - 6);
 
     canvas.pushSprite(0, 0);
 }
@@ -249,15 +268,15 @@ void loop() {
         // 回车 = 记住，提升熟练度
         if (status.enter) {
             words[wordIndex].score = min(5, words[wordIndex].score + 1);
-            wordIndex = pickWeightedRandom();
-            showMeaning = false;
-            drawWord();
         }
         // <- = 不熟，降低熟练度
         else if (status.del) {
             words[wordIndex].score = max(0, words[wordIndex].score - 1);
+        }
+        if (status.enter || status.del) {
             wordIndex = pickWeightedRandom();
             showMeaning = false;
+            showJPFirst = random(2);  // 👈 0 或 1 随机决定显示方向
             drawWord();
         }
     }
