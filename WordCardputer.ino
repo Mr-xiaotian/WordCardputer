@@ -34,9 +34,9 @@ String selectJsonFile() {
 
     std::vector<String> files;
 
-    File root = SD.open("/jp_words_study");
+    File root = SD.open("/jp_words_study/word");
     if (!root || !root.isDirectory()) {
-        menuCanvas.println("无法打开 /jp_words_study/");
+        menuCanvas.println("无法打开 /jp_words_study/word/");
         menuCanvas.pushSprite(0, 0);
         delay(3000);
         return "";
@@ -108,7 +108,7 @@ String selectJsonFile() {
     menuCanvas.drawString("加载中...", menuCanvas.width() / 2, menuCanvas.height() / 2);
     menuCanvas.pushSprite(0, 0);
 
-    String chosen = "/jp_words_study/" + files[index];
+    String chosen = "/jp_words_study/word/" + files[index];
     Serial.printf("✅ 已选择: %s\n", chosen.c_str());
     return chosen;
 }
