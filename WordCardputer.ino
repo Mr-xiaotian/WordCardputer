@@ -27,17 +27,17 @@ bool showJPFirst = true;  // true=先显示日语, false=先显示中文
 // ------------------- 工具函数 -------------------
 String selectJsonFile() {
     M5Cardputer.Display.fillScreen(BLACK);
-    M5Canvas canvas(&M5Cardputer.Display);
-    canvas.createSprite(M5Cardputer.Display.width(), M5Cardputer.Display.height());
-    canvas.setTextFont(&fonts::efontCN_16);
-    canvas.setTextSize(1.2);
+    M5Canvas menuCanvas(&M5Cardputer.Display);
+    menuCanvas.createSprite(M5Cardputer.Display.width(), M5Cardputer.Display.height());
+    menuCanvas.setTextFont(&fonts::efontCN_16);
+    menuCanvas.setTextSize(1.2);
 
     std::vector<String> files;
 
     File root = SD.open("/jp_words_study");
     if (!root || !root.isDirectory()) {
-        canvas.println("无法打开 /jp_words_study/");
-        canvas.pushSprite(0, 0);
+        menuCanvas.println("无法打开 /jp_words_study/");
+        menuCanvas.pushSprite(0, 0);
         delay(3000);
         return "";
     }
@@ -54,8 +54,8 @@ String selectJsonFile() {
     root.close();
 
     if (files.empty()) {
-        canvas.println("未找到任何 JSON 文件");
-        canvas.pushSprite(0, 0);
+        menuCanvas.println("未找到任何 JSON 文件");
+        menuCanvas.pushSprite(0, 0);
         delay(3000);
         return "";
     }
@@ -64,24 +64,24 @@ String selectJsonFile() {
     bool selected = false;
 
     while (!selected) {
-        canvas.fillSprite(BLACK);
-        canvas.setTextColor(GREEN);
-        canvas.setTextDatum(top_left);
-        canvas.drawString("选择词库文件", 8, 8); // 左上角标题
-        canvas.setTextColor(WHITE);
+        menuCanvas.fillSprite(BLACK);
+        menuCanvas.setTextColor(GREEN);
+        menuCanvas.setTextDatum(top_left);
+        menuCanvas.drawString("选择词库文件", 8, 8); // 左上角标题
+        menuCanvas.setTextColor(WHITE);
 
         for (int i = 0; i < files.size(); i++) {
             int y = 40 + i * 24;
             if (i == index) {
-                canvas.setTextColor(YELLOW);
-                canvas.drawString("> " + files[i], 8, y);
-                canvas.setTextColor(WHITE);
+                menuCanvas.setTextColor(YELLOW);
+                menuCanvas.drawString("> " + files[i], 8, y);
+                menuCanvas.setTextColor(WHITE);
             } else {
-                canvas.drawString("  " + files[i], 8, y);
+                menuCanvas.drawString("  " + files[i], 8, y);
             }
         }
 
-        canvas.pushSprite(0, 0);
+        menuCanvas.pushSprite(0, 0);
 
         M5Cardputer.update();
         if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
@@ -103,10 +103,10 @@ String selectJsonFile() {
         delay(60);
     }
 
-    canvas.fillSprite(BLACK);
-    canvas.setTextColor(CYAN);
-    canvas.drawString("加载中...", canvas.width() / 2, canvas.height() / 2);
-    canvas.pushSprite(0, 0);
+    menuCanvas.fillSprite(BLACK);
+    menuCanvas.setTextColor(CYAN);
+    menuCanvas.drawString("加载中...", menuCanvas.width() / 2, menuCanvas.height() / 2);
+    menuCanvas.pushSprite(0, 0);
 
     String chosen = "/jp_words_study/" + files[index];
     Serial.printf("✅ 已选择: %s\n", chosen.c_str());
@@ -125,8 +125,9 @@ void loadWordsFromJSON(String filepath) {
     file.close();
 
     StaticJsonDocument<16384> doc;
-    if (deserializeJson(doc, jsonString)) {
-        Serial.println("JSON 解析失败");
+    DeserializationError err = deserializeJson(doc, jsonString);
+    if (err) {
+        Serial.printf("JSON 解析失败: %s\n", err.c_str());
         return;
     }
 
@@ -222,6 +223,7 @@ void drawWord() {
 
 // ------------------- 主程序 -------------------
 void setup() {
+    randomSeed(millis());
     auto cfg = M5.config();
     M5Cardputer.begin(cfg, true);
     Serial.begin(115200);
@@ -247,7 +249,6 @@ void setup() {
     if (filePath.length() == 0) return;
 
     loadWordsFromJSON(filePath);
-    randomSeed(millis());
     wordIndex = pickWeightedRandom();
     drawWord();
 }
