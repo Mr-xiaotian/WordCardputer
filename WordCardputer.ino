@@ -145,6 +145,31 @@ void loadWordsFromJSON(String filepath) {
     Serial.printf("✅ 成功加载 %d 个单词\n", words.size());
 }
 
+void playAudioForWord(const String& jpWord) {
+    String path = "/jp_words_study/audio/" + jpWord + ".wav";
+
+    // 检查文件是否存在
+    if (!SD.exists(path)) {
+        Serial.printf("⚠️ 无音频文件: %s\n", path.c_str());
+        M5.Speaker.tone(880, 80);  // 提示音
+        return;
+    }
+
+    // 如果正在播放旧音频则停止
+    if (M5.Speaker.isPlaying()) {
+        M5.Speaker.stop();
+    }
+
+    Serial.printf("🎵 播放音频: %s\n", path.c_str());
+
+    // 播放 SD 卡上的 WAV 文件
+    bool ok = M5.Speaker.playWav(path.c_str(), true); // true = 阻塞直到播放完毕
+    if (!ok) {
+        Serial.println("❌ 播放失败");
+        M5.Speaker.tone(440, 100);
+    }
+}
+
 // ------------------- 抽词算法 -------------------
 int pickWeightedRandom() {
     int totalWeight = 0;
@@ -228,6 +253,10 @@ void setup() {
     M5Cardputer.begin(cfg, true);
     Serial.begin(115200);
 
+    // ✅ 初始化音频输出
+    M5.Speaker.begin();
+    M5.Speaker.setVolume(192);  // 音量范围 0~255，建议 128~192
+
     // ✅ 手动初始化 SPI 与 SD 卡
     SPI.begin(SD_SPI_SCK_PIN, SD_SPI_MISO_PIN, SD_SPI_MOSI_PIN, SD_SPI_CS_PIN);
     if (!SD.begin(SD_SPI_CS_PIN, SPI, 25000000)) {
@@ -266,11 +295,18 @@ void loop() {
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
         Keyboard_Class::KeysState status = M5Cardputer.Keyboard.keysState();
 
-        // 回车 = 记住，提升熟练度
+        // 检测字母 a
+        for (auto c : status.word) {
+            if (c == 'a' || c == 'A') {
+                playAudioForWord(words[wordIndex].jp);
+            }
+        }
+
+        // Enter = 记住，提升熟练度
         if (status.enter) {
             words[wordIndex].score = min(5, words[wordIndex].score + 1);
         }
-        // <- = 不熟，降低熟练度
+        // Del = 不熟，降低熟练度
         else if (status.del) {
             words[wordIndex].score = max(0, words[wordIndex].score - 1);
         }
