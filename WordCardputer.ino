@@ -25,6 +25,13 @@ int wordIndex = 0;
 bool showMeaning = false;
 bool showJPFirst = true;  // true=先显示日语, false=先显示中文
 
+// ---------- 自动亮度管理 ----------
+unsigned long lastActivityTime = 0;       // 上次活动时间
+bool isDimmed = false;                    // 是否已进入省电模式
+const unsigned long idleTimeout = 60000;  // 超过60秒无操作则降低亮度
+const uint8_t normalBrightness = 200;     // 正常亮度
+const uint8_t dimBrightness = 40;         // 降低后的亮度
+
 // ------------------- 工具函数 -------------------
 String selectJsonFile() {
     M5Cardputer.Display.fillScreen(BLACK);
@@ -333,6 +340,10 @@ void setup() {
         while (1) delay(10);
     }
 
+    // 初始化亮度
+    M5Cardputer.Display.setBrightness(normalBrightness);
+    lastActivityTime = millis();
+
     // 初始化显示
     canvas.createSprite(M5Cardputer.Display.width(), M5Cardputer.Display.height());
     canvas.setTextFont(&fonts::efontCN_16);
@@ -348,11 +359,13 @@ void setup() {
 
 void loop() {
     M5Cardputer.update();
+    bool userAction = false;  // 标记是否有用户操作
 
     // A键 → 切换释义
     if (M5Cardputer.BtnA.wasPressed()) {
         showMeaning = !showMeaning;
         drawWord();
+        userAction = true;
     }
 
     // 键盘操作
@@ -363,6 +376,7 @@ void loop() {
         for (auto c : status.word) {
             if (c == 'a' || c == 'A') {
                 playAudioForWord(words[wordIndex].jp);
+                userAction = true;
             }
         }
 
@@ -379,7 +393,22 @@ void loop() {
             showMeaning = false;
             showJPFirst = random(2);  // 👈 0 或 1 随机决定显示方向
             drawWord();
+            userAction = true;
         }
+    }
+
+    // -------- 自动亮度控制 --------
+    unsigned long now = millis();
+    if (userAction) {
+        lastActivityTime = now;
+        if (isDimmed) {
+            M5Cardputer.Display.setBrightness(normalBrightness);
+            isDimmed = false;
+        }
+    } else if (!isDimmed && now - lastActivityTime > idleTimeout) {
+        // 空闲超过设定时间 → 降低亮度
+        M5Cardputer.Display.setBrightness(dimBrightness);
+        isDimmed = true;
     }
 
     delay(30);
