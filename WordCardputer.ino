@@ -1,5 +1,6 @@
 #include "M5Cardputer.h"
 #include "M5GFX.h"
+#include "esp_system.h"
 #include <SPI.h>
 #include <SD.h>
 #include <ArduinoJson.h>
@@ -65,9 +66,21 @@ String selectJsonFile() {
 
     while (!selected) {
         menuCanvas.fillSprite(BLACK);
-        menuCanvas.setTextColor(GREEN);
+
+        // 标题（左上角）
         menuCanvas.setTextDatum(top_left);
-        menuCanvas.drawString("选择词库文件", 8, 8); // 左上角标题
+        menuCanvas.setTextColor(GREEN);
+        menuCanvas.drawString("选择词库文件", 8, 8);
+
+        // 电量（右上角）
+        int batteryLevel = M5Cardputer.Power.getBatteryLevel();
+        menuCanvas.setTextDatum(top_right);
+        menuCanvas.setTextColor(TFT_DARKGREY);
+        menuCanvas.setTextSize(1.0);
+        menuCanvas.drawString(String(batteryLevel) + " %", menuCanvas.width() - 8, 8);
+
+        // 绘制完右上角后恢复对齐方式
+        menuCanvas.setTextDatum(top_left);
         menuCanvas.setTextColor(WHITE);
 
         for (int i = 0; i < files.size(); i++) {
@@ -109,7 +122,7 @@ String selectJsonFile() {
     menuCanvas.pushSprite(0, 0);
 
     String chosen = "/jp_words_study/word/" + files[index];
-    Serial.printf("✅ 已选择: %s\n", chosen.c_str());
+    Serial.printf("已选择: %s\n", chosen.c_str());
     return chosen;
 }
 
@@ -142,7 +155,61 @@ void loadWordsFromJSON(String filepath) {
         if (w.jp.length() > 0) words.push_back(w);
     }
 
-    Serial.printf("✅ 成功加载 %d 个单词\n", words.size());
+    Serial.printf("成功加载 %d 个单词\n", words.size());
+}
+
+// 读取 WAV 到内存并播放（阻塞直到播放完毕再释放内存）
+bool playWavFile(const String& path) {
+    if (!SD.exists(path)) {
+        Serial.printf("文件不存在: %s\n", path.c_str());
+        M5.Speaker.tone(880, 80);
+        return false;
+    }
+
+    File f = SD.open(path, FILE_READ);
+    if (!f) {
+        Serial.printf("无法打开: %s\n", path.c_str());
+        M5.Speaker.tone(440, 100);
+        return false;
+    }
+
+    size_t len = f.size();
+    if (len == 0) {
+        Serial.printf("空文件: %s\n", path.c_str());
+        f.close();
+        return false;
+    }
+
+    // 为短音频一次性分配缓冲；若文件可能偏大，建议改成分块 playRaw 流式
+    uint8_t* buf = (uint8_t*)malloc(len);
+    if (!buf) {
+        Serial.println("内存分配失败");
+        f.close();
+        return false;
+    }
+
+    size_t readn = f.read(buf, len);
+    f.close();
+    if (readn == 0) {
+        Serial.println("读取失败");
+        free(buf);
+        return false;
+    }
+
+    // 停掉正在播放的声音，避免叠加
+    if (M5.Speaker.isPlaying()) M5.Speaker.stop();
+
+    bool ok = M5.Speaker.playWav(buf, readn, 1, -1, true); // 传入数据指针
+    if (!ok) {
+        Serial.println("playWav 调用失败");
+        free(buf);
+        return false;
+    }
+
+    // 阻塞等待播放结束，再释放内存（关键！不要提前 free）
+    while (M5.Speaker.isPlaying()) { delay(10); }
+    free(buf);
+    return true;
 }
 
 void playAudioForWord(const String& jpWord) {
@@ -150,7 +217,7 @@ void playAudioForWord(const String& jpWord) {
 
     // 检查文件是否存在
     if (!SD.exists(path)) {
-        Serial.printf("⚠️ 无音频文件: %s\n", path.c_str());
+        Serial.printf("无音频文件: %s\n", path.c_str());
         M5.Speaker.tone(880, 80);  // 提示音
         return;
     }
@@ -160,12 +227,9 @@ void playAudioForWord(const String& jpWord) {
         M5.Speaker.stop();
     }
 
-    Serial.printf("🎵 播放音频: %s\n", path.c_str());
-
     // 播放 SD 卡上的 WAV 文件
-    bool ok = M5.Speaker.playWav(path.c_str(), true); // true = 阻塞直到播放完毕
+    bool ok = playWavFile(path);
     if (!ok) {
-        Serial.println("❌ 播放失败");
         M5.Speaker.tone(440, 100);
     }
 }
@@ -248,16 +312,16 @@ void drawWord() {
 
 // ------------------- 主程序 -------------------
 void setup() {
-    randomSeed(millis());
+    randomSeed(esp_random());
     auto cfg = M5.config();
     M5Cardputer.begin(cfg, true);
     Serial.begin(115200);
 
-    // ✅ 初始化音频输出
+    // 初始化音频输出
     M5.Speaker.begin();
     M5.Speaker.setVolume(192);  // 音量范围 0~255，建议 128~192
 
-    // ✅ 手动初始化 SPI 与 SD 卡
+    // 手动初始化 SPI 与 SD 卡
     SPI.begin(SD_SPI_SCK_PIN, SD_SPI_MISO_PIN, SD_SPI_MOSI_PIN, SD_SPI_CS_PIN);
     if (!SD.begin(SD_SPI_CS_PIN, SPI, 25000000)) {
         M5Cardputer.Display.println("SD 初始化失败");
@@ -269,11 +333,11 @@ void setup() {
         while (1) delay(10);
     }
 
-    // ✅ 初始化显示
+    // 初始化显示
     canvas.createSprite(M5Cardputer.Display.width(), M5Cardputer.Display.height());
     canvas.setTextFont(&fonts::efontCN_16);
 
-    // ✅ 选择词库
+    // 选择词库
     String filePath = selectJsonFile();
     if (filePath.length() == 0) return;
 
