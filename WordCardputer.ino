@@ -22,21 +22,22 @@ struct Word {
 std::vector<Word> words;
 int wordIndex = 0;
 bool showMeaning = false;
+bool showJPFirst = true;  // true=先显示日语, false=先显示中文
 
 // ------------------- 工具函数 -------------------
 String selectJsonFile() {
     M5Cardputer.Display.fillScreen(BLACK);
-    M5Canvas canvas(&M5Cardputer.Display);
-    canvas.createSprite(M5Cardputer.Display.width(), M5Cardputer.Display.height());
-    canvas.setTextFont(&fonts::efontCN_16);
-    canvas.setTextSize(1.2);
+    M5Canvas menuCanvas(&M5Cardputer.Display);
+    menuCanvas.createSprite(M5Cardputer.Display.width(), M5Cardputer.Display.height());
+    menuCanvas.setTextFont(&fonts::efontCN_16);
+    menuCanvas.setTextSize(1.2);
 
     std::vector<String> files;
 
     File root = SD.open("/jp_words_study");
     if (!root || !root.isDirectory()) {
-        canvas.println("无法打开 /jp_words_study/");
-        canvas.pushSprite(0, 0);
+        menuCanvas.println("无法打开 /jp_words_study/");
+        menuCanvas.pushSprite(0, 0);
         delay(3000);
         return "";
     }
@@ -53,72 +54,44 @@ String selectJsonFile() {
     root.close();
 
     if (files.empty()) {
-        canvas.println("未找到任何 JSON 文件");
-        canvas.pushSprite(0, 0);
+        menuCanvas.println("未找到任何 JSON 文件");
+        menuCanvas.pushSprite(0, 0);
         delay(3000);
         return "";
     }
 
     int index = 0;
-    int scrollOffset = 0;               // 👈 新增滚动偏移
-    const int visibleLines = 4;         // 每屏最多显示几行
     bool selected = false;
 
     while (!selected) {
-        canvas.fillSprite(BLACK);
-        canvas.setTextColor(GREEN);
-        canvas.setTextDatum(top_left);
-        canvas.drawString("选择词库文件", 8, 8);
-        canvas.setTextColor(WHITE);
+        menuCanvas.fillSprite(BLACK);
+        menuCanvas.setTextColor(GREEN);
+        menuCanvas.setTextDatum(top_left);
+        menuCanvas.drawString("选择词库文件", 8, 8); // 左上角标题
+        menuCanvas.setTextColor(WHITE);
 
-        // ✅ 只绘制当前窗口范围的项目
-        int end = min(scrollOffset + visibleLines, (int)files.size());
-        for (int i = scrollOffset; i < end; i++) {
-            int y = 40 + (i - scrollOffset) * 24;
+        for (int i = 0; i < files.size(); i++) {
+            int y = 40 + i * 24;
             if (i == index) {
-                canvas.setTextColor(YELLOW);
-                canvas.drawString("> " + files[i], 8, y);
-                canvas.setTextColor(WHITE);
+                menuCanvas.setTextColor(YELLOW);
+                menuCanvas.drawString("> " + files[i], 8, y);
+                menuCanvas.setTextColor(WHITE);
             } else {
-                canvas.drawString("  " + files[i], 8, y);
+                menuCanvas.drawString("  " + files[i], 8, y);
             }
         }
 
-        // ✅ 显示滚动条提示（选配）
-        if (files.size() > visibleLines) {
-            canvas.setTextColor(TFT_DARKGREY);
-            canvas.drawRightString(
-                String(index + 1) + "/" + String(files.size()),
-                canvas.width() - 8,
-                canvas.height() - 24);
-        }
-
-        canvas.pushSprite(0, 0);
+        menuCanvas.pushSprite(0, 0);
 
         M5Cardputer.update();
         if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
             auto status = M5Cardputer.Keyboard.keysState();
 
             for (auto c : status.word) {
-                if (c == ';') {
-                    index = (index - 1 + files.size()) % files.size();
-                    if (index == files.size() - 1) {
-                        // ✅ 从第一行上翻到最后一行
-                        scrollOffset = max(0, (int)files.size() - visibleLines);
-                    } else if (index < scrollOffset) {
-                        scrollOffset = index;
-                    }
-                }
-
-                if (c == '.') {
-                    index = (index + 1) % files.size();
-                    if (index == 0) {
-                        // ✅ 从最后一行下翻回到第一行
-                        scrollOffset = 0;
-                    } else if (index >= scrollOffset + visibleLines) {
-                        scrollOffset = index - visibleLines + 1;
-                    }
-                }
+                if (c == ';') index = (index - 1 + files.size()) % files.size();  // 上
+                if (c == '.') index = (index + 1) % files.size();                 // 下
+                if (c == ',') index = (index - 1 + files.size()) % files.size();  // 左(备用)
+                if (c == '/') index = (index + 1) % files.size();                 // 右(备用)
             }
 
             if (status.enter) {
@@ -130,10 +103,10 @@ String selectJsonFile() {
         delay(60);
     }
 
-    canvas.fillSprite(BLACK);
-    canvas.setTextColor(CYAN);
-    canvas.drawString("加载中...", canvas.width() / 2, canvas.height() / 2);
-    canvas.pushSprite(0, 0);
+    menuCanvas.fillSprite(BLACK);
+    menuCanvas.setTextColor(CYAN);
+    menuCanvas.drawString("加载中...", menuCanvas.width() / 2, menuCanvas.height() / 2);
+    menuCanvas.pushSprite(0, 0);
 
     String chosen = "/jp_words_study/" + files[index];
     Serial.printf("✅ 已选择: %s\n", chosen.c_str());
@@ -152,8 +125,9 @@ void loadWordsFromJSON(String filepath) {
     file.close();
 
     StaticJsonDocument<16384> doc;
-    if (deserializeJson(doc, jsonString)) {
-        Serial.println("JSON 解析失败");
+    DeserializationError err = deserializeJson(doc, jsonString);
+    if (err) {
+        Serial.printf("JSON 解析失败: %s\n", err.c_str());
         return;
     }
 
@@ -199,26 +173,38 @@ void drawWord() {
 
     Word &w = words[wordIndex];
 
-    // 假名
-    canvas.setTextSize(2.2);
-    canvas.setTextColor(CYAN);
-    canvas.drawString(w.jp, canvas.width()/2, canvas.height()/2 - 25);
+    if (showJPFirst) {
+        // === 模式1：显示日语，隐藏中文 ===
+        canvas.setTextSize(2.2);
+        canvas.setTextColor(CYAN);
+        canvas.drawString(w.jp, canvas.width()/2, canvas.height()/2 - 25);
 
-    // Tone
-    canvas.setTextSize(1.3);
-    canvas.setTextColor(GREEN);
-    canvas.drawString("Tone: " + String(w.tone), canvas.width()/2, canvas.height()/2 + 5);
+        canvas.setTextSize(1.3);
+        canvas.setTextColor(GREEN);
+        canvas.drawString("Tone: " + String(w.tone), canvas.width()/2, canvas.height()/2 + 5);
 
-    // 显示释义
-    if (showMeaning) {
-        if (w.kanji.length() > 0) {
-            // canvas.setTextColor(ORANGE);
-            // canvas.setTextSize(1.6);
-            // canvas.drawString(w.kanji, canvas.width()/2, canvas.height()/2 + 40);
+        if (showMeaning) {
+            canvas.setTextColor(YELLOW);
+            canvas.setTextSize(1.5);
+            canvas.drawString(w.zh, canvas.width()/2, canvas.height()/2 + 40);
         }
+    } else {
+        // === 模式2：显示中文，隐藏日语 ===
+        canvas.setTextSize(2.0);
         canvas.setTextColor(YELLOW);
-        canvas.setTextSize(1.5);
-        canvas.drawString(w.zh, canvas.width()/2, canvas.height()/2 + 40);
+        canvas.drawString(w.zh, canvas.width()/2, canvas.height()/2 - 25);
+        
+        if (w.kanji.length() > 0) {
+            canvas.setTextColor(ORANGE);
+            canvas.setTextSize(1.4);
+            canvas.drawString(w.kanji, canvas.width()/2, canvas.height()/2 + 5);
+        }
+
+        if (showMeaning) {
+            canvas.setTextColor(CYAN);
+            canvas.setTextSize(1.8);
+            canvas.drawString(w.jp, canvas.width()/2, canvas.height()/2 + 40);
+        }
     }
 
     // 熟练度提示
@@ -226,11 +212,18 @@ void drawWord() {
     canvas.setTextSize(1.0);
     canvas.drawString("Score: " + String(words[wordIndex].score), 50, 15);
 
+    // // 底部提示栏
+    // canvas.setTextDatum(bottom_center);
+    // canvas.setTextColor(TFT_LIGHTGREY);
+    // canvas.setTextSize(0.8);
+    // canvas.drawString("Go:释义  Enter:记住  Del:不熟", canvas.width()/2, canvas.height() - 5);
+
     canvas.pushSprite(0, 0);
 }
 
 // ------------------- 主程序 -------------------
 void setup() {
+    randomSeed(millis());
     auto cfg = M5.config();
     M5Cardputer.begin(cfg, true);
     Serial.begin(115200);
@@ -256,7 +249,6 @@ void setup() {
     if (filePath.length() == 0) return;
 
     loadWordsFromJSON(filePath);
-    randomSeed(millis());
     wordIndex = pickWeightedRandom();
     drawWord();
 }
@@ -277,15 +269,15 @@ void loop() {
         // 回车 = 记住，提升熟练度
         if (status.enter) {
             words[wordIndex].score = min(5, words[wordIndex].score + 1);
-            wordIndex = pickWeightedRandom();
-            showMeaning = false;
-            drawWord();
         }
         // <- = 不熟，降低熟练度
         else if (status.del) {
             words[wordIndex].score = max(0, words[wordIndex].score - 1);
+        }
+        if (status.enter || status.del) {
             wordIndex = pickWeightedRandom();
             showMeaning = false;
+            showJPFirst = random(2);  // 👈 0 或 1 随机决定显示方向
             drawWord();
         }
     }
