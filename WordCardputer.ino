@@ -60,17 +60,21 @@ String selectJsonFile() {
     }
 
     int index = 0;
+    int scrollOffset = 0;               // 👈 新增滚动偏移
+    const int visibleLines = 4;         // 每屏最多显示几行
     bool selected = false;
 
     while (!selected) {
         canvas.fillSprite(BLACK);
         canvas.setTextColor(GREEN);
         canvas.setTextDatum(top_left);
-        canvas.drawString("选择词库文件", 8, 8); // 左上角标题
+        canvas.drawString("选择词库文件", 8, 8);
         canvas.setTextColor(WHITE);
 
-        for (int i = 0; i < files.size(); i++) {
-            int y = 40 + i * 24;
+        // ✅ 只绘制当前窗口范围的项目
+        int end = min(scrollOffset + visibleLines, (int)files.size());
+        for (int i = scrollOffset; i < end; i++) {
+            int y = 40 + (i - scrollOffset) * 24;
             if (i == index) {
                 canvas.setTextColor(YELLOW);
                 canvas.drawString("> " + files[i], 8, y);
@@ -80,6 +84,15 @@ String selectJsonFile() {
             }
         }
 
+        // ✅ 显示滚动条提示（选配）
+        if (files.size() > visibleLines) {
+            canvas.setTextColor(TFT_DARKGREY);
+            canvas.drawRightString(
+                String(index + 1) + "/" + String(files.size()),
+                canvas.width() - 8,
+                canvas.height() - 24);
+        }
+
         canvas.pushSprite(0, 0);
 
         M5Cardputer.update();
@@ -87,10 +100,25 @@ String selectJsonFile() {
             auto status = M5Cardputer.Keyboard.keysState();
 
             for (auto c : status.word) {
-                if (c == ';') index = (index - 1 + files.size()) % files.size();  // 上
-                if (c == '.') index = (index + 1) % files.size();                 // 下
-                if (c == ',') index = (index - 1 + files.size()) % files.size();  // 左(备用)
-                if (c == '/') index = (index + 1) % files.size();                 // 右(备用)
+                if (c == ';') {
+                    index = (index - 1 + files.size()) % files.size();
+                    if (index == files.size() - 1) {
+                        // ✅ 从第一行上翻到最后一行
+                        scrollOffset = max(0, (int)files.size() - visibleLines);
+                    } else if (index < scrollOffset) {
+                        scrollOffset = index;
+                    }
+                }
+
+                if (c == '.') {
+                    index = (index + 1) % files.size();
+                    if (index == 0) {
+                        // ✅ 从最后一行下翻回到第一行
+                        scrollOffset = 0;
+                    } else if (index >= scrollOffset + visibleLines) {
+                        scrollOffset = index - visibleLines + 1;
+                    }
+                }
             }
 
             if (status.enter) {
