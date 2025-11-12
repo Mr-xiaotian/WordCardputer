@@ -1,0 +1,9 @@
+[
+    {"jp": "ちゅうごく", "zh": "中国", "kanji": "中国", "tone": 1},
+    {"jp": "ゲ-ム", "zh": "游戏", "kanji": null, "tone": 1},
+    {"jp": "すいえい", "zh": "游泳", "kanji": "水泳", "tone": 0},
+    {"jp": "インタ-ネット", "zh": "因特网", "kanji": null, "tone": 5},
+    {"jp": "サッカ-", "zh": "足球", "kanji": null, "tone": 1},
+    {"jp": "ピアノ", "zh": "钢琴", "kanji": null, "tone": 0},
+    {"jp": "ようこそ", "zh": "欢迎", "kanji": null, "tone": 1}
+]
