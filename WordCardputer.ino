@@ -159,7 +159,7 @@ void loadWordsFromJSON(String filepath) {
         w.zh = obj["zh"] | "";
         w.kanji = obj["kanji"].isNull() ? "" : (const char*)obj["kanji"];
         w.tone = obj["tone"] | 0;
-        w.score = 2;  // 默认中等熟悉度
+        w.score = 3;  // 默认中等熟悉度
         if (w.jp.length() > 0) words.push_back(w);
     }
 
