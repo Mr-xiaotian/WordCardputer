@@ -31,6 +31,7 @@ bool isDimmed = false;                    // 是否已进入省电模式
 const unsigned long idleTimeout = 60000;  // 超过60秒无操作则降低亮度
 const uint8_t normalBrightness = 200;     // 正常亮度
 const uint8_t dimBrightness = 40;         // 降低后的亮度
+int loopDelay = 30;                       // 动态延迟时间
 
 // ------------------- 工具函数 -------------------
 String selectJsonFile() {
@@ -404,12 +405,14 @@ void loop() {
         if (isDimmed) {
             M5Cardputer.Display.setBrightness(normalBrightness);
             isDimmed = false;
+            loopDelay = 30; // 恢复正常
         }
     } else if (!isDimmed && now - lastActivityTime > idleTimeout) {
         // 空闲超过设定时间 → 降低亮度
         M5Cardputer.Display.setBrightness(dimBrightness);
         isDimmed = true;
+        loopDelay = 200;  // 节能模式延迟
     }
 
-    delay(30);
+    delay(loopDelay);
 }
