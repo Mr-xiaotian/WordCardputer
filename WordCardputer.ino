@@ -166,7 +166,7 @@ void loadWordsFromJSON(String filepath) {
     Serial.printf("成功加载 %d 个单词\n", words.size());
 }
 
-// 读取 WAV 到内存并播放（阻塞直到播放完毕再释放内存）
+// ------------------- 音频播放 -------------------
 bool playWavFile(const String& path) {
     if (!SD.exists(path)) {
         Serial.printf("文件不存在: %s\n", path.c_str());
@@ -256,6 +256,27 @@ int pickWeightedRandom() {
 }
 
 // ------------------- 显示逻辑 -------------------
+void drawAutoFitString(M5Canvas &cv, const String &text, int x, int y,
+                       int maxWidth, float baseSize = 2.0, float minSize = 0.8) {
+    // 自动缩放绘制文字（防止超出屏幕宽度）
+    if (text.length() == 0) return;
+
+    float size = baseSize;
+    cv.setTextSize(size);
+    int width = cv.textWidth(text);
+
+    // 如果太宽则逐步缩小字号直到适配
+    while (width > maxWidth && size > minSize) {
+        size -= 0.1;
+        cv.setTextSize(size);
+        width = cv.textWidth(text);
+    }
+
+    // 水平居中
+    cv.setTextDatum(middle_center);
+    cv.drawString(text, x, y);
+}
+
 void drawWord() {
     M5Cardputer.Display.fillScreen(BLACK);
     canvas.fillSprite(BLACK);
@@ -272,25 +293,26 @@ void drawWord() {
 
     if (showJPFirst) {
         // === 模式1：显示日语，隐藏中文 ===
-        canvas.setTextSize(2.2);
         canvas.setTextColor(CYAN);
-        canvas.drawString(w.jp, canvas.width()/2, canvas.height()/2 - 25);
+        drawAutoFitString(canvas, w.jp, canvas.width()/2, canvas.height()/2 - 25,
+                        canvas.width() - 20, 2.2);  // 自动适配
 
-        canvas.setTextSize(1.3);
         canvas.setTextColor(GREEN);
+        canvas.setTextSize(1.3);
         canvas.drawString("Tone: " + String(w.tone), canvas.width()/2, canvas.height()/2 + 5);
 
         if (showMeaning) {
             canvas.setTextColor(YELLOW);
-            canvas.setTextSize(1.5);
-            canvas.drawString(w.zh, canvas.width()/2, canvas.height()/2 + 40);
+            drawAutoFitString(canvas, w.zh, canvas.width()/2, canvas.height()/2 + 40,
+                            canvas.width() - 20, 1.5);  // 显示中文释义
         }
+
     } else {
         // === 模式2：显示中文，隐藏日语 ===
-        canvas.setTextSize(2.0);
         canvas.setTextColor(YELLOW);
-        canvas.drawString(w.zh, canvas.width()/2, canvas.height()/2 - 25);
-        
+        drawAutoFitString(canvas, w.zh, canvas.width()/2, canvas.height()/2 - 25,
+                        canvas.width() - 20, 2.0);  // 显示中文释义主行
+
         if (w.kanji.length() > 0) {
             canvas.setTextColor(ORANGE);
             canvas.setTextSize(1.4);
@@ -299,8 +321,8 @@ void drawWord() {
 
         if (showMeaning) {
             canvas.setTextColor(CYAN);
-            canvas.setTextSize(1.8);
-            canvas.drawString(w.jp, canvas.width()/2, canvas.height()/2 + 40);
+            drawAutoFitString(canvas, w.jp, canvas.width()/2, canvas.height()/2 + 40,
+                            canvas.width() - 20, 1.8);  // 显示日语原文
         }
     }
 
