@@ -1,7 +1,7 @@
 [
     {"jp": "ここ", "kanji": null, "zh": "这里", "tone": 0},
-    {"jp": "そこ", "kanji": null, "zh": "那里(近指)", "tone": 0},
-    {"jp": "あそこ", "kanji": null, "zh": "那里(远指)", "tone": 0},
+    {"jp": "そこ", "kanji": null, "zh": "那里（近指）", "tone": 0},
+    {"jp": "あそこ", "kanji": null, "zh": "那里（远指）", "tone": 0},
     {"jp": "がっこう", "kanji": "学校", "zh": "学校", "tone": 0},
     {"jp": "きょうしつ", "kanji": "教室", "zh": "教室", "tone": 0},
     {"jp": "あちら", "kanji": null, "zh": "那边(远指,礼貌)", "tone": 0},
