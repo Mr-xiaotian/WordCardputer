@@ -409,7 +409,7 @@ void loop() {
         }
         // Del = 不熟，降低熟练度
         else if (status.del) {
-            words[wordIndex].score = max(0, words[wordIndex].score - 1);
+            words[wordIndex].score = max(1, words[wordIndex].score - 1);
         }
         if (status.enter || status.del) {
             wordIndex = pickWeightedRandom();
