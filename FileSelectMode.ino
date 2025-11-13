@@ -90,6 +90,7 @@ void loopFileSelectMode()
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
     {
         auto status = M5Cardputer.Keyboard.keysState();
+        userAction = true;
 
         for (auto c : status.word)
         {

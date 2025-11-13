@@ -1,4 +1,6 @@
-bool lastEnterState = false;
+// 学习模式公共变量
+bool showMeaning = false;
+bool showJPFirst = true;  // true=先显示日语, false=先显示中文
 
 void drawAutoFitString(M5Canvas &cv, const String &text,
                        int x, int y, int maxWidth,
@@ -91,10 +93,8 @@ void startStudyMode(const String &filePath) {
 
 void loopStudyMode() {
     M5Cardputer.update();
-    
-    bool userAction = false;  // 标记是否有用户操作
 
-    // A键 → 切换释义
+    // BtnA键 → 切换释义
     if (M5Cardputer.BtnA.wasPressed()) {
         showMeaning = !showMeaning;
         drawWord();
@@ -104,12 +104,12 @@ void loopStudyMode() {
     // 键盘操作
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
         Keyboard_Class::KeysState status = M5Cardputer.Keyboard.keysState();
+        userAction = true;
 
         // 检测字母 a
         for (auto c : status.word) {
             if (c == 'a' || c == 'A') {
                 playAudioForWord(words[wordIndex].jp);
-                userAction = true;
             }
         }
 
@@ -126,24 +126,7 @@ void loopStudyMode() {
             showMeaning = false;
             showJPFirst = random(2);  // 👈 0 或 1 随机决定显示方向
             drawWord();
-            userAction = true;
         }
-    }
-
-    // -------- 自动亮度控制 --------
-    unsigned long now = millis();
-    if (userAction) {
-        lastActivityTime = now;
-        if (isDimmed) {
-            M5Cardputer.Display.setBrightness(normalBrightness);
-            isDimmed = false;
-            loopDelay = 30; // 恢复正常
-        }
-    } else if (!isDimmed && now - lastActivityTime > idleTimeout) {
-        // 空闲超过设定时间 → 降低亮度
-        M5Cardputer.Display.setBrightness(dimBrightness);
-        isDimmed = true;
-        loopDelay = 200;  // 节能模式延迟
     }
 
     delay(loopDelay);

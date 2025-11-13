@@ -21,11 +21,8 @@ AppMode appMode = MODE_FILE_SELECT;
 // --------- 全局变量 ----------
 M5Canvas canvas(&M5Cardputer.Display);
 
-// 学习模式公共变量
-bool showMeaning = false;
-bool showJPFirst = true;  // true=先显示日语, false=先显示中文
-
 // ---------- 自动亮度管理 ----------
+bool userAction = false;                  // 标记是否有用户操作
 unsigned long lastActivityTime = 0;       // 上次活动时间
 bool isDimmed = false;                    // 是否已进入省电模式
 const unsigned long idleTimeout = 60000;  // 超过60秒无操作则降低亮度
@@ -90,9 +87,27 @@ void setup() {
 }
 
 void loop() {
+    userAction = false;
+
     if (appMode == MODE_FILE_SELECT) {
         loopFileSelectMode();
     } else if (appMode == MODE_STUDY) {
         loopStudyMode();
+    }
+
+    // -------- 自动亮度控制 --------
+    unsigned long now = millis();
+    if (userAction) {
+        lastActivityTime = now;
+        if (isDimmed) {
+            M5Cardputer.Display.setBrightness(normalBrightness);
+            isDimmed = false;
+            loopDelay = 30; // 恢复正常
+        }
+    } else if (!isDimmed && now - lastActivityTime > idleTimeout) {
+        // 空闲超过设定时间 → 降低亮度
+        M5Cardputer.Display.setBrightness(dimBrightness);
+        isDimmed = true;
+        loopDelay = 200;  // 节能模式延迟
     }
 }
