@@ -116,6 +116,13 @@ void loopStudyMode() {
         Keyboard_Class::KeysState status = M5Cardputer.Keyboard.keysState();
         userAction = true;
 
+        // 检测 esc 键
+        if (status.esc) {
+            appMode = MODE_ESC_MENU;
+            initEscMenuMode();
+            return;
+        }
+
         // 检测字母 a
         for (auto c : status.word) {
             if (c == 'a' || c == 'A') {

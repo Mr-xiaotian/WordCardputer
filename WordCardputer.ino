@@ -13,7 +13,7 @@
 // --------- 模式定义 ----------
 enum AppMode {
     MODE_FILE_SELECT,
-    MODE_STUDY
+    MODE_STUDY,
     MODE_ESC_MENU,     // 👈 新增 ESC 菜单模式
     MODE_DICTATION     // 👈 听写模式（暂未实现）
 };
@@ -51,6 +51,9 @@ void loopFileSelectMode();
 
 void startStudyMode(const String &filePath);
 void loopStudyMode();
+
+void initEscMenuMode();
+void loopEscMenuMode();
 
 void loadWordsFromJSON(const String &path);
 int pickWeightedRandom();
@@ -96,6 +99,10 @@ void loop() {
         loopFileSelectMode();
     } else if (appMode == MODE_STUDY) {
         loopStudyMode();
+    } else if (appMode == MODE_ESC_MENU) {
+        loopEscMenuMode();
+    } else if (appMode == MODE_DICTATION) {
+        // TODO: 实现听写模式
     }
 
     // -------- 自动亮度控制 --------

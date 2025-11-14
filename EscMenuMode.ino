@@ -4,7 +4,7 @@ M5Canvas escCanvas(&M5Cardputer.Display);
 
 std::vector<String> escItems = {
     "重新选择词库",
-    "进入听写模式",
+    "进入听写模式(building)",
     "返回学习页面"
 };
 
@@ -82,9 +82,9 @@ void loopEscMenuMode() {
             }
             else if (escIndex == 1) {
                 // 进入听写模式（占位）
-                appMode = MODE_DICTATION;
+                // appMode = MODE_DICTATION;
                 // initDictationMode();  // 未来实现
-                return;
+                // return;
             }
             else if (escIndex == 2) {
                 // 返回学习页面
