@@ -3,7 +3,6 @@ std::vector<String> files;
 int fileIndex = 0;
 int fileScroll = 0;
 
-const int visibleLines = 4;
 M5Canvas fileSelectCanvas(&M5Cardputer.Display);
 
 String selectedFilePath = "";

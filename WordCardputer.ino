@@ -14,12 +14,15 @@
 enum AppMode {
     MODE_FILE_SELECT,
     MODE_STUDY
+    MODE_ESC_MENU,     // 👈 新增 ESC 菜单模式
+    MODE_DICTATION     // 👈 听写模式（暂未实现）
 };
 
 AppMode appMode = MODE_FILE_SELECT;
 
 // --------- 全局变量 ----------
 M5Canvas canvas(&M5Cardputer.Display);
+const int visibleLines = 4;
 
 // ---------- 自动亮度管理 ----------
 bool userAction = false;                  // 标记是否有用户操作
