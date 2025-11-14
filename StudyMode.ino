@@ -85,7 +85,17 @@ void drawWord() {
 }
 
 void startStudyMode(const String &filePath) {
-    loadWordsFromJSON(filePath);
+    bool ok = loadWordsFromJSON(filePath);
+    if (!ok || words.empty()) {
+        M5Cardputer.Display.fillScreen(BLACK);
+        canvas.fillSprite(BLACK);
+        canvas.setTextDatum(middle_center);
+        canvas.setTextColor(RED);
+        canvas.drawString("词库加载失败", canvas.width()/2, canvas.height()/2);
+        canvas.pushSprite(0, 0);
+        return;
+    }
+    
     wordIndex = pickWeightedRandom();
     showMeaning = false;
     drawWord();

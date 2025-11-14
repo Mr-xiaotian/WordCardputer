@@ -1,6 +1,9 @@
 void loadWordsFromJSON(const String &filepath) {
     File file = SD.open(filepath);
-    if (!file) return;
+    if (!file) {
+        Serial.printf("无法打开文件: %s\n", filepath.c_str());
+        return false;
+    }
 
     String jsonString;
     while (file.available()) jsonString += char(file.read());
@@ -21,9 +24,13 @@ void loadWordsFromJSON(const String &filepath) {
 
         if (w.jp.length() > 0) words.push_back(w);
     }
+
+    return !words.empty();
 }
 
 int pickWeightedRandom() {
+    if (words.empty()) return 0;  // 兜底，调用方需要自己判断
+    
     int total = 0;
     for (auto &w : words) total += (6 - w.score);
 
