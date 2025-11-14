@@ -13,7 +13,7 @@
 // --------- 模式定义 ----------
 enum AppMode {
     MODE_FILE_SELECT,
-    MODE_STUDY
+    MODE_STUDY,
     MODE_ESC_MENU,     // 👈 新增 ESC 菜单模式
     MODE_DICTATION     // 👈 听写模式（暂未实现）
 };
@@ -52,8 +52,20 @@ void loopFileSelectMode();
 void startStudyMode(const String &filePath);
 void loopStudyMode();
 
-void loadWordsFromJSON(const String &path);
+bool loadWordsFromJSON(const String &path);
 int pickWeightedRandom();
+
+void drawTextMenu(
+    M5Canvas &cv,
+    const String &title,
+    const std::vector<String> &items,
+    int selectedIndex,
+    int scrollIndex,
+    int visibleLines,
+    const String &emptyText = "无项目",
+    bool showBattery = true,
+    bool showPager = true
+);
 
 void setup() {
     randomSeed(esp_random());

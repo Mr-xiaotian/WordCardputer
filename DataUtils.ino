@@ -1,4 +1,4 @@
-void loadWordsFromJSON(const String &filepath) {
+bool loadWordsFromJSON(const String &filepath) {
     File file = SD.open(filepath);
     if (!file) {
         Serial.printf("无法打开文件: %s\n", filepath.c_str());
