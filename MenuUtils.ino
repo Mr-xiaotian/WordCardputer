@@ -6,9 +6,9 @@ void drawTextMenu(
     int selectedIndex,                    // 当前选中下标
     int scrollIndex,                      // 当前滚动起始下标
     int visibleLines,                     // 一屏显示多少行
-    const String &emptyText = "无项目",   // 没有项目时显示的文字
-    bool showBattery = true,              // 是否显示右上角电量
-    bool showPager = true                 // 是否显示右下角分页
+    const String &emptyText,              // 没有项目时显示的文字
+    bool showBattery,                     // 是否显示右上角电量
+    bool showPager                        // 是否显示右下角分页
 ) {
     cv.fillSprite(BLACK);
 

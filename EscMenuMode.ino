@@ -33,7 +33,7 @@ void drawEscMenu() {
         escItems,      // 项目
         escIndex,      // 当前选中
         escScoll,      // 不需要滚动，写死为0
-        visibleLines,  // 显示所有项，不分页
+        visibleLines  // 显示所有项，不分页
     );
 }
 
@@ -50,7 +50,7 @@ void loopEscMenuMode() {
                 if (escIndex == escItems.size() - 1)
                 {
                     // ✅ 从第一行上翻到最后一行
-                    escScoll = max(0, (int)files.size() - visibleLines);
+                    escScoll = max(0, (int)escItems.size() - visibleLines);
                 }
                 else if (escIndex < escScoll)
                 {

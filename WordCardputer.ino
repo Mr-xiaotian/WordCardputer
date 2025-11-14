@@ -55,8 +55,20 @@ void loopStudyMode();
 void initEscMenuMode();
 void loopEscMenuMode();
 
-void loadWordsFromJSON(const String &path);
+bool loadWordsFromJSON(const String &path);
 int pickWeightedRandom();
+
+void drawTextMenu(
+    M5Canvas &cv,
+    const String &title,
+    const std::vector<String> &items,
+    int selectedIndex,
+    int scrollIndex,
+    int visibleLines,
+    const String &emptyText = "无项目",
+    bool showBattery = true,
+    bool showPager = true
+);
 
 void setup() {
     randomSeed(esp_random());
