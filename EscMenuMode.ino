@@ -3,6 +3,7 @@
 M5Canvas escCanvas(&M5Cardputer.Display);
 
 std::vector<String> escItems = {
+    "保存进度（写入JSON）",
     "重新选择词库",
     "进入听写模式(building)",
     "返回学习页面"
@@ -32,8 +33,8 @@ void drawEscMenu() {
         "菜单",        // 标题
         escItems,      // 项目
         escIndex,      // 当前选中
-        escScoll,      // 不需要滚动，写死为0
-        visibleLines  // 显示所有项，不分页
+        escScoll,      
+        visibleLines   
     );
 }
 
@@ -75,18 +76,38 @@ void loopEscMenuMode() {
 
         if (st.enter) {
             if (escIndex == 0) {
+                // 保存到 JSON
+                if (saveWordsToJSON(selectedFilePath)) {
+                    // 显示保存成功
+                    escCanvas.fillSprite(BLACK);
+                    escCanvas.setTextColor(GREEN);
+                    escCanvas.drawString("保存成功！", 20, 40);
+                    escCanvas.pushSprite(0, 0);
+                    delay(600);
+                } else {
+                    escCanvas.fillSprite(BLACK);
+                    escCanvas.setTextColor(RED);
+                    escCanvas.drawString("保存失败！", 20, 40);
+                    escCanvas.pushSprite(0, 0);
+                    delay(800);
+                }
+                // 保存后仍停留在 ESC 菜单
+                drawEscMenu();
+                return;
+            }
+            if (escIndex == 1) {
                 // 进入词库选择
                 appMode = MODE_FILE_SELECT;
                 initFileSelectMode();
                 return;
             }
-            else if (escIndex == 1) {
+            else if (escIndex == 2) {
                 // 进入听写模式（占位）
                 // appMode = MODE_DICTATION;
                 // initDictationMode();  // 未来实现
                 // return;
             }
-            else if (escIndex == 2) {
+            else if (escIndex == 3) {
                 // 返回学习页面
                 appMode = MODE_STUDY;
                 drawWord();  // 刷新学习界面

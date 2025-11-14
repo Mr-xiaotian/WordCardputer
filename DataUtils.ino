@@ -20,12 +20,42 @@ bool loadWordsFromJSON(const String &filepath) {
         w.zh = obj["zh"] | "";
         w.kanji = obj["kanji"] | "";
         w.tone = obj["tone"] | 0;
-        w.score = 3;
+        w.score = obj["score"] | 3;
 
         if (w.jp.length() > 0) words.push_back(w);
     }
 
     return !words.empty();
+}
+
+bool saveWordsToJSON(const String &filepath) {
+    File file = SD.open(filepath, FILE_WRITE);
+    if (!file) {
+        Serial.printf("无法写入文件: %s\n", filepath.c_str());
+        return false;
+    }
+
+    StaticJsonDocument<16384> doc;
+    JsonArray arr = doc.to<JsonArray>();
+
+    for (auto &w : words) {
+        JsonObject obj = arr.createNestedObject();
+        obj["jp"] = w.jp;
+        obj["zh"] = w.zh;
+        obj["kanji"] = w.kanji;
+        obj["tone"] = w.tone;
+        obj["score"] = w.score;
+    }
+
+    // 写入 SD
+    if (serializeJsonPretty(doc, file) == 0) {
+        Serial.println("写入 JSON 失败！");
+        file.close();
+        return false;
+    }
+
+    file.close();
+    return true;
 }
 
 int pickWeightedRandom() {
