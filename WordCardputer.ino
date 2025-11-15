@@ -23,6 +23,7 @@ AppMode appMode = MODE_FILE_SELECT;
 // --------- 全局变量 ----------
 M5Canvas canvas(&M5Cardputer.Display);
 const int visibleLines = 4;
+int soundVolume = 192;
 
 // ---------- 自动亮度管理 ----------
 bool userAction = false;                  // 标记是否有用户操作
@@ -78,7 +79,7 @@ void setup() {
 
     // 初始化音频输出
     M5.Speaker.begin();
-    M5.Speaker.setVolume(192);  // 音量范围 0~255，建议 128~192
+    M5.Speaker.setVolume(soundVolume);  // 音量范围 0~255，建议 128~192
 
     // 手动初始化 SPI 与 SD 卡
     SPI.begin(SD_SPI_SCK_PIN, SD_SPI_MISO_PIN, SD_SPI_MOSI_PIN, SD_SPI_CS_PIN);
@@ -105,6 +106,7 @@ void setup() {
 }
 
 void loop() {
+    M5Cardputer.update();
     userAction = false;
 
     if (appMode == MODE_FILE_SELECT) {
@@ -132,4 +134,6 @@ void loop() {
         isDimmed = true;
         loopDelay = 200;  // 节能模式延迟
     }
+
+    delay(loopDelay);
 }

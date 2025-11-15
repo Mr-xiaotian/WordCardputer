@@ -42,8 +42,6 @@ void drawEscMenu() {
 
 // ---------- ESC 菜单逻辑 ----------
 void loopEscMenuMode() {
-    M5Cardputer.update();
-
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
         auto st = M5Cardputer.Keyboard.keysState();
 

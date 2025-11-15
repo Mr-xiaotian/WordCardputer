@@ -2,6 +2,9 @@
 bool showMeaning = false;
 bool showJPFirst = true;  // true=先显示日语, false=先显示中文
 
+unsigned long volumeMessageDeadline = 0;
+String volumeMessageText = "";
+
 void drawAutoFitString(M5Canvas &cv, const String &text,
                        int x, int y, int maxWidth,
                        float baseSize = 2.0, float minSize = 0.8) {
@@ -75,6 +78,13 @@ void drawWord() {
     canvas.setTextSize(1.0);
     canvas.drawString("Score: " + String(words[wordIndex].score), 50, 15);
 
+    // HUD 显示音量变化
+    if (millis() < volumeMessageDeadline && volumeMessageText.length() > 0) {
+        canvas.setTextColor(TFT_DARKGREY);
+        canvas.setTextSize(1.0);
+        canvas.drawString(volumeMessageText, canvas.width() - 15, 15);
+    }
+
     // // 底部提示栏
     // canvas.setTextDatum(bottom_center);
     // canvas.setTextColor(TFT_LIGHTGREY);
@@ -102,8 +112,6 @@ void startStudyMode(const String &filePath) {
 }
 
 void loopStudyMode() {
-    M5Cardputer.update();
-
     // BtnA键 → 切换释义
     if (M5Cardputer.BtnA.wasPressed()) {
         showMeaning = !showMeaning;
@@ -122,6 +130,18 @@ void loopStudyMode() {
                 appMode = MODE_ESC_MENU;
                 initEscMenuMode();
                 return;
+            } else if (c == ';') {  // 上
+                soundVolume = min(255, soundVolume + 10);
+            } else if (c == '.') {  // 下
+                soundVolume = max(0, soundVolume - 10);
+            }
+
+            if (c == ';' || c == '.'){
+                M5.Speaker.setVolume(soundVolume); 
+
+                volumeMessageDeadline = millis() + 2000;
+                volumeMessageText = String(soundVolume);
+                drawWord();
             }
         }
 
@@ -147,6 +167,4 @@ void loopStudyMode() {
             drawWord();
         }
     }
-
-    delay(loopDelay);
 }
