@@ -117,10 +117,12 @@ void loopStudyMode() {
         userAction = true;
 
         // 检测 esc 键
-        if (status.esc) {
-            appMode = MODE_ESC_MENU;
-            initEscMenuMode();
-            return;
+        for (auto c : status.word) {
+            if (c == '`') {  // ESC 键
+                appMode = MODE_ESC_MENU;
+                initEscMenuMode();
+                return;
+            }
         }
 
         // 检测字母 a

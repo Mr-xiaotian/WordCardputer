@@ -2,6 +2,8 @@
 
 M5Canvas escCanvas(&M5Cardputer.Display);
 
+String selectedFilePath = "";
+
 std::vector<String> escItems = {
     "保存进度（写入JSON）",
     "重新选择词库",
@@ -81,13 +83,13 @@ void loopEscMenuMode() {
                     // 显示保存成功
                     escCanvas.fillSprite(BLACK);
                     escCanvas.setTextColor(GREEN);
-                    escCanvas.drawString("保存成功！", 20, 40);
+                    escCanvas.drawString("保存成功！", escCanvas.width()/2, escCanvas.height()/2);
                     escCanvas.pushSprite(0, 0);
                     delay(600);
                 } else {
                     escCanvas.fillSprite(BLACK);
                     escCanvas.setTextColor(RED);
-                    escCanvas.drawString("保存失败！", 20, 40);
+                    escCanvas.drawString("保存失败！", escCanvas.width()/2, escCanvas.height()/2);
                     escCanvas.pushSprite(0, 0);
                     delay(800);
                 }

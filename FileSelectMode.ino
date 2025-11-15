@@ -5,8 +5,6 @@ int fileScroll = 0;
 
 M5Canvas fileSelectCanvas(&M5Cardputer.Display);
 
-String selectedFilePath = "";
-
 // --------- 初始化文件选择模式 ---------
 void initFileSelectMode()
 {
