@@ -1,7 +1,5 @@
 // =============== 听写模式 ===============
 
-M5Canvas dictCanvas(&M5Cardputer.Display);
-
 std::vector<int> dictOrder;     // 随机顺序
 int dictPos = 0;                // 当前是第几个单词
 String userInput = "";          // 用户正在输入的字符串
@@ -13,12 +11,6 @@ bool dictShowSummary = false;
 
 // ---------- 初始化听写模式 ----------
 void initDictationMode() {
-    dictCanvas.createSprite(
-        M5Cardputer.Display.width(),
-        M5Cardputer.Display.height()
-    );
-    dictCanvas.setTextFont(&fonts::efontCN_16);
-
     dictOrder.clear();
     for (int i = 0; i < words.size(); i++) dictOrder.push_back(i);
 
@@ -40,53 +32,53 @@ void initDictationMode() {
 
 // ---------- 绘制答题中的画面 ----------
 void drawDictationInput() {
-    dictCanvas.fillSprite(BLACK);
+    canvas.fillSprite(BLACK);
 
-    dictCanvas.setTextDatum(top_left);
-    dictCanvas.setTextColor(CYAN);
-    dictCanvas.setTextSize(1.2);
+    canvas.setTextDatum(top_left);
+    canvas.setTextColor(CYAN);
+    canvas.setTextSize(1.2);
 
-    dictCanvas.drawString("听写模式", 8, 8);
+    canvas.drawString("听写模式", 8, 8);
 
     // 显示用户输入
-    dictCanvas.setTextDatum(middle_center);
-    dictCanvas.setTextSize(2.0);
-    dictCanvas.setTextColor(WHITE);
-    dictCanvas.drawString(userInput, dictCanvas.width() / 2, dictCanvas.height() / 2);
+    canvas.setTextDatum(middle_center);
+    canvas.setTextSize(2.0);
+    canvas.setTextColor(WHITE);
+    canvas.drawString(userInput, canvas.width() / 2, canvas.height() / 2);
 
     // 进度提示
-    dictCanvas.setTextDatum(bottom_center);
-    dictCanvas.setTextColor(TFT_DARKGREY);
-    dictCanvas.setTextSize(1.0);
-    dictCanvas.drawString(
+    canvas.setTextDatum(bottom_center);
+    canvas.setTextColor(TFT_DARKGREY);
+    canvas.setTextSize(1.0);
+    canvas.drawString(
         String(dictPos + 1) + "/" + String(dictOrder.size()),
-        dictCanvas.width() / 2,
-        dictCanvas.height() - 10
+        canvas.width() / 2,
+        canvas.height() - 10
     );
 
-    dictCanvas.pushSprite(0, 0);
+    canvas.pushSprite(0, 0);
 }
 
 // ---------- 绘制总结界面 ----------
 void drawDictationSummary() {
-    dictCanvas.fillSprite(BLACK);
+    canvas.fillSprite(BLACK);
 
-    dictCanvas.setTextDatum(middle_center);
-    dictCanvas.setTextSize(2.0);
+    canvas.setTextDatum(middle_center);
+    canvas.setTextSize(2.0);
 
-    dictCanvas.setTextColor(GREEN);
-    dictCanvas.drawString("完成！", dictCanvas.width()/2, dictCanvas.height()/2 - 40);
+    canvas.setTextColor(GREEN);
+    canvas.drawString("完成！", canvas.width()/2, canvas.height()/2 - 40);
 
-    dictCanvas.setTextColor(WHITE);
-    dictCanvas.setTextSize(1.6);
-    dictCanvas.drawString("正确: " + String(correctCount), dictCanvas.width()/2, dictCanvas.height()/2);
-    dictCanvas.drawString("错误: " + String(wrongCount), dictCanvas.width()/2, dictCanvas.height()/2 + 40);
+    canvas.setTextColor(WHITE);
+    canvas.setTextSize(1.6);
+    canvas.drawString("正确: " + String(correctCount), canvas.width()/2, canvas.height()/2);
+    canvas.drawString("错误: " + String(wrongCount), canvas.width()/2, canvas.height()/2 + 40);
 
-    dictCanvas.setTextColor(TFT_DARKGREY);
-    dictCanvas.setTextSize(1.0);
-    dictCanvas.drawString("按 Enter 返回菜单", dictCanvas.width()/2, dictCanvas.height() - 20);
+    canvas.setTextColor(TFT_DARKGREY);
+    canvas.setTextSize(1.0);
+    canvas.drawString("按 Enter 返回菜单", canvas.width()/2, canvas.height() - 20);
 
-    dictCanvas.pushSprite(0, 0);
+    canvas.pushSprite(0, 0);
 }
 
 // ---------- 听写模式逻辑 ----------

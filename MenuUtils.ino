@@ -52,19 +52,19 @@ void drawTextMenu(
                 cv.drawString("  " + items[i], 8, y);
             }
         }
+    }
 
-        // 右下角分页：当前/总数
-        if (showPager && items.size() > (size_t)visibleLines) {
-            cv.setTextColor(TFT_DARKGREY);
-            cv.setTextDatum(bottom_right);
-            cv.setTextSize(1.0);
-            cv.drawString(
-                String(selectedIndex + 1) + "/" + String(items.size()),
-                cv.width() - 8,
-                cv.height() - 8
-            );
-            cv.setTextDatum(top_left);  // 恢复
-        }
+    // 右下角分页：当前/总数
+    if (showPager && items.size() > (size_t)visibleLines) {
+        cv.setTextColor(TFT_DARKGREY);
+        cv.setTextDatum(bottom_right);
+        cv.setTextSize(1.0);
+        cv.drawString(
+            String(selectedIndex + 1) + "/" + String(items.size()),
+            cv.width() - 8,
+            cv.height() - 8
+        );
+        cv.setTextDatum(top_left);  // 恢复
     }
 
     cv.pushSprite(0, 0);

@@ -1,7 +1,5 @@
 // ========== ESC 菜单页面 ==========
 
-M5Canvas escCanvas(&M5Cardputer.Display);
-
 String selectedFilePath = "";
 
 std::vector<String> escItems = {
@@ -17,13 +15,6 @@ int escScoll = 0;
 void initEscMenuMode() {
     escIndex = 0;
 
-    escCanvas.createSprite(
-        M5Cardputer.Display.width(), 
-        M5Cardputer.Display.height()
-    );
-    escCanvas.setTextFont(&fonts::efontCN_16);
-    escCanvas.setTextSize(1.2);
-
     drawEscMenu();
 }
 
@@ -31,7 +22,7 @@ void initEscMenuMode() {
 void drawEscMenu() {
     // 直接复用通用菜单绘制！
     drawTextMenu(
-        escCanvas,
+        canvas,
         "菜单",        // 标题
         escItems,      // 项目
         escIndex,      // 当前选中
@@ -79,16 +70,18 @@ void loopEscMenuMode() {
                 // 保存到 JSON
                 if (saveWordsToJSON(selectedFilePath)) {
                     // 显示保存成功
-                    escCanvas.fillSprite(BLACK);
-                    escCanvas.setTextColor(GREEN);
-                    escCanvas.drawString("保存成功！", escCanvas.width()/2, escCanvas.height()/2);
-                    escCanvas.pushSprite(0, 0);
+                    canvas.fillSprite(BLACK);
+                    canvas.setTextDatum(middle_center);
+                    canvas.setTextColor(GREEN);
+                    canvas.drawString("保存成功！", canvas.width()/2, canvas.height()/2);
+                    canvas.pushSprite(0, 0);
                     delay(600);
                 } else {
-                    escCanvas.fillSprite(BLACK);
-                    escCanvas.setTextColor(RED);
-                    escCanvas.drawString("保存失败！", escCanvas.width()/2, escCanvas.height()/2);
-                    escCanvas.pushSprite(0, 0);
+                    canvas.fillSprite(BLACK);
+                    canvas.setTextDatum(middle_center);
+                    canvas.setTextColor(RED);
+                    canvas.drawString("保存失败！", canvas.width()/2, canvas.height()/2);
+                    canvas.pushSprite(0, 0);
                     delay(800);
                 }
                 // 保存后仍停留在 ESC 菜单

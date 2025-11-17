@@ -3,8 +3,6 @@ std::vector<String> files;
 int fileIndex = 0;
 int fileScroll = 0;
 
-M5Canvas fileSelectCanvas(&M5Cardputer.Display);
-
 // --------- 初始化文件选择模式 ---------
 void initFileSelectMode()
 {
@@ -12,10 +10,6 @@ void initFileSelectMode()
     fileIndex = 0;
     fileScroll = 0;
     selectedFilePath = "";
-
-    fileSelectCanvas.createSprite(M5Cardputer.Display.width(), M5Cardputer.Display.height());
-    fileSelectCanvas.setTextFont(&fonts::efontCN_16);
-    fileSelectCanvas.setTextSize(1.2);
 
     File root = SD.open("/jp_words_study/word");
     while (true)
@@ -35,7 +29,7 @@ void initFileSelectMode()
 void drawFileSelect()
 {
     drawTextMenu(
-        fileSelectCanvas,
+        canvas,
         "选择词库文件",  // 标题
         files,           // 项目列表
         fileIndex,       // 当前选中
@@ -51,11 +45,11 @@ void loopFileSelectMode()
 {
     // 如果没有任何文件，直接显示提示并返回
     if (files.empty()) {
-        fileSelectCanvas.fillSprite(BLACK);
-        fileSelectCanvas.setTextDatum(middle_center);
-        fileSelectCanvas.setTextColor(RED);
-        fileSelectCanvas.drawString("无词库文件", fileSelectCanvas.width()/2, fileSelectCanvas.height()/2);
-        fileSelectCanvas.pushSprite(0, 0);
+        canvas.fillSprite(BLACK);
+        canvas.setTextDatum(middle_center);
+        canvas.setTextColor(RED);
+        canvas.drawString("无词库文件", canvas.width()/2, canvas.height()/2);
+        canvas.pushSprite(0, 0);
         delay(200);
         return;
     }
