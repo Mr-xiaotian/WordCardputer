@@ -23,6 +23,11 @@ void initFileSelectMode()
         entry.close();
     }
     root.close();
+
+    // 排序（字典序）
+    std::sort(files.begin(), files.end(), [](const String &a, const String &b) {
+        return strcmp(a.c_str(), b.c_str()) < 0;
+    });
 }
 
 // --------- 绘制文件选择页面 ---------
