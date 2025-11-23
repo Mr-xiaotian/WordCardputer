@@ -1,47 +1,317 @@
 [
-    {"jp": "ここ", "kanji": null, "zh": "这里", "tone": 0, "score": 3},
-    {"jp": "そこ", "kanji": null, "zh": "那里（近指）", "tone": 0, "score": 3},
-    {"jp": "あそこ", "kanji": null, "zh": "那里（远指）", "tone": 0, "score": 3},
-    {"jp": "がっこう", "kanji": "学校", "zh": "学校", "tone": 0, "score": 3},
-    {"jp": "きょうしつ", "kanji": "教室", "zh": "教室", "tone": 0, "score": 3},
-    {"jp": "あちら", "kanji": null, "zh": "那边(远指,礼貌)", "tone": 0, "score": 3},
-    {"jp": "ス-パ-", "kanji": null, "zh": "超市", "tone": 1, "score": 3},
-    {"jp": "どこ", "kanji": null, "zh": "哪里", "tone": 1, "score": 3},
-    {"jp": "こちら", "kanji": null, "zh": "这边(礼貌)", "tone": 0, "score": 3},
-    {"jp": "そちら", "kanji": null, "zh": "那边(近指,礼貌)", "tone": 0, "score": 3},
-    {"jp": "としょしつ", "kanji": "図書室", "zh": "图书室", "tone": 2, "score": 3},
-    {"jp": "うけつけ", "kanji": "受付", "zh": "接待处", "tone": 0, "score": 3},
-    {"jp": "としょかん", "kanji": "図書館", "zh": "图书馆", "tone": 2, "score": 3},
-    {"jp": "レストラン", "kanji": null, "zh": "餐馆", "tone": 1, "score": 3},
-    {"jp": "いりぐち", "kanji": "入口", "zh": "入口", "tone": 0, "score": 3},
-    {"jp": "しょくどう", "kanji": "食堂", "zh": "食堂", "tone": 0, "score": 3},
-    {"jp": "デパ-ト", "kanji": null, "zh": "百货商店", "tone": 2, "score": 3},
-    {"jp": "じむしつ", "kanji": "事務室", "zh": "办公室", "tone": 2, "score": 3},
-    {"jp": "かいぎしつ", "kanji": "会議室", "zh": "会议室", "tone": 3, "score": 3},
-    {"jp": "おてあらい", "kanji": "お手洗い", "zh": "洗手间", "tone": 3, "score": 3},
-    {"jp": "おくじょう", "kanji": "屋上", "zh": "屋顶；天台", "tone": 0, "score": 3},
-    {"jp": "うち", "kanji": "家", "zh": "家", "tone": 0, "score": 3},
-    {"jp": "おねえさん", "kanji": "お姉さん", "zh": "姐姐", "tone": 2, "score": 3},
-    {"jp": "ゆうびんきょく", "kanji": "郵便局", "zh": "邮局", "tone": 3, "score": 3},
-    {"jp": "えき", "kanji": "駅", "zh": "车站", "tone": 1, "score": 3},
-    {"jp": "でぐち", "kanji": "出口", "zh": "出口", "tone": 1, "score": 3},
-    {"jp": "トイレ", "kanji": null, "zh": "厕所", "tone": 1, "score": 3},
-    {"jp": "こうえん", "kanji": "公園", "zh": "公园", "tone": 0, "score": 3},
-    {"jp": "いくら", "kanji": null, "zh": "多少钱", "tone": 1, "score": 3},
-    {"jp": "かさ", "kanji": "傘", "zh": "伞", "tone": 1, "score": 3},
-    {"jp": "うりば", "kanji": "売り場", "zh": "柜台；卖场", "tone": 0, "score": 3},
-    {"jp": "なんがい", "kanji": "何階", "zh": "几层", "tone": 0, "score": 3},
-    {"jp": "てんいん", "kanji": "店員", "zh": "店员", "tone": 0, "score": 3},
-    {"jp": "エレベ-タ-", "kanji": null, "zh": "电梯", "tone": 3, "score": 3},
-    {"jp": "ふく", "kanji": "服", "zh": "衣服", "tone": 2, "score": 3},
-    {"jp": "では", "kanji": null, "zh": "那么", "tone": 1, "score": 3},
-    {"jp": "ください", "kanji": null, "zh": "请给我…", "tone": 3, "score": 3},
-    {"jp": "ワイン", "kanji": null, "zh": "葡萄酒", "tone": 1, "score": 3},
-    {"jp": "にんぎょう", "kanji": "人形", "zh": "人偶", "tone": 0, "score": 3},
-    {"jp": "りんご", "kanji": null, "zh": "苹果", "tone": 0, "score": 3},
-    {"jp": "ケ-キ", "kanji": null, "zh": "蛋糕", "tone": 1, "score": 3},
-    {"jp": "おべんとう", "kanji": "お弁当", "zh": "盒饭", "tone": 4, "score": 3},
-    {"jp": "パン", "kanji": null, "zh": "面包", "tone": 1, "score": 3},
-    {"jp": "ぶんぼうぐ", "kanji": "文房具", "zh": "文具", "tone": 3, "score": 3},
-    {"jp": "かいだん", "kanji": "階段", "zh": "楼梯", "tone": 0, "score": 3}
+  {
+    "jp": "ここ",
+    "zh": "这里",
+    "kanji": "",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "そこ",
+    "zh": "那里（近指）",
+    "kanji": "",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "あそこ",
+    "zh": "那里（远指）",
+    "kanji": "",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "がっこう",
+    "zh": "学校",
+    "kanji": "学校",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "きょうしつ",
+    "zh": "教室",
+    "kanji": "教室",
+    "tone": 0,
+    "score": 1
+  },
+  {
+    "jp": "あちら",
+    "zh": "那边(远指,礼貌)",
+    "kanji": "",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "ス-パ-",
+    "zh": "超市",
+    "kanji": "",
+    "tone": 1,
+    "score": 4
+  },
+  {
+    "jp": "どこ",
+    "zh": "哪里",
+    "kanji": "",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "こちら",
+    "zh": "这边(礼貌)",
+    "kanji": "",
+    "tone": 0,
+    "score": 2
+  },
+  {
+    "jp": "そちら",
+    "zh": "那边(近指,礼貌)",
+    "kanji": "",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "としょしつ",
+    "zh": "图书室",
+    "kanji": "図書室",
+    "tone": 2,
+    "score": 5
+  },
+  {
+    "jp": "うけつけ",
+    "zh": "接待处",
+    "kanji": "受付",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "としょかん",
+    "zh": "图书馆",
+    "kanji": "図書館",
+    "tone": 2,
+    "score": 5
+  },
+  {
+    "jp": "レストラン",
+    "zh": "餐馆",
+    "kanji": "",
+    "tone": 1,
+    "score": 4
+  },
+  {
+    "jp": "いりぐち",
+    "zh": "入口",
+    "kanji": "入口",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "しょくどう",
+    "zh": "食堂",
+    "kanji": "食堂",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "デパ-ト",
+    "zh": "百货商店",
+    "kanji": "",
+    "tone": 2,
+    "score": 4
+  },
+  {
+    "jp": "じむしつ",
+    "zh": "办公室",
+    "kanji": "事務室",
+    "tone": 2,
+    "score": 3
+  },
+  {
+    "jp": "かいぎしつ",
+    "zh": "会议室",
+    "kanji": "会議室",
+    "tone": 3,
+    "score": 1
+  },
+  {
+    "jp": "おてあらい",
+    "zh": "洗手间",
+    "kanji": "お手洗い",
+    "tone": 3,
+    "score": 3
+  },
+  {
+    "jp": "おくじょう",
+    "zh": "屋顶；天台",
+    "kanji": "屋上",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "うち",
+    "zh": "家",
+    "kanji": "家",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "おねえさん",
+    "zh": "姐姐",
+    "kanji": "お姉さん",
+    "tone": 2,
+    "score": 5
+  },
+  {
+    "jp": "ゆうびんきょく",
+    "zh": "邮局",
+    "kanji": "郵便局",
+    "tone": 3,
+    "score": 2
+  },
+  {
+    "jp": "えき",
+    "zh": "车站",
+    "kanji": "駅",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "でぐち",
+    "zh": "出口",
+    "kanji": "出口",
+    "tone": 1,
+    "score": 4
+  },
+  {
+    "jp": "トイレ",
+    "zh": "厕所",
+    "kanji": "",
+    "tone": 1,
+    "score": 4
+  },
+  {
+    "jp": "こうえん",
+    "zh": "公园",
+    "kanji": "公園",
+    "tone": 0,
+    "score": 4
+  },
+  {
+    "jp": "いくら",
+    "zh": "多少钱",
+    "kanji": "",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "かさ",
+    "zh": "伞",
+    "kanji": "傘",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "うりば",
+    "zh": "柜台；卖场",
+    "kanji": "売り場",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "なんがい",
+    "zh": "几层",
+    "kanji": "何階",
+    "tone": 0,
+    "score": 4
+  },
+  {
+    "jp": "てんいん",
+    "zh": "店员",
+    "kanji": "店員",
+    "tone": 0,
+    "score": 4
+  },
+  {
+    "jp": "エレベ-タ-",
+    "zh": "电梯",
+    "kanji": "",
+    "tone": 3,
+    "score": 4
+  },
+  {
+    "jp": "ふく",
+    "zh": "衣服",
+    "kanji": "服",
+    "tone": 2,
+    "score": 5
+  },
+  {
+    "jp": "では",
+    "zh": "那么",
+    "kanji": "",
+    "tone": 1,
+    "score": 3
+  },
+  {
+    "jp": "ください",
+    "zh": "请给我…",
+    "kanji": "",
+    "tone": 3,
+    "score": 5
+  },
+  {
+    "jp": "ワイン",
+    "zh": "葡萄酒",
+    "kanji": "",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "にんぎょう",
+    "zh": "人偶",
+    "kanji": "人形",
+    "tone": 0,
+    "score": 2
+  },
+  {
+    "jp": "りんご",
+    "zh": "苹果",
+    "kanji": "",
+    "tone": 0,
+    "score": 4
+  },
+  {
+    "jp": "ケ-キ",
+    "zh": "蛋糕",
+    "kanji": "",
+    "tone": 1,
+    "score": 4
+  },
+  {
+    "jp": "おべんとう",
+    "zh": "盒饭",
+    "kanji": "お弁当",
+    "tone": 4,
+    "score": 4
+  },
+  {
+    "jp": "パン",
+    "zh": "面包",
+    "kanji": "",
+    "tone": 1,
+    "score": 2
+  },
+  {
+    "jp": "ぶんぼうぐ",
+    "zh": "文具",
+    "kanji": "文房具",
+    "tone": 3,
+    "score": 3
+  },
+  {
+    "jp": "かいだん",
+    "zh": "楼梯",
+    "kanji": "階段",
+    "tone": 0,
+    "score": 4
+  }
 ]
