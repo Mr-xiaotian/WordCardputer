@@ -26,20 +26,31 @@
 ## 📂 文件结构示例
 
 ```
-📁 WordCardputer	(11MB 107KB 979B)
-    📁 jp_words_study	(6MB 370KB 839B)
-        📁 audio	(6MB 362KB 136B)
-            📄 [112项排除的文件]	(6MB 362KB 136B)
-        📁 word 	(8KB 703B)
-            📄 [3项排除的文件]	(8KB 703B)
+📁 WordCardputer	(18MB 83KB 112B)
+    📁 jp_words_study	(10MB 350KB 126B)
+        📁 audio	(10MB 334KB 364B)
+            🔊 あさって.wav      	(81KB 42B)
+            🔊 あした.wav        	(67KB 260B)
+            🔊 あそこ.wav        	(41KB 232B)
+            ...
+        📁 word 	(15KB 786B)
+            🗄️ Lesson_1(extra).json	(3KB 490B)
+            🗄️ Lesson_1.json       	(2KB 787B)
+            🗄️ Lesson_2.json       	(3KB 858B)
+             ...
     📁 temp          	(507KB 724B)
-        📄 [1项排除的文件]	(507KB 724B)
-    📁 [1项排除的目录]	(4MB 212KB 157B)
-    ❓ .gitignore       	(23B)
-    📝 README.md        	(2KB 604B)
-    🐍 tools.py         	(3KB 334B)
-    ❓ WordCardputer.ino	(12KB 760B)
-    📄 [1项排除的文件]	(22KB 610B)
+        🔊 output.wav	(507KB 724B)
+    ❓ .gitignore        	(37B)
+    ❓ AudioUtils.ino    	(3KB 499B)
+    ❓ DataUtils.ino     	(1KB 866B)
+    ❓ DictationMode.ino 	(3KB 842B)
+    ❓ EscMenuMode.ino   	(3KB 540B)
+    ❓ FileSelectMode.ino	(2KB 956B)
+    ❓ MenuUtils.ino     	(2KB 395B)
+    📝 README.md         	(3KB 136B)
+    ❓ StudyMode.ino     	(5KB 554B)
+    🐍 tools.py          	(4KB 605B)
+    ❓ WordCardputer.ino 	(3KB 935B)
 ```
 
 (该视图由我的另一个项目[CelestialVault](https://github.com/Mr-xiaotian/CelestialVault)中inst_file生成。)
@@ -48,17 +59,17 @@
 
 ```json
 [
-  { "jp": "わたし", "zh": "我", "kanji": "私", "tone": 0 },
-  { "jp": "ほん", "zh": "书", "kanji": "本", "tone": 0 }
+  { "jp": "わたし", "zh": "我", "kanji": "私", "tone": 0, "score": 3 },
+  { "jp": "ほん", "zh": "书", "kanji": "本", "tone": 0, "score": 3 }
 ]
 ```
 
 ## ⚙️ 使用方法
 
-1. 将词库 JSON 和音频文件放入 SD 卡指定目录。在word和audio中可以按需求放入文件, word格式参照上述, wav要求如下:
+1. 将 jp_words_study 放入 SD 卡根目录。在word和audio中可以按需求放入文件, json格式参照上述, wav要求如下:
    - PCM 格式 (audiofmt == 1);
    - 8-bit 或 16-bit；
-   - 1 或 2 通道；
+   - 1 通道；
    - 采样率 ≤ 48kHz。
 2. 启动设备后选择词库文件。
 3. * 按 **Go 键** 切换显示释义
@@ -71,9 +82,9 @@
 
 * ✅ 支持发音播放
 * ✅ 支持双向模式
-* 🔲 保存熟练度进度到 SD
+* ✅ 保存熟练度进度到 SD
 * 🔲 增加复习统计与学习历史
-* 🔲 可视化学习报告（例如熟悉度分布图）
+* 🔲 可视化学习报告（熟悉度分布图）
 
 ## 🪶 作者
 
