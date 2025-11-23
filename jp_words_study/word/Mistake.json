@@ -1,9 +1,9 @@
 [
     {"jp": "ちゅうごく", "zh": "中国", "kanji": "中国", "tone": 1, "score": 3},
-    {"jp": "ゲ-ム", "zh": "游戏", "kanji": null, "tone": 1, "score": 3},
+    {"jp": "ゲーム", "zh": "游戏", "kanji": null, "tone": 1, "score": 3},
     {"jp": "すいえい", "zh": "游泳", "kanji": "水泳", "tone": 0, "score": 3},
-    {"jp": "インタ-ネット", "zh": "因特网", "kanji": null, "tone": 5, "score": 3},
-    {"jp": "サッカ-", "zh": "足球", "kanji": null, "tone": 1, "score": 3},
+    {"jp": "インターネット", "zh": "因特网", "kanji": null, "tone": 5, "score": 3},
+    {"jp": "サッカー", "zh": "足球", "kanji": null, "tone": 1, "score": 3},
     {"jp": "ピアノ", "zh": "钢琴", "kanji": null, "tone": 0, "score": 3},
     {"jp": "ようこそ", "zh": "欢迎", "kanji": null, "tone": 1, "score": 3}
 ]

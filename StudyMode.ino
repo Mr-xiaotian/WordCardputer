@@ -40,6 +40,7 @@ void drawWord() {
 
     if (showJPFirst) {
         // === 模式1：显示日语，隐藏中文 ===
+        canvas.setTextFont(&fonts::efontJA_16);
         canvas.setTextColor(CYAN);
         drawAutoFitString(canvas, w.jp, canvas.width()/2, canvas.height()/2 - 25,
                         canvas.width() - 20, 2.2);  // 自动适配
@@ -49,6 +50,7 @@ void drawWord() {
         canvas.drawString("Tone: " + String(w.tone), canvas.width()/2, canvas.height()/2 + 5);
 
         if (showMeaning) {
+            canvas.setTextFont(&fonts::efontCN_16);
             canvas.setTextColor(YELLOW);
             drawAutoFitString(canvas, w.zh, canvas.width()/2, canvas.height()/2 + 40,
                             canvas.width() - 20, 1.5);  // 显示中文释义
@@ -56,17 +58,20 @@ void drawWord() {
 
     } else {
         // === 模式2：显示中文，隐藏日语 ===
+        canvas.setTextFont(&fonts::efontCN_16);
         canvas.setTextColor(YELLOW);
         drawAutoFitString(canvas, w.zh, canvas.width()/2, canvas.height()/2 - 25,
                         canvas.width() - 20, 2.0);  // 显示中文释义主行
 
         if (w.kanji.length() > 0) {
+            canvas.setTextFont(&fonts::efontJA_16);
             canvas.setTextColor(ORANGE);
             canvas.setTextSize(1.4);
             canvas.drawString(w.kanji, canvas.width()/2, canvas.height()/2 + 5);
         }
 
         if (showMeaning) {
+            canvas.setTextFont(&fonts::efontJA_16);
             canvas.setTextColor(CYAN);
             drawAutoFitString(canvas, w.jp, canvas.width()/2, canvas.height()/2 + 40,
                             canvas.width() - 20, 1.8);  // 显示日语原文
@@ -74,6 +79,7 @@ void drawWord() {
     }
 
     // 熟练度提示
+    canvas.setTextFont(&fonts::efontCN_16);
     canvas.setTextColor(TFT_DARKGREY);
     canvas.setTextSize(1.0);
     canvas.drawString("Score: " + String(words[wordIndex].score), 50, 15);
