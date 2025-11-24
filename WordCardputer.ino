@@ -26,6 +26,9 @@ M5Canvas canvas(&M5Cardputer.Display);
 const int visibleLines = 4;
 int soundVolume = 192;
 
+unsigned long volumeMessageDeadline = 0; // 音量消息显示截止时间
+String volumeMessageText = "";
+
 // ---------- 自动亮度管理 ----------
 bool userAction = false;                  // 标记是否有用户操作
 unsigned long lastActivityTime = 0;       // 上次活动时间
@@ -66,6 +69,10 @@ void loopListenMode();     // 👈 新增
 bool loadWordsFromJSON(const String &path);
 int pickWeightedRandom();
 
+void drawAutoFitString(M5Canvas &cv, const String &text,
+                       int x, int y, int maxWidth,
+                       float baseSize, float minSize);
+                       
 void drawTextMenu(
     M5Canvas &cv,
     const String &title,

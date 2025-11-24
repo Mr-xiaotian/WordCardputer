@@ -25,24 +25,20 @@ void drawListenWord() {
     canvas.setTextFont(&fonts::efontJA_16);
     canvas.setTextColor(CYAN);
     drawAutoFitString(canvas, w.jp, canvas.width()/2, canvas.height()/2 - 25,
-                    canvas.width() - 20, 2.2);  // 自动适配
-
-    canvas.setTextColor(GREEN);
-    canvas.setTextSize(1.3);
-    canvas.drawString("Tone: " + String(w.tone), canvas.width()/2, canvas.height()/2 + 5);
+                    canvas.width() - 20, 2.2, 0.8);  // 自动适配
 
     // 显示假名（中间）
     if (w.kanji.length() > 0) {
         canvas.setTextColor(ORANGE);
         canvas.setTextSize(1.4);
-        canvas.drawString(w.kanji, canvas.width()/2, canvas.height()/2 + 5);
+        canvas.drawString(w.kanji, canvas.width()/2, canvas.height()/2 + 10);
     }
 
     // 显示中文（中间偏下）
     canvas.setTextFont(&fonts::efontCN_16);
     canvas.setTextColor(YELLOW);
     drawAutoFitString(canvas, w.zh, canvas.width()/2, canvas.height()/2 + 40,
-                    canvas.width() - 20, 1.5);  // 显示中文释义
+                    canvas.width() - 20, 1.5, 0.8);  // 显示中文释义
 
     // 模式
     canvas.setTextColor(TFT_DARKGREY);
@@ -84,11 +80,7 @@ void loopListenMode() {
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
         // 键盘状态
         auto st = M5Cardputer.Keyboard.keysState();
-
-        // 标记有用户操作 → 防止自动降亮度
-        if (st.word.length() > 0 || st.enter || st.del) {
-            userAction = true;
-        }
+        userAction = true;
 
         // 处理 ESC（你在学习模式里用的是 '`' 来代表 ESC）
         for (auto c : st.word) {
@@ -118,31 +110,31 @@ void loopListenMode() {
                 drawListenWord();
             }
         }
+    }
 
-        // ------- 自动播放控制 -------
-        if (words.empty()) return;
+    // ------- 自动播放控制 -------
+    if (words.empty()) return;
 
-        unsigned long now = millis();
+    unsigned long now = millis();
 
-        // 如果现在还没到下一次动作时间，什么也不做
-        if (now < listenNextActionTime) {
-            return;
-        }
+    // 如果现在还没到下一次动作时间，什么也不做
+    if (now < listenNextActionTime) {
+        return;
+    }
 
-        // 如果当前没有在播放任何声音
-        if (!M5.Speaker.isPlaying()) {
-            if (listenPlayCount < 3) {
-                // 第 1~3 次播放
-                playAudioForWord(words[listenWordIndex].jp);
-                listenPlayCount++;
-                listenNextActionTime = now + listenRepeatInterval;
-            } else {
-                // 已经播了 3 次 → 换下一个单词
-                listenWordIndex = pickWeightedRandom();
-                listenPlayCount = 0;
-                listenNextActionTime = now + listenNextWordDelay;
-                drawListenWord();
-            }
+    // 如果当前没有在播放任何声音
+    if (!M5.Speaker.isPlaying()) {
+        if (listenPlayCount < 3) {
+            // 第 1~3 次播放
+            playAudioForWord(words[listenWordIndex].jp);
+            listenPlayCount++;
+            listenNextActionTime = now + listenRepeatInterval;
+        } else {
+            // 已经播了 3 次 → 换下一个单词
+            listenWordIndex = pickWeightedRandom();
+            listenPlayCount = 0;
+            listenNextActionTime = now + listenNextWordDelay;
+            drawListenWord();
         }
     }
 }
