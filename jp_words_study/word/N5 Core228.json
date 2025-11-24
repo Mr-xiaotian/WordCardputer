@@ -166,22 +166,6 @@
         "zh": "人"
     },
     {
-        "jp": "わたし",
-        "romaji": "watashi",
-        "zh": "我",
-        "kanji": "私",
-        "tone": 0,
-        "score": 3
-    },
-    {
-        "jp": "あなた",
-        "romaji": "anata",
-        "zh": "你",
-        "kanji": null,
-        "tone": 2,
-        "score": 3
-    },
-    {
         "jp": "かれ",
         "romaji": "kare",
         "zh": "他"
@@ -1302,11 +1286,6 @@
         "zh": "肉"
     },
     {
-        "jp": "さかな",
-        "romaji": "sakana",
-        "zh": "鱼"
-    },
-    {
         "jp": "たまご",
         "romaji": "tamago",
         "zh": "鸡蛋,蛋",
@@ -1396,16 +1375,6 @@
         "jp": "うた",
         "romaji": "uta",
         "zh": "歌"
-    },
-    {
-        "jp": "うみ",
-        "romaji": "umi",
-        "zh": "海"
-    },
-    {
-        "jp": "やま",
-        "romaji": "yama",
-        "zh": "山"
     },
     {
         "jp": "いろ",

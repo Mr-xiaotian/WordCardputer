@@ -250,3 +250,39 @@ def filter_json_by_jp_difference(path_a, path_b):
         json.dump(filtered, f, ensure_ascii=False, indent=4)
 
     return unique_jp
+
+
+def dedupe_json_by_jp(folder_path):
+    folder = Path(folder_path)
+
+    # 遍历文件夹下所有 json 文件
+    for json_file in folder.glob("*.json"):
+        try:
+            data = json.loads(json_file.read_text(encoding="utf-8"))
+        except Exception as e:
+            print(f"无法读取 {json_file}: {e}")
+            continue
+
+        if not isinstance(data, list):
+            print(f"文件 {json_file} 内容不是列表，跳过。")
+            continue
+
+        seen = set()
+        deduped = []
+
+        # 按顺序保留最先出现的 jp
+        for item in data:
+            jp = item.get("jp")
+            if jp not in seen:
+                seen.add(jp)
+                deduped.append(item)
+
+        # 写回文件
+        try:
+            json_file.write_text(
+                json.dumps(deduped, ensure_ascii=False, indent=4),
+                encoding="utf-8"
+            )
+            print(f"已去重并写回：{json_file}")
+        except Exception as e:
+            print(f"写入失败 {json_file}: {e}")
