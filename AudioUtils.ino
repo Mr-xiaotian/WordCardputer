@@ -114,9 +114,10 @@ void playAudioForWord(const String& jpWord) {
     }
 
     // 如果正在播放旧音频则停止
-    if (M5.Speaker.isPlaying()) {
-        M5.Speaker.stop();
+    while (M5.Speaker.isPlaying()) {
+        delay(1);
     }
+    M5.Speaker.stop(); // 再停一次更安全
 
     // 播放 SD 卡上的 WAV 文件
     bool ok = playWavStream(path);

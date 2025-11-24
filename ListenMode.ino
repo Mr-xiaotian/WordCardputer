@@ -1,8 +1,8 @@
 // =============== 听读模式 ===============
 
 // 播放控制
-int listenWordIndex = 0;
-int listenPlayCount = 0;           // 当前单词已经播放了几次（0~3）
+int listenWordIndex = 0;                 // 当前正在播放的单词索引
+int listenPlayCount = 0;                 // 当前单词已经播放了几次（0~3）
 unsigned long listenNextActionTime = 0;  // 下一次动作的时间点
 const unsigned long listenRepeatInterval = 1200;   // 每次播放之间的间隔（毫秒）
 const unsigned long listenNextWordDelay = 600;     // 播完3次后，切到下一个单词前等待的时间

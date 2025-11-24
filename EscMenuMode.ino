@@ -1,5 +1,4 @@
 // ========== ESC 菜单页面 ==========
-
 String selectedFilePath = "";
 
 std::vector<String> escItems = {
@@ -15,6 +14,7 @@ int escScoll = 0;
 
 void initEscMenuMode() {
     escIndex = 0;
+    escScoll = 0;
 
     drawEscMenu();
 }

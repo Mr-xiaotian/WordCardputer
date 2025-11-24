@@ -1,7 +1,7 @@
+import os
+import json
 import requests
 import binascii
-import json
-import os
 from typing import List, Tuple
 from pathlib import Path
 from dotenv import load_dotenv
@@ -37,7 +37,6 @@ def generate_tts(
     :param speed (float): 语速 (0.5 ~ 2.0)
     :param volume (float): 音量 (0.1 ~ 10)
     :param emotion (str): 语音情感，可选 [happy, calm, sad, angry...]
-    :return bool: 是否生成成功
     :retutn [bool, str]: 输出文件路径或错误信息
     """
 

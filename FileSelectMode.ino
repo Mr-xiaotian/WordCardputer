@@ -35,13 +35,12 @@ void drawFileSelect()
 {
     drawTextMenu(
         canvas,
-        "选择词库文件",  // 标题
+        "选择词库文件",   // 标题
         files,           // 项目列表
         fileIndex,       // 当前选中
         fileScroll,      // 当前滚动起点
         visibleLines,    // 一屏行数
-        "没有词库文件"   // 空列表提示（可选）
-        // 后面 showBattery / showPager 用默认 true 就行
+        "没有词库文件"    // 空列表提示（可选）
     );
 }
 
