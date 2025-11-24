@@ -1,12 +1,16 @@
 import requests
 import binascii
 import json
+import os
 from typing import List, Tuple
 from pathlib import Path
+from dotenv import load_dotenv
 
+
+load_dotenv()  # 默认会在当前目录和父目录寻找 .env
+api_key = os.getenv("API_KEY")
 
 def generate_tts(
-    api_key: str,
     text: str,
     output_path: Path = Path("output.wav"),
     model: str = "speech-2.6-turbo",
@@ -22,7 +26,6 @@ def generate_tts(
     """
     使用 MiniMax T2A 接口生成语音文件 (WAV 格式)
 
-    :param api_key (str): 你的 MiniMax API 密钥
     :param text (str): 要转换的文本
     :param output_path (str): 输出文件路径 (默认 'output.wav')
     :param model (str): 使用的模型 (默认 speech-2.6-turbo)

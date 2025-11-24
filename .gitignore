@@ -2,3 +2,5 @@ __pycache__/
 temp/
 
 _preview.ipynb
+
+.env
