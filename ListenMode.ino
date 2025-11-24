@@ -44,10 +44,17 @@ void drawListenWord() {
     drawAutoFitString(canvas, w.zh, canvas.width()/2, canvas.height()/2 + 40,
                     canvas.width() - 20, 1.5);  // 显示中文释义
 
-    // 标题
+    // 模式
     canvas.setTextColor(TFT_DARKGREY);
     canvas.setTextSize(1.0);
     canvas.drawString("听读模式", 50, 15);
+
+    // HUD 显示音量变化
+    if (millis() < volumeMessageDeadline && volumeMessageText.length() > 0) {
+        canvas.setTextColor(TFT_DARKGREY);
+        canvas.setTextSize(1.0);
+        canvas.drawString(volumeMessageText, canvas.width() - 15, 15);
+    }
 
     canvas.pushSprite(0, 0);
 }
