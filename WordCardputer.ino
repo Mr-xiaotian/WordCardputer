@@ -14,8 +14,9 @@
 enum AppMode {
     MODE_FILE_SELECT,
     MODE_STUDY,
-    MODE_ESC_MENU,     // 👈 新增 ESC 菜单模式
-    MODE_DICTATION     // 👈 听写模式（暂未实现）
+    MODE_ESC_MENU,     //  ESC 菜单模式
+    MODE_DICTATION,     // 听写模式（暂未实现）
+    MODE_LISTEN        // 👈 新增：听读模式
 };
 
 AppMode appMode = MODE_FILE_SELECT;
@@ -55,6 +56,12 @@ void loopStudyMode();
 
 void initEscMenuMode();
 void loopEscMenuMode();
+
+void initDictationMode();
+void loopDictationMode();
+
+void initListenMode();     // 👈 新增
+void loopListenMode();     // 👈 新增
 
 bool loadWordsFromJSON(const String &path);
 int pickWeightedRandom();
@@ -117,6 +124,8 @@ void loop() {
         loopEscMenuMode();
     } else if (appMode == MODE_DICTATION) {
         // TODO: 实现听写模式
+    } else if (appMode == MODE_LISTEN) {     // 👈 新增
+        loopListenMode();
     }
 
     // -------- 自动亮度控制 --------

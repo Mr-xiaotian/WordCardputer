@@ -6,6 +6,7 @@ std::vector<String> escItems = {
     "保存进度（写入JSON）",
     "重新选择词库",
     "进入听写模式(building)",
+    "进入听读模式",      // 👈 新增
     "返回学习页面"
 };
 
@@ -101,6 +102,12 @@ void loopEscMenuMode() {
                 // return;
             }
             else if (escIndex == 3) {
+                // 👇 新增：进入听读模式
+                appMode = MODE_LISTEN;
+                initListenMode();
+                return;
+            }
+            else if (escIndex == 4) {
                 // 返回学习页面
                 appMode = MODE_STUDY;
                 drawWord();  // 刷新学习界面

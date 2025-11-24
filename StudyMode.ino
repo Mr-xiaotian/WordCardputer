@@ -25,7 +25,6 @@ void drawAutoFitString(M5Canvas &cv, const String &text,
 }
 
 void drawWord() {
-    M5Cardputer.Display.fillScreen(BLACK);
     canvas.fillSprite(BLACK);
     canvas.setTextDatum(middle_center);
 
