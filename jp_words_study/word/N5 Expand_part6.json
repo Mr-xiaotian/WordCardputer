@@ -1,0 +1,308 @@
+[
+  {
+    "jp": "しんごう",
+    "romaji": "shingou",
+    "zh": "信号灯"
+  },
+  {
+    "jp": "トンネル",
+    "romaji": "tonneru",
+    "zh": "隧道"
+  },
+  {
+    "jp": "せかい",
+    "romaji": "sekai",
+    "zh": "世界"
+  },
+  {
+    "jp": "くに",
+    "romaji": "kuni",
+    "zh": "国家",
+    "kanji": "国",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "ちかく",
+    "romaji": "chikaku",
+    "zh": "附近"
+  },
+  {
+    "jp": "あいだ",
+    "romaji": "aida",
+    "zh": "之间"
+  },
+  {
+    "jp": "むこう",
+    "romaji": "mukou",
+    "zh": "对面"
+  },
+  {
+    "jp": "よこ",
+    "romaji": "yoko",
+    "zh": "旁边"
+  },
+  {
+    "jp": "ところ",
+    "romaji": "tokoro",
+    "zh": "地方"
+  },
+  {
+    "jp": "こっち",
+    "romaji": "kocchi",
+    "zh": "这边"
+  },
+  {
+    "jp": "そっち",
+    "romaji": "socchi",
+    "zh": "那边"
+  },
+  {
+    "jp": "あっち",
+    "romaji": "acchi",
+    "zh": "那边(远处)"
+  },
+  {
+    "jp": "どっち",
+    "romaji": "docchi",
+    "zh": "哪边"
+  },
+  {
+    "jp": "ばん",
+    "romaji": "ban",
+    "zh": "晚上"
+  },
+  {
+    "jp": "むかし",
+    "romaji": "mukashi",
+    "zh": "以前"
+  },
+  {
+    "jp": "いつか",
+    "romaji": "itsuka",
+    "zh": "某一天"
+  },
+  {
+    "jp": "ひまつ",
+    "romaji": "himatsu",
+    "zh": "休息日"
+  },
+  {
+    "jp": "せんげつ",
+    "romaji": "sengetsu",
+    "zh": "上个月",
+    "kanji": "先月",
+    "tone": 1,
+    "pos": "名"
+  },
+  {
+    "jp": "こんげつ",
+    "romaji": "kongetsu",
+    "zh": "这个月",
+    "kanji": "今月",
+    "tone": 0,
+    "pos": "名"
+  },
+  {
+    "jp": "らいげつ",
+    "romaji": "raigetsu",
+    "zh": "下个月",
+    "kanji": "来月",
+    "tone": 1,
+    "pos": "名"
+  },
+  {
+    "jp": "きょねん",
+    "romaji": "kyonen",
+    "zh": "去年",
+    "kanji": "去年",
+    "tone": 1,
+    "pos": "名"
+  },
+  {
+    "jp": "ことし",
+    "romaji": "kotoshi",
+    "zh": "今年",
+    "kanji": "今年",
+    "tone": 0,
+    "pos": "名"
+  },
+  {
+    "jp": "らいねん",
+    "romaji": "rainen",
+    "zh": "明年",
+    "kanji": "来年",
+    "tone": 0,
+    "pos": "名"
+  },
+  {
+    "jp": "せいかつ",
+    "romaji": "seikatsu",
+    "zh": "生活"
+  },
+  {
+    "jp": "しょくじ",
+    "romaji": "shokuji",
+    "zh": "（吃）饭; 饮食",
+    "kanji": "食事",
+    "tone": 0
+  },
+  {
+    "jp": "すいみん",
+    "romaji": "suimin",
+    "zh": "睡眠"
+  },
+  {
+    "jp": "けっこん",
+    "romaji": "kekkon",
+    "zh": "结婚"
+  },
+  {
+    "jp": "しょうがい",
+    "romaji": "shougai",
+    "zh": "一生"
+  },
+  {
+    "jp": "たんじょうび",
+    "romaji": "tanjoubi",
+    "zh": "生日",
+    "kanji": "誕生日",
+    "tone": 3,
+    "pos": "名"
+  },
+  {
+    "jp": "しあわせ",
+    "romaji": "shiawase",
+    "zh": "幸福"
+  },
+  {
+    "jp": "ふこう",
+    "romaji": "fukou",
+    "zh": "不幸"
+  },
+  {
+    "jp": "こまる",
+    "romaji": "komaru",
+    "zh": "困扰"
+  },
+  {
+    "jp": "よろこぶ",
+    "romaji": "yorokobu",
+    "zh": "高兴"
+  },
+  {
+    "jp": "かなしい",
+    "romaji": "kanashii",
+    "zh": "悲伤; 伤心的"
+  },
+  {
+    "jp": "おこる",
+    "romaji": "okoru",
+    "zh": "生气"
+  },
+  {
+    "jp": "なく",
+    "romaji": "naku",
+    "zh": "哭"
+  },
+  {
+    "jp": "わらう",
+    "romaji": "warau",
+    "zh": "笑"
+  },
+  {
+    "jp": "いかる",
+    "romaji": "ikaru",
+    "zh": "发怒"
+  },
+  {
+    "jp": "さびしい",
+    "romaji": "sabishii",
+    "zh": "寂寞的"
+  },
+  {
+    "jp": "うれしい",
+    "romaji": "ureshii",
+    "zh": "高兴的"
+  },
+  {
+    "jp": "こわい",
+    "romaji": "kowai",
+    "zh": "可怕的"
+  },
+  {
+    "jp": "いたい",
+    "romaji": "itai",
+    "zh": "疼痛的"
+  },
+  {
+    "jp": "つかれる",
+    "romaji": "tsukareru",
+    "zh": "疲劳"
+  },
+  {
+    "jp": "ねむい",
+    "romaji": "nemui",
+    "zh": "困倦的"
+  },
+  {
+    "jp": "びっくりする",
+    "romaji": "bikkuri suru",
+    "zh": "吃惊"
+  },
+  {
+    "jp": "あせる",
+    "romaji": "aseru",
+    "zh": "着急"
+  },
+  {
+    "jp": "あわてる",
+    "romaji": "awateru",
+    "zh": "慌张"
+  },
+  {
+    "jp": "いそぐ",
+    "romaji": "isogu",
+    "zh": "急忙"
+  },
+  {
+    "jp": "まよう",
+    "romaji": "mayou",
+    "zh": "迷惑"
+  },
+  {
+    "jp": "くるしい",
+    "romaji": "kurushii",
+    "zh": "痛苦的"
+  },
+  {
+    "jp": "おだやか",
+    "romaji": "odayaka",
+    "zh": "平静的"
+  },
+  {
+    "jp": "にぎやか",
+    "romaji": "nigiyaka",
+    "zh": "热闹的"
+  },
+  {
+    "jp": "あたたかい",
+    "romaji": "atatakai",
+    "zh": "温暖的"
+  },
+  {
+    "jp": "すずしい",
+    "romaji": "suzushii",
+    "zh": "凉爽的"
+  },
+  {
+    "jp": "かみなり",
+    "romaji": "kaminari",
+    "zh": "雷"
+  },
+  {
+    "jp": "たいふう",
+    "romaji": "taifuu",
+    "zh": "台风"
+  }
+]

@@ -1,0 +1,304 @@
+[
+  {
+    "jp": "むすこ",
+    "romaji": "musuko",
+    "zh": "儿子"
+  },
+  {
+    "jp": "むすめ",
+    "romaji": "musume",
+    "zh": "女儿",
+    "kanji": "娘",
+    "tone": 3,
+    "score": 3
+  },
+  {
+    "jp": "まご",
+    "romaji": "mago",
+    "zh": "孙子"
+  },
+  {
+    "jp": "しゅじん",
+    "romaji": "shujin",
+    "zh": "丈夫"
+  },
+  {
+    "jp": "かない",
+    "romaji": "kanai",
+    "zh": "妻子"
+  },
+  {
+    "jp": "つま",
+    "romaji": "tsuma",
+    "zh": "妻子",
+    "kanji": "妻",
+    "tone": 1,
+    "score": 3
+  },
+  {
+    "jp": "おっと",
+    "romaji": "otto",
+    "zh": "丈夫"
+  },
+  {
+    "jp": "しんせき",
+    "romaji": "shinseki",
+    "zh": "亲戚"
+  },
+  {
+    "jp": "うま",
+    "romaji": "uma",
+    "zh": "马"
+  },
+  {
+    "jp": "うし",
+    "romaji": "ushi",
+    "zh": "牛"
+  },
+  {
+    "jp": "ぶた",
+    "romaji": "buta",
+    "zh": "猪"
+  },
+  {
+    "jp": "ひつじ",
+    "romaji": "hitsuji",
+    "zh": "羊"
+  },
+  {
+    "jp": "にわとり",
+    "romaji": "niwatori",
+    "zh": "鸡"
+  },
+  {
+    "jp": "あひる",
+    "romaji": "ahiru",
+    "zh": "鸭子"
+  },
+  {
+    "jp": "がちょう",
+    "romaji": "gachou",
+    "zh": "鹅"
+  },
+  {
+    "jp": "さる",
+    "romaji": "saru",
+    "zh": "猴子"
+  },
+  {
+    "jp": "きりん",
+    "romaji": "kirin",
+    "zh": "长颈鹿"
+  },
+  {
+    "jp": "ぞう",
+    "romaji": "zou",
+    "zh": "大象"
+  },
+  {
+    "jp": "らいおん",
+    "romaji": "raion",
+    "zh": "狮子"
+  },
+  {
+    "jp": "とら",
+    "romaji": "tora",
+    "zh": "老虎"
+  },
+  {
+    "jp": "くま",
+    "romaji": "kuma",
+    "zh": "熊"
+  },
+  {
+    "jp": "おおかみ",
+    "romaji": "ookami",
+    "zh": "狼"
+  },
+  {
+    "jp": "きつね",
+    "romaji": "kitsune",
+    "zh": "狐狸"
+  },
+  {
+    "jp": "うさぎ",
+    "romaji": "usagi",
+    "zh": "兔子"
+  },
+  {
+    "jp": "りす",
+    "romaji": "risu",
+    "zh": "松鼠"
+  },
+  {
+    "jp": "ねずみ",
+    "romaji": "nezumi",
+    "zh": "老鼠"
+  },
+  {
+    "jp": "かえる",
+    "romaji": "kaeru",
+    "zh": "回家; 青蛙",
+    "kanji": "帰る",
+    "tone": 1,
+    "pos": "自動Ⅰ"
+  },
+  {
+    "jp": "へび",
+    "romaji": "hebi",
+    "zh": "蛇"
+  },
+  {
+    "jp": "とかげ",
+    "romaji": "tokage",
+    "zh": "蜥蜴"
+  },
+  {
+    "jp": "くじら",
+    "romaji": "kujira",
+    "zh": "鲸鱼"
+  },
+  {
+    "jp": "いるか",
+    "romaji": "iruka",
+    "zh": "海豚"
+  },
+  {
+    "jp": "ちょう",
+    "romaji": "chou",
+    "zh": "蝴蝶; 兆",
+    "kanji": "兆",
+    "tone": 1,
+    "score": 3
+  },
+  {
+    "jp": "あり",
+    "romaji": "ari",
+    "zh": "蚂蚁"
+  },
+  {
+    "jp": "かぶとむし",
+    "romaji": "kabutomushi",
+    "zh": "甲虫"
+  },
+  {
+    "jp": "くも",
+    "romaji": "kumo",
+    "zh": "蜘蛛"
+  },
+  {
+    "jp": "むし",
+    "romaji": "mushi",
+    "zh": "虫"
+  },
+  {
+    "jp": "かお",
+    "romaji": "kao",
+    "zh": "脸"
+  },
+  {
+    "jp": "め",
+    "romaji": "me",
+    "zh": "眼睛"
+  },
+  {
+    "jp": "みみ",
+    "romaji": "mimi",
+    "zh": "耳朵"
+  },
+  {
+    "jp": "はな",
+    "romaji": "hana",
+    "zh": "鼻子,花"
+  },
+  {
+    "jp": "くち",
+    "romaji": "kuchi",
+    "zh": "嘴"
+  },
+  {
+    "jp": "は",
+    "romaji": "ha",
+    "zh": "牙齿"
+  },
+  {
+    "jp": "あたま",
+    "romaji": "atama",
+    "zh": "头"
+  },
+  {
+    "jp": "かた",
+    "romaji": "kata",
+    "zh": "肩"
+  },
+  {
+    "jp": "て",
+    "romaji": "te",
+    "zh": "手"
+  },
+  {
+    "jp": "うで",
+    "romaji": "ude",
+    "zh": "手臂"
+  },
+  {
+    "jp": "あし",
+    "romaji": "ashi",
+    "zh": "腿,脚; 脚"
+  },
+  {
+    "jp": "からだ",
+    "romaji": "karada",
+    "zh": "身体"
+  },
+  {
+    "jp": "せなか",
+    "romaji": "senaka",
+    "zh": "背"
+  },
+  {
+    "jp": "おなか",
+    "romaji": "onaka",
+    "zh": "肚子"
+  },
+  {
+    "jp": "むね",
+    "romaji": "mune",
+    "zh": "胸"
+  },
+  {
+    "jp": "こころ",
+    "romaji": "kokoro",
+    "zh": "心"
+  },
+  {
+    "jp": "ゆび",
+    "romaji": "yubi",
+    "zh": "手指,脚趾"
+  },
+  {
+    "jp": "つめ",
+    "romaji": "tsume",
+    "zh": "指甲"
+  },
+  {
+    "jp": "かかと",
+    "romaji": "kakato",
+    "zh": "脚后跟"
+  },
+  {
+    "jp": "ひざ",
+    "romaji": "hiza",
+    "zh": "膝盖"
+  },
+  {
+    "jp": "くび",
+    "romaji": "kubi",
+    "zh": "脖子"
+  },
+  {
+    "jp": "ひじ",
+    "romaji": "hiji",
+    "zh": "肘"
+  }
+]

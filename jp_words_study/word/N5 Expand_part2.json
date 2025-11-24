@@ -1,0 +1,313 @@
+[
+  {
+    "jp": "おりる",
+    "romaji": "oriru",
+    "zh": "下来"
+  },
+  {
+    "jp": "あがる",
+    "romaji": "agaru",
+    "zh": "上升"
+  },
+  {
+    "jp": "さがる",
+    "romaji": "sagaru",
+    "zh": "下降"
+  },
+  {
+    "jp": "かえす",
+    "romaji": "kaesu",
+    "zh": "归还"
+  },
+  {
+    "jp": "おくる",
+    "romaji": "okuru",
+    "zh": "送"
+  },
+  {
+    "jp": "かける",
+    "romaji": "kakeru",
+    "zh": "打(电话)",
+    "kanji": "",
+    "tone": 2
+  },
+  {
+    "jp": "でんわする",
+    "romaji": "denwa suru",
+    "zh": "打电话"
+  },
+  {
+    "jp": "いう",
+    "romaji": "iu",
+    "zh": "说"
+  },
+  {
+    "jp": "はなれる",
+    "romaji": "hanareru",
+    "zh": "分开"
+  },
+  {
+    "jp": "あつまる",
+    "romaji": "atsumaru",
+    "zh": "聚集"
+  },
+  {
+    "jp": "うまれる",
+    "romaji": "umareru",
+    "zh": "出生"
+  },
+  {
+    "jp": "しぬ",
+    "romaji": "shinu",
+    "zh": "死"
+  },
+  {
+    "jp": "いきる",
+    "romaji": "ikiru",
+    "zh": "活"
+  },
+  {
+    "jp": "こわす",
+    "romaji": "kowasu",
+    "zh": "弄坏"
+  },
+  {
+    "jp": "あらう",
+    "romaji": "arau",
+    "zh": "洗"
+  },
+  {
+    "jp": "きる",
+    "romaji": "kiru",
+    "zh": "切,剪; 穿",
+    "kanji": "切る",
+    "tone": 1
+  },
+  {
+    "jp": "ぬぐ",
+    "romaji": "nugu",
+    "zh": "脱(衣)"
+  },
+  {
+    "jp": "きがえる",
+    "romaji": "kigaeru",
+    "zh": "换衣服"
+  },
+  {
+    "jp": "めをさます",
+    "romaji": "me wo samasu",
+    "zh": "醒来"
+  },
+  {
+    "jp": "すう",
+    "romaji": "suu",
+    "zh": "吸"
+  },
+  {
+    "jp": "うたう",
+    "romaji": "utau",
+    "zh": "唱歌"
+  },
+  {
+    "jp": "おどる",
+    "romaji": "odoru",
+    "zh": "跳舞"
+  },
+  {
+    "jp": "さんぽする",
+    "romaji": "sanpo suru",
+    "zh": "散步"
+  },
+  {
+    "jp": "チョコレート",
+    "romaji": "chokoreeto",
+    "zh": "巧克力"
+  },
+  {
+    "jp": "アイスクリーム",
+    "romaji": "aisukuriimu",
+    "zh": "冰淇淋"
+  },
+  {
+    "jp": "ケーキ",
+    "romaji": "keeki",
+    "zh": "蛋糕",
+    "kanji": "",
+    "tone": 1,
+    "score": 4
+  },
+  {
+    "jp": "コーヒー",
+    "romaji": "koohii",
+    "zh": "咖啡",
+    "kanji": null,
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "こうちゃ",
+    "romaji": "koucha",
+    "zh": "红茶"
+  },
+  {
+    "jp": "りょうり",
+    "romaji": "ryouri",
+    "zh": "菜肴,烹饪",
+    "kanji": "料理",
+    "tone": 1,
+    "score": 3
+  },
+  {
+    "jp": "あさごはん",
+    "romaji": "asagohan",
+    "zh": "早餐"
+  },
+  {
+    "jp": "ひるごはん",
+    "romaji": "hirugohan",
+    "zh": "午饭,午餐",
+    "kanji": "昼ご飯",
+    "tone": 3
+  },
+  {
+    "jp": "ばんごはん",
+    "romaji": "bangohan",
+    "zh": "晚餐"
+  },
+  {
+    "jp": "おちゃ",
+    "romaji": "ocha",
+    "zh": "茶",
+    "kanji": "お茶",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "ジュース",
+    "romaji": "juusu",
+    "zh": "果汁"
+  },
+  {
+    "jp": "ビール",
+    "romaji": "biiru",
+    "zh": "啤酒"
+  },
+  {
+    "jp": "おさけ",
+    "romaji": "osake",
+    "zh": "酒"
+  },
+  {
+    "jp": "りんご",
+    "romaji": "ringo",
+    "zh": "苹果",
+    "kanji": "",
+    "tone": 0,
+    "score": 4
+  },
+  {
+    "jp": "みかん",
+    "romaji": "mikan",
+    "zh": "橘子"
+  },
+  {
+    "jp": "バナナ",
+    "romaji": "banana",
+    "zh": "香蕉"
+  },
+  {
+    "jp": "いちご",
+    "romaji": "ichigo",
+    "zh": "草莓"
+  },
+  {
+    "jp": "ぶどう",
+    "romaji": "budou",
+    "zh": "葡萄"
+  },
+  {
+    "jp": "すいか",
+    "romaji": "suika",
+    "zh": "西瓜"
+  },
+  {
+    "jp": "メロン",
+    "romaji": "meron",
+    "zh": "哈密瓜"
+  },
+  {
+    "jp": "パイナップル",
+    "romaji": "painappuru",
+    "zh": "菠萝"
+  },
+  {
+    "jp": "もも",
+    "romaji": "momo",
+    "zh": "桃子"
+  },
+  {
+    "jp": "なし",
+    "romaji": "nashi",
+    "zh": "梨"
+  },
+  {
+    "jp": "キウイ",
+    "romaji": "kiui",
+    "zh": "猕猴桃"
+  },
+  {
+    "jp": "マンゴー",
+    "romaji": "mangoo",
+    "zh": "芒果"
+  },
+  {
+    "jp": "きゅうり",
+    "romaji": "kyuuri",
+    "zh": "黄瓜"
+  },
+  {
+    "jp": "トマト",
+    "romaji": "tomato",
+    "zh": "番茄"
+  },
+  {
+    "jp": "にんじん",
+    "romaji": "ninjin",
+    "zh": "胡萝卜"
+  },
+  {
+    "jp": "じゃがいも",
+    "romaji": "jagaimo",
+    "zh": "土豆"
+  },
+  {
+    "jp": "たまねぎ",
+    "romaji": "tamanegi",
+    "zh": "洋葱"
+  },
+  {
+    "jp": "なす",
+    "romaji": "nasu",
+    "zh": "茄子"
+  },
+  {
+    "jp": "ピーマン",
+    "romaji": "piiman",
+    "zh": "青椒"
+  },
+  {
+    "jp": "カボチャ",
+    "romaji": "kabocha",
+    "zh": "南瓜"
+  },
+  {
+    "jp": "ほうれんそう",
+    "romaji": "hourensou",
+    "zh": "菠菜"
+  },
+  {
+    "jp": "キャベツ",
+    "romaji": "kyabetsu",
+    "zh": "卷心菜"
+  }
+]

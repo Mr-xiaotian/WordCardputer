@@ -1,0 +1,295 @@
+[
+  {
+    "jp": "レタス",
+    "romaji": "retasu",
+    "zh": "生菜"
+  },
+  {
+    "jp": "もやし",
+    "romaji": "moyashi",
+    "zh": "豆芽"
+  },
+  {
+    "jp": "とうもろこし",
+    "romaji": "toumorokoshi",
+    "zh": "玉米"
+  },
+  {
+    "jp": "だいこん",
+    "romaji": "daikon",
+    "zh": "萝卜"
+  },
+  {
+    "jp": "ブロッコリー",
+    "romaji": "burokkorii",
+    "zh": "西兰花"
+  },
+  {
+    "jp": "きのこ",
+    "romaji": "kinoko",
+    "zh": "蘑菇"
+  },
+  {
+    "jp": "えだまめ",
+    "romaji": "edamame",
+    "zh": "毛豆"
+  },
+  {
+    "jp": "ごま",
+    "romaji": "goma",
+    "zh": "芝麻"
+  },
+  {
+    "jp": "ぎゅうにく",
+    "romaji": "gyuuniku",
+    "zh": "牛肉"
+  },
+  {
+    "jp": "ぶたにく",
+    "romaji": "butaniku",
+    "zh": "猪肉"
+  },
+  {
+    "jp": "とりにく",
+    "romaji": "toriniku",
+    "zh": "鸡肉"
+  },
+  {
+    "jp": "ラム",
+    "romaji": "ramu",
+    "zh": "羊肉"
+  },
+  {
+    "jp": "ハム",
+    "romaji": "hamu",
+    "zh": "火腿"
+  },
+  {
+    "jp": "ソーセージ",
+    "romaji": "sooseeji",
+    "zh": "香肠"
+  },
+  {
+    "jp": "えび",
+    "romaji": "ebi",
+    "zh": "虾"
+  },
+  {
+    "jp": "かに",
+    "romaji": "kani",
+    "zh": "蟹; 螃蟹"
+  },
+  {
+    "jp": "たこ",
+    "romaji": "tako",
+    "zh": "章鱼"
+  },
+  {
+    "jp": "いか",
+    "romaji": "ika",
+    "zh": "鱿鱼"
+  },
+  {
+    "jp": "かまぼこ",
+    "romaji": "kamaboko",
+    "zh": "鱼糕"
+  },
+  {
+    "jp": "チーズ",
+    "romaji": "chiizu",
+    "zh": "奶酪"
+  },
+  {
+    "jp": "バター",
+    "romaji": "bataa",
+    "zh": "黄油"
+  },
+  {
+    "jp": "マヨネーズ",
+    "romaji": "mayoneezu",
+    "zh": "蛋黄酱"
+  },
+  {
+    "jp": "ケチャップ",
+    "romaji": "kechappu",
+    "zh": "番茄酱"
+  },
+  {
+    "jp": "しお",
+    "romaji": "shio",
+    "zh": "盐"
+  },
+  {
+    "jp": "さとう",
+    "romaji": "satou",
+    "zh": "糖"
+  },
+  {
+    "jp": "しょうゆ",
+    "romaji": "shouyu",
+    "zh": "酱油"
+  },
+  {
+    "jp": "みそ",
+    "romaji": "miso",
+    "zh": "味噌"
+  },
+  {
+    "jp": "あぶら",
+    "romaji": "abura",
+    "zh": "油"
+  },
+  {
+    "jp": "こめ",
+    "romaji": "kome",
+    "zh": "米"
+  },
+  {
+    "jp": "むぎ",
+    "romaji": "mugi",
+    "zh": "麦"
+  },
+  {
+    "jp": "こむぎこ",
+    "romaji": "komugiko",
+    "zh": "面粉"
+  },
+  {
+    "jp": "うどん",
+    "romaji": "udon",
+    "zh": "乌冬面"
+  },
+  {
+    "jp": "ラーメン",
+    "romaji": "raamen",
+    "zh": "拉面"
+  },
+  {
+    "jp": "そば",
+    "romaji": "soba",
+    "zh": "荞麦面"
+  },
+  {
+    "jp": "スパゲッティ",
+    "romaji": "supagetti",
+    "zh": "意大利面"
+  },
+  {
+    "jp": "ピザ",
+    "romaji": "piza",
+    "zh": "披萨"
+  },
+  {
+    "jp": "ハンバーガー",
+    "romaji": "hanbaagaa",
+    "zh": "汉堡"
+  },
+  {
+    "jp": "カレー",
+    "romaji": "karee",
+    "zh": "咖喱"
+  },
+  {
+    "jp": "すし",
+    "romaji": "sushi",
+    "zh": "寿司"
+  },
+  {
+    "jp": "てんぷら",
+    "romaji": "tenpura",
+    "zh": "天妇罗"
+  },
+  {
+    "jp": "やきとり",
+    "romaji": "yakitori",
+    "zh": "烤鸡串"
+  },
+  {
+    "jp": "ぎょうざ",
+    "romaji": "gyouza",
+    "zh": "饺子"
+  },
+  {
+    "jp": "あかちゃん",
+    "romaji": "akachan",
+    "zh": "婴儿"
+  },
+  {
+    "jp": "こども",
+    "romaji": "kodomo",
+    "zh": "孩子"
+  },
+  {
+    "jp": "おとな",
+    "romaji": "otona",
+    "zh": "大人"
+  },
+  {
+    "jp": "わかもの",
+    "romaji": "wakamono",
+    "zh": "年轻人"
+  },
+  {
+    "jp": "おとこ",
+    "romaji": "otoko",
+    "zh": "男人"
+  },
+  {
+    "jp": "おんな",
+    "romaji": "onna",
+    "zh": "女人"
+  },
+  {
+    "jp": "おじいさん",
+    "romaji": "ojiisan",
+    "zh": "老爷爷"
+  },
+  {
+    "jp": "おばあさん",
+    "romaji": "obaasan",
+    "zh": "老奶奶"
+  },
+  {
+    "jp": "おじさん",
+    "romaji": "ojisan",
+    "zh": "叔叔"
+  },
+  {
+    "jp": "おばさん",
+    "romaji": "obasan",
+    "zh": "阿姨"
+  },
+  {
+    "jp": "りょうしん",
+    "romaji": "ryoushin",
+    "zh": "父母",
+    "kanji": "両親",
+    "tone": 1,
+    "pos": "名"
+  },
+  {
+    "jp": "そふ",
+    "romaji": "sofu",
+    "zh": "祖父"
+  },
+  {
+    "jp": "そぼ",
+    "romaji": "sobo",
+    "zh": "祖母"
+  },
+  {
+    "jp": "おい",
+    "romaji": "oi",
+    "zh": "侄子"
+  },
+  {
+    "jp": "めい",
+    "romaji": "mei",
+    "zh": "侄女"
+  },
+  {
+    "jp": "いとこ",
+    "romaji": "itoko",
+    "zh": "堂,表兄弟姐妹"
+  }
+]

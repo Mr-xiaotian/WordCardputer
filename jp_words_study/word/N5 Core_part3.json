@@ -1,0 +1,416 @@
+[
+  {
+    "jp": "がくせい",
+    "romaji": "gakusei",
+    "zh": "(大)学生; 学生",
+    "kanji": "学生",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "ともだち",
+    "romaji": "tomodachi",
+    "zh": "朋友",
+    "kanji": "友だち",
+    "tone": 0,
+    "pos": "名"
+  },
+  {
+    "jp": "かぞく",
+    "romaji": "kazoku",
+    "zh": "家庭,家人",
+    "kanji": "家族",
+    "tone": -1,
+    "score": 3,
+    "pos": "名"
+  },
+  {
+    "jp": "ちち",
+    "romaji": "chichi",
+    "zh": "(我)父亲",
+    "kanji": "父",
+    "tone": 1,
+    "pos": "名"
+  },
+  {
+    "jp": "はは",
+    "romaji": "haha",
+    "zh": "(我)母亲",
+    "kanji": "母",
+    "tone": 1,
+    "pos": "名"
+  },
+  {
+    "jp": "あに",
+    "romaji": "ani",
+    "zh": "(我)哥哥",
+    "kanji": "兄",
+    "tone": 1,
+    "pos": "名"
+  },
+  {
+    "jp": "あね",
+    "romaji": "ane",
+    "zh": "(我)姐姐",
+    "kanji": "姉",
+    "tone": 0,
+    "pos": "名"
+  },
+  {
+    "jp": "おとうと",
+    "romaji": "otouto",
+    "zh": "弟弟"
+  },
+  {
+    "jp": "いもうと",
+    "romaji": "imouto",
+    "zh": "妹妹"
+  },
+  {
+    "jp": "うち",
+    "romaji": "uchi",
+    "zh": "家",
+    "kanji": "家",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "へや",
+    "romaji": "heya",
+    "zh": "房间"
+  },
+  {
+    "jp": "いえ",
+    "romaji": "ie",
+    "zh": "家; 房子",
+    "kanji": "家",
+    "tone": 2,
+    "pos": "名"
+  },
+  {
+    "jp": "とけい",
+    "romaji": "tokei",
+    "zh": "表, 钟表",
+    "kanji": "時計",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "でんわ",
+    "romaji": "denwa",
+    "zh": "电话",
+    "kanji": "電話",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "ほん",
+    "romaji": "hon",
+    "zh": "书",
+    "kanji": "本",
+    "tone": -1,
+    "score": 3
+  },
+  {
+    "jp": "ノート",
+    "romaji": "nooto",
+    "zh": "笔记本",
+    "kanji": null,
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "えんぴつ",
+    "romaji": "enpitsu",
+    "zh": "铅笔",
+    "kanji": "鉛筆",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "ペン",
+    "romaji": "pen",
+    "zh": "钢笔"
+  },
+  {
+    "jp": "かばん",
+    "romaji": "kaban",
+    "zh": "包",
+    "kanji": "鞄",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "はし",
+    "romaji": "hashi",
+    "zh": "筷子; 桥",
+    "kanji": "箸",
+    "tone": 1
+  },
+  {
+    "jp": "スプーン",
+    "romaji": "supuun",
+    "zh": "（西餐用）勺子",
+    "kanji": "",
+    "tone": 2
+  },
+  {
+    "jp": "フォーク",
+    "romaji": "fooku",
+    "zh": "叉子"
+  },
+  {
+    "jp": "ナイフ",
+    "romaji": "naifu",
+    "zh": "刀"
+  },
+  {
+    "jp": "おかね",
+    "romaji": "okane",
+    "zh": "钱"
+  },
+  {
+    "jp": "えん",
+    "romaji": "en",
+    "zh": "日元"
+  },
+  {
+    "jp": "でんしゃ",
+    "romaji": "densha",
+    "zh": "电车",
+    "kanji": "電車",
+    "tone": 0,
+    "pos": "名"
+  },
+  {
+    "jp": "バス",
+    "romaji": "basu",
+    "zh": "公共汽车,巴士",
+    "kanji": "",
+    "tone": 1,
+    "pos": "名"
+  },
+  {
+    "jp": "くるま",
+    "romaji": "kuruma",
+    "zh": "车; 汽车",
+    "kanji": "車",
+    "tone": 0,
+    "pos": "名"
+  },
+  {
+    "jp": "じてんしゃ",
+    "romaji": "jitensha",
+    "zh": "自行车",
+    "kanji": "自転車",
+    "tone": -1,
+    "score": 3,
+    "pos": "名"
+  },
+  {
+    "jp": "ひこうき",
+    "romaji": "hikouki",
+    "zh": "飞机",
+    "kanji": "飛行機",
+    "tone": 2,
+    "pos": "名"
+  },
+  {
+    "jp": "きっぷ",
+    "romaji": "kippu",
+    "zh": "票"
+  },
+  {
+    "jp": "えき",
+    "romaji": "eki",
+    "zh": "车站",
+    "kanji": "駅",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "みち",
+    "romaji": "michi",
+    "zh": "道路"
+  },
+  {
+    "jp": "まち",
+    "romaji": "machi",
+    "zh": "城市; 城市,街道"
+  },
+  {
+    "jp": "ぎんこう",
+    "romaji": "ginkou",
+    "zh": "银行"
+  },
+  {
+    "jp": "ゆうびんきょく",
+    "romaji": "yuubinkyoku",
+    "zh": "邮局",
+    "kanji": "郵便局",
+    "tone": 3,
+    "score": 2
+  },
+  {
+    "jp": "びょういん",
+    "romaji": "byouin",
+    "zh": "医院",
+    "kanji": "病院",
+    "tone": 0,
+    "score": 4
+  },
+  {
+    "jp": "ほんや",
+    "romaji": "honya",
+    "zh": "书店"
+  },
+  {
+    "jp": "レストラン",
+    "romaji": "resutoran",
+    "zh": "餐厅",
+    "kanji": "",
+    "tone": 1,
+    "score": 4
+  },
+  {
+    "jp": "えいが",
+    "romaji": "eiga",
+    "zh": "电影",
+    "kanji": "映画",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "おんがく",
+    "romaji": "ongaku",
+    "zh": "音乐",
+    "kanji": "音楽",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "スポーツ",
+    "romaji": "supootsu",
+    "zh": "运动",
+    "kanji": null,
+    "tone": 2,
+    "score": 3
+  },
+  {
+    "jp": "あさ",
+    "romaji": "asa",
+    "zh": "早晨; 早上"
+  },
+  {
+    "jp": "ひる",
+    "romaji": "hiru",
+    "zh": "中午",
+    "kanji": "昼",
+    "tone": 2,
+    "score": 4
+  },
+  {
+    "jp": "ゆうがた",
+    "romaji": "yuugata",
+    "zh": "傍晚",
+    "kanji": "夕方",
+    "tone": 0,
+    "score": 4
+  },
+  {
+    "jp": "よる",
+    "romaji": "yoru",
+    "zh": "晚上; 夜晚",
+    "kanji": "夜",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "げつようび",
+    "romaji": "getsuyoubi",
+    "zh": "星期一",
+    "kanji": "月曜日",
+    "tone": 3,
+    "score": 3
+  },
+  {
+    "jp": "かようび",
+    "romaji": "kayoubi",
+    "zh": "星期二",
+    "kanji": "火曜日",
+    "tone": 2,
+    "score": 5
+  },
+  {
+    "jp": "すいようび",
+    "romaji": "suiyoubi",
+    "zh": "星期三",
+    "kanji": "水曜日",
+    "tone": 3,
+    "score": 5
+  },
+  {
+    "jp": "もくようび",
+    "romaji": "mokuyoubi",
+    "zh": "星期四",
+    "kanji": "木曜日",
+    "tone": 3,
+    "score": 5
+  },
+  {
+    "jp": "きんようび",
+    "romaji": "kinyoubi",
+    "zh": "星期五",
+    "kanji": "金曜日",
+    "tone": 3,
+    "score": 5
+  },
+  {
+    "jp": "どようび",
+    "romaji": "doyoubi",
+    "zh": "星期六",
+    "kanji": "土曜日",
+    "tone": 2,
+    "score": 5
+  },
+  {
+    "jp": "にちようび",
+    "romaji": "nichiyoubi",
+    "zh": "星期日",
+    "kanji": "日曜日",
+    "tone": 3,
+    "score": 5
+  },
+  {
+    "jp": "いま",
+    "romaji": "ima",
+    "zh": "现在",
+    "kanji": "今",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "きのう",
+    "romaji": "kinou",
+    "zh": "昨天",
+    "kanji": "昨日",
+    "tone": 2,
+    "score": 3
+  },
+  {
+    "jp": "きょう",
+    "romaji": "kyou",
+    "zh": "今天",
+    "kanji": "今日",
+    "tone": 1,
+    "score": 4
+  },
+  {
+    "jp": "あした",
+    "romaji": "ashita",
+    "zh": "明天",
+    "kanji": "明日",
+    "tone": 3,
+    "score": 5
+  }
+]
