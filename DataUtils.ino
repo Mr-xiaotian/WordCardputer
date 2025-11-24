@@ -19,7 +19,7 @@ bool loadWordsFromJSON(const String &filepath) {
         w.jp = obj["jp"] | "";
         w.zh = obj["zh"] | "";
         w.kanji = obj["kanji"] | "";
-        w.tone = obj["tone"] | 0;
+        w.tone = obj["tone"] | -1;
         w.score = obj["score"] | 3;
 
         if (w.jp.length() > 0) words.push_back(w);

@@ -50,10 +50,11 @@
     },
     {
         "jp": "レストラン",
-        "zh": "餐馆",
+        "zh": "餐厅",
         "kanji": "",
         "tone": 1,
-        "score": 4
+        "score": 4,
+        "romaji": "resutoran"
     },
     {
         "jp": "しょくどう",
@@ -74,6 +75,7 @@
         "zh": "周末",
         "kanji": "週末",
         "tone": 0,
-        "score": 3
+        "score": 3,
+        "romaji": "shuumatsu"
     }
 ]

@@ -1,317 +1,348 @@
 [
-  {
-    "jp": "いま",
-    "zh": "现在",
-    "kanji": "今",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "なんじ",
-    "zh": "几点",
-    "kanji": "何時",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "まいあさ",
-    "zh": "每天早上",
-    "kanji": "毎朝",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "おきる",
-    "zh": "起床",
-    "kanji": "起きる",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "きのう",
-    "zh": "昨天",
-    "kanji": "昨日",
-    "tone": 2,
-    "score": 3
-  },
-  {
-    "jp": "べんきょうする",
-    "zh": "学习",
-    "kanji": "勉強する",
-    "tone": 0,
-    "score": 4
-  },
-  {
-    "jp": "まえ",
-    "zh": "前，之前",
-    "kanji": "前",
-    "tone": 1,
-    "score": 4
-  },
-  {
-    "jp": "ひる",
-    "zh": "中午",
-    "kanji": "昼",
-    "tone": 2,
-    "score": 4
-  },
-  {
-    "jp": "よる",
-    "zh": "晚上",
-    "kanji": "夜",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "ごぜん",
-    "zh": "上午",
-    "kanji": "午前",
-    "tone": 1,
-    "score": 4
-  },
-  {
-    "jp": "ごご",
-    "zh": "下午",
-    "kanji": "午後",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "びょういん",
-    "zh": "医院",
-    "kanji": "病院",
-    "tone": 0,
-    "score": 4
-  },
-  {
-    "jp": "ゆうがた",
-    "zh": "傍晚",
-    "kanji": "夕方",
-    "tone": 0,
-    "score": 4
-  },
-  {
-    "jp": "たいへん",
-    "zh": "辛苦，困难",
-    "kanji": "大変",
-    "tone": 0,
-    "score": 4
-  },
-  {
-    "jp": "アルバイト",
-    "zh": "打工",
-    "kanji": "",
-    "tone": 3,
-    "score": 5
-  },
-  {
-    "jp": "きっさてん",
-    "zh": "茶馆",
-    "kanji": "喫茶店",
-    "tone": 3,
-    "score": 4
-  },
-  {
-    "jp": "みせ",
-    "zh": "商店",
-    "kanji": "店",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "まいばん",
-    "zh": "每天晚上",
-    "kanji": "毎晩",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "ねる",
-    "zh": "睡觉",
-    "kanji": "寝る",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "まいにち",
-    "zh": "每天",
-    "kanji": "毎日",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "はたらく",
-    "zh": "工作",
-    "kanji": "働く",
-    "tone": 0,
-    "score": 2
-  },
-  {
-    "jp": "にちようび",
-    "zh": "星期日",
-    "kanji": "日曜日",
-    "tone": 3,
-    "score": 5
-  },
-  {
-    "jp": "あそぶ",
-    "zh": "玩",
-    "kanji": "遊ぶ",
-    "tone": 0,
-    "score": 4
-  },
-  {
-    "jp": "やすむ",
-    "zh": "休息",
-    "kanji": "休む",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "げつようび",
-    "zh": "星期一",
-    "kanji": "月曜日",
-    "tone": 3,
-    "score": 3
-  },
-  {
-    "jp": "かようび",
-    "zh": "星期二",
-    "kanji": "火曜日",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "すいようび",
-    "zh": "星期三",
-    "kanji": "水曜日",
-    "tone": 3,
-    "score": 5
-  },
-  {
-    "jp": "もくようび",
-    "zh": "星期四",
-    "kanji": "木曜日",
-    "tone": 3,
-    "score": 5
-  },
-  {
-    "jp": "きんようび",
-    "zh": "星期五",
-    "kanji": "金曜日",
-    "tone": 3,
-    "score": 5
-  },
-  {
-    "jp": "どようび",
-    "zh": "星期六",
-    "kanji": "土曜日",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "なんようび",
-    "zh": "星期几",
-    "kanji": "何曜日",
-    "tone": 3,
-    "score": 5
-  },
-  {
-    "jp": "はじまる",
-    "zh": "开始",
-    "kanji": "始まる",
-    "tone": 0,
-    "score": 5
-  },
-  {
-    "jp": "おわる",
-    "zh": "结束",
-    "kanji": "終わる",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "じゅぎょう",
-    "zh": "上课",
-    "kanji": "授業",
-    "tone": 1,
-    "score": 2
-  },
-  {
-    "jp": "いつも",
-    "zh": "总是",
-    "kanji": "",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "かいぎ",
-    "zh": "会议",
-    "kanji": "会議",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "テスト",
-    "zh": "考试",
-    "kanji": "",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "ごみ",
-    "zh": "垃圾",
-    "kanji": "",
-    "tone": 2,
-    "score": 4
-  },
-  {
-    "jp": "あした",
-    "zh": "明天",
-    "kanji": "明日",
-    "tone": 3,
-    "score": 5
-  },
-  {
-    "jp": "あさって",
-    "zh": "后天",
-    "kanji": "明後日",
-    "tone": 2,
-    "score": 1
-  },
-  {
-    "jp": "ゆうべ",
-    "zh": "昨夜",
-    "kanji": "昨夜",
-    "tone": 3,
-    "score": 4
-  },
-  {
-    "jp": "きょう",
-    "zh": "今天",
-    "kanji": "今日",
-    "tone": 1,
-    "score": 4
-  },
-  {
-    "jp": "けさ",
-    "zh": "今天早上",
-    "kanji": "今朝",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "こんや",
-    "zh": "今晚",
-    "kanji": "今夜",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "しゅうまつ",
-    "zh": "周末",
-    "kanji": "週末",
-    "tone": 0,
-    "score": 3
-  }
+    {
+        "jp": "いま",
+        "zh": "现在",
+        "kanji": "今",
+        "tone": 1,
+        "score": 5,
+        "romaji": "ima"
+    },
+    {
+        "jp": "なんじ",
+        "zh": "几点",
+        "kanji": "何時",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "まいあさ",
+        "zh": "每天早上",
+        "kanji": "毎朝",
+        "tone": 1,
+        "score": 5,
+        "romaji": "maiasa"
+    },
+    {
+        "jp": "おきる",
+        "zh": "起床",
+        "kanji": "起きる",
+        "tone": 2,
+        "score": 5,
+        "romaji": "okiru"
+    },
+    {
+        "jp": "きのう",
+        "zh": "昨天",
+        "kanji": "昨日",
+        "tone": 2,
+        "score": 3,
+        "romaji": "kinou"
+    },
+    {
+        "jp": "べんきょうする",
+        "zh": "学习",
+        "kanji": "勉強する",
+        "tone": 0,
+        "score": 4,
+        "romaji": "benkyou suru"
+    },
+    {
+        "jp": "まえ",
+        "zh": "前,之前; 前面",
+        "kanji": "前",
+        "tone": 1,
+        "score": 4,
+        "romaji": "mae"
+    },
+    {
+        "jp": "ひる",
+        "zh": "中午",
+        "kanji": "昼",
+        "tone": 2,
+        "score": 4,
+        "romaji": "hiru"
+    },
+    {
+        "jp": "よる",
+        "zh": "晚上; 夜晚",
+        "kanji": "夜",
+        "tone": 1,
+        "score": 5,
+        "romaji": "yoru"
+    },
+    {
+        "jp": "ごぜん",
+        "zh": "上午",
+        "kanji": "午前",
+        "tone": 1,
+        "score": 4
+    },
+    {
+        "jp": "ごご",
+        "zh": "下午",
+        "kanji": "午後",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "びょういん",
+        "zh": "医院",
+        "kanji": "病院",
+        "tone": 0,
+        "score": 4,
+        "romaji": "byouin"
+    },
+    {
+        "jp": "ゆうがた",
+        "zh": "傍晚",
+        "kanji": "夕方",
+        "tone": 0,
+        "score": 4,
+        "romaji": "yuugata"
+    },
+    {
+        "jp": "たいへん",
+        "zh": "辛苦，困难",
+        "kanji": "大変",
+        "tone": 0,
+        "score": 4
+    },
+    {
+        "jp": "アルバイト",
+        "zh": "打工",
+        "kanji": "",
+        "tone": 3,
+        "score": 5
+    },
+    {
+        "jp": "きっさてん",
+        "zh": "茶馆; 咖啡店",
+        "kanji": "喫茶店",
+        "tone": 3,
+        "score": 4,
+        "romaji": "kissaten"
+    },
+    {
+        "jp": "みせ",
+        "zh": "商店",
+        "kanji": "店",
+        "tone": 2,
+        "score": 5,
+        "romaji": "mise"
+    },
+    {
+        "jp": "まいばん",
+        "zh": "每天晚上",
+        "kanji": "毎晩",
+        "tone": 1,
+        "score": 5,
+        "romaji": "maiban"
+    },
+    {
+        "jp": "ねる",
+        "zh": "睡觉",
+        "kanji": "寝る",
+        "tone": 0,
+        "score": 3,
+        "romaji": "neru"
+    },
+    {
+        "jp": "まいにち",
+        "zh": "每天",
+        "kanji": "毎日",
+        "tone": 1,
+        "score": 5,
+        "romaji": "mainichi"
+    },
+    {
+        "jp": "はたらく",
+        "zh": "工作",
+        "kanji": "働く",
+        "tone": 0,
+        "score": 2,
+        "romaji": "hataraku"
+    },
+    {
+        "jp": "にちようび",
+        "zh": "星期日",
+        "kanji": "日曜日",
+        "tone": 3,
+        "score": 5,
+        "romaji": "nichiyoubi"
+    },
+    {
+        "jp": "あそぶ",
+        "zh": "玩",
+        "kanji": "遊ぶ",
+        "tone": 0,
+        "score": 4,
+        "romaji": "asobu"
+    },
+    {
+        "jp": "やすむ",
+        "zh": "休息",
+        "kanji": "休む",
+        "tone": 2,
+        "score": 5
+    },
+    {
+        "jp": "げつようび",
+        "zh": "星期一",
+        "kanji": "月曜日",
+        "tone": 3,
+        "score": 3,
+        "romaji": "getsuyoubi"
+    },
+    {
+        "jp": "かようび",
+        "zh": "星期二",
+        "kanji": "火曜日",
+        "tone": 2,
+        "score": 5,
+        "romaji": "kayoubi"
+    },
+    {
+        "jp": "すいようび",
+        "zh": "星期三",
+        "kanji": "水曜日",
+        "tone": 3,
+        "score": 5,
+        "romaji": "suiyoubi"
+    },
+    {
+        "jp": "もくようび",
+        "zh": "星期四",
+        "kanji": "木曜日",
+        "tone": 3,
+        "score": 5,
+        "romaji": "mokuyoubi"
+    },
+    {
+        "jp": "きんようび",
+        "zh": "星期五",
+        "kanji": "金曜日",
+        "tone": 3,
+        "score": 5,
+        "romaji": "kinyoubi"
+    },
+    {
+        "jp": "どようび",
+        "zh": "星期六",
+        "kanji": "土曜日",
+        "tone": 2,
+        "score": 5,
+        "romaji": "doyoubi"
+    },
+    {
+        "jp": "なんようび",
+        "zh": "星期几",
+        "kanji": "何曜日",
+        "tone": 3,
+        "score": 5
+    },
+    {
+        "jp": "はじまる",
+        "zh": "开始",
+        "kanji": "始まる",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "おわる",
+        "zh": "结束",
+        "kanji": "終わる",
+        "tone": 0,
+        "score": 3,
+        "romaji": "owaru"
+    },
+    {
+        "jp": "じゅぎょう",
+        "zh": "上课; 课",
+        "kanji": "授業",
+        "tone": 1,
+        "score": 2,
+        "romaji": "jugyou"
+    },
+    {
+        "jp": "いつも",
+        "zh": "总是",
+        "kanji": "",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "かいぎ",
+        "zh": "会议",
+        "kanji": "会議",
+        "tone": 1,
+        "score": 3,
+        "romaji": "kaigi"
+    },
+    {
+        "jp": "テスト",
+        "zh": "考试",
+        "kanji": "",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "ごみ",
+        "zh": "垃圾",
+        "kanji": "",
+        "tone": 2,
+        "score": 4
+    },
+    {
+        "jp": "あした",
+        "zh": "明天",
+        "kanji": "明日",
+        "tone": 3,
+        "score": 5,
+        "romaji": "ashita"
+    },
+    {
+        "jp": "あさって",
+        "zh": "后天",
+        "kanji": "明後日",
+        "tone": 2,
+        "score": 1,
+        "romaji": "asatte"
+    },
+    {
+        "jp": "ゆうべ",
+        "zh": "昨夜",
+        "kanji": "昨夜",
+        "tone": 3,
+        "score": 4
+    },
+    {
+        "jp": "きょう",
+        "zh": "今天",
+        "kanji": "今日",
+        "tone": 1,
+        "score": 4,
+        "romaji": "kyou"
+    },
+    {
+        "jp": "けさ",
+        "zh": "今天早上",
+        "kanji": "今朝",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "こんや",
+        "zh": "今晚",
+        "kanji": "今夜",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "しゅうまつ",
+        "zh": "周末",
+        "kanji": "週末",
+        "tone": 0,
+        "score": 3,
+        "romaji": "shuumatsu"
+    }
 ]

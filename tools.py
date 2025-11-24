@@ -147,3 +147,106 @@ def list_wav_filenames(folder_path: Path) -> List[str]:
         raise NotADirectoryError(f"{folder_path} 不是有效的文件夹。")
 
     return [wav_file.stem for wav_file in folder_path.glob("*.wav")]
+
+
+def merge_json_folder(folder_path):
+    folder = Path(folder_path)
+    all_entries = {}  # keyed by jp
+
+    # 读取所有 json 文件，累积大词典
+    for json_file in folder.glob("*.json"):
+        with open(json_file, "r", encoding="utf-8") as f:
+            try:
+                data = json.load(f)
+            except Exception as e:
+                print(f"Error reading {json_file}: {e}")
+                continue
+
+        for entry in data:
+            jp = entry.get("jp")
+            if not jp:
+                continue
+
+            if jp not in all_entries:
+                all_entries[jp] = dict(entry)
+            else:
+                merged = all_entries[jp]
+                for key, val in entry.items():
+                    if key not in merged:
+                        merged[key] = val
+                        continue
+
+                    old = merged[key]
+                    if key == "score":
+                        try:
+                            merged[key] = min(old, val)
+                        except:
+                            merged[key] = old
+                    elif key == "tone":
+                        try:
+                            merged[key] = val if old == val else -1
+                        except:
+                            merged[key] = -1
+                    else:
+                        if old != val and val not in old.split("; "):
+                            merged[key] = f"{old}; {val}"
+                all_entries[jp] = merged
+
+    # 用合并后的大词典更新每个文件的内容
+    for json_file in folder.glob("*.json"):
+        with open(json_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        new_list = []
+        for entry in data:
+            jp = entry.get("jp")
+            if not jp:
+                new_list.append(entry)
+                continue
+
+            merged = all_entries.get(jp, {})
+            # 按原顺序更新字段
+            new_entry = {}
+            for key in entry.keys():
+                if key in merged:
+                    new_entry[key] = merged[key]
+            # 加入额外字段（保持出现顺序：原字段优先，新增字段后）
+            for key, val in merged.items():
+                if key not in new_entry:
+                    new_entry[key] = val
+
+            new_list.append(new_entry)
+
+        with open(json_file, "w", encoding="utf-8") as f:
+            json.dump(new_list, f, ensure_ascii=False, indent=4)
+
+    return all_entries
+
+
+def filter_json_by_jp_difference(path_a, path_b):
+    """
+    path_a: 第一个 json 文件路径
+    path_b: 第二个 json 文件路径
+    """
+    path_a = Path(path_a)
+    path_b = Path(path_b)
+
+    # 取两个文件的 jp 列表
+    jp_a = set(extract_jp_fields(path_a))
+    jp_b = set(extract_jp_fields(path_b))
+
+    # 只保留 A 中独有的 JP
+    unique_jp = jp_a - jp_b
+
+    # 读取 A 的原始内容
+    with open(path_a, "r", encoding="utf-8") as f:
+        data_a = json.load(f)
+
+    # 过滤
+    filtered = [entry for entry in data_a if entry.get("jp") in unique_jp]
+
+    # 写回 A
+    with open(path_a, "w", encoding="utf-8") as f:
+        json.dump(filtered, f, ensure_ascii=False, indent=4)
+
+    return unique_jp

@@ -1,0 +1,1903 @@
+[
+    {
+        "jp": "とおい",
+        "romaji": "tooi",
+        "zh": "远的"
+    },
+    {
+        "jp": "ちかい",
+        "romaji": "chikai",
+        "zh": "近的"
+    },
+    {
+        "jp": "ながい",
+        "romaji": "nagai",
+        "zh": "长的"
+    },
+    {
+        "jp": "みじかい",
+        "romaji": "mijikai",
+        "zh": "短的"
+    },
+    {
+        "jp": "ふとい",
+        "romaji": "futoi",
+        "zh": "粗的,胖的"
+    },
+    {
+        "jp": "ほそい",
+        "romaji": "hosoi",
+        "zh": "细的,瘦的"
+    },
+    {
+        "jp": "はやい",
+        "romaji": "hayai",
+        "zh": "快的,早的"
+    },
+    {
+        "jp": "おそい",
+        "romaji": "osoi",
+        "zh": "慢的,晚的"
+    },
+    {
+        "jp": "つめたい",
+        "romaji": "tsumetai",
+        "zh": "冷的(物体)"
+    },
+    {
+        "jp": "あまい",
+        "romaji": "amai",
+        "zh": "甜的"
+    },
+    {
+        "jp": "からい",
+        "romaji": "karai",
+        "zh": "辣的"
+    },
+    {
+        "jp": "しょっぱい",
+        "romaji": "shoppai",
+        "zh": "咸的"
+    },
+    {
+        "jp": "すっぱい",
+        "romaji": "suppai",
+        "zh": "酸的"
+    },
+    {
+        "jp": "にがい",
+        "romaji": "nigai",
+        "zh": "苦的"
+    },
+    {
+        "jp": "いそがしい",
+        "romaji": "isogashii",
+        "zh": "忙的"
+    },
+    {
+        "jp": "ひま",
+        "romaji": "hima",
+        "zh": "闲的"
+    },
+    {
+        "jp": "つよい",
+        "romaji": "tsuyoi",
+        "zh": "强的"
+    },
+    {
+        "jp": "よわい",
+        "romaji": "yowai",
+        "zh": "弱的"
+    },
+    {
+        "jp": "うるさい",
+        "romaji": "urusai",
+        "zh": "吵闹的"
+    },
+    {
+        "jp": "しずか",
+        "romaji": "shizuka",
+        "zh": "安静的"
+    },
+    {
+        "jp": "きれい",
+        "romaji": "kirei",
+        "zh": "漂亮的,干净的"
+    },
+    {
+        "jp": "きたない",
+        "romaji": "kitanai",
+        "zh": "脏的"
+    },
+    {
+        "jp": "げんき",
+        "romaji": "genki",
+        "zh": "健康的,精神好的"
+    },
+    {
+        "jp": "びょうき",
+        "romaji": "byouki",
+        "zh": "生病的; 疾病"
+    },
+    {
+        "jp": "たのしい",
+        "romaji": "tanoshii",
+        "zh": "愉快的"
+    },
+    {
+        "jp": "つまらない",
+        "romaji": "tsumaranai",
+        "zh": "无聊的"
+    },
+    {
+        "jp": "おもしろい",
+        "romaji": "omoshiroi",
+        "zh": "有趣的"
+    },
+    {
+        "jp": "むり",
+        "romaji": "muri",
+        "zh": "不可能的"
+    },
+    {
+        "jp": "かんたん",
+        "romaji": "kantan",
+        "zh": "简单的"
+    },
+    {
+        "jp": "じょうず",
+        "romaji": "jouzu",
+        "zh": "擅长的"
+    },
+    {
+        "jp": "へた",
+        "romaji": "heta",
+        "zh": "不擅长的"
+    },
+    {
+        "jp": "すき",
+        "romaji": "suki",
+        "zh": "喜欢"
+    },
+    {
+        "jp": "きらい",
+        "romaji": "kirai",
+        "zh": "讨厌"
+    },
+    {
+        "jp": "ほしい",
+        "romaji": "hoshii",
+        "zh": "想要"
+    },
+    {
+        "jp": "いらない",
+        "romaji": "iranai",
+        "zh": "不需要"
+    },
+    {
+        "jp": "だいすき",
+        "romaji": "daisuki",
+        "zh": "非常喜欢"
+    },
+    {
+        "jp": "だいきらい",
+        "romaji": "daikirai",
+        "zh": "非常讨厌"
+    },
+    {
+        "jp": "おぼえる",
+        "romaji": "oboeru",
+        "zh": "记住"
+    },
+    {
+        "jp": "わすれる",
+        "romaji": "wasureru",
+        "zh": "忘记"
+    },
+    {
+        "jp": "わかる",
+        "romaji": "wakaru",
+        "zh": "明白,懂"
+    },
+    {
+        "jp": "しる",
+        "romaji": "shiru",
+        "zh": "知道"
+    },
+    {
+        "jp": "おもう",
+        "romaji": "omou",
+        "zh": "认为"
+    },
+    {
+        "jp": "かんがえる",
+        "romaji": "kangaeru",
+        "zh": "思考"
+    },
+    {
+        "jp": "できる",
+        "romaji": "dekiru",
+        "zh": "能够,可以"
+    },
+    {
+        "jp": "もつ",
+        "romaji": "motsu",
+        "zh": "拿,持有"
+    },
+    {
+        "jp": "とる",
+        "romaji": "toru",
+        "zh": "照相,拍摄; 拿,取",
+        "kanji": "撮る",
+        "tone": 1
+    },
+    {
+        "jp": "おく",
+        "romaji": "oku",
+        "zh": "放置; 亿",
+        "kanji": "億",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "だす",
+        "romaji": "dasu",
+        "zh": "拿出"
+    },
+    {
+        "jp": "いれる",
+        "romaji": "ireru",
+        "zh": "放入"
+    },
+    {
+        "jp": "つける",
+        "romaji": "tsukeru",
+        "zh": "开(灯)"
+    },
+    {
+        "jp": "けす",
+        "romaji": "kesu",
+        "zh": "关(灯)"
+    },
+    {
+        "jp": "つかう",
+        "romaji": "tsukau",
+        "zh": "使用",
+        "kanji": "使う",
+        "tone": 0
+    },
+    {
+        "jp": "うごく",
+        "romaji": "ugoku",
+        "zh": "动"
+    },
+    {
+        "jp": "とまる",
+        "romaji": "tomaru",
+        "zh": "停"
+    },
+    {
+        "jp": "はしる",
+        "romaji": "hashiru",
+        "zh": "跑"
+    },
+    {
+        "jp": "およぐ",
+        "romaji": "oyogu",
+        "zh": "游泳"
+    },
+    {
+        "jp": "とぶ",
+        "romaji": "tobu",
+        "zh": "飞,跳"
+    },
+    {
+        "jp": "のぼる",
+        "romaji": "noboru",
+        "zh": "爬上"
+    },
+    {
+        "jp": "おりる",
+        "romaji": "oriru",
+        "zh": "下来"
+    },
+    {
+        "jp": "あがる",
+        "romaji": "agaru",
+        "zh": "上升"
+    },
+    {
+        "jp": "さがる",
+        "romaji": "sagaru",
+        "zh": "下降"
+    },
+    {
+        "jp": "かえす",
+        "romaji": "kaesu",
+        "zh": "归还"
+    },
+    {
+        "jp": "おくる",
+        "romaji": "okuru",
+        "zh": "送"
+    },
+    {
+        "jp": "かける",
+        "romaji": "kakeru",
+        "zh": "打(电话)",
+        "kanji": "",
+        "tone": 2
+    },
+    {
+        "jp": "でんわする",
+        "romaji": "denwa suru",
+        "zh": "打电话"
+    },
+    {
+        "jp": "いう",
+        "romaji": "iu",
+        "zh": "说"
+    },
+    {
+        "jp": "はなれる",
+        "romaji": "hanareru",
+        "zh": "分开"
+    },
+    {
+        "jp": "あつまる",
+        "romaji": "atsumaru",
+        "zh": "聚集"
+    },
+    {
+        "jp": "うまれる",
+        "romaji": "umareru",
+        "zh": "出生"
+    },
+    {
+        "jp": "しぬ",
+        "romaji": "shinu",
+        "zh": "死"
+    },
+    {
+        "jp": "いきる",
+        "romaji": "ikiru",
+        "zh": "活"
+    },
+    {
+        "jp": "こわす",
+        "romaji": "kowasu",
+        "zh": "弄坏"
+    },
+    {
+        "jp": "あらう",
+        "romaji": "arau",
+        "zh": "洗"
+    },
+    {
+        "jp": "きる",
+        "romaji": "kiru",
+        "zh": "切,剪; 穿",
+        "kanji": "切る",
+        "tone": 1
+    },
+    {
+        "jp": "ぬぐ",
+        "romaji": "nugu",
+        "zh": "脱(衣)"
+    },
+    {
+        "jp": "きがえる",
+        "romaji": "kigaeru",
+        "zh": "换衣服"
+    },
+    {
+        "jp": "めをさます",
+        "romaji": "me wo samasu",
+        "zh": "醒来"
+    },
+    {
+        "jp": "すう",
+        "romaji": "suu",
+        "zh": "吸"
+    },
+    {
+        "jp": "うたう",
+        "romaji": "utau",
+        "zh": "唱歌"
+    },
+    {
+        "jp": "おどる",
+        "romaji": "odoru",
+        "zh": "跳舞"
+    },
+    {
+        "jp": "さんぽする",
+        "romaji": "sanpo suru",
+        "zh": "散步"
+    },
+    {
+        "jp": "チョコレート",
+        "romaji": "chokoreeto",
+        "zh": "巧克力"
+    },
+    {
+        "jp": "アイスクリーム",
+        "romaji": "aisukuriimu",
+        "zh": "冰淇淋"
+    },
+    {
+        "jp": "ケーキ",
+        "romaji": "keeki",
+        "zh": "蛋糕",
+        "kanji": "",
+        "tone": 1,
+        "score": 4
+    },
+    {
+        "jp": "コーヒー",
+        "romaji": "koohii",
+        "zh": "咖啡",
+        "kanji": null,
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "こうちゃ",
+        "romaji": "koucha",
+        "zh": "红茶"
+    },
+    {
+        "jp": "りょうり",
+        "romaji": "ryouri",
+        "zh": "菜肴,烹饪",
+        "kanji": "料理",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "あさごはん",
+        "romaji": "asagohan",
+        "zh": "早餐"
+    },
+    {
+        "jp": "ひるごはん",
+        "romaji": "hirugohan",
+        "zh": "午饭,午餐",
+        "kanji": "昼ご飯",
+        "tone": 3
+    },
+    {
+        "jp": "ばんごはん",
+        "romaji": "bangohan",
+        "zh": "晚餐"
+    },
+    {
+        "jp": "おちゃ",
+        "romaji": "ocha",
+        "zh": "茶",
+        "kanji": "お茶",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "ジュース",
+        "romaji": "juusu",
+        "zh": "果汁"
+    },
+    {
+        "jp": "ビール",
+        "romaji": "biiru",
+        "zh": "啤酒"
+    },
+    {
+        "jp": "おさけ",
+        "romaji": "osake",
+        "zh": "酒"
+    },
+    {
+        "jp": "りんご",
+        "romaji": "ringo",
+        "zh": "苹果",
+        "kanji": "",
+        "tone": 0,
+        "score": 4
+    },
+    {
+        "jp": "みかん",
+        "romaji": "mikan",
+        "zh": "橘子"
+    },
+    {
+        "jp": "バナナ",
+        "romaji": "banana",
+        "zh": "香蕉"
+    },
+    {
+        "jp": "いちご",
+        "romaji": "ichigo",
+        "zh": "草莓"
+    },
+    {
+        "jp": "ぶどう",
+        "romaji": "budou",
+        "zh": "葡萄"
+    },
+    {
+        "jp": "すいか",
+        "romaji": "suika",
+        "zh": "西瓜"
+    },
+    {
+        "jp": "メロン",
+        "romaji": "meron",
+        "zh": "哈密瓜"
+    },
+    {
+        "jp": "パイナップル",
+        "romaji": "painappuru",
+        "zh": "菠萝"
+    },
+    {
+        "jp": "もも",
+        "romaji": "momo",
+        "zh": "桃子"
+    },
+    {
+        "jp": "なし",
+        "romaji": "nashi",
+        "zh": "梨"
+    },
+    {
+        "jp": "キウイ",
+        "romaji": "kiui",
+        "zh": "猕猴桃"
+    },
+    {
+        "jp": "マンゴー",
+        "romaji": "mangoo",
+        "zh": "芒果"
+    },
+    {
+        "jp": "きゅうり",
+        "romaji": "kyuuri",
+        "zh": "黄瓜"
+    },
+    {
+        "jp": "トマト",
+        "romaji": "tomato",
+        "zh": "番茄"
+    },
+    {
+        "jp": "にんじん",
+        "romaji": "ninjin",
+        "zh": "胡萝卜"
+    },
+    {
+        "jp": "じゃがいも",
+        "romaji": "jagaimo",
+        "zh": "土豆"
+    },
+    {
+        "jp": "たまねぎ",
+        "romaji": "tamanegi",
+        "zh": "洋葱"
+    },
+    {
+        "jp": "なす",
+        "romaji": "nasu",
+        "zh": "茄子"
+    },
+    {
+        "jp": "ピーマン",
+        "romaji": "piiman",
+        "zh": "青椒"
+    },
+    {
+        "jp": "カボチャ",
+        "romaji": "kabocha",
+        "zh": "南瓜"
+    },
+    {
+        "jp": "ほうれんそう",
+        "romaji": "hourensou",
+        "zh": "菠菜"
+    },
+    {
+        "jp": "キャベツ",
+        "romaji": "kyabetsu",
+        "zh": "卷心菜"
+    },
+    {
+        "jp": "レタス",
+        "romaji": "retasu",
+        "zh": "生菜"
+    },
+    {
+        "jp": "もやし",
+        "romaji": "moyashi",
+        "zh": "豆芽"
+    },
+    {
+        "jp": "とうもろこし",
+        "romaji": "toumorokoshi",
+        "zh": "玉米"
+    },
+    {
+        "jp": "だいこん",
+        "romaji": "daikon",
+        "zh": "萝卜"
+    },
+    {
+        "jp": "ブロッコリー",
+        "romaji": "burokkorii",
+        "zh": "西兰花"
+    },
+    {
+        "jp": "きのこ",
+        "romaji": "kinoko",
+        "zh": "蘑菇"
+    },
+    {
+        "jp": "えだまめ",
+        "romaji": "edamame",
+        "zh": "毛豆"
+    },
+    {
+        "jp": "ごま",
+        "romaji": "goma",
+        "zh": "芝麻"
+    },
+    {
+        "jp": "ぎゅうにく",
+        "romaji": "gyuuniku",
+        "zh": "牛肉"
+    },
+    {
+        "jp": "ぶたにく",
+        "romaji": "butaniku",
+        "zh": "猪肉"
+    },
+    {
+        "jp": "とりにく",
+        "romaji": "toriniku",
+        "zh": "鸡肉"
+    },
+    {
+        "jp": "ラム",
+        "romaji": "ramu",
+        "zh": "羊肉"
+    },
+    {
+        "jp": "ハム",
+        "romaji": "hamu",
+        "zh": "火腿"
+    },
+    {
+        "jp": "ソーセージ",
+        "romaji": "sooseeji",
+        "zh": "香肠"
+    },
+    {
+        "jp": "えび",
+        "romaji": "ebi",
+        "zh": "虾"
+    },
+    {
+        "jp": "かに",
+        "romaji": "kani",
+        "zh": "蟹; 螃蟹"
+    },
+    {
+        "jp": "たこ",
+        "romaji": "tako",
+        "zh": "章鱼"
+    },
+    {
+        "jp": "いか",
+        "romaji": "ika",
+        "zh": "鱿鱼"
+    },
+    {
+        "jp": "かまぼこ",
+        "romaji": "kamaboko",
+        "zh": "鱼糕"
+    },
+    {
+        "jp": "チーズ",
+        "romaji": "chiizu",
+        "zh": "奶酪"
+    },
+    {
+        "jp": "バター",
+        "romaji": "bataa",
+        "zh": "黄油"
+    },
+    {
+        "jp": "マヨネーズ",
+        "romaji": "mayoneezu",
+        "zh": "蛋黄酱"
+    },
+    {
+        "jp": "ケチャップ",
+        "romaji": "kechappu",
+        "zh": "番茄酱"
+    },
+    {
+        "jp": "しお",
+        "romaji": "shio",
+        "zh": "盐"
+    },
+    {
+        "jp": "さとう",
+        "romaji": "satou",
+        "zh": "糖"
+    },
+    {
+        "jp": "しょうゆ",
+        "romaji": "shouyu",
+        "zh": "酱油"
+    },
+    {
+        "jp": "みそ",
+        "romaji": "miso",
+        "zh": "味噌"
+    },
+    {
+        "jp": "あぶら",
+        "romaji": "abura",
+        "zh": "油"
+    },
+    {
+        "jp": "こめ",
+        "romaji": "kome",
+        "zh": "米"
+    },
+    {
+        "jp": "むぎ",
+        "romaji": "mugi",
+        "zh": "麦"
+    },
+    {
+        "jp": "こむぎこ",
+        "romaji": "komugiko",
+        "zh": "面粉"
+    },
+    {
+        "jp": "うどん",
+        "romaji": "udon",
+        "zh": "乌冬面"
+    },
+    {
+        "jp": "ラーメン",
+        "romaji": "raamen",
+        "zh": "拉面"
+    },
+    {
+        "jp": "そば",
+        "romaji": "soba",
+        "zh": "荞麦面"
+    },
+    {
+        "jp": "スパゲッティ",
+        "romaji": "supagetti",
+        "zh": "意大利面"
+    },
+    {
+        "jp": "ピザ",
+        "romaji": "piza",
+        "zh": "披萨"
+    },
+    {
+        "jp": "ハンバーガー",
+        "romaji": "hanbaagaa",
+        "zh": "汉堡"
+    },
+    {
+        "jp": "カレー",
+        "romaji": "karee",
+        "zh": "咖喱"
+    },
+    {
+        "jp": "すし",
+        "romaji": "sushi",
+        "zh": "寿司"
+    },
+    {
+        "jp": "てんぷら",
+        "romaji": "tenpura",
+        "zh": "天妇罗"
+    },
+    {
+        "jp": "やきとり",
+        "romaji": "yakitori",
+        "zh": "烤鸡串"
+    },
+    {
+        "jp": "ぎょうざ",
+        "romaji": "gyouza",
+        "zh": "饺子"
+    },
+    {
+        "jp": "あかちゃん",
+        "romaji": "akachan",
+        "zh": "婴儿"
+    },
+    {
+        "jp": "こども",
+        "romaji": "kodomo",
+        "zh": "孩子"
+    },
+    {
+        "jp": "おとな",
+        "romaji": "otona",
+        "zh": "大人"
+    },
+    {
+        "jp": "わかもの",
+        "romaji": "wakamono",
+        "zh": "年轻人"
+    },
+    {
+        "jp": "おとこ",
+        "romaji": "otoko",
+        "zh": "男人"
+    },
+    {
+        "jp": "おんな",
+        "romaji": "onna",
+        "zh": "女人"
+    },
+    {
+        "jp": "おじいさん",
+        "romaji": "ojiisan",
+        "zh": "老爷爷"
+    },
+    {
+        "jp": "おばあさん",
+        "romaji": "obaasan",
+        "zh": "老奶奶"
+    },
+    {
+        "jp": "おじさん",
+        "romaji": "ojisan",
+        "zh": "叔叔"
+    },
+    {
+        "jp": "おばさん",
+        "romaji": "obasan",
+        "zh": "阿姨"
+    },
+    {
+        "jp": "りょうしん",
+        "romaji": "ryoushin",
+        "zh": "父母",
+        "kanji": "両親",
+        "tone": 1,
+        "pos": "名"
+    },
+    {
+        "jp": "そふ",
+        "romaji": "sofu",
+        "zh": "祖父"
+    },
+    {
+        "jp": "そぼ",
+        "romaji": "sobo",
+        "zh": "祖母"
+    },
+    {
+        "jp": "おい",
+        "romaji": "oi",
+        "zh": "侄子"
+    },
+    {
+        "jp": "めい",
+        "romaji": "mei",
+        "zh": "侄女"
+    },
+    {
+        "jp": "いとこ",
+        "romaji": "itoko",
+        "zh": "堂,表兄弟姐妹"
+    },
+    {
+        "jp": "むすこ",
+        "romaji": "musuko",
+        "zh": "儿子"
+    },
+    {
+        "jp": "むすめ",
+        "romaji": "musume",
+        "zh": "女儿",
+        "kanji": "娘",
+        "tone": 3,
+        "score": 3
+    },
+    {
+        "jp": "まご",
+        "romaji": "mago",
+        "zh": "孙子"
+    },
+    {
+        "jp": "しゅじん",
+        "romaji": "shujin",
+        "zh": "丈夫"
+    },
+    {
+        "jp": "かない",
+        "romaji": "kanai",
+        "zh": "妻子"
+    },
+    {
+        "jp": "つま",
+        "romaji": "tsuma",
+        "zh": "妻子",
+        "kanji": "妻",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "おっと",
+        "romaji": "otto",
+        "zh": "丈夫"
+    },
+    {
+        "jp": "しんせき",
+        "romaji": "shinseki",
+        "zh": "亲戚"
+    },
+    {
+        "jp": "うま",
+        "romaji": "uma",
+        "zh": "马"
+    },
+    {
+        "jp": "うし",
+        "romaji": "ushi",
+        "zh": "牛"
+    },
+    {
+        "jp": "ぶた",
+        "romaji": "buta",
+        "zh": "猪"
+    },
+    {
+        "jp": "ひつじ",
+        "romaji": "hitsuji",
+        "zh": "羊"
+    },
+    {
+        "jp": "にわとり",
+        "romaji": "niwatori",
+        "zh": "鸡"
+    },
+    {
+        "jp": "あひる",
+        "romaji": "ahiru",
+        "zh": "鸭子"
+    },
+    {
+        "jp": "がちょう",
+        "romaji": "gachou",
+        "zh": "鹅"
+    },
+    {
+        "jp": "さる",
+        "romaji": "saru",
+        "zh": "猴子"
+    },
+    {
+        "jp": "きりん",
+        "romaji": "kirin",
+        "zh": "长颈鹿"
+    },
+    {
+        "jp": "ぞう",
+        "romaji": "zou",
+        "zh": "大象"
+    },
+    {
+        "jp": "らいおん",
+        "romaji": "raion",
+        "zh": "狮子"
+    },
+    {
+        "jp": "とら",
+        "romaji": "tora",
+        "zh": "老虎"
+    },
+    {
+        "jp": "くま",
+        "romaji": "kuma",
+        "zh": "熊"
+    },
+    {
+        "jp": "おおかみ",
+        "romaji": "ookami",
+        "zh": "狼"
+    },
+    {
+        "jp": "きつね",
+        "romaji": "kitsune",
+        "zh": "狐狸"
+    },
+    {
+        "jp": "うさぎ",
+        "romaji": "usagi",
+        "zh": "兔子"
+    },
+    {
+        "jp": "りす",
+        "romaji": "risu",
+        "zh": "松鼠"
+    },
+    {
+        "jp": "ねずみ",
+        "romaji": "nezumi",
+        "zh": "老鼠"
+    },
+    {
+        "jp": "かえる",
+        "romaji": "kaeru",
+        "zh": "回家; 青蛙",
+        "kanji": "帰る",
+        "tone": 1,
+        "pos": "自動Ⅰ"
+    },
+    {
+        "jp": "へび",
+        "romaji": "hebi",
+        "zh": "蛇"
+    },
+    {
+        "jp": "とかげ",
+        "romaji": "tokage",
+        "zh": "蜥蜴"
+    },
+    {
+        "jp": "くじら",
+        "romaji": "kujira",
+        "zh": "鲸鱼"
+    },
+    {
+        "jp": "いるか",
+        "romaji": "iruka",
+        "zh": "海豚"
+    },
+    {
+        "jp": "たこ",
+        "romaji": "tako",
+        "zh": "章鱼"
+    },
+    {
+        "jp": "えび",
+        "romaji": "ebi",
+        "zh": "虾"
+    },
+    {
+        "jp": "かに",
+        "romaji": "kani",
+        "zh": "蟹; 螃蟹"
+    },
+    {
+        "jp": "ちょう",
+        "romaji": "chou",
+        "zh": "蝴蝶; 兆",
+        "kanji": "兆",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "あり",
+        "romaji": "ari",
+        "zh": "蚂蚁"
+    },
+    {
+        "jp": "かぶとむし",
+        "romaji": "kabutomushi",
+        "zh": "甲虫"
+    },
+    {
+        "jp": "くも",
+        "romaji": "kumo",
+        "zh": "蜘蛛"
+    },
+    {
+        "jp": "むし",
+        "romaji": "mushi",
+        "zh": "虫"
+    },
+    {
+        "jp": "かお",
+        "romaji": "kao",
+        "zh": "脸"
+    },
+    {
+        "jp": "め",
+        "romaji": "me",
+        "zh": "眼睛"
+    },
+    {
+        "jp": "みみ",
+        "romaji": "mimi",
+        "zh": "耳朵"
+    },
+    {
+        "jp": "はな",
+        "romaji": "hana",
+        "zh": "鼻子,花"
+    },
+    {
+        "jp": "くち",
+        "romaji": "kuchi",
+        "zh": "嘴"
+    },
+    {
+        "jp": "は",
+        "romaji": "ha",
+        "zh": "牙齿"
+    },
+    {
+        "jp": "あたま",
+        "romaji": "atama",
+        "zh": "头"
+    },
+    {
+        "jp": "かた",
+        "romaji": "kata",
+        "zh": "肩"
+    },
+    {
+        "jp": "て",
+        "romaji": "te",
+        "zh": "手"
+    },
+    {
+        "jp": "うで",
+        "romaji": "ude",
+        "zh": "手臂"
+    },
+    {
+        "jp": "あし",
+        "romaji": "ashi",
+        "zh": "腿,脚; 脚"
+    },
+    {
+        "jp": "あたま",
+        "romaji": "atama",
+        "zh": "头"
+    },
+    {
+        "jp": "からだ",
+        "romaji": "karada",
+        "zh": "身体"
+    },
+    {
+        "jp": "せなか",
+        "romaji": "senaka",
+        "zh": "背"
+    },
+    {
+        "jp": "おなか",
+        "romaji": "onaka",
+        "zh": "肚子"
+    },
+    {
+        "jp": "むね",
+        "romaji": "mune",
+        "zh": "胸"
+    },
+    {
+        "jp": "こころ",
+        "romaji": "kokoro",
+        "zh": "心"
+    },
+    {
+        "jp": "あし",
+        "romaji": "ashi",
+        "zh": "腿,脚; 脚"
+    },
+    {
+        "jp": "ゆび",
+        "romaji": "yubi",
+        "zh": "手指,脚趾"
+    },
+    {
+        "jp": "つめ",
+        "romaji": "tsume",
+        "zh": "指甲"
+    },
+    {
+        "jp": "かかと",
+        "romaji": "kakato",
+        "zh": "脚后跟"
+    },
+    {
+        "jp": "ひざ",
+        "romaji": "hiza",
+        "zh": "膝盖"
+    },
+    {
+        "jp": "くび",
+        "romaji": "kubi",
+        "zh": "脖子"
+    },
+    {
+        "jp": "かた",
+        "romaji": "kata",
+        "zh": "肩"
+    },
+    {
+        "jp": "ひじ",
+        "romaji": "hiji",
+        "zh": "肘"
+    },
+    {
+        "jp": "てくび",
+        "romaji": "tekubi",
+        "zh": "手腕"
+    },
+    {
+        "jp": "あたま",
+        "romaji": "atama",
+        "zh": "头"
+    },
+    {
+        "jp": "ひげ",
+        "romaji": "hige",
+        "zh": "胡子"
+    },
+    {
+        "jp": "まゆげ",
+        "romaji": "mayuge",
+        "zh": "眉毛"
+    },
+    {
+        "jp": "まつげ",
+        "romaji": "matsuge",
+        "zh": "睫毛"
+    },
+    {
+        "jp": "くすり",
+        "romaji": "kusuri",
+        "zh": "药"
+    },
+    {
+        "jp": "びょうき",
+        "romaji": "byouki",
+        "zh": "生病的; 疾病"
+    },
+    {
+        "jp": "ねつ",
+        "romaji": "netsu",
+        "zh": "发烧"
+    },
+    {
+        "jp": "せき",
+        "romaji": "seki",
+        "zh": "咳嗽"
+    },
+    {
+        "jp": "くしゃみ",
+        "romaji": "kushami",
+        "zh": "喷嚏"
+    },
+    {
+        "jp": "いた",
+        "romaji": "ita",
+        "zh": "疼痛"
+    },
+    {
+        "jp": "けが",
+        "romaji": "kega",
+        "zh": "外伤"
+    },
+    {
+        "jp": "ぽけっと",
+        "romaji": "poketto",
+        "zh": "口袋"
+    },
+    {
+        "jp": "さいふ",
+        "romaji": "saifu",
+        "zh": "钱包"
+    },
+    {
+        "jp": "かさ",
+        "romaji": "kasa",
+        "zh": "伞",
+        "kanji": "傘",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "めがね",
+        "romaji": "megane",
+        "zh": "眼镜"
+    },
+    {
+        "jp": "かぎ",
+        "romaji": "kagi",
+        "zh": "钥匙"
+    },
+    {
+        "jp": "でんち",
+        "romaji": "denchi",
+        "zh": "电池"
+    },
+    {
+        "jp": "けいたいでんわ",
+        "romaji": "keitaidenwa",
+        "zh": "手机"
+    },
+    {
+        "jp": "パソコン",
+        "romaji": "pasokon",
+        "zh": "个人电脑",
+        "kanji": "",
+        "tone": 0
+    },
+    {
+        "jp": "テレビ",
+        "romaji": "terebi",
+        "zh": "电视"
+    },
+    {
+        "jp": "らじお",
+        "romaji": "rajio",
+        "zh": "收音机"
+    },
+    {
+        "jp": "カメラ",
+        "romaji": "kamera",
+        "zh": "相机"
+    },
+    {
+        "jp": "ビデオ",
+        "romaji": "bideo",
+        "zh": "录像机"
+    },
+    {
+        "jp": "エアコン",
+        "romaji": "eakon",
+        "zh": "空调"
+    },
+    {
+        "jp": "れいぞうこ",
+        "romaji": "reizouko",
+        "zh": "冰箱"
+    },
+    {
+        "jp": "せんたくき",
+        "romaji": "sentakuki",
+        "zh": "洗衣机"
+    },
+    {
+        "jp": "そうじき",
+        "romaji": "soujiki",
+        "zh": "吸尘器"
+    },
+    {
+        "jp": "でんしレンジ",
+        "romaji": "denshi renji",
+        "zh": "微波炉"
+    },
+    {
+        "jp": "バイク",
+        "romaji": "baiku",
+        "zh": "摩托车"
+    },
+    {
+        "jp": "しんかんせん",
+        "romaji": "shinkansen",
+        "zh": "新干线",
+        "kanji": "新幹線",
+        "tone": 3,
+        "pos": "名"
+    },
+    {
+        "jp": "ちかてつ",
+        "romaji": "chikatetsu",
+        "zh": "地铁",
+        "kanji": "地下鉄",
+        "tone": 2,
+        "pos": "名"
+    },
+    {
+        "jp": "ふね",
+        "romaji": "fune",
+        "zh": "船",
+        "kanji": "船",
+        "tone": 1,
+        "pos": "名"
+    },
+    {
+        "jp": "タクシー",
+        "romaji": "takushii",
+        "zh": "出租车",
+        "kanji": "",
+        "tone": 1,
+        "pos": "名"
+    },
+    {
+        "jp": "バスてい",
+        "romaji": "basutei",
+        "zh": "公交车站"
+    },
+    {
+        "jp": "くうこう",
+        "romaji": "kuukou",
+        "zh": "机场",
+        "kanji": "空港",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "みなと",
+        "romaji": "minato",
+        "zh": "港口"
+    },
+    {
+        "jp": "ホテル",
+        "romaji": "hoteru",
+        "zh": "酒店"
+    },
+    {
+        "jp": "りょかん",
+        "romaji": "ryokan",
+        "zh": "日式旅馆"
+    },
+    {
+        "jp": "きっさてん",
+        "romaji": "kissaten",
+        "zh": "茶馆; 咖啡店",
+        "kanji": "喫茶店",
+        "tone": 3,
+        "score": 4
+    },
+    {
+        "jp": "えいがかん",
+        "romaji": "eigakan",
+        "zh": "电影院"
+    },
+    {
+        "jp": "はくぶつかん",
+        "romaji": "hakubutsukan",
+        "zh": "博物馆"
+    },
+    {
+        "jp": "どうぶつえん",
+        "romaji": "doubutsuen",
+        "zh": "动物园"
+    },
+    {
+        "jp": "コンビニ",
+        "romaji": "konbini",
+        "zh": "便利店",
+        "kanji": "",
+        "tone": 0
+    },
+    {
+        "jp": "やおや",
+        "romaji": "yaoya",
+        "zh": "蔬果店"
+    },
+    {
+        "jp": "パン屋",
+        "romaji": "pan-ya",
+        "zh": "面包店"
+    },
+    {
+        "jp": "くつや",
+        "romaji": "kutsuya",
+        "zh": "鞋店"
+    },
+    {
+        "jp": "しんぶん",
+        "romaji": "shinbun",
+        "zh": "报纸",
+        "kanji": "新聞",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "ざっし",
+        "romaji": "zasshi",
+        "zh": "杂志",
+        "kanji": "雑誌",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "じしょ",
+        "romaji": "jisho",
+        "zh": "词典",
+        "kanji": "辞書",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "かいぎ",
+        "romaji": "kaigi",
+        "zh": "会议",
+        "kanji": "会議",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "しゅくだい",
+        "romaji": "shukudai",
+        "zh": "作业; 家庭作业",
+        "kanji": "宿題",
+        "tone": 0
+    },
+    {
+        "jp": "しけん",
+        "romaji": "shiken",
+        "zh": "考试"
+    },
+    {
+        "jp": "せいせき",
+        "romaji": "seiseki",
+        "zh": "成绩"
+    },
+    {
+        "jp": "じゅぎょう",
+        "romaji": "jugyou",
+        "zh": "上课; 课",
+        "kanji": "授業",
+        "tone": 1,
+        "score": 2
+    },
+    {
+        "jp": "れんしゅう",
+        "romaji": "renshuu",
+        "zh": "练习"
+    },
+    {
+        "jp": "もんだい",
+        "romaji": "mondai",
+        "zh": "问题"
+    },
+    {
+        "jp": "こたえ",
+        "romaji": "kotae",
+        "zh": "答案"
+    },
+    {
+        "jp": "ちず",
+        "romaji": "chizu",
+        "zh": "地图"
+    },
+    {
+        "jp": "こうさてん",
+        "romaji": "kousaten",
+        "zh": "十字路口"
+    },
+    {
+        "jp": "しんごう",
+        "romaji": "shingou",
+        "zh": "信号灯"
+    },
+    {
+        "jp": "トンネル",
+        "romaji": "tonneru",
+        "zh": "隧道"
+    },
+    {
+        "jp": "せかい",
+        "romaji": "sekai",
+        "zh": "世界"
+    },
+    {
+        "jp": "くに",
+        "romaji": "kuni",
+        "zh": "国家",
+        "kanji": "国",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "ちかく",
+        "romaji": "chikaku",
+        "zh": "附近"
+    },
+    {
+        "jp": "あいだ",
+        "romaji": "aida",
+        "zh": "之间"
+    },
+    {
+        "jp": "むこう",
+        "romaji": "mukou",
+        "zh": "对面"
+    },
+    {
+        "jp": "よこ",
+        "romaji": "yoko",
+        "zh": "旁边"
+    },
+    {
+        "jp": "ところ",
+        "romaji": "tokoro",
+        "zh": "地方"
+    },
+    {
+        "jp": "こっち",
+        "romaji": "kocchi",
+        "zh": "这边"
+    },
+    {
+        "jp": "そっち",
+        "romaji": "socchi",
+        "zh": "那边"
+    },
+    {
+        "jp": "あっち",
+        "romaji": "acchi",
+        "zh": "那边(远处)"
+    },
+    {
+        "jp": "どっち",
+        "romaji": "docchi",
+        "zh": "哪边"
+    },
+    {
+        "jp": "ばん",
+        "romaji": "ban",
+        "zh": "晚上"
+    },
+    {
+        "jp": "むかし",
+        "romaji": "mukashi",
+        "zh": "以前"
+    },
+    {
+        "jp": "いつか",
+        "romaji": "itsuka",
+        "zh": "某一天"
+    },
+    {
+        "jp": "ひまつ",
+        "romaji": "himatsu",
+        "zh": "休息日"
+    },
+    {
+        "jp": "せんげつ",
+        "romaji": "sengetsu",
+        "zh": "上个月",
+        "kanji": "先月",
+        "tone": 1,
+        "pos": "名"
+    },
+    {
+        "jp": "こんげつ",
+        "romaji": "kongetsu",
+        "zh": "这个月",
+        "kanji": "今月",
+        "tone": 0,
+        "pos": "名"
+    },
+    {
+        "jp": "らいげつ",
+        "romaji": "raigetsu",
+        "zh": "下个月",
+        "kanji": "来月",
+        "tone": 1,
+        "pos": "名"
+    },
+    {
+        "jp": "きょねん",
+        "romaji": "kyonen",
+        "zh": "去年",
+        "kanji": "去年",
+        "tone": 1,
+        "pos": "名"
+    },
+    {
+        "jp": "ことし",
+        "romaji": "kotoshi",
+        "zh": "今年",
+        "kanji": "今年",
+        "tone": 0,
+        "pos": "名"
+    },
+    {
+        "jp": "らいねん",
+        "romaji": "rainen",
+        "zh": "明年",
+        "kanji": "来年",
+        "tone": 0,
+        "pos": "名"
+    },
+    {
+        "jp": "せいかつ",
+        "romaji": "seikatsu",
+        "zh": "生活"
+    },
+    {
+        "jp": "しょくじ",
+        "romaji": "shokuji",
+        "zh": "（吃）饭; 饮食",
+        "kanji": "食事",
+        "tone": 0
+    },
+    {
+        "jp": "すいみん",
+        "romaji": "suimin",
+        "zh": "睡眠"
+    },
+    {
+        "jp": "けっこん",
+        "romaji": "kekkon",
+        "zh": "结婚"
+    },
+    {
+        "jp": "しょうがい",
+        "romaji": "shougai",
+        "zh": "一生"
+    },
+    {
+        "jp": "たんじょうび",
+        "romaji": "tanjoubi",
+        "zh": "生日",
+        "kanji": "誕生日",
+        "tone": 3,
+        "pos": "名"
+    },
+    {
+        "jp": "しあわせ",
+        "romaji": "shiawase",
+        "zh": "幸福"
+    },
+    {
+        "jp": "ふこう",
+        "romaji": "fukou",
+        "zh": "不幸"
+    },
+    {
+        "jp": "こまる",
+        "romaji": "komaru",
+        "zh": "困扰"
+    },
+    {
+        "jp": "よろこぶ",
+        "romaji": "yorokobu",
+        "zh": "高兴"
+    },
+    {
+        "jp": "かなしい",
+        "romaji": "kanashii",
+        "zh": "悲伤; 伤心的"
+    },
+    {
+        "jp": "おこる",
+        "romaji": "okoru",
+        "zh": "生气"
+    },
+    {
+        "jp": "なく",
+        "romaji": "naku",
+        "zh": "哭"
+    },
+    {
+        "jp": "わらう",
+        "romaji": "warau",
+        "zh": "笑"
+    },
+    {
+        "jp": "いかる",
+        "romaji": "ikaru",
+        "zh": "发怒"
+    },
+    {
+        "jp": "つまらない",
+        "romaji": "tsumaranai",
+        "zh": "无聊的"
+    },
+    {
+        "jp": "たのしい",
+        "romaji": "tanoshii",
+        "zh": "愉快的"
+    },
+    {
+        "jp": "かなしい",
+        "romaji": "kanashii",
+        "zh": "悲伤; 伤心的"
+    },
+    {
+        "jp": "さびしい",
+        "romaji": "sabishii",
+        "zh": "寂寞的"
+    },
+    {
+        "jp": "うれしい",
+        "romaji": "ureshii",
+        "zh": "高兴的"
+    },
+    {
+        "jp": "こわい",
+        "romaji": "kowai",
+        "zh": "可怕的"
+    },
+    {
+        "jp": "いたい",
+        "romaji": "itai",
+        "zh": "疼痛的"
+    },
+    {
+        "jp": "つかれる",
+        "romaji": "tsukareru",
+        "zh": "疲劳"
+    },
+    {
+        "jp": "ねむい",
+        "romaji": "nemui",
+        "zh": "困倦的"
+    },
+    {
+        "jp": "びっくりする",
+        "romaji": "bikkuri suru",
+        "zh": "吃惊"
+    },
+    {
+        "jp": "あせる",
+        "romaji": "aseru",
+        "zh": "着急"
+    },
+    {
+        "jp": "あわてる",
+        "romaji": "awateru",
+        "zh": "慌张"
+    },
+    {
+        "jp": "いそぐ",
+        "romaji": "isogu",
+        "zh": "急忙"
+    },
+    {
+        "jp": "まよう",
+        "romaji": "mayou",
+        "zh": "迷惑"
+    },
+    {
+        "jp": "くるしい",
+        "romaji": "kurushii",
+        "zh": "痛苦的"
+    },
+    {
+        "jp": "おだやか",
+        "romaji": "odayaka",
+        "zh": "平静的"
+    },
+    {
+        "jp": "しずか",
+        "romaji": "shizuka",
+        "zh": "安静的"
+    },
+    {
+        "jp": "にぎやか",
+        "romaji": "nigiyaka",
+        "zh": "热闹的"
+    },
+    {
+        "jp": "あたたかい",
+        "romaji": "atatakai",
+        "zh": "温暖的"
+    },
+    {
+        "jp": "すずしい",
+        "romaji": "suzushii",
+        "zh": "凉爽的"
+    },
+    {
+        "jp": "かみなり",
+        "romaji": "kaminari",
+        "zh": "雷"
+    },
+    {
+        "jp": "たいふう",
+        "romaji": "taifuu",
+        "zh": "台风"
+    }
+]

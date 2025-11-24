@@ -3,25 +3,29 @@
         "jp": "ごはん",
         "kanji": "ご飯",
         "tone": 1,
-        "zh": "饭"
+        "zh": "饭; 米饭",
+        "romaji": "gohan"
     },
     {
         "jp": "たべる",
         "kanji": "食べる",
         "tone": 2,
-        "zh": "吃"
+        "zh": "吃",
+        "romaji": "taberu"
     },
     {
         "jp": "はし",
         "kanji": "箸",
         "tone": 1,
-        "zh": "筷子"
+        "zh": "筷子; 桥",
+        "romaji": "hashi"
     },
     {
         "jp": "かう",
         "kanji": "買う",
         "tone": 0,
-        "zh": "买"
+        "zh": "买",
+        "romaji": "kau"
     },
     {
         "jp": "いっしょに",
@@ -39,13 +43,15 @@
         "jp": "びじゅつかん",
         "kanji": "美術館",
         "tone": 3,
-        "zh": "美术馆"
+        "zh": "美术馆",
+        "romaji": "bijutsukan"
     },
     {
         "jp": "みる",
         "kanji": "見る",
         "tone": 1,
-        "zh": "看"
+        "zh": "看",
+        "romaji": "miru"
     },
     {
         "jp": "それから",
@@ -57,25 +63,30 @@
         "jp": "でんわ",
         "kanji": "電話",
         "tone": 0,
-        "zh": "电话"
+        "zh": "电话",
+        "score": 3,
+        "romaji": "denwa"
     },
     {
         "jp": "かける",
         "kanji": "",
         "tone": 2,
-        "zh": "打（电话）"
+        "zh": "打(电话)",
+        "romaji": "kakeru"
     },
     {
         "jp": "てがみ",
         "kanji": "手紙",
         "tone": 0,
-        "zh": "信"
+        "zh": "信",
+        "romaji": "tegami"
     },
     {
         "jp": "かく",
         "kanji": "書く",
         "tone": 1,
-        "zh": "写,写信"
+        "zh": "写,写信",
+        "romaji": "kaku"
     },
     {
         "jp": "しゃしん",
@@ -87,37 +98,43 @@
         "jp": "とる",
         "kanji": "撮る",
         "tone": 1,
-        "zh": "照相,拍摄"
+        "zh": "照相,拍摄; 拿,取",
+        "romaji": "toru"
     },
     {
         "jp": "よむ",
         "kanji": "読む",
         "tone": 1,
-        "zh": "读,念,阅读,看"
+        "zh": "读,念,阅读,看",
+        "romaji": "yomu"
     },
     {
         "jp": "きく",
         "kanji": "聞く",
         "tone": 0,
-        "zh": "听"
+        "zh": "听",
+        "romaji": "kiku"
     },
     {
         "jp": "のむ",
         "kanji": "飲む",
         "tone": 1,
-        "zh": "喝"
+        "zh": "喝",
+        "romaji": "nomu"
     },
     {
         "jp": "スプーン",
         "kanji": "",
         "tone": 2,
-        "zh": "（西餐用）勺子"
+        "zh": "（西餐用）勺子",
+        "romaji": "supuun"
     },
     {
         "jp": "つくる",
         "kanji": "作る",
         "tone": 2,
-        "zh": "制作"
+        "zh": "制作",
+        "romaji": "tsukuru"
     },
     {
         "jp": "おさら",
@@ -135,13 +152,15 @@
         "jp": "きる",
         "kanji": "切る",
         "tone": 1,
-        "zh": "切,剪"
+        "zh": "切,剪; 穿",
+        "romaji": "kiru"
     },
     {
         "jp": "たまご",
         "kanji": "卵",
         "tone": 2,
-        "zh": "鸡蛋,蛋"
+        "zh": "鸡蛋,蛋",
+        "romaji": "tamago"
     },
     {
         "jp": "ネクタイ",
@@ -153,13 +172,15 @@
         "jp": "やさい",
         "kanji": "野菜",
         "tone": 0,
-        "zh": "蔬菜"
+        "zh": "蔬菜",
+        "romaji": "yasai"
     },
     {
         "jp": "ひるごはん",
         "kanji": "昼ご飯",
         "tone": 3,
-        "zh": "午饭"
+        "zh": "午饭,午餐",
+        "romaji": "hirugohan"
     },
     {
         "jp": "もう",
@@ -177,7 +198,8 @@
         "jp": "しゅくだい",
         "kanji": "宿題",
         "tone": 0,
-        "zh": "作业"
+        "zh": "作业; 家庭作业",
+        "romaji": "shukudai"
     },
     {
         "jp": "チケット",
@@ -195,7 +217,8 @@
         "jp": "コンビニ",
         "kanji": "",
         "tone": 0,
-        "zh": "便利店"
+        "zh": "便利店",
+        "romaji": "konbini"
     },
     {
         "jp": "なにか",
@@ -213,7 +236,8 @@
         "jp": "しょくじ",
         "kanji": "食事",
         "tone": 0,
-        "zh": "（吃）饭"
+        "zh": "（吃）饭; 饮食",
+        "romaji": "shokuji"
     },
     {
         "jp": "ちょっと",
@@ -225,7 +249,8 @@
         "jp": "どう",
         "kanji": "",
         "tone": 1,
-        "zh": "怎么"
+        "zh": "怎么,怎么样",
+        "romaji": "dou"
     },
     {
         "jp": "しらべる",
@@ -243,19 +268,22 @@
         "jp": "パソコン",
         "kanji": "",
         "tone": 0,
-        "zh": "个人电脑"
+        "zh": "个人电脑",
+        "romaji": "pasokon"
     },
     {
         "jp": "つかう",
         "kanji": "使う",
         "tone": 0,
-        "zh": "使用"
+        "zh": "使用",
+        "romaji": "tsukau"
     },
     {
         "jp": "かぜ",
         "kanji": "風邪",
         "tone": 0,
-        "zh": "感冒"
+        "zh": "感冒; 风",
+        "romaji": "kaze"
     },
     {
         "jp": "なおる",
@@ -267,6 +295,7 @@
         "jp": "あう",
         "kanji": "会う",
         "tone": 1,
-        "zh": "见面,会见,遇到"
+        "zh": "见面,会见,遇到",
+        "romaji": "au"
     }
 ]
