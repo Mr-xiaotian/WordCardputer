@@ -2,28 +2,6 @@
 bool showMeaning = false;
 bool showJPFirst = true;  // true=先显示日语, false=先显示中文
 
-unsigned long volumeMessageDeadline = 0;
-String volumeMessageText = "";
-
-void drawAutoFitString(M5Canvas &cv, const String &text,
-                       int x, int y, int maxWidth,
-                       float baseSize = 2.0, float minSize = 0.8) {
-    if (text.length() == 0) return;
-
-    float size = baseSize;
-    cv.setTextSize(size);
-    int width = cv.textWidth(text);
-
-    while (width > maxWidth && size > minSize) {
-        size -= 0.1;
-        cv.setTextSize(size);
-        width = cv.textWidth(text);
-    }
-
-    cv.setTextDatum(middle_center);
-    cv.drawString(text, x, y);
-}
-
 void drawWord() {
     canvas.fillSprite(BLACK);
     canvas.setTextDatum(middle_center);
@@ -42,7 +20,7 @@ void drawWord() {
         canvas.setTextFont(&fonts::efontJA_16);
         canvas.setTextColor(CYAN);
         drawAutoFitString(canvas, w.jp, canvas.width()/2, canvas.height()/2 - 25,
-                        canvas.width() - 20, 2.2);  // 自动适配
+                        canvas.width() - 20, 2.2, 0.8);  // 自动适配
 
         canvas.setTextColor(GREEN);
         canvas.setTextSize(1.3);
@@ -52,7 +30,7 @@ void drawWord() {
             canvas.setTextFont(&fonts::efontCN_16);
             canvas.setTextColor(YELLOW);
             drawAutoFitString(canvas, w.zh, canvas.width()/2, canvas.height()/2 + 40,
-                            canvas.width() - 20, 1.5);  // 显示中文释义
+                            canvas.width() - 20, 1.5, 0.8);  // 显示中文释义
         }
 
     } else {
@@ -60,7 +38,7 @@ void drawWord() {
         canvas.setTextFont(&fonts::efontCN_16);
         canvas.setTextColor(YELLOW);
         drawAutoFitString(canvas, w.zh, canvas.width()/2, canvas.height()/2 - 25,
-                        canvas.width() - 20, 2.0);  // 显示中文释义主行
+                        canvas.width() - 20, 2.0, 0.8);  // 显示中文释义主行
 
         if (w.kanji.length() > 0) {
             canvas.setTextFont(&fonts::efontJA_16);
@@ -73,7 +51,7 @@ void drawWord() {
             canvas.setTextFont(&fonts::efontJA_16);
             canvas.setTextColor(CYAN);
             drawAutoFitString(canvas, w.jp, canvas.width()/2, canvas.height()/2 + 40,
-                            canvas.width() - 20, 1.8);  // 显示日语原文
+                            canvas.width() - 20, 1.8, 0.8);  // 显示日语原文
         }
     }
 
