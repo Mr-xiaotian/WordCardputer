@@ -83,62 +83,61 @@ void drawDictationSummary() {
 
 // ---------- 听写模式逻辑 ----------
 void loopDictationMode() {
-    M5Cardputer.update();
-
-    // -------- 显示总结界面 --------
-    if (dictShowSummary) {
+    if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
+        // -------- 打字阶段 --------
         auto st = M5Cardputer.Keyboard.keysState();
-        if (st.enter) {
-            appMode = MODE_ESC_MENU;
-            initEscMenuMode();
+
+        // -------- 显示总结界面 --------
+        if (dictShowSummary) {
+            if (st.enter) {
+                appMode = MODE_ESC_MENU;
+                initEscMenuMode();
+            }
+            return;
         }
-        return;
-    }
 
-    // -------- 打字阶段 --------
-    auto st = M5Cardputer.Keyboard.keysState();
+        // 输入字符
+        for (auto c : st.word) {
+            if (c >= 32 && c <= 126) {   // 可显示字符
+                userInput += c;
+                drawDictationInput();
+            }
+        }
 
-    // 输入字符
-    for (auto c : st.word) {
-        if (c >= 32 && c <= 126) {   // 可显示字符
-            userInput += c;
+        // 删除
+        if (st.del && userInput.length() > 0) {
+            userInput.remove(userInput.length() - 1);
             drawDictationInput();
         }
-    }
 
-    // 删除
-    if (st.del && userInput.length() > 0) {
-        userInput.remove(userInput.length() - 1);
-        drawDictationInput();
-    }
+        // 按 ENTER 检查答案
+        if (st.enter) {
+            String correct = words[dictOrder[dictPos]].jp;
 
-    // 按 ENTER 检查答案
-    if (st.enter) {
-        String correct = words[dictOrder[dictPos]].jp;
+            if (userInput == correct) correctCount++;
+            else wrongCount++;
 
-        if (userInput == correct) correctCount++;
-        else wrongCount++;
+            dictPos++;
 
-        dictPos++;
+            if (dictPos >= dictOrder.size()) {
+                dictShowSummary = true;
+                drawDictationSummary();
+                return;
+            }
 
-        if (dictPos >= dictOrder.size()) {
-            dictShowSummary = true;
-            drawDictationSummary();
-            return;
+            // 进入下一个单词
+            userInput = "";
+            playAudioForWord(words[dictOrder[dictPos]].jp);
+            drawDictationInput();
         }
 
-        // 进入下一个单词
-        userInput = "";
-        playAudioForWord(words[dictOrder[dictPos]].jp);
-        drawDictationInput();
-    }
-
-    // ESC 返回上级菜单
-    for (auto c : st.word) {
-        if (c == 27) { // ESC
-            appMode = MODE_ESC_MENU;
-            initEscMenuMode();
-            return;
+        // ESC 返回上级菜单
+        for (auto c : st.word) {
+            if (c == 27) { // ESC
+                appMode = MODE_ESC_MENU;
+                initEscMenuMode();
+                return;
+            }
         }
     }
 }
