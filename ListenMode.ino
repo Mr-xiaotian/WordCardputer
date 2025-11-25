@@ -85,6 +85,7 @@ void loopListenMode() {
         // 处理 ESC（你在学习模式里用的是 '`' 来代表 ESC）
         for (auto c : st.word) {
             if (c == '`') {  // ESC
+                previousMode = appMode; // 记录当前模式
                 appMode = MODE_ESC_MENU;
                 initEscMenuMode();
                 return;

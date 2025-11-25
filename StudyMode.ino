@@ -110,6 +110,7 @@ void loopStudyMode() {
         // 检测 esc 键
         for (auto c : status.word) {
             if (c == '`') {  // ESC 键
+                previousMode = appMode; // 记录当前模式
                 appMode = MODE_ESC_MENU;
                 initEscMenuMode();
                 return;

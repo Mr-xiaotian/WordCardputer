@@ -1,5 +1,6 @@
 import os
 import json
+import math
 import requests
 import binascii
 from typing import List, Tuple
@@ -183,10 +184,16 @@ def merge_json_folder(folder_path):
                         except:
                             merged[key] = old
                     elif key == "tone":
-                        try:
-                            merged[key] = val if old == val else -1
-                        except:
-                            merged[key] = -1
+                        if old == val:
+                            merged[key] = val
+                        else:
+                            # 两边不同，看看有没有不是 -1 的
+                            if old != -1 and val == -1:
+                                merged[key] = old
+                            elif val != -1 and old == -1:
+                                merged[key] = val
+                            else:
+                                merged[key] = -1
                     else:
                         if old != val and val not in old.split("; "):
                             merged[key] = f"{old}; {val}"
@@ -286,3 +293,59 @@ def dedupe_json_by_jp(folder_path):
             print(f"已去重并写回：{json_file}")
         except Exception as e:
             print(f"写入失败 {json_file}: {e}")
+
+
+def split_json_file(file_path: Path, max_per_file=60):
+    """读取一个 JSON 文件，如果数量 > max_per_file，则进行均匀拆分。"""
+
+    with open(file_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    total = len(data)
+    if total <= max_per_file:
+        print(f"✔ {file_path.name}: {total} 个词，不需要拆分。")
+        return
+
+    # 计算拆分份数，例如 220 -> 4 份
+    parts = math.ceil(total / max_per_file)
+
+    # 尽量平均，例如 220 / 4 = 55
+    per_file = math.ceil(total / parts)
+
+    print(f"⚡ {file_path.name}: {total} 个词，拆成 {parts} 份，每份 ~{per_file} 个")
+
+    parent = file_path.parent
+    base_name = file_path.stem  # 去掉 .json 后缀
+
+    # 执行拆分
+    for i in range(parts):
+        start = i * per_file
+        end = start + per_file
+        chunk = data[start:end]
+
+        out_path = parent / f"{base_name}_part{i+1}.json"
+        with open(out_path, "w", encoding="utf-8") as out:
+            json.dump(chunk, out, ensure_ascii=False, indent=2)
+
+        print(f"  → 写入 {out_path.name}: {len(chunk)} 个词")
+
+    print("完成。")
+
+
+def process_folder(folder_path: str, max_per_file=60):
+    """处理整个文件夹，拆分其中所有 json 文件。"""
+    folder = Path(folder_path)
+
+    if not folder.exists():
+        print("路径不存在:", folder)
+        return
+
+    json_files = list(folder.glob("*.json"))
+    if not json_files:
+        print("没有找到 JSON 文件:", folder)
+        return
+
+    print(f"在 {folder} 中找到 {len(json_files)} 个 JSON 文件\n")
+
+    for file in json_files:
+        split_json_file(file, max_per_file=max_per_file)

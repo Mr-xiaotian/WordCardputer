@@ -2,11 +2,12 @@
 String selectedFilePath = "";
 
 std::vector<String> escItems = {
-    "保存进度（写入JSON）",
+    "...", 
+    "保存进度",
     "重新选择词库",
+    "进入学习页面"
+    "进入听读模式",      
     "进入听写模式(building)",
-    "进入听读模式",      // 👈 新增
-    "返回学习页面"
 };
 
 int escIndex = 0;
@@ -67,7 +68,16 @@ void loopEscMenuMode() {
         }
 
         if (st.enter) {
-            if (escIndex == 0) {
+            if (escIndex == 0){
+                appMode = previousMode; // 返回上一个模式
+                // 根据模式调用相应的初始化函数
+                if (appMode == MODE_STUDY) {
+                    drawWord();  // 刷新学习界面
+                } else if (appMode == MODE_LISTEN) {
+                    drawListenWord(); // 刷新听读界面
+                }
+            }
+            else if (escIndex == 1) {
                 // 保存到 JSON
                 if (saveWordsToJSON(selectedFilePath)) {
                     // 显示保存成功
@@ -89,29 +99,29 @@ void loopEscMenuMode() {
                 drawEscMenu();
                 return;
             }
-            if (escIndex == 1) {
+            else if (escIndex == 2) {
                 // 进入词库选择
                 appMode = MODE_FILE_SELECT;
                 initFileSelectMode();
                 return;
             }
-            else if (escIndex == 2) {
-                // 进入听写模式（占位）
-                // appMode = MODE_DICTATION;
-                // initDictationMode();  // 未来实现
-                // return;
-            }
             else if (escIndex == 3) {
-                // 👇 新增：进入听读模式
+                // 进入学习页面
+                appMode = MODE_STUDY;
+                drawWord();  // 刷新学习界面
+                return;
+            }
+            else if (escIndex == 4) {
+                // 进入听读模式
                 appMode = MODE_LISTEN;
                 initListenMode();
                 return;
             }
-            else if (escIndex == 4) {
-                // 返回学习页面
-                appMode = MODE_STUDY;
-                drawWord();  // 刷新学习界面
-                return;
+            else if (escIndex == 5) {
+                // 进入听写模式（占位）
+                // appMode = MODE_DICTATION;
+                // initDictationMode();  // 未来实现
+                // return;
             }
         }
     }

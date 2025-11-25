@@ -14,12 +14,13 @@
 enum AppMode {
     MODE_FILE_SELECT,
     MODE_STUDY,
-    MODE_ESC_MENU,     //  ESC 菜单模式
+    MODE_ESC_MENU,      //  ESC 菜单模式
     MODE_DICTATION,     // 听写模式（暂未实现）
-    MODE_LISTEN        // 👈 新增：听读模式
+    MODE_LISTEN         // 听读模式
 };
 
 AppMode appMode = MODE_FILE_SELECT;
+AppMode previousMode = MODE_FILE_SELECT; // 👈 新增：记录上一个模式
 
 // --------- 全局变量 ----------
 M5Canvas canvas(&M5Cardputer.Display);
