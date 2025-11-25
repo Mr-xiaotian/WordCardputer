@@ -1,7 +1,6 @@
 // =============== 听读模式 ===============
 
 // 播放控制
-int listenWordIndex = 0;                 // 当前正在播放的单词索引
 int listenPlayCount = 0;                 // 当前单词已经播放了几次（0~3）
 unsigned long listenNextActionTime = 0;  // 下一次动作的时间点
 const unsigned long listenRepeatInterval = 1200;   // 每次播放之间的间隔（毫秒）
@@ -19,7 +18,7 @@ void drawListenWord() {
         return;
     }
 
-    Word &w = words[listenWordIndex];
+    Word &w = words[wordIndex];
 
     // 显示日语（中间偏上）
     canvas.setTextFont(&fonts::efontJA_16);
@@ -68,7 +67,7 @@ void initListenMode() {
         return;
     }
 
-    listenWordIndex = pickWeightedRandom();
+    wordIndex = pickWeightedRandom();
     listenPlayCount = 0;
     listenNextActionTime = 0;   // 立即开始播放
 
@@ -127,12 +126,12 @@ void loopListenMode() {
     if (!M5.Speaker.isPlaying()) {
         if (listenPlayCount < 3) {
             // 第 1~3 次播放
-            playAudioForWord(words[listenWordIndex].jp);
+            playAudioForWord(words[wordIndex].jp);
             listenPlayCount++;
             listenNextActionTime = now + listenRepeatInterval;
         } else {
             // 已经播了 3 次 → 换下一个单词
-            listenWordIndex = pickWeightedRandom();
+            wordIndex = pickWeightedRandom();
             listenPlayCount = 0;
             listenNextActionTime = now + listenNextWordDelay;
             drawListenWord();

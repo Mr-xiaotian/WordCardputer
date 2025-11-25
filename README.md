@@ -78,6 +78,26 @@
    * 键盘 **A** 键播放日语发音
 4. 无操作 60 秒后自动进入节能模式。
 
+## WordCardputer 流程图
+
+```mermaid
+flowchart TD
+
+    A[启动 / 初始化系统] --> B["词库文件选择页面(FileSelectMode)"]
+
+    B -->|Enter 选中 JSON| C["单词学习页面(StudyMode)"]
+    
+    C -->|按 ESC| D["ESC 菜单(EscMenuMode)"]
+
+    D -->|"1. 重新选择词库文件"| B
+    D -->|"2. 返回学习页面"| C
+    D -->|"3. 进入跟读模式"| F["跟读模式页面(Shadowing Mode)"]
+    D -->|"4. 进入听写模式（未来）"| E["听写模式页面(DictationMode, TODO)"]
+
+    F -->|按 ESC| D
+    E -->|"完成 / Enter"| D
+```
+
 ## 🚧 TODO / 未来计划
 
 * ✅ 支持发音播放

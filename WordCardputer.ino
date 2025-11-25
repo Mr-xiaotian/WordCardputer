@@ -86,6 +86,9 @@ void drawTextMenu(
     bool showPager = true
 );
 
+bool tryConvertRomaji(String &buffer, String &outputKana);
+
+// =============== 主程序 ===============
 void setup() {
     randomSeed(esp_random());
     auto cfg = M5.config();

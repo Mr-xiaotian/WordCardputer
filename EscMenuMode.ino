@@ -39,6 +39,13 @@ void loopEscMenuMode() {
         auto st = M5Cardputer.Keyboard.keysState();
 
         for (auto c : st.word) {
+            if (c == '`') {  // ESC 键
+                previousMode = appMode; // 记录当前模式
+                appMode = MODE_ESC_MENU;
+                initEscMenuMode();
+                return;
+            }
+
             if (c == ';') {  // 上
                 escIndex = (escIndex - 1 + escItems.size()) % escItems.size();
                 if (escIndex == escItems.size() - 1)

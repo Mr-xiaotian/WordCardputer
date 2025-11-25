@@ -3,6 +3,7 @@
 std::vector<int> dictOrder;     // 随机顺序
 int dictPos = 0;                // 当前是第几个单词
 String userInput = "";          // 用户正在输入的字符串
+String romajiBuffer = "";
 
 int correctCount = 0;
 int wrongCount = 0;
@@ -86,6 +87,7 @@ void loopDictationMode() {
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
         // -------- 打字阶段 --------
         auto st = M5Cardputer.Keyboard.keysState();
+        userAction = true;
 
         // -------- 显示总结界面 --------
         if (dictShowSummary) {
@@ -98,17 +100,28 @@ void loopDictationMode() {
 
         // 输入字符
         for (auto c : st.word) {
-            if (c >= 32 && c <= 126) {   // 可显示字符
-                userInput += c;
+            if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z') {
+                romajiBuffer += (char)tolower(c);
+
+                String kanaOutput;
+                // 能转换则加入 userInput
+                while (tryConvertRomaji(romajiBuffer, kanaOutput)) {
+                    userInput += kanaOutput;
+                }
+
                 drawDictationInput();
             }
         }
 
-        // 删除
-        if (st.del && userInput.length() > 0) {
-            userInput.remove(userInput.length() - 1);
+        // 删除if (st.del) {
+        if (romajiBuffer.length() > 0) {
+                romajiBuffer.remove(romajiBuffer.length() - 1);
+            } else if (userInput.length() > 0) {
+                // 删除一个假名字符
+                userInput.remove(userInput.length() - 1);
+            }
             drawDictationInput();
-        }
+        } 
 
         // 按 ENTER 检查答案
         if (st.enter) {
@@ -134,6 +147,7 @@ void loopDictationMode() {
         // ESC 返回上级菜单
         for (auto c : st.word) {
             if (c == 27) { // ESC
+                previousMode = appMode; // 记录当前模式，以便返回
                 appMode = MODE_ESC_MENU;
                 initEscMenuMode();
                 return;
