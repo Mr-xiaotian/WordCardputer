@@ -129,11 +129,9 @@ void loopStudyMode() {
             }
         }
 
-        // 检测字母 a
-        for (auto c : status.word) {
-            if (c == 'a' || c == 'A') {
-                playAudioForWord(words[wordIndex].jp);
-            }
+        // fn = 播放音频
+        if (status.fn) {
+            playAudioForWord(words[wordIndex].jp);
         }
 
         // Enter = 记住，提升熟练度

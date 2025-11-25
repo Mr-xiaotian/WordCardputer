@@ -81,18 +81,16 @@ void loopListenMode() {
         auto st = M5Cardputer.Keyboard.keysState();
         userAction = true;
 
-        // 处理 ESC（你在学习模式里用的是 '`' 来代表 ESC）
         for (auto c : st.word) {
+            // 处理 ESC（你在学习模式里用的是 '`' 来代表 ESC）
             if (c == '`') {  // ESC
                 previousMode = appMode; // 记录当前模式
                 appMode = MODE_ESC_MENU;
                 initEscMenuMode();
                 return;
             }
-        }
 
-        // 处理音量调节（复用学习模式逻辑）
-        for (auto c : st.word) {
+            // 处理音量调节（复用学习模式逻辑）
             if (c == ';') {  // 上：音量+
                 soundVolume = min(255, soundVolume + 10);
             } else if (c == '.') {  // 下：音量-
