@@ -64,8 +64,8 @@ void loopEscMenuMode();
 void initDictationMode();
 void loopDictationMode();
 
-void initListenMode();     // 👈 新增
-void loopListenMode();     // 👈 新增
+void initListenMode();    
+void loopListenMode();    
 
 bool loadWordsFromJSON(const String &path);
 int pickWeightedRandom();

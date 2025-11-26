@@ -40,9 +40,7 @@ void loopEscMenuMode() {
 
         for (auto c : st.word) {
             if (c == '`') {  // ESC 键
-                previousMode = appMode; // 记录当前模式
-                appMode = MODE_ESC_MENU;
-                initEscMenuMode();
+                appMode = previousMode;
                 return;
             }
 
