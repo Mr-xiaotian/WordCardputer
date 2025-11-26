@@ -86,7 +86,8 @@ void drawTextMenu(
     bool showPager = true
 );
 
-bool tryConvertRomaji(String &buffer, String &outputKana);
+String matchRomaji(const String &buffer);
+void removeLastUTF8Char(String &s);
 
 // =============== 主程序 ===============
 void setup() {
@@ -134,7 +135,7 @@ void loop() {
     } else if (appMode == MODE_ESC_MENU) {
         loopEscMenuMode();
     } else if (appMode == MODE_DICTATION) {
-        // TODO: 实现听写模式
+        loopDictationMode();
     } else if (appMode == MODE_LISTEN) {     // 👈 新增
         loopListenMode();
     }
