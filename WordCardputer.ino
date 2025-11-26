@@ -86,7 +86,7 @@ void drawTextMenu(
     bool showPager = true
 );
 
-String matchRomaji(const String &buffer);
+String matchRomaji(const String &buffer, bool useKatakana);
 void removeLastUTF8Char(String &s);
 
 // =============== 主程序 ===============

@@ -15,6 +15,7 @@ int correctCount = 0;
 int wrongCount = 0;
 
 bool dictShowSummary = false;
+bool useKatakana = false;
 
 // ---------- 初始化听写模式 ----------
 void initDictationMode() {
@@ -151,7 +152,7 @@ void loopDictationMode() {
         romajiBuffer += lc;
 
         // 重新计算候选假名
-        candidateKana = matchRomaji(romajiBuffer);
+        candidateKana = matchRomaji(romajiBuffer, useKatakana);
         drawDictationInput();
       }
     }
@@ -161,10 +162,15 @@ void loopDictationMode() {
       if (romajiBuffer.length() > 0) {
         // 优先删 romajiBuffer 的尾字母
         romajiBuffer.remove(romajiBuffer.length() - 1);
-        candidateKana = matchRomaji(romajiBuffer);
+        candidateKana = matchRomaji(romajiBuffer, useKatakana);
       } else if (commitText.length() > 0) {
         removeLastUTF8Char(commitText);
       }
+      drawDictationInput();
+    }
+
+    if (st.shift) {
+      useKatakana = !useKatakana;
       drawDictationInput();
     }
 
