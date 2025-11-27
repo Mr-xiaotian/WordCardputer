@@ -40,6 +40,15 @@ void loopEscMenuMode() {
         for (auto c : st.word) {
             if (c == '`') {  // ESC 键
                 appMode = previousMode;
+                if (previousMode == MODE_STUDY) {
+                    drawWord();
+                }
+                else if (previousMode == MODE_LISTEN) {
+                    initListenMode();
+                }
+                else if (previousMode == MODE_DICTATION) {
+                    initDictationMode();
+                }
                 return;
             }
 
