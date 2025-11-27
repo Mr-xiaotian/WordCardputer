@@ -1,103 +1,111 @@
 [
   {
     "jp": "はい",
-    "romaji": "hai",
     "zh": "是,对",
-    "kanji": null,
+    "kanji": "",
     "tone": 1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "いいえ",
-    "romaji": "iie",
     "zh": "不,不对; 不是",
-    "kanji": null,
+    "kanji": "",
     "tone": 3,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "ありがとう",
-    "romaji": "arigatou",
-    "zh": "谢谢"
+    "zh": "谢谢",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "こんにちは",
-    "romaji": "konnichiwa",
-    "zh": "你好"
+    "zh": "你好",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "さようなら",
-    "romaji": "sayounara",
-    "zh": "再见"
+    "zh": "再见",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "おはよう",
-    "romaji": "ohayou",
-    "zh": "早上好"
+    "zh": "早上好",
+    "kanji": "",
+    "tone": -1,
+    "score": 3
   },
   {
     "jp": "こんばんは",
-    "romaji": "konbanwa",
-    "zh": "晚上好"
+    "zh": "晚上好",
+    "kanji": "",
+    "tone": -1,
+    "score": 2
   },
   {
     "jp": "おやすみ",
-    "romaji": "oyasumi",
-    "zh": "晚安"
+    "zh": "晚安",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "すみません",
-    "romaji": "sumimasen",
-    "zh": "对不起,打扰了"
+    "zh": "对不起,打扰了",
+    "kanji": "",
+    "tone": -1,
+    "score": 5
   },
   {
     "jp": "わたし",
-    "romaji": "watashi",
     "zh": "我",
     "kanji": "私",
     "tone": 0,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "あなた",
-    "romaji": "anata",
     "zh": "你",
-    "kanji": null,
+    "kanji": "",
     "tone": 2,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "これ",
-    "romaji": "kore",
     "zh": "这个",
-    "kanji": null,
+    "kanji": "",
     "tone": 0,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "それ",
-    "romaji": "sore",
     "zh": "那个(近指)",
-    "kanji": null,
+    "kanji": "",
     "tone": 0,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "あれ",
-    "romaji": "are",
     "zh": "那个(远指)",
-    "kanji": null,
+    "kanji": "",
     "tone": 0,
     "score": 3
   },
   {
     "jp": "どれ",
-    "romaji": "dore",
-    "zh": "哪个"
+    "zh": "哪个",
+    "kanji": "",
+    "tone": -1,
+    "score": 5
   },
   {
     "jp": "ここ",
-    "romaji": "koko",
     "zh": "这里",
     "kanji": "",
     "tone": 0,
@@ -105,7 +113,6 @@
   },
   {
     "jp": "そこ",
-    "romaji": "soko",
     "zh": "那里（近指）",
     "kanji": "",
     "tone": 0,
@@ -113,15 +120,13 @@
   },
   {
     "jp": "あそこ",
-    "romaji": "asoko",
     "zh": "那里（远指）",
     "kanji": "",
     "tone": 0,
-    "score": 3
+    "score": 4
   },
   {
     "jp": "どこ",
-    "romaji": "doko",
     "zh": "哪里",
     "kanji": "",
     "tone": 1,
@@ -129,32 +134,34 @@
   },
   {
     "jp": "だれ",
-    "romaji": "dare",
-    "zh": "谁"
+    "zh": "谁",
+    "kanji": "",
+    "tone": -1,
+    "score": 3
   },
   {
     "jp": "なに,なん",
-    "romaji": "nani,nan",
-    "zh": "什么"
+    "zh": "什么",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "いつ",
-    "romaji": "itsu",
     "zh": "什么时候",
     "kanji": "",
     "tone": 1,
-    "pos": "疑問"
+    "score": 5
   },
   {
     "jp": "どう",
-    "romaji": "dou",
     "zh": "怎么,怎么样",
     "kanji": "",
-    "tone": 1
+    "tone": 1,
+    "score": 2
   },
   {
     "jp": "いくら",
-    "romaji": "ikura",
     "zh": "多少钱",
     "kanji": "",
     "tone": 1,
@@ -162,109 +169,132 @@
   },
   {
     "jp": "ひと",
-    "romaji": "hito",
-    "zh": "人"
+    "zh": "人",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "かれ",
-    "romaji": "kare",
-    "zh": "他"
+    "zh": "他",
+    "kanji": "",
+    "tone": -1,
+    "score": 3
   },
   {
     "jp": "かのじょ",
-    "romaji": "kanojo",
-    "zh": "她"
+    "zh": "她",
+    "kanji": "",
+    "tone": -1,
+    "score": 3
   },
   {
     "jp": "いぬ",
-    "romaji": "inu",
-    "zh": "狗"
+    "zh": "狗",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "ねこ",
-    "romaji": "neko",
-    "zh": "猫"
+    "zh": "猫",
+    "kanji": "",
+    "tone": -1,
+    "score": 3
   },
   {
     "jp": "とり",
-    "romaji": "tori",
-    "zh": "鸟"
+    "zh": "鸟",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "さかな",
-    "romaji": "sakana",
-    "zh": "鱼"
+    "zh": "鱼",
+    "kanji": "",
+    "tone": -1,
+    "score": 3
   },
   {
     "jp": "みず",
-    "romaji": "mizu",
     "zh": "水",
     "kanji": "水",
     "tone": 0,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "ひ",
-    "romaji": "hi",
-    "zh": "火,日"
+    "zh": "火,日",
+    "kanji": "",
+    "tone": -1,
+    "score": 5
   },
   {
     "jp": "つき",
-    "romaji": "tsuki",
-    "zh": "月亮"
+    "zh": "月亮",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "ほし",
-    "romaji": "hoshi",
-    "zh": "星星"
+    "zh": "星星",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "やま",
-    "romaji": "yama",
-    "zh": "山"
+    "zh": "山",
+    "kanji": "",
+    "tone": -1,
+    "score": 3
   },
   {
     "jp": "かわ",
-    "romaji": "kawa",
-    "zh": "河"
+    "zh": "河",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "うみ",
-    "romaji": "umi",
-    "zh": "海"
+    "zh": "海",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "そら",
-    "romaji": "sora",
-    "zh": "天空"
+    "zh": "天空",
+    "kanji": "",
+    "tone": -1,
+    "score": 3
   },
   {
     "jp": "いち",
-    "romaji": "ichi",
     "zh": "一",
     "kanji": "一",
     "tone": 2,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "に",
-    "romaji": "ni",
     "zh": "二",
     "kanji": "二",
     "tone": 1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "さん",
-    "romaji": "san",
     "zh": "三",
     "kanji": "三",
     "tone": 1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "よん",
-    "romaji": "yon",
     "zh": "四",
     "kanji": "四",
     "tone": 1,
@@ -272,39 +302,34 @@
   },
   {
     "jp": "ご",
-    "romaji": "go",
     "zh": "五",
     "kanji": "五",
     "tone": 0,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "ろく",
-    "romaji": "roku",
     "zh": "六",
     "kanji": "六",
     "tone": 1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "なな",
-    "romaji": "nana",
     "zh": "七",
     "kanji": "七",
     "tone": 1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "はち",
-    "romaji": "hachi",
     "zh": "蜜蜂; 八",
     "kanji": "八",
     "tone": 1,
-    "score": 3
+    "score": 4
   },
   {
     "jp": "きゅう",
-    "romaji": "kyuu",
     "zh": "九",
     "kanji": "九",
     "tone": 1,
@@ -312,15 +337,13 @@
   },
   {
     "jp": "じゅう",
-    "romaji": "juu",
     "zh": "十",
     "kanji": "十",
     "tone": 1,
-    "score": 3
+    "score": 4
   },
   {
     "jp": "ひゃく",
-    "romaji": "hyaku",
     "zh": "百",
     "kanji": "百",
     "tone": 2,
@@ -328,43 +351,51 @@
   },
   {
     "jp": "せん",
-    "romaji": "sen",
     "zh": "千",
     "kanji": "千",
     "tone": 1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "まん",
-    "romaji": "man",
     "zh": "万",
     "kanji": "万",
     "tone": 1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "おおきい",
-    "romaji": "ookii",
-    "zh": "大的"
+    "zh": "大的",
+    "kanji": "",
+    "tone": -1,
+    "score": 3
   },
   {
     "jp": "ちいさい",
-    "romaji": "chiisai",
-    "zh": "小的"
+    "zh": "小的",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   },
   {
     "jp": "あつい",
-    "romaji": "atsui",
-    "zh": "热的; 热的,厚的"
+    "zh": "热的; 热的,厚的",
+    "kanji": "",
+    "tone": -1,
+    "score": 2
   },
   {
     "jp": "さむい",
-    "romaji": "samui",
-    "zh": "冷的"
+    "zh": "冷的",
+    "kanji": "",
+    "tone": -1,
+    "score": 5
   },
   {
     "jp": "あたらしい",
-    "romaji": "atarashii",
-    "zh": "新的"
+    "zh": "新的",
+    "kanji": "",
+    "tone": -1,
+    "score": 4
   }
 ]
