@@ -1,333 +1,335 @@
 [
-  {
-    "jp": "あさって",
-    "romaji": "asatte",
-    "zh": "后天",
-    "kanji": "明後日",
-    "tone": 2,
-    "score": 1
-  },
-  {
-    "jp": "おととい",
-    "romaji": "ototoi",
-    "zh": "前天"
-  },
-  {
-    "jp": "まいにち",
-    "romaji": "mainichi",
-    "zh": "每天",
-    "kanji": "毎日",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "まいあさ",
-    "romaji": "maiasa",
-    "zh": "每天早上",
-    "kanji": "毎朝",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "まいばん",
-    "romaji": "maiban",
-    "zh": "每天晚上",
-    "kanji": "毎晩",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "しゅうまつ",
-    "romaji": "shuumatsu",
-    "zh": "周末",
-    "kanji": "週末",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "ひとつ",
-    "romaji": "hitotsu",
-    "zh": "一个"
-  },
-  {
-    "jp": "ふたつ",
-    "romaji": "futatsu",
-    "zh": "两个"
-  },
-  {
-    "jp": "みっつ",
-    "romaji": "mittsu",
-    "zh": "三个"
-  },
-  {
-    "jp": "よっつ",
-    "romaji": "yottsu",
-    "zh": "四个"
-  },
-  {
-    "jp": "いつつ",
-    "romaji": "itsutsu",
-    "zh": "五个"
-  },
-  {
-    "jp": "むっつ",
-    "romaji": "muttsu",
-    "zh": "六个"
-  },
-  {
-    "jp": "ななつ",
-    "romaji": "nanatsu",
-    "zh": "七个"
-  },
-  {
-    "jp": "やっつ",
-    "romaji": "yattsu",
-    "zh": "八个"
-  },
-  {
-    "jp": "ここのつ",
-    "romaji": "kokonotsu",
-    "zh": "九个"
-  },
-  {
-    "jp": "とお",
-    "romaji": "too",
-    "zh": "十个"
-  },
-  {
-    "jp": "いちがつ",
-    "romaji": "ichigatsu",
-    "zh": "一月"
-  },
-  {
-    "jp": "にがつ",
-    "romaji": "nigatsu",
-    "zh": "二月"
-  },
-  {
-    "jp": "さんがつ",
-    "romaji": "sangatsu",
-    "zh": "三月"
-  },
-  {
-    "jp": "しがつ",
-    "romaji": "shigatsu",
-    "zh": "四月"
-  },
-  {
-    "jp": "ごがつ",
-    "romaji": "gogatsu",
-    "zh": "五月"
-  },
-  {
-    "jp": "ろくがつ",
-    "romaji": "rokugatsu",
-    "zh": "六月"
-  },
-  {
-    "jp": "しちがつ",
-    "romaji": "shichigatsu",
-    "zh": "七月"
-  },
-  {
-    "jp": "はちがつ",
-    "romaji": "hachigatsu",
-    "zh": "八月"
-  },
-  {
-    "jp": "くがつ",
-    "romaji": "kugatsu",
-    "zh": "九月"
-  },
-  {
-    "jp": "じゅうがつ",
-    "romaji": "juugatsu",
-    "zh": "十月"
-  },
-  {
-    "jp": "じゅういちがつ",
-    "romaji": "juuichigatsu",
-    "zh": "十一月"
-  },
-  {
-    "jp": "じゅうにがつ",
-    "romaji": "juunigatsu",
-    "zh": "十二月"
-  },
-  {
-    "jp": "くだもの",
-    "romaji": "kudamono",
-    "zh": "水果"
-  },
-  {
-    "jp": "やさい",
-    "romaji": "yasai",
-    "zh": "蔬菜",
-    "kanji": "野菜",
-    "tone": 0
-  },
-  {
-    "jp": "にく",
-    "romaji": "niku",
-    "zh": "肉"
-  },
-  {
-    "jp": "たまご",
-    "romaji": "tamago",
-    "zh": "鸡蛋,蛋",
-    "kanji": "卵",
-    "tone": 2
-  },
-  {
-    "jp": "パン",
-    "romaji": "pan",
-    "zh": "面包",
-    "kanji": "",
-    "tone": 1,
-    "score": 2
-  },
-  {
-    "jp": "ごはん",
-    "romaji": "gohan",
-    "zh": "饭; 米饭",
-    "kanji": "ご飯",
-    "tone": 1
-  },
-  {
-    "jp": "みせ",
-    "romaji": "mise",
-    "zh": "商店",
-    "kanji": "店",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "デパート",
-    "romaji": "depaato",
-    "zh": "百货商店",
-    "kanji": "",
-    "tone": 2,
-    "score": 4
-  },
-  {
-    "jp": "スーパー",
-    "romaji": "suupaa",
-    "zh": "超市",
-    "kanji": "",
-    "tone": 1,
-    "score": 4
-  },
-  {
-    "jp": "としょかん",
-    "romaji": "toshokan",
-    "zh": "图书馆",
-    "kanji": "図書館",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "こうえん",
-    "romaji": "kouen",
-    "zh": "公园",
-    "kanji": "公園",
-    "tone": 0,
-    "score": 4
-  },
-  {
-    "jp": "びじゅつかん",
-    "romaji": "bijutsukan",
-    "zh": "美术馆",
-    "kanji": "美術館",
-    "tone": 3
-  },
-  {
-    "jp": "はがき",
-    "romaji": "hagaki",
-    "zh": "明信片"
-  },
-  {
-    "jp": "てがみ",
-    "romaji": "tegami",
-    "zh": "信",
-    "kanji": "手紙",
-    "tone": 0
-  },
-  {
-    "jp": "きって",
-    "romaji": "kitte",
-    "zh": "邮票"
-  },
-  {
-    "jp": "うた",
-    "romaji": "uta",
-    "zh": "歌"
-  },
-  {
-    "jp": "いろ",
-    "romaji": "iro",
-    "zh": "颜色"
-  },
-  {
-    "jp": "なまえ",
-    "romaji": "namae",
-    "zh": "名字"
-  },
-  {
-    "jp": "でんき",
-    "romaji": "denki",
-    "zh": "电"
-  },
-  {
-    "jp": "かみ",
-    "romaji": "kami",
-    "zh": "纸,头发,神; 头发; 纸,头发"
-  },
-  {
-    "jp": "みぎ",
-    "romaji": "migi",
-    "zh": "右边; 右"
-  },
-  {
-    "jp": "ひだり",
-    "romaji": "hidari",
-    "zh": "左边; 左"
-  },
-  {
-    "jp": "うえ",
-    "romaji": "ue",
-    "zh": "上面; 上"
-  },
-  {
-    "jp": "した",
-    "romaji": "shita",
-    "zh": "舌头,下面; 下面; 下"
-  },
-  {
-    "jp": "まえ",
-    "romaji": "mae",
-    "zh": "前,之前; 前面",
-    "kanji": "前",
-    "tone": 1,
-    "score": 4
-  },
-  {
-    "jp": "うしろ",
-    "romaji": "ushiro",
-    "zh": "后面"
-  },
-  {
-    "jp": "なか",
-    "romaji": "naka",
-    "zh": "里面; 中间; 里面"
-  },
-  {
-    "jp": "そと",
-    "romaji": "soto",
-    "zh": "外面"
-  },
-  {
-    "jp": "となり",
-    "romaji": "tonari",
-    "zh": "旁边"
-  }
+    {
+        "jp": "あさって",
+        "romaji": "asatte",
+        "zh": "后天",
+        "kanji": "明後日",
+        "tone": 2,
+        "score": 1
+    },
+    {
+        "jp": "おととい",
+        "romaji": "ototoi",
+        "zh": "前天"
+    },
+    {
+        "jp": "まいにち",
+        "romaji": "mainichi",
+        "zh": "每天",
+        "kanji": "毎日",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "まいあさ",
+        "romaji": "maiasa",
+        "zh": "每天早上",
+        "kanji": "毎朝",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "まいばん",
+        "romaji": "maiban",
+        "zh": "每天晚上",
+        "kanji": "毎晩",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "しゅうまつ",
+        "romaji": "shuumatsu",
+        "zh": "周末",
+        "kanji": "週末",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "ひとつ",
+        "romaji": "hitotsu",
+        "zh": "一个"
+    },
+    {
+        "jp": "ふたつ",
+        "romaji": "futatsu",
+        "zh": "两个"
+    },
+    {
+        "jp": "みっつ",
+        "romaji": "mittsu",
+        "zh": "三个"
+    },
+    {
+        "jp": "よっつ",
+        "romaji": "yottsu",
+        "zh": "四个"
+    },
+    {
+        "jp": "いつつ",
+        "romaji": "itsutsu",
+        "zh": "五个"
+    },
+    {
+        "jp": "むっつ",
+        "romaji": "muttsu",
+        "zh": "六个"
+    },
+    {
+        "jp": "ななつ",
+        "romaji": "nanatsu",
+        "zh": "七个"
+    },
+    {
+        "jp": "やっつ",
+        "romaji": "yattsu",
+        "zh": "八个"
+    },
+    {
+        "jp": "ここのつ",
+        "romaji": "kokonotsu",
+        "zh": "九个"
+    },
+    {
+        "jp": "とお",
+        "romaji": "too",
+        "zh": "十个"
+    },
+    {
+        "jp": "いちがつ",
+        "romaji": "ichigatsu",
+        "zh": "一月"
+    },
+    {
+        "jp": "にがつ",
+        "romaji": "nigatsu",
+        "zh": "二月"
+    },
+    {
+        "jp": "さんがつ",
+        "romaji": "sangatsu",
+        "zh": "三月"
+    },
+    {
+        "jp": "しがつ",
+        "romaji": "shigatsu",
+        "zh": "四月"
+    },
+    {
+        "jp": "ごがつ",
+        "romaji": "gogatsu",
+        "zh": "五月"
+    },
+    {
+        "jp": "ろくがつ",
+        "romaji": "rokugatsu",
+        "zh": "六月"
+    },
+    {
+        "jp": "しちがつ",
+        "romaji": "shichigatsu",
+        "zh": "七月"
+    },
+    {
+        "jp": "はちがつ",
+        "romaji": "hachigatsu",
+        "zh": "八月"
+    },
+    {
+        "jp": "くがつ",
+        "romaji": "kugatsu",
+        "zh": "九月"
+    },
+    {
+        "jp": "じゅうがつ",
+        "romaji": "juugatsu",
+        "zh": "十月"
+    },
+    {
+        "jp": "じゅういちがつ",
+        "romaji": "juuichigatsu",
+        "zh": "十一月"
+    },
+    {
+        "jp": "じゅうにがつ",
+        "romaji": "juunigatsu",
+        "zh": "十二月"
+    },
+    {
+        "jp": "くだもの",
+        "romaji": "kudamono",
+        "zh": "水果"
+    },
+    {
+        "jp": "やさい",
+        "romaji": "yasai",
+        "zh": "蔬菜",
+        "kanji": "野菜",
+        "tone": 0
+    },
+    {
+        "jp": "にく",
+        "romaji": "niku",
+        "zh": "肉"
+    },
+    {
+        "jp": "たまご",
+        "romaji": "tamago",
+        "zh": "鸡蛋,蛋",
+        "kanji": "卵",
+        "tone": 2
+    },
+    {
+        "jp": "パン",
+        "romaji": "pan",
+        "zh": "面包",
+        "kanji": "",
+        "tone": 1,
+        "score": 2
+    },
+    {
+        "jp": "ごはん",
+        "romaji": "gohan",
+        "zh": "饭; 米饭",
+        "kanji": "ご飯",
+        "tone": 1
+    },
+    {
+        "jp": "みせ",
+        "romaji": "mise",
+        "zh": "商店",
+        "kanji": "店",
+        "tone": 2,
+        "score": 5
+    },
+    {
+        "jp": "デパート",
+        "romaji": "depaato",
+        "zh": "百货商店",
+        "kanji": "",
+        "tone": 2,
+        "score": 4
+    },
+    {
+        "jp": "スーパー",
+        "romaji": "suupaa",
+        "zh": "超市",
+        "kanji": "",
+        "tone": 1,
+        "score": 4
+    },
+    {
+        "jp": "としょかん",
+        "romaji": "toshokan",
+        "zh": "图书馆",
+        "kanji": "図書館",
+        "tone": 2,
+        "score": 5
+    },
+    {
+        "jp": "こうえん",
+        "romaji": "kouen",
+        "zh": "公园",
+        "kanji": "公園",
+        "tone": 0,
+        "score": 4
+    },
+    {
+        "jp": "びじゅつかん",
+        "romaji": "bijutsukan",
+        "zh": "美术馆",
+        "kanji": "美術館",
+        "tone": 3
+    },
+    {
+        "jp": "はがき",
+        "romaji": "hagaki",
+        "zh": "明信片"
+    },
+    {
+        "jp": "てがみ",
+        "romaji": "tegami",
+        "zh": "信",
+        "kanji": "手紙",
+        "tone": 0
+    },
+    {
+        "jp": "きって",
+        "romaji": "kitte",
+        "zh": "邮票"
+    },
+    {
+        "jp": "うた",
+        "romaji": "uta",
+        "zh": "歌"
+    },
+    {
+        "jp": "いろ",
+        "romaji": "iro",
+        "zh": "颜色"
+    },
+    {
+        "jp": "なまえ",
+        "romaji": "namae",
+        "zh": "名字"
+    },
+    {
+        "jp": "でんき",
+        "romaji": "denki",
+        "zh": "电"
+    },
+    {
+        "jp": "かみ",
+        "romaji": "kami",
+        "zh": "纸,头发,神; 头发; 纸,头发"
+    },
+    {
+        "jp": "みぎ",
+        "romaji": "migi",
+        "zh": "右边; 右",
+        "kanji": "右"
+    },
+    {
+        "jp": "ひだり",
+        "romaji": "hidari",
+        "zh": "左边; 左",
+        "kanji": "左"
+    },
+    {
+        "jp": "うえ",
+        "romaji": "ue",
+        "zh": "上面; 上"
+    },
+    {
+        "jp": "した",
+        "romaji": "shita",
+        "zh": "舌头,下面; 下面; 下"
+    },
+    {
+        "jp": "まえ",
+        "romaji": "mae",
+        "zh": "前,之前; 前面",
+        "kanji": "前",
+        "tone": 1,
+        "score": 4
+    },
+    {
+        "jp": "うしろ",
+        "romaji": "ushiro",
+        "zh": "后面"
+    },
+    {
+        "jp": "なか",
+        "romaji": "naka",
+        "zh": "里面; 中间; 里面"
+    },
+    {
+        "jp": "そと",
+        "romaji": "soto",
+        "zh": "外面"
+    },
+    {
+        "jp": "となり",
+        "romaji": "tonari",
+        "zh": "旁边"
+    }
 ]

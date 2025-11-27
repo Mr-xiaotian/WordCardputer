@@ -1,299 +1,301 @@
 [
-  {
-    "jp": "とおい",
-    "romaji": "tooi",
-    "zh": "远的"
-  },
-  {
-    "jp": "ちかい",
-    "romaji": "chikai",
-    "zh": "近的"
-  },
-  {
-    "jp": "ながい",
-    "romaji": "nagai",
-    "zh": "长的"
-  },
-  {
-    "jp": "みじかい",
-    "romaji": "mijikai",
-    "zh": "短的"
-  },
-  {
-    "jp": "ふとい",
-    "romaji": "futoi",
-    "zh": "粗的,胖的"
-  },
-  {
-    "jp": "ほそい",
-    "romaji": "hosoi",
-    "zh": "细的,瘦的"
-  },
-  {
-    "jp": "はやい",
-    "romaji": "hayai",
-    "zh": "快的,早的"
-  },
-  {
-    "jp": "おそい",
-    "romaji": "osoi",
-    "zh": "慢的,晚的"
-  },
-  {
-    "jp": "つめたい",
-    "romaji": "tsumetai",
-    "zh": "冷的(物体)"
-  },
-  {
-    "jp": "あまい",
-    "romaji": "amai",
-    "zh": "甜的"
-  },
-  {
-    "jp": "からい",
-    "romaji": "karai",
-    "zh": "辣的"
-  },
-  {
-    "jp": "しょっぱい",
-    "romaji": "shoppai",
-    "zh": "咸的"
-  },
-  {
-    "jp": "すっぱい",
-    "romaji": "suppai",
-    "zh": "酸的"
-  },
-  {
-    "jp": "にがい",
-    "romaji": "nigai",
-    "zh": "苦的"
-  },
-  {
-    "jp": "いそがしい",
-    "romaji": "isogashii",
-    "zh": "忙的"
-  },
-  {
-    "jp": "ひま",
-    "romaji": "hima",
-    "zh": "闲的"
-  },
-  {
-    "jp": "つよい",
-    "romaji": "tsuyoi",
-    "zh": "强的"
-  },
-  {
-    "jp": "よわい",
-    "romaji": "yowai",
-    "zh": "弱的"
-  },
-  {
-    "jp": "うるさい",
-    "romaji": "urusai",
-    "zh": "吵闹的"
-  },
-  {
-    "jp": "しずか",
-    "romaji": "shizuka",
-    "zh": "安静的"
-  },
-  {
-    "jp": "きれい",
-    "romaji": "kirei",
-    "zh": "漂亮的,干净的"
-  },
-  {
-    "jp": "きたない",
-    "romaji": "kitanai",
-    "zh": "脏的"
-  },
-  {
-    "jp": "げんき",
-    "romaji": "genki",
-    "zh": "健康的,精神好的"
-  },
-  {
-    "jp": "びょうき",
-    "romaji": "byouki",
-    "zh": "生病的; 疾病"
-  },
-  {
-    "jp": "たのしい",
-    "romaji": "tanoshii",
-    "zh": "愉快的"
-  },
-  {
-    "jp": "つまらない",
-    "romaji": "tsumaranai",
-    "zh": "无聊的"
-  },
-  {
-    "jp": "おもしろい",
-    "romaji": "omoshiroi",
-    "zh": "有趣的"
-  },
-  {
-    "jp": "むり",
-    "romaji": "muri",
-    "zh": "不可能的"
-  },
-  {
-    "jp": "かんたん",
-    "romaji": "kantan",
-    "zh": "简单的"
-  },
-  {
-    "jp": "じょうず",
-    "romaji": "jouzu",
-    "zh": "擅长的"
-  },
-  {
-    "jp": "へた",
-    "romaji": "heta",
-    "zh": "不擅长的"
-  },
-  {
-    "jp": "すき",
-    "romaji": "suki",
-    "zh": "喜欢"
-  },
-  {
-    "jp": "きらい",
-    "romaji": "kirai",
-    "zh": "讨厌"
-  },
-  {
-    "jp": "ほしい",
-    "romaji": "hoshii",
-    "zh": "想要"
-  },
-  {
-    "jp": "いらない",
-    "romaji": "iranai",
-    "zh": "不需要"
-  },
-  {
-    "jp": "だいすき",
-    "romaji": "daisuki",
-    "zh": "非常喜欢"
-  },
-  {
-    "jp": "だいきらい",
-    "romaji": "daikirai",
-    "zh": "非常讨厌"
-  },
-  {
-    "jp": "おぼえる",
-    "romaji": "oboeru",
-    "zh": "记住"
-  },
-  {
-    "jp": "わすれる",
-    "romaji": "wasureru",
-    "zh": "忘记"
-  },
-  {
-    "jp": "わかる",
-    "romaji": "wakaru",
-    "zh": "明白,懂"
-  },
-  {
-    "jp": "しる",
-    "romaji": "shiru",
-    "zh": "知道"
-  },
-  {
-    "jp": "おもう",
-    "romaji": "omou",
-    "zh": "认为"
-  },
-  {
-    "jp": "かんがえる",
-    "romaji": "kangaeru",
-    "zh": "思考"
-  },
-  {
-    "jp": "できる",
-    "romaji": "dekiru",
-    "zh": "能够,可以"
-  },
-  {
-    "jp": "もつ",
-    "romaji": "motsu",
-    "zh": "拿,持有"
-  },
-  {
-    "jp": "とる",
-    "romaji": "toru",
-    "zh": "照相,拍摄; 拿,取",
-    "kanji": "撮る",
-    "tone": 1
-  },
-  {
-    "jp": "おく",
-    "romaji": "oku",
-    "zh": "放置; 亿",
-    "kanji": "億",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "だす",
-    "romaji": "dasu",
-    "zh": "拿出"
-  },
-  {
-    "jp": "いれる",
-    "romaji": "ireru",
-    "zh": "放入"
-  },
-  {
-    "jp": "つける",
-    "romaji": "tsukeru",
-    "zh": "开(灯)"
-  },
-  {
-    "jp": "けす",
-    "romaji": "kesu",
-    "zh": "关(灯)"
-  },
-  {
-    "jp": "つかう",
-    "romaji": "tsukau",
-    "zh": "使用",
-    "kanji": "使う",
-    "tone": 0
-  },
-  {
-    "jp": "うごく",
-    "romaji": "ugoku",
-    "zh": "动"
-  },
-  {
-    "jp": "とまる",
-    "romaji": "tomaru",
-    "zh": "停"
-  },
-  {
-    "jp": "はしる",
-    "romaji": "hashiru",
-    "zh": "跑"
-  },
-  {
-    "jp": "およぐ",
-    "romaji": "oyogu",
-    "zh": "游泳"
-  },
-  {
-    "jp": "とぶ",
-    "romaji": "tobu",
-    "zh": "飞,跳"
-  },
-  {
-    "jp": "のぼる",
-    "romaji": "noboru",
-    "zh": "爬上"
-  }
+    {
+        "jp": "とおい",
+        "romaji": "tooi",
+        "zh": "远的; 远",
+        "kanji": "遠い"
+    },
+    {
+        "jp": "ちかい",
+        "romaji": "chikai",
+        "zh": "近的; 近",
+        "kanji": "近い"
+    },
+    {
+        "jp": "ながい",
+        "romaji": "nagai",
+        "zh": "长的"
+    },
+    {
+        "jp": "みじかい",
+        "romaji": "mijikai",
+        "zh": "短的"
+    },
+    {
+        "jp": "ふとい",
+        "romaji": "futoi",
+        "zh": "粗的,胖的"
+    },
+    {
+        "jp": "ほそい",
+        "romaji": "hosoi",
+        "zh": "细的,瘦的"
+    },
+    {
+        "jp": "はやい",
+        "romaji": "hayai",
+        "zh": "快的,早的"
+    },
+    {
+        "jp": "おそい",
+        "romaji": "osoi",
+        "zh": "慢的,晚的"
+    },
+    {
+        "jp": "つめたい",
+        "romaji": "tsumetai",
+        "zh": "冷的(物体)"
+    },
+    {
+        "jp": "あまい",
+        "romaji": "amai",
+        "zh": "甜的"
+    },
+    {
+        "jp": "からい",
+        "romaji": "karai",
+        "zh": "辣的"
+    },
+    {
+        "jp": "しょっぱい",
+        "romaji": "shoppai",
+        "zh": "咸的"
+    },
+    {
+        "jp": "すっぱい",
+        "romaji": "suppai",
+        "zh": "酸的"
+    },
+    {
+        "jp": "にがい",
+        "romaji": "nigai",
+        "zh": "苦的"
+    },
+    {
+        "jp": "いそがしい",
+        "romaji": "isogashii",
+        "zh": "忙的"
+    },
+    {
+        "jp": "ひま",
+        "romaji": "hima",
+        "zh": "闲的"
+    },
+    {
+        "jp": "つよい",
+        "romaji": "tsuyoi",
+        "zh": "强的"
+    },
+    {
+        "jp": "よわい",
+        "romaji": "yowai",
+        "zh": "弱的"
+    },
+    {
+        "jp": "うるさい",
+        "romaji": "urusai",
+        "zh": "吵闹的"
+    },
+    {
+        "jp": "しずか",
+        "romaji": "shizuka",
+        "zh": "安静的"
+    },
+    {
+        "jp": "きれい",
+        "romaji": "kirei",
+        "zh": "漂亮的,干净的"
+    },
+    {
+        "jp": "きたない",
+        "romaji": "kitanai",
+        "zh": "脏的"
+    },
+    {
+        "jp": "げんき",
+        "romaji": "genki",
+        "zh": "健康的,精神好的"
+    },
+    {
+        "jp": "びょうき",
+        "romaji": "byouki",
+        "zh": "生病的; 疾病"
+    },
+    {
+        "jp": "たのしい",
+        "romaji": "tanoshii",
+        "zh": "愉快的"
+    },
+    {
+        "jp": "つまらない",
+        "romaji": "tsumaranai",
+        "zh": "无聊的"
+    },
+    {
+        "jp": "おもしろい",
+        "romaji": "omoshiroi",
+        "zh": "有趣的"
+    },
+    {
+        "jp": "むり",
+        "romaji": "muri",
+        "zh": "不可能的"
+    },
+    {
+        "jp": "かんたん",
+        "romaji": "kantan",
+        "zh": "简单的"
+    },
+    {
+        "jp": "じょうず",
+        "romaji": "jouzu",
+        "zh": "擅长的"
+    },
+    {
+        "jp": "へた",
+        "romaji": "heta",
+        "zh": "不擅长的"
+    },
+    {
+        "jp": "すき",
+        "romaji": "suki",
+        "zh": "喜欢"
+    },
+    {
+        "jp": "きらい",
+        "romaji": "kirai",
+        "zh": "讨厌"
+    },
+    {
+        "jp": "ほしい",
+        "romaji": "hoshii",
+        "zh": "想要"
+    },
+    {
+        "jp": "いらない",
+        "romaji": "iranai",
+        "zh": "不需要"
+    },
+    {
+        "jp": "だいすき",
+        "romaji": "daisuki",
+        "zh": "非常喜欢"
+    },
+    {
+        "jp": "だいきらい",
+        "romaji": "daikirai",
+        "zh": "非常讨厌"
+    },
+    {
+        "jp": "おぼえる",
+        "romaji": "oboeru",
+        "zh": "记住"
+    },
+    {
+        "jp": "わすれる",
+        "romaji": "wasureru",
+        "zh": "忘记"
+    },
+    {
+        "jp": "わかる",
+        "romaji": "wakaru",
+        "zh": "明白,懂"
+    },
+    {
+        "jp": "しる",
+        "romaji": "shiru",
+        "zh": "知道"
+    },
+    {
+        "jp": "おもう",
+        "romaji": "omou",
+        "zh": "认为"
+    },
+    {
+        "jp": "かんがえる",
+        "romaji": "kangaeru",
+        "zh": "思考"
+    },
+    {
+        "jp": "できる",
+        "romaji": "dekiru",
+        "zh": "能够,可以"
+    },
+    {
+        "jp": "もつ",
+        "romaji": "motsu",
+        "zh": "拿,持有"
+    },
+    {
+        "jp": "とる",
+        "romaji": "toru",
+        "zh": "照相,拍摄; 拿,取",
+        "kanji": "撮る",
+        "tone": 1
+    },
+    {
+        "jp": "おく",
+        "romaji": "oku",
+        "zh": "放置; 亿",
+        "kanji": "億",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "だす",
+        "romaji": "dasu",
+        "zh": "拿出"
+    },
+    {
+        "jp": "いれる",
+        "romaji": "ireru",
+        "zh": "放入"
+    },
+    {
+        "jp": "つける",
+        "romaji": "tsukeru",
+        "zh": "开(灯)"
+    },
+    {
+        "jp": "けす",
+        "romaji": "kesu",
+        "zh": "关(灯)"
+    },
+    {
+        "jp": "つかう",
+        "romaji": "tsukau",
+        "zh": "使用",
+        "kanji": "使う",
+        "tone": 0
+    },
+    {
+        "jp": "うごく",
+        "romaji": "ugoku",
+        "zh": "动"
+    },
+    {
+        "jp": "とまる",
+        "romaji": "tomaru",
+        "zh": "停"
+    },
+    {
+        "jp": "はしる",
+        "romaji": "hashiru",
+        "zh": "跑"
+    },
+    {
+        "jp": "およぐ",
+        "romaji": "oyogu",
+        "zh": "游泳"
+    },
+    {
+        "jp": "とぶ",
+        "romaji": "tobu",
+        "zh": "飞,跳"
+    },
+    {
+        "jp": "のぼる",
+        "romaji": "noboru",
+        "zh": "爬上"
+    }
 ]

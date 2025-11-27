@@ -1,334 +1,338 @@
 [
-  {
-    "jp": "てくび",
-    "romaji": "tekubi",
-    "zh": "手腕"
-  },
-  {
-    "jp": "ひげ",
-    "romaji": "hige",
-    "zh": "胡子"
-  },
-  {
-    "jp": "まゆげ",
-    "romaji": "mayuge",
-    "zh": "眉毛"
-  },
-  {
-    "jp": "まつげ",
-    "romaji": "matsuge",
-    "zh": "睫毛"
-  },
-  {
-    "jp": "くすり",
-    "romaji": "kusuri",
-    "zh": "药"
-  },
-  {
-    "jp": "ねつ",
-    "romaji": "netsu",
-    "zh": "发烧"
-  },
-  {
-    "jp": "せき",
-    "romaji": "seki",
-    "zh": "咳嗽"
-  },
-  {
-    "jp": "くしゃみ",
-    "romaji": "kushami",
-    "zh": "喷嚏"
-  },
-  {
-    "jp": "いた",
-    "romaji": "ita",
-    "zh": "疼痛"
-  },
-  {
-    "jp": "けが",
-    "romaji": "kega",
-    "zh": "外伤"
-  },
-  {
-    "jp": "ぽけっと",
-    "romaji": "poketto",
-    "zh": "口袋"
-  },
-  {
-    "jp": "さいふ",
-    "romaji": "saifu",
-    "zh": "钱包"
-  },
-  {
-    "jp": "かさ",
-    "romaji": "kasa",
-    "zh": "伞",
-    "kanji": "傘",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "めがね",
-    "romaji": "megane",
-    "zh": "眼镜"
-  },
-  {
-    "jp": "かぎ",
-    "romaji": "kagi",
-    "zh": "钥匙"
-  },
-  {
-    "jp": "でんち",
-    "romaji": "denchi",
-    "zh": "电池"
-  },
-  {
-    "jp": "けいたいでんわ",
-    "romaji": "keitaidenwa",
-    "zh": "手机"
-  },
-  {
-    "jp": "パソコン",
-    "romaji": "pasokon",
-    "zh": "个人电脑",
-    "kanji": "",
-    "tone": 0
-  },
-  {
-    "jp": "テレビ",
-    "romaji": "terebi",
-    "zh": "电视"
-  },
-  {
-    "jp": "らじお",
-    "romaji": "rajio",
-    "zh": "收音机"
-  },
-  {
-    "jp": "カメラ",
-    "romaji": "kamera",
-    "zh": "相机"
-  },
-  {
-    "jp": "ビデオ",
-    "romaji": "bideo",
-    "zh": "录像机"
-  },
-  {
-    "jp": "エアコン",
-    "romaji": "eakon",
-    "zh": "空调"
-  },
-  {
-    "jp": "れいぞうこ",
-    "romaji": "reizouko",
-    "zh": "冰箱"
-  },
-  {
-    "jp": "せんたくき",
-    "romaji": "sentakuki",
-    "zh": "洗衣机"
-  },
-  {
-    "jp": "そうじき",
-    "romaji": "soujiki",
-    "zh": "吸尘器"
-  },
-  {
-    "jp": "でんしレンジ",
-    "romaji": "denshi renji",
-    "zh": "微波炉"
-  },
-  {
-    "jp": "バイク",
-    "romaji": "baiku",
-    "zh": "摩托车"
-  },
-  {
-    "jp": "しんかんせん",
-    "romaji": "shinkansen",
-    "zh": "新干线",
-    "kanji": "新幹線",
-    "tone": 3,
-    "pos": "名"
-  },
-  {
-    "jp": "ちかてつ",
-    "romaji": "chikatetsu",
-    "zh": "地铁",
-    "kanji": "地下鉄",
-    "tone": 2,
-    "pos": "名"
-  },
-  {
-    "jp": "ふね",
-    "romaji": "fune",
-    "zh": "船",
-    "kanji": "船",
-    "tone": 1,
-    "pos": "名"
-  },
-  {
-    "jp": "タクシー",
-    "romaji": "takushii",
-    "zh": "出租车",
-    "kanji": "",
-    "tone": 1,
-    "pos": "名"
-  },
-  {
-    "jp": "バスてい",
-    "romaji": "basutei",
-    "zh": "公交车站"
-  },
-  {
-    "jp": "くうこう",
-    "romaji": "kuukou",
-    "zh": "机场",
-    "kanji": "空港",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "みなと",
-    "romaji": "minato",
-    "zh": "港口"
-  },
-  {
-    "jp": "ホテル",
-    "romaji": "hoteru",
-    "zh": "酒店"
-  },
-  {
-    "jp": "りょかん",
-    "romaji": "ryokan",
-    "zh": "日式旅馆"
-  },
-  {
-    "jp": "きっさてん",
-    "romaji": "kissaten",
-    "zh": "茶馆; 咖啡店",
-    "kanji": "喫茶店",
-    "tone": 3,
-    "score": 4
-  },
-  {
-    "jp": "えいがかん",
-    "romaji": "eigakan",
-    "zh": "电影院"
-  },
-  {
-    "jp": "はくぶつかん",
-    "romaji": "hakubutsukan",
-    "zh": "博物馆"
-  },
-  {
-    "jp": "どうぶつえん",
-    "romaji": "doubutsuen",
-    "zh": "动物园"
-  },
-  {
-    "jp": "コンビニ",
-    "romaji": "konbini",
-    "zh": "便利店",
-    "kanji": "",
-    "tone": 0
-  },
-  {
-    "jp": "やおや",
-    "romaji": "yaoya",
-    "zh": "蔬果店"
-  },
-  {
-    "jp": "パン屋",
-    "romaji": "pan-ya",
-    "zh": "面包店"
-  },
-  {
-    "jp": "くつや",
-    "romaji": "kutsuya",
-    "zh": "鞋店"
-  },
-  {
-    "jp": "しんぶん",
-    "romaji": "shinbun",
-    "zh": "报纸",
-    "kanji": "新聞",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "ざっし",
-    "romaji": "zasshi",
-    "zh": "杂志",
-    "kanji": "雑誌",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "じしょ",
-    "romaji": "jisho",
-    "zh": "词典",
-    "kanji": "辞書",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "かいぎ",
-    "romaji": "kaigi",
-    "zh": "会议",
-    "kanji": "会議",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "しゅくだい",
-    "romaji": "shukudai",
-    "zh": "作业; 家庭作业",
-    "kanji": "宿題",
-    "tone": 0
-  },
-  {
-    "jp": "しけん",
-    "romaji": "shiken",
-    "zh": "考试"
-  },
-  {
-    "jp": "せいせき",
-    "romaji": "seiseki",
-    "zh": "成绩"
-  },
-  {
-    "jp": "じゅぎょう",
-    "romaji": "jugyou",
-    "zh": "上课; 课",
-    "kanji": "授業",
-    "tone": 1,
-    "score": 2
-  },
-  {
-    "jp": "れんしゅう",
-    "romaji": "renshuu",
-    "zh": "练习"
-  },
-  {
-    "jp": "もんだい",
-    "romaji": "mondai",
-    "zh": "问题"
-  },
-  {
-    "jp": "こたえ",
-    "romaji": "kotae",
-    "zh": "答案"
-  },
-  {
-    "jp": "ちず",
-    "romaji": "chizu",
-    "zh": "地图"
-  },
-  {
-    "jp": "こうさてん",
-    "romaji": "kousaten",
-    "zh": "十字路口"
-  }
+    {
+        "jp": "てくび",
+        "romaji": "tekubi",
+        "zh": "手腕"
+    },
+    {
+        "jp": "ひげ",
+        "romaji": "hige",
+        "zh": "胡子"
+    },
+    {
+        "jp": "まゆげ",
+        "romaji": "mayuge",
+        "zh": "眉毛"
+    },
+    {
+        "jp": "まつげ",
+        "romaji": "matsuge",
+        "zh": "睫毛"
+    },
+    {
+        "jp": "くすり",
+        "romaji": "kusuri",
+        "zh": "药",
+        "kanji": "薬"
+    },
+    {
+        "jp": "ねつ",
+        "romaji": "netsu",
+        "zh": "发烧",
+        "kanji": "熱"
+    },
+    {
+        "jp": "せき",
+        "romaji": "seki",
+        "zh": "咳嗽"
+    },
+    {
+        "jp": "くしゃみ",
+        "romaji": "kushami",
+        "zh": "喷嚏"
+    },
+    {
+        "jp": "いた",
+        "romaji": "ita",
+        "zh": "疼痛"
+    },
+    {
+        "jp": "けが",
+        "romaji": "kega",
+        "zh": "外伤"
+    },
+    {
+        "jp": "ぽけっと",
+        "romaji": "poketto",
+        "zh": "口袋"
+    },
+    {
+        "jp": "さいふ",
+        "romaji": "saifu",
+        "zh": "钱包"
+    },
+    {
+        "jp": "かさ",
+        "romaji": "kasa",
+        "zh": "伞",
+        "kanji": "傘",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "めがね",
+        "romaji": "megane",
+        "zh": "眼镜"
+    },
+    {
+        "jp": "かぎ",
+        "romaji": "kagi",
+        "zh": "钥匙",
+        "kanji": "鍵"
+    },
+    {
+        "jp": "でんち",
+        "romaji": "denchi",
+        "zh": "电池"
+    },
+    {
+        "jp": "けいたいでんわ",
+        "romaji": "keitaidenwa",
+        "zh": "手机"
+    },
+    {
+        "jp": "パソコン",
+        "romaji": "pasokon",
+        "zh": "个人电脑",
+        "kanji": "",
+        "tone": 0
+    },
+    {
+        "jp": "テレビ",
+        "romaji": "terebi",
+        "zh": "电视"
+    },
+    {
+        "jp": "らじお",
+        "romaji": "rajio",
+        "zh": "收音机"
+    },
+    {
+        "jp": "カメラ",
+        "romaji": "kamera",
+        "zh": "相机"
+    },
+    {
+        "jp": "ビデオ",
+        "romaji": "bideo",
+        "zh": "录像机"
+    },
+    {
+        "jp": "エアコン",
+        "romaji": "eakon",
+        "zh": "空调"
+    },
+    {
+        "jp": "れいぞうこ",
+        "romaji": "reizouko",
+        "zh": "冰箱"
+    },
+    {
+        "jp": "せんたくき",
+        "romaji": "sentakuki",
+        "zh": "洗衣机"
+    },
+    {
+        "jp": "そうじき",
+        "romaji": "soujiki",
+        "zh": "吸尘器"
+    },
+    {
+        "jp": "でんしレンジ",
+        "romaji": "denshi renji",
+        "zh": "微波炉"
+    },
+    {
+        "jp": "バイク",
+        "romaji": "baiku",
+        "zh": "摩托车"
+    },
+    {
+        "jp": "しんかんせん",
+        "romaji": "shinkansen",
+        "zh": "新干线",
+        "kanji": "新幹線",
+        "tone": 3,
+        "pos": "名"
+    },
+    {
+        "jp": "ちかてつ",
+        "romaji": "chikatetsu",
+        "zh": "地铁",
+        "kanji": "地下鉄",
+        "tone": 2,
+        "pos": "名"
+    },
+    {
+        "jp": "ふね",
+        "romaji": "fune",
+        "zh": "船",
+        "kanji": "船",
+        "tone": 1,
+        "pos": "名"
+    },
+    {
+        "jp": "タクシー",
+        "romaji": "takushii",
+        "zh": "出租车",
+        "kanji": "",
+        "tone": 1,
+        "pos": "名"
+    },
+    {
+        "jp": "バスてい",
+        "romaji": "basutei",
+        "zh": "公交车站",
+        "kanji": "バス停"
+    },
+    {
+        "jp": "くうこう",
+        "romaji": "kuukou",
+        "zh": "机场",
+        "kanji": "空港",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "みなと",
+        "romaji": "minato",
+        "zh": "港口"
+    },
+    {
+        "jp": "ホテル",
+        "romaji": "hoteru",
+        "zh": "酒店"
+    },
+    {
+        "jp": "りょかん",
+        "romaji": "ryokan",
+        "zh": "日式旅馆"
+    },
+    {
+        "jp": "きっさてん",
+        "romaji": "kissaten",
+        "zh": "茶馆; 咖啡店",
+        "kanji": "喫茶店",
+        "tone": 3,
+        "score": 4
+    },
+    {
+        "jp": "えいがかん",
+        "romaji": "eigakan",
+        "zh": "电影院"
+    },
+    {
+        "jp": "はくぶつかん",
+        "romaji": "hakubutsukan",
+        "zh": "博物馆"
+    },
+    {
+        "jp": "どうぶつえん",
+        "romaji": "doubutsuen",
+        "zh": "动物园"
+    },
+    {
+        "jp": "コンビニ",
+        "romaji": "konbini",
+        "zh": "便利店",
+        "kanji": "",
+        "tone": 0
+    },
+    {
+        "jp": "やおや",
+        "romaji": "yaoya",
+        "zh": "蔬果店"
+    },
+    {
+        "jp": "パン屋",
+        "romaji": "pan-ya",
+        "zh": "面包店"
+    },
+    {
+        "jp": "くつや",
+        "romaji": "kutsuya",
+        "zh": "鞋店"
+    },
+    {
+        "jp": "しんぶん",
+        "romaji": "shinbun",
+        "zh": "报纸",
+        "kanji": "新聞",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "ざっし",
+        "romaji": "zasshi",
+        "zh": "杂志",
+        "kanji": "雑誌",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "じしょ",
+        "romaji": "jisho",
+        "zh": "词典",
+        "kanji": "辞書",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "かいぎ",
+        "romaji": "kaigi",
+        "zh": "会议",
+        "kanji": "会議",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "しゅくだい",
+        "romaji": "shukudai",
+        "zh": "作业; 家庭作业",
+        "kanji": "宿題",
+        "tone": 0
+    },
+    {
+        "jp": "しけん",
+        "romaji": "shiken",
+        "zh": "考试"
+    },
+    {
+        "jp": "せいせき",
+        "romaji": "seiseki",
+        "zh": "成绩"
+    },
+    {
+        "jp": "じゅぎょう",
+        "romaji": "jugyou",
+        "zh": "上课; 课",
+        "kanji": "授業",
+        "tone": 1,
+        "score": 2
+    },
+    {
+        "jp": "れんしゅう",
+        "romaji": "renshuu",
+        "zh": "练习"
+    },
+    {
+        "jp": "もんだい",
+        "romaji": "mondai",
+        "zh": "问题"
+    },
+    {
+        "jp": "こたえ",
+        "romaji": "kotae",
+        "zh": "答案"
+    },
+    {
+        "jp": "ちず",
+        "romaji": "chizu",
+        "zh": "地图"
+    },
+    {
+        "jp": "こうさてん",
+        "romaji": "kousaten",
+        "zh": "十字路口"
+    }
 ]
