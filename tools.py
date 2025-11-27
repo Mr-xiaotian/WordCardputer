@@ -186,7 +186,7 @@ def collect_merged_entries(folder_path):
 
                 if key == "score":
                     try:
-                        merged[key] = min(old, val)
+                        merged[key] = max(old, val)
                     except:
                         merged[key] = old
 

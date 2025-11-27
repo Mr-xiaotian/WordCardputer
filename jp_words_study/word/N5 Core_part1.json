@@ -135,8 +135,13 @@
         "zh": "谁"
     },
     {
-        "jp": "なに,なん",
-        "romaji": "nani,nan",
+        "jp": "なに",
+        "romaji": "nani",
+        "zh": "什么"
+    },
+    {
+        "jp": "なん",
+        "romaji": "nan",
         "zh": "什么"
     },
     {

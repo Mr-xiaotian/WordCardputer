@@ -1,0 +1,104 @@
+[
+    {
+        "jp": "たべる",
+        "romaji": "taberu",
+        "zh": "吃",
+        "kanji": "食べる"
+    },
+    {
+        "jp": "みる",
+        "romaji": "miru",
+        "zh": "看、观看",
+        "kanji": "見る"
+    },
+    {
+        "jp": "あける",
+        "romaji": "akeru",
+        "zh": "打开",
+        "kanji": "開ける"
+    },
+    {
+        "jp": "しめる",
+        "romaji": "shimeru",
+        "zh": "关上",
+        "kanji": "閉める"
+    },
+    {
+        "jp": "おきる",
+        "romaji": "okiru",
+        "zh": "起床；发生",
+        "kanji": "起きる"
+    },
+    {
+        "jp": "ねる",
+        "romaji": "neru",
+        "zh": "睡觉",
+        "kanji": "寝る"
+    },
+    {
+        "jp": "でる",
+        "romaji": "deru",
+        "zh": "出去；出现",
+        "kanji": "出る"
+    },
+    {
+        "jp": "いれる",
+        "romaji": "ireru",
+        "zh": "放入、加进",
+        "kanji": "入れる"
+    },
+    {
+        "jp": "みせる",
+        "romaji": "miseru",
+        "zh": "给…看",
+        "kanji": "見せる"
+    },
+    {
+        "jp": "きめる",
+        "romaji": "kimeru",
+        "zh": "决定",
+        "kanji": "決める"
+    },
+    {
+        "jp": "あげる",
+        "romaji": "ageru",
+        "zh": "给（别人）",
+        "kanji": "あげる"
+    },
+    {
+        "jp": "くれる",
+        "romaji": "kureru",
+        "zh": "给（我/我方）",
+        "kanji": "くれる"
+    },
+    {
+        "jp": "できる",
+        "romaji": "dekiru",
+        "zh": "能、会、做得到",
+        "kanji": "出来る"
+    },
+    {
+        "jp": "おしえる",
+        "romaji": "oshieru",
+        "zh": "教、告诉",
+        "kanji": "教える"
+    },
+    {
+        "jp": "わすれる",
+        "romaji": "wasureru",
+        "zh": "忘记",
+        "kanji": "忘れる"
+    },
+    {
+        "jp": "つける",
+        "romaji": "tsukeru",
+        "zh": "打开（电器）",
+        "kanji": "つける"
+    },
+    {
+        "jp": "やめる",
+        "romaji": "yameru",
+        "zh": "停止、放弃",
+        "kanji": "止める／やめる"
+    }
+]
