@@ -71,8 +71,8 @@ bool loadWordsFromJSON(const String &path);
 int pickWeightedRandom();
 
 void drawAutoFitString(M5Canvas &cv, const String &text,
-                       int x, int y, int maxWidth,
-                       float baseSize, float minSize);
+                       int x, int y, float baseSize);
+void drawTitleString(M5Canvas &cv, const String &text);
                        
 void drawTextMenu(
     M5Canvas &cv,
