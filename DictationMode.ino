@@ -234,6 +234,12 @@ void loopDictationMode()
                 }
             }
 
+            // -------- Fn 键：重复播放当前单词音频 --------
+            if (st.fn)
+            {
+                playAudioForWord(words[dictOrder[reviewPos]].jp);
+            }
+
             return; // 防止进入正常输入逻辑
         }
 
@@ -275,10 +281,12 @@ void loopDictationMode()
             }
             drawDictationInput();
         }
-
+        
+        // -------- Shift 键：切换假名模式 --------
         if (st.shift)
         {
             useKatakana = !useKatakana;
+            candidateKana = matchRomaji(romajiBuffer, useKatakana);
             drawDictationInput();
         }
 
