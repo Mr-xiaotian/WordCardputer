@@ -150,11 +150,14 @@ def list_wav_filenames(folder_path: Path) -> List[str]:
     return [wav_file.stem for wav_file in folder_path.glob("*.wav")]
 
 
-def merge_json_folder(folder_path):
+def collect_merged_entries(folder_path):
+    """
+    扫描文件夹所有 JSON 文件，并构建合并后的大词典。
+    返回 all_entries（dict），键为 jp。
+    """
     folder = Path(folder_path)
     all_entries = {}  # keyed by jp
 
-    # 读取所有 json 文件，累积大词典
     for json_file in folder.glob("*.json"):
         with open(json_file, "r", encoding="utf-8") as f:
             try:
@@ -170,36 +173,58 @@ def merge_json_folder(folder_path):
 
             if jp not in all_entries:
                 all_entries[jp] = dict(entry)
-            else:
-                merged = all_entries[jp]
-                for key, val in entry.items():
-                    if key not in merged:
-                        merged[key] = val
-                        continue
+                continue
 
-                    old = merged[key]
-                    if key == "score":
-                        try:
-                            merged[key] = min(old, val)
-                        except:
+            # --- 合并逻辑 ---
+            merged = all_entries[jp]
+            for key, val in entry.items():
+                if key not in merged:
+                    merged[key] = val
+                    continue
+
+                old = merged[key]
+
+                if key == "score":
+                    try:
+                        merged[key] = max(old, val)
+                    except:
+                        merged[key] = old
+
+                elif key == "tone":
+                    if old == val:
+                        merged[key] = val
+                    else:
+                        if old != -1 and val == -1:
                             merged[key] = old
-                    elif key == "tone":
-                        if old == val:
+                        elif val != -1 and old == -1:
                             merged[key] = val
                         else:
-                            # 两边不同，看看有没有不是 -1 的
-                            if old != -1 and val == -1:
-                                merged[key] = old
-                            elif val != -1 and old == -1:
-                                merged[key] = val
-                            else:
-                                merged[key] = -1
-                    else:
-                        if old != val and val not in old.split("; "):
-                            merged[key] = f"{old}; {val}"
-                all_entries[jp] = merged
+                            merged[key] = -1
 
-    # 用合并后的大词典更新每个文件的内容
+                else:
+                    # --- 普通字段合并（安全处理 None） ---
+                    old_str = str(old) if old is not None else ""
+                    val_str = str(val) if val is not None else ""
+
+                    if old_str != val_str and val_str not in old_str.split("; "):
+                        if old_str:
+                            merged[key] = f"{old_str}; {val_str}"
+                        else:
+                            merged[key] = val_str
+
+            all_entries[jp] = merged
+
+    return all_entries
+
+
+
+def apply_merge_and_rewrite(folder_path):
+    """
+    调用 collect_merged_entries，然后把结果写回每个 JSON。
+    """
+    folder = Path(folder_path)
+    all_entries = collect_merged_entries(folder_path)
+
     for json_file in folder.glob("*.json"):
         with open(json_file, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -212,12 +237,14 @@ def merge_json_folder(folder_path):
                 continue
 
             merged = all_entries.get(jp, {})
-            # 按原顺序更新字段
             new_entry = {}
+
+            # 原字段顺序优先
             for key in entry.keys():
                 if key in merged:
                     new_entry[key] = merged[key]
-            # 加入额外字段（保持出现顺序：原字段优先，新增字段后）
+
+            # 新增字段（保持顺序）
             for key, val in merged.items():
                 if key not in new_entry:
                     new_entry[key] = val

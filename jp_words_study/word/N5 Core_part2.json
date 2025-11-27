@@ -1,334 +1,340 @@
 [
-  {
-    "jp": "ふるい",
-    "romaji": "furui",
-    "zh": "旧的"
-  },
-  {
-    "jp": "いい,よい",
-    "romaji": "ii,yoi",
-    "zh": "好的"
-  },
-  {
-    "jp": "わるい",
-    "romaji": "warui",
-    "zh": "坏的"
-  },
-  {
-    "jp": "たかい",
-    "romaji": "takai",
-    "zh": "高的,贵的"
-  },
-  {
-    "jp": "やすい",
-    "romaji": "yasui",
-    "zh": "便宜的"
-  },
-  {
-    "jp": "むずかしい",
-    "romaji": "muzukashii",
-    "zh": "难的"
-  },
-  {
-    "jp": "やさしい",
-    "romaji": "yasashii",
-    "zh": "容易的; 温柔的"
-  },
-  {
-    "jp": "おもい",
-    "romaji": "omoi",
-    "zh": "重的"
-  },
-  {
-    "jp": "かるい",
-    "romaji": "karui",
-    "zh": "轻的"
-  },
-  {
-    "jp": "あかい",
-    "romaji": "akai",
-    "zh": "红色的"
-  },
-  {
-    "jp": "あおい",
-    "romaji": "aoi",
-    "zh": "蓝色的"
-  },
-  {
-    "jp": "きいろい",
-    "romaji": "kiiroi",
-    "zh": "黄色的"
-  },
-  {
-    "jp": "くろい",
-    "romaji": "kuroi",
-    "zh": "黑色的"
-  },
-  {
-    "jp": "しろい",
-    "romaji": "shiroi",
-    "zh": "白色的"
-  },
-  {
-    "jp": "たべる",
-    "romaji": "taberu",
-    "zh": "吃",
-    "kanji": "食べる",
-    "tone": 2
-  },
-  {
-    "jp": "のむ",
-    "romaji": "nomu",
-    "zh": "喝",
-    "kanji": "飲む",
-    "tone": 1
-  },
-  {
-    "jp": "みる",
-    "romaji": "miru",
-    "zh": "看",
-    "kanji": "見る",
-    "tone": 1
-  },
-  {
-    "jp": "きく",
-    "romaji": "kiku",
-    "zh": "听",
-    "kanji": "聞く",
-    "tone": 0
-  },
-  {
-    "jp": "よむ",
-    "romaji": "yomu",
-    "zh": "读,念,阅读,看",
-    "kanji": "読む",
-    "tone": 1
-  },
-  {
-    "jp": "かく",
-    "romaji": "kaku",
-    "zh": "写,写信",
-    "kanji": "書く",
-    "tone": 1
-  },
-  {
-    "jp": "はなす",
-    "romaji": "hanasu",
-    "zh": "说话; 说"
-  },
-  {
-    "jp": "あるく",
-    "romaji": "aruku",
-    "zh": "走"
-  },
-  {
-    "jp": "いく,ゆく",
-    "romaji": "iku,yuku",
-    "zh": "去"
-  },
-  {
-    "jp": "くる",
-    "romaji": "kuru",
-    "zh": "来",
-    "kanji": "来る",
-    "tone": 1,
-    "pos": "自動Ⅲ"
-  },
-  {
-    "jp": "かう",
-    "romaji": "kau",
-    "zh": "买",
-    "kanji": "買う",
-    "tone": 0
-  },
-  {
-    "jp": "うる",
-    "romaji": "uru",
-    "zh": "卖"
-  },
-  {
-    "jp": "あける",
-    "romaji": "akeru",
-    "zh": "开"
-  },
-  {
-    "jp": "しめる",
-    "romaji": "shimeru",
-    "zh": "关"
-  },
-  {
-    "jp": "おきる",
-    "romaji": "okiru",
-    "zh": "起床",
-    "kanji": "起きる",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "ねる",
-    "romaji": "neru",
-    "zh": "睡觉",
-    "kanji": "寝る",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "はじめる",
-    "romaji": "hajimeru",
-    "zh": "开始"
-  },
-  {
-    "jp": "おわる",
-    "romaji": "owaru",
-    "zh": "结束",
-    "kanji": "終わる",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "あそぶ",
-    "romaji": "asobu",
-    "zh": "玩",
-    "kanji": "遊ぶ",
-    "tone": 0,
-    "score": 4
-  },
-  {
-    "jp": "はたらく",
-    "romaji": "hataraku",
-    "zh": "工作",
-    "kanji": "働く",
-    "tone": 0,
-    "score": 2
-  },
-  {
-    "jp": "べんきょうする",
-    "romaji": "benkyou suru",
-    "zh": "学习",
-    "kanji": "勉強する",
-    "tone": 0,
-    "score": 4
-  },
-  {
-    "jp": "おしえる",
-    "romaji": "oshieru",
-    "zh": "教"
-  },
-  {
-    "jp": "ならう",
-    "romaji": "narau",
-    "zh": "学习; 学习(技能)"
-  },
-  {
-    "jp": "あげる",
-    "romaji": "ageru",
-    "zh": "给"
-  },
-  {
-    "jp": "もらう",
-    "romaji": "morau",
-    "zh": "收到"
-  },
-  {
-    "jp": "かす",
-    "romaji": "kasu",
-    "zh": "借出"
-  },
-  {
-    "jp": "かりる",
-    "romaji": "kariru",
-    "zh": "借入"
-  },
-  {
-    "jp": "はいる",
-    "romaji": "hairu",
-    "zh": "进入"
-  },
-  {
-    "jp": "でる",
-    "romaji": "deru",
-    "zh": "出来; 出去"
-  },
-  {
-    "jp": "つくる",
-    "romaji": "tsukuru",
-    "zh": "制作",
-    "kanji": "作る",
-    "tone": 2
-  },
-  {
-    "jp": "なおす",
-    "romaji": "naosu",
-    "zh": "修理"
-  },
-  {
-    "jp": "あう",
-    "romaji": "au",
-    "zh": "见面,会见,遇到",
-    "kanji": "会う",
-    "tone": 1
-  },
-  {
-    "jp": "まつ",
-    "romaji": "matsu",
-    "zh": "等; 等待"
-  },
-  {
-    "jp": "すわる",
-    "romaji": "suwaru",
-    "zh": "坐"
-  },
-  {
-    "jp": "たつ",
-    "romaji": "tatsu",
-    "zh": "站"
-  },
-  {
-    "jp": "あめ",
-    "romaji": "ame",
-    "zh": "糖果,雨; 雨; 雨"
-  },
-  {
-    "jp": "ゆき",
-    "romaji": "yuki",
-    "zh": "雪"
-  },
-  {
-    "jp": "かぜ",
-    "romaji": "kaze",
-    "zh": "感冒; 风",
-    "kanji": "風邪",
-    "tone": 0
-  },
-  {
-    "jp": "くもり",
-    "romaji": "kumori",
-    "zh": "阴天"
-  },
-  {
-    "jp": "はれ",
-    "romaji": "hare",
-    "zh": "晴天"
-  },
-  {
-    "jp": "やすみ",
-    "romaji": "yasumi",
-    "zh": "休息,假期"
-  },
-  {
-    "jp": "がっこう",
-    "romaji": "gakkou",
-    "zh": "学校",
-    "kanji": "学校",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "せんせい",
-    "romaji": "sensei",
-    "zh": "老师",
-    "kanji": "先生",
-    "tone": 3,
-    "score": 3
-  }
+    {
+        "jp": "ふるい",
+        "romaji": "furui",
+        "zh": "旧的"
+    },
+    {
+        "jp": "いい,よい",
+        "romaji": "ii,yoi",
+        "zh": "好的"
+    },
+    {
+        "jp": "わるい",
+        "romaji": "warui",
+        "zh": "坏的"
+    },
+    {
+        "jp": "たかい",
+        "romaji": "takai",
+        "zh": "高的,贵的"
+    },
+    {
+        "jp": "やすい",
+        "romaji": "yasui",
+        "zh": "便宜的"
+    },
+    {
+        "jp": "むずかしい",
+        "romaji": "muzukashii",
+        "zh": "难的"
+    },
+    {
+        "jp": "やさしい",
+        "romaji": "yasashii",
+        "zh": "容易的; 温柔的"
+    },
+    {
+        "jp": "おもい",
+        "romaji": "omoi",
+        "zh": "重的"
+    },
+    {
+        "jp": "かるい",
+        "romaji": "karui",
+        "zh": "轻的"
+    },
+    {
+        "jp": "あかい",
+        "romaji": "akai",
+        "zh": "红色的"
+    },
+    {
+        "jp": "あおい",
+        "romaji": "aoi",
+        "zh": "蓝色的"
+    },
+    {
+        "jp": "きいろい",
+        "romaji": "kiiroi",
+        "zh": "黄色的"
+    },
+    {
+        "jp": "くろい",
+        "romaji": "kuroi",
+        "zh": "黑色的"
+    },
+    {
+        "jp": "しろい",
+        "romaji": "shiroi",
+        "zh": "白色的"
+    },
+    {
+        "jp": "たべる",
+        "romaji": "taberu",
+        "zh": "吃",
+        "kanji": "食べる",
+        "tone": 2
+    },
+    {
+        "jp": "のむ",
+        "romaji": "nomu",
+        "zh": "喝",
+        "kanji": "飲む",
+        "tone": 1
+    },
+    {
+        "jp": "みる",
+        "romaji": "miru",
+        "zh": "看",
+        "kanji": "見る",
+        "tone": 1
+    },
+    {
+        "jp": "きく",
+        "romaji": "kiku",
+        "zh": "听",
+        "kanji": "聞く",
+        "tone": 0
+    },
+    {
+        "jp": "よむ",
+        "romaji": "yomu",
+        "zh": "读,念,阅读,看",
+        "kanji": "読む",
+        "tone": 1
+    },
+    {
+        "jp": "かく",
+        "romaji": "kaku",
+        "zh": "写,写信",
+        "kanji": "書く",
+        "tone": 1
+    },
+    {
+        "jp": "はなす",
+        "romaji": "hanasu",
+        "zh": "说话; 说"
+    },
+    {
+        "jp": "あるく",
+        "romaji": "aruku",
+        "zh": "走"
+    },
+    {
+        "jp": "いく,ゆく",
+        "romaji": "iku,yuku",
+        "zh": "去"
+    },
+    {
+        "jp": "くる",
+        "romaji": "kuru",
+        "zh": "来",
+        "kanji": "来る",
+        "tone": 1,
+        "pos": "自動Ⅲ"
+    },
+    {
+        "jp": "かう",
+        "romaji": "kau",
+        "zh": "买",
+        "kanji": "買う",
+        "tone": 0
+    },
+    {
+        "jp": "うる",
+        "romaji": "uru",
+        "zh": "卖"
+    },
+    {
+        "jp": "あける",
+        "romaji": "akeru",
+        "zh": "开"
+    },
+    {
+        "jp": "しめる",
+        "romaji": "shimeru",
+        "zh": "关"
+    },
+    {
+        "jp": "おきる",
+        "romaji": "okiru",
+        "zh": "起床",
+        "kanji": "起きる",
+        "tone": 2,
+        "score": 5
+    },
+    {
+        "jp": "ねる",
+        "romaji": "neru",
+        "zh": "睡觉",
+        "kanji": "寝る",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "はじめる",
+        "romaji": "hajimeru",
+        "zh": "开始"
+    },
+    {
+        "jp": "おわる",
+        "romaji": "owaru",
+        "zh": "结束",
+        "kanji": "終わる",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "あそぶ",
+        "romaji": "asobu",
+        "zh": "玩",
+        "kanji": "遊ぶ",
+        "tone": 0,
+        "score": 4
+    },
+    {
+        "jp": "はたらく",
+        "romaji": "hataraku",
+        "zh": "工作",
+        "kanji": "働く",
+        "tone": 0,
+        "score": 2
+    },
+    {
+        "jp": "べんきょうする",
+        "romaji": "benkyou suru",
+        "zh": "学习",
+        "kanji": "勉強する",
+        "tone": 0,
+        "score": 4
+    },
+    {
+        "jp": "おしえる",
+        "romaji": "oshieru",
+        "zh": "教"
+    },
+    {
+        "jp": "ならう",
+        "romaji": "narau",
+        "zh": "学习; 学习(技能)"
+    },
+    {
+        "jp": "あげる",
+        "romaji": "ageru",
+        "zh": "给"
+    },
+    {
+        "jp": "もらう",
+        "romaji": "morau",
+        "zh": "收到"
+    },
+    {
+        "jp": "かす",
+        "romaji": "kasu",
+        "zh": "借出"
+    },
+    {
+        "jp": "かりる",
+        "romaji": "kariru",
+        "zh": "借入"
+    },
+    {
+        "jp": "はいる",
+        "romaji": "hairu",
+        "zh": "进入"
+    },
+    {
+        "jp": "でる",
+        "romaji": "deru",
+        "zh": "出来; 出去"
+    },
+    {
+        "jp": "つくる",
+        "romaji": "tsukuru",
+        "zh": "制作",
+        "kanji": "作る",
+        "tone": 2
+    },
+    {
+        "jp": "なおす",
+        "romaji": "naosu",
+        "zh": "修理"
+    },
+    {
+        "jp": "あう",
+        "romaji": "au",
+        "zh": "见面,会见,遇到",
+        "kanji": "会う",
+        "tone": 1
+    },
+    {
+        "jp": "まつ",
+        "romaji": "matsu",
+        "zh": "等; 等待"
+    },
+    {
+        "jp": "すわる",
+        "romaji": "suwaru",
+        "zh": "坐"
+    },
+    {
+        "jp": "たつ",
+        "romaji": "tatsu",
+        "zh": "站"
+    },
+    {
+        "jp": "あめ",
+        "romaji": "ame",
+        "zh": "雨; 糖果",
+        "kanji": "雨",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "ゆき",
+        "romaji": "yuki",
+        "zh": "雪",
+        "kanji": "雪"
+    },
+    {
+        "jp": "かぜ",
+        "romaji": "kaze",
+        "zh": "感冒; 风",
+        "kanji": "風邪; 風",
+        "tone": 0
+    },
+    {
+        "jp": "くもり",
+        "romaji": "kumori",
+        "zh": "阴天; 阴",
+        "kanji": "曇り"
+    },
+    {
+        "jp": "はれ",
+        "romaji": "hare",
+        "zh": "晴天; 晴",
+        "kanji": "晴れ"
+    },
+    {
+        "jp": "やすみ",
+        "romaji": "yasumi",
+        "zh": "休息,假期"
+    },
+    {
+        "jp": "がっこう",
+        "romaji": "gakkou",
+        "zh": "学校",
+        "kanji": "学校",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "せんせい",
+        "romaji": "sensei",
+        "zh": "老师",
+        "kanji": "先生",
+        "tone": 3,
+        "score": 3
+    }
 ]

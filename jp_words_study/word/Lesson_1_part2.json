@@ -1,250 +1,250 @@
 [
-  {
-    "jp": "まど",
-    "kanji": "窓",
-    "zh": "窗户",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "つくえ",
-    "kanji": "机",
-    "zh": "桌子",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "とけい",
-    "kanji": "時計",
-    "zh": "表, 钟表",
-    "tone": 0,
-    "score": 3,
-    "romaji": "tokei"
-  },
-  {
-    "jp": "じどうしゃ",
-    "kanji": "自動車",
-    "zh": "车",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "みず",
-    "kanji": "水",
-    "zh": "水",
-    "tone": 0,
-    "score": 3,
-    "romaji": "mizu"
-  },
-  {
-    "jp": "おんがく",
-    "kanji": "音楽",
-    "zh": "音乐",
-    "tone": 0,
-    "score": 3,
-    "romaji": "ongaku"
-  },
-  {
-    "jp": "くに",
-    "kanji": "国",
-    "zh": "国家",
-    "tone": 0,
-    "score": 3,
-    "romaji": "kuni"
-  },
-  {
-    "jp": "えんぴつ",
-    "kanji": "鉛筆",
-    "zh": "铅笔",
-    "tone": 0,
-    "score": 3,
-    "romaji": "enpitsu"
-  },
-  {
-    "jp": "えいが",
-    "kanji": "映画",
-    "zh": "电影",
-    "tone": 0,
-    "score": 3,
-    "romaji": "eiga"
-  },
-  {
-    "jp": "けいたい",
-    "kanji": "携帯",
-    "zh": "手机",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "でんわ",
-    "kanji": "電話",
-    "zh": "电话",
-    "tone": 0,
-    "score": 3,
-    "romaji": "denwa"
-  },
-  {
-    "jp": "ぼうし",
-    "kanji": "帽子",
-    "zh": "帽子",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "かばん",
-    "kanji": "鞄",
-    "zh": "包",
-    "tone": 0,
-    "score": 3,
-    "romaji": "kaban"
-  },
-  {
-    "jp": "ざっし",
-    "kanji": "雑誌",
-    "zh": "杂志",
-    "tone": 0,
-    "score": 3,
-    "romaji": "zasshi"
-  },
-  {
-    "jp": "てちょう",
-    "kanji": "手帳",
-    "zh": "手帐",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "じてんしゃ",
-    "kanji": "自転車",
-    "zh": "自行车",
-    "tone": -1,
-    "score": 3,
-    "pos": "名",
-    "romaji": "jitensha"
-  },
-  {
-    "jp": "テキスト",
-    "kanji": null,
-    "zh": "教科书",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "ノート",
-    "kanji": null,
-    "zh": "笔记本",
-    "tone": 0,
-    "score": 3,
-    "romaji": "nooto"
-  },
-  {
-    "jp": "かんごし",
-    "kanji": "看護師",
-    "zh": "护士",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "かぞく",
-    "kanji": "家族",
-    "zh": "家庭,家人",
-    "tone": -1,
-    "score": 3,
-    "pos": "名",
-    "romaji": "kazoku"
-  },
-  {
-    "jp": "しごと",
-    "kanji": "仕事",
-    "zh": "工作",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "ぎんこういん",
-    "kanji": "銀行員",
-    "zh": "银行职员",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "コーヒー",
-    "kanji": null,
-    "zh": "咖啡",
-    "tone": 0,
-    "score": 3,
-    "romaji": "koohii"
-  },
-  {
-    "jp": "ハンカチ",
-    "kanji": null,
-    "zh": "手帕",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "テープ",
-    "kanji": null,
-    "zh": "磁带",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "おちゃ",
-    "kanji": "お茶",
-    "zh": "茶",
-    "tone": 0,
-    "score": 3,
-    "romaji": "ocha"
-  },
-  {
-    "jp": "ふでばこ",
-    "kanji": "筆箱",
-    "zh": "笔盒",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "バレーボール",
-    "kanji": null,
-    "zh": "排球",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "ニュース",
-    "kanji": null,
-    "zh": "新闻",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "ホワイトボード",
-    "kanji": null,
-    "zh": "白板",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "たな",
-    "kanji": "棚",
-    "zh": "架子",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "コンピューター",
-    "kanji": null,
-    "zh": "计算机",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "しんぶん",
-    "kanji": "新聞",
-    "zh": "报纸",
-    "tone": 0,
-    "score": 3,
-    "romaji": "shinbun"
-  }
+    {
+        "jp": "まど",
+        "kanji": "窓",
+        "zh": "窗户",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "つくえ",
+        "kanji": "机",
+        "zh": "桌子",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "とけい",
+        "kanji": "時計",
+        "zh": "表, 钟表",
+        "tone": 0,
+        "score": 3,
+        "romaji": "tokei"
+    },
+    {
+        "jp": "じどうしゃ",
+        "kanji": "自動車",
+        "zh": "车",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "みず",
+        "kanji": "水",
+        "zh": "水",
+        "tone": 0,
+        "score": 3,
+        "romaji": "mizu"
+    },
+    {
+        "jp": "おんがく",
+        "kanji": "音楽",
+        "zh": "音乐",
+        "tone": 0,
+        "score": 3,
+        "romaji": "ongaku"
+    },
+    {
+        "jp": "くに",
+        "kanji": "国",
+        "zh": "国家",
+        "tone": 0,
+        "score": 3,
+        "romaji": "kuni"
+    },
+    {
+        "jp": "えんぴつ",
+        "kanji": "鉛筆",
+        "zh": "铅笔",
+        "tone": 0,
+        "score": 3,
+        "romaji": "enpitsu"
+    },
+    {
+        "jp": "えいが",
+        "kanji": "映画",
+        "zh": "电影",
+        "tone": 0,
+        "score": 3,
+        "romaji": "eiga"
+    },
+    {
+        "jp": "けいたい",
+        "kanji": "携帯",
+        "zh": "手机",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "でんわ",
+        "kanji": "電話",
+        "zh": "电话",
+        "tone": 0,
+        "score": 3,
+        "romaji": "denwa"
+    },
+    {
+        "jp": "ぼうし",
+        "kanji": "帽子",
+        "zh": "帽子",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "かばん",
+        "kanji": "鞄",
+        "zh": "包",
+        "tone": 0,
+        "score": 3,
+        "romaji": "kaban"
+    },
+    {
+        "jp": "ざっし",
+        "kanji": "雑誌",
+        "zh": "杂志",
+        "tone": 0,
+        "score": 3,
+        "romaji": "zasshi"
+    },
+    {
+        "jp": "てちょう",
+        "kanji": "手帳",
+        "zh": "手帐",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "じてんしゃ",
+        "kanji": "自転車",
+        "zh": "自行车",
+        "tone": -1,
+        "score": 3,
+        "pos": "名",
+        "romaji": "jitensha"
+    },
+    {
+        "jp": "テキスト",
+        "kanji": null,
+        "zh": "教科书",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "ノート",
+        "kanji": null,
+        "zh": "笔记本",
+        "tone": 0,
+        "score": 3,
+        "romaji": "nooto"
+    },
+    {
+        "jp": "かんごし",
+        "kanji": "看護師",
+        "zh": "护士",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "かぞく",
+        "kanji": "家族",
+        "zh": "家庭,家人",
+        "tone": -1,
+        "score": 3,
+        "pos": "名",
+        "romaji": "kazoku"
+    },
+    {
+        "jp": "しごと",
+        "kanji": "仕事",
+        "zh": "工作",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "ぎんこういん",
+        "kanji": "銀行員",
+        "zh": "银行职员",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "コーヒー",
+        "kanji": null,
+        "zh": "咖啡",
+        "tone": 0,
+        "score": 3,
+        "romaji": "koohii"
+    },
+    {
+        "jp": "ハンカチ",
+        "kanji": null,
+        "zh": "手帕",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "テープ",
+        "kanji": null,
+        "zh": "磁带",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "おちゃ",
+        "kanji": "お茶",
+        "zh": "茶",
+        "tone": 0,
+        "score": 3,
+        "romaji": "ocha"
+    },
+    {
+        "jp": "ふでばこ",
+        "kanji": "筆箱",
+        "zh": "笔盒",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "バレーボール",
+        "kanji": null,
+        "zh": "排球",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "ニュース",
+        "kanji": null,
+        "zh": "新闻",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "ホワイトボード",
+        "kanji": null,
+        "zh": "白板",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "たな",
+        "kanji": "棚",
+        "zh": "架子",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "コンピューター",
+        "kanji": null,
+        "zh": "计算机",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "しんぶん",
+        "kanji": "新聞",
+        "zh": "报纸",
+        "tone": 0,
+        "score": 3,
+        "romaji": "shinbun"
+    }
 ]
