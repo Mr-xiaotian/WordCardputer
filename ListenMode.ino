@@ -6,6 +6,29 @@ unsigned long listenNextActionTime = 0;          // 下一次动作的时间点
 const unsigned long listenRepeatInterval = 1200; // 每次播放之间的间隔（毫秒）
 const unsigned long listenNextWordDelay = 600;   // 播完3次后，切到下一个单词前等待的时间
 
+// ---------- 初始化听读模式 ----------
+void initListenMode()
+{
+    if (words.empty())
+    {
+        // 理论上应该已经在 StudyMode 中加载过词库
+        canvas.fillSprite(BLACK);
+        canvas.setTextDatum(middle_center);
+        canvas.setTextColor(RED);
+        canvas.setTextSize(1.6);
+        canvas.drawString("请先加载词库", canvas.width() / 2, canvas.height() / 2);
+        canvas.pushSprite(0, 0);
+        return;
+    }
+
+    wordIndex = pickWeightedRandom();
+    listenPlayCount = 0;
+    listenNextActionTime = 0; // 立即开始播放
+
+    drawListenWord();
+}
+
+// ---------- 绘制听读模式界面 ----------
 void drawListenWord()
 {
     canvas.fillSprite(BLACK);
@@ -52,28 +75,6 @@ void drawListenWord()
     }
 
     canvas.pushSprite(0, 0);
-}
-
-// ---------- 初始化听读模式 ----------
-void initListenMode()
-{
-    if (words.empty())
-    {
-        // 理论上应该已经在 StudyMode 中加载过词库
-        canvas.fillSprite(BLACK);
-        canvas.setTextDatum(middle_center);
-        canvas.setTextColor(RED);
-        canvas.setTextSize(1.6);
-        canvas.drawString("请先加载词库", canvas.width() / 2, canvas.height() / 2);
-        canvas.pushSprite(0, 0);
-        return;
-    }
-
-    wordIndex = pickWeightedRandom();
-    listenPlayCount = 0;
-    listenNextActionTime = 0; // 立即开始播放
-
-    drawListenWord();
 }
 
 // ---------- 听读模式循环逻辑 ----------

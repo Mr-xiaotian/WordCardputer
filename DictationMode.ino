@@ -72,7 +72,7 @@ void drawDictationInput()
     canvas.setTextColor(WHITE);
     canvas.setTextSize(2.0);
     String mainLine = commitText + romajiBuffer;
-    canvas.drawString(mainLine, canvas.width() / 2, canvas.height() / 2 - 10);
+    drawAutoFitString(canvas, mainLine, canvas.width() / 2, canvas.height() / 2 - 10, 2.0);
 
     // 候选假名（小一号字，显示在下面）
     canvas.setTextSize(1.4);
@@ -181,6 +181,7 @@ void loopDictationMode()
         {
             if (c == '`')
             {                           // ESC
+                dictOrder.clear();
                 previousMode = appMode; // 记录当前模式
                 appMode = MODE_ESC_MENU;
                 initEscMenuMode();
@@ -237,7 +238,7 @@ void loopDictationMode()
             // -------- Fn 键：重复播放当前单词音频 --------
             if (st.fn)
             {
-                playAudioForWord(words[dictOrder[reviewPos]].jp);
+                playAudioForWord(dictErrors[reviewPos].correct);
             }
 
             return; // 防止进入正常输入逻辑
