@@ -1,12 +1,15 @@
-bool loadWordsFromJSON(const String &filepath) {
+bool loadWordsFromJSON(const String &filepath)
+{
     File file = SD.open(filepath);
-    if (!file) {
+    if (!file)
+    {
         Serial.printf("无法打开文件: %s\n", filepath.c_str());
         return false;
     }
 
     String jsonString;
-    while (file.available()) jsonString += char(file.read());
+    while (file.available())
+        jsonString += char(file.read());
     file.close();
 
     StaticJsonDocument<16384> doc;
@@ -14,7 +17,8 @@ bool loadWordsFromJSON(const String &filepath) {
 
     words.clear();
 
-    for (JsonObject obj : doc.as<JsonArray>()) {
+    for (JsonObject obj : doc.as<JsonArray>())
+    {
         Word w;
         w.jp = obj["jp"] | "";
         w.zh = obj["zh"] | "";
@@ -22,15 +26,18 @@ bool loadWordsFromJSON(const String &filepath) {
         w.tone = obj["tone"] | -1;
         w.score = obj["score"] | 3;
 
-        if (w.jp.length() > 0) words.push_back(w);
+        if (w.jp.length() > 0)
+            words.push_back(w);
     }
 
     return !words.empty();
 }
 
-bool saveWordsToJSON(const String &filepath) {
+bool saveListToJSON(const String &filepath, const std::vector<Word> &list)
+{
     File file = SD.open(filepath, FILE_WRITE);
-    if (!file) {
+    if (!file)
+    {
         Serial.printf("无法写入文件: %s\n", filepath.c_str());
         return false;
     }
@@ -38,7 +45,8 @@ bool saveWordsToJSON(const String &filepath) {
     StaticJsonDocument<16384> doc;
     JsonArray arr = doc.to<JsonArray>();
 
-    for (auto &w : words) {
+    for (auto &w : list)
+    {
         JsonObject obj = arr.createNestedObject();
         obj["jp"] = w.jp;
         obj["zh"] = w.zh;
@@ -47,8 +55,8 @@ bool saveWordsToJSON(const String &filepath) {
         obj["score"] = w.score;
     }
 
-    // 写入 SD
-    if (serializeJsonPretty(doc, file) == 0) {
+    if (serializeJsonPretty(doc, file) == 0)
+    {
         Serial.println("写入 JSON 失败！");
         file.close();
         return false;
@@ -58,18 +66,23 @@ bool saveWordsToJSON(const String &filepath) {
     return true;
 }
 
-int pickWeightedRandom() {
-    if (words.empty()) return 0;  // 兜底，调用方需要自己判断
-    
+int pickWeightedRandom()
+{
+    if (words.empty())
+        return 0; // 兜底，调用方需要自己判断
+
     int total = 0;
-    for (auto &w : words) total += (6 - w.score);
+    for (auto &w : words)
+        total += (6 - w.score);
 
     int r = random(total);
     int sum = 0;
 
-    for (int i = 0; i < words.size(); i++) {
+    for (int i = 0; i < words.size(); i++)
+    {
         sum += (6 - words[i].score);
-        if (r < sum) return i;
+        if (r < sum)
+            return i;
     }
     return random(words.size());
 }

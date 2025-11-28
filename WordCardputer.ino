@@ -68,6 +68,8 @@ void initListenMode();
 void loopListenMode();    
 
 bool loadWordsFromJSON(const String &path);
+bool saveListToJSON(const String &filepath, const std::vector<Word> &list);
+
 int pickWeightedRandom();
 
 void drawAutoFitString(M5Canvas &cv, const String &text,

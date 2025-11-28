@@ -36,6 +36,7 @@ void drawEscMenu() {
 void loopEscMenuMode() {
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
         auto st = M5Cardputer.Keyboard.keysState();
+        userAction = true;
 
         for (auto c : st.word) {
             if (c == '`') {  // ESC 键
@@ -83,7 +84,7 @@ void loopEscMenuMode() {
         if (st.enter) {
             if (escIndex == 0) {
                 // 保存到 JSON
-                if (saveWordsToJSON(selectedFilePath)) {
+                if (saveListToJSON(selectedFilePath, words)) {
                     // 显示保存成功
                     canvas.fillSprite(BLACK);
                     canvas.setTextDatum(middle_center);

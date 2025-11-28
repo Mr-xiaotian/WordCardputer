@@ -18,7 +18,7 @@ bool useKatakana = false;
 // 错误回顾
 struct DictError
 {
-    String correct;
+    int wordIndex;
     String wrong;
 };
 std::vector<DictError> dictErrors;
@@ -131,6 +131,7 @@ void drawDictationReviewPage()
     }
 
     DictError &e = dictErrors[reviewPos];
+    Word &w = words[e.wordIndex];
 
     // 标题
     canvas.setTextFont(&fonts::efontCN_16);
@@ -140,7 +141,7 @@ void drawDictationReviewPage()
     canvas.setTextFont(&fonts::efontJA_16);
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(GREEN);
-    drawAutoFitString(canvas, e.correct, canvas.width() / 2, canvas.height() / 2 - 25, 2.0);
+    drawAutoFitString(canvas, w.jp, canvas.width() / 2, canvas.height() / 2 - 25, 2.0);
 
     // 你的答案
     canvas.setTextColor(RED);
@@ -238,7 +239,9 @@ void loopDictationMode()
             // -------- Fn 键：重复播放当前单词音频 --------
             if (st.fn)
             {
-                playAudioForWord(dictErrors[reviewPos].correct);
+                DictError &e = dictErrors[reviewPos];
+                Word &w = words[e.wordIndex];
+                playAudioForWord(w.jp);
             }
 
             return; // 防止进入正常输入逻辑
@@ -307,7 +310,7 @@ void loopDictationMode()
             else
             {
                 wrongCount++;
-                dictErrors.push_back({correct, userAnswer});
+                dictErrors.push_back({dictOrder[dictPos], userAnswer});
             }
 
             dictPos++;
