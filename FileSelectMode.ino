@@ -3,6 +3,8 @@ std::vector<String> files;
 int fileIndex = 0;
 int fileScroll = 0;
 
+String currentDir = "/jp_words_study/word";
+
 // --------- 初始化文件选择模式 ---------
 void initFileSelectMode()
 {
@@ -11,21 +13,45 @@ void initFileSelectMode()
     fileScroll = 0;
     selectedFilePath = "";
 
-    File root = SD.open("/jp_words_study/word");
+    File dir = SD.open(currentDir);
+    if (!dir) {
+        Serial.printf("无法打开目录: %s\n", currentDir.c_str());
+        return;
+    }
+
     while (true)
     {
-        File entry = root.openNextFile();
-        if (!entry)
-            break;
+        File entry = dir.openNextFile();
+        if (!entry) break;
+
         String name = entry.name();
-        if (name.endsWith(".json"))
+
+        // 跳过系统项
+        if (name == "." || name == "..") {
+            entry.close();
+            continue;
+        }
+
+        // 文件夹
+        if (entry.isDirectory()) {
+            // 顶层显示文件夹
+            files.push_back(name + "/");
+        }
+        // JSON 文件
+        else if (name.endsWith(".json")) {
+            // 显示本层的 JSON
             files.push_back(name);
+        }
+
         entry.close();
     }
-    root.close();
+    dir.close();
 
-    // 排序（字典序）
+    // 排序：文件夹优先
     std::sort(files.begin(), files.end(), [](const String &a, const String &b) {
+        bool aDir = a.endsWith("/");
+        bool bDir = b.endsWith("/");
+        if (aDir != bDir) return aDir;  // 文件夹排前面
         return strcmp(a.c_str(), b.c_str()) < 0;
     });
 }
@@ -97,11 +123,31 @@ void loopFileSelectMode()
         // 选择
         if (status.enter)
         {
-            selectedFilePath = "/jp_words_study/word/" + files[fileIndex];
+            String item = files[fileIndex];
+
+            // 文件夹 → 进入该目录
+            if (item.endsWith("/")) {
+                currentDir = currentDir + "/" + item.substring(0, item.length() - 1);
+                initFileSelectMode();
+                return;
+            }
+
+            // JSON 文件 → 加载词库
+            selectedFilePath = currentDir + "/" + item;
             appMode = MODE_STUDY;
             startStudyMode(selectedFilePath);
             return;
         }
+        
+        // 返回
+        if (status.del) {
+            if (currentDir != "/jp_words_study/word") {
+                int pos = currentDir.lastIndexOf('/');
+                currentDir = currentDir.substring(0, pos);
+                initFileSelectMode();
+            }
+        }
+
     }
 
     drawFileSelect();
