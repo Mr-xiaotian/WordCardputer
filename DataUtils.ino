@@ -86,3 +86,27 @@ int pickWeightedRandom()
     }
     return random(words.size());
 }
+
+void saveDictationMistakesAsWordList() {
+    if (dictErrors.empty()) return;
+
+    String folder = "/jp_words_study/word/Mistake";
+    if (!SD.exists(folder)) {
+        SD.mkdir(folder);
+    }
+
+    // 自动生成文件名
+    String filename = folder + "/mistake_" + String(millis()) + ".json";
+
+    // 构造纯 Word 列表
+    std::vector<Word> mistakeList;
+    mistakeList.reserve(dictErrors.size());
+    for (auto &e : dictErrors) {
+        mistakeList.push_back(words[e.wordIndex]);
+    }
+
+    // 调用已有的通用方法
+    saveListToJSON(filename, mistakeList);
+
+    Serial.printf("错词已经另存为词库: %s\n", filename.c_str());
+}

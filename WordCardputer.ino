@@ -51,6 +51,14 @@ struct Word {
 std::vector<Word> words;
 int wordIndex = 0;
 
+struct DictError
+{
+    int wordIndex;
+    String wrong;
+};
+std::vector<DictError> dictErrors;
+int reviewPos = 0;         // 当前错误回顾的索引
+
 // ---------- 函数声明（在其他 .ino 中实现） ----------
 void initFileSelectMode();
 void loopFileSelectMode();
@@ -69,6 +77,7 @@ void loopListenMode();
 
 bool loadWordsFromJSON(const String &path);
 bool saveListToJSON(const String &filepath, const std::vector<Word> &list);
+void saveDictationMistakesAsWordList();
 
 int pickWeightedRandom();
 

@@ -16,14 +16,6 @@ bool dictShowSummary = false;
 bool useKatakana = false;
 
 // 错误回顾
-struct DictError
-{
-    int wordIndex;
-    String wrong;
-};
-std::vector<DictError> dictErrors;
-
-int reviewPos = 0;         // 当前错误回顾的索引
 bool dictInReview = false; // 是否正在错误回顾
 
 // ---------- 初始化听写模式 ----------
@@ -317,6 +309,7 @@ void loopDictationMode()
 
             if (dictPos >= (int)dictOrder.size())
             {
+                saveDictationMistakesAsWordList();
                 dictShowSummary = true;
                 drawDictationSummary();
                 return;
