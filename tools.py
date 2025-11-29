@@ -96,11 +96,11 @@ def generate_tts(
         return False, str(e)
     
 
-def extract_jp_fields(json_path: str) -> List[str]:
+def extract_jp_fields(json_path: Path) -> List[str]:
     """
     从指定 JSON 文件中提取所有 'jp' 字段，返回一个字符串列表。
 
-    :param parmjson_path (str): JSON 文件路径
+    :param parmjson_path (Path): JSON 文件路径
     :return List[str]: 所有 jp 字段组成的列表
     """
     with open(json_path, "r", encoding="utf-8") as f:
@@ -127,7 +127,7 @@ def extract_all_jp_from_folder(folder_path: Path) -> List[str]:
 
     all_jp = []
 
-    for json_file in folder_path.glob("*.json"):
+    for json_file in folder_path.rglob("*.json"):
         try:
             jp_list = extract_jp_fields(json_file)
             all_jp.extend(jp_list)

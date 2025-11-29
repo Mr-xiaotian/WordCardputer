@@ -1,83 +1,81 @@
 [
-    {
-        "jp": "ちゅうごく",
-        "zh": "中国",
-        "kanji": "中国",
-        "tone": 1,
-        "score": 3
-    },
-    {
-        "jp": "ゲーム",
-        "zh": "游戏",
-        "kanji": null,
-        "tone": 1,
-        "score": 3
-    },
-    {
-        "jp": "すいえい",
-        "zh": "游泳",
-        "kanji": "水泳",
-        "tone": 0,
-        "score": 3
-    },
-    {
-        "jp": "インターネット",
-        "zh": "因特网",
-        "kanji": null,
-        "tone": 5,
-        "score": 3
-    },
-    {
-        "jp": "サッカー",
-        "zh": "足球",
-        "kanji": null,
-        "tone": 1,
-        "score": 3
-    },
-    {
-        "jp": "ピアノ",
-        "zh": "钢琴",
-        "kanji": null,
-        "tone": 0,
-        "score": 3
-    },
-    {
-        "jp": "ようこそ",
-        "zh": "欢迎",
-        "kanji": null,
-        "tone": 1,
-        "score": 3
-    },
-    {
-        "jp": "レストラン",
-        "zh": "餐厅",
-        "kanji": "",
-        "tone": 1,
-        "score": 4,
-        "romaji": "resutoran"
-    },
-    {
-        "jp": "しょくどう",
-        "zh": "食堂",
-        "kanji": "食堂",
-        "tone": 0,
-        "score": 3
-    },
-    {
-        "jp": "かいぎしつ",
-        "zh": "会议室",
-        "kanji": "会議室",
-        "tone": 3,
-        "score": 1
-    },
-    {
-        "jp": "しゅうまつ",
-        "zh": "周末",
-        "kanji": "週末",
-        "tone": 0,
-        "score": 3,
-        "romaji": "shuumatsu"
-    },
+  {
+    "jp": "ちゅうごく",
+    "zh": "中国",
+    "kanji": "中国",
+    "tone": 1,
+    "score": 2
+  },
+  {
+    "jp": "ゲーム",
+    "zh": "游戏",
+    "kanji": "",
+    "tone": 1,
+    "score": 2
+  },
+  {
+    "jp": "すいえい",
+    "zh": "游泳",
+    "kanji": "水泳",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "インターネット",
+    "zh": "因特网",
+    "kanji": "",
+    "tone": 5,
+    "score": 4
+  },
+  {
+    "jp": "サッカー",
+    "zh": "足球",
+    "kanji": "",
+    "tone": 1,
+    "score": 3
+  },
+  {
+    "jp": "ピアノ",
+    "zh": "钢琴",
+    "kanji": "",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "ようこそ",
+    "zh": "欢迎",
+    "kanji": "",
+    "tone": 1,
+    "score": 3
+  },
+  {
+    "jp": "レストラン",
+    "zh": "餐厅",
+    "kanji": "",
+    "tone": 1,
+    "score": 4
+  },
+  {
+    "jp": "しょくどう",
+    "zh": "食堂",
+    "kanji": "食堂",
+    "tone": 0,
+    "score": 3
+  },
+  {
+    "jp": "かいぎしつ",
+    "zh": "会议室",
+    "kanji": "会議室",
+    "tone": 3,
+    "score": 3
+  },
+  {
+    "jp": "しゅうまつ",
+    "zh": "周末",
+    "kanji": "週末",
+    "tone": 0,
+    "score": 4
+  },
   {
     "jp": "カレンダー",
     "zh": "日历、挂历",
@@ -90,28 +88,28 @@
     "zh": "车; 汽车",
     "kanji": "車",
     "tone": 0,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "らいねん",
     "zh": "明年",
     "kanji": "来年",
     "tone": 0,
+    "score": 4
+  },
+  {
+    "jp": "タクシー",
+    "zh": "出租车",
+    "kanji": "",
+    "tone": 1,
+    "score": 4
+  },
+  {
+    "jp": "タクシー",
+    "zh": "出租车",
+    "kanji": "",
+    "tone": 1,
     "score": 3
-  },
-  {
-    "jp": "タクシー",
-    "zh": "出租车",
-    "kanji": "",
-    "tone": 1,
-    "score": 1
-  },
-  {
-    "jp": "タクシー",
-    "zh": "出租车",
-    "kanji": "",
-    "tone": 1,
-    "score": 1
   },
   {
     "jp": "ともだち",
@@ -132,7 +130,7 @@
     "zh": "明年",
     "kanji": "来年",
     "tone": 0,
-    "score": 3
+    "score": 4
   },
   {
     "jp": "ちかてつ",
@@ -153,6 +151,6 @@
     "zh": "去年",
     "kanji": "去年",
     "tone": 1,
-    "score": 3
+    "score": 2
   }
 ]
