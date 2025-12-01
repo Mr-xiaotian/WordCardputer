@@ -161,6 +161,10 @@ void commitCandidate()
     }
 }
 
+bool isSokuonConsonant(char c) {
+    return c=='k' || c=='s' || c=='t' || c=='p';
+}
+
 // ---------- 听写模式逻辑 ----------
 void loopDictationMode()
 {
@@ -251,9 +255,28 @@ void loopDictationMode()
             }
 
             // 字母输入 → romajiBuffer
-            if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+            if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == '_' || c == '-')
             {
                 char lc = (char)tolower(c);
+
+                // ------------ 促音检测：双辅音触发「っ / ッ」 ------------
+                if (romajiBuffer.length() == 1 &&
+                    romajiBuffer[0] == lc &&
+                    isSokuonConsonant(lc))
+                {
+                    // 输出促音
+                    commitText += (useKatakana ? "ッ" : "っ");
+
+                    // 把第二个辅音当作下一个音节的开始
+                    romajiBuffer = "";
+                    romajiBuffer += lc;
+
+                    candidateKana = matchRomaji(romajiBuffer, useKatakana);
+                    drawDictationInput();
+                    continue;  // <- 不走下面旧逻辑
+                }
+
+                // ------------ 正常字母输入逻辑 ------------
                 romajiBuffer += lc;
 
                 // 重新计算候选假名
