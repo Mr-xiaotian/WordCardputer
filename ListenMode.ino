@@ -67,11 +67,9 @@ void drawListenWord()
     drawTitleString(canvas, "听读模式");
 
     // HUD 显示音量变化
-    if (millis() < volumeMessageDeadline && volumeMessageText.length() > 0)
+    if (millis() < volumeMessageDeadline)
     {
-        canvas.setTextColor(TFT_DARKGREY);
-        canvas.setTextSize(1.0);
-        canvas.drawString(volumeMessageText, canvas.width() - 15, 15);
+        drawVolumeString(canvas);
     }
 
     canvas.pushSprite(0, 0);
@@ -113,7 +111,6 @@ void loopListenMode()
 
                 // 顺便也可以显示一下 HUD（复用 StudyMode 的那套变量）
                 volumeMessageDeadline = millis() + 2000;
-                volumeMessageText = String(soundVolume);
 
                 // 重画当前单词（保持 HUD 内容）
                 drawListenWord();

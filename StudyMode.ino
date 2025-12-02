@@ -62,11 +62,9 @@ void drawWord()
     drawTitleString(canvas, "Score: " + String(words[wordIndex].score));
 
     // HUD 显示音量变化
-    if (millis() < volumeMessageDeadline && volumeMessageText.length() > 0)
+    if (millis() < volumeMessageDeadline)
     {
-        canvas.setTextColor(TFT_DARKGREY);
-        canvas.setTextSize(1.0);
-        canvas.drawString(volumeMessageText, canvas.width() - 15, 15);
+        drawVolumeString(canvas);
     }
 
     canvas.pushSprite(0, 0);
@@ -131,7 +129,6 @@ void loopStudyMode()
                 M5.Speaker.setVolume(soundVolume);
 
                 volumeMessageDeadline = millis() + 2000;
-                volumeMessageText = String(soundVolume);
                 drawWord();
             }
         }

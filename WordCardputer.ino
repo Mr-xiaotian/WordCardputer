@@ -20,15 +20,14 @@ enum AppMode {
 };
 
 AppMode appMode = MODE_FILE_SELECT;
-AppMode previousMode = MODE_FILE_SELECT; // 👈 新增：记录上一个模式
+AppMode previousMode = MODE_FILE_SELECT;  // 记录上一个模式
 
 // --------- 全局变量 ----------
 M5Canvas canvas(&M5Cardputer.Display);
 const int visibleLines = 4;
 int soundVolume = 192;
 
-unsigned long volumeMessageDeadline = 0; // 音量消息显示截止时间
-String volumeMessageText = "";
+unsigned long volumeMessageDeadline = 0;  // 音量消息显示截止时间
 
 // ---------- 自动亮度管理 ----------
 bool userAction = false;                  // 标记是否有用户操作
@@ -84,6 +83,7 @@ int pickWeightedRandom();
 void drawAutoFitString(M5Canvas &cv, const String &text,
                        int x, int y, float baseSize);
 void drawTitleString(M5Canvas &cv, const String &text);
+void drawVolumeString(M5Canvas &cv);
                        
 void drawTextMenu(
     M5Canvas &cv,

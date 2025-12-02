@@ -28,3 +28,11 @@ void drawTitleString(M5Canvas &cv, const String &text)
     cv.setTextSize(1.0);
     cv.drawString(text, 8, 8);
 }
+
+void drawVolumeString(M5Canvas &cv)
+{
+    cv.setTextDatum(top_left);
+    cv.setTextColor(TFT_DARKGREY);
+    cv.setTextSize(1.0);
+    cv.drawString(String(soundVolume), cv.width() - 30, 8);
+}
