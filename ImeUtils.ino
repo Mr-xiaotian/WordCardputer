@@ -41,7 +41,7 @@ static const RomajiMap ROMAJI_TABLE[] = {
     {"pya", "ぴゃ", "ピャ"}, {"pyu", "ぴゅ", "ピュ"}, {"pyo", "ぴょ", "ピョ"},
 
     // --- 长音 ---
-    {"-", "", "ー"}, {"_", "", "ー"},
+    {"-", "", "ー"},
 };
 
 static const int ROMAJI_TABLE_SIZE = sizeof(ROMAJI_TABLE) / sizeof(ROMAJI_TABLE[0]);
