@@ -56,7 +56,7 @@ void drawDictationInput()
 
     // 标题（中文）
     canvas.setTextFont(&fonts::efontCN_16);
-    drawTitleString(canvas, "听写模式");
+    drawTopLeftString(canvas, "听写模式");
 
     // 主输入显示：已提交假名 + 当前罗马音（大字号，居中）
     canvas.setTextFont(&fonts::efontJA_16);
@@ -92,7 +92,7 @@ void drawDictationSummary()
     canvas.fillSprite(BLACK);
     canvas.setTextFont(&fonts::efontCN_16);
 
-    drawTitleString(canvas, "听写总结");
+    drawTopLeftString(canvas, "听写总结");
 
     canvas.setTextDatum(middle_center);
     canvas.setTextSize(1.3);
@@ -127,7 +127,7 @@ void drawDictationReviewPage()
 
     // 标题
     canvas.setTextFont(&fonts::efontCN_16);
-    drawTitleString(canvas, "错误回顾");
+    drawTopLeftString(canvas, "错误回顾");
 
     // 正确答案
     canvas.setTextFont(&fonts::efontJA_16);

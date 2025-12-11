@@ -82,8 +82,8 @@ int pickWeightedRandom();
 
 void drawAutoFitString(M5Canvas &cv, const String &text,
                        int x, int y, float baseSize);
-void drawTitleString(M5Canvas &cv, const String &text);
-void drawVolumeString(M5Canvas &cv);
+void drawTopLeftString(M5Canvas &cv, const String &text);
+void drawTopRightString(M5Canvas &cv, const String &text);
                        
 void drawTextMenu(
     M5Canvas &cv,

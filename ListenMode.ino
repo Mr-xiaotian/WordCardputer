@@ -64,12 +64,12 @@ void drawListenWord()
     drawAutoFitString(canvas, w.zh, canvas.width() / 2, canvas.height() / 2 + 40, 1.5); // 显示中文释义
 
     // 模式
-    drawTitleString(canvas, "听读模式");
+    drawTopLeftString(canvas, "听读模式");
 
     // HUD 显示音量变化
     if (millis() < volumeMessageDeadline)
     {
-        drawVolumeString(canvas);
+        drawTopRightString(canvas, String(soundVolume));
     }
 
     canvas.pushSprite(0, 0);

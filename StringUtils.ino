@@ -21,18 +21,18 @@ void drawAutoFitString(M5Canvas &cv, const String &text,
     cv.drawString(text, x, y);
 }
 
-void drawTitleString(M5Canvas &cv, const String &text)
+void drawTopLeftString(M5Canvas &cv, const String &text)
 {
     cv.setTextDatum(top_left);
     cv.setTextColor(TFT_DARKGREY);
     cv.setTextSize(1.0);
-    cv.drawString(text, 8, 8);
+    cv.drawString(text, 8, 5);
 }
 
-void drawVolumeString(M5Canvas &cv)
+void drawTopRightString(M5Canvas &cv, const String &text)
 {
-    cv.setTextDatum(top_left);
+    cv.setTextDatum(top_right);
     cv.setTextColor(TFT_DARKGREY);
     cv.setTextSize(1.0);
-    cv.drawString(String(soundVolume), cv.width() - 30, 8);
+    cv.drawString(text, cv.width() - 8, 5);
 }

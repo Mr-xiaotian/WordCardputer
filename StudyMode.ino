@@ -59,12 +59,12 @@ void drawWord()
     }
 
     // 熟练度提示
-    drawTitleString(canvas, "Score: " + String(words[wordIndex].score));
+    drawTopLeftString(canvas, "Score: " + String(words[wordIndex].score));
 
     // HUD 显示音量变化
     if (millis() < volumeMessageDeadline)
     {
-        drawVolumeString(canvas);
+        drawTopRightString(canvas, String(soundVolume));
     }
 
     canvas.pushSprite(0, 0);
