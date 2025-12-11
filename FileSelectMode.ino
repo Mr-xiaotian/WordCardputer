@@ -73,7 +73,7 @@ void drawFileSelect()
 // --------- 文件选择逻辑 ---------
 void loopFileSelectMode()
 {
-    // 如果没有任何文件，直接显示提示并返回
+    // 如果没有任何文件,直接显示提示并返回
     if (files.empty()) {
         canvas.fillSprite(BLACK);
         canvas.setTextDatum(middle_center);

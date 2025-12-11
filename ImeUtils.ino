@@ -48,8 +48,8 @@ static const int ROMAJI_TABLE_SIZE = sizeof(ROMAJI_TABLE) / sizeof(ROMAJI_TABLE[
 
 // ---------- 罗马音转换表 ----------
 // 根据当前 romajiBuffer 返回“候选假名”
-// 仅当 buffer 完全匹配某一条 romaji 时才返回假名，否则返回 ""。
-// 不修改 buffer，本函数只是“看一眼”。
+// 仅当 buffer 完全匹配某一条 romaji 时才返回假名,否则返回 ""。
+// 不修改 buffer,本函数只是“看一眼”。
 String matchRomaji(const String &buffer, bool useKatakana)
 {
     if (buffer.length() == 0)

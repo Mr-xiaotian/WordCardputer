@@ -4,56 +4,56 @@
     "zh": "饭; 米饭",
     "kanji": "ご飯",
     "tone": 1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "たべる",
     "zh": "吃",
     "kanji": "食べる",
     "tone": 2,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "はし",
     "zh": "筷子; 桥",
     "kanji": "箸",
     "tone": 1,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "かう",
     "zh": "买",
     "kanji": "買う",
     "tone": 0,
-    "score": 1
+    "score": 3
   },
   {
     "jp": "いっしょに",
     "zh": "一起",
     "kanji": "一緒に",
     "tone": 0,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "する",
     "zh": "做,干",
     "kanji": "",
     "tone": 0,
-    "score": 3
+    "score": 4
   },
   {
     "jp": "びじゅつかん",
     "zh": "美术馆",
     "kanji": "美術館",
     "tone": 3,
-    "score": 1
+    "score": 3
   },
   {
     "jp": "みる",
     "zh": "看",
     "kanji": "見る",
     "tone": 1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "それから",
@@ -67,175 +67,175 @@
     "zh": "电话",
     "kanji": "電話",
     "tone": 0,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "かける",
     "zh": "打(电话)",
     "kanji": "",
     "tone": 2,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "てがみ",
     "zh": "信",
     "kanji": "手紙",
     "tone": 0,
-    "score": 3
+    "score": 2
   },
   {
     "jp": "かく",
     "zh": "写,写信",
     "kanji": "書く",
     "tone": 1,
-    "score": 2
+    "score": 4
   },
   {
     "jp": "しゃしん",
     "zh": "照片",
     "kanji": "写真",
     "tone": 0,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "とる",
     "zh": "照相,拍摄; 拿,取",
     "kanji": "撮る",
     "tone": 1,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "よむ",
     "zh": "读,念,阅读,看",
     "kanji": "読む",
     "tone": 1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "きく",
     "zh": "听",
     "kanji": "聞く",
     "tone": 0,
-    "score": 1
+    "score": 3
   },
   {
     "jp": "のむ",
     "zh": "喝",
     "kanji": "飲む",
     "tone": 1,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "スプーン",
     "zh": "（西餐用）勺子",
     "kanji": "",
     "tone": 2,
-    "score": 3
+    "score": 4
   },
   {
     "jp": "つくる",
     "zh": "制作",
     "kanji": "作る",
     "tone": 2,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "おさら",
     "zh": "盘子",
     "kanji": "お皿",
     "tone": 0,
-    "score": 1
+    "score": 5
   },
   {
     "jp": "コップ",
     "zh": "玻璃杯",
     "kanji": "",
     "tone": 0,
-    "score": 1
+    "score": 3
   },
   {
     "jp": "きる",
     "zh": "切,剪; 穿",
     "kanji": "切る",
     "tone": 1,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "たまご",
     "zh": "鸡蛋,蛋",
     "kanji": "卵",
     "tone": 2,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "ネクタイ",
     "zh": "领带",
     "kanji": "",
     "tone": 1,
-    "score": 1
+    "score": 5
   },
   {
     "jp": "やさい",
     "zh": "蔬菜",
     "kanji": "野菜",
     "tone": 0,
-    "score": 1
+    "score": 4
   },
   {
     "jp": "ひるごはん",
     "zh": "午饭,午餐",
     "kanji": "昼ご飯",
     "tone": 3,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "もう",
     "zh": "已经",
     "kanji": "",
     "tone": 1,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "まだ",
     "zh": "还（没）",
     "kanji": "",
     "tone": 1,
-    "score": 1
+    "score": 5
   },
   {
     "jp": "しゅくだい",
     "zh": "作业; 家庭作业",
     "kanji": "宿題",
     "tone": 0,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "チケット",
     "zh": "票",
     "kanji": "",
     "tone": 1,
-    "score": 1
+    "score": 3
   },
   {
     "jp": "おかし",
     "zh": "点心,零食",
     "kanji": "お菓子",
     "tone": 2,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "コンビニ",
     "zh": "便利店",
     "kanji": "",
     "tone": 0,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "なにか",
     "zh": "什么～",
     "kanji": "何か",
     "tone": 1,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "ひく",
@@ -249,69 +249,69 @@
     "zh": "（吃）饭; 饮食",
     "kanji": "食事",
     "tone": 0,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "ちょっと",
     "zh": "稍微,有点(不方便)",
     "kanji": "",
     "tone": 1,
-    "score": 3
+    "score": 4
   },
   {
     "jp": "どう",
     "zh": "怎么,怎么样",
     "kanji": "",
     "tone": 1,
-    "score": 3
+    "score": 4
   },
   {
     "jp": "しらべる",
     "zh": "查阅",
     "kanji": "調べる",
     "tone": 3,
-    "score": 1
+    "score": 5
   },
   {
     "jp": "そして",
     "zh": "然后",
     "kanji": "",
     "tone": 0,
-    "score": 1
+    "score": 3
   },
   {
     "jp": "パソコン",
     "zh": "个人电脑",
     "kanji": "",
     "tone": 0,
-    "score": 2
+    "score": 3
   },
   {
     "jp": "つかう",
     "zh": "使用",
     "kanji": "使う",
     "tone": 0,
-    "score": 2
+    "score": 3
   },
   {
     "jp": "かぜ",
     "zh": "感冒; 风",
     "kanji": "風邪; 風",
     "tone": 0,
-    "score": 2
+    "score": 4
   },
   {
     "jp": "なおる",
     "zh": "痊愈",
     "kanji": "治る",
     "tone": 2,
-    "score": 3
+    "score": 4
   },
   {
     "jp": "あう",
     "zh": "见面,会见,遇到",
     "kanji": "会う",
     "tone": 1,
-    "score": 1
+    "score": 4
   }
 ]

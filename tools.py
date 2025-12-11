@@ -37,7 +37,7 @@ def generate_tts(
     :param pitch (int): 音高调整 (范围 -12 ~ 12)
     :param speed (float): 语速 (0.5 ~ 2.0)
     :param volume (float): 音量 (0.1 ~ 10)
-    :param emotion (str): 语音情感，可选 [happy, calm, sad, angry...]
+    :param emotion (str): 语音情感,可选 [happy, calm, sad, angry...]
     :retutn [bool, str]: 输出文件路径或错误信息
     """
 
@@ -98,7 +98,7 @@ def generate_tts(
 
 def extract_jp_fields(json_path: Path) -> List[str]:
     """
-    从指定 JSON 文件中提取所有 'jp' 字段，返回一个字符串列表。
+    从指定 JSON 文件中提取所有 'jp' 字段,返回一个字符串列表。
 
     :param parmjson_path (Path): JSON 文件路径
     :return List[str]: 所有 jp 字段组成的列表
@@ -116,7 +116,7 @@ def extract_jp_fields(json_path: Path) -> List[str]:
 
 def extract_all_jp_from_folder(folder_path: Path) -> List[str]:
     """
-    遍历文件夹下所有 JSON 文件，提取 jp 字段并去重返回。
+    遍历文件夹下所有 JSON 文件,提取 jp 字段并去重返回。
     
     :param folder_path (Path): 文件夹路径
     :return List[str]: 所有 jp 字段组成的列表
@@ -140,7 +140,7 @@ def extract_all_jp_from_folder(folder_path: Path) -> List[str]:
 
 def list_wav_filenames(folder_path: Path) -> List[str]:
     """
-    输入文件夹路径，返回其中所有 .wav 文件的文件名列表（不含路径）。
+    输入文件夹路径,返回其中所有 .wav 文件的文件名列表（不含路径）。
     """
     folder_path = Path(folder_path)
 
@@ -152,8 +152,8 @@ def list_wav_filenames(folder_path: Path) -> List[str]:
 
 def collect_merged_entries(folder_path):
     """
-    扫描文件夹所有 JSON 文件，并构建合并后的大词典。
-    返回 all_entries（dict），键为 jp。
+    扫描文件夹所有 JSON 文件,并构建合并后的大词典。
+    返回 all_entries（dict）,键为 jp。
     """
     folder = Path(folder_path)
     all_entries = {}  # keyed by jp
@@ -220,7 +220,7 @@ def collect_merged_entries(folder_path):
 
 def apply_merge_and_rewrite(folder_path):
     """
-    调用 collect_merged_entries，然后把结果写回每个 JSON。
+    调用 collect_merged_entries,然后把结果写回每个 JSON。
     """
     folder = Path(folder_path)
     all_entries = collect_merged_entries(folder_path)
@@ -298,7 +298,7 @@ def dedupe_json_by_jp(folder_path):
             continue
 
         if not isinstance(data, list):
-            print(f"文件 {json_file} 内容不是列表，跳过。")
+            print(f"文件 {json_file} 内容不是列表,跳过。")
             continue
 
         seen = set()
@@ -323,23 +323,23 @@ def dedupe_json_by_jp(folder_path):
 
 
 def split_json_file(file_path: Path, max_per_file=60):
-    """读取一个 JSON 文件，如果数量 > max_per_file，则进行均匀拆分。"""
+    """读取一个 JSON 文件,如果数量 > max_per_file,则进行均匀拆分。"""
 
     with open(file_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     total = len(data)
     if total <= max_per_file:
-        print(f"✔ {file_path.name}: {total} 个词，不需要拆分。")
+        print(f"✔ {file_path.name}: {total} 个词,不需要拆分。")
         return
 
-    # 计算拆分份数，例如 220 -> 4 份
+    # 计算拆分份数,例如 220 -> 4 份
     parts = math.ceil(total / max_per_file)
 
-    # 尽量平均，例如 220 / 4 = 55
+    # 尽量平均,例如 220 / 4 = 55
     per_file = math.ceil(total / parts)
 
-    print(f"⚡ {file_path.name}: {total} 个词，拆成 {parts} 份，每份 ~{per_file} 个")
+    print(f"⚡ {file_path.name}: {total} 个词,拆成 {parts} 份,每份 ~{per_file} 个")
 
     parent = file_path.parent
     base_name = file_path.stem  # 去掉 .json 后缀
@@ -360,7 +360,7 @@ def split_json_file(file_path: Path, max_per_file=60):
 
 
 def process_folder(folder_path: str, max_per_file=60):
-    """处理整个文件夹，拆分其中所有 json 文件。"""
+    """处理整个文件夹,拆分其中所有 json 文件。"""
     folder = Path(folder_path)
 
     if not folder.exists():

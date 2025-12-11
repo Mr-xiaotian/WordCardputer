@@ -58,7 +58,7 @@ void drawDictationInput()
     canvas.setTextFont(&fonts::efontCN_16);
     drawTopLeftString(canvas, "听写模式");
 
-    // 主输入显示：已提交假名 + 当前罗马音（大字号，居中）
+    // 主输入显示：已提交假名 + 当前罗马音（大字号,居中）
     canvas.setTextFont(&fonts::efontJA_16);
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(WHITE);
@@ -66,7 +66,7 @@ void drawDictationInput()
     String mainLine = commitText + romajiBuffer;
     drawAutoFitString(canvas, mainLine, canvas.width() / 2, canvas.height() / 2 - 10, 2.0);
 
-    // 候选假名（小一号字，显示在下面）
+    // 候选假名（小一号字,显示在下面）
     canvas.setTextSize(1.4);
     canvas.setTextColor(TFT_CYAN);
     if (candidateKana.length() > 0)
@@ -349,7 +349,7 @@ void loopDictationMode()
         // -------- Fn 键：重复播放当前单词音频 --------
         if (st.fn)
         {
-            // 这里用当前听写单词，而不是 wordIndex
+            // 这里用当前听写单词,而不是 wordIndex
             playAudioForWord(words[dictOrder[dictPos]].jp);
         }
     }

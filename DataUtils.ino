@@ -69,7 +69,7 @@ bool saveListToJSON(const String &filepath, const std::vector<Word> &list)
 int pickWeightedRandom()
 {
     if (words.empty())
-        return 0; // 兜底，调用方需要自己判断
+        return 0; // 兜底,调用方需要自己判断
 
     int total = 0;
     for (auto &w : words)

@@ -19,7 +19,7 @@ void drawWord()
 
     if (showJPFirst)
     {
-        // === 模式1：显示日语，隐藏中文 ===
+        // === 模式1：显示日语,隐藏中文 ===
         canvas.setTextFont(&fonts::efontJA_16);
         canvas.setTextColor(CYAN);
         drawAutoFitString(canvas, w.jp, canvas.width() / 2, canvas.height() / 2 - 25, 2.2); // 自动适配
@@ -37,7 +37,7 @@ void drawWord()
     }
     else
     {
-        // === 模式2：显示中文，隐藏日语 ===
+        // === 模式2：显示中文,隐藏日语 ===
         canvas.setTextFont(&fonts::efontCN_16);
         canvas.setTextColor(YELLOW);
         drawAutoFitString(canvas, w.zh, canvas.width() / 2, canvas.height() / 2 - 25, 2.0); // 显示中文释义主行
@@ -139,12 +139,12 @@ void loopStudyMode()
             playAudioForWord(words[wordIndex].jp);
         }
 
-        // Enter = 记住，提升熟练度
+        // Enter = 记住,提升熟练度
         if (status.enter)
         {
             words[wordIndex].score = min(5, words[wordIndex].score + 1);
         }
-        // Del = 不熟，降低熟练度
+        // Del = 不熟,降低熟练度
         else if (status.del)
         {
             words[wordIndex].score = max(1, words[wordIndex].score - 1);

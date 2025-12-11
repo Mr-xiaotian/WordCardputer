@@ -1,34 +1,34 @@
 [
-    {
-        "jp": "あめ",
-        "zh": "雨; 糖果",
-        "kanji": "雨",
-        "tone": 0,
-        "score": 3,
-        "romaji": "ame"
-    },
-    {
-        "jp": "いぬ",
-        "zh": "狗",
-        "kanji": "犬",
-        "tone": 0,
-        "score": 3,
-        "romaji": "inu"
-    },
-    {
-        "jp": "ナス",
-        "zh": "茄子",
-        "kanji": "",
-        "tone": 0,
-        "score": 3,
-        "romaji": "nasu"
-    },
-    {
-        "jp": "ミミ",
-        "zh": "耳朵",
-        "kanji": "",
-        "tone": 0,
-        "score": 3,
-        "romaji": "mimi"
-    }
+  {
+    "jp": "あめ",
+    "zh": "雨",
+    "kanji": "雨",
+    "tone": 0,
+    "score": 3,
+    "romaji": "ame"
+  },
+  {
+    "jp": "いぬ",
+    "zh": "狗",
+    "kanji": "犬",
+    "tone": 0,
+    "score": 3,
+    "romaji": "inu"
+  },
+  {
+    "jp": "ナス",
+    "zh": "茄子",
+    "kanji": "",
+    "tone": 0,
+    "score": 3,
+    "romaji": "nasu"
+  },
+  {
+    "jp": "ミミ",
+    "zh": "耳朵",
+    "kanji": "",
+    "tone": 0,
+    "score": 3,
+    "romaji": "mimi"
+  }
 ]
