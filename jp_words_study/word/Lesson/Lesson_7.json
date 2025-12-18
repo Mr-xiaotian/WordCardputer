@@ -1,42 +1,282 @@
 [
-  { "jp": "うみ", "kanji": "海", "zh": "海", "tone": 1, "pos": "名", "score": 3 },
-  { "jp": "すき", "kanji": "好き", "zh": "喜欢", "tone": 2, "pos": "形Ⅱ", "score": 3 },
-  { "jp": "みかん", "kanji": "", "zh": "橘子", "tone": 1, "pos": "名", "score": 3 },
-  { "jp": "おおい", "kanji": "多い", "zh": "多", "tone": 1, "pos": "形Ⅰ", "score": 3 },
-  { "jp": "だいすき", "kanji": "大好き", "zh": "非常喜欢", "tone": 1, "pos": "形Ⅱ", "score": 3 },
-  { "jp": "きらい", "kanji": "嫌い", "zh": "讨厌,厌恶", "tone": 0, "pos": "形Ⅱ", "score": 3 },
-  { "jp": "じょうず", "kanji": "上手", "zh": "拿手,擅长", "tone": 0, "pos": "形Ⅱ", "score": 3 },
-  { "jp": "うた", "kanji": "歌", "zh": "歌", "tone": 2, "pos": "名", "score": 3 },
-  { "jp": "へた", "kanji": "下手", "zh": "不擅长,不拿手", "tone": 2, "pos": "形Ⅱ", "score": 3 },
-  { "jp": "ねこ", "kanji": "猫", "zh": "猫", "tone": 1, "pos": "名", "score": 3 },
-  { "jp": "いぬ", "kanji": "犬", "zh": "狗", "tone": 2, "pos": "名", "score": 3 },
-  { "jp": "はる", "kanji": "春", "zh": "春天", "tone": 1, "pos": "名", "score": 3 },
-  { "jp": "ギター", "kanji": "", "zh": "吉他", "tone": 1, "pos": "名", "score": 3 },
-  { "jp": "かいものする", "kanji": "買い物する", "zh": "购物", "tone": 0, "pos": "他动III", "score": 3 },
-  { "jp": "なか", "kanji": "中", "zh": "其中,里面", "tone": 1, "pos": "名", "score": 3 },
-  { "jp": "いちばん", "kanji": "一番", "zh": "最,第一", "tone": 0, "pos": "副", "score": 3 },
-  { "jp": "トマト", "kanji": "", "zh": "西红柿", "tone": 1, "pos": "名", "score": 3 },
-  { "jp": "じょうぶ", "kanji": "丈夫", "zh": "结实", "tone": 0, "pos": "形Ⅱ", "score": 3 },
-  { "jp": "わかい", "kanji": "若い", "zh": "年轻", "tone": 2, "pos": "形Ⅰ", "score": 3 },
-  { "jp": "ビル", "kanji": "", "zh": "大楼,大厦", "tone": 1, "pos": "名", "score": 3 },
-  { "jp": "どうぶつ", "kanji": "動物", "zh": "动物", "tone": 0, "pos": "名", "score": 3 },
-  { "jp": "みどり", "kanji": "緑", "zh": "绿色", "tone": 1, "pos": "名", "score": 3 },
-  { "jp": "ちゃいろ", "kanji": "茶色", "zh": "褐色", "tone": 0, "pos": "名", "score": 3 },
-  { "jp": "わかる", "kanji": "分かる", "zh": "明白", "tone": 2, "pos": "自动Ⅰ", "score": 3 },
-  { "jp": "たべもの", "kanji": "食べ物", "zh": "食物", "tone": 3, "pos": "名", "score": 3 },
-  { "jp": "かみ", "kanji": "髪", "zh": "头发", "tone": 2, "pos": "名", "score": 3 },
-  { "jp": "みじかい", "kanji": "短い", "zh": "短", "tone": 3, "pos": "形Ⅰ", "score": 3 },
-  { "jp": "せ", "kanji": "背", "zh": "个子,身高", "tone": 1, "pos": "名", "score": 3 },
-  { "jp": "かお", "kanji": "顔", "zh": "脸", "tone": 0, "pos": "名", "score": 3 },
-  { "jp": "まるい", "kanji": "丸い", "zh": "圆", "tone": 0, "pos": "形Ⅰ", "score": 3 },
-  { "jp": "よく", "kanji": "", "zh": "非常,充分地", "tone": 1, "pos": "副", "score": 3 },
-  { "jp": "だいたい", "kanji": "大体", "zh": "大体上", "tone": 0, "pos": "副", "score": 3 },
-  { "jp": "ふとい", "kanji": "太い", "zh": "粗", "tone": 2, "pos": "形Ⅰ", "score": 3 },
-  { "jp": "みなさん", "kanji": "皆さん", "zh": "大家（敬称）", "tone": 2, "pos": "名", "score": 3 },
-  { "jp": "はなし", "kanji": "話", "zh": "说话,内容", "tone": 3, "pos": "名", "score": 3 },
-  { "jp": "ニュース", "kanji": "", "zh": "新闻", "tone": 1, "pos": "名", "score": 3 },
-  { "jp": "せいかつ", "kanji": "生活", "zh": "生活", "tone": 0, "pos": "名", "score": 3 },
-  { "jp": "ときどき", "kanji": "時々", "zh": "有时,时常", "tone": 0, "pos": "副", "score": 3 },
-  { "jp": "にがて", "kanji": "苦手", "zh": "不擅长,不喜欢", "tone": 0, "pos": "形Ⅱ", "score": 3 },
-  { "jp": "ほんとうに", "kanji": "本当に", "zh": "真的", "tone": 0, "pos": "副", "score": 3 }
+  {
+    "jp": "うみ",
+    "zh": "海",
+    "kanji": "海",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "すき",
+    "zh": "喜欢",
+    "kanji": "好き",
+    "tone": 2,
+    "score": 5
+  },
+  {
+    "jp": "みかん",
+    "zh": "橘子",
+    "kanji": "",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "おおい",
+    "zh": "多",
+    "kanji": "多い",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "だいすき",
+    "zh": "非常喜欢",
+    "kanji": "大好き",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "きらい",
+    "zh": "讨厌,厌恶",
+    "kanji": "嫌い",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "じょうず",
+    "zh": "拿手,擅长",
+    "kanji": "上手",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "うた",
+    "zh": "歌",
+    "kanji": "歌",
+    "tone": 2,
+    "score": 5
+  },
+  {
+    "jp": "へた",
+    "zh": "不擅长,不拿手",
+    "kanji": "下手",
+    "tone": 2,
+    "score": 4
+  },
+  {
+    "jp": "ねこ",
+    "zh": "猫",
+    "kanji": "猫",
+    "tone": 1,
+    "score": 3
+  },
+  {
+    "jp": "いぬ",
+    "zh": "狗",
+    "kanji": "犬",
+    "tone": 2,
+    "score": 5
+  },
+  {
+    "jp": "はる",
+    "zh": "春天",
+    "kanji": "春",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "ギター",
+    "zh": "吉他",
+    "kanji": "",
+    "tone": 1,
+    "score": 4
+  },
+  {
+    "jp": "かいものする",
+    "zh": "购物",
+    "kanji": "買い物する",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "なか",
+    "zh": "其中,里面",
+    "kanji": "中",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "いちばん",
+    "zh": "最,第一",
+    "kanji": "一番",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "トマト",
+    "zh": "西红柿",
+    "kanji": "",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "じょうぶ",
+    "zh": "结实",
+    "kanji": "丈夫",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "わかい",
+    "zh": "年轻",
+    "kanji": "若い",
+    "tone": 2,
+    "score": 5
+  },
+  {
+    "jp": "ビル",
+    "zh": "大楼,大厦",
+    "kanji": "",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "どうぶつ",
+    "zh": "动物",
+    "kanji": "動物",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "みどり",
+    "zh": "绿色",
+    "kanji": "緑",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "ちゃいろ",
+    "zh": "褐色",
+    "kanji": "茶色",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "わかる",
+    "zh": "明白",
+    "kanji": "分かる",
+    "tone": 2,
+    "score": 3
+  },
+  {
+    "jp": "たべもの",
+    "zh": "食物",
+    "kanji": "食べ物",
+    "tone": 3,
+    "score": 5
+  },
+  {
+    "jp": "かみ",
+    "zh": "头发",
+    "kanji": "髪",
+    "tone": 2,
+    "score": 5
+  },
+  {
+    "jp": "みじかい",
+    "zh": "短",
+    "kanji": "短い",
+    "tone": 3,
+    "score": 3
+  },
+  {
+    "jp": "せ",
+    "zh": "个子,身高",
+    "kanji": "背",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "かお",
+    "zh": "脸",
+    "kanji": "顔",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "まるい",
+    "zh": "圆",
+    "kanji": "丸い",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "よく",
+    "zh": "非常,充分地",
+    "kanji": "",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "だいたい",
+    "zh": "大体上",
+    "kanji": "大体",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "ふとい",
+    "zh": "粗",
+    "kanji": "太い",
+    "tone": 2,
+    "score": 4
+  },
+  {
+    "jp": "みなさん",
+    "zh": "大家（敬称）",
+    "kanji": "皆さん",
+    "tone": 2,
+    "score": 5
+  },
+  {
+    "jp": "はなし",
+    "zh": "说话,内容",
+    "kanji": "話",
+    "tone": 3,
+    "score": 5
+  },
+  {
+    "jp": "ニュース",
+    "zh": "新闻",
+    "kanji": "",
+    "tone": 1,
+    "score": 5
+  },
+  {
+    "jp": "せいかつ",
+    "zh": "生活",
+    "kanji": "生活",
+    "tone": 0,
+    "score": 4
+  },
+  {
+    "jp": "ときどき",
+    "zh": "有时,时常",
+    "kanji": "時々",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "にがて",
+    "zh": "不擅长,不喜欢",
+    "kanji": "苦手",
+    "tone": 0,
+    "score": 5
+  },
+  {
+    "jp": "ほんとうに",
+    "zh": "真的",
+    "kanji": "本当に",
+    "tone": 0,
+    "score": 5
+  }
 ]
