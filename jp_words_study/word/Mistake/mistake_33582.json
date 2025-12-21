@@ -1,16 +1,18 @@
 [
-  {
-    "jp": "ナス",
-    "zh": "茄子",
-    "kanji": "",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "ミミ",
-    "zh": "耳朵",
-    "kanji": "",
-    "tone": 0,
-    "score": 3
-  }
+    {
+        "jp": "ナス",
+        "zh": "茄子",
+        "kanji": "",
+        "tone": 0,
+        "score": 3,
+        "romaji": "nasu"
+    },
+    {
+        "jp": "ミミ",
+        "zh": "耳朵",
+        "kanji": "",
+        "tone": 0,
+        "score": 3,
+        "romaji": "mimi"
+    }
 ]

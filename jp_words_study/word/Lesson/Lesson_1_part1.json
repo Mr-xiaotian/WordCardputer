@@ -4,7 +4,7 @@
         "zh": "我",
         "kanji": "私",
         "tone": 0,
-        "score": 3,
+        "score": 5,
         "romaji": "watashi"
     },
     {
@@ -12,7 +12,7 @@
         "zh": "这个",
         "kanji": null,
         "tone": 0,
-        "score": 3,
+        "score": 5,
         "romaji": "kore"
     },
     {
@@ -20,7 +20,7 @@
         "zh": "那个(近指)",
         "kanji": null,
         "tone": 0,
-        "score": 3,
+        "score": 5,
         "romaji": "sore"
     },
     {
@@ -28,7 +28,7 @@
         "zh": "那个(远指)",
         "kanji": null,
         "tone": 0,
-        "score": 3,
+        "score": 5,
         "romaji": "are"
     },
     {
@@ -66,7 +66,7 @@
         "zh": "你",
         "kanji": null,
         "tone": 2,
-        "score": 3,
+        "score": 5,
         "romaji": "anata"
     },
     {
@@ -89,7 +89,7 @@
         "zh": "是,对",
         "kanji": null,
         "tone": 1,
-        "score": 3,
+        "score": 5,
         "romaji": "hai"
     },
     {
@@ -97,7 +97,7 @@
         "zh": "不,不对",
         "kanji": null,
         "tone": 3,
-        "score": 3,
+        "score": 5,
         "romaji": "iie"
     },
     {
@@ -148,7 +148,7 @@
         "zh": "游泳",
         "kanji": "水泳",
         "tone": 0,
-        "score": 3
+        "score": 5
     },
     {
         "jp": "やきゅう",
@@ -184,7 +184,7 @@
         "zh": "因特网",
         "kanji": null,
         "tone": 5,
-        "score": 3
+        "score": 4
     },
     {
         "jp": "カラオケ",

@@ -1,34 +1,241 @@
 [
-  { "jp": "ほしい", "kanji": "", "zh": "想要", "tone": 2, "score": 3 },
-  { "jp": "かるい", "kanji": "軽い", "zh": "轻", "tone": 0, "score": 3 },
-  { "jp": "どうしましたか", "kanji": "", "zh": "怎么了？出什么事了？", "tone": -1, "score": 3 },
-  { "jp": "りょこう", "kanji": "旅行", "zh": "旅行", "tone": 0, "score": 3 },
-  { "jp": "カレーライス", "kanji": "", "zh": "咖喱饭", "tone": 4, "score": 3 },
-  { "jp": "どこか", "kanji": "", "zh": "哪里,某个地方", "tone": -1, "score": 3 },
-  { "jp": "わすれもの", "kanji": "忘れ物", "zh": "失物,遗忘的物品", "tone": 0, "score": 3 },
-  { "jp": "とる", "kanji": "取る", "zh": "取,拿", "tone": 1, "score": 3 },
-  { "jp": "ダンス", "kanji": "", "zh": "舞蹈,跳舞", "tone": 1, "score": 3 },
-  { "jp": "ならう", "kanji": "習う", "zh": "学习", "tone": 2, "score": 3 },
-  { "jp": "うたう", "kanji": "歌う", "zh": "唱", "tone": 0, "score": 3 },
-  { "jp": "おんせん", "kanji": "温泉", "zh": "温泉", "tone": 0, "score": 3 },
-  { "jp": "はいる", "kanji": "入る", "zh": "进入", "tone": 1, "score": 3 },
-  { "jp": "うわぎ", "kanji": "上着", "zh": "外套,上衣", "tone": 0, "score": 3 },
-  { "jp": "かえす", "kanji": "返す", "zh": "返还,归还", "tone": 1, "score": 3 },
-  { "jp": "コピーする", "kanji": "", "zh": "复印", "tone": 1, "score": 3 },
-  { "jp": "かりる", "kanji": "借りる", "zh": "借(进来)", "tone": 0, "score": 3 },
-  { "jp": "ひるやすみ", "kanji": "昼休み", "zh": "午休", "tone": 3, "score": 3 },
-  { "jp": "また", "kanji": "", "zh": "再,又", "tone": 0, "score": 3 },
-  { "jp": "こんど", "kanji": "今度", "zh": "下次", "tone": 1, "score": 3 },
-  { "jp": "おみまい", "kanji": "お見舞い", "zh": "探望", "tone": 0, "score": 3 },
-  { "jp": "もつ", "kanji": "持つ", "zh": "拿,拥有,携带", "tone": 1, "score": 3 },
-  { "jp": "すむ", "kanji": "住む", "zh": "居住", "tone": 1, "score": 3 },
-  { "jp": "くすり", "kanji": "薬", "zh": "药", "tone": 0, "score": 3 },
-  { "jp": "はく", "kanji": "", "zh": "穿(鞋袜,裤子等)", "tone": 0, "score": 3 },
-  { "jp": "ちず", "kanji": "地図", "zh": "地图", "tone": 1, "score": 3 },
-  { "jp": "おぼえる", "kanji": "覚える", "zh": "记住", "tone": 3, "score": 3 },
-  { "jp": "さいふ", "kanji": "財布", "zh": "钱包", "tone": 0, "score": 3 },
-  { "jp": "あるく", "kanji": "歩く", "zh": "步行,行走", "tone": 2, "score": 3 },
-  { "jp": "もっと", "kanji": "", "zh": "更加", "tone": 1, "score": 3 },
-  { "jp": "いれる", "kanji": "入れる", "zh": "把～放入", "tone": 0, "score": 3 },
-  { "jp": "もういちど", "kanji": "もう一度", "zh": "再一次", "tone": 0, "score": 3 }
+    {
+        "jp": "ほしい",
+        "zh": "想要",
+        "kanji": "",
+        "tone": 2,
+        "score": 5,
+        "romaji": "hoshii"
+    },
+    {
+        "jp": "かるい",
+        "zh": "轻; 轻的",
+        "kanji": "軽い",
+        "tone": 0,
+        "score": 3,
+        "romaji": "karui"
+    },
+    {
+        "jp": "どうしましたか",
+        "zh": "怎么了？出什么事了？",
+        "kanji": "",
+        "tone": -1,
+        "score": 2
+    },
+    {
+        "jp": "りょこう",
+        "zh": "旅行",
+        "kanji": "旅行",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "カレーライス",
+        "zh": "咖喱饭",
+        "kanji": "",
+        "tone": 4,
+        "score": 3
+    },
+    {
+        "jp": "どこか",
+        "zh": "哪里,某个地方",
+        "kanji": "",
+        "tone": -1,
+        "score": 4
+    },
+    {
+        "jp": "わすれもの",
+        "zh": "失物,遗忘的物品",
+        "kanji": "忘れ物",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "とる",
+        "zh": "照相,拍摄; 拿,取",
+        "kanji": "撮る; 取る",
+        "tone": 1,
+        "score": 5,
+        "romaji": "toru"
+    },
+    {
+        "jp": "ダンス",
+        "zh": "舞蹈,跳舞",
+        "kanji": "",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "ならう",
+        "zh": "学习; 学习; 学习(技能)",
+        "kanji": "習う",
+        "tone": 2,
+        "score": 3,
+        "romaji": "narau"
+    },
+    {
+        "jp": "うたう",
+        "zh": "唱歌",
+        "kanji": "歌う",
+        "tone": 0,
+        "score": 5,
+        "romaji": "utau"
+    },
+    {
+        "jp": "おんせん",
+        "zh": "温泉",
+        "kanji": "温泉",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "はいる",
+        "zh": "进入",
+        "kanji": "入る",
+        "tone": 1,
+        "score": 1,
+        "romaji": "hairu"
+    },
+    {
+        "jp": "うわぎ",
+        "zh": "外套,上衣",
+        "kanji": "上着",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "かえす",
+        "zh": "返还; 归还",
+        "kanji": "返す",
+        "tone": 1,
+        "score": 3,
+        "romaji": "kaesu"
+    },
+    {
+        "jp": "コピーする",
+        "zh": "复印",
+        "kanji": "",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "かりる",
+        "zh": "借(进来); 借入",
+        "kanji": "借りる",
+        "tone": 0,
+        "score": 5,
+        "romaji": "kariru"
+    },
+    {
+        "jp": "ひるやすみ",
+        "zh": "午休",
+        "kanji": "昼休み",
+        "tone": 3,
+        "score": 5
+    },
+    {
+        "jp": "また",
+        "zh": "再,又",
+        "kanji": "",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "こんど",
+        "zh": "下次",
+        "kanji": "今度",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "おみまい",
+        "zh": "探望",
+        "kanji": "お見舞い",
+        "tone": 0,
+        "score": 4
+    },
+    {
+        "jp": "もつ",
+        "zh": "拿,拥有,携带; 持有",
+        "kanji": "持つ",
+        "tone": 1,
+        "score": 5,
+        "romaji": "motsu"
+    },
+    {
+        "jp": "すむ",
+        "zh": "居住",
+        "kanji": "住む",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "くすり",
+        "zh": "药",
+        "kanji": "薬",
+        "tone": 0,
+        "score": 3,
+        "romaji": "kusuri"
+    },
+    {
+        "jp": "はく",
+        "zh": "穿(鞋袜,裤子等)",
+        "kanji": "",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "ちず",
+        "zh": "地图",
+        "kanji": "地図",
+        "tone": 1,
+        "score": 5,
+        "romaji": "chizu"
+    },
+    {
+        "jp": "おぼえる",
+        "zh": "记住",
+        "kanji": "覚える",
+        "tone": 3,
+        "score": 2,
+        "romaji": "oboeru"
+    },
+    {
+        "jp": "さいふ",
+        "zh": "钱包",
+        "kanji": "財布",
+        "tone": 0,
+        "score": 5,
+        "romaji": "saifu"
+    },
+    {
+        "jp": "あるく",
+        "zh": "步行,行走; 走",
+        "kanji": "歩く",
+        "tone": 2,
+        "score": 1,
+        "romaji": "aruku"
+    },
+    {
+        "jp": "もっと",
+        "zh": "更加",
+        "kanji": "",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "いれる",
+        "zh": "加进; 把～放入",
+        "kanji": "入れる",
+        "tone": 0,
+        "score": 3,
+        "romaji": "ireru"
+    },
+    {
+        "jp": "もういちど",
+        "zh": "再一次",
+        "kanji": "もう一度",
+        "tone": 0,
+        "score": 5
+    }
 ]

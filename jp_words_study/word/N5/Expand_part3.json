@@ -212,17 +212,26 @@
     {
         "jp": "あかちゃん",
         "romaji": "akachan",
-        "zh": "婴儿"
+        "zh": "婴儿",
+        "kanji": "赤ちゃん",
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "こども",
         "romaji": "kodomo",
-        "zh": "孩子"
+        "zh": "儿童; 孩子",
+        "kanji": "子ども",
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "おとな",
         "romaji": "otona",
-        "zh": "大人"
+        "zh": "大人; 成人",
+        "kanji": "大人",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "わかもの",
@@ -265,7 +274,8 @@
         "zh": "父母",
         "kanji": "両親",
         "tone": 1,
-        "pos": "名"
+        "pos": "名",
+        "score": 4
     },
     {
         "jp": "そふ",

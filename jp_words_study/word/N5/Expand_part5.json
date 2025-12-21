@@ -23,7 +23,9 @@
         "jp": "くすり",
         "romaji": "kusuri",
         "zh": "药",
-        "kanji": "薬"
+        "kanji": "薬",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "ねつ",
@@ -59,7 +61,10 @@
     {
         "jp": "さいふ",
         "romaji": "saifu",
-        "zh": "钱包"
+        "zh": "钱包",
+        "kanji": "財布",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "かさ",
@@ -95,7 +100,8 @@
         "romaji": "pasokon",
         "zh": "个人电脑",
         "kanji": "",
-        "tone": 0
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "テレビ",
@@ -153,7 +159,8 @@
         "zh": "新干线",
         "kanji": "新幹線",
         "tone": 3,
-        "pos": "名"
+        "pos": "名",
+        "score": 5
     },
     {
         "jp": "ちかてつ",
@@ -161,7 +168,8 @@
         "zh": "地铁",
         "kanji": "地下鉄",
         "tone": 2,
-        "pos": "名"
+        "pos": "名",
+        "score": 5
     },
     {
         "jp": "ふね",
@@ -169,7 +177,8 @@
         "zh": "船",
         "kanji": "船",
         "tone": 1,
-        "pos": "名"
+        "pos": "名",
+        "score": 4
     },
     {
         "jp": "タクシー",
@@ -177,7 +186,8 @@
         "zh": "出租车",
         "kanji": "",
         "tone": 1,
-        "pos": "名"
+        "pos": "名",
+        "score": 4
     },
     {
         "jp": "バスてい",
@@ -229,14 +239,18 @@
     {
         "jp": "どうぶつえん",
         "romaji": "doubutsuen",
-        "zh": "动物园"
+        "zh": "动物园",
+        "kanji": "動物園",
+        "tone": 4,
+        "score": 5
     },
     {
         "jp": "コンビニ",
         "romaji": "konbini",
         "zh": "便利店",
         "kanji": "",
-        "tone": 0
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "やおや",
@@ -290,7 +304,8 @@
         "romaji": "shukudai",
         "zh": "作业; 家庭作业",
         "kanji": "宿題",
-        "tone": 0
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "しけん",
@@ -318,7 +333,10 @@
     {
         "jp": "もんだい",
         "romaji": "mondai",
-        "zh": "问题"
+        "zh": "问题",
+        "kanji": "問題",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "こたえ",
@@ -328,7 +346,10 @@
     {
         "jp": "ちず",
         "romaji": "chizu",
-        "zh": "地图"
+        "zh": "地图",
+        "kanji": "地図",
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "こうさてん",

@@ -1,41 +1,291 @@
 [
-  { "jp": "いる", "kanji": "", "zh": "（人/动物）有,在", "tone": 0, "score": 3 },
-  { "jp": "ある", "kanji": "", "zh": "（物体/植物）有,在", "tone": 1, "score": 3 },
-  { "jp": "とり", "kanji": "鳥", "zh": "鸟", "tone": 0, "score": 3 },
-  { "jp": "こうばん", "kanji": "交番", "zh": "派出所,治安岗亭", "tone": 0, "score": 3 },
-  { "jp": "となり", "kanji": "隣", "zh": "邻居,隔壁", "tone": 0, "score": 3 },
-  { "jp": "うえ", "kanji": "上", "zh": "上,上面", "tone": 0, "score": 3 },
-  { "jp": "した", "kanji": "下", "zh": "下,下面", "tone": 0, "score": 3 },
-  { "jp": "あいだ", "kanji": "間", "zh": "中间", "tone": 0, "score": 3 },
-  { "jp": "うしろ", "kanji": "後ろ", "zh": "后,后面", "tone": 0, "score": 3 },
-  { "jp": "よこ", "kanji": "横", "zh": "旁边,侧面", "tone": 0, "score": 3 },
-  { "jp": "みぎ", "kanji": "右", "zh": "右,右边", "tone": 0, "score": 3 },
-  { "jp": "ほんだな", "kanji": "本棚", "zh": "书架", "tone": 1, "score": 3 },
-  { "jp": "せいと", "kanji": "生徒", "zh": "（中）学生", "tone": 1, "score": 3 },
-  { "jp": "こども", "kanji": "子ども", "zh": "孩子,儿童", "tone": 1, "score": 3 },
-  { "jp": "やくそく", "kanji": "約束", "zh": "约会,约定", "tone": 0, "score": 3 },
-  { "jp": "ようじ", "kanji": "用事", "zh": "事情", "tone": 0, "score": 3 },
-  { "jp": "おかね", "kanji": "お金", "zh": "钱", "tone": 0, "score": 3 },
-  { "jp": "おんなのひと", "kanji": "女の人", "zh": "女的,女人", "tone": 0, "score": 3 },
-  { "jp": "おとこのこ", "kanji": "男の子", "zh": "男孩子", "tone": 3, "score": 3 },
-  { "jp": "あかちゃん", "kanji": "赤ちゃん", "zh": "婴儿", "tone": 1, "score": 3 },
-  { "jp": "おとな", "kanji": "大人", "zh": "大人,成人", "tone": 0, "score": 3 },
-  { "jp": "はがき", "kanji": "葉書", "zh": "明信片", "tone": 0, "score": 3 },
-  { "jp": "まい", "kanji": "", "zh": "～张", "tone": 0, "score": 3 },
-  { "jp": "きって", "kanji": "切手", "zh": "邮票", "tone": 0, "score": 3 },
-  { "jp": "いくつ", "kanji": "", "zh": "几个", "tone": 1, "score": 3 },
-  { "jp": "きょうだい", "kanji": "兄弟", "zh": "兄弟姐妹", "tone": 1, "score": 3 },
-  { "jp": "こいびと", "kanji": "恋人", "zh": "恋人", "tone": 0, "score": 3 },
-  { "jp": "かかる", "kanji": "", "zh": "花费（时间/金钱）", "tone": 2, "score": 3 },
-  { "jp": "どのぐらい", "kanji": "", "zh": "多少", "tone": 0, "score": 3 },
-  { "jp": "おととし", "kanji": "", "zh": "前年", "tone": 2, "score": 3 },
-  { "jp": "プール", "kanji": "", "zh": "游泳池", "tone": 1, "score": 3 },
-  { "jp": "およぐ", "kanji": "泳ぐ", "zh": "游泳", "tone": 2, "score": 3 },
-  { "jp": "だす", "kanji": "出す", "zh": "提交", "tone": 1, "score": 3 },
-  { "jp": "にもつ", "kanji": "荷物", "zh": "行李", "tone": 1, "score": 3 },
-  { "jp": "こうくうびん", "kanji": "航空便", "zh": "航空邮寄", "tone": 0, "score": 3 },
-  { "jp": "ふなびん", "kanji": "船便", "zh": "船运邮寄", "tone": 0, "score": 3 },
-  { "jp": "だれか", "kanji": "誰か", "zh": "谁,什么人,某人", "tone": 0, "score": 3 },
-  { "jp": "ぜんぶ", "kanji": "全部", "zh": "全,全部", "tone": 1, "score": 3 },
-  { "jp": "どうぶつえん", "kanji": "動物園", "zh": "动物园", "tone": 4, "score": 3 }
+    {
+        "jp": "いる",
+        "zh": "（人/动物）有,在",
+        "kanji": "",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "ある",
+        "zh": "（物体/植物）有,在",
+        "kanji": "",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "とり",
+        "zh": "鸟",
+        "kanji": "鳥; ",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "こうばん",
+        "zh": "派出所,治安岗亭",
+        "kanji": "交番",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "となり",
+        "zh": "邻居,隔壁; 旁边",
+        "kanji": "隣",
+        "tone": 0,
+        "score": 5,
+        "romaji": "tonari"
+    },
+    {
+        "jp": "うえ",
+        "zh": "上,上面; 上面; 上",
+        "kanji": "上",
+        "tone": 0,
+        "score": 5,
+        "romaji": "ue"
+    },
+    {
+        "jp": "した",
+        "zh": "下,下面; 舌头,下面; 下面; 下",
+        "kanji": "下",
+        "tone": 0,
+        "score": 5,
+        "romaji": "shita"
+    },
+    {
+        "jp": "あいだ",
+        "zh": "中间; 之间",
+        "kanji": "間",
+        "tone": 0,
+        "score": 5,
+        "romaji": "aida"
+    },
+    {
+        "jp": "うしろ",
+        "zh": "后,后面; 后面",
+        "kanji": "後ろ",
+        "tone": 0,
+        "score": 5,
+        "romaji": "ushiro"
+    },
+    {
+        "jp": "よこ",
+        "zh": "旁边,侧面; 旁边",
+        "kanji": "横",
+        "tone": 0,
+        "score": 5,
+        "romaji": "yoko"
+    },
+    {
+        "jp": "みぎ",
+        "zh": "右边; 右",
+        "kanji": "右",
+        "tone": 0,
+        "score": 5,
+        "romaji": "migi"
+    },
+    {
+        "jp": "ほんだな",
+        "zh": "书架",
+        "kanji": "本棚",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "せいと",
+        "zh": "（中）学生",
+        "kanji": "生徒",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "こども",
+        "zh": "儿童; 孩子",
+        "kanji": "子ども",
+        "tone": 1,
+        "score": 5,
+        "romaji": "kodomo"
+    },
+    {
+        "jp": "やくそく",
+        "zh": "约会,约定",
+        "kanji": "約束",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "ようじ",
+        "zh": "事情",
+        "kanji": "用事",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "おかね",
+        "zh": "钱",
+        "kanji": "お金",
+        "tone": 0,
+        "score": 5,
+        "romaji": "okane"
+    },
+    {
+        "jp": "おんなのひと",
+        "zh": "女的,女人",
+        "kanji": "女の人",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "おとこのこ",
+        "zh": "男孩子",
+        "kanji": "男の子",
+        "tone": 3,
+        "score": 5
+    },
+    {
+        "jp": "あかちゃん",
+        "zh": "婴儿",
+        "kanji": "赤ちゃん",
+        "tone": 1,
+        "score": 5,
+        "romaji": "akachan"
+    },
+    {
+        "jp": "おとな",
+        "zh": "大人; 成人",
+        "kanji": "大人",
+        "tone": 0,
+        "score": 5,
+        "romaji": "otona"
+    },
+    {
+        "jp": "はがき",
+        "zh": "明信片",
+        "kanji": "葉書",
+        "tone": 0,
+        "score": 5,
+        "romaji": "hagaki"
+    },
+    {
+        "jp": "まい",
+        "zh": "～张",
+        "kanji": "",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "きって",
+        "zh": "邮票",
+        "kanji": "切手",
+        "tone": 0,
+        "score": 5,
+        "romaji": "kitte"
+    },
+    {
+        "jp": "いくつ",
+        "zh": "几个",
+        "kanji": "",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "きょうだい",
+        "zh": "兄弟姐妹",
+        "kanji": "兄弟",
+        "tone": 1,
+        "score": 4
+    },
+    {
+        "jp": "こいびと",
+        "zh": "恋人",
+        "kanji": "恋人",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "かかる",
+        "zh": "花费（时间/金钱）",
+        "kanji": "",
+        "tone": 2,
+        "score": 5
+    },
+    {
+        "jp": "どのぐらい",
+        "zh": "多少",
+        "kanji": "",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "おととし",
+        "zh": "前年",
+        "kanji": "",
+        "tone": 2,
+        "score": 5
+    },
+    {
+        "jp": "プール",
+        "zh": "游泳池",
+        "kanji": "",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "およぐ",
+        "zh": "游泳",
+        "kanji": "泳ぐ",
+        "tone": 2,
+        "score": 5,
+        "romaji": "oyogu"
+    },
+    {
+        "jp": "だす",
+        "zh": "提交; 拿出",
+        "kanji": "出す",
+        "tone": 1,
+        "score": 5,
+        "romaji": "dasu"
+    },
+    {
+        "jp": "にもつ",
+        "zh": "行李",
+        "kanji": "荷物",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "こうくうびん",
+        "zh": "航空邮寄",
+        "kanji": "航空便",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "ふなびん",
+        "zh": "船运邮寄",
+        "kanji": "船便",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "だれか",
+        "zh": "谁; 什么人,某人",
+        "kanji": "誰か",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "ぜんぶ",
+        "zh": "全部; 全",
+        "kanji": "全部",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "どうぶつえん",
+        "zh": "动物园",
+        "kanji": "動物園",
+        "tone": 4,
+        "score": 5,
+        "romaji": "doubutsuen"
+    }
 ]

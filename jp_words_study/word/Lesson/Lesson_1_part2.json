@@ -33,7 +33,7 @@
         "kanji": "水",
         "zh": "水",
         "tone": 0,
-        "score": 3,
+        "score": 5,
         "romaji": "mizu"
     },
     {
@@ -80,7 +80,7 @@
         "kanji": "電話",
         "zh": "电话",
         "tone": 0,
-        "score": 3,
+        "score": 5,
         "romaji": "denwa"
     },
     {
@@ -118,7 +118,7 @@
         "kanji": "自転車",
         "zh": "自行车",
         "tone": -1,
-        "score": 3,
+        "score": 5,
         "pos": "名",
         "romaji": "jitensha"
     },
@@ -149,7 +149,7 @@
         "kanji": "家族",
         "zh": "家庭,家人",
         "tone": -1,
-        "score": 3,
+        "score": 5,
         "pos": "名",
         "romaji": "kazoku"
     },
@@ -215,8 +215,8 @@
         "jp": "ニュース",
         "kanji": null,
         "zh": "新闻",
-        "tone": 0,
-        "score": 3
+        "tone": -1,
+        "score": 5
     },
     {
         "jp": "ホワイトボード",

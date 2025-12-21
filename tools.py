@@ -160,7 +160,7 @@ def collect_merged_entries(folder_path):
     folder = Path(folder_path)
     all_entries = {}  # keyed by jp
 
-    for json_file in folder.glob("*.json"):
+    for json_file in folder.rglob("*.json"):
         with open(json_file, "r", encoding="utf-8") as f:
             try:
                 data = json.load(f)
@@ -227,7 +227,7 @@ def apply_merge_and_rewrite(folder_path):
     folder = Path(folder_path)
     all_entries = collect_merged_entries(folder_path)
 
-    for json_file in folder.glob("*.json"):
+    for json_file in folder.rglob("*.json"):
         with open(json_file, "r", encoding="utf-8") as f:
             data = json.load(f)
 

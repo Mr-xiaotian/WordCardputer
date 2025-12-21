@@ -1,289 +1,342 @@
 [
-  {
-    "jp": "いく",
-    "zh": "去",
-    "kanji": "行く",
-    "tone": 0,
-    "score": 5
-  },
-  {
-    "jp": "らいげつ",
-    "zh": "下个月",
-    "kanji": "来月",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "バス",
-    "zh": "公共汽车,巴士",
-    "kanji": "",
-    "tone": 1,
-    "score": 4
-  },
-  {
-    "jp": "かえる",
-    "zh": "回家; 青蛙",
-    "kanji": "帰る",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "きょねん",
-    "zh": "去年",
-    "kanji": "去年",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "あに",
-    "zh": "(我)哥哥",
-    "kanji": "兄",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "くる",
-    "zh": "来",
-    "kanji": "来る",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "カレンダー",
-    "zh": "日历、挂历",
-    "kanji": "",
-    "tone": 2,
-    "score": 4
-  },
-  {
-    "jp": "たんじょうび",
-    "zh": "生日",
-    "kanji": "誕生日",
-    "tone": 3,
-    "score": 5
-  },
-  {
-    "jp": "かぞく",
-    "zh": "家庭,家人",
-    "kanji": "家族",
-    "tone": -1,
-    "score": 5
-  },
-  {
-    "jp": "ちち",
-    "zh": "(我)父亲",
-    "kanji": "父",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "はは",
-    "zh": "(我)母亲",
-    "kanji": "母",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "あね",
-    "zh": "(我)姐姐",
-    "kanji": "姉",
-    "tone": 0,
-    "score": 5
-  },
-  {
-    "jp": "おとうさん",
-    "zh": "爸爸",
-    "kanji": "お父さん",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "おかあさん",
-    "zh": "妈妈",
-    "kanji": "お母さん",
-    "tone": 2,
-    "score": 4
-  },
-  {
-    "jp": "おにいさん",
-    "zh": "哥哥",
-    "kanji": "お兄さん",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "おとうとさん",
-    "zh": "弟弟(敬称)",
-    "kanji": "弟さん",
-    "tone": 0,
-    "score": 5
-  },
-  {
-    "jp": "いもうとさん",
-    "zh": "妹妹(敬称)",
-    "kanji": "妹さん",
-    "tone": 0,
-    "score": 4
-  },
-  {
-    "jp": "いつ",
-    "zh": "什么时候",
-    "kanji": "",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "にゅうがくしき",
-    "zh": "入学典礼",
-    "kanji": "入学式",
-    "tone": 4,
-    "score": 4
-  },
-  {
-    "jp": "らいねん",
-    "zh": "明年",
-    "kanji": "来年",
-    "tone": 0,
-    "score": 5
-  },
-  {
-    "jp": "せんげつ",
-    "zh": "上个月",
-    "kanji": "先月",
-    "tone": 1,
-    "score": 5
-  },
-  {
-    "jp": "こんげつ",
-    "zh": "这个月",
-    "kanji": "今月",
-    "tone": 0,
-    "score": 5
-  },
-  {
-    "jp": "まいつき",
-    "zh": "每个月",
-    "kanji": "毎月",
-    "tone": 0,
-    "score": 4
-  },
-  {
-    "jp": "ことし",
-    "zh": "今年",
-    "kanji": "今年",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "まいとし",
-    "zh": "每年",
-    "kanji": "毎年",
-    "tone": 0,
-    "score": 4
-  },
-  {
-    "jp": "しんかんせん",
-    "zh": "新干线",
-    "kanji": "新幹線",
-    "tone": 3,
-    "score": 5
-  },
-  {
-    "jp": "くるま",
-    "zh": "车; 汽车",
-    "kanji": "車",
-    "tone": 0,
-    "score": 5
-  },
-  {
-    "jp": "ひこうき",
-    "zh": "飞机",
-    "kanji": "飛行機",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "ふね",
-    "zh": "船",
-    "kanji": "船",
-    "tone": 1,
-    "score": 4
-  },
-  {
-    "jp": "じてんしゃ",
-    "zh": "自行车",
-    "kanji": "自転車",
-    "tone": -1,
-    "score": 5
-  },
-  {
-    "jp": "あるいて",
-    "zh": "步行",
-    "kanji": "歩いて",
-    "tone": 2,
-    "score": 4
-  },
-  {
-    "jp": "ともだち",
-    "zh": "朋友",
-    "kanji": "友だち",
-    "tone": 0,
-    "score": 5
-  },
-  {
-    "jp": "でんしゃ",
-    "zh": "电车",
-    "kanji": "電車",
-    "tone": 0,
-    "score": 5
-  },
-  {
-    "jp": "いえ",
-    "zh": "家; 房子",
-    "kanji": "家",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "ちかてつ",
-    "zh": "地铁",
-    "kanji": "地下鉄",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "タクシー",
-    "zh": "出租车",
-    "kanji": "",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "ひとりで",
-    "zh": "一个人",
-    "kanji": "一人で",
-    "tone": 2,
-    "score": 5
-  },
-  {
-    "jp": "りょうしん",
-    "zh": "父母",
-    "kanji": "両親",
-    "tone": 1,
-    "score": 4
-  },
-  {
-    "jp": "にっき",
-    "zh": "日记",
-    "kanji": "日記",
-    "tone": 0,
-    "score": 5
-  },
-  {
-    "jp": "たくさん",
-    "zh": "很多",
-    "kanji": "沢山",
-    "tone": 3,
-    "score": 2
-  }
+    {
+        "jp": "いく",
+        "zh": "去",
+        "kanji": "行く",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "らいげつ",
+        "zh": "下个月",
+        "kanji": "来月",
+        "tone": 1,
+        "score": 5,
+        "romaji": "raigetsu",
+        "pos": "名"
+    },
+    {
+        "jp": "バス",
+        "zh": "公共汽车,巴士",
+        "kanji": "",
+        "tone": 1,
+        "score": 4,
+        "romaji": "basu",
+        "pos": "名"
+    },
+    {
+        "jp": "かえる",
+        "zh": "回家; 青蛙",
+        "kanji": "帰る",
+        "tone": 1,
+        "score": 5,
+        "romaji": "kaeru",
+        "pos": "自動Ⅰ"
+    },
+    {
+        "jp": "きょねん",
+        "zh": "去年",
+        "kanji": "去年",
+        "tone": 1,
+        "score": 3,
+        "romaji": "kyonen",
+        "pos": "名"
+    },
+    {
+        "jp": "あに",
+        "zh": "(我)哥哥",
+        "kanji": "兄",
+        "tone": 1,
+        "score": 5,
+        "romaji": "ani",
+        "pos": "名"
+    },
+    {
+        "jp": "くる",
+        "zh": "来",
+        "kanji": "来る",
+        "tone": 1,
+        "score": 5,
+        "romaji": "kuru",
+        "pos": "自動Ⅲ"
+    },
+    {
+        "jp": "カレンダー",
+        "zh": "日历、挂历",
+        "kanji": "",
+        "tone": 2,
+        "score": 4
+    },
+    {
+        "jp": "たんじょうび",
+        "zh": "生日",
+        "kanji": "誕生日",
+        "tone": 3,
+        "score": 5,
+        "romaji": "tanjoubi",
+        "pos": "名"
+    },
+    {
+        "jp": "かぞく",
+        "zh": "家庭,家人",
+        "kanji": "家族",
+        "tone": -1,
+        "score": 5,
+        "pos": "名",
+        "romaji": "kazoku"
+    },
+    {
+        "jp": "ちち",
+        "zh": "(我)父亲",
+        "kanji": "父",
+        "tone": 1,
+        "score": 5,
+        "romaji": "chichi",
+        "pos": "名"
+    },
+    {
+        "jp": "はは",
+        "zh": "(我)母亲",
+        "kanji": "母",
+        "tone": 1,
+        "score": 5,
+        "romaji": "haha",
+        "pos": "名"
+    },
+    {
+        "jp": "あね",
+        "zh": "(我)姐姐",
+        "kanji": "姉",
+        "tone": 0,
+        "score": 5,
+        "romaji": "ane",
+        "pos": "名"
+    },
+    {
+        "jp": "おとうさん",
+        "zh": "爸爸",
+        "kanji": "お父さん",
+        "tone": 2,
+        "score": 5
+    },
+    {
+        "jp": "おかあさん",
+        "zh": "妈妈",
+        "kanji": "お母さん",
+        "tone": 2,
+        "score": 4
+    },
+    {
+        "jp": "おにいさん",
+        "zh": "哥哥",
+        "kanji": "お兄さん",
+        "tone": 2,
+        "score": 5
+    },
+    {
+        "jp": "おとうとさん",
+        "zh": "弟弟(敬称)",
+        "kanji": "弟さん",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "いもうとさん",
+        "zh": "妹妹(敬称)",
+        "kanji": "妹さん",
+        "tone": 0,
+        "score": 4
+    },
+    {
+        "jp": "いつ",
+        "zh": "什么时候",
+        "kanji": "",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "にゅうがくしき",
+        "zh": "入学典礼",
+        "kanji": "入学式",
+        "tone": 4,
+        "score": 4
+    },
+    {
+        "jp": "らいねん",
+        "zh": "明年",
+        "kanji": "来年",
+        "tone": 0,
+        "score": 5,
+        "romaji": "rainen",
+        "pos": "名"
+    },
+    {
+        "jp": "せんげつ",
+        "zh": "上个月",
+        "kanji": "先月",
+        "tone": 1,
+        "score": 5,
+        "romaji": "sengetsu",
+        "pos": "名"
+    },
+    {
+        "jp": "こんげつ",
+        "zh": "这个月",
+        "kanji": "今月",
+        "tone": 0,
+        "score": 5,
+        "romaji": "kongetsu",
+        "pos": "名"
+    },
+    {
+        "jp": "まいつき",
+        "zh": "每个月",
+        "kanji": "毎月",
+        "tone": 0,
+        "score": 4
+    },
+    {
+        "jp": "ことし",
+        "zh": "今年",
+        "kanji": "今年",
+        "tone": 0,
+        "score": 3,
+        "romaji": "kotoshi",
+        "pos": "名"
+    },
+    {
+        "jp": "まいとし",
+        "zh": "每年",
+        "kanji": "毎年",
+        "tone": 0,
+        "score": 4
+    },
+    {
+        "jp": "しんかんせん",
+        "zh": "新干线",
+        "kanji": "新幹線",
+        "tone": 3,
+        "score": 5,
+        "pos": "名",
+        "romaji": "shinkansen"
+    },
+    {
+        "jp": "くるま",
+        "zh": "车; 汽车",
+        "kanji": "車",
+        "tone": 0,
+        "score": 5,
+        "romaji": "kuruma",
+        "pos": "名"
+    },
+    {
+        "jp": "ひこうき",
+        "zh": "飞机",
+        "kanji": "飛行機",
+        "tone": 2,
+        "score": 5,
+        "romaji": "hikouki",
+        "pos": "名"
+    },
+    {
+        "jp": "ふね",
+        "zh": "船",
+        "kanji": "船",
+        "tone": 1,
+        "score": 4,
+        "romaji": "fune",
+        "pos": "名"
+    },
+    {
+        "jp": "じてんしゃ",
+        "zh": "自行车",
+        "kanji": "自転車",
+        "tone": -1,
+        "score": 5,
+        "pos": "名",
+        "romaji": "jitensha"
+    },
+    {
+        "jp": "あるいて",
+        "zh": "步行",
+        "kanji": "歩いて",
+        "tone": 2,
+        "score": 4
+    },
+    {
+        "jp": "ともだち",
+        "zh": "朋友",
+        "kanji": "友だち",
+        "tone": 0,
+        "score": 5,
+        "romaji": "tomodachi",
+        "pos": "名"
+    },
+    {
+        "jp": "でんしゃ",
+        "zh": "电车",
+        "kanji": "電車",
+        "tone": 0,
+        "score": 5,
+        "romaji": "densha",
+        "pos": "名"
+    },
+    {
+        "jp": "いえ",
+        "zh": "家; 房子",
+        "kanji": "家",
+        "tone": 2,
+        "score": 5,
+        "romaji": "ie",
+        "pos": "名"
+    },
+    {
+        "jp": "ちかてつ",
+        "zh": "地铁",
+        "kanji": "地下鉄",
+        "tone": 2,
+        "score": 5,
+        "pos": "名",
+        "romaji": "chikatetsu"
+    },
+    {
+        "jp": "タクシー",
+        "zh": "出租车",
+        "kanji": "",
+        "tone": 1,
+        "score": 4,
+        "romaji": "takushii",
+        "pos": "名"
+    },
+    {
+        "jp": "ひとりで",
+        "zh": "一个人",
+        "kanji": "一人で",
+        "tone": 2,
+        "score": 5
+    },
+    {
+        "jp": "りょうしん",
+        "zh": "父母",
+        "kanji": "両親",
+        "tone": 1,
+        "score": 4,
+        "romaji": "ryoushin",
+        "pos": "名"
+    },
+    {
+        "jp": "にっき",
+        "zh": "日记",
+        "kanji": "日記",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "たくさん",
+        "zh": "很多",
+        "kanji": "沢山",
+        "tone": 3,
+        "score": 2,
+        "pos": "副"
+    }
 ]

@@ -1,121 +1,124 @@
 [
-  {
-    "jp": "ぜろ",
-    "zh": "零",
-    "kanji": "零",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "れい",
-    "zh": "零",
-    "kanji": "零",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "いち",
-    "zh": "一",
-    "kanji": "一",
-    "tone": 2,
-    "score": 3
-  },
-  {
-    "jp": "に",
-    "zh": "二",
-    "kanji": "二",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "さん",
-    "zh": "三",
-    "kanji": "三",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "よん",
-    "zh": "四",
-    "kanji": "四",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "ご",
-    "zh": "五",
-    "kanji": "五",
-    "tone": 0,
-    "score": 3
-  },
-  {
-    "jp": "ろく",
-    "zh": "六",
-    "kanji": "六",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "なな",
-    "zh": "七",
-    "kanji": "七",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "はち",
-    "zh": "蜜蜂; 八",
-    "kanji": "八",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "きゅう",
-    "zh": "九",
-    "kanji": "九",
-    "tone": 1,
-    "score": 4
-  },
-  {
-    "jp": "じゅう",
-    "zh": "十",
-    "kanji": "十",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "ひゃく",
-    "zh": "百",
-    "kanji": "百",
-    "tone": 2,
-    "score": 3
-  },
-  {
-    "jp": "せん",
-    "zh": "千; 线路",
-    "kanji": "千; 線",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "まん",
-    "zh": "万",
-    "kanji": "万",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "おく",
-    "zh": "放置; 亿",
-    "kanji": "億",
-    "tone": 1,
-    "score": 3
-  },
-  {
-    "jp": "ちょう",
-    "zh": "蝴蝶; 兆",
-    "kanji": "兆",
-    "tone": 1,
-    "score": 3
-  }
+    {
+        "jp": "ぜろ",
+        "zh": "零",
+        "kanji": "零",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "れい",
+        "zh": "零",
+        "kanji": "零",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "いち",
+        "zh": "一",
+        "kanji": "一",
+        "tone": 2,
+        "score": 5
+    },
+    {
+        "jp": "に",
+        "zh": "二",
+        "kanji": "二",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "さん",
+        "zh": "三",
+        "kanji": "三",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "よん",
+        "zh": "四",
+        "kanji": "四",
+        "tone": 1,
+        "score": 4
+    },
+    {
+        "jp": "ご",
+        "zh": "五",
+        "kanji": "五",
+        "tone": 0,
+        "score": 5
+    },
+    {
+        "jp": "ろく",
+        "zh": "六",
+        "kanji": "六",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "なな",
+        "zh": "七",
+        "kanji": "七",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "はち",
+        "zh": "蜜蜂; 八",
+        "kanji": "八",
+        "tone": 1,
+        "score": 4
+    },
+    {
+        "jp": "きゅう",
+        "zh": "九",
+        "kanji": "九",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "じゅう",
+        "zh": "十",
+        "kanji": "十",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "ひゃく",
+        "zh": "百",
+        "kanji": "百",
+        "tone": 2,
+        "score": 4
+    },
+    {
+        "jp": "せん",
+        "zh": "千; 线路",
+        "kanji": "千; 線",
+        "tone": 1,
+        "score": 5,
+        "romaji": "sen"
+    },
+    {
+        "jp": "まん",
+        "zh": "万",
+        "kanji": "万",
+        "tone": 1,
+        "score": 5
+    },
+    {
+        "jp": "おく",
+        "zh": "放置; 亿",
+        "kanji": "億",
+        "tone": 1,
+        "score": 3,
+        "romaji": "oku"
+    },
+    {
+        "jp": "ちょう",
+        "zh": "蝴蝶; 兆",
+        "kanji": "兆",
+        "tone": 1,
+        "score": 3,
+        "romaji": "chou"
+    }
 ]

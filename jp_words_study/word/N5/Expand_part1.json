@@ -2,29 +2,42 @@
     {
         "jp": "とおい",
         "romaji": "tooi",
-        "zh": "远的; 远",
-        "kanji": "遠い"
+        "zh": "远的; 遥远",
+        "kanji": "遠い",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "ちかい",
         "romaji": "chikai",
         "zh": "近的; 近",
-        "kanji": "近い"
+        "kanji": "近い",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "ながい",
         "romaji": "nagai",
-        "zh": "长的"
+        "zh": "长; 长的",
+        "kanji": "長い",
+        "tone": 2,
+        "score": 4
     },
     {
         "jp": "みじかい",
         "romaji": "mijikai",
-        "zh": "短的"
+        "zh": "短; 短的",
+        "kanji": "短い",
+        "tone": 3,
+        "score": 3
     },
     {
         "jp": "ふとい",
         "romaji": "futoi",
-        "zh": "粗的,胖的"
+        "zh": "粗的; 胖的",
+        "kanji": "太い",
+        "tone": 2,
+        "score": 4
     },
     {
         "jp": "ほそい",
@@ -34,12 +47,18 @@
     {
         "jp": "はやい",
         "romaji": "hayai",
-        "zh": "快的,早的"
+        "zh": "快; 快的,早的",
+        "kanji": "速い",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "おそい",
         "romaji": "osoi",
-        "zh": "慢的,晚的"
+        "zh": "迟的; 慢的; 晚的",
+        "kanji": "遅い",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "つめたい",
@@ -54,7 +73,10 @@
     {
         "jp": "からい",
         "romaji": "karai",
-        "zh": "辣的"
+        "zh": "辣; 辣的",
+        "kanji": "辛い",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "しょっぱい",
@@ -74,12 +96,18 @@
     {
         "jp": "いそがしい",
         "romaji": "isogashii",
-        "zh": "忙的"
+        "zh": "忙; 忙的",
+        "kanji": "忙しい",
+        "tone": 4,
+        "score": 5
     },
     {
         "jp": "ひま",
         "romaji": "hima",
-        "zh": "闲的"
+        "zh": "有空; 闲的",
+        "kanji": "暇",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "つよい",
@@ -94,17 +122,26 @@
     {
         "jp": "うるさい",
         "romaji": "urusai",
-        "zh": "吵闹的"
+        "zh": "吵闹的",
+        "kanji": "",
+        "tone": 3,
+        "score": 3
     },
     {
         "jp": "しずか",
         "romaji": "shizuka",
-        "zh": "安静的"
+        "zh": "安静的",
+        "kanji": "静か",
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "きれい",
         "romaji": "kirei",
-        "zh": "漂亮的,干净的"
+        "zh": "漂亮的,干净的",
+        "kanji": "",
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "きたない",
@@ -114,7 +151,10 @@
     {
         "jp": "げんき",
         "romaji": "genki",
-        "zh": "健康的,精神好的"
+        "zh": "有精神,有活力; 健康的",
+        "kanji": "元気",
+        "tone": 1,
+        "score": 2
     },
     {
         "jp": "びょうき",
@@ -124,7 +164,10 @@
     {
         "jp": "たのしい",
         "romaji": "tanoshii",
-        "zh": "愉快的"
+        "zh": "快乐; 愉快的",
+        "kanji": "楽しい",
+        "tone": 3,
+        "score": 5
     },
     {
         "jp": "つまらない",
@@ -134,7 +177,10 @@
     {
         "jp": "おもしろい",
         "romaji": "omoshiroi",
-        "zh": "有趣的"
+        "zh": "有趣; 有趣的",
+        "kanji": "面白い",
+        "tone": 4,
+        "score": 5
     },
     {
         "jp": "むり",
@@ -144,32 +190,50 @@
     {
         "jp": "かんたん",
         "romaji": "kantan",
-        "zh": "简单的"
+        "zh": "简单; 简单的",
+        "kanji": "簡単",
+        "tone": 0,
+        "score": 4
     },
     {
         "jp": "じょうず",
         "romaji": "jouzu",
-        "zh": "擅长的"
+        "zh": "拿手,擅长; 擅长的",
+        "kanji": "上手",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "へた",
         "romaji": "heta",
-        "zh": "不擅长的"
+        "zh": "不拿手的; 不擅长的",
+        "kanji": "下手",
+        "tone": 2,
+        "score": 4
     },
     {
         "jp": "すき",
         "romaji": "suki",
-        "zh": "喜欢"
+        "zh": "喜欢",
+        "kanji": "好き",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "きらい",
         "romaji": "kirai",
-        "zh": "讨厌"
+        "zh": "讨厌,厌恶; 讨厌",
+        "kanji": "嫌い",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "ほしい",
         "romaji": "hoshii",
-        "zh": "想要"
+        "zh": "想要",
+        "kanji": "",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "いらない",
@@ -179,7 +243,10 @@
     {
         "jp": "だいすき",
         "romaji": "daisuki",
-        "zh": "非常喜欢"
+        "zh": "非常喜欢",
+        "kanji": "大好き",
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "だいきらい",
@@ -189,22 +256,34 @@
     {
         "jp": "おぼえる",
         "romaji": "oboeru",
-        "zh": "记住"
+        "zh": "记住",
+        "kanji": "覚える",
+        "tone": 3,
+        "score": 2
     },
     {
         "jp": "わすれる",
         "romaji": "wasureru",
-        "zh": "忘记"
+        "zh": "忘记",
+        "kanji": "忘れる",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "わかる",
         "romaji": "wakaru",
-        "zh": "明白,懂"
+        "zh": "明白; 懂",
+        "kanji": "分かる",
+        "tone": 2,
+        "score": 3
     },
     {
         "jp": "しる",
         "romaji": "shiru",
-        "zh": "知道"
+        "zh": "认识; 知道",
+        "kanji": "知る",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "おもう",
@@ -219,19 +298,24 @@
     {
         "jp": "できる",
         "romaji": "dekiru",
-        "zh": "能够,可以"
+        "zh": "能、会、做得到; 能够,可以",
+        "kanji": "出来る"
     },
     {
         "jp": "もつ",
         "romaji": "motsu",
-        "zh": "拿,持有"
+        "zh": "拿,拥有,携带; 持有",
+        "kanji": "持つ",
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "とる",
         "romaji": "toru",
         "zh": "照相,拍摄; 拿,取",
-        "kanji": "撮る",
-        "tone": 1
+        "kanji": "撮る; 取る",
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "おく",
@@ -244,17 +328,24 @@
     {
         "jp": "だす",
         "romaji": "dasu",
-        "zh": "拿出"
+        "zh": "提交; 拿出",
+        "kanji": "出す",
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "いれる",
         "romaji": "ireru",
-        "zh": "放入"
+        "zh": "加进; 把～放入",
+        "kanji": "入れる",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "つける",
         "romaji": "tsukeru",
-        "zh": "开(灯)"
+        "zh": "打开（电器）; 开(灯)",
+        "kanji": "つける"
     },
     {
         "jp": "けす",
@@ -266,7 +357,8 @@
         "romaji": "tsukau",
         "zh": "使用",
         "kanji": "使う",
-        "tone": 0
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "うごく",
@@ -281,17 +373,26 @@
     {
         "jp": "はしる",
         "romaji": "hashiru",
-        "zh": "跑"
+        "zh": "(车)开,跑; 跑",
+        "kanji": "走る",
+        "tone": 2,
+        "score": 3
     },
     {
         "jp": "およぐ",
         "romaji": "oyogu",
-        "zh": "游泳"
+        "zh": "游泳",
+        "kanji": "泳ぐ",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "とぶ",
         "romaji": "tobu",
-        "zh": "飞,跳"
+        "zh": "飞; 跳",
+        "kanji": "飛ぶ",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "のぼる",

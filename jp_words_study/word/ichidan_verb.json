@@ -3,55 +3,69 @@
         "jp": "たべる",
         "romaji": "taberu",
         "zh": "吃",
-        "kanji": "食べる"
+        "kanji": "食べる",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "みる",
         "romaji": "miru",
-        "zh": "看、观看",
-        "kanji": "見る"
+        "zh": "看、观看; 看",
+        "kanji": "見る",
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "あける",
         "romaji": "akeru",
-        "zh": "打开",
-        "kanji": "開ける"
+        "zh": "打开(门等); 开",
+        "kanji": "開ける",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "しめる",
         "romaji": "shimeru",
-        "zh": "关上",
+        "zh": "关上; 关",
         "kanji": "閉める"
     },
     {
         "jp": "おきる",
         "romaji": "okiru",
-        "zh": "起床；发生",
-        "kanji": "起きる"
+        "zh": "发生; 起床",
+        "kanji": "起きる",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "ねる",
         "romaji": "neru",
         "zh": "睡觉",
-        "kanji": "寝る"
+        "kanji": "寝る",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "でる",
         "romaji": "deru",
-        "zh": "出去；出现",
+        "zh": "出去; 出现; 出去",
         "kanji": "出る"
     },
     {
         "jp": "いれる",
         "romaji": "ireru",
-        "zh": "放入、加进",
-        "kanji": "入れる"
+        "zh": "加进; 把～放入",
+        "kanji": "入れる",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "みせる",
         "romaji": "miseru",
-        "zh": "给…看",
-        "kanji": "見せる"
+        "zh": "给…看; 展示",
+        "kanji": "見せる",
+        "tone": 2,
+        "score": 3
     },
     {
         "jp": "きめる",
@@ -74,25 +88,29 @@
     {
         "jp": "できる",
         "romaji": "dekiru",
-        "zh": "能、会、做得到",
+        "zh": "能、会、做得到; 能够,可以",
         "kanji": "出来る"
     },
     {
         "jp": "おしえる",
         "romaji": "oshieru",
-        "zh": "教、告诉",
-        "kanji": "教える"
+        "zh": "告诉; 教,教导",
+        "kanji": "教える",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "わすれる",
         "romaji": "wasureru",
         "zh": "忘记",
-        "kanji": "忘れる"
+        "kanji": "忘れる",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "つける",
         "romaji": "tsukeru",
-        "zh": "打开（电器）",
+        "zh": "打开（电器）; 开(灯)",
         "kanji": "つける"
     },
     {

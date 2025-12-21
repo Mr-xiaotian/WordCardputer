@@ -1,0 +1,357 @@
+[
+    {
+        "jp": "とぶ",
+        "kanji": "飛ぶ",
+        "zh": "飞; 跳",
+        "tone": 0,
+        "score": 3,
+        "romaji": "tobu"
+    },
+    {
+        "jp": "かける",
+        "kanji": "掛ける; ",
+        "zh": "戴(眼镜); 挂; 打(电话)",
+        "tone": 2,
+        "score": 5,
+        "romaji": "kakeru"
+    },
+    {
+        "jp": "はしる",
+        "kanji": "走る",
+        "zh": "(车)开,跑; 跑",
+        "tone": 2,
+        "score": 3,
+        "romaji": "hashiru"
+    },
+    {
+        "jp": "あめ",
+        "kanji": "雨",
+        "zh": "糖果; 雨,下雨天;",
+        "tone": 0,
+        "score": 3,
+        "romaji": "ame"
+    },
+    {
+        "jp": "ふる",
+        "kanji": "降る",
+        "zh": "下(雨,雪)",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "はなす",
+        "kanji": "話す",
+        "zh": "说,说(某种语言); 说话; 说",
+        "tone": 2,
+        "score": 3,
+        "romaji": "hanasu"
+    },
+    {
+        "jp": "おどる",
+        "kanji": "踊る",
+        "zh": "跳舞",
+        "tone": 0,
+        "score": 3,
+        "romaji": "odoru"
+    },
+    {
+        "jp": "いう",
+        "kanji": "言う",
+        "zh": "说,叫做～; 说",
+        "tone": 0,
+        "score": 3,
+        "romaji": "iu"
+    },
+    {
+        "jp": "ひく",
+        "kanji": "引く; 弾く",
+        "zh": "感冒; 弹（乐器）",
+        "tone": 0,
+        "score": 4
+    },
+    {
+        "jp": "しぬ",
+        "kanji": "死ぬ",
+        "zh": "死; 死亡",
+        "tone": 0,
+        "score": 3,
+        "romaji": "shinu"
+    },
+    {
+        "jp": "のる",
+        "kanji": "乗る",
+        "zh": "乘坐,骑",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "あける",
+        "kanji": "開ける",
+        "zh": "打开(门等); 开",
+        "tone": 0,
+        "score": 3,
+        "romaji": "akeru"
+    },
+    {
+        "jp": "はじめる",
+        "kanji": "始める",
+        "zh": "使～开始; 开始",
+        "tone": 0,
+        "score": 3,
+        "romaji": "hajimeru"
+    },
+    {
+        "jp": "わすれる",
+        "kanji": "忘れる",
+        "zh": "忘记",
+        "tone": 0,
+        "score": 3,
+        "romaji": "wasureru"
+    },
+    {
+        "jp": "そうじする",
+        "kanji": "掃除する",
+        "zh": "打扫,扫除",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "せんたくする",
+        "kanji": "洗濯する",
+        "zh": "洗(衣服),洗涤",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "けっこんする",
+        "kanji": "結婚する",
+        "zh": "结婚",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "まつ",
+        "kanji": "待つ",
+        "zh": "等待; 等; 等待",
+        "tone": 1,
+        "score": 3,
+        "romaji": "matsu"
+    },
+    {
+        "jp": "いそぐ",
+        "kanji": "急ぐ",
+        "zh": "急,快走,加快; 急忙",
+        "tone": 2,
+        "score": 3,
+        "romaji": "isogu"
+    },
+    {
+        "jp": "よぶ",
+        "kanji": "呼ぶ",
+        "zh": "叫,呼叫",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "おしえる",
+        "kanji": "教える",
+        "zh": "告诉; 教,教导",
+        "tone": 0,
+        "score": 3,
+        "romaji": "oshieru"
+    },
+    {
+        "jp": "しる",
+        "kanji": "知る",
+        "zh": "认识; 知道",
+        "tone": 0,
+        "score": 3,
+        "romaji": "shiru"
+    },
+    {
+        "jp": "だいがくいん",
+        "kanji": "大学院",
+        "zh": "研究生院",
+        "tone": 4,
+        "score": 3
+    },
+    {
+        "jp": "ちかく",
+        "kanji": "近く",
+        "zh": "附近",
+        "tone": 2,
+        "score": 3,
+        "romaji": "chikaku"
+    },
+    {
+        "jp": "みんな",
+        "kanji": "",
+        "zh": "全体,大家",
+        "tone": 3,
+        "score": 3
+    },
+    {
+        "jp": "はれる",
+        "kanji": "晴れる",
+        "zh": "放晴,晴天",
+        "tone": 2,
+        "score": 3
+    },
+    {
+        "jp": "バイト",
+        "kanji": "",
+        "zh": "打工",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "さびしい",
+        "kanji": "寂しい",
+        "zh": "寂寞; 寂寞的",
+        "tone": 3,
+        "score": 3,
+        "romaji": "sabishii"
+    },
+    {
+        "jp": "メニュー",
+        "kanji": "",
+        "zh": "菜单",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "かぶる",
+        "kanji": "被る",
+        "zh": "戴(帽子)",
+        "tone": 2,
+        "score": 3
+    },
+    {
+        "jp": "きる",
+        "kanji": "着る; 切る",
+        "zh": "穿(衣服等); 切,剪",
+        "tone": 1,
+        "score": 5,
+        "romaji": "kiru"
+    },
+    {
+        "jp": "シャツ",
+        "kanji": "",
+        "zh": "衬衫",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "スーツ",
+        "kanji": "",
+        "zh": "西服,西服套装",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "どの",
+        "kanji": "",
+        "zh": "哪个",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "セーター",
+        "kanji": "",
+        "zh": "毛衣",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "としうえ",
+        "kanji": "年上",
+        "zh": "年长,(比别人)年纪大",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "だいがくせい",
+        "kanji": "大学生",
+        "zh": "大学生",
+        "tone": 3,
+        "score": 3
+    },
+    {
+        "jp": "いっしょうけんめい",
+        "kanji": "一生懸命",
+        "zh": "拼命地",
+        "tone": 5,
+        "score": 3
+    },
+    {
+        "jp": "しょうかいする",
+        "kanji": "紹介する",
+        "zh": "介绍",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "もしもし",
+        "kanji": "",
+        "zh": "喂喂？",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "でかける",
+        "kanji": "出かける",
+        "zh": "出门",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "ああ",
+        "kanji": "",
+        "zh": "啊(恍然大悟)",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "あとで",
+        "kanji": "後で",
+        "zh": "之后,过会儿",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "さがす",
+        "kanji": "探す",
+        "zh": "寻找",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "おそく",
+        "kanji": "遅く",
+        "zh": "晚；很晚的时间",
+        "tone": 0,
+        "score": 3
+    },
+    {
+        "jp": "うるさい",
+        "kanji": "",
+        "zh": "吵闹的",
+        "tone": 3,
+        "score": 3,
+        "romaji": "urusai"
+    },
+    {
+        "jp": "はやく",
+        "kanji": "早く",
+        "zh": "快点",
+        "tone": 1,
+        "score": 3
+    },
+    {
+        "jp": "ひっこす",
+        "kanji": "引っ越す",
+        "zh": "搬家",
+        "tone": 3,
+        "score": 3
+    }
+]

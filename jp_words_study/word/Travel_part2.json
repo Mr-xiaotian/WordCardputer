@@ -36,7 +36,9 @@
     {
         "jp": "メニュー",
         "kanji": "",
-        "zh": "菜单"
+        "zh": "菜单",
+        "tone": 1,
+        "score": 3
     },
     {
         "jp": "おすすめ",
@@ -55,7 +57,7 @@
         "kanji": "水",
         "zh": "水",
         "tone": 0,
-        "score": 3,
+        "score": 5,
         "romaji": "mizu"
     },
     {
@@ -106,27 +108,36 @@
         "kanji": "沢山",
         "zh": "很多",
         "tone": 3,
-        "pos": "副"
+        "pos": "副",
+        "score": 2
     },
     {
         "jp": "すこし",
         "kanji": "少し",
-        "zh": "一点"
+        "zh": "一点; 有点儿",
+        "tone": 2,
+        "score": 4
     },
     {
         "jp": "ぜんぶ",
         "kanji": "全部",
-        "zh": "全部"
+        "zh": "全部; 全",
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "もういちど",
         "kanji": "もう一度",
-        "zh": "再一次"
+        "zh": "再一次",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "ゆっくり",
         "kanji": "",
-        "zh": "慢一点"
+        "zh": "慢一点; 慢慢地",
+        "tone": 3,
+        "score": 3
     },
     {
         "jp": "わかりません",
@@ -136,7 +147,9 @@
     {
         "jp": "だれか",
         "kanji": "誰か",
-        "zh": "谁"
+        "zh": "谁; 什么人,某人",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "あぶない",
@@ -160,7 +173,9 @@
         "jp": "くすり",
         "kanji": "薬",
         "zh": "药",
-        "romaji": "kusuri"
+        "romaji": "kusuri",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "けいさつ",
@@ -197,30 +212,38 @@
     {
         "jp": "てんき",
         "kanji": "天気",
-        "zh": "天气"
+        "zh": "天气",
+        "tone": 1,
+        "score": 3
     },
     {
         "jp": "あつい",
-        "kanji": "暑い",
-        "zh": "热的; 厚的",
-        "romaji": "atsui"
+        "kanji": "暑い; 厚い; ",
+        "zh": "（天气）热的; 厚的",
+        "romaji": "atsui",
+        "tone": -1,
+        "score": 5
     },
     {
         "jp": "さむい",
-        "kanji": "寒い",
-        "zh": "冷的; 冷",
-        "romaji": "samui"
+        "kanji": "寒い; ",
+        "zh": "（天气）冷的;",
+        "romaji": "samui",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "ゆき",
         "kanji": "雪",
         "zh": "雪",
-        "romaji": "yuki"
+        "romaji": "yuki",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "あめ",
         "kanji": "雨",
-        "zh": "雨; 糖果",
+        "zh": "糖果; 雨,下雨天;",
         "tone": 0,
         "score": 3,
         "romaji": "ame"
@@ -242,7 +265,8 @@
         "kanji": "風邪; 風",
         "zh": "感冒; 风",
         "tone": 0,
-        "romaji": "kaze"
+        "romaji": "kaze",
+        "score": 4
     },
     {
         "jp": "きょう",

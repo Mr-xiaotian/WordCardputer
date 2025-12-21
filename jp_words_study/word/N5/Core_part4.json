@@ -42,7 +42,7 @@
         "zh": "周末",
         "kanji": "週末",
         "tone": 0,
-        "score": 3
+        "score": 4
     },
     {
         "jp": "ひとつ",
@@ -112,7 +112,10 @@
     {
         "jp": "しがつ",
         "romaji": "shigatsu",
-        "zh": "四月"
+        "zh": "四月",
+        "kanji": "四月",
+        "tone": -1,
+        "score": 5
     },
     {
         "jp": "ごがつ",
@@ -127,7 +130,10 @@
     {
         "jp": "しちがつ",
         "romaji": "shichigatsu",
-        "zh": "七月"
+        "zh": "七月",
+        "kanji": "七月",
+        "tone": -1,
+        "score": 5
     },
     {
         "jp": "はちがつ",
@@ -137,7 +143,10 @@
     {
         "jp": "くがつ",
         "romaji": "kugatsu",
-        "zh": "九月"
+        "zh": "九月",
+        "kanji": "九月",
+        "tone": -1,
+        "score": 2
     },
     {
         "jp": "じゅうがつ",
@@ -164,19 +173,24 @@
         "romaji": "yasai",
         "zh": "蔬菜",
         "kanji": "野菜",
-        "tone": 0
+        "tone": 0,
+        "score": 4
     },
     {
         "jp": "にく",
         "romaji": "niku",
-        "zh": "肉"
+        "zh": "肉",
+        "kanji": "肉",
+        "tone": 2,
+        "score": 3
     },
     {
         "jp": "たまご",
         "romaji": "tamago",
         "zh": "鸡蛋,蛋",
         "kanji": "卵",
-        "tone": 2
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "パン",
@@ -191,7 +205,8 @@
         "romaji": "gohan",
         "zh": "饭; 米饭",
         "kanji": "ご飯",
-        "tone": 1
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "みせ",
@@ -238,29 +253,40 @@
         "romaji": "bijutsukan",
         "zh": "美术馆",
         "kanji": "美術館",
-        "tone": 3
+        "tone": 3,
+        "score": 3
     },
     {
         "jp": "はがき",
         "romaji": "hagaki",
-        "zh": "明信片"
+        "zh": "明信片",
+        "kanji": "葉書",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "てがみ",
         "romaji": "tegami",
         "zh": "信",
         "kanji": "手紙",
-        "tone": 0
+        "tone": 0,
+        "score": 2
     },
     {
         "jp": "きって",
         "romaji": "kitte",
-        "zh": "邮票"
+        "zh": "邮票",
+        "kanji": "切手",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "うた",
         "romaji": "uta",
-        "zh": "歌"
+        "zh": "歌",
+        "kanji": "歌",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "いろ",
@@ -270,7 +296,10 @@
     {
         "jp": "なまえ",
         "romaji": "namae",
-        "zh": "名字"
+        "zh": "名字",
+        "kanji": "名前",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "でんき",
@@ -280,13 +309,18 @@
     {
         "jp": "かみ",
         "romaji": "kami",
-        "zh": "纸,头发,神; 头发; 纸,头发"
+        "zh": "头发; 纸,头发,神; 头发; 纸,头发",
+        "kanji": "髪",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "みぎ",
         "romaji": "migi",
         "zh": "右边; 右",
-        "kanji": "右"
+        "kanji": "右",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "ひだり",
@@ -297,12 +331,18 @@
     {
         "jp": "うえ",
         "romaji": "ue",
-        "zh": "上面; 上"
+        "zh": "上,上面; 上面; 上",
+        "kanji": "上",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "した",
         "romaji": "shita",
-        "zh": "舌头,下面; 下面; 下"
+        "zh": "下,下面; 舌头,下面; 下面; 下",
+        "kanji": "下",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "まえ",
@@ -315,12 +355,18 @@
     {
         "jp": "うしろ",
         "romaji": "ushiro",
-        "zh": "后面"
+        "zh": "后,后面; 后面",
+        "kanji": "後ろ",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "なか",
         "romaji": "naka",
-        "zh": "里面; 中间; 里面"
+        "zh": "其中,里面; 里面; 中间; 里面",
+        "kanji": "中",
+        "tone": 1,
+        "score": 5
     },
     {
         "jp": "そと",
@@ -330,6 +376,9 @@
     {
         "jp": "となり",
         "romaji": "tonari",
-        "zh": "旁边"
+        "zh": "邻居,隔壁; 旁边",
+        "kanji": "隣",
+        "tone": 0,
+        "score": 5
     }
 ]

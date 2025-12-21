@@ -3,13 +3,17 @@
         "jp": "こんにちは",
         "kanji": "今日は",
         "zh": "你好",
-        "romaji": "konnichiwa"
+        "romaji": "konnichiwa",
+        "tone": -1,
+        "score": 4
     },
     {
         "jp": "すみません",
         "kanji": "済みません",
         "zh": "对不起,打扰了; 不好意思/打扰一下",
-        "romaji": "sumimasen"
+        "romaji": "sumimasen",
+        "tone": -1,
+        "score": 5
     },
     {
         "jp": "ありがとうございます",
@@ -26,7 +30,7 @@
         "kanji": null,
         "zh": "是,对",
         "tone": 1,
-        "score": 3,
+        "score": 5,
         "romaji": "hai"
     },
     {
@@ -34,7 +38,7 @@
         "kanji": null,
         "zh": "不,不对",
         "tone": 3,
-        "score": 3,
+        "score": 5,
         "romaji": "iie"
     },
     {
@@ -123,7 +127,9 @@
         "jp": "みぎ",
         "kanji": "右",
         "zh": "右边; 右",
-        "romaji": "migi"
+        "romaji": "migi",
+        "tone": 0,
+        "score": 5
     },
     {
         "jp": "ひだり",
@@ -140,13 +146,17 @@
         "jp": "ちかい",
         "kanji": "近い",
         "zh": "近的; 近",
-        "romaji": "chikai"
+        "romaji": "chikai",
+        "tone": 2,
+        "score": 5
     },
     {
         "jp": "とおい",
         "kanji": "遠い",
-        "zh": "远的; 远",
-        "romaji": "tooi"
+        "zh": "远的; 遥远",
+        "romaji": "tooi",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "ここ",
@@ -169,7 +179,7 @@
         "kanji": "",
         "zh": "那里（远指）",
         "tone": 0,
-        "score": 3,
+        "score": 5,
         "romaji": "asoko"
     },
     {
@@ -192,7 +202,8 @@
         "zh": "地铁",
         "tone": 2,
         "pos": "名",
-        "romaji": "chikatetsu"
+        "romaji": "chikatetsu",
+        "score": 5
     },
     {
         "jp": "しんかんせん",
@@ -200,7 +211,8 @@
         "zh": "新干线",
         "tone": 3,
         "pos": "名",
-        "romaji": "shinkansen"
+        "romaji": "shinkansen",
+        "score": 5
     },
     {
         "jp": "せん",
@@ -208,7 +220,7 @@
         "zh": "千; 线路",
         "romaji": "sen",
         "tone": 1,
-        "score": 3
+        "score": 5
     },
     {
         "jp": "のりば",
@@ -233,8 +245,10 @@
     {
         "jp": "きっぷ",
         "kanji": "切符",
-        "zh": "票",
-        "romaji": "kippu"
+        "zh": "票; 车票",
+        "romaji": "kippu",
+        "tone": 0,
+        "score": 3
     },
     {
         "jp": "チェックイン",
@@ -259,7 +273,9 @@
     {
         "jp": "へや",
         "kanji": "部屋",
-        "zh": "房间",
-        "romaji": "heya"
+        "zh": "房间; 屋子",
+        "romaji": "heya",
+        "tone": 2,
+        "score": 5
     }
 ]

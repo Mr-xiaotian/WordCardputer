@@ -24,7 +24,7 @@
     },
     {
         "jp": "おきる",
-        "zh": "起床",
+        "zh": "发生; 起床",
         "kanji": "起きる",
         "tone": 2,
         "score": 5,
@@ -342,7 +342,7 @@
         "zh": "周末",
         "kanji": "週末",
         "tone": 0,
-        "score": 3,
+        "score": 4,
         "romaji": "shuumatsu"
     }
 ]
