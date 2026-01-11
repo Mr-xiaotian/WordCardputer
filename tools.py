@@ -412,7 +412,7 @@ def analyze_word_mastery(json_path: str | Path) -> dict:
     avg_score = mean(scores)
     med_score = median(scores)
 
-    # 各分值分布（1~5 都列出来，即使为 0）
+    # 各分值分布（1~5 都列出来,即使为 0）
     distribution = {
         s: {
             "count": counter.get(s, 0),

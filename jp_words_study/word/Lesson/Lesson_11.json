@@ -4,49 +4,49 @@
     "zh": "牙齿",
     "kanji": "歯",
     "tone": 1,
-    "score": 2
+    "score": 4
   },
   {
     "jp": "みがく",
     "zh": "刷",
     "kanji": "磨く",
     "tone": 0,
-    "score": 1
+    "score": 4
   },
   {
     "jp": "すわる",
     "zh": "坐",
     "kanji": "座る",
     "tone": 0,
-    "score": 2
+    "score": 3
   },
   {
     "jp": "シャワー",
     "zh": "淋浴",
     "kanji": "",
     "tone": 1,
-    "score": 2
+    "score": 4
   },
   {
     "jp": "あびる",
     "zh": "淋",
     "kanji": "浴びる",
     "tone": 0,
-    "score": 1
+    "score": 2
   },
   {
     "jp": "あらう",
     "zh": "洗",
     "kanji": "洗う",
     "tone": 0,
-    "score": 1
+    "score": 4
   },
   {
     "jp": "おふろ",
     "zh": "浴池",
     "kanji": "お風呂",
     "tone": 2,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "あつまる",
@@ -60,19 +60,19 @@
     "zh": "名字",
     "kanji": "名前",
     "tone": 0,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "コート",
     "zh": "大衣",
     "kanji": "",
     "tone": 1,
-    "score": 3
+    "score": 4
   },
   {
     "jp": "かける",
     "zh": "戴(眼镜); 挂; 打(电话)",
-    "kanji": "掛ける; ",
+    "kanji": "掛ける",
     "tone": 2,
     "score": 5
   },
@@ -81,28 +81,28 @@
     "zh": "借出",
     "kanji": "貸す",
     "tone": 0,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "てつだう",
     "zh": "帮忙",
     "kanji": "手伝う",
     "tone": 3,
-    "score": 3
+    "score": 2
   },
   {
     "jp": "ゆっくり",
     "zh": "慢一点; 慢慢地",
     "kanji": "",
     "tone": 3,
-    "score": 2
+    "score": 3
   },
   {
     "jp": "どれか",
     "zh": "某个",
     "kanji": "",
     "tone": 1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "みせる",
@@ -116,70 +116,70 @@
     "zh": "肉",
     "kanji": "肉",
     "tone": 2,
-    "score": 1
+    "score": 3
   },
   {
     "jp": "うすい",
-    "zh": "薄的；淡的",
+    "zh": "薄的; 淡的",
     "kanji": "",
     "tone": 0,
-    "score": 1
+    "score": 4
   },
   {
     "jp": "りっぱ",
     "zh": "出色的",
     "kanji": "立派",
     "tone": 0,
-    "score": 3
+    "score": 2
   },
   {
     "jp": "まずい",
     "zh": "难吃的",
     "kanji": "",
     "tone": 2,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "けしき",
     "zh": "景色",
     "kanji": "景色",
     "tone": 1,
-    "score": 3
+    "score": 4
   },
   {
     "jp": "うつくしい",
     "zh": "美丽的",
     "kanji": "美しい",
     "tone": 4,
-    "score": 1
+    "score": 4
   },
   {
     "jp": "かれ",
     "zh": "男朋友; 他",
     "kanji": "彼",
     "tone": 1,
-    "score": 1
+    "score": 5
   },
   {
     "jp": "そつぎょうしき",
     "zh": "毕业典礼",
     "kanji": "卒業式",
     "tone": 3,
-    "score": 1
+    "score": 3
   },
   {
     "jp": "えきまえ",
     "zh": "车站附近",
     "kanji": "駅前",
     "tone": 3,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "びよういん",
     "zh": "理发店",
     "kanji": "美容院",
     "tone": 2,
-    "score": 1
+    "score": 4
   },
   {
     "jp": "はる",
@@ -197,14 +197,14 @@
   },
   {
     "jp": "ボタン",
-    "zh": "按钮，纽扣",
+    "zh": "按钮,纽扣",
     "kanji": "",
     "tone": 0,
-    "score": 1
+    "score": 4
   },
   {
     "jp": "おす",
-    "zh": "按，推",
+    "zh": "按,推",
     "kanji": "押す",
     "tone": 0,
     "score": 3
@@ -214,7 +214,7 @@
     "zh": "专业学校",
     "kanji": "専門学校",
     "tone": 5,
-    "score": 3
+    "score": 2
   },
   {
     "jp": "ふく",
@@ -232,7 +232,7 @@
   },
   {
     "jp": "ひ",
-    "zh": "日子；太阳; 火,日",
+    "zh": "日子; 太阳; 火,日",
     "kanji": "日",
     "tone": 0,
     "score": 5
@@ -242,34 +242,34 @@
     "zh": "啤酒",
     "kanji": "",
     "tone": 1,
-    "score": 1
+    "score": 5
   },
   {
     "jp": "さくら",
     "zh": "樱花",
     "kanji": "桜",
     "tone": 0,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "どれくらい",
-    "zh": "大约多久，大约",
+    "zh": "大约多久,大约",
     "kanji": "",
     "tone": 0,
-    "score": 1
+    "score": 5
   },
   {
     "jp": "あんないする",
-    "zh": "带路，向导，导游",
+    "zh": "带路,向导,导游",
     "kanji": "案内する",
     "tone": 1,
-    "score": 3
+    "score": 2
   },
   {
     "jp": "でも",
     "zh": "可是",
     "kanji": "",
     "tone": 1,
-    "score": 3
+    "score": 4
   }
 ]
