@@ -4,35 +4,35 @@
     "zh": "牙齿",
     "kanji": "歯",
     "tone": 1,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "みがく",
     "zh": "刷",
     "kanji": "磨く",
     "tone": 0,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "すわる",
     "zh": "坐",
     "kanji": "座る",
     "tone": 0,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "シャワー",
     "zh": "淋浴",
     "kanji": "",
     "tone": 1,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "あびる",
     "zh": "淋",
     "kanji": "浴びる",
     "tone": 0,
-    "score": 2
+    "score": 3
   },
   {
     "jp": "あらう",
@@ -53,7 +53,7 @@
     "zh": "聚集",
     "kanji": "集まる",
     "tone": 3,
-    "score": 1
+    "score": 4
   },
   {
     "jp": "なまえ",
@@ -67,7 +67,7 @@
     "zh": "大衣",
     "kanji": "",
     "tone": 1,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "かける",
@@ -88,14 +88,14 @@
     "zh": "帮忙",
     "kanji": "手伝う",
     "tone": 3,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "ゆっくり",
     "zh": "慢一点; 慢慢地",
     "kanji": "",
     "tone": 3,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "どれか",
@@ -109,28 +109,28 @@
     "zh": "给…看; 展示",
     "kanji": "見せる",
     "tone": 2,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "にく",
     "zh": "肉",
     "kanji": "肉",
     "tone": 2,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "うすい",
     "zh": "薄的; 淡的",
     "kanji": "",
     "tone": 0,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "りっぱ",
     "zh": "出色的",
     "kanji": "立派",
     "tone": 0,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "まずい",
@@ -144,14 +144,14 @@
     "zh": "景色",
     "kanji": "景色",
     "tone": 1,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "うつくしい",
     "zh": "美丽的",
     "kanji": "美しい",
     "tone": 4,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "かれ",
@@ -165,7 +165,7 @@
     "zh": "毕业典礼",
     "kanji": "卒業式",
     "tone": 3,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "えきまえ",
@@ -179,7 +179,7 @@
     "zh": "理发店",
     "kanji": "美容院",
     "tone": 2,
-    "score": 4
+    "score": 5
   },
   {
     "jp": "はる",
@@ -207,28 +207,28 @@
     "zh": "按,推",
     "kanji": "押す",
     "tone": 0,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "せんもんがっこう",
     "zh": "专业学校",
     "kanji": "専門学校",
     "tone": 5,
-    "score": 2
+    "score": 5
   },
   {
     "jp": "ふく",
     "zh": "吹; 衣服",
     "kanji": "吹く; 服",
     "tone": -1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "じゅんび",
     "zh": "准备",
     "kanji": "準備",
     "tone": 1,
-    "score": 3
+    "score": 5
   },
   {
     "jp": "ひ",
@@ -263,13 +263,13 @@
     "zh": "带路,向导,导游",
     "kanji": "案内する",
     "tone": 1,
-    "score": 2
+    "score": 4
   },
   {
     "jp": "でも",
     "zh": "可是",
     "kanji": "",
     "tone": 1,
-    "score": 4
+    "score": 5
   }
 ]
