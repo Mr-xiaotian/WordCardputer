@@ -15,8 +15,9 @@ enum AppMode {
     MODE_FILE_SELECT,
     MODE_STUDY,
     MODE_ESC_MENU,      //  ESC 菜单模式
-    MODE_DICTATION,     // 听写模式（暂未实现）
-    MODE_LISTEN         // 听读模式
+    MODE_DICTATION,     // 听写模式
+    MODE_LISTEN,        // 听读模式
+    MODE_STATS,         // 学习统计模式
 };
 
 AppMode appMode = MODE_FILE_SELECT;
@@ -74,6 +75,9 @@ void loopDictationMode();
 void initListenMode();    
 void loopListenMode();    
 
+void initStatsMode();
+void loopStatsMode();
+
 bool loadWordsFromJSON(const String &path);
 bool saveListToJSON(const String &filepath, const std::vector<Word> &list);
 void saveDictationMistakesAsWordList();
@@ -95,6 +99,20 @@ void drawTextMenu(
     const String &emptyText = "无项目",
     bool showBattery = true,
     bool showPager = true
+);
+void drawSimpleTable(
+    M5Canvas &cv,
+    int startX,
+    int startY,
+    int rowHeight,
+    const String &h1,
+    const String &h2,
+    const String &h3,
+    int col2X,
+    int col3X,
+    const std::vector<String> &col1,
+    const std::vector<String> &col2,
+    const std::vector<String> &col3
 );
 
 String matchRomaji(const String &buffer, bool useKatakana);
@@ -147,8 +165,10 @@ void loop() {
         loopEscMenuMode();
     } else if (appMode == MODE_DICTATION) {
         loopDictationMode();
-    } else if (appMode == MODE_LISTEN) {     // 👈 新增
+    } else if (appMode == MODE_LISTEN) {  
         loopListenMode();
+    } else if (appMode == MODE_STATS) {
+        loopStatsMode();
     }
 
     // -------- 自动亮度控制 --------

@@ -70,3 +70,38 @@ void drawTextMenu(
 
     cv.pushSprite(0, 0);
 }
+
+void drawSimpleTable(
+    M5Canvas &cv,
+    int startX,
+    int startY,
+    int rowHeight,
+    const String &h1,
+    const String &h2,
+    const String &h3,
+    int col2X,
+    int col3X,
+    const std::vector<String> &col1,
+    const std::vector<String> &col2,
+    const std::vector<String> &col3
+) {
+    cv.setTextDatum(top_left);
+    cv.setTextColor(TFT_DARKGREY);
+    cv.drawString(h1, startX, startY);
+    cv.drawString(h2, col2X, startY);
+    cv.drawString(h3, col3X, startY);
+
+    int lineY = startY + rowHeight - 4;
+    cv.drawLine(startX, lineY, cv.width() - startX, lineY, TFT_DARKGREY);
+
+    cv.setTextColor(WHITE);
+    int rows = min((int)col1.size(), min((int)col2.size(), (int)col3.size()));
+    int y = startY + rowHeight + 2;
+    for (int i = 0; i < rows; i++)
+    {
+        cv.drawString(col1[i], startX, y);
+        cv.drawString(col2[i], col2X, y);
+        cv.drawString(col3[i], col3X, y);
+        y += rowHeight;
+    }
+}

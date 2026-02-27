@@ -6,3 +6,5 @@ _preview.ipynb
 .env
 
 logs/
+
+.arduino-cli/

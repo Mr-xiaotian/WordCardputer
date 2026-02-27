@@ -3,8 +3,9 @@ String selectedFilePath = "";
 
 std::vector<String> escItems = {
     "保存进度",
+    "学习统计",
     "重新选择词库",
-    "进入学习页面",
+    "进入学习模式",
     "进入听读模式",      
     "进入听写模式",
 };
@@ -105,24 +106,29 @@ void loopEscMenuMode() {
                 return;
             }
             else if (escIndex == 1) {
+                appMode = MODE_STATS;
+                initStatsMode();
+                return;
+            }
+            else if (escIndex == 2) {
                 // 进入词库选择
                 appMode = MODE_FILE_SELECT;
                 initFileSelectMode();
                 return;
             }
-            else if (escIndex == 2) {
+            else if (escIndex == 3) {
                 // 进入学习页面
                 appMode = MODE_STUDY;
                 drawWord();  // 刷新学习界面
                 return;
             }
-            else if (escIndex == 3) {
+            else if (escIndex == 4) {
                 // 进入听读模式
                 appMode = MODE_LISTEN;
                 initListenMode();
                 return;
             }
-            else if (escIndex == 4) {
+            else if (escIndex == 5) {
                 // 进入听写模式
                 appMode = MODE_DICTATION;
                 initDictationMode();
