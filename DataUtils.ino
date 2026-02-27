@@ -7,13 +7,28 @@ bool loadWordsFromJSON(const String &filepath)
         return false;
     }
 
-    String jsonString;
-    while (file.available())
-        jsonString += char(file.read());
-    file.close();
+    size_t fileSize = file.size();
+    if (fileSize == 0)
+    {
+        Serial.printf("空文件: %s\n", filepath.c_str());
+        file.close();
+        return false;
+    }
 
-    StaticJsonDocument<16384> doc;
-    deserializeJson(doc, jsonString);
+    size_t capacity = static_cast<size_t>(fileSize * 1.2) + 1024;
+    DynamicJsonDocument doc(capacity);
+    DeserializationError err = deserializeJson(doc, file);
+    file.close();
+    if (err)
+    {
+        Serial.printf("JSON 解析失败: %s\n", err.c_str());
+        return false;
+    }
+    if (!doc.is<JsonArray>())
+    {
+        Serial.printf("JSON 结构不为数组: %s\n", filepath.c_str());
+        return false;
+    }
 
     words.clear();
 
@@ -24,7 +39,12 @@ bool loadWordsFromJSON(const String &filepath)
         w.zh = obj["zh"] | "";
         w.kanji = obj["kanji"] | "";
         w.tone = obj["tone"] | -1;
-        w.score = obj["score"] | 3;
+        int score = obj["score"] | 3;
+        if (score < 1)
+            score = 1;
+        else if (score > 5)
+            score = 5;
+        w.score = score;
 
         if (w.jp.length() > 0)
             words.push_back(w);
@@ -35,6 +55,10 @@ bool loadWordsFromJSON(const String &filepath)
 
 bool saveListToJSON(const String &filepath, const std::vector<Word> &list)
 {
+    if (SD.exists(filepath))
+    {
+        SD.remove(filepath);
+    }
     File file = SD.open(filepath, FILE_WRITE);
     if (!file)
     {
@@ -42,7 +66,19 @@ bool saveListToJSON(const String &filepath, const std::vector<Word> &list)
         return false;
     }
 
-    StaticJsonDocument<16384> doc;
+    size_t totalStringLen = 0;
+    for (auto &w : list)
+    {
+        totalStringLen += w.jp.length();
+        totalStringLen += w.zh.length();
+        totalStringLen += w.kanji.length();
+    }
+    size_t capacity = JSON_ARRAY_SIZE(list.size()) +
+                      list.size() * JSON_OBJECT_SIZE(5) +
+                      totalStringLen +
+                      list.size() * 16 +
+                      256;
+    DynamicJsonDocument doc(capacity);
     JsonArray arr = doc.to<JsonArray>();
 
     for (auto &w : list)
