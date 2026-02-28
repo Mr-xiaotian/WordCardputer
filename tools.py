@@ -96,48 +96,76 @@ def generate_tts(
 
     except Exception as e:
         return False, str(e)
-    
+
+
+def load_json_list(json_path: Path) -> List[dict]:
+    with open(json_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    if not isinstance(data, list):
+        raise ValueError("JSON 文件的顶层结构必须是列表。")
+    return data
+
+
+def extract_field_values(json_path: Path, field: str) -> List[str]:
+    """
+    从指定 JSON 文件中提取指定字段,返回字符串列表。
+
+    :param parmjson_path (Path): JSON 文件路径
+    :param field (str): 目标字段名
+    :return List[str]: 字段值列表
+    """
+    data = load_json_list(json_path)
+    values = [item[field] for item in data if isinstance(item, dict) and field in item]
+    return values
+
 
 def extract_jp_fields(json_path: Path) -> List[str]:
     """
     从指定 JSON 文件中提取所有 'jp' 字段,返回一个字符串列表。
-
-    :param parmjson_path (Path): JSON 文件路径
-    :return List[str]: 所有 jp 字段组成的列表
     """
-    with open(json_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    
-    # 确保 data 是列表
-    if not isinstance(data, list):
-        raise ValueError("JSON 文件的顶层结构必须是列表。")
-
-    jp_list = [item["jp"] for item in data if isinstance(item, dict) and "jp" in item]
-    return jp_list
+    return extract_field_values(json_path, "jp")
 
 
-def extract_all_jp_from_folder(folder_path: Path) -> List[str]:
+def extract_en_fields(json_path: Path) -> List[str]:
     """
-    遍历文件夹下所有 JSON 文件,提取 jp 字段并去重返回。
-    
-    :param folder_path (Path): 文件夹路径
-    :return List[str]: 所有 jp 字段组成的列表
+    从指定 JSON 文件中提取所有 'word' 字段,返回一个字符串列表。
+    """
+    return extract_field_values(json_path, "word")
+
+
+def extract_all_values_from_folder(folder_path: Path, field: str) -> List[str]:
+    """
+    遍历文件夹下所有 JSON 文件,提取指定字段并去重返回。
     """
     folder_path = Path(folder_path)
     if not folder_path.is_dir():
         raise NotADirectoryError(f"{folder_path} 不是有效的文件夹路径。")
 
-    all_jp = []
+    all_values = []
 
     for json_file in folder_path.rglob("*.json"):
         try:
-            jp_list = extract_jp_fields(json_file)
-            all_jp.extend(jp_list)
+            values = extract_field_values(json_file, field)
+            all_values.extend(values)
         except Exception as e:
             print(f"读取文件 {json_file} 时出错: {e}")
 
     # 去重并排序（可选）
-    return sorted(set(all_jp))
+    return sorted(set(all_values))
+
+
+def extract_all_jp_from_folder(folder_path: Path) -> List[str]:
+    """
+    遍历文件夹下所有 JSON 文件,提取 jp 字段并去重返回。
+    """
+    return extract_all_values_from_folder(folder_path, "jp")
+
+
+def extract_all_en_from_folder(folder_path: Path) -> List[str]:
+    """
+    遍历文件夹下所有 JSON 文件,提取 word 字段并去重返回。
+    """
+    return extract_all_values_from_folder(folder_path, "word")
 
 
 def list_wav_filenames(folder_path: Path) -> List[str]:
@@ -152,101 +180,127 @@ def list_wav_filenames(folder_path: Path) -> List[str]:
     return [wav_file.stem for wav_file in folder_path.glob("*.wav")]
 
 
-def collect_merged_entries(folder_path):
+def collect_merged_entries_by_key(
+    folder_path,
+    key_field: str = "jp",
+    score_field: str = "score",
+    tone_field: str | None = "tone",
+):
     """
     扫描文件夹所有 JSON 文件,并构建合并后的大词典。
-    返回 all_entries（dict）,键为 jp。
+    返回 all_entries（dict）,键为指定字段。
     """
     folder = Path(folder_path)
-    all_entries = {}  # keyed by jp
+    all_entries = {}
 
     for json_file in folder.rglob("*.json"):
-        with open(json_file, "r", encoding="utf-8") as f:
-            try:
-                data = json.load(f)
-            except Exception as e:
-                print(f"Error reading {json_file}: {e}")
-                continue
+        try:
+            data = load_json_list(json_file)
+        except Exception as e:
+            print(f"Error reading {json_file}: {e}")
+            continue
 
         for entry in data:
-            jp = entry.get("jp")
-            if not jp:
+            key_value = entry.get(key_field)
+            if not key_value:
                 continue
 
-            if jp not in all_entries:
-                all_entries[jp] = dict(entry)
+            if key_value not in all_entries:
+                all_entries[key_value] = dict(entry)
                 continue
 
-            # --- 合并逻辑 ---
-            merged = all_entries[jp]
-            for key, val in entry.items():
-                if key not in merged:
-                    merged[key] = val
+            merged = all_entries[key_value]
+            for field, val in entry.items():
+                if field == key_field:
+                    continue
+                if field not in merged:
+                    merged[field] = val
                     continue
 
-                old = merged[key]
+                old = merged[field]
 
-                if key == "score":
+                if score_field and field == score_field:
                     try:
-                        merged[key] = max(old, val)
-                    except:
-                        merged[key] = old
+                        merged[field] = max(old, val)
+                    except Exception:
+                        merged[field] = old
 
-                elif key == "tone":
+                elif tone_field and field == tone_field:
                     if old == val:
-                        merged[key] = val
+                        merged[field] = val
                     else:
                         if old != -1 and val == -1:
-                            merged[key] = old
+                            merged[field] = old
                         elif val != -1 and old == -1:
-                            merged[key] = val
+                            merged[field] = val
                         else:
-                            merged[key] = -1
+                            merged[field] = -1
 
                 else:
-                    # --- 普通字段合并（安全处理 None） ---
                     old_str = str(old) if old is not None else ""
                     val_str = str(val) if val is not None else ""
 
                     if old_str != val_str and val_str not in old_str.split("; "):
                         if old_str:
-                            merged[key] = f"{old_str}; {val_str}"
+                            merged[field] = f"{old_str}; {val_str}"
                         else:
-                            merged[key] = val_str
+                            merged[field] = val_str
 
-            all_entries[jp] = merged
+            all_entries[key_value] = merged
 
     return all_entries
 
 
-
-def apply_merge_and_rewrite(folder_path):
+def collect_merged_entries(folder_path):
     """
-    调用 collect_merged_entries,然后把结果写回每个 JSON。
+    扫描文件夹所有 JSON 文件,并构建合并后的大词典。
+    返回 all_entries（dict）,键为 jp。
+    """
+    return collect_merged_entries_by_key(folder_path, key_field="jp", tone_field="tone")
+
+
+def collect_merged_entries_en(folder_path):
+    """
+    扫描文件夹所有 JSON 文件,并构建合并后的大词典。
+    返回 all_entries（dict）,键为 word。
+    """
+    return collect_merged_entries_by_key(folder_path, key_field="word", tone_field=None)
+
+
+def apply_merge_and_rewrite_by_key(
+    folder_path,
+    key_field: str = "jp",
+    score_field: str = "score",
+    tone_field: str | None = "tone",
+):
+    """
+    调用 collect_merged_entries_by_key,然后把结果写回每个 JSON。
     """
     folder = Path(folder_path)
-    all_entries = collect_merged_entries(folder_path)
+    all_entries = collect_merged_entries_by_key(
+        folder_path,
+        key_field=key_field,
+        score_field=score_field,
+        tone_field=tone_field,
+    )
 
     for json_file in folder.rglob("*.json"):
-        with open(json_file, "r", encoding="utf-8") as f:
-            data = json.load(f)
+        data = load_json_list(json_file)
 
         new_list = []
         for entry in data:
-            jp = entry.get("jp")
-            if not jp:
+            key_value = entry.get(key_field)
+            if not key_value:
                 new_list.append(entry)
                 continue
 
-            merged = all_entries.get(jp, {})
+            merged = all_entries.get(key_value, {})
             new_entry = {}
 
-            # 原字段顺序优先
             for key in entry.keys():
                 if key in merged:
                     new_entry[key] = merged[key]
 
-            # 新增字段（保持顺序）
             for key, val in merged.items():
                 if key not in new_entry:
                     new_entry[key] = val
@@ -259,7 +313,21 @@ def apply_merge_and_rewrite(folder_path):
     return all_entries
 
 
-def filter_json_by_jp_difference(path_a, path_b):
+def apply_merge_and_rewrite(folder_path):
+    """
+    调用 collect_merged_entries,然后把结果写回每个 JSON。
+    """
+    return apply_merge_and_rewrite_by_key(folder_path, key_field="jp", tone_field="tone")
+
+
+def apply_merge_and_rewrite_en(folder_path):
+    """
+    调用 collect_merged_entries_en,然后把结果写回每个 JSON。
+    """
+    return apply_merge_and_rewrite_by_key(folder_path, key_field="word", tone_field=None)
+
+
+def filter_json_by_key_difference(path_a, path_b, key_field: str = "jp"):
     """
     path_a: 第一个 json 文件路径
     path_b: 第二个 json 文件路径
@@ -267,53 +335,59 @@ def filter_json_by_jp_difference(path_a, path_b):
     path_a = Path(path_a)
     path_b = Path(path_b)
 
-    # 取两个文件的 jp 列表
-    jp_a = set(extract_jp_fields(path_a))
-    jp_b = set(extract_jp_fields(path_b))
+    key_a = set(extract_field_values(path_a, key_field))
+    key_b = set(extract_field_values(path_b, key_field))
 
-    # 只保留 A 中独有的 JP
-    unique_jp = jp_a - jp_b
+    unique_keys = key_a - key_b
 
-    # 读取 A 的原始内容
-    with open(path_a, "r", encoding="utf-8") as f:
-        data_a = json.load(f)
+    data_a = load_json_list(path_a)
 
-    # 过滤
-    filtered = [entry for entry in data_a if entry.get("jp") in unique_jp]
+    filtered = [entry for entry in data_a if entry.get(key_field) in unique_keys]
 
-    # 写回 A
     with open(path_a, "w", encoding="utf-8") as f:
         json.dump(filtered, f, ensure_ascii=False, indent=4)
 
-    return unique_jp
+    return unique_keys
 
 
-def dedupe_json_by_jp(folder_path):
+def filter_json_by_jp_difference(path_a, path_b):
+    """
+    path_a: 第一个 json 文件路径
+    path_b: 第二个 json 文件路径
+    """
+    return filter_json_by_key_difference(path_a, path_b, key_field="jp")
+
+
+def filter_json_by_en_difference(path_a, path_b):
+    """
+    path_a: 第一个 json 文件路径
+    path_b: 第二个 json 文件路径
+    """
+    return filter_json_by_key_difference(path_a, path_b, key_field="word")
+
+
+def dedupe_json_by_key(folder_path, key_field: str = "jp"):
     folder = Path(folder_path)
 
-    # 遍历文件夹下所有 json 文件
     for json_file in folder.glob("*.json"):
         try:
-            data = json.loads(json_file.read_text(encoding="utf-8"))
+            data = load_json_list(json_file)
         except Exception as e:
             print(f"无法读取 {json_file}: {e}")
-            continue
-
-        if not isinstance(data, list):
-            print(f"文件 {json_file} 内容不是列表,跳过。")
             continue
 
         seen = set()
         deduped = []
 
-        # 按顺序保留最先出现的 jp
         for item in data:
-            jp = item.get("jp")
-            if jp not in seen:
-                seen.add(jp)
+            key_value = item.get(key_field)
+            if not key_value:
+                deduped.append(item)
+                continue
+            if key_value not in seen:
+                seen.add(key_value)
                 deduped.append(item)
 
-        # 写回文件
         try:
             json_file.write_text(
                 json.dumps(deduped, ensure_ascii=False, indent=4),
@@ -322,6 +396,14 @@ def dedupe_json_by_jp(folder_path):
             print(f"已去重并写回：{json_file}")
         except Exception as e:
             print(f"写入失败 {json_file}: {e}")
+
+
+def dedupe_json_by_jp(folder_path):
+    return dedupe_json_by_key(folder_path, key_field="jp")
+
+
+def dedupe_json_by_en(folder_path):
+    return dedupe_json_by_key(folder_path, key_field="word")
 
 
 def split_json_file(file_path: Path, max_per_file=60):
@@ -380,9 +462,9 @@ def process_folder(folder_path: str, max_per_file=60):
         split_json_file(file, max_per_file=max_per_file)
 
 
-def analyze_word_mastery(json_path: str | Path) -> dict:
+def analyze_vocab_mastery(json_path: str | Path) -> dict:
     """
-    分析日语单词 JSON 文件中的掌握程度（score）。
+    分析词库 JSON 文件中的掌握程度（score）。
 
     :param json_path: JSON 文件路径
     :return: 统计结果 dict
@@ -441,3 +523,7 @@ def analyze_word_mastery(json_path: str | Path) -> dict:
         "distribution": distribution,
         "mastery_level": level,
     }
+
+
+def analyze_word_mastery(json_path: str | Path) -> dict:
+    return analyze_vocab_mastery(json_path)

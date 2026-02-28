@@ -52,7 +52,7 @@ void drawEnglishWord(Word &w)
         canvas.setTextSize(1.3);
         {
             String phon = asciiPhonetic(w.phonetic);
-            canvas.drawString("Phonetic: " + phon, canvas.width() / 2, canvas.height() / 2 + 5);
+            canvas.drawString(phon, canvas.width() / 2, canvas.height() / 2 + 5);
         }
 
         if (showMeaning)
@@ -222,10 +222,7 @@ void loopStudyMode()
         {
             wordIndex = pickWeightedRandom();
             showMeaning = false;
-            if (currentLanguage == LANG_JP)
-                showAnkiSideA = random(2);
-            else
-                showAnkiSideA = true;
+            showAnkiSideA = random(2);
             drawStudyWord();
         }
     }
