@@ -36,3 +36,38 @@ void drawTopRightString(M5Canvas &cv, const String &text)
     cv.setTextSize(1.0);
     cv.drawString(text, cv.width() - 8, 5);
 }
+
+String asciiPhonetic(const String &s)
+{
+    String out;
+    for (size_t i = 0; i < s.length();)
+    {
+        uint8_t c = s[i];
+        if (c < 0x80) { out += (char)c; i++; continue; }
+        if (i + 1 < s.length())
+        {
+            uint8_t c2 = s[i + 1];
+            if (c == 0xC3 && c2 == 0xA6) { out += "ae"; i += 2; continue; }
+            if (c == 0xC3 && c2 == 0xB0) { out += "th"; i += 2; continue; }
+            if (c == 0xCE && c2 == 0xB8) { out += "th"; i += 2; continue; }
+            if (c == 0xC5 && c2 == 0x8B) { out += "ng"; i += 2; continue; }
+            if (c == 0xCA && c2 == 0x83) { out += "sh"; i += 2; continue; }
+            if (c == 0xCA && c2 == 0x92) { out += "zh"; i += 2; continue; }
+            if (c == 0xC9 && c2 == 0x99) { out += "e"; i += 2; continue; }
+            if (c == 0xC9 && c2 == 0x9C) { out += "er"; i += 2; continue; }
+            if (c == 0xC9 && c2 == 0x9D) { out += "er"; i += 2; continue; }
+            if (c == 0xC9 && c2 == 0x9A) { out += "er"; i += 2; continue; }
+            if (c == 0xC9 && c2 == 0x94) { out += "o"; i += 2; continue; }
+            if (c == 0xC9 && c2 == 0x92) { out += "o"; i += 2; continue; }
+            if (c == 0xCA && c2 == 0x8C) { out += "u"; i += 2; continue; }
+            if (c == 0xCA && c2 == 0x8A) { out += "u"; i += 2; continue; }
+            if (c == 0xC9 && c2 == 0xAA) { out += "i"; i += 2; continue; }
+            if (c == 0xCB && c2 == 0x90) { out += ":"; i += 2; continue; }
+            if (c == 0xCB && c2 == 0x88) { out += "'"; i += 2; continue; }
+            if (c == 0xCB && c2 == 0x8C) { out += ","; i += 2; continue; }
+            if (c == 0xC9 && c2 == 0xA1) { out += "g"; i += 2; continue; }
+        }
+        i++;
+    }
+    return out;
+}

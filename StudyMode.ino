@@ -38,6 +38,7 @@ void drawStudyWord()
     canvas.pushSprite(0, 0);
 }
 
+
 void drawEnglishWord(Word &w)
 {
     if (showAnkiSideA)
@@ -49,7 +50,10 @@ void drawEnglishWord(Word &w)
 
         canvas.setTextColor(GREEN);
         canvas.setTextSize(1.3);
-        canvas.drawString("Phonetic: " + String(w.phonetic), canvas.width() / 2, canvas.height() / 2 + 5);
+        {
+            String phon = asciiPhonetic(w.phonetic);
+            canvas.drawString("Phonetic: " + phon, canvas.width() / 2, canvas.height() / 2 + 5);
+        }
 
         if (showMeaning)
         {
