@@ -92,7 +92,7 @@ void drawStatsPage()
     canvas.setTextDatum(top_right);
     canvas.setTextColor(TFT_DARKGREY);
     canvas.setTextSize(1.0);
-    canvas.drawString(String(statsPage + 1) + "/2", canvas.width() - 8, 8);
+    canvas.drawString(String(statsPage + 1) + "/3", canvas.width() - 8, 8);
 
     if (statsTotal == 0)
     {
@@ -105,7 +105,7 @@ void drawStatsPage()
     }
 
     canvas.setTextDatum(top_left);
-    canvas.setTextSize(1.15);
+    canvas.setTextSize(1.1);
     const int lineHeight = 22;
     int y = 34;
 
@@ -127,12 +127,14 @@ void drawStatsPage()
         canvas.setTextColor(TFT_DARKGREY);
         canvas.drawString("平均", labelX, y);
         canvas.setTextColor(WHITE);
-        canvas.drawString(String(statsAvg, 2), valueX, y);
-        y += lineHeight;
+        String avgText = String(statsAvg, 2);
+        canvas.drawString(avgText, valueX, y);
+        int midLabelX = valueX + canvas.textWidth(avgText) + 16;
         canvas.setTextColor(TFT_DARKGREY);
-        canvas.drawString("中位", labelX, y);
+        canvas.drawString("中位", midLabelX, y);
         canvas.setTextColor(WHITE);
-        canvas.drawString(String(statsMedian, 2), valueX, y);
+        int midValueX = midLabelX + canvas.textWidth("中位") + 8;
+        canvas.drawString(String(statsMedian, 2), midValueX, y);
         y += lineHeight;
         uint16_t levelColor = WHITE;
         if (statsAvg >= 4.5)
@@ -150,41 +152,50 @@ void drawStatsPage()
         canvas.setTextColor(levelColor);
         canvas.drawString(statsLevel, valueX, y);
     }
-    else
+    else if (statsPage == 1)
     {
         int p1 = (int)round(statsCounts[1] * 100.0f / statsTotal);
         int p2 = (int)round(statsCounts[2] * 100.0f / statsTotal);
         int p3 = (int)round(statsCounts[3] * 100.0f / statsTotal);
         int p4 = (int)round(statsCounts[4] * 100.0f / statsTotal);
         int p5 = (int)round(statsCounts[5] * 100.0f / statsTotal);
-        std::vector<String> col1 = {"1", "2", "3", "4", "5"};
-        std::vector<String> col2 = {
-            String(statsCounts[1]),
-            String(statsCounts[2]),
-            String(statsCounts[3]),
-            String(statsCounts[4]),
-            String(statsCounts[5])
-        };
-        std::vector<String> col3 = {
-            String(p1) + "%",
-            String(p2) + "%",
-            String(p3) + "%",
-            String(p4) + "%",
-            String(p5) + "%"
+        std::vector<String> headers = {"等级", "数量", "占比"};
+        std::vector<int> colXs = {8, 92, 154};
+        std::vector<std::vector<String>> rows = {
+            {"1", String(statsCounts[1]), String(p1) + "%"},
+            {"2", String(statsCounts[2]), String(p2) + "%"},
+            {"3", String(statsCounts[3]), String(p3) + "%"}
         };
         drawSimpleTable(
             canvas,
-            8,
             y,
             lineHeight,
-            "等级",
-            "数量",
-            "占比",
-            92,
-            154,
-            col1,
-            col2,
-            col3
+            headers,
+            colXs,
+            1.0,
+            1.1,
+            rows
+        );
+    }
+    else
+    {
+        int p4 = (int)round(statsCounts[4] * 100.0f / statsTotal);
+        int p5 = (int)round(statsCounts[5] * 100.0f / statsTotal);
+        std::vector<String> headers = {"等级", "数量", "占比"};
+        std::vector<int> colXs = {8, 92, 154};
+        std::vector<std::vector<String>> rows = {
+            {"4", String(statsCounts[4]), String(p4) + "%"},
+            {"5", String(statsCounts[5]), String(p5) + "%"}
+        };
+        drawSimpleTable(
+            canvas,
+            y,
+            lineHeight,
+            headers,
+            colXs,
+            1.0,
+            1.1,
+            rows
         );
     }
 
@@ -213,15 +224,15 @@ void loopStatsMode()
                 initEscMenuMode();
                 return;
             }
-            if (c == ';')
+            if (c == ',')
             {
-                statsPage = (statsPage - 1 + 2) % 2;
+                statsPage = (statsPage - 1 + 3) % 3;
                 drawStatsPage();
                 return;
             }
-            if (c == '.')
+            if (c == '/')
             {
-                statsPage = (statsPage + 1) % 2;
+                statsPage = (statsPage + 1) % 3;
                 drawStatsPage();
                 return;
             }

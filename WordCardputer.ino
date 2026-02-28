@@ -102,17 +102,13 @@ void drawTextMenu(
 );
 void drawSimpleTable(
     M5Canvas &cv,
-    int startX,
     int startY,
     int rowHeight,
-    const String &h1,
-    const String &h2,
-    const String &h3,
-    int col2X,
-    int col3X,
-    const std::vector<String> &col1,
-    const std::vector<String> &col2,
-    const std::vector<String> &col3
+    const std::vector<String> &headers,
+    const std::vector<int> &colXs,
+    float headerSize,
+    float bodySize,
+    const std::vector<std::vector<String>> &rows
 );
 
 String matchRomaji(const String &buffer, bool useKatakana);

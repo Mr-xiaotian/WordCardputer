@@ -73,35 +73,40 @@ void drawTextMenu(
 
 void drawSimpleTable(
     M5Canvas &cv,
-    int startX,
     int startY,
     int rowHeight,
-    const String &h1,
-    const String &h2,
-    const String &h3,
-    int col2X,
-    int col3X,
-    const std::vector<String> &col1,
-    const std::vector<String> &col2,
-    const std::vector<String> &col3
+    const std::vector<String> &headers,
+    const std::vector<int> &colXs,
+    float headerSize,
+    float bodySize,
+    const std::vector<std::vector<String>> &rows
 ) {
     cv.setTextDatum(top_left);
     cv.setTextColor(TFT_DARKGREY);
-    cv.drawString(h1, startX, startY);
-    cv.drawString(h2, col2X, startY);
-    cv.drawString(h3, col3X, startY);
+    cv.setTextSize(headerSize);
+    int cols = min((int)headers.size(), (int)colXs.size());
+    for (int i = 0; i < cols; i++)
+    {
+        cv.drawString(headers[i], colXs[i], startY);
+    }
 
     int lineY = startY + rowHeight - 4;
-    cv.drawLine(startX, lineY, cv.width() - startX, lineY, TFT_DARKGREY);
+    if (cols > 0)
+    {
+        cv.drawLine(colXs[0], lineY, cv.width() - colXs[0], lineY, TFT_DARKGREY);
+    }
 
     cv.setTextColor(WHITE);
-    int rows = min((int)col1.size(), min((int)col2.size(), (int)col3.size()));
+    cv.setTextSize(bodySize);
     int y = startY + rowHeight + 2;
-    for (int i = 0; i < rows; i++)
+    for (size_t r = 0; r < rows.size(); r++)
     {
-        cv.drawString(col1[i], startX, y);
-        cv.drawString(col2[i], col2X, y);
-        cv.drawString(col3[i], col3X, y);
+        const auto &row = rows[r];
+        int rowCols = min((int)row.size(), cols);
+        for (int c = 0; c < rowCols; c++)
+        {
+            cv.drawString(row[c], colXs[c], y);
+        }
         y += rowHeight;
     }
 }
