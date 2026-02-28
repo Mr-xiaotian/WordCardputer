@@ -3,8 +3,6 @@ std::vector<String> files;
 int fileIndex = 0;
 int fileScroll = 0;
 
-String currentDir = "/jp_words_study/word";
-
 // --------- 初始化文件选择模式 ---------
 void initFileSelectMode()
 {
@@ -12,6 +10,10 @@ void initFileSelectMode()
     fileIndex = 0;
     fileScroll = 0;
     selectedFilePath = "";
+    if (!currentDir.startsWith(currentWordRoot))
+    {
+        currentDir = currentWordRoot;
+    }
 
     File dir = SD.open(currentDir);
     if (!dir) {
@@ -141,7 +143,7 @@ void loopFileSelectMode()
         
         // 返回
         if (status.del) {
-            if (currentDir != "/jp_words_study/word") {
+            if (currentDir != currentWordRoot) {
                 int pos = currentDir.lastIndexOf('/');
                 currentDir = currentDir.substring(0, pos);
                 initFileSelectMode();

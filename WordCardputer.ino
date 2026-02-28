@@ -12,20 +12,37 @@
 
 // --------- 模式定义 ----------
 enum AppMode {
+    MODE_LANG_SELECT,
     MODE_FILE_SELECT,
     MODE_STUDY,
     MODE_ESC_MENU,      //  ESC 菜单模式
-    MODE_DICTATION,     // 听写模式（暂未实现）
-    MODE_LISTEN         // 听读模式
+    MODE_DICTATION,     // 听写模式
+    MODE_LISTEN,        // 听读模式
+    MODE_STATS,         // 学习统计模式
 };
 
-AppMode appMode = MODE_FILE_SELECT;
+enum StudyLanguage {
+    LANG_JP,
+    LANG_EN
+};
+
+AppMode appMode = MODE_LANG_SELECT;
 AppMode previousMode = MODE_FILE_SELECT;  // 记录上一个模式
 
 // --------- 全局变量 ----------
 M5Canvas canvas(&M5Cardputer.Display);
 const int visibleLines = 4;
 int soundVolume = 192;
+
+StudyLanguage currentLanguage = LANG_JP;
+String currentWordRoot = "/jp_words_study/word";
+String currentAudioRoot = "/jp_words_study/audio";
+
+String currentDir = "/jp_words_study/word";
+String selectedFilePath = "";
+
+std::vector<String> langItems = {"日语", "英语"};
+int langIndex = 0;
 
 unsigned long volumeMessageDeadline = 0;  // 音量消息显示截止时间
 
@@ -43,6 +60,9 @@ struct Word {
     String jp;
     String zh;
     String kanji;
+    String en;
+    String pos;
+    String phonetic;
     int tone;
     int score;  // 熟练度 1~5
 };
@@ -74,6 +94,13 @@ void loopDictationMode();
 void initListenMode();    
 void loopListenMode();    
 
+void initStatsMode();
+void loopStatsMode();
+
+void initLanguageSelectMode();
+void loopLanguageSelectMode();
+void setLanguage(StudyLanguage lang);
+
 bool loadWordsFromJSON(const String &path);
 bool saveListToJSON(const String &filepath, const std::vector<Word> &list);
 void saveDictationMistakesAsWordList();
@@ -96,9 +123,102 @@ void drawTextMenu(
     bool showBattery = true,
     bool showPager = true
 );
+void drawSimpleTable(
+    M5Canvas &cv,
+    int startY,
+    int rowHeight,
+    const std::vector<String> &headers,
+    const std::vector<int> &colXs,
+    float headerSize,
+    float bodySize,
+    const std::vector<std::vector<String>> &rows
+);
 
 String matchRomaji(const String &buffer, bool useKatakana);
 void removeLastUTF8Char(String &s);
+
+void drawLanguageSelect()
+{
+    drawTextMenu(
+        canvas,
+        "选择语言",
+        langItems,
+        langIndex,
+        0,
+        visibleLines,
+        "无可选项",
+        false,
+        false
+    );
+}
+
+void setLanguage(StudyLanguage lang)
+{
+    currentLanguage = lang;
+    if (currentLanguage == LANG_JP)
+    {
+        currentWordRoot = "/jp_words_study/word";
+        currentAudioRoot = "/jp_words_study/audio";
+    }
+    else
+    {
+        currentWordRoot = "/en_words_study/word";
+        currentAudioRoot = "/en_words_study/audio";
+    }
+    currentDir = currentWordRoot;
+    selectedFilePath = "";
+    words.clear();
+}
+
+void initLanguageSelectMode()
+{
+    langIndex = 0;
+    drawLanguageSelect();
+}
+
+void loopLanguageSelectMode()
+{
+    if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
+    {
+        auto st = M5Cardputer.Keyboard.keysState();
+        userAction = true;
+
+        for (auto c : st.word)
+        {
+            if (c == ';')
+            {
+                langIndex = (langIndex - 1 + langItems.size()) % langItems.size();
+                drawLanguageSelect();
+            }
+            else if (c == '.')
+            {
+                langIndex = (langIndex + 1) % langItems.size();
+                drawLanguageSelect();
+            }
+        }
+
+        if (st.enter)
+        {
+            StudyLanguage lang = (langIndex == 0) ? LANG_JP : LANG_EN;
+            String root = (lang == LANG_JP) ? "/jp_words_study" : "/en_words_study";
+            if (!SD.exists(root))
+            {
+                canvas.fillSprite(BLACK);
+                canvas.setTextDatum(middle_center);
+                canvas.setTextColor(RED);
+                canvas.drawString("未找到词库文件夹", canvas.width() / 2, canvas.height() / 2);
+                canvas.pushSprite(0, 0);
+                delay(600);
+                drawLanguageSelect();
+                return;
+            }
+            setLanguage(lang);
+            appMode = MODE_FILE_SELECT;
+            initFileSelectMode();
+            return;
+        }
+    }
+}
 
 // =============== 主程序 ===============
 void setup() {
@@ -118,8 +238,10 @@ void setup() {
         while (1) delay(10);
     }
 
-    if (!SD.exists("/jp_words_study")) {
-        M5Cardputer.Display.println("未找到 /jp_words_study 文件夹");
+    bool jpExists = SD.exists("/jp_words_study");
+    bool enExists = SD.exists("/en_words_study");
+    if (!jpExists && !enExists) {
+        M5Cardputer.Display.println("未找到词库文件夹");
         while (1) delay(10);
     }
 
@@ -131,15 +253,17 @@ void setup() {
     canvas.createSprite(M5Cardputer.Display.width(), M5Cardputer.Display.height());
     canvas.setTextFont(&fonts::efontCN_16);
 
-    // 开始进入文件选择模式
-    initFileSelectMode();
+    // 开始进入语言选择模式
+    initLanguageSelectMode();
 }
 
 void loop() {
     M5Cardputer.update();
     userAction = false;
 
-    if (appMode == MODE_FILE_SELECT) {
+    if (appMode == MODE_LANG_SELECT) {
+        loopLanguageSelectMode();
+    } else if (appMode == MODE_FILE_SELECT) {
         loopFileSelectMode();
     } else if (appMode == MODE_STUDY) {
         loopStudyMode();
@@ -147,8 +271,10 @@ void loop() {
         loopEscMenuMode();
     } else if (appMode == MODE_DICTATION) {
         loopDictationMode();
-    } else if (appMode == MODE_LISTEN) {     // 👈 新增
+    } else if (appMode == MODE_LISTEN) {  
         loopListenMode();
+    } else if (appMode == MODE_STATS) {
+        loopStatsMode();
     }
 
     // -------- 自动亮度控制 --------

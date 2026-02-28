@@ -9,6 +9,16 @@ const unsigned long listenNextWordDelay = 600;   // 播完3次后,切到下一�
 // ---------- 初始化听读模式 ----------
 void initListenMode()
 {
+    if (currentLanguage == LANG_EN)
+    {
+        canvas.fillSprite(BLACK);
+        canvas.setTextDatum(middle_center);
+        canvas.setTextColor(RED);
+        canvas.setTextSize(1.6);
+        canvas.drawString("英语听读暂未支持", canvas.width() / 2, canvas.height() / 2);
+        canvas.pushSprite(0, 0);
+        return;
+    }
     if (words.empty())
     {
         // 理论上应该已经在 StudyMode 中加载过词库
@@ -78,6 +88,26 @@ void drawListenWord()
 // ---------- 听读模式循环逻辑 ----------
 void loopListenMode()
 {
+    if (currentLanguage == LANG_EN)
+    {
+        if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
+        {
+            auto st = M5Cardputer.Keyboard.keysState();
+            userAction = true;
+
+            for (auto c : st.word)
+            {
+                if (c == '`')
+                {
+                    previousMode = appMode;
+                    appMode = MODE_ESC_MENU;
+                    initEscMenuMode();
+                    return;
+                }
+            }
+        }
+        return;
+    }
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
     {
         // 键盘状态
