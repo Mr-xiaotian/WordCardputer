@@ -1,8 +1,8 @@
 // 学习模式公共变量
 bool showMeaning = false;
-bool showJPFirst = true; // true=先显示日语, false=先显示中文
+bool showAnkiSideA = true; // true=先显示日语/英语, false=先显示中文
 
-void drawWord()
+void drawStudyWord()
 {
     canvas.fillSprite(BLACK);
     canvas.setTextDatum(middle_center);
@@ -19,24 +19,37 @@ void drawWord()
 
     if (currentLanguage == LANG_EN)
     {
+        drawEnglishWord(w);
+    }
+    else if (currentLanguage == LANG_JP)
+    {
+        drawJapaneseWord(w);
+    }
+
+    // 熟练度提示
+    drawTopLeftString(canvas, "Score: " + String(words[wordIndex].score));
+
+    // HUD 显示音量变化
+    if (millis() < volumeMessageDeadline)
+    {
+        drawTopRightString(canvas, String(soundVolume));
+    }
+
+    canvas.pushSprite(0, 0);
+}
+
+void drawEnglishWord(Word &w)
+{
+    if (showAnkiSideA)
+    {
+        // === 模式1：显示英语,隐藏中文 ===
         canvas.setTextFont(&fonts::efontCN_16);
         canvas.setTextColor(CYAN);
         drawAutoFitString(canvas, w.en, canvas.width() / 2, canvas.height() / 2 - 25, 2.2);
 
-        String subLine = w.phonetic;
-        if (w.pos.length() > 0)
-        {
-            if (subLine.length() > 0)
-                subLine += "  " + w.pos;
-            else
-                subLine = w.pos;
-        }
-        if (subLine.length() > 0)
-        {
-            canvas.setTextColor(GREEN);
-            canvas.setTextSize(1.1);
-            canvas.drawString(subLine, canvas.width() / 2, canvas.height() / 2 + 5);
-        }
+        canvas.setTextColor(GREEN);
+        canvas.setTextSize(1.3);
+        canvas.drawString("Phonetic: " + String(w.phonetic), canvas.width() / 2, canvas.height() / 2 + 5);
 
         if (showMeaning)
         {
@@ -45,7 +58,33 @@ void drawWord()
             drawAutoFitString(canvas, w.zh, canvas.width() / 2, canvas.height() / 2 + 40, 1.5);
         }
     }
-    else if (showJPFirst)
+    else 
+    {
+        // === 模式2：显示中文,隐藏英语 ===
+        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setTextColor(YELLOW);
+        drawAutoFitString(canvas, w.zh, canvas.width() / 2, canvas.height() / 2 - 25, 2.0); // 显示中文释义主行
+
+        if (w.pos.length() > 0)
+        {
+            canvas.setTextFont(&fonts::efontJA_16);
+            canvas.setTextColor(ORANGE);
+            canvas.setTextSize(1.4);
+            canvas.drawString(w.pos, canvas.width() / 2, canvas.height() / 2 + 5);
+        }
+
+        if (showMeaning)
+        {
+            canvas.setTextFont(&fonts::efontJA_16);
+            canvas.setTextColor(CYAN);
+            drawAutoFitString(canvas, w.en, canvas.width() / 2, canvas.height() / 2 + 40, 1.8); // 显示英语原文
+        }
+    }
+}
+
+void drawJapaneseWord(Word &w)
+{
+    if (showAnkiSideA)
     {
         // === 模式1：显示日语,隐藏中文 ===
         canvas.setTextFont(&fonts::efontJA_16);
@@ -85,17 +124,6 @@ void drawWord()
             drawAutoFitString(canvas, w.jp, canvas.width() / 2, canvas.height() / 2 + 40, 1.8); // 显示日语原文
         }
     }
-
-    // 熟练度提示
-    drawTopLeftString(canvas, "Score: " + String(words[wordIndex].score));
-
-    // HUD 显示音量变化
-    if (millis() < volumeMessageDeadline)
-    {
-        drawTopRightString(canvas, String(soundVolume));
-    }
-
-    canvas.pushSprite(0, 0);
 }
 
 void startStudyMode(const String &filePath)
@@ -115,8 +143,8 @@ void startStudyMode(const String &filePath)
     wordIndex = pickWeightedRandom();
     showMeaning = false;
     if (currentLanguage == LANG_EN)
-        showJPFirst = true;
-    drawWord();
+        showAnkiSideA = true;
+    drawStudyWord();
 }
 
 void loopStudyMode()
@@ -125,7 +153,7 @@ void loopStudyMode()
     if (M5Cardputer.BtnA.wasPressed())
     {
         showMeaning = !showMeaning;
-        drawWord();
+        drawStudyWord();
         userAction = true;
     }
 
@@ -159,7 +187,7 @@ void loopStudyMode()
                 M5.Speaker.setVolume(soundVolume);
 
                 volumeMessageDeadline = millis() + 2000;
-                drawWord();
+                drawStudyWord();
             }
         }
 
@@ -191,10 +219,10 @@ void loopStudyMode()
             wordIndex = pickWeightedRandom();
             showMeaning = false;
             if (currentLanguage == LANG_JP)
-                showJPFirst = random(2);
+                showAnkiSideA = random(2);
             else
-                showJPFirst = true;
-            drawWord();
+                showAnkiSideA = true;
+            drawStudyWord();
         }
     }
 }

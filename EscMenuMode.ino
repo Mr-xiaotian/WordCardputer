@@ -42,7 +42,7 @@ void loopEscMenuMode() {
             if (c == '`') {  // ESC 键
                 appMode = previousMode;
                 if (previousMode == MODE_STUDY) {
-                    drawWord();
+                    drawStudyWord();
                 }
                 else if (previousMode == MODE_LISTEN) {
                     initListenMode();
@@ -118,7 +118,7 @@ void loopEscMenuMode() {
             else if (escIndex == 3) {
                 // 进入学习页面
                 appMode = MODE_STUDY;
-                drawWord();  // 刷新学习界面
+                drawStudyWord();  // 刷新学习界面
                 return;
             }
             else if (escIndex == 4) {
