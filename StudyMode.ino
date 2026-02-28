@@ -71,7 +71,7 @@ void drawEnglishWord(Word &w)
 
         if (w.pos.length() > 0)
         {
-            canvas.setTextFont(&fonts::efontJA_16);
+            canvas.setTextFont(&fonts::efontCN_16);
             canvas.setTextColor(ORANGE);
             canvas.setTextSize(1.4);
             canvas.drawString(w.pos, canvas.width() / 2, canvas.height() / 2 + 5);
@@ -79,7 +79,7 @@ void drawEnglishWord(Word &w)
 
         if (showMeaning)
         {
-            canvas.setTextFont(&fonts::efontJA_16);
+            canvas.setTextFont(&fonts::efontCN_16);
             canvas.setTextColor(CYAN);
             drawAutoFitString(canvas, w.en, canvas.width() / 2, canvas.height() / 2 + 40, 1.8); // 显示英语原文
         }

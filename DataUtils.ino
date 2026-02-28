@@ -58,7 +58,7 @@ bool loadWordsFromJSON(const String &filepath)
             if (w.jp.length() > 0)
                 words.push_back(w);
         }
-        else
+        else if (currentLanguage == LANG_EN)
         {
             w.en = obj["word"] | "";
             w.zh = obj["zh"] | "";
