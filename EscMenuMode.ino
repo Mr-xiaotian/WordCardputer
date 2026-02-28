@@ -1,5 +1,4 @@
 // ========== ESC 菜单页面 ==========
-String selectedFilePath = "";
 
 std::vector<String> escItems = {
     "保存进度",

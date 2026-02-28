@@ -17,7 +17,35 @@ void drawWord()
 
     Word &w = words[wordIndex];
 
-    if (showJPFirst)
+    if (currentLanguage == LANG_EN)
+    {
+        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setTextColor(CYAN);
+        drawAutoFitString(canvas, w.en, canvas.width() / 2, canvas.height() / 2 - 25, 2.2);
+
+        String subLine = w.phonetic;
+        if (w.pos.length() > 0)
+        {
+            if (subLine.length() > 0)
+                subLine += "  " + w.pos;
+            else
+                subLine = w.pos;
+        }
+        if (subLine.length() > 0)
+        {
+            canvas.setTextColor(GREEN);
+            canvas.setTextSize(1.1);
+            canvas.drawString(subLine, canvas.width() / 2, canvas.height() / 2 + 5);
+        }
+
+        if (showMeaning)
+        {
+            canvas.setTextFont(&fonts::efontCN_16);
+            canvas.setTextColor(YELLOW);
+            drawAutoFitString(canvas, w.zh, canvas.width() / 2, canvas.height() / 2 + 40, 1.5);
+        }
+    }
+    else if (showJPFirst)
     {
         // === 模式1：显示日语,隐藏中文 ===
         canvas.setTextFont(&fonts::efontJA_16);
@@ -86,6 +114,8 @@ void startStudyMode(const String &filePath)
 
     wordIndex = pickWeightedRandom();
     showMeaning = false;
+    if (currentLanguage == LANG_EN)
+        showJPFirst = true;
     drawWord();
 }
 
@@ -136,7 +166,14 @@ void loopStudyMode()
         // fn = 播放音频
         if (status.fn)
         {
-            playAudioForWord(words[wordIndex].jp);
+            if (currentLanguage == LANG_JP)
+            {
+                playAudioForWord(words[wordIndex].jp);
+            }
+            else if (words[wordIndex].en.length() > 0)
+            {
+                playAudioForWord(words[wordIndex].en);
+            }
         }
 
         // Enter = 记住,提升熟练度
@@ -153,7 +190,10 @@ void loopStudyMode()
         {
             wordIndex = pickWeightedRandom();
             showMeaning = false;
-            showJPFirst = random(2); // 👈 0 或 1 随机决定显示方向
+            if (currentLanguage == LANG_JP)
+                showJPFirst = random(2);
+            else
+                showJPFirst = true;
             drawWord();
         }
     }

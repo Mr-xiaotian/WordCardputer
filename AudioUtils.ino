@@ -104,7 +104,9 @@ bool playWavStream(const String& path) {
 }
 
 void playAudioForWord(const String& jpWord) {
-    String path = "/jp_words_study/audio/" + jpWord + ".wav";
+    if (jpWord.length() == 0)
+        return;
+    String path = currentAudioRoot + "/" + jpWord + ".wav";
 
     // 检查文件是否存在
     if (!SD.exists(path)) {

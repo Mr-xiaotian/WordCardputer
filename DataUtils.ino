@@ -35,10 +35,13 @@ bool loadWordsFromJSON(const String &filepath)
     for (JsonObject obj : doc.as<JsonArray>())
     {
         Word w;
-        w.jp = obj["jp"] | "";
-        w.zh = obj["zh"] | "";
-        w.kanji = obj["kanji"] | "";
-        w.tone = obj["tone"] | -1;
+        w.jp = "";
+        w.zh = "";
+        w.kanji = "";
+        w.en = "";
+        w.pos = "";
+        w.phonetic = "";
+        w.tone = -1;
         int score = obj["score"] | 3;
         if (score < 1)
             score = 1;
@@ -46,8 +49,24 @@ bool loadWordsFromJSON(const String &filepath)
             score = 5;
         w.score = score;
 
-        if (w.jp.length() > 0)
-            words.push_back(w);
+        if (currentLanguage == LANG_JP)
+        {
+            w.jp = obj["jp"] | "";
+            w.zh = obj["zh"] | "";
+            w.kanji = obj["kanji"] | "";
+            w.tone = obj["tone"] | -1;
+            if (w.jp.length() > 0)
+                words.push_back(w);
+        }
+        else
+        {
+            w.en = obj["word"] | "";
+            w.zh = obj["zh"] | "";
+            w.pos = obj["pos"] | "";
+            w.phonetic = obj["phonetic"] | "";
+            if (w.en.length() > 0)
+                words.push_back(w);
+        }
     }
 
     return !words.empty();
@@ -72,9 +91,13 @@ bool saveListToJSON(const String &filepath, const std::vector<Word> &list)
         totalStringLen += w.jp.length();
         totalStringLen += w.zh.length();
         totalStringLen += w.kanji.length();
+        totalStringLen += w.en.length();
+        totalStringLen += w.pos.length();
+        totalStringLen += w.phonetic.length();
     }
+    size_t objectSize = (currentLanguage == LANG_JP) ? JSON_OBJECT_SIZE(5) : JSON_OBJECT_SIZE(5);
     size_t capacity = JSON_ARRAY_SIZE(list.size()) +
-                      list.size() * JSON_OBJECT_SIZE(5) +
+                      list.size() * objectSize +
                       totalStringLen +
                       list.size() * 16 +
                       256;
@@ -84,11 +107,22 @@ bool saveListToJSON(const String &filepath, const std::vector<Word> &list)
     for (auto &w : list)
     {
         JsonObject obj = arr.createNestedObject();
-        obj["jp"] = w.jp;
-        obj["zh"] = w.zh;
-        obj["kanji"] = w.kanji;
-        obj["tone"] = w.tone;
-        obj["score"] = w.score;
+        if (currentLanguage == LANG_JP)
+        {
+            obj["jp"] = w.jp;
+            obj["zh"] = w.zh;
+            obj["kanji"] = w.kanji;
+            obj["tone"] = w.tone;
+            obj["score"] = w.score;
+        }
+        else
+        {
+            obj["word"] = w.en;
+            obj["zh"] = w.zh;
+            obj["pos"] = w.pos;
+            obj["phonetic"] = w.phonetic;
+            obj["score"] = w.score;
+        }
     }
 
     if (serializeJsonPretty(doc, file) == 0)
@@ -126,7 +160,7 @@ int pickWeightedRandom()
 void saveDictationMistakesAsWordList() {
     if (dictErrors.empty()) return;
 
-    String folder = "/jp_words_study/word/Mistake";
+    String folder = currentWordRoot + "/Mistake";
     if (!SD.exists(folder)) {
         SD.mkdir(folder);
     }

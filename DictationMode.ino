@@ -21,6 +21,16 @@ bool dictInReview = false; // 是否正在错误回顾
 // ---------- 初始化听写模式 ----------
 void initDictationMode()
 {
+    if (currentLanguage == LANG_EN)
+    {
+        canvas.fillSprite(BLACK);
+        canvas.setTextDatum(middle_center);
+        canvas.setTextColor(RED);
+        canvas.setTextSize(1.6);
+        canvas.drawString("英语听写暂未支持", canvas.width() / 2, canvas.height() / 2);
+        canvas.pushSprite(0, 0);
+        return;
+    }
     if (words.empty())
     {
         canvas.fillSprite(BLACK);
@@ -179,6 +189,26 @@ bool isSokuonConsonant(char c) {
 // ---------- 听写模式逻辑 ----------
 void loopDictationMode()
 {
+    if (currentLanguage == LANG_EN)
+    {
+        if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
+        {
+            auto st = M5Cardputer.Keyboard.keysState();
+            userAction = true;
+
+            for (auto c : st.word)
+            {
+                if (c == '`')
+                {
+                    previousMode = appMode;
+                    appMode = MODE_ESC_MENU;
+                    initEscMenuMode();
+                    return;
+                }
+            }
+        }
+        return;
+    }
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
     {
         auto st = M5Cardputer.Keyboard.keysState();

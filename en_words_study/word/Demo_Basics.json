@@ -1,0 +1,8 @@
+[
+  { "word": "run", "zh": "跑；运行", "pos": "verb", "phonetic": "/rʌn/", "score": 3 },
+  { "word": "apple", "zh": "苹果", "pos": "noun", "phonetic": "/ˈæpəl/", "score": 4 },
+  { "word": "happy", "zh": "高兴的；快乐的", "pos": "adj", "phonetic": "/ˈhæpi/", "score": 2 },
+  { "word": "study", "zh": "学习；研究", "pos": "verb/noun", "phonetic": "/ˈstʌdi/", "score": 3 },
+  { "word": "quickly", "zh": "快速地", "pos": "adv", "phonetic": "/ˈkwɪkli/", "score": 3 },
+  { "word": "important", "zh": "重要的", "pos": "adj", "phonetic": "/ɪmˈpɔːrtənt/", "score": 2 }
+]
