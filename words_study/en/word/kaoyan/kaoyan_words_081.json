@@ -1,352 +1,352 @@
-[
-  {
-    "word": "apparatus",
-    "zh": "装置",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "coherent",
-    "zh": "一致的、连贯的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "shot",
-    "zh": "开枪、发射、拍摄",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mock",
-    "zh": "嘲笑、模仿",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "opening",
-    "zh": "开幕",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "tractor",
-    "zh": "牵引车",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "deploy",
-    "zh": "部署",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "dome",
-    "zh": "圆屋顶",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "lottery",
-    "zh": "彩票",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "monster",
-    "zh": "怪物",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "constituent",
-    "zh": "成分",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "eighteen",
-    "zh": "十八",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "emigrate",
-    "zh": "移民",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "hatred",
-    "zh": "仇恨",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "indicative",
-    "zh": "指示的、陈述语气",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "lounge",
-    "zh": "休息室",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "ore",
-    "zh": "矿",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "pastime",
-    "zh": "消遣",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "plead",
-    "zh": "恳求",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "recur",
-    "zh": "重现",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "soak",
-    "zh": "浸",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "sunrise",
-    "zh": "日出",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "susceptible",
-    "zh": "易受感染的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "agony",
-    "zh": "极度痛苦",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "bizarre",
-    "zh": "奇异的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "conversely",
-    "zh": "相反地",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "dedicate",
-    "zh": "致力于",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "extinguish",
-    "zh": "扑灭",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "fetch",
-    "zh": "取来",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "glove",
-    "zh": "手套",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "incur",
-    "zh": "招致",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "invalid",
-    "zh": "无效的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "loosen",
-    "zh": "放松",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "orchestra",
-    "zh": "管弦乐队",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "pottery",
-    "zh": "陶器",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "quantitative",
-    "zh": "定量的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "spectacle",
-    "zh": "景象、奇观",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "stripe",
-    "zh": "条纹",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "viewpoint",
-    "zh": "观点",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "alternate",
-    "zh": "交替",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "attendant",
-    "zh": "服务员",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "ballet",
-    "zh": "芭蕾舞",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "clash",
-    "zh": "冲突",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "comic",
-    "zh": "喜剧演员、滑稽的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "converge",
-    "zh": "会聚、集中",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "correspondence",
-    "zh": "通信",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "costume",
-    "zh": "服装",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "designate",
-    "zh": "指定",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "eve",
-    "zh": "前夕",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "explode",
-    "zh": "爆炸",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  }
+﻿[
+    {
+        "zh":  "装置",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "apparatus"
+    },
+    {
+        "zh":  "一致的、连贯的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "coherent"
+    },
+    {
+        "zh":  "开枪、发射、拍摄",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shot"
+    },
+    {
+        "zh":  "嘲笑、模仿",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mock"
+    },
+    {
+        "zh":  "开幕",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "opening"
+    },
+    {
+        "zh":  "牵引车",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tractor"
+    },
+    {
+        "zh":  "部署",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deploy"
+    },
+    {
+        "zh":  "圆屋顶",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dome"
+    },
+    {
+        "zh":  "彩票",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lottery"
+    },
+    {
+        "zh":  "怪物",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "monster"
+    },
+    {
+        "zh":  "成分",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "constituent"
+    },
+    {
+        "zh":  "十八",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eighteen"
+    },
+    {
+        "zh":  "移民",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "emigrate"
+    },
+    {
+        "zh":  "仇恨",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hatred"
+    },
+    {
+        "zh":  "指示的、陈述语气",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "indicative"
+    },
+    {
+        "zh":  "休息室",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lounge"
+    },
+    {
+        "zh":  "矿",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ore"
+    },
+    {
+        "zh":  "消遣",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pastime"
+    },
+    {
+        "zh":  "恳求",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "plead"
+    },
+    {
+        "zh":  "重现",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "recur"
+    },
+    {
+        "zh":  "浸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "soak"
+    },
+    {
+        "zh":  "日出",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sunrise"
+    },
+    {
+        "zh":  "易受感染的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "susceptible"
+    },
+    {
+        "zh":  "极度痛苦",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "agony"
+    },
+    {
+        "zh":  "奇异的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bizarre"
+    },
+    {
+        "zh":  "相反地",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "conversely"
+    },
+    {
+        "zh":  "致力于",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dedicate"
+    },
+    {
+        "zh":  "扑灭",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "extinguish"
+    },
+    {
+        "zh":  "取来",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fetch"
+    },
+    {
+        "zh":  "手套",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "glove"
+    },
+    {
+        "zh":  "招致",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "incur"
+    },
+    {
+        "zh":  "无效的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "invalid"
+    },
+    {
+        "zh":  "放松",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "loosen"
+    },
+    {
+        "zh":  "管弦乐队",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "orchestra"
+    },
+    {
+        "zh":  "陶器",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pottery"
+    },
+    {
+        "zh":  "定量的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "quantitative"
+    },
+    {
+        "zh":  "景象、奇观",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "spectacle"
+    },
+    {
+        "zh":  "条纹",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stripe"
+    },
+    {
+        "zh":  "观点",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "viewpoint"
+    },
+    {
+        "zh":  "交替",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "alternate"
+    },
+    {
+        "zh":  "服务员",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "attendant"
+    },
+    {
+        "zh":  "芭蕾舞",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ballet"
+    },
+    {
+        "zh":  "冲突",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "clash"
+    },
+    {
+        "zh":  "喜剧演员、滑稽的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "comic"
+    },
+    {
+        "zh":  "会聚、集中",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "converge"
+    },
+    {
+        "zh":  "通信",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "correspondence"
+    },
+    {
+        "zh":  "服装",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "costume"
+    },
+    {
+        "zh":  "指定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "designate"
+    },
+    {
+        "zh":  "前夕",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eve"
+    },
+    {
+        "zh":  "爆炸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "explode"
+    }
 ]

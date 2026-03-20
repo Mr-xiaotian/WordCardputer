@@ -1,352 +1,352 @@
-[
-  {
-    "word": "descent",
-    "zh": "下降",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "dessert",
-    "zh": "甜点",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "excursion",
-    "zh": "远足",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "expel",
-    "zh": "驱逐",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "fax",
-    "zh": "传真",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "fisherman",
-    "zh": "渔夫",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "fleet",
-    "zh": "舰队",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "graphic",
-    "zh": "图表",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "haul",
-    "zh": "拖、拉",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "hell",
-    "zh": "地狱",
-    "pos": "adverb",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "ingenious",
-    "zh": "精巧的、有独创性的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "kiss",
-    "zh": "亲吻",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "meditation",
-    "zh": "冥想",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "merchandise",
-    "zh": "商品",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "oppress",
-    "zh": "压迫",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "repetition",
-    "zh": "重复",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "rod",
-    "zh": "杆",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "rub",
-    "zh": "擦",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "script",
-    "zh": "脚本",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "smash",
-    "zh": "粉碎、打碎",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "solemn",
-    "zh": "庄严的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "solitary",
-    "zh": "孤独的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "successor",
-    "zh": "接班人",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "sway",
-    "zh": "影响、摇摆",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "testimony",
-    "zh": "证明",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "weed",
-    "zh": "杂草",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "auction",
-    "zh": "拍卖",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "clip",
-    "zh": "修剪、夹子",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "corrupt",
-    "zh": "腐败",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "garment",
-    "zh": "衣服",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "colonial",
-    "zh": "殖民地的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "conductor",
-    "zh": "指挥、导体",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "cripple",
-    "zh": "跛子、削弱",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mandate",
-    "zh": "授权",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "microscope",
-    "zh": "显微镜",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "reign",
-    "zh": "统治",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "verdict",
-    "zh": "裁决",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "augment",
-    "zh": "增加",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "carve",
-    "zh": "雕刻",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "compile",
-    "zh": "编译",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "foremost",
-    "zh": "最重要的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "gasp",
-    "zh": "喘气、喘息",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "hygiene",
-    "zh": "卫生",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "negligible",
-    "zh": "微不足道的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "penny",
-    "zh": "便士",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "soap",
-    "zh": "肥皂",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "statesman",
-    "zh": "政治家",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "stationary",
-    "zh": "稳定的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "tentative",
-    "zh": "暂时的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "uphold",
-    "zh": "维护",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  }
+﻿[
+    {
+        "zh":  "下降",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "descent"
+    },
+    {
+        "zh":  "甜点",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dessert"
+    },
+    {
+        "zh":  "远足",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "excursion"
+    },
+    {
+        "zh":  "驱逐",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "expel"
+    },
+    {
+        "zh":  "传真",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fax"
+    },
+    {
+        "zh":  "渔夫",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fisherman"
+    },
+    {
+        "zh":  "舰队",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fleet"
+    },
+    {
+        "zh":  "图表",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "graphic"
+    },
+    {
+        "zh":  "拖、拉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "haul"
+    },
+    {
+        "zh":  "地狱",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hell"
+    },
+    {
+        "zh":  "精巧的、有独创性的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ingenious"
+    },
+    {
+        "zh":  "亲吻",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "kiss"
+    },
+    {
+        "zh":  "冥想",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "meditation"
+    },
+    {
+        "zh":  "商品",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "merchandise"
+    },
+    {
+        "zh":  "压迫",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "oppress"
+    },
+    {
+        "zh":  "重复",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "repetition"
+    },
+    {
+        "zh":  "杆",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rod"
+    },
+    {
+        "zh":  "擦",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rub"
+    },
+    {
+        "zh":  "脚本",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "script"
+    },
+    {
+        "zh":  "粉碎、打碎",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "smash"
+    },
+    {
+        "zh":  "庄严的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "solemn"
+    },
+    {
+        "zh":  "孤独的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "solitary"
+    },
+    {
+        "zh":  "接班人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "successor"
+    },
+    {
+        "zh":  "影响、摇摆",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sway"
+    },
+    {
+        "zh":  "证明",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "testimony"
+    },
+    {
+        "zh":  "杂草",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "weed"
+    },
+    {
+        "zh":  "拍卖",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "auction"
+    },
+    {
+        "zh":  "修剪、夹子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "clip"
+    },
+    {
+        "zh":  "腐败",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "corrupt"
+    },
+    {
+        "zh":  "衣服",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "garment"
+    },
+    {
+        "zh":  "殖民地的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "colonial"
+    },
+    {
+        "zh":  "指挥、导体",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "conductor"
+    },
+    {
+        "zh":  "跛子、削弱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cripple"
+    },
+    {
+        "zh":  "授权",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mandate"
+    },
+    {
+        "zh":  "显微镜",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "microscope"
+    },
+    {
+        "zh":  "统治",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reign"
+    },
+    {
+        "zh":  "裁决",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "verdict"
+    },
+    {
+        "zh":  "增加",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "augment"
+    },
+    {
+        "zh":  "雕刻",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "carve"
+    },
+    {
+        "zh":  "编译",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "compile"
+    },
+    {
+        "zh":  "最重要的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "foremost"
+    },
+    {
+        "zh":  "喘气、喘息",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "gasp"
+    },
+    {
+        "zh":  "卫生",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hygiene"
+    },
+    {
+        "zh":  "微不足道的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "negligible"
+    },
+    {
+        "zh":  "便士",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "penny"
+    },
+    {
+        "zh":  "肥皂",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "soap"
+    },
+    {
+        "zh":  "政治家",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "statesman"
+    },
+    {
+        "zh":  "稳定的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stationary"
+    },
+    {
+        "zh":  "暂时的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tentative"
+    },
+    {
+        "zh":  "维护",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "uphold"
+    }
 ]

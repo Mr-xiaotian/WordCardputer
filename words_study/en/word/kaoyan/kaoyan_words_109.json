@@ -1,352 +1,352 @@
-[
-  {
-    "word": "inflict",
-    "zh": "使遭受、折磨",
-    "pos": "verb",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "influenza",
-    "zh": "流行性感冒",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "infrared",
-    "zh": "红外线的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "instalment",
-    "zh": "分期付款",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "Internet",
-    "zh": "因特网",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "invoke",
-    "zh": "请求、援引",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "January",
-    "zh": "一月",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "jug",
-    "zh": "罐",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "July",
-    "zh": "七月",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "June",
-    "zh": "六月",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "lash",
-    "zh": "鞭打、抨击、睫毛",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "Latin",
-    "zh": "拉丁语、拉丁语的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "leading",
-    "zh": "主要的、领导的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "left",
-    "zh": "左边、向左",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "linen",
-    "zh": "亚麻布",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "living",
-    "zh": "生活",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "living room",
-    "zh": "客厅",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "locomotive",
-    "zh": "机车",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "magistrate",
-    "zh": "地方法官",
-    "pos": "adverb",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "majesty",
-    "zh": "威严",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "March",
-    "zh": "三月",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "married",
-    "zh": "已婚的、婚姻的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "Marxist",
-    "zh": "马克思主义的",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mathematics",
-    "zh": "数学",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "May",
-    "zh": "五月",
-    "pos": "adjective",
-    "phonetic": "/meɪ/",
-    "score": 5
-  },
-  {
-    "word": "means",
-    "zh": "手段",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "media",
-    "zh": "传播媒介",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "millimetre",
-    "zh": "毫米",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mischief",
-    "zh": "恶作剧",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "missing",
-    "zh": "失踪的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mistress",
-    "zh": "情妇",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mob",
-    "zh": "暴民",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mobilise",
-    "zh": "动员",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "modernisation",
-    "zh": "现代化",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "Monday",
-    "zh": "星期一",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mug",
-    "zh": "杯",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "naughty",
-    "zh": "淘气的",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "normalisation",
-    "zh": "正常化",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "northwest",
-    "zh": "西北",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "November",
-    "zh": "十一月",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "oar",
-    "zh": "桨",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "o'clock",
-    "zh": "点钟",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "October",
-    "zh": "十月",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "odds",
-    "zh": "可能性",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "ought to",
-    "zh": "应该",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "outskirts",
-    "zh": "郊区",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "overt",
-    "zh": "公开的、明显的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "owing to",
-    "zh": "由于",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "pants",
-    "zh": "气喘吁吁",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "parasite",
-    "zh": "寄生虫",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  }
+﻿[
+    {
+        "zh":  "使遭受、折磨",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "inflict"
+    },
+    {
+        "zh":  "流行性感冒",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "influenza"
+    },
+    {
+        "zh":  "红外线的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "infrared"
+    },
+    {
+        "zh":  "分期付款",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "instalment"
+    },
+    {
+        "zh":  "因特网",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "Internet"
+    },
+    {
+        "zh":  "请求、援引",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "invoke"
+    },
+    {
+        "zh":  "一月",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "January"
+    },
+    {
+        "zh":  "罐",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "jug"
+    },
+    {
+        "zh":  "七月",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "July"
+    },
+    {
+        "zh":  "六月",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "June"
+    },
+    {
+        "zh":  "鞭打、抨击、睫毛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lash"
+    },
+    {
+        "zh":  "拉丁语、拉丁语的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "Latin"
+    },
+    {
+        "zh":  "主要的、领导的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "leading"
+    },
+    {
+        "zh":  "左边、向左",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "left"
+    },
+    {
+        "zh":  "亚麻布",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "linen"
+    },
+    {
+        "zh":  "生活",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "living"
+    },
+    {
+        "zh":  "客厅",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "living room"
+    },
+    {
+        "zh":  "机车",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "locomotive"
+    },
+    {
+        "zh":  "地方法官",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "magistrate"
+    },
+    {
+        "zh":  "威严",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "majesty"
+    },
+    {
+        "zh":  "三月",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "March"
+    },
+    {
+        "zh":  "已婚的、婚姻的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "married"
+    },
+    {
+        "zh":  "马克思主义的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "Marxist"
+    },
+    {
+        "zh":  "数学",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mathematics"
+    },
+    {
+        "zh":  "五月",
+        "pos":  "adjective",
+        "phonetic":  "/meɪ/",
+        "score":  5,
+        "en":  "May"
+    },
+    {
+        "zh":  "手段",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "means"
+    },
+    {
+        "zh":  "传播媒介",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "media"
+    },
+    {
+        "zh":  "毫米",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "millimetre"
+    },
+    {
+        "zh":  "恶作剧",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mischief"
+    },
+    {
+        "zh":  "失踪的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "missing"
+    },
+    {
+        "zh":  "情妇",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mistress"
+    },
+    {
+        "zh":  "暴民",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mob"
+    },
+    {
+        "zh":  "动员",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mobilise"
+    },
+    {
+        "zh":  "现代化",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "modernisation"
+    },
+    {
+        "zh":  "星期一",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "Monday"
+    },
+    {
+        "zh":  "杯",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mug"
+    },
+    {
+        "zh":  "淘气的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "naughty"
+    },
+    {
+        "zh":  "正常化",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "normalisation"
+    },
+    {
+        "zh":  "西北",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "northwest"
+    },
+    {
+        "zh":  "十一月",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "November"
+    },
+    {
+        "zh":  "桨",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "oar"
+    },
+    {
+        "zh":  "点钟",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "o\u0027clock"
+    },
+    {
+        "zh":  "十月",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "October"
+    },
+    {
+        "zh":  "可能性",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "odds"
+    },
+    {
+        "zh":  "应该",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ought to"
+    },
+    {
+        "zh":  "郊区",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "outskirts"
+    },
+    {
+        "zh":  "公开的、明显的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "overt"
+    },
+    {
+        "zh":  "由于",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "owing to"
+    },
+    {
+        "zh":  "气喘吁吁",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pants"
+    },
+    {
+        "zh":  "寄生虫",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "parasite"
+    }
 ]

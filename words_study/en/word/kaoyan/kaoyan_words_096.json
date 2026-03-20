@@ -1,352 +1,352 @@
-[
-  {
-    "word": "pity",
-    "zh": "同情",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "plagiarism",
-    "zh": "剽窃",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "plight",
-    "zh": "困境",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "portfolio",
-    "zh": "投资组合、作品集、文件夹",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "postman",
-    "zh": "邮递员",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "prototype",
-    "zh": "原型",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "punctual",
-    "zh": "准时的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "redundant",
-    "zh": "解雇的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "rotten",
-    "zh": "腐烂的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "scarf",
-    "zh": "围巾",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "shabby",
-    "zh": "破旧的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "shave",
-    "zh": "刮、剃",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "shipment",
-    "zh": "装运、货物",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "sore",
-    "zh": "痛处、疼痛的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "spit",
-    "zh": "吐出、吐口水",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "steak",
-    "zh": "牛排",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "storey",
-    "zh": "楼层",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "sturdy",
-    "zh": "坚固的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "toe",
-    "zh": "脚趾",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "tumor",
-    "zh": "肿块",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "turmoil",
-    "zh": "混乱",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "wary",
-    "zh": "机警的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "whistle",
-    "zh": "口哨、汽笛",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "wolf",
-    "zh": "狼",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "geometry",
-    "zh": "几何",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "menace",
-    "zh": "威胁",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "radius",
-    "zh": "半径",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "semiconductor",
-    "zh": "半导体",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "statute",
-    "zh": "法规",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "barn",
-    "zh": "谷仓",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "jurisdiction",
-    "zh": "管辖权",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "nitrogen",
-    "zh": "氮",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "scorn",
-    "zh": "轻蔑、鄙视",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "shove",
-    "zh": "推",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "tram",
-    "zh": "有轨电车",
-    "pos": "verb",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "abound",
-    "zh": "充满",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "cape",
-    "zh": "披肩、海角",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "cherry",
-    "zh": "樱桃",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "dock",
-    "zh": "码头",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "eminent",
-    "zh": "著名的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "ending",
-    "zh": "结局",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "epoch",
-    "zh": "时代",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "hen",
-    "zh": "母鸡",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "intermittent",
-    "zh": "断断续续的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "jaw",
-    "zh": "下巴",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "pepper",
-    "zh": "辣椒",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "purify",
-    "zh": "涤罪",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "rhetoric",
-    "zh": "修辞",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "rope",
-    "zh": "绳索",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "sideways",
-    "zh": "侧身地、斜向一边的",
-    "pos": "adverb",
-    "phonetic": "/.../",
-    "score": 5
-  }
+﻿[
+    {
+        "zh":  "同情",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pity"
+    },
+    {
+        "zh":  "剽窃",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "plagiarism"
+    },
+    {
+        "zh":  "困境",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "plight"
+    },
+    {
+        "zh":  "投资组合、作品集、文件夹",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "portfolio"
+    },
+    {
+        "zh":  "邮递员",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "postman"
+    },
+    {
+        "zh":  "原型",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prototype"
+    },
+    {
+        "zh":  "准时的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "punctual"
+    },
+    {
+        "zh":  "解雇的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "redundant"
+    },
+    {
+        "zh":  "腐烂的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rotten"
+    },
+    {
+        "zh":  "围巾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scarf"
+    },
+    {
+        "zh":  "破旧的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shabby"
+    },
+    {
+        "zh":  "刮、剃",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shave"
+    },
+    {
+        "zh":  "装运、货物",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shipment"
+    },
+    {
+        "zh":  "痛处、疼痛的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sore"
+    },
+    {
+        "zh":  "吐出、吐口水",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "spit"
+    },
+    {
+        "zh":  "牛排",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "steak"
+    },
+    {
+        "zh":  "楼层",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "storey"
+    },
+    {
+        "zh":  "坚固的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sturdy"
+    },
+    {
+        "zh":  "脚趾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "toe"
+    },
+    {
+        "zh":  "肿块",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tumor"
+    },
+    {
+        "zh":  "混乱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "turmoil"
+    },
+    {
+        "zh":  "机警的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wary"
+    },
+    {
+        "zh":  "口哨、汽笛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "whistle"
+    },
+    {
+        "zh":  "狼",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wolf"
+    },
+    {
+        "zh":  "几何",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "geometry"
+    },
+    {
+        "zh":  "威胁",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "menace"
+    },
+    {
+        "zh":  "半径",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "radius"
+    },
+    {
+        "zh":  "半导体",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "semiconductor"
+    },
+    {
+        "zh":  "法规",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "statute"
+    },
+    {
+        "zh":  "谷仓",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "barn"
+    },
+    {
+        "zh":  "管辖权",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "jurisdiction"
+    },
+    {
+        "zh":  "氮",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nitrogen"
+    },
+    {
+        "zh":  "轻蔑、鄙视",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scorn"
+    },
+    {
+        "zh":  "推",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shove"
+    },
+    {
+        "zh":  "有轨电车",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tram"
+    },
+    {
+        "zh":  "充满",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "abound"
+    },
+    {
+        "zh":  "披肩、海角",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cape"
+    },
+    {
+        "zh":  "樱桃",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cherry"
+    },
+    {
+        "zh":  "码头",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dock"
+    },
+    {
+        "zh":  "著名的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eminent"
+    },
+    {
+        "zh":  "结局",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ending"
+    },
+    {
+        "zh":  "时代",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "epoch"
+    },
+    {
+        "zh":  "母鸡",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hen"
+    },
+    {
+        "zh":  "断断续续的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "intermittent"
+    },
+    {
+        "zh":  "下巴",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "jaw"
+    },
+    {
+        "zh":  "辣椒",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pepper"
+    },
+    {
+        "zh":  "涤罪",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "purify"
+    },
+    {
+        "zh":  "修辞",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rhetoric"
+    },
+    {
+        "zh":  "绳索",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rope"
+    },
+    {
+        "zh":  "侧身地、斜向一边的",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sideways"
+    }
 ]

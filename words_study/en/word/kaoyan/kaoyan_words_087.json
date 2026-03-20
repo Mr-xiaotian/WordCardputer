@@ -1,352 +1,352 @@
-[
-  {
-    "word": "sober",
-    "zh": "清醒",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "stall",
-    "zh": "货摊、失速、拖延",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "tomb",
-    "zh": "坟墓",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "tropic",
-    "zh": "热带",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "underneath",
-    "zh": "在下面",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "antique",
-    "zh": "古董",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "articulate",
-    "zh": "善于表达的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "bake",
-    "zh": "烤",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "blanket",
-    "zh": "毯子",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "blast",
-    "zh": "爆炸",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "bless",
-    "zh": "保佑",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "carrot",
-    "zh": "胡萝卜",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "characterise",
-    "zh": "以…为特征",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "clumsy",
-    "zh": "笨拙的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "concede",
-    "zh": "承认",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "enclose",
-    "zh": "附上",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "envisage",
-    "zh": "想像",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "isolate",
-    "zh": "隔离",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "oriental",
-    "zh": "东方的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "pasture",
-    "zh": "牧场",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "raid",
-    "zh": "袭击",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "refuge",
-    "zh": "避难",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "resolute",
-    "zh": "坚决的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "rug",
-    "zh": "地毯",
-    "pos": "adverb",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "sarcastic",
-    "zh": "讽刺的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "scrap",
-    "zh": "废品、报废",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "shatter",
-    "zh": "粉碎",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "trumpet",
-    "zh": "喇叭、鼓吹",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "aloud",
-    "zh": "大声地",
-    "pos": "adverb",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "ape",
-    "zh": "猿",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "audio",
-    "zh": "音频",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "basement",
-    "zh": "地下室",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "blend",
-    "zh": "混合",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "bound",
-    "zh": "跳跃、界限",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "breeze",
-    "zh": "微风、轻松",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "cushion",
-    "zh": "垫子",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "dazzle",
-    "zh": "使眼花",
-    "pos": "verb",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "deplete",
-    "zh": "耗尽",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "dial",
-    "zh": "拨号",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "discrepancy",
-    "zh": "差异",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "disgust",
-    "zh": "厌恶",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "donkey",
-    "zh": "驴",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "drawer",
-    "zh": "抽屉",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "drone",
-    "zh": "无人驾驶飞机",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "eject",
-    "zh": "喷射、驱逐",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "endow",
-    "zh": "赋予",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "erosion",
-    "zh": "侵蚀",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "flush",
-    "zh": "冲洗",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "glitter",
-    "zh": "闪烁",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "goodbye",
-    "zh": "再见",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  }
+﻿[
+    {
+        "zh":  "清醒",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sober"
+    },
+    {
+        "zh":  "货摊、失速、拖延",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stall"
+    },
+    {
+        "zh":  "坟墓",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tomb"
+    },
+    {
+        "zh":  "热带",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tropic"
+    },
+    {
+        "zh":  "在下面",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "underneath"
+    },
+    {
+        "zh":  "古董",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "antique"
+    },
+    {
+        "zh":  "善于表达的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "articulate"
+    },
+    {
+        "zh":  "烤",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bake"
+    },
+    {
+        "zh":  "毯子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "blanket"
+    },
+    {
+        "zh":  "爆炸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "blast"
+    },
+    {
+        "zh":  "保佑",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bless"
+    },
+    {
+        "zh":  "胡萝卜",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "carrot"
+    },
+    {
+        "zh":  "以…为特征",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "characterise"
+    },
+    {
+        "zh":  "笨拙的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "clumsy"
+    },
+    {
+        "zh":  "承认",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "concede"
+    },
+    {
+        "zh":  "附上",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "enclose"
+    },
+    {
+        "zh":  "想像",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "envisage"
+    },
+    {
+        "zh":  "隔离",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "isolate"
+    },
+    {
+        "zh":  "东方的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "oriental"
+    },
+    {
+        "zh":  "牧场",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pasture"
+    },
+    {
+        "zh":  "袭击",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "raid"
+    },
+    {
+        "zh":  "避难",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "refuge"
+    },
+    {
+        "zh":  "坚决的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "resolute"
+    },
+    {
+        "zh":  "地毯",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rug"
+    },
+    {
+        "zh":  "讽刺的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sarcastic"
+    },
+    {
+        "zh":  "废品、报废",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scrap"
+    },
+    {
+        "zh":  "粉碎",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shatter"
+    },
+    {
+        "zh":  "喇叭、鼓吹",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "trumpet"
+    },
+    {
+        "zh":  "大声地",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "aloud"
+    },
+    {
+        "zh":  "猿",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ape"
+    },
+    {
+        "zh":  "音频",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "audio"
+    },
+    {
+        "zh":  "地下室",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "basement"
+    },
+    {
+        "zh":  "混合",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "blend"
+    },
+    {
+        "zh":  "跳跃、界限",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bound"
+    },
+    {
+        "zh":  "微风、轻松",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "breeze"
+    },
+    {
+        "zh":  "垫子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cushion"
+    },
+    {
+        "zh":  "使眼花",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dazzle"
+    },
+    {
+        "zh":  "耗尽",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deplete"
+    },
+    {
+        "zh":  "拨号",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dial"
+    },
+    {
+        "zh":  "差异",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "discrepancy"
+    },
+    {
+        "zh":  "厌恶",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "disgust"
+    },
+    {
+        "zh":  "驴",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "donkey"
+    },
+    {
+        "zh":  "抽屉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "drawer"
+    },
+    {
+        "zh":  "无人驾驶飞机",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "drone"
+    },
+    {
+        "zh":  "喷射、驱逐",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eject"
+    },
+    {
+        "zh":  "赋予",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "endow"
+    },
+    {
+        "zh":  "侵蚀",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "erosion"
+    },
+    {
+        "zh":  "冲洗",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "flush"
+    },
+    {
+        "zh":  "闪烁",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "glitter"
+    },
+    {
+        "zh":  "再见",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "goodbye"
+    }
 ]

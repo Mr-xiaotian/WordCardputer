@@ -1,352 +1,352 @@
-[
-  {
-    "word": "your",
-    "zh": "你的",
-    "pos": "adjective",
-    "phonetic": "/jɔːr/",
-    "score": 3
-  },
-  {
-    "word": "use",
-    "zh": "使用",
-    "pos": "verb",
-    "phonetic": "/juːs/",
-    "score": 3
-  },
-  {
-    "word": "all",
-    "zh": "一切",
-    "pos": "noun",
-    "phonetic": "/ɔːl/",
-    "score": 3
-  },
-  {
-    "word": "follow",
-    "zh": "跟随",
-    "pos": "verb",
-    "phonetic": "/ˈfɒloʊ/",
-    "score": 3
-  },
-  {
-    "word": "she",
-    "zh": "她",
-    "pos": "noun",
-    "phonetic": "/ʃiː/",
-    "score": 3
-  },
-  {
-    "word": "who",
-    "zh": "谁",
-    "pos": "noun",
-    "phonetic": "/huː/",
-    "score": 3
-  },
-  {
-    "word": "each",
-    "zh": "每个",
-    "pos": "noun",
-    "phonetic": "/iːtʃ/",
-    "score": 3
-  },
-  {
-    "word": "some",
-    "zh": "一些",
-    "pos": "noun",
-    "phonetic": "/sʌm/",
-    "score": 3
-  },
-  {
-    "word": "other",
-    "zh": "其他",
-    "pos": "noun",
-    "phonetic": "/ˈʌðər/",
-    "score": 3
-  },
-  {
-    "word": "if",
-    "zh": "如果、是否",
-    "pos": "verb",
-    "phonetic": "/ɪf/",
-    "score": 3
-  },
-  {
-    "word": "year",
-    "zh": "年",
-    "pos": "noun",
-    "phonetic": "/jɪr/",
-    "score": 3
-  },
-  {
-    "word": "write",
-    "zh": "写",
-    "pos": "verb",
-    "phonetic": "/raɪt/",
-    "score": 3
-  },
-  {
-    "word": "new",
-    "zh": "新的",
-    "pos": "adjective",
-    "phonetic": "/nuː/",
-    "score": 3
-  },
-  {
-    "word": "section",
-    "zh": "部分、地段",
-    "pos": "noun",
-    "phonetic": "/ˈsekʃn/",
-    "score": 3
-  },
-  {
-    "word": "its",
-    "zh": "它的",
-    "pos": "adjective",
-    "phonetic": "/ɪts/",
-    "score": 3
-  },
-  {
-    "word": "word",
-    "zh": "说话、单词",
-    "pos": "noun",
-    "phonetic": "/wɜːrd/",
-    "score": 3
-  },
-  {
-    "word": "mark",
-    "zh": "标记",
-    "pos": "noun",
-    "phonetic": "/mɑːrk/",
-    "score": 3
-  },
-  {
-    "word": "may",
-    "zh": "可能、祝",
-    "pos": "adjective",
-    "phonetic": "/meɪ/",
-    "score": 3
-  },
-  {
-    "word": "take",
-    "zh": "拿走、携带",
-    "pos": "verb",
-    "phonetic": "/teɪk/",
-    "score": 3
-  },
-  {
-    "word": "many",
-    "zh": "很多",
-    "pos": "adjective",
-    "phonetic": "/ˈmeni/",
-    "score": 3
-  },
-  {
-    "word": "most",
-    "zh": "最多的、大多数的",
-    "pos": "adjective",
-    "phonetic": "/moʊst/",
-    "score": 3
-  },
-  {
-    "word": "read",
-    "zh": "读",
-    "pos": "verb",
-    "phonetic": "/riːd/",
-    "score": 3
-  },
-  {
-    "word": "up",
-    "zh": "在...上、完成",
-    "pos": "noun",
-    "phonetic": "/ʌp/",
-    "score": 3
-  },
-  {
-    "word": "her",
-    "zh": "她的",
-    "pos": "noun",
-    "phonetic": "/hɜːr/",
-    "score": 3
-  },
-  {
-    "word": "only",
-    "zh": "仅仅",
-    "pos": "adjective",
-    "phonetic": "/ˈoʊnli/",
-    "score": 3
-  },
-  {
-    "word": "would",
-    "zh": "愿意",
-    "pos": "noun",
-    "phonetic": "/wʊd/",
-    "score": 3
-  },
-  {
-    "word": "go",
-    "zh": "去",
-    "pos": "verb",
-    "phonetic": "/ɡoʊ/",
-    "score": 3
-  },
-  {
-    "word": "hear",
-    "zh": "听到",
-    "pos": "verb",
-    "phonetic": "/hɪr/",
-    "score": 3
-  },
-  {
-    "word": "give",
-    "zh": "给",
-    "pos": "verb",
-    "phonetic": "/ɡɪv/",
-    "score": 3
-  },
-  {
-    "word": "base",
-    "zh": "基础、基地",
-    "pos": "adverb",
-    "phonetic": "/beɪs/",
-    "score": 3
-  },
-  {
-    "word": "no",
-    "zh": "否定",
-    "pos": "noun",
-    "phonetic": "/noʊ/",
-    "score": 3
-  },
-  {
-    "word": "so",
-    "zh": "因此",
-    "pos": "noun",
-    "phonetic": "/soʊ/",
-    "score": 3
-  },
-  {
-    "word": "get",
-    "zh": "得到",
-    "pos": "verb",
-    "phonetic": "/ɡet/",
-    "score": 3
-  },
-  {
-    "word": "two",
-    "zh": "二",
-    "pos": "noun",
-    "phonetic": "/tuː/",
-    "score": 3
-  },
-  {
-    "word": "student",
-    "zh": "学生",
-    "pos": "adjective",
-    "phonetic": "/ˈstuːdnt/",
-    "score": 3
-  },
-  {
-    "word": "our",
-    "zh": "我们的",
-    "pos": "adjective",
-    "phonetic": "/ˈaʊər/",
-    "score": 3
-  },
-  {
-    "word": "out",
-    "zh": "出去、外面",
-    "pos": "noun",
-    "phonetic": "/aʊt/",
-    "score": 3
-  },
-  {
-    "word": "just",
-    "zh": "只、仅仅",
-    "pos": "noun",
-    "phonetic": "/dʒʌst/",
-    "score": 3
-  },
-  {
-    "word": "child",
-    "zh": "孩子",
-    "pos": "noun",
-    "phonetic": "/tʃaɪld/",
-    "score": 3
-  },
-  {
-    "word": "how",
-    "zh": "如何",
-    "pos": "noun",
-    "phonetic": "/haʊ/",
-    "score": 3
-  },
-  {
-    "word": "find",
-    "zh": "发现",
-    "pos": "verb",
-    "phonetic": "/faɪnd/",
-    "score": 3
-  },
-  {
-    "word": "way",
-    "zh": "方式",
-    "pos": "adjective",
-    "phonetic": "/weɪ/",
-    "score": 3
-  },
-  {
-    "word": "into",
-    "zh": "进入内部",
-    "pos": "noun",
-    "phonetic": "/ˈɪntuː/",
-    "score": 3
-  },
-  {
-    "word": "because",
-    "zh": "因为",
-    "pos": "noun",
-    "phonetic": "/bɪˈkɒz/",
-    "score": 4
-  },
-  {
-    "word": "sheet",
-    "zh": "被单、（一）张、纸",
-    "pos": "verb",
-    "phonetic": "/ʃiːt/",
-    "score": 4
-  },
-  {
-    "word": "man",
-    "zh": "男人",
-    "pos": "noun",
-    "phonetic": "/mæn/",
-    "score": 4
-  },
-  {
-    "word": "like",
-    "zh": "喜欢、像",
-    "pos": "noun",
-    "phonetic": "/laɪk/",
-    "score": 4
-  },
-  {
-    "word": "through",
-    "zh": "通过、穿过",
-    "pos": "noun",
-    "phonetic": "/θruː/",
-    "score": 4
-  },
-  {
-    "word": "woman",
-    "zh": "女人",
-    "pos": "noun",
-    "phonetic": "/ˈwʊmən/",
-    "score": 4
-  },
-  {
-    "word": "school",
-    "zh": "学校",
-    "pos": "noun",
-    "phonetic": "/skuːl/",
-    "score": 4
-  }
+﻿[
+    {
+        "zh":  "你的",
+        "pos":  "adjective",
+        "phonetic":  "/jɔːr/",
+        "score":  3,
+        "en":  "your"
+    },
+    {
+        "zh":  "使用",
+        "pos":  "verb",
+        "phonetic":  "/juːs/",
+        "score":  3,
+        "en":  "use"
+    },
+    {
+        "zh":  "一切",
+        "pos":  "noun",
+        "phonetic":  "/ɔːl/",
+        "score":  3,
+        "en":  "all"
+    },
+    {
+        "zh":  "跟随",
+        "pos":  "verb",
+        "phonetic":  "/ˈfɒloʊ/",
+        "score":  3,
+        "en":  "follow"
+    },
+    {
+        "zh":  "她",
+        "pos":  "noun",
+        "phonetic":  "/ʃiː/",
+        "score":  3,
+        "en":  "she"
+    },
+    {
+        "zh":  "谁",
+        "pos":  "noun",
+        "phonetic":  "/huː/",
+        "score":  3,
+        "en":  "who"
+    },
+    {
+        "zh":  "每个",
+        "pos":  "noun",
+        "phonetic":  "/iːtʃ/",
+        "score":  3,
+        "en":  "each"
+    },
+    {
+        "zh":  "一些",
+        "pos":  "noun",
+        "phonetic":  "/sʌm/",
+        "score":  3,
+        "en":  "some"
+    },
+    {
+        "zh":  "其他",
+        "pos":  "noun",
+        "phonetic":  "/ˈʌðər/",
+        "score":  3,
+        "en":  "other"
+    },
+    {
+        "zh":  "如果、是否",
+        "pos":  "verb",
+        "phonetic":  "/ɪf/",
+        "score":  3,
+        "en":  "if"
+    },
+    {
+        "zh":  "年",
+        "pos":  "noun",
+        "phonetic":  "/jɪr/",
+        "score":  3,
+        "en":  "year"
+    },
+    {
+        "zh":  "写",
+        "pos":  "verb",
+        "phonetic":  "/raɪt/",
+        "score":  3,
+        "en":  "write"
+    },
+    {
+        "zh":  "新的",
+        "pos":  "adjective",
+        "phonetic":  "/nuː/",
+        "score":  3,
+        "en":  "new"
+    },
+    {
+        "zh":  "部分、地段",
+        "pos":  "noun",
+        "phonetic":  "/ˈsekʃn/",
+        "score":  3,
+        "en":  "section"
+    },
+    {
+        "zh":  "它的",
+        "pos":  "adjective",
+        "phonetic":  "/ɪts/",
+        "score":  3,
+        "en":  "its"
+    },
+    {
+        "zh":  "说话、单词",
+        "pos":  "noun",
+        "phonetic":  "/wɜːrd/",
+        "score":  3,
+        "en":  "word"
+    },
+    {
+        "zh":  "标记",
+        "pos":  "noun",
+        "phonetic":  "/mɑːrk/",
+        "score":  3,
+        "en":  "mark"
+    },
+    {
+        "zh":  "可能、祝",
+        "pos":  "adjective",
+        "phonetic":  "/meɪ/",
+        "score":  3,
+        "en":  "may"
+    },
+    {
+        "zh":  "拿走、携带",
+        "pos":  "verb",
+        "phonetic":  "/teɪk/",
+        "score":  3,
+        "en":  "take"
+    },
+    {
+        "zh":  "很多",
+        "pos":  "adjective",
+        "phonetic":  "/ˈmeni/",
+        "score":  3,
+        "en":  "many"
+    },
+    {
+        "zh":  "最多的、大多数的",
+        "pos":  "adjective",
+        "phonetic":  "/moʊst/",
+        "score":  3,
+        "en":  "most"
+    },
+    {
+        "zh":  "读",
+        "pos":  "verb",
+        "phonetic":  "/riːd/",
+        "score":  3,
+        "en":  "read"
+    },
+    {
+        "zh":  "在...上、完成",
+        "pos":  "noun",
+        "phonetic":  "/ʌp/",
+        "score":  3,
+        "en":  "up"
+    },
+    {
+        "zh":  "她的",
+        "pos":  "noun",
+        "phonetic":  "/hɜːr/",
+        "score":  3,
+        "en":  "her"
+    },
+    {
+        "zh":  "仅仅",
+        "pos":  "adjective",
+        "phonetic":  "/ˈoʊnli/",
+        "score":  3,
+        "en":  "only"
+    },
+    {
+        "zh":  "愿意",
+        "pos":  "noun",
+        "phonetic":  "/wʊd/",
+        "score":  3,
+        "en":  "would"
+    },
+    {
+        "zh":  "去",
+        "pos":  "verb",
+        "phonetic":  "/ɡoʊ/",
+        "score":  3,
+        "en":  "go"
+    },
+    {
+        "zh":  "听到",
+        "pos":  "verb",
+        "phonetic":  "/hɪr/",
+        "score":  3,
+        "en":  "hear"
+    },
+    {
+        "zh":  "给",
+        "pos":  "verb",
+        "phonetic":  "/ɡɪv/",
+        "score":  3,
+        "en":  "give"
+    },
+    {
+        "zh":  "基础、基地",
+        "pos":  "adverb",
+        "phonetic":  "/beɪs/",
+        "score":  3,
+        "en":  "base"
+    },
+    {
+        "zh":  "否定",
+        "pos":  "noun",
+        "phonetic":  "/noʊ/",
+        "score":  3,
+        "en":  "no"
+    },
+    {
+        "zh":  "因此",
+        "pos":  "noun",
+        "phonetic":  "/soʊ/",
+        "score":  3,
+        "en":  "so"
+    },
+    {
+        "zh":  "得到",
+        "pos":  "verb",
+        "phonetic":  "/ɡet/",
+        "score":  3,
+        "en":  "get"
+    },
+    {
+        "zh":  "二",
+        "pos":  "noun",
+        "phonetic":  "/tuː/",
+        "score":  3,
+        "en":  "two"
+    },
+    {
+        "zh":  "学生",
+        "pos":  "adjective",
+        "phonetic":  "/ˈstuːdnt/",
+        "score":  3,
+        "en":  "student"
+    },
+    {
+        "zh":  "我们的",
+        "pos":  "adjective",
+        "phonetic":  "/ˈaʊər/",
+        "score":  3,
+        "en":  "our"
+    },
+    {
+        "zh":  "出去、外面",
+        "pos":  "noun",
+        "phonetic":  "/aʊt/",
+        "score":  3,
+        "en":  "out"
+    },
+    {
+        "zh":  "只、仅仅",
+        "pos":  "noun",
+        "phonetic":  "/dʒʌst/",
+        "score":  3,
+        "en":  "just"
+    },
+    {
+        "zh":  "孩子",
+        "pos":  "noun",
+        "phonetic":  "/tʃaɪld/",
+        "score":  3,
+        "en":  "child"
+    },
+    {
+        "zh":  "如何",
+        "pos":  "noun",
+        "phonetic":  "/haʊ/",
+        "score":  3,
+        "en":  "how"
+    },
+    {
+        "zh":  "发现",
+        "pos":  "verb",
+        "phonetic":  "/faɪnd/",
+        "score":  3,
+        "en":  "find"
+    },
+    {
+        "zh":  "方式",
+        "pos":  "adjective",
+        "phonetic":  "/weɪ/",
+        "score":  3,
+        "en":  "way"
+    },
+    {
+        "zh":  "进入内部",
+        "pos":  "noun",
+        "phonetic":  "/ˈɪntuː/",
+        "score":  3,
+        "en":  "into"
+    },
+    {
+        "zh":  "因为",
+        "pos":  "noun",
+        "phonetic":  "/bɪˈkɒz/",
+        "score":  4,
+        "en":  "because"
+    },
+    {
+        "zh":  "被单、（一）张、纸",
+        "pos":  "verb",
+        "phonetic":  "/ʃiːt/",
+        "score":  4,
+        "en":  "sheet"
+    },
+    {
+        "zh":  "男人",
+        "pos":  "noun",
+        "phonetic":  "/mæn/",
+        "score":  4,
+        "en":  "man"
+    },
+    {
+        "zh":  "喜欢、像",
+        "pos":  "noun",
+        "phonetic":  "/laɪk/",
+        "score":  4,
+        "en":  "like"
+    },
+    {
+        "zh":  "通过、穿过",
+        "pos":  "noun",
+        "phonetic":  "/θruː/",
+        "score":  4,
+        "en":  "through"
+    },
+    {
+        "zh":  "女人",
+        "pos":  "noun",
+        "phonetic":  "/ˈwʊmən/",
+        "score":  4,
+        "en":  "woman"
+    },
+    {
+        "zh":  "学校",
+        "pos":  "noun",
+        "phonetic":  "/skuːl/",
+        "score":  4,
+        "en":  "school"
+    }
 ]

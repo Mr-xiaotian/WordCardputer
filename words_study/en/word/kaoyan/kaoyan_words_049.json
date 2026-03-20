@@ -1,352 +1,352 @@
-[
-  {
-    "word": "nutrition",
-    "zh": "营养",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "suburb",
-    "zh": "市郊",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "foreigner",
-    "zh": "外国人",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "boundary",
-    "zh": "界限",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "conform",
-    "zh": "符合、遵照",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "exploit",
-    "zh": "开发、利用",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "gesture",
-    "zh": "手势、姿态",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "obligation",
-    "zh": "义务",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "sweet",
-    "zh": "甜的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "absent",
-    "zh": "不在场的、漫不经心的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "deficit",
-    "zh": "赤字",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mode",
-    "zh": "模式、状态",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "crude",
-    "zh": "粗鲁的、简陋的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mechanical",
-    "zh": "机械的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "govern",
-    "zh": "统治、决定",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "evident",
-    "zh": "明显的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "explosion",
-    "zh": "爆炸",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "render",
-    "zh": "使得、给予",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "layer",
-    "zh": "层",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "melt",
-    "zh": "融化、溶解",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "caution",
-    "zh": "谨慎、警告",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "transmit",
-    "zh": "传送、发射",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "automatic",
-    "zh": "自动的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "globe",
-    "zh": "球体、地球",
-    "pos": "adverb",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "division",
-    "zh": "分开、部门",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "proceed",
-    "zh": "继续进行",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "compel",
-    "zh": "迫使",
-    "pos": "verb",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "primitive",
-    "zh": "原始的、简单的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "steady",
-    "zh": "稳定的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "territory",
-    "zh": "领土、领域",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "gallery",
-    "zh": "画廊、长廊",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "lower",
-    "zh": "较低的、下级的",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "maintenance",
-    "zh": "维护",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "corner",
-    "zh": "角落",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "pop",
-    "zh": "流行的、突然出现",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "somewhere",
-    "zh": "在某处",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "accuse",
-    "zh": "控告",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "neutral",
-    "zh": "中立的、中性的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "renew",
-    "zh": "更新、补充",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "fifteen",
-    "zh": "十五",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "harvest",
-    "zh": "收获",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mouse",
-    "zh": "鼠",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "fox",
-    "zh": "狐狸",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "liquid",
-    "zh": "液体",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "ancestor",
-    "zh": "祖先",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "triumph",
-    "zh": "胜利",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "folk",
-    "zh": "民间音乐、人们",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "guilty",
-    "zh": "内疚",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "permission",
-    "zh": "允许、许可",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "pour",
-    "zh": "倾倒",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  }
+﻿[
+    {
+        "zh":  "营养",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nutrition"
+    },
+    {
+        "zh":  "市郊",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "suburb"
+    },
+    {
+        "zh":  "外国人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "foreigner"
+    },
+    {
+        "zh":  "界限",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "boundary"
+    },
+    {
+        "zh":  "符合、遵照",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "conform"
+    },
+    {
+        "zh":  "开发、利用",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "exploit"
+    },
+    {
+        "zh":  "手势、姿态",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "gesture"
+    },
+    {
+        "zh":  "义务",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "obligation"
+    },
+    {
+        "zh":  "甜的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sweet"
+    },
+    {
+        "zh":  "不在场的、漫不经心的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "absent"
+    },
+    {
+        "zh":  "赤字",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deficit"
+    },
+    {
+        "zh":  "模式、状态",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mode"
+    },
+    {
+        "zh":  "粗鲁的、简陋的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "crude"
+    },
+    {
+        "zh":  "机械的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mechanical"
+    },
+    {
+        "zh":  "统治、决定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "govern"
+    },
+    {
+        "zh":  "明显的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "evident"
+    },
+    {
+        "zh":  "爆炸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "explosion"
+    },
+    {
+        "zh":  "使得、给予",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "render"
+    },
+    {
+        "zh":  "层",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "layer"
+    },
+    {
+        "zh":  "融化、溶解",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "melt"
+    },
+    {
+        "zh":  "谨慎、警告",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "caution"
+    },
+    {
+        "zh":  "传送、发射",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "transmit"
+    },
+    {
+        "zh":  "自动的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "automatic"
+    },
+    {
+        "zh":  "球体、地球",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "globe"
+    },
+    {
+        "zh":  "分开、部门",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "division"
+    },
+    {
+        "zh":  "继续进行",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "proceed"
+    },
+    {
+        "zh":  "迫使",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "compel"
+    },
+    {
+        "zh":  "原始的、简单的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "primitive"
+    },
+    {
+        "zh":  "稳定的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "steady"
+    },
+    {
+        "zh":  "领土、领域",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "territory"
+    },
+    {
+        "zh":  "画廊、长廊",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "gallery"
+    },
+    {
+        "zh":  "较低的、下级的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lower"
+    },
+    {
+        "zh":  "维护",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "maintenance"
+    },
+    {
+        "zh":  "角落",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "corner"
+    },
+    {
+        "zh":  "流行的、突然出现",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pop"
+    },
+    {
+        "zh":  "在某处",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "somewhere"
+    },
+    {
+        "zh":  "控告",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "accuse"
+    },
+    {
+        "zh":  "中立的、中性的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "neutral"
+    },
+    {
+        "zh":  "更新、补充",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "renew"
+    },
+    {
+        "zh":  "十五",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fifteen"
+    },
+    {
+        "zh":  "收获",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "harvest"
+    },
+    {
+        "zh":  "鼠",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mouse"
+    },
+    {
+        "zh":  "狐狸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fox"
+    },
+    {
+        "zh":  "液体",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "liquid"
+    },
+    {
+        "zh":  "祖先",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ancestor"
+    },
+    {
+        "zh":  "胜利",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "triumph"
+    },
+    {
+        "zh":  "民间音乐、人们",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "folk"
+    },
+    {
+        "zh":  "内疚",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "guilty"
+    },
+    {
+        "zh":  "允许、许可",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "permission"
+    },
+    {
+        "zh":  "倾倒",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pour"
+    }
 ]

@@ -1,352 +1,352 @@
-[
-  {
-    "word": "selfish",
-    "zh": "自私的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "shrug",
-    "zh": "耸肩",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "tick",
-    "zh": "滴答声、蜱虫、一会儿、打勾",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "tile",
-    "zh": "瓷砖",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "umbrella",
-    "zh": "伞",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "verge",
-    "zh": "边缘",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "aisle",
-    "zh": "走廊",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "badge",
-    "zh": "徽章、象征",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "bean",
-    "zh": "豆",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "browse",
-    "zh": "浏览",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "bump",
-    "zh": "碰撞、肿块",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "bundle",
-    "zh": "包、束",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "carpenter",
-    "zh": "木匠",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "cloth",
-    "zh": "布",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "coke",
-    "zh": "焦炭",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "custody",
-    "zh": "监护、拘留",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "daylight",
-    "zh": "日光",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "divine",
-    "zh": "神圣的、绝妙的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "eccentric",
-    "zh": "古怪的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "elicit",
-    "zh": "引出",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "erode",
-    "zh": "侵蚀",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "eternal",
-    "zh": "永恒的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "fog",
-    "zh": "雾",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "foul",
-    "zh": "犯规、肮脏的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "fracture",
-    "zh": "断裂",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "graze",
-    "zh": "放牧",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "handkerchief",
-    "zh": "手帕",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "liver",
-    "zh": "肝脏",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "marvelous",
-    "zh": "非凡的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mentor",
-    "zh": "指导",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "miracle",
-    "zh": "奇迹",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "nominate",
-    "zh": "提名",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "notable",
-    "zh": "显赫的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "obedience",
-    "zh": "服从",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "ruler",
-    "zh": "统治者",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "spear",
-    "zh": "矛",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "sunshine",
-    "zh": "阳光",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "surrender",
-    "zh": "投降",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "taboo",
-    "zh": "禁忌",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "thirst",
-    "zh": "口渴、渴望",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "vegetation",
-    "zh": "植物",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "astronomy",
-    "zh": "天文学",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "chop",
-    "zh": "砍",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "doctrine",
-    "zh": "学说、教义",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "indignation",
-    "zh": "愤怒",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "prudent",
-    "zh": "谨慎的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "disposition",
-    "zh": "倾向、安排、性情",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "perplex",
-    "zh": "使困惑、使复杂化",
-    "pos": "verb",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "anchor",
-    "zh": "锚",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "damn",
-    "zh": "谴责、该死的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  }
+﻿[
+    {
+        "zh":  "自私的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "selfish"
+    },
+    {
+        "zh":  "耸肩",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shrug"
+    },
+    {
+        "zh":  "滴答声、蜱虫、一会儿、打勾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tick"
+    },
+    {
+        "zh":  "瓷砖",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tile"
+    },
+    {
+        "zh":  "伞",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "umbrella"
+    },
+    {
+        "zh":  "边缘",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "verge"
+    },
+    {
+        "zh":  "走廊",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "aisle"
+    },
+    {
+        "zh":  "徽章、象征",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "badge"
+    },
+    {
+        "zh":  "豆",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bean"
+    },
+    {
+        "zh":  "浏览",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "browse"
+    },
+    {
+        "zh":  "碰撞、肿块",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bump"
+    },
+    {
+        "zh":  "包、束",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bundle"
+    },
+    {
+        "zh":  "木匠",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "carpenter"
+    },
+    {
+        "zh":  "布",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cloth"
+    },
+    {
+        "zh":  "焦炭",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "coke"
+    },
+    {
+        "zh":  "监护、拘留",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "custody"
+    },
+    {
+        "zh":  "日光",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "daylight"
+    },
+    {
+        "zh":  "神圣的、绝妙的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "divine"
+    },
+    {
+        "zh":  "古怪的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eccentric"
+    },
+    {
+        "zh":  "引出",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "elicit"
+    },
+    {
+        "zh":  "侵蚀",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "erode"
+    },
+    {
+        "zh":  "永恒的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eternal"
+    },
+    {
+        "zh":  "雾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fog"
+    },
+    {
+        "zh":  "犯规、肮脏的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "foul"
+    },
+    {
+        "zh":  "断裂",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fracture"
+    },
+    {
+        "zh":  "放牧",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "graze"
+    },
+    {
+        "zh":  "手帕",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "handkerchief"
+    },
+    {
+        "zh":  "肝脏",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "liver"
+    },
+    {
+        "zh":  "非凡的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "marvelous"
+    },
+    {
+        "zh":  "指导",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mentor"
+    },
+    {
+        "zh":  "奇迹",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "miracle"
+    },
+    {
+        "zh":  "提名",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nominate"
+    },
+    {
+        "zh":  "显赫的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "notable"
+    },
+    {
+        "zh":  "服从",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "obedience"
+    },
+    {
+        "zh":  "统治者",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ruler"
+    },
+    {
+        "zh":  "矛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "spear"
+    },
+    {
+        "zh":  "阳光",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sunshine"
+    },
+    {
+        "zh":  "投降",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "surrender"
+    },
+    {
+        "zh":  "禁忌",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "taboo"
+    },
+    {
+        "zh":  "口渴、渴望",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "thirst"
+    },
+    {
+        "zh":  "植物",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "vegetation"
+    },
+    {
+        "zh":  "天文学",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "astronomy"
+    },
+    {
+        "zh":  "砍",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "chop"
+    },
+    {
+        "zh":  "学说、教义",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "doctrine"
+    },
+    {
+        "zh":  "愤怒",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "indignation"
+    },
+    {
+        "zh":  "谨慎的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prudent"
+    },
+    {
+        "zh":  "倾向、安排、性情",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "disposition"
+    },
+    {
+        "zh":  "使困惑、使复杂化",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "perplex"
+    },
+    {
+        "zh":  "锚",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "anchor"
+    },
+    {
+        "zh":  "谴责、该死的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "damn"
+    }
 ]

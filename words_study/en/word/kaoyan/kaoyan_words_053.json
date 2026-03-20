@@ -1,352 +1,352 @@
-[
-  {
-    "word": "appliance",
-    "zh": "装置、应用",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "relax",
-    "zh": "放松",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "smooth",
-    "zh": "光滑的、顺利的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "appetite",
-    "zh": "食欲",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "currency",
-    "zh": "货币",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "laundry",
-    "zh": "洗衣",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "bicycle",
-    "zh": "自行车",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "skirt",
-    "zh": "裙子",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "eastern",
-    "zh": "东部的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "lion",
-    "zh": "狮子",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "toilet",
-    "zh": "厕所",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "guilt",
-    "zh": "内疚",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "tolerance",
-    "zh": "宽容、容忍",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "parallel",
-    "zh": "平行的、类似的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "instinct",
-    "zh": "本能",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "premium",
-    "zh": "保险费、优质的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "shuttle",
-    "zh": "航天飞机",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "collective",
-    "zh": "集体的、共同的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "flash",
-    "zh": "闪",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "continuous",
-    "zh": "连续的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "resistant",
-    "zh": "抵抗的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "variable",
-    "zh": "变量、多变的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "visible",
-    "zh": "可见的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "withdraw",
-    "zh": "退出、撤退",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "elaborate",
-    "zh": "复杂的、详尽的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "guess",
-    "zh": "猜测",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "indispensable",
-    "zh": "不可缺少的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "sweep",
-    "zh": "扫地",
-    "pos": "adverb",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "concrete",
-    "zh": "具体的、确实的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "electrical",
-    "zh": "电的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "governor",
-    "zh": "统治者",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "incline",
-    "zh": "倾斜、斜坡",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mount",
-    "zh": "山",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "straightforward",
-    "zh": "坦率的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "habitat",
-    "zh": "栖息地",
-    "pos": "adverb",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "spoil",
-    "zh": "破坏",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "companion",
-    "zh": "陪伴",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "quarrel",
-    "zh": "争吵",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "sorry",
-    "zh": "抱歉",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "bureau",
-    "zh": "办事处",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "heritage",
-    "zh": "遗产",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "mask",
-    "zh": "面具",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "coat",
-    "zh": "外套",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "countryside",
-    "zh": "农村",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "dynamic",
-    "zh": "动力、动态的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "format",
-    "zh": "版式、设计",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "secondary",
-    "zh": "次要的",
-    "pos": "adjective",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "coin",
-    "zh": "硬币",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "deposit",
-    "zh": "存款",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  },
-  {
-    "word": "install",
-    "zh": "安装",
-    "pos": "noun",
-    "phonetic": "/.../",
-    "score": 5
-  }
+﻿[
+    {
+        "zh":  "装置、应用",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "appliance"
+    },
+    {
+        "zh":  "放松",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "relax"
+    },
+    {
+        "zh":  "光滑的、顺利的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "smooth"
+    },
+    {
+        "zh":  "食欲",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "appetite"
+    },
+    {
+        "zh":  "货币",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "currency"
+    },
+    {
+        "zh":  "洗衣",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "laundry"
+    },
+    {
+        "zh":  "自行车",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bicycle"
+    },
+    {
+        "zh":  "裙子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "skirt"
+    },
+    {
+        "zh":  "东部的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eastern"
+    },
+    {
+        "zh":  "狮子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lion"
+    },
+    {
+        "zh":  "厕所",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "toilet"
+    },
+    {
+        "zh":  "内疚",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "guilt"
+    },
+    {
+        "zh":  "宽容、容忍",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tolerance"
+    },
+    {
+        "zh":  "平行的、类似的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "parallel"
+    },
+    {
+        "zh":  "本能",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "instinct"
+    },
+    {
+        "zh":  "保险费、优质的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "premium"
+    },
+    {
+        "zh":  "航天飞机",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shuttle"
+    },
+    {
+        "zh":  "集体的、共同的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "collective"
+    },
+    {
+        "zh":  "闪",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "flash"
+    },
+    {
+        "zh":  "连续的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "continuous"
+    },
+    {
+        "zh":  "抵抗的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "resistant"
+    },
+    {
+        "zh":  "变量、多变的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "variable"
+    },
+    {
+        "zh":  "可见的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "visible"
+    },
+    {
+        "zh":  "退出、撤退",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "withdraw"
+    },
+    {
+        "zh":  "复杂的、详尽的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "elaborate"
+    },
+    {
+        "zh":  "猜测",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "guess"
+    },
+    {
+        "zh":  "不可缺少的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "indispensable"
+    },
+    {
+        "zh":  "扫地",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sweep"
+    },
+    {
+        "zh":  "具体的、确实的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "concrete"
+    },
+    {
+        "zh":  "电的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "electrical"
+    },
+    {
+        "zh":  "统治者",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "governor"
+    },
+    {
+        "zh":  "倾斜、斜坡",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "incline"
+    },
+    {
+        "zh":  "山",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mount"
+    },
+    {
+        "zh":  "坦率的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "straightforward"
+    },
+    {
+        "zh":  "栖息地",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "habitat"
+    },
+    {
+        "zh":  "破坏",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "spoil"
+    },
+    {
+        "zh":  "陪伴",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "companion"
+    },
+    {
+        "zh":  "争吵",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "quarrel"
+    },
+    {
+        "zh":  "抱歉",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sorry"
+    },
+    {
+        "zh":  "办事处",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bureau"
+    },
+    {
+        "zh":  "遗产",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "heritage"
+    },
+    {
+        "zh":  "面具",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mask"
+    },
+    {
+        "zh":  "外套",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "coat"
+    },
+    {
+        "zh":  "农村",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "countryside"
+    },
+    {
+        "zh":  "动力、动态的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dynamic"
+    },
+    {
+        "zh":  "版式、设计",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "format"
+    },
+    {
+        "zh":  "次要的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "secondary"
+    },
+    {
+        "zh":  "硬币",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "coin"
+    },
+    {
+        "zh":  "存款",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deposit"
+    },
+    {
+        "zh":  "安装",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "install"
+    }
 ]

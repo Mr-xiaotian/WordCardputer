@@ -1,8 +1,44 @@
-[
-  { "word": "ticket", "zh": "票；车票", "pos": "noun", "phonetic": "/ˈtɪkɪt/", "score": 3 },
-  { "word": "station", "zh": "车站；站点", "pos": "noun", "phonetic": "/ˈsteɪʃən/", "score": 3 },
-  { "word": "passport", "zh": "护照", "pos": "noun", "phonetic": "/ˈpæspɔːrt/", "score": 4 },
-  { "word": "hotel", "zh": "酒店；旅馆", "pos": "noun", "phonetic": "/hoʊˈtɛl/", "score": 2 },
-  { "word": "arrive", "zh": "到达", "pos": "verb", "phonetic": "/əˈraɪv/", "score": 3 },
-  { "word": "delay", "zh": "延误；耽搁", "pos": "noun/verb", "phonetic": "/dɪˈleɪ/", "score": 2 }
+﻿[
+    {
+        "zh":  "票；车票",
+        "pos":  "noun",
+        "phonetic":  "/ˈtɪkɪt/",
+        "score":  3,
+        "en":  "ticket"
+    },
+    {
+        "zh":  "车站；站点",
+        "pos":  "noun",
+        "phonetic":  "/ˈsteɪʃən/",
+        "score":  3,
+        "en":  "station"
+    },
+    {
+        "zh":  "护照",
+        "pos":  "noun",
+        "phonetic":  "/ˈpæspɔːrt/",
+        "score":  4,
+        "en":  "passport"
+    },
+    {
+        "zh":  "酒店；旅馆",
+        "pos":  "noun",
+        "phonetic":  "/hoʊˈtɛl/",
+        "score":  2,
+        "en":  "hotel"
+    },
+    {
+        "zh":  "到达",
+        "pos":  "verb",
+        "phonetic":  "/əˈraɪv/",
+        "score":  3,
+        "en":  "arrive"
+    },
+    {
+        "zh":  "延误；耽搁",
+        "pos":  "noun/verb",
+        "phonetic":  "/dɪˈleɪ/",
+        "score":  2,
+        "en":  "delay"
+    }
 ]
