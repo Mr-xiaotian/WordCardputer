@@ -128,9 +128,9 @@ def extract_jp_fields(json_path: Path) -> List[str]:
 
 def extract_en_fields(json_path: Path) -> List[str]:
     """
-    从指定 JSON 文件中提取所有 'word' 字段,返回一个字符串列表。
+    从指定 JSON 文件中提取所有 'en' 字段,返回一个字符串列表。
     """
-    return extract_field_values(json_path, "word")
+    return extract_field_values(json_path, "en")
 
 
 def extract_all_values_from_folder(folder_path: Path, field: str) -> List[str]:
@@ -163,9 +163,9 @@ def extract_all_jp_from_folder(folder_path: Path) -> List[str]:
 
 def extract_all_en_from_folder(folder_path: Path) -> List[str]:
     """
-    遍历文件夹下所有 JSON 文件,提取 word 字段并去重返回。
+    遍历文件夹下所有 JSON 文件,提取 en 字段并去重返回。
     """
-    return extract_all_values_from_folder(folder_path, "word")
+    return extract_all_values_from_folder(folder_path, "en")
 
 
 def list_wav_filenames(folder_path: Path) -> List[str]:
@@ -262,9 +262,9 @@ def collect_merged_entries(folder_path):
 def collect_merged_entries_en(folder_path):
     """
     扫描文件夹所有 JSON 文件,并构建合并后的大词典。
-    返回 all_entries（dict）,键为 word。
+    返回 all_entries（dict）,键为 en。
     """
-    return collect_merged_entries_by_key(folder_path, key_field="word", tone_field=None)
+    return collect_merged_entries_by_key(folder_path, key_field="en", tone_field=None)
 
 
 def apply_merge_and_rewrite_by_key(
@@ -324,7 +324,7 @@ def apply_merge_and_rewrite_en(folder_path):
     """
     调用 collect_merged_entries_en,然后把结果写回每个 JSON。
     """
-    return apply_merge_and_rewrite_by_key(folder_path, key_field="word", tone_field=None)
+    return apply_merge_and_rewrite_by_key(folder_path, key_field="en", tone_field=None)
 
 
 def filter_json_by_key_difference(path_a, path_b, key_field: str = "jp"):
@@ -363,7 +363,7 @@ def filter_json_by_en_difference(path_a, path_b):
     path_a: 第一个 json 文件路径
     path_b: 第二个 json 文件路径
     """
-    return filter_json_by_key_difference(path_a, path_b, key_field="word")
+    return filter_json_by_key_difference(path_a, path_b, key_field="en")
 
 
 def dedupe_json_by_key(folder_path, key_field: str = "jp"):
@@ -403,7 +403,7 @@ def dedupe_json_by_jp(folder_path):
 
 
 def dedupe_json_by_en(folder_path):
-    return dedupe_json_by_key(folder_path, key_field="word")
+    return dedupe_json_by_key(folder_path, key_field="en")
 
 
 def split_json_file(file_path: Path, max_per_file=60):

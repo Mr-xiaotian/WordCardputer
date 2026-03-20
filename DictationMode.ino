@@ -7,6 +7,7 @@ int dictPos = 0;            // 当前是第几个单词
 String commitText = "";    // 已经“确认提交”的假名（真正作为答案的一部分）
 String romajiBuffer = "";  // 当前正在输入的罗马音
 String candidateKana = ""; // 当前 romajiBuffer 对应的候选假名（还未提交）
+String dictEnInput = "";
 
 // 统计
 int correctCount = 0;
@@ -18,19 +19,49 @@ bool useKatakana = false;
 // 错误回顾
 bool dictInReview = false; // 是否正在错误回顾
 
+String dictationPromptText(const Word &w)
+{
+    if (currentLanguage == LANG_EN)
+        return w.en;
+    return w.jp;
+}
+
+bool isEnglishInputChar(char c)
+{
+    return (c >= 'a' && c <= 'z') ||
+           (c >= 'A' && c <= 'Z') ||
+           (c >= '0' && c <= '9') ||
+           c == '\'' || c == '-' || c == '_' || c == ' ';
+}
+
+String normalizeEnglishAnswer(String s)
+{
+    s.trim();
+    s.toLowerCase();
+    String out = "";
+    bool prevSpace = false;
+    for (size_t i = 0; i < s.length(); ++i)
+    {
+        char c = s[i];
+        if (c == '_')
+            c = ' ';
+        if (c == ' ' || c == '\t')
+        {
+            if (!prevSpace && out.length() > 0)
+                out += ' ';
+            prevSpace = true;
+            continue;
+        }
+        prevSpace = false;
+        out += c;
+    }
+    out.trim();
+    return out;
+}
+
 // ---------- 初始化听写模式 ----------
 void initDictationMode()
 {
-    if (currentLanguage == LANG_EN)
-    {
-        canvas.fillSprite(BLACK);
-        canvas.setTextDatum(middle_center);
-        canvas.setTextColor(RED);
-        canvas.setTextSize(1.6);
-        canvas.drawString("英语听写暂未支持", canvas.width() / 2, canvas.height() / 2);
-        canvas.pushSprite(0, 0);
-        return;
-    }
     if (words.empty())
     {
         canvas.fillSprite(BLACK);
@@ -58,6 +89,7 @@ void initDictationMode()
     commitText = "";
     romajiBuffer = "";
     candidateKana = "";
+    dictEnInput = "";
 
     correctCount = 0;
     wrongCount = 0;
@@ -67,7 +99,7 @@ void initDictationMode()
     dictInReview = false;
 
     drawDictationInput();
-    playAudioForWord(words[dictOrder[dictPos]].jp);
+    playAudioForWord(dictationPromptText(words[dictOrder[dictPos]]));
 }
 
 // ---------- 绘制答题中的画面 ----------
@@ -75,27 +107,47 @@ void drawDictationInput()
 {
     canvas.fillSprite(BLACK);
 
-    // 标题（中文）
     canvas.setTextFont(&fonts::efontCN_16);
-    drawTopLeftString(canvas, "听写模式");
+    if (currentLanguage == LANG_EN)
+        drawTopLeftString(canvas, "英语听写");
+    else if (currentLanguage == LANG_JA)
+        drawTopLeftString(canvas, "日语听写");
 
-    // 主输入显示：已提交假名 + 当前罗马音（大字号,居中）
-    canvas.setTextFont(&fonts::efontJA_16);
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(WHITE);
-    canvas.setTextSize(2.0);
-    String mainLine = commitText + romajiBuffer;
-    drawAutoFitString(canvas, mainLine, canvas.width() / 2, canvas.height() / 2 - 10, 2.0);
-
-    // 候选假名（小一号字,显示在下面）
-    canvas.setTextSize(1.4);
-    canvas.setTextColor(TFT_CYAN);
-    if (candidateKana.length() > 0)
+    if (currentLanguage == LANG_EN)
     {
-        canvas.drawString(candidateKana, canvas.width() / 2, canvas.height() / 2 + 20);
+        canvas.setTextFont(&fonts::efontCN_16);
+        drawAutoFitString(canvas, dictEnInput, canvas.width() / 2, canvas.height() / 2 - 10, 2.0);
+        Word &w = words[dictOrder[dictPos]];
+        String sub = asciiPhonetic(w.phonetic);
+        if (w.pos.length() > 0)
+        {
+            if (sub.length() > 0)
+                sub += "  ";
+            sub += w.pos;
+        }
+        if (sub.length() > 0)
+        {
+            canvas.setTextColor(TFT_CYAN);
+            drawAutoFitString(canvas, sub, canvas.width() / 2, canvas.height() / 2 + 20, 1.2);
+        }
+    }
+    else if (currentLanguage == LANG_JA)
+    {
+        canvas.setTextFont(&fonts::efontJA_16);
+        canvas.setTextSize(2.0);
+        String mainLine = commitText + romajiBuffer;
+        drawAutoFitString(canvas, mainLine, canvas.width() / 2, canvas.height() / 2 - 10, 2.0);
+
+        canvas.setTextSize(1.4);
+        canvas.setTextColor(TFT_CYAN);
+        if (candidateKana.length() > 0)
+        {
+            canvas.drawString(candidateKana, canvas.width() / 2, canvas.height() / 2 + 20);
+        }
     }
 
-    // 进度提示
     canvas.setTextDatum(bottom_center);
     canvas.setTextColor(TFT_DARKGREY);
     canvas.setTextSize(1.0);
@@ -150,11 +202,12 @@ void drawDictationReviewPage()
     canvas.setTextFont(&fonts::efontCN_16);
     drawTopLeftString(canvas, "错误回顾");
 
+
     // 正确答案
-    canvas.setTextFont(&fonts::efontJA_16);
+    canvas.setTextFont(&fonts::efontCN_16);
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(GREEN);
-    drawAutoFitString(canvas, w.jp, canvas.width() / 2, canvas.height() / 2 - 25, 2.0);
+    drawAutoFitString(canvas, dictationPromptText(w), canvas.width() / 2, canvas.height() / 2 - 25, 2.0);
 
     // 你的答案
     canvas.setTextColor(RED);
@@ -189,38 +242,17 @@ bool isSokuonConsonant(char c) {
 // ---------- 听写模式逻辑 ----------
 void loopDictationMode()
 {
-    if (currentLanguage == LANG_EN)
-    {
-        if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
-        {
-            auto st = M5Cardputer.Keyboard.keysState();
-            userAction = true;
-
-            for (auto c : st.word)
-            {
-                if (c == '`')
-                {
-                    previousMode = appMode;
-                    appMode = MODE_ESC_MENU;
-                    initEscMenuMode();
-                    return;
-                }
-            }
-        }
-        return;
-    }
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
     {
         auto st = M5Cardputer.Keyboard.keysState();
         userAction = true;
 
-        // -------- ESC 返回上级菜单 --------
         for (auto c : st.word)
         {
             if (c == '`')
-            {                           // ESC
+            {
                 dictOrder.clear();
-                previousMode = appMode; // 记录当前模式
+                previousMode = appMode;
                 appMode = MODE_ESC_MENU;
                 initEscMenuMode();
                 return;
@@ -278,97 +310,141 @@ void loopDictationMode()
             {
                 DictError &e = dictErrors[reviewPos];
                 Word &w = words[e.wordIndex];
-                playAudioForWord(w.jp);
+                playAudioForWord(dictationPromptText(w));
             }
 
             return; // 防止进入正常输入逻辑
         }
 
         // -------- 字符输入（字母、确认键等）--------
-        for (auto c : st.word)
+        if (currentLanguage == LANG_EN)
         {
-            // ';' 用来“确认”候选假名
-            if (c == ';')
+            for (auto c : st.word)
             {
-                commitCandidate();
-                drawDictationInput();
-                continue;
+                if (isEnglishInputChar(c))
+                {
+                    char out = (char)tolower(c);
+                    if (out == '_')
+                        out = ' ';
+                    dictEnInput += out;
+                    drawDictationInput();
+                }
             }
 
-            // 字母输入 → romajiBuffer
-            if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == '_' || c == '-')
+            if (st.del)
             {
-                char lc = (char)tolower(c);
-
-                // ------------ 促音检测：双辅音触发「っ / ッ」 ------------
-                if (romajiBuffer.length() == 1 &&
-                    romajiBuffer[0] == lc &&
-                    isSokuonConsonant(lc))
+                if (dictEnInput.length() > 0)
                 {
-                    // 输出促音
-                    commitText += (useKatakana ? "ッ" : "っ");
-
-                    // 把第二个辅音当作下一个音节的开始
-                    romajiBuffer = "";
-                    romajiBuffer += lc;
-
-                    candidateKana = matchRomaji(romajiBuffer, useKatakana);
+                    dictEnInput.remove(dictEnInput.length() - 1);
                     drawDictationInput();
-                    continue;  // <- 不走下面旧逻辑
+                }
+            }
+
+            if (st.enter)
+            {
+                String userAnswer = normalizeEnglishAnswer(dictEnInput);
+                String correct = normalizeEnglishAnswer(words[dictOrder[dictPos]].en);
+
+                if (userAnswer == correct)
+                {
+                    correctCount++;
+                }
+                else
+                {
+                    wrongCount++;
+                    dictErrors.push_back({dictOrder[dictPos], dictEnInput});
+                }
+            }
+        }
+        else
+        {
+            for (auto c : st.word)
+            {
+                if (c == ';')
+                {
+                    commitCandidate();
+                    drawDictationInput();
+                    continue;
                 }
 
-                // ------------ 正常字母输入逻辑 ------------
-                romajiBuffer += lc;
+            // 字母输入 → romajiBuffer
+                if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == '_' || c == '-')
+                {
+                    char lc = (char)tolower(c);
 
-                // 重新计算候选假名
+                // ------------ 促音检测：双辅音触发「っ / ッ」 ------------
+                    if (romajiBuffer.length() == 1 &&
+                        romajiBuffer[0] == lc &&
+                        isSokuonConsonant(lc))
+                    {
+                        // 输出促音
+                        commitText += (useKatakana ? "ッ" : "っ");
+
+                        // 把第二个辅音当作下一个音节的开始
+                        romajiBuffer = "";
+                        romajiBuffer += lc;
+
+                        candidateKana = matchRomaji(romajiBuffer, useKatakana);
+                        drawDictationInput();
+                        continue;  // <- 不走下面旧逻辑
+                    }
+
+                // ------------ 正常字母输入逻辑 ------------
+                    romajiBuffer += lc;
+
+                    // 重新计算候选假名
+                    candidateKana = matchRomaji(romajiBuffer, useKatakana);
+                    drawDictationInput();
+                }
+            }
+
+            // -------- 删除键处理 --------
+            if (st.del)
+            {
+                if (romajiBuffer.length() > 0)
+                {
+                    // 优先删 romajiBuffer 的尾字母
+                    romajiBuffer.remove(romajiBuffer.length() - 1);
+                    candidateKana = matchRomaji(romajiBuffer, useKatakana);
+                }
+                else if (commitText.length() > 0)
+                {
+                    removeLastUTF8Char(commitText);
+                }
+                drawDictationInput();
+            }
+
+        // -------- Shift 键：切换假名模式 --------
+            if (st.shift)
+            {
+                useKatakana = !useKatakana;
                 candidateKana = matchRomaji(romajiBuffer, useKatakana);
                 drawDictationInput();
             }
-        }
-
-        // -------- 删除键处理 --------
-        if (st.del)
-        {
-            if (romajiBuffer.length() > 0)
-            {
-                // 优先删 romajiBuffer 的尾字母
-                romajiBuffer.remove(romajiBuffer.length() - 1);
-                candidateKana = matchRomaji(romajiBuffer, useKatakana);
-            }
-            else if (commitText.length() > 0)
-            {
-                removeLastUTF8Char(commitText);
-            }
-            drawDictationInput();
-        }
-        
-        // -------- Shift 键：切换假名模式 --------
-        if (st.shift)
-        {
-            useKatakana = !useKatakana;
-            candidateKana = matchRomaji(romajiBuffer, useKatakana);
-            drawDictationInput();
-        }
 
         // -------- ENTER 检查答案 --------
+            if (st.enter)
+            {
+                // 先把当前候选假名也提交掉（方便操作）
+                commitCandidate();
+
+                String userAnswer = commitText;                // 用户最终提交的假名
+                String correct = words[dictOrder[dictPos]].jp; // 正确日语（假名）
+
+                if (userAnswer == correct)
+                {
+                    correctCount++;
+                }
+                else
+                {
+                    wrongCount++;
+                    dictErrors.push_back({dictOrder[dictPos], userAnswer});
+                }
+            }
+        }
+
         if (st.enter)
         {
-            // 先把当前候选假名也提交掉（方便操作）
-            commitCandidate();
-
-            String userAnswer = commitText;                // 用户最终提交的假名
-            String correct = words[dictOrder[dictPos]].jp; // 正确日语（假名）
-
-            if (userAnswer == correct)
-            {
-                correctCount++;
-            }
-            else
-            {
-                wrongCount++;
-                dictErrors.push_back({dictOrder[dictPos], userAnswer});
-            }
-
             dictPos++;
 
             if (dictPos >= (int)dictOrder.size())
@@ -383,15 +459,16 @@ void loopDictationMode()
             commitText = "";
             romajiBuffer = "";
             candidateKana = "";
+            dictEnInput = "";
             drawDictationInput();
-            playAudioForWord(words[dictOrder[dictPos]].jp);
+            playAudioForWord(dictationPromptText(words[dictOrder[dictPos]]));
         }
 
         // -------- Fn 键：重复播放当前单词音频 --------
         if (st.fn)
         {
-            // 这里用当前听写单词,而不是 wordIndex
-            playAudioForWord(words[dictOrder[dictPos]].jp);
+            // 这里用当前听写单词,而不是 wordIndex 
+            playAudioForWord(dictationPromptText(words[dictOrder[dictPos]]));
         }
     }
 }

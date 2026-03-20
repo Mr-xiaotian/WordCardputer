@@ -60,7 +60,7 @@ bool loadWordsFromJSON(const String &filepath)
         }
         else if (currentLanguage == LANG_EN)
         {
-            w.en = obj["word"] | "";
+            w.en = obj["en"] | "";
             w.zh = obj["zh"] | "";
             w.pos = obj["pos"] | "";
             w.phonetic = obj["phonetic"] | "";
@@ -117,7 +117,7 @@ bool saveListToJSON(const String &filepath, const std::vector<Word> &list)
         }
         else
         {
-            obj["word"] = w.en;
+            obj["en"] = w.en;
             obj["zh"] = w.zh;
             obj["pos"] = w.pos;
             obj["phonetic"] = w.phonetic;

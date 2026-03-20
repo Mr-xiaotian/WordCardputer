@@ -6,19 +6,16 @@ unsigned long listenNextActionTime = 0;          // 下一次动作的时间点
 const unsigned long listenRepeatInterval = 1200; // 每次播放之间的间隔（毫秒）
 const unsigned long listenNextWordDelay = 600;   // 播完3次后,切到下一个单词前等待的时间
 
+String listenAudioText(const Word &w)
+{
+    if (currentLanguage == LANG_EN)
+        return w.en;
+    return w.jp;
+}
+
 // ---------- 初始化听读模式 ----------
 void initListenMode()
 {
-    if (currentLanguage == LANG_EN)
-    {
-        canvas.fillSprite(BLACK);
-        canvas.setTextDatum(middle_center);
-        canvas.setTextColor(RED);
-        canvas.setTextSize(1.6);
-        canvas.drawString("英语听读暂未支持", canvas.width() / 2, canvas.height() / 2);
-        canvas.pushSprite(0, 0);
-        return;
-    }
     if (words.empty())
     {
         // 理论上应该已经在 StudyMode 中加载过词库
@@ -55,17 +52,40 @@ void drawListenWord()
 
     Word &w = words[wordIndex];
 
-    // 显示日语（中间偏上）
-    canvas.setTextFont(&fonts::efontJA_16);
-    canvas.setTextColor(CYAN);
-    drawAutoFitString(canvas, w.jp, canvas.width() / 2, canvas.height() / 2 - 25, 2.2);
-
-    // 显示假名（中间）
-    if (w.kanji.length() > 0)
+    if (currentLanguage == LANG_EN)
     {
-        canvas.setTextColor(ORANGE);
-        canvas.setTextSize(1.4);
-        canvas.drawString(w.kanji, canvas.width() / 2, canvas.height() / 2 + 10);
+        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setTextColor(CYAN);
+        drawAutoFitString(canvas, w.en, canvas.width() / 2, canvas.height() / 2 - 25, 2.2);
+
+        String sub = asciiPhonetic(w.phonetic);
+        if (w.pos.length() > 0)
+        {
+            if (sub.length() > 0)
+                sub += "  ";
+            sub += w.pos;
+        }
+        if (sub.length() > 0)
+        {
+            canvas.setTextColor(ORANGE);
+            canvas.setTextSize(1.2);
+            drawAutoFitString(canvas, sub, canvas.width() / 2, canvas.height() / 2 + 10, 1.2);
+        }
+    }
+    else if (currentLanguage == LANG_JP)
+    {
+        // 显示日语（中间偏上）
+        canvas.setTextFont(&fonts::efontJA_16);
+        canvas.setTextColor(CYAN);
+        drawAutoFitString(canvas, w.jp, canvas.width() / 2, canvas.height() / 2 - 25, 2.2);
+
+        // 显示假名（中间）
+        if (w.kanji.length() > 0)
+        {
+            canvas.setTextColor(ORANGE);
+            canvas.setTextSize(1.4);
+            canvas.drawString(w.kanji, canvas.width() / 2, canvas.height() / 2 + 10);
+        }
     }
 
     // 显示中文（中间偏下）
@@ -88,38 +108,16 @@ void drawListenWord()
 // ---------- 听读模式循环逻辑 ----------
 void loopListenMode()
 {
-    if (currentLanguage == LANG_EN)
-    {
-        if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
-        {
-            auto st = M5Cardputer.Keyboard.keysState();
-            userAction = true;
-
-            for (auto c : st.word)
-            {
-                if (c == '`')
-                {
-                    previousMode = appMode;
-                    appMode = MODE_ESC_MENU;
-                    initEscMenuMode();
-                    return;
-                }
-            }
-        }
-        return;
-    }
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
     {
-        // 键盘状态
         auto st = M5Cardputer.Keyboard.keysState();
         userAction = true;
 
         for (auto c : st.word)
         {
-            // 处理 ESC（你在学习模式里用的是 '`' 来代表 ESC）
             if (c == '`')
-            {                           // ESC
-                previousMode = appMode; // 记录当前模式
+            {
+                previousMode = appMode;
                 appMode = MODE_ESC_MENU;
                 initEscMenuMode();
                 return;
@@ -166,7 +164,7 @@ void loopListenMode()
         if (listenPlayCount < 3)
         {
             // 第 1~3 次播放
-            playAudioForWord(words[wordIndex].jp);
+            playAudioForWord(listenAudioText(words[wordIndex]));
             listenPlayCount++;
             listenNextActionTime = now + listenRepeatInterval;
         }
