@@ -35,10 +35,10 @@ const int visibleLines = 4;
 int soundVolume = 192;
 
 StudyLanguage currentLanguage = LANG_JP;
-String currentWordRoot = "words_study/jp/word";
-String currentAudioRoot = "words_study/jp/audio";
+String currentWordRoot = "/words_study/jp/word";
+String currentAudioRoot = "/words_study/jp/audio";
 
-String currentDir = "words_study/jp/word";
+String currentDir = "/words_study/jp/word";
 String selectedFilePath = "";
 
 std::vector<String> langItems = {"日语", "英语"};
@@ -157,13 +157,13 @@ void setLanguage(StudyLanguage lang)
     currentLanguage = lang;
     if (currentLanguage == LANG_JP)
     {
-        currentWordRoot = "words_study/jp/word";
-        currentAudioRoot = "words_study/jp/audio";
+        currentWordRoot = "/words_study/jp/word";
+        currentAudioRoot = "/words_study/jp/audio";
     }
     else
     {
-        currentWordRoot = "words_study/en/word";
-        currentAudioRoot = "words_study/en/audio";
+        currentWordRoot = "/words_study/en/word";
+        currentAudioRoot = "/words_study/en/audio";
     }
     currentDir = currentWordRoot;
     selectedFilePath = "";
@@ -200,7 +200,7 @@ void loopLanguageSelectMode()
         if (st.enter)
         {
             StudyLanguage lang = (langIndex == 0) ? LANG_JP : LANG_EN;
-            String root = (lang == LANG_JP) ? "words_study/jp" : "words_study/en";
+            String root = (lang == LANG_JP) ? "/words_study/jp" : "/words_study/en";
             if (!SD.exists(root))
             {
                 canvas.fillSprite(BLACK);
@@ -238,8 +238,8 @@ void setup() {
         while (1) delay(10);
     }
 
-    bool jpExists = SD.exists("words_study/jp");
-    bool enExists = SD.exists("words_study/en");
+    bool jpExists = SD.exists("/words_study/jp");
+    bool enExists = SD.exists("/words_study/en");
     if (!jpExists && !enExists) {
         M5Cardputer.Display.println("未找到词库文件夹");
         while (1) delay(10);

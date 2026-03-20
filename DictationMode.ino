@@ -110,7 +110,7 @@ void drawDictationInput()
     canvas.setTextFont(&fonts::efontCN_16);
     if (currentLanguage == LANG_EN)
         drawTopLeftString(canvas, "英语听写");
-    else if (currentLanguage == LANG_JA)
+    else if (currentLanguage == LANG_JP)
         drawTopLeftString(canvas, "日语听写");
 
     canvas.setTextDatum(middle_center);
@@ -133,7 +133,7 @@ void drawDictationInput()
             drawAutoFitString(canvas, sub, canvas.width() / 2, canvas.height() / 2 + 20, 1.2);
         }
     }
-    else if (currentLanguage == LANG_JA)
+    else if (currentLanguage == LANG_JP)
     {
         canvas.setTextFont(&fonts::efontJA_16);
         canvas.setTextSize(2.0);

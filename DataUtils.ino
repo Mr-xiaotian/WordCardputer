@@ -15,6 +15,13 @@ bool loadWordsFromJSON(const String &filepath)
         return false;
     }
 
+    if (fileSize >= 2)
+    {
+        Serial.printf("文件大小: %d 字节\n", fileSize);
+        file.close();
+        return false;
+    }
+
     size_t capacity = static_cast<size_t>(fileSize * 1.2) + 1024;
     DynamicJsonDocument doc(capacity);
     DeserializationError err = deserializeJson(doc, file);
