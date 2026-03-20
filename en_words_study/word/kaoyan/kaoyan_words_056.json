@@ -1,0 +1,352 @@
+[
+  {
+    "word": "drift",
+    "zh": "漂移、漂流",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "endeavor",
+    "zh": "努力",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "enlarge",
+    "zh": "扩大",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "mineral",
+    "zh": "矿物质",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "annoy",
+    "zh": "令人厌烦的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "bush",
+    "zh": "灌木",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "poem",
+    "zh": "诗",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "scatter",
+    "zh": "分散、散布",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "wipe",
+    "zh": "擦除",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "incredible",
+    "zh": "难以置信的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "mechanic",
+    "zh": "技工",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "enthusiastic",
+    "zh": "热情的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "flourish",
+    "zh": "繁荣",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "inch",
+    "zh": "英寸",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "lung",
+    "zh": "肺",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "frame",
+    "zh": "框架",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "profile",
+    "zh": "轮廓、简介",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "youngster",
+    "zh": "少年",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "brick",
+    "zh": "砖",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "dictate",
+    "zh": "规定、口述",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "organ",
+    "zh": "器官",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "piano",
+    "zh": "钢琴",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "twist",
+    "zh": "扭曲、捻",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "wherever",
+    "zh": "无论在哪里",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "gaze",
+    "zh": "凝视",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "junior",
+    "zh": "年资较浅的",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "subway",
+    "zh": "地铁",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pyramid",
+    "zh": "金字塔",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "remedy",
+    "zh": "补救、治疗",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "mature",
+    "zh": "成熟的",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pump",
+    "zh": "泵",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "tropical",
+    "zh": "热带的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "chef",
+    "zh": "厨师",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "junk",
+    "zh": "垃圾",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pack",
+    "zh": "打包",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "interior",
+    "zh": "内部",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "liability",
+    "zh": "责任",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "bid",
+    "zh": "出价、投标",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "rude",
+    "zh": "粗鲁的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "criterion",
+    "zh": "标准",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "gradual",
+    "zh": "逐渐的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "objection",
+    "zh": "反对",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "surname",
+    "zh": "姓",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "activate",
+    "zh": "激活",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "lawsuit",
+    "zh": "诉讼",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "outlet",
+    "zh": "出口",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "tunnel",
+    "zh": "隧道",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "ignorant",
+    "zh": "无知的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "squeeze",
+    "zh": "挤压",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "click",
+    "zh": "点击",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  }
+]

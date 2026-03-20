@@ -1,0 +1,352 @@
+[
+  {
+    "word": "furious",
+    "zh": "狂怒的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "gauge",
+    "zh": "测量",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "gorgeous",
+    "zh": "华丽的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "greeting",
+    "zh": "问候",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "grind",
+    "zh": "磨",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "guitar",
+    "zh": "吉他",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "handbook",
+    "zh": "手册",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "headmaster",
+    "zh": "校长",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "herald",
+    "zh": "先驱",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "herb",
+    "zh": "药草",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "hoist",
+    "zh": "升起、起重机",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "hose",
+    "zh": "水管",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "humidity",
+    "zh": "湿度",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "hurl",
+    "zh": "用力投掷、丢下",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "icon",
+    "zh": "偶像、图标",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "intelligible",
+    "zh": "可理解的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "lad",
+    "zh": "小伙子",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "liner",
+    "zh": "班轮",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "locker",
+    "zh": "储物柜",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "lubricate",
+    "zh": "润滑",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "marble",
+    "zh": "大理石",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "mat",
+    "zh": "垫子",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "me",
+    "zh": "我",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "melody",
+    "zh": "旋律",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "merry",
+    "zh": "愉快的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "nineteen",
+    "zh": "十九",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "notwithstanding",
+    "zh": "尽管",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "onion",
+    "zh": "洋葱",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "orchard",
+    "zh": "果园",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "oval",
+    "zh": "椭圆",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "overthrow",
+    "zh": "推翻",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "owl",
+    "zh": "猫头鹰",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "paradigm",
+    "zh": "范例",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "paste",
+    "zh": "粘贴",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "peach",
+    "zh": "桃子、桃树",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pedal",
+    "zh": "踏板",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pendulum",
+    "zh": "钟摆",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "peninsula",
+    "zh": "半岛",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "petition",
+    "zh": "请愿",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pirate",
+    "zh": "海盗",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "plantation",
+    "zh": "种植园",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pond",
+    "zh": "池塘",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "postage",
+    "zh": "邮费",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "recede",
+    "zh": "后退",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "reed",
+    "zh": "芦苇",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "saddle",
+    "zh": "鞍",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "salvation",
+    "zh": "拯救",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "saucer",
+    "zh": "碟子",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "sausage",
+    "zh": "香肠",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "scar",
+    "zh": "疤痕",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  }
+]

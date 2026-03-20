@@ -1,0 +1,352 @@
+[
+  {
+    "word": "breast",
+    "zh": "乳房",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "fiscal",
+    "zh": "财政的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "golf",
+    "zh": "高尔夫球",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "realm",
+    "zh": "领域",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "scarcely",
+    "zh": "几乎不、刚刚",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "tragic",
+    "zh": "悲惨的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "transplant",
+    "zh": "移植",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "archive",
+    "zh": "档案、存档",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "corridor",
+    "zh": "走廊",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "dispose",
+    "zh": "处理掉、解决",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "domain",
+    "zh": "领域",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "extravagant",
+    "zh": "奢侈的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "flock",
+    "zh": "一群",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "hybrid",
+    "zh": "杂种",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "infinite",
+    "zh": "无限",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "intrinsic",
+    "zh": "内在的、固有的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "masterpiece",
+    "zh": "杰作",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "vulgar",
+    "zh": "粗俗的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "aviation",
+    "zh": "航空",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "gentle",
+    "zh": "温和的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "mud",
+    "zh": "泥",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "navigation",
+    "zh": "导航",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "ribbon",
+    "zh": "缎带",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "scandal",
+    "zh": "丑闻",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "thread",
+    "zh": "线",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "ache",
+    "zh": "疼",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "circulate",
+    "zh": "循环、流通",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "cough",
+    "zh": "咳",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "deck",
+    "zh": "甲板",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "diploma",
+    "zh": "文凭",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "elephant",
+    "zh": "大象",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "feminine",
+    "zh": "女性的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "garage",
+    "zh": "车库",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "hut",
+    "zh": "小屋",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "imperial",
+    "zh": "帝国的、皇帝",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "ministry",
+    "zh": "内阁",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "neck",
+    "zh": "脖子",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pant",
+    "zh": "裤子",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pest",
+    "zh": "害虫",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "poster",
+    "zh": "海报",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pronoun",
+    "zh": "代词",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "reconcile",
+    "zh": "调和、一致",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "tender",
+    "zh": "柔软、投标",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "premier",
+    "zh": "总理",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "hug",
+    "zh": "拥抱",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "nasty",
+    "zh": "丑陋的、惹人厌的",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "ideology",
+    "zh": "意识形态",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "laser",
+    "zh": "激光",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "legacy",
+    "zh": "遗赠物",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "entail",
+    "zh": "意味着",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "word": "deviate",
+    "zh": "偏离",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "diameter",
+    "zh": "直径",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "discretion",
+    "zh": "谨慎",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "ego",
+    "zh": "自我",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "eloquent",
+    "zh": "雄辩的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "enclosure",
+    "zh": "围墙、附件",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "farewell",
+    "zh": "告别",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "fling",
+    "zh": "投掷",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "fluent",
+    "zh": "流利的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "friction",
+    "zh": "摩擦",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "frost",
+    "zh": "霜",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "glacier",
+    "zh": "冰川",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "glorious",
+    "zh": "辉煌的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "grim",
+    "zh": "可怕的、冷酷的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "grocer",
+    "zh": "杂货店",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "grope",
+    "zh": "探索",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "hinge",
+    "zh": "铰链",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "honorable",
+    "zh": "光荣的、可敬的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "horizontal",
+    "zh": "水平的、水平线",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "horn",
+    "zh": "喇叭",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "humid",
+    "zh": "潮湿的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "kneel",
+    "zh": "跪",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "latent",
+    "zh": "潜在的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "leaflet",
+    "zh": "传单",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "linear",
+    "zh": "线性的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "millionaire",
+    "zh": "百万富翁",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "minus",
+    "zh": "减去",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "nickel",
+    "zh": "镍",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "noun",
+    "zh": "名词",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "orthodox",
+    "zh": "正统的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pad",
+    "zh": "发射台、衬垫",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "parameter",
+    "zh": "参数",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "patron",
+    "zh": "守护神",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "petty",
+    "zh": "小的、琐碎的",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pickup",
+    "zh": "加速、小型卡车、拾音器、获得",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pillar",
+    "zh": "支柱",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "plural",
+    "zh": "复数",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "porch",
+    "zh": "门廊",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "preclude",
+    "zh": "阻止",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "pretext",
+    "zh": "借口",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "rabbit",
+    "zh": "兔子",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "rack",
+    "zh": "行李架",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "rash",
+    "zh": "疹子、轻率的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "remnant",
+    "zh": "残余",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "reproach",
+    "zh": "责备",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "restless",
+    "zh": "不安宁的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "revolt",
+    "zh": "反抗",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "ripe",
+    "zh": "熟的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "robe",
+    "zh": "长袍",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "sailor",
+    "zh": "水手",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  }
+]

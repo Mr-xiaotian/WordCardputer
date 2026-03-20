@@ -1,0 +1,352 @@
+[
+  {
+    "word": "provision",
+    "zh": "提供、供给",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "temper",
+    "zh": "脾气",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "exhaust",
+    "zh": "耗尽",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "holder",
+    "zh": "持有者",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "linguistic",
+    "zh": "语言的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "mine",
+    "zh": "我的、矿",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "servant",
+    "zh": "仆人",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "reflection",
+    "zh": "反射",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "bread",
+    "zh": "面包",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "golden",
+    "zh": "金色的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "precious",
+    "zh": "宝贵的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "accommodation",
+    "zh": "住处、和解",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "charm",
+    "zh": "魅力",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "consistent",
+    "zh": "一致的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "distinct",
+    "zh": "不同的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "edit",
+    "zh": "编辑",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "housework",
+    "zh": "家务",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "lifetime",
+    "zh": "一生",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "shirt",
+    "zh": "衬衫",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "amid",
+    "zh": "在其间",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "identical",
+    "zh": "相同的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "instruct",
+    "zh": "指导",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "jacket",
+    "zh": "夹克",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "sake",
+    "zh": "缘故、目的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "virus",
+    "zh": "病毒",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "wound",
+    "zh": "受伤的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "beer",
+    "zh": "啤酒",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "refugee",
+    "zh": "难民",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "nap",
+    "zh": "小睡",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "classical",
+    "zh": "古典的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "sequence",
+    "zh": "顺序",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "systematic",
+    "zh": "系统的、成体系的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "horizon",
+    "zh": "地平线",
+    "pos": "adverb",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "apparent",
+    "zh": "明显的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "guidance",
+    "zh": "指导",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "passive",
+    "zh": "被动的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "creature",
+    "zh": "生物",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "fierce",
+    "zh": "凶猛的、激烈的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "mix",
+    "zh": "混合",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "trigger",
+    "zh": "触发",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "cue",
+    "zh": "提示、暗示",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "disable",
+    "zh": "失去能力",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "hostile",
+    "zh": "敌对的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "integrity",
+    "zh": "诚实正直、完整",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "precise",
+    "zh": "精确的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "suppress",
+    "zh": "压制、镇压",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "blow",
+    "zh": "吹",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "bone",
+    "zh": "骨",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "gate",
+    "zh": "门",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "abundant",
+    "zh": "丰富的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "word": "the",
+    "zh": "这个、这些",
+    "pos": "noun",
+    "phonetic": "/ðə/",
+    "score": 1
+  },
+  {
+    "word": "be",
+    "zh": "是、存在",
+    "pos": "verb",
+    "phonetic": "/biː/",
+    "score": 1
+  },
+  {
+    "word": "a",
+    "zh": "一、每一",
+    "pos": "noun",
+    "phonetic": "/ə/",
+    "score": 1
+  },
+  {
+    "word": "to",
+    "zh": "目的、终点",
+    "pos": "adjective",
+    "phonetic": "/tuː/",
+    "score": 1
+  },
+  {
+    "word": "of",
+    "zh": "的",
+    "pos": "adjective",
+    "phonetic": "/əv/",
+    "score": 1
+  },
+  {
+    "word": "and",
+    "zh": "和",
+    "pos": "noun",
+    "phonetic": "/ænd/",
+    "score": 1
+  },
+  {
+    "word": "in",
+    "zh": "在…内",
+    "pos": "noun",
+    "phonetic": "/ɪn/",
+    "score": 1
+  },
+  {
+    "word": "have",
+    "zh": "有",
+    "pos": "verb",
+    "phonetic": "/hæv/",
+    "score": 1
+  },
+  {
+    "word": "that",
+    "zh": "那",
+    "pos": "noun",
+    "phonetic": "/ðæt/",
+    "score": 1
+  },
+  {
+    "word": "it",
+    "zh": "它",
+    "pos": "noun",
+    "phonetic": "/ɪt/",
+    "score": 1
+  },
+  {
+    "word": "for",
+    "zh": "为了…、因为…",
+    "pos": "noun",
+    "phonetic": "/fɔːr/",
+    "score": 1
+  },
+  {
+    "word": "on",
+    "zh": "在…上、持续",
+    "pos": "noun",
+    "phonetic": "/ɒn/",
+    "score": 1
+  },
+  {
+    "word": "they",
+    "zh": "他们",
+    "pos": "adjective",
+    "phonetic": "/ðeɪ/",
+    "score": 1
+  },
+  {
+    "word": "you",
+    "zh": "你",
+    "pos": "noun",
+    "phonetic": "/juː/",
+    "score": 1
+  },
+  {
+    "word": "with",
+    "zh": "伴随",
+    "pos": "noun",
+    "phonetic": "/wɪð/",
+    "score": 2
+  },
+  {
+    "word": "as",
+    "zh": "作为、既然、随着、就像",
+    "pos": "noun",
+    "phonetic": "/æz/",
+    "score": 2
+  },
+  {
+    "word": "their",
+    "zh": "他们的",
+    "pos": "adjective",
+    "phonetic": "/ðer/",
+    "score": 2
+  },
+  {
+    "word": "by",
+    "zh": "方式、到…为止",
+    "pos": "adjective",
+    "phonetic": "/baɪ/",
+    "score": 2
+  },
+  {
+    "word": "not",
+    "zh": "不、没有",
+    "pos": "verb",
+    "phonetic": "/nɒt/",
+    "score": 2
+  },
+  {
+    "word": "he",
+    "zh": "他",
+    "pos": "noun",
+    "phonetic": "/hiː/",
+    "score": 2
+  },
+  {
+    "word": "from",
+    "zh": "从…、起点",
+    "pos": "noun",
+    "phonetic": "/frɒm/",
+    "score": 2
+  },
+  {
+    "word": "at",
+    "zh": "在…位置",
+    "pos": "noun",
+    "phonetic": "/æt/",
+    "score": 2
+  },
+  {
+    "word": "will",
+    "zh": "将、会",
+    "pos": "noun",
+    "phonetic": "/wɪl/",
+    "score": 2
+  },
+  {
+    "word": "more",
+    "zh": "更多的",
+    "pos": "adjective",
+    "phonetic": "/mɔːr/",
+    "score": 2
+  },
+  {
+    "word": "do",
+    "zh": "做",
+    "pos": "verb",
+    "phonetic": "/duː/",
+    "score": 2
+  },
+  {
+    "word": "we",
+    "zh": "我们",
+    "pos": "noun",
+    "phonetic": "/wiː/",
+    "score": 2
+  },
+  {
+    "word": "passage",
+    "zh": "段落、通道",
+    "pos": "noun",
+    "phonetic": "/ˈpæsɪdʒ/",
+    "score": 2
+  },
+  {
+    "word": "this",
+    "zh": "这",
+    "pos": "noun",
+    "phonetic": "/ðɪs/",
+    "score": 2
+  },
+  {
+    "word": "or",
+    "zh": "或者、否则",
+    "pos": "noun",
+    "phonetic": "/ɔːr/",
+    "score": 2
+  },
+  {
+    "word": "can",
+    "zh": "能",
+    "pos": "noun",
+    "phonetic": "/kæn/",
+    "score": 2
+  },
+  {
+    "word": "I",
+    "zh": "我",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 2
+  },
+  {
+    "word": "one",
+    "zh": "一个",
+    "pos": "noun",
+    "phonetic": "/wʌn/",
+    "score": 2
+  },
+  {
+    "word": "but",
+    "zh": "但是",
+    "pos": "verb",
+    "phonetic": "/bʌt/",
+    "score": 3
+  },
+  {
+    "word": "question",
+    "zh": "问题",
+    "pos": "noun",
+    "phonetic": "/ˈkwestʃən/",
+    "score": 3
+  },
+  {
+    "word": "people",
+    "zh": "人民、民族",
+    "pos": "noun",
+    "phonetic": "/ˈpiːpl/",
+    "score": 3
+  },
+  {
+    "word": "what",
+    "zh": "什么",
+    "pos": "noun",
+    "phonetic": "/wɒt/",
+    "score": 3
+  },
+  {
+    "word": "there",
+    "zh": "那里",
+    "pos": "noun",
+    "phonetic": "/ðer/",
+    "score": 3
+  },
+  {
+    "word": "well",
+    "zh": "好、井、涌出",
+    "pos": "noun",
+    "phonetic": "/wel/",
+    "score": 3
+  },
+  {
+    "word": "about",
+    "zh": "关于",
+    "pos": "noun",
+    "phonetic": "/əˈbaʊt/",
+    "score": 3
+  },
+  {
+    "word": "answer",
+    "zh": "回答",
+    "pos": "noun",
+    "phonetic": "/ˈænsər/",
+    "score": 3
+  },
+  {
+    "word": "make",
+    "zh": "制作、使得",
+    "pos": "verb",
+    "phonetic": "/meɪk/",
+    "score": 3
+  },
+  {
+    "word": "than",
+    "zh": "比",
+    "pos": "noun",
+    "phonetic": "/ðæn/",
+    "score": 3
+  },
+  {
+    "word": "his",
+    "zh": "他的",
+    "pos": "adjective",
+    "phonetic": "/hɪz/",
+    "score": 3
+  },
+  {
+    "word": "time",
+    "zh": "时间",
+    "pos": "noun",
+    "phonetic": "/taɪm/",
+    "score": 3
+  },
+  {
+    "word": "say",
+    "zh": "说、说明",
+    "pos": "verb",
+    "phonetic": "/seɪ/",
+    "score": 3
+  },
+  {
+    "word": "work",
+    "zh": "工作",
+    "pos": "verb",
+    "phonetic": "/wɜːrk/",
+    "score": 3
+  },
+  {
+    "word": "which",
+    "zh": "哪个、什么样的",
+    "pos": "adjective",
+    "phonetic": "/wɪtʃ/",
+    "score": 3
+  },
+  {
+    "word": "when",
+    "zh": "当",
+    "pos": "noun",
+    "phonetic": "/wen/",
+    "score": 3
+  },
+  {
+    "word": "should",
+    "zh": "应该",
+    "pos": "noun",
+    "phonetic": "/ʃʊd/",
+    "score": 3
+  },
+  {
+    "word": "part",
+    "zh": "部分",
+    "pos": "noun",
+    "phonetic": "/pɑːrt/",
+    "score": 3
+  }
+]

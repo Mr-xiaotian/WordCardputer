@@ -1,0 +1,352 @@
+[
+  {
+    "word": "choose",
+    "zh": "选择",
+    "pos": "noun",
+    "phonetic": "/tʃuːz/",
+    "score": 4
+  },
+  {
+    "word": "any",
+    "zh": "任何",
+    "pos": "adjective",
+    "phonetic": "/ˈeni/",
+    "score": 4
+  },
+  {
+    "word": "my",
+    "zh": "我的",
+    "pos": "adjective",
+    "phonetic": "/maɪ/",
+    "score": 4
+  },
+  {
+    "word": "day",
+    "zh": "日子",
+    "pos": "adjective",
+    "phonetic": "/deɪ/",
+    "score": 4
+  },
+  {
+    "word": "less",
+    "zh": "更少",
+    "pos": "adjective",
+    "phonetic": "/les/",
+    "score": 4
+  },
+  {
+    "word": "accord",
+    "zh": "协议、符合",
+    "pos": "noun",
+    "phonetic": "/əˈkɔːrd/",
+    "score": 4
+  },
+  {
+    "word": "show",
+    "zh": "展示、展现",
+    "pos": "verb",
+    "phonetic": "/ʃoʊ/",
+    "score": 4
+  },
+  {
+    "word": "both",
+    "zh": "两者",
+    "pos": "noun",
+    "phonetic": "/boʊθ/",
+    "score": 4
+  },
+  {
+    "word": "social",
+    "zh": "社会的、交际的",
+    "pos": "adjective",
+    "phonetic": "/ˈsoʊʃl/",
+    "score": 4
+  },
+  {
+    "word": "very",
+    "zh": "非常",
+    "pos": "adjective",
+    "phonetic": "/ˈveri/",
+    "score": 4
+  },
+  {
+    "word": "great",
+    "zh": "巨大的",
+    "pos": "adjective",
+    "phonetic": "/ɡreɪt/",
+    "score": 4
+  },
+  {
+    "word": "thing",
+    "zh": "事情",
+    "pos": "adjective",
+    "phonetic": "/θɪŋ/",
+    "score": 4
+  },
+  {
+    "word": "information",
+    "zh": "信息",
+    "pos": "noun",
+    "phonetic": "/ˌɪnfərˈmeɪʃn/",
+    "score": 4
+  },
+  {
+    "word": "look",
+    "zh": "看",
+    "pos": "verb",
+    "phonetic": "/lʊk/",
+    "score": 4
+  },
+  {
+    "word": "too",
+    "zh": "太…、也",
+    "pos": "noun",
+    "phonetic": "/tuː/",
+    "score": 4
+  },
+  {
+    "word": "business",
+    "zh": "商业",
+    "pos": "noun",
+    "phonetic": "/ˈbɪznəs/",
+    "score": 4
+  },
+  {
+    "word": "between",
+    "zh": "在…之间",
+    "pos": "noun",
+    "phonetic": "/bɪˈtwiːn/",
+    "score": 4
+  },
+  {
+    "word": "research",
+    "zh": "研究",
+    "pos": "noun",
+    "phonetic": "/rɪˈsɜːrtʃ/",
+    "score": 4
+  },
+  {
+    "word": "before",
+    "zh": "在…之前",
+    "pos": "noun",
+    "phonetic": "/bɪˈfɔːr/",
+    "score": 4
+  },
+  {
+    "word": "number",
+    "zh": "数字",
+    "pos": "noun",
+    "phonetic": "/ˈnʌmbər/",
+    "score": 4
+  },
+  {
+    "word": "single",
+    "zh": "单一的",
+    "pos": "adjective",
+    "phonetic": "/ˈsɪŋɡl/",
+    "score": 4
+  },
+  {
+    "word": "own",
+    "zh": "拥有",
+    "pos": "verb",
+    "phonetic": "/oʊn/",
+    "score": 4
+  },
+  {
+    "word": "feel",
+    "zh": "感觉",
+    "pos": "verb",
+    "phonetic": "/fiːl/",
+    "score": 4
+  },
+  {
+    "word": "family",
+    "zh": "家庭",
+    "pos": "adjective",
+    "phonetic": "/ˈfæməli/",
+    "score": 4
+  },
+  {
+    "word": "often",
+    "zh": "经常",
+    "pos": "noun",
+    "phonetic": "/ˈɔːfn/",
+    "score": 4
+  },
+  {
+    "word": "old",
+    "zh": "老的",
+    "pos": "adjective",
+    "phonetic": "/oʊld/",
+    "score": 4
+  },
+  {
+    "word": "parent",
+    "zh": "父母",
+    "pos": "adjective",
+    "phonetic": "/ˈperənt/",
+    "score": 4
+  },
+  {
+    "word": "increase",
+    "zh": "增加",
+    "pos": "noun",
+    "phonetic": "/ɪnˈkriːs/",
+    "score": 4
+  },
+  {
+    "word": "paragraph",
+    "zh": "段落",
+    "pos": "noun",
+    "phonetic": "/ˈpærəɡræf/",
+    "score": 4
+  },
+  {
+    "word": "provide",
+    "zh": "提供",
+    "pos": "verb",
+    "phonetic": "/prəˈvaɪd/",
+    "score": 4
+  },
+  {
+    "word": "few",
+    "zh": "很少",
+    "pos": "noun",
+    "phonetic": "/fjuː/",
+    "score": 4
+  },
+  {
+    "word": "home",
+    "zh": "家",
+    "pos": "noun",
+    "phonetic": "/hoʊm/",
+    "score": 4
+  },
+  {
+    "word": "while",
+    "zh": "当…时、而、尽管",
+    "pos": "noun",
+    "phonetic": "/waɪl/",
+    "score": 4
+  },
+  {
+    "word": "different",
+    "zh": "不同的",
+    "pos": "adjective",
+    "phonetic": "/ˈdɪfrənt/",
+    "score": 5
+  },
+  {
+    "word": "point",
+    "zh": "点、指",
+    "pos": "noun",
+    "phonetic": "/pɔɪnt/",
+    "score": 5
+  },
+  {
+    "word": "last",
+    "zh": "最后的、持续",
+    "pos": "adjective",
+    "phonetic": "/lɑːst/",
+    "score": 5
+  },
+  {
+    "word": "text",
+    "zh": "文本",
+    "pos": "noun",
+    "phonetic": "/tekst/",
+    "score": 5
+  },
+  {
+    "word": "correspond",
+    "zh": "相符合、相当",
+    "pos": "noun",
+    "phonetic": "/ˌkɒrəˈspɒnd/",
+    "score": 5
+  },
+  {
+    "word": "education",
+    "zh": "教育",
+    "pos": "noun",
+    "phonetic": "/ˌedʒuˈkeɪʃn/",
+    "score": 5
+  },
+  {
+    "word": "place",
+    "zh": "放置、地点",
+    "pos": "adverb",
+    "phonetic": "/pleɪs/",
+    "score": 5
+  },
+  {
+    "word": "pay",
+    "zh": "支付",
+    "pos": "verb",
+    "phonetic": "/peɪ/",
+    "score": 5
+  },
+  {
+    "word": "language",
+    "zh": "语言、风格",
+    "pos": "noun",
+    "phonetic": "/ˈlæŋɡwɪdʒ/",
+    "score": 5
+  },
+  {
+    "word": "still",
+    "zh": "仍然",
+    "pos": "noun",
+    "phonetic": "/stɪl/",
+    "score": 5
+  },
+  {
+    "word": "keep",
+    "zh": "保持",
+    "pos": "verb",
+    "phonetic": "/kiːp/",
+    "score": 5
+  },
+  {
+    "word": "where",
+    "zh": "哪里",
+    "pos": "noun",
+    "phonetic": "/wer/",
+    "score": 5
+  },
+  {
+    "word": "book",
+    "zh": "预定、书籍",
+    "pos": "noun",
+    "phonetic": "/bʊk/",
+    "score": 5
+  },
+  {
+    "word": "government",
+    "zh": "政府",
+    "pos": "noun",
+    "phonetic": "/ˈɡʌvərnmənt/",
+    "score": 5
+  },
+  {
+    "word": "college",
+    "zh": "大学",
+    "pos": "noun",
+    "phonetic": "/ˈkɑːlɪdʒ/",
+    "score": 5
+  },
+  {
+    "word": "second",
+    "zh": "第二的、次等的",
+    "pos": "adjective",
+    "phonetic": "/ˈsekənd/",
+    "score": 5
+  },
+  {
+    "word": "listen",
+    "zh": "听",
+    "pos": "noun",
+    "phonetic": "/ˈlɪsn/",
+    "score": 5
+  }
+]

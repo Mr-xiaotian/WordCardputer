@@ -1,0 +1,352 @@
+[
+  {
+    "word": "enough",
+    "zh": "足够",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "value",
+    "zh": "价值",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "role",
+    "zh": "角色",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "week",
+    "zh": "周末",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "individual",
+    "zh": "个人的、独特的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "hand",
+    "zh": "手",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "open",
+    "zh": "打开",
+    "pos": "verb",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "ten",
+    "zh": "十",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "term",
+    "zh": "条款、期限",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "away",
+    "zh": "离开",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "happen",
+    "zh": "发生",
+    "pos": "verb",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "fall",
+    "zh": "下降、掉落",
+    "pos": "verb",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "self",
+    "zh": "自我、自己",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "art",
+    "zh": "艺术",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "decision",
+    "zh": "决定、决议",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "interest",
+    "zh": "兴趣",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "drive",
+    "zh": "驾驶、驱使",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "issue",
+    "zh": "问题、期刊、发布",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "produce",
+    "zh": "生产",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "complete",
+    "zh": "完全地",
+    "pos": "adverb",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "under",
+    "zh": "在…之下",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "activity",
+    "zh": "活跃、活动",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "national",
+    "zh": "国家的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "brain",
+    "zh": "大脑",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "level",
+    "zh": "水平、等级",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "able",
+    "zh": "有能力的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "run",
+    "zh": "跑步、运转",
+    "pos": "verb",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "past",
+    "zh": "过去的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "win",
+    "zh": "赢",
+    "pos": "verb",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "present",
+    "zh": "呈现、提出、礼物、现在",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "quality",
+    "zh": "质量",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "difficult",
+    "zh": "困难的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "easy",
+    "zh": "容易的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "tend",
+    "zh": "趋向于、照料",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "reduce",
+    "zh": "减少",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "five",
+    "zh": "五",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "expect",
+    "zh": "预料、期待",
+    "pos": "verb",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "order",
+    "zh": "订单、命令、顺序",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "law",
+    "zh": "法律、法则",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "environment",
+    "zh": "环境、自然环境",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "paper",
+    "zh": "纸、试卷",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "mind",
+    "zh": "思维、想法",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "kid",
+    "zh": "孩子",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "economy",
+    "zh": "经济",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "percent",
+    "zh": "百分之的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "sleep",
+    "zh": "睡眠",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "recent",
+    "zh": "近来的",
+    "pos": "adjective",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "half",
+    "zh": "一半",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "close",
+    "zh": "关闭、近",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  },
+  {
+    "word": "attention",
+    "zh": "注意",
+    "pos": "noun",
+    "phonetic": "/.../",
+    "score": 5
+  }
+]

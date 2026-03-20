@@ -1,0 +1,352 @@
+[
+  {
+    "word": "why",
+    "zh": "为什么",
+    "pos": "adjective",
+    "phonetic": "/waɪ/",
+    "score": 5
+  },
+  {
+    "word": "system",
+    "zh": "系统",
+    "pos": "noun",
+    "phonetic": "/ˈsɪstəm/",
+    "score": 5
+  },
+  {
+    "word": "put",
+    "zh": "放",
+    "pos": "noun",
+    "phonetic": "/pʊt/",
+    "score": 5
+  },
+  {
+    "word": "blank",
+    "zh": "空白的、失色的",
+    "pos": "adjective",
+    "phonetic": "/blæŋk/",
+    "score": 5
+  },
+  {
+    "word": "might",
+    "zh": "可能",
+    "pos": "noun",
+    "phonetic": "/maɪt/",
+    "score": 5
+  },
+  {
+    "word": "result",
+    "zh": "结果",
+    "pos": "noun",
+    "phonetic": "/rɪˈzʌlt/",
+    "score": 5
+  },
+  {
+    "word": "try",
+    "zh": "尝试",
+    "pos": "verb",
+    "phonetic": "/traɪ/",
+    "score": 5
+  },
+  {
+    "word": "money",
+    "zh": "钱",
+    "pos": "adjective",
+    "phonetic": "/ˈmʌni/",
+    "score": 5
+  },
+  {
+    "word": "ask",
+    "zh": "问",
+    "pos": "verb",
+    "phonetic": "/ɑːsk/",
+    "score": 5
+  },
+  {
+    "word": "seem",
+    "zh": "似乎",
+    "pos": "verb",
+    "phonetic": "/siːm/",
+    "score": 5
+  },
+  {
+    "word": "speak",
+    "zh": "说",
+    "pos": "verb",
+    "phonetic": "/spiːk/",
+    "score": 5
+  },
+  {
+    "word": "news",
+    "zh": "新闻",
+    "pos": "noun",
+    "phonetic": "/nuːz/",
+    "score": 5
+  },
+  {
+    "word": "example",
+    "zh": "例子",
+    "pos": "noun",
+    "phonetic": "/ɪɡˈzæmpl/",
+    "score": 5
+  },
+  {
+    "word": "same",
+    "zh": "同样的",
+    "pos": "adjective",
+    "phonetic": "/seɪm/",
+    "score": 5
+  },
+  {
+    "word": "important",
+    "zh": "重要的",
+    "pos": "adjective",
+    "phonetic": "/ɪmˈpɔːrtnt/",
+    "score": 5
+  },
+  {
+    "word": "right",
+    "zh": "正确的、权利",
+    "pos": "adjective",
+    "phonetic": "/raɪt/",
+    "score": 5
+  },
+  {
+    "word": "report",
+    "zh": "报告",
+    "pos": "noun",
+    "phonetic": "/rɪˈpɔːrt/",
+    "score": 5
+  },
+  {
+    "word": "believe",
+    "zh": "相信",
+    "pos": "verb",
+    "phonetic": "/bɪˈliːv/",
+    "score": 5
+  },
+  {
+    "word": "computer",
+    "zh": "电脑",
+    "pos": "noun",
+    "phonetic": "/kəmˈpjuːtər/",
+    "score": 5
+  },
+  {
+    "word": "public",
+    "zh": "公众的",
+    "pos": "adjective",
+    "phonetic": "/ˈpʌblɪk/",
+    "score": 5
+  },
+  {
+    "word": "health",
+    "zh": "健康",
+    "pos": "noun",
+    "phonetic": "/helθ/",
+    "score": 5
+  },
+  {
+    "word": "far",
+    "zh": "远的",
+    "pos": "adjective",
+    "phonetic": "/fɑːr/",
+    "score": 5
+  },
+  {
+    "word": "young",
+    "zh": "年轻的",
+    "pos": "adjective",
+    "phonetic": "/jʌŋ/",
+    "score": 5
+  },
+  {
+    "word": "large",
+    "zh": "大的",
+    "pos": "adjective",
+    "phonetic": "/lɑːrdʒ/",
+    "score": 5
+  },
+  {
+    "word": "call",
+    "zh": "打电话",
+    "pos": "verb",
+    "phonetic": "/kɔːl/",
+    "score": 5
+  },
+  {
+    "word": "city",
+    "zh": "城市",
+    "pos": "noun",
+    "phonetic": "/ˈsɪti/",
+    "score": 5
+  },
+  {
+    "word": "develop",
+    "zh": "发展",
+    "pos": "noun",
+    "phonetic": "/dɪˈveləp/",
+    "score": 5
+  },
+  {
+    "word": "start",
+    "zh": "开始",
+    "pos": "noun",
+    "phonetic": "/stɑːrt/",
+    "score": 5
+  },
+  {
+    "word": "another",
+    "zh": "另一个",
+    "pos": "noun",
+    "phonetic": "/əˈnʌðər/",
+    "score": 5
+  },
+  {
+    "word": "centre",
+    "zh": "中心、中央",
+    "pos": "noun",
+    "phonetic": "/ˈsentər/",
+    "score": 5
+  },
+  {
+    "word": "idea",
+    "zh": "想法",
+    "pos": "noun",
+    "phonetic": "/aɪˈdɪə/",
+    "score": 5
+  },
+  {
+    "word": "during",
+    "zh": "在…期间",
+    "pos": "adjective",
+    "phonetic": "/ˈdjʊərɪŋ/",
+    "score": 5
+  },
+  {
+    "word": "science",
+    "zh": "科学",
+    "pos": "noun",
+    "phonetic": "/ˈsaɪəns/",
+    "score": 5
+  },
+  {
+    "word": "allow",
+    "zh": "允许",
+    "pos": "noun",
+    "phonetic": "/əˈlaʊ/",
+    "score": 5
+  },
+  {
+    "word": "age",
+    "zh": "年龄",
+    "pos": "noun",
+    "phonetic": "/eɪdʒ/",
+    "score": 5
+  },
+  {
+    "word": "leave",
+    "zh": "离开",
+    "pos": "verb",
+    "phonetic": "/liːv/",
+    "score": 5
+  },
+  {
+    "word": "every",
+    "zh": "每个",
+    "pos": "adjective",
+    "phonetic": "/ˈevri/",
+    "score": 5
+  },
+  {
+    "word": "talk",
+    "zh": "说",
+    "pos": "noun",
+    "phonetic": "/tɔːk/",
+    "score": 5
+  },
+  {
+    "word": "require",
+    "zh": "需要、要求",
+    "pos": "noun",
+    "phonetic": "/rɪˈkwaɪər/",
+    "score": 5
+  },
+  {
+    "word": "car",
+    "zh": "车",
+    "pos": "noun",
+    "phonetic": "/kɑːr/",
+    "score": 5
+  },
+  {
+    "word": "statement",
+    "zh": "声明",
+    "pos": "noun",
+    "phonetic": "/ˈsteɪtmənt/",
+    "score": 5
+  },
+  {
+    "word": "society",
+    "zh": "社会",
+    "pos": "noun",
+    "phonetic": "/səˈsaɪəti/",
+    "score": 5
+  },
+  {
+    "word": "short",
+    "zh": "短",
+    "pos": "noun",
+    "phonetic": "/ʃɔːrt/",
+    "score": 5
+  },
+  {
+    "word": "cause",
+    "zh": "造成",
+    "pos": "noun",
+    "phonetic": "/kɔːz/",
+    "score": 5
+  },
+  {
+    "word": "down",
+    "zh": "在…下面、情绪低落",
+    "pos": "noun",
+    "phonetic": "/daʊn/",
+    "score": 5
+  },
+  {
+    "word": "technology",
+    "zh": "技术、工艺",
+    "pos": "adjective",
+    "phonetic": "/tekˈnɒlədʒi/",
+    "score": 5
+  },
+  {
+    "word": "grow",
+    "zh": "成长、增长",
+    "pos": "verb",
+    "phonetic": "/ɡroʊ/",
+    "score": 5
+  },
+  {
+    "word": "sentence",
+    "zh": "句子、判决",
+    "pos": "noun",
+    "phonetic": "/ˈsentəns/",
+    "score": 5
+  },
+  {
+    "word": "without",
+    "zh": "没有",
+    "pos": "verb",
+    "phonetic": "/wɪˈðaʊt/",
+    "score": 5
+  },
+  {
+    "word": "hour",
+    "zh": "小时",
+    "pos": "noun",
+    "phonetic": "/ˈaʊər/",
+    "score": 5
+  }
+]

@@ -1,0 +1,352 @@
+[
+  {
+    "word": "think",
+    "zh": "认为",
+    "pos": "verb",
+    "phonetic": "/θɪŋk/",
+    "score": 4
+  },
+  {
+    "word": "world",
+    "zh": "世界",
+    "pos": "noun",
+    "phonetic": "/wɜːrld/",
+    "score": 4
+  },
+  {
+    "word": "choice",
+    "zh": "选择",
+    "pos": "noun",
+    "phonetic": "/tʃɔɪs/",
+    "score": 4
+  },
+  {
+    "word": "change",
+    "zh": "改变",
+    "pos": "verb",
+    "phonetic": "/tʃeɪndʒ/",
+    "score": 4
+  },
+  {
+    "word": "direction",
+    "zh": "方向、指令",
+    "pos": "noun",
+    "phonetic": "/dəˈrekʃn/",
+    "score": 4
+  },
+  {
+    "word": "much",
+    "zh": "许多的、非常",
+    "pos": "adjective",
+    "phonetic": "/mʌtʃ/",
+    "score": 4
+  },
+  {
+    "word": "life",
+    "zh": "生命、人生",
+    "pos": "noun",
+    "phonetic": "/laɪf/",
+    "score": 4
+  },
+  {
+    "word": "long",
+    "zh": "长",
+    "pos": "noun",
+    "phonetic": "/lɒŋ/",
+    "score": 4
+  },
+  {
+    "word": "study",
+    "zh": "学习",
+    "pos": "adjective",
+    "phonetic": "/ˈstʌdi/",
+    "score": 4
+  },
+  {
+    "word": "need",
+    "zh": "需要",
+    "pos": "adjective",
+    "phonetic": "/niːd/",
+    "score": 4
+  },
+  {
+    "word": "first",
+    "zh": "第一",
+    "pos": "noun",
+    "phonetic": "/fɜːrst/",
+    "score": 4
+  },
+  {
+    "word": "help",
+    "zh": "帮助",
+    "pos": "verb",
+    "phonetic": "/help/",
+    "score": 4
+  },
+  {
+    "word": "four",
+    "zh": "四",
+    "pos": "noun",
+    "phonetic": "/fɔːr/",
+    "score": 4
+  },
+  {
+    "word": "job",
+    "zh": "工作",
+    "pos": "noun",
+    "phonetic": "/dʒɒb/",
+    "score": 4
+  },
+  {
+    "word": "learn",
+    "zh": "学习、了解",
+    "pos": "verb",
+    "phonetic": "/lɜːrn/",
+    "score": 4
+  },
+  {
+    "word": "high",
+    "zh": "高的、高",
+    "pos": "adjective",
+    "phonetic": "/haɪ/",
+    "score": 4
+  },
+  {
+    "word": "now",
+    "zh": "现在",
+    "pos": "noun",
+    "phonetic": "/naʊ/",
+    "score": 4
+  },
+  {
+    "word": "good",
+    "zh": "好的、货物",
+    "pos": "adjective",
+    "phonetic": "/ɡʊd/",
+    "score": 4
+  },
+  {
+    "word": "over",
+    "zh": "在…上方、结束",
+    "pos": "noun",
+    "phonetic": "/ˈoʊvər/",
+    "score": 4
+  },
+  {
+    "word": "then",
+    "zh": "然后",
+    "pos": "noun",
+    "phonetic": "/ðen/",
+    "score": 4
+  },
+  {
+    "word": "minute",
+    "zh": "分钟、微小的",
+    "pos": "adjective",
+    "phonetic": "/ˈmɪnɪt/",
+    "score": 4
+  },
+  {
+    "word": "after",
+    "zh": "在…之后",
+    "pos": "noun",
+    "phonetic": "/ˈæftər/",
+    "score": 4
+  },
+  {
+    "word": "live",
+    "zh": "住、生活",
+    "pos": "verb",
+    "phonetic": "/lɪv/",
+    "score": 4
+  },
+  {
+    "word": "know",
+    "zh": "知道",
+    "pos": "verb",
+    "phonetic": "/noʊ/",
+    "score": 4
+  },
+  {
+    "word": "line",
+    "zh": "排队、线",
+    "pos": "noun",
+    "phonetic": "/laɪn/",
+    "score": 4
+  },
+  {
+    "word": "these",
+    "zh": "这些、这些人",
+    "pos": "noun",
+    "phonetic": "/ðiːz/",
+    "score": 4
+  },
+  {
+    "word": "become",
+    "zh": "成为、适宜",
+    "pos": "noun",
+    "phonetic": "/bɪˈkʌm/",
+    "score": 4
+  },
+  {
+    "word": "author",
+    "zh": "作者",
+    "pos": "noun",
+    "phonetic": "/ˈɔːθər/",
+    "score": 4
+  },
+  {
+    "word": "could",
+    "zh": "能够",
+    "pos": "noun",
+    "phonetic": "/kʊd/",
+    "score": 4
+  },
+  {
+    "word": "even",
+    "zh": "甚至",
+    "pos": "noun",
+    "phonetic": "/ˈiːvn/",
+    "score": 4
+  },
+  {
+    "word": "also",
+    "zh": "也",
+    "pos": "noun",
+    "phonetic": "/ˈɔːlsoʊ/",
+    "score": 4
+  },
+  {
+    "word": "come",
+    "zh": "来",
+    "pos": "verb",
+    "phonetic": "/kʌm/",
+    "score": 4
+  },
+  {
+    "word": "such",
+    "zh": "这样的",
+    "pos": "adjective",
+    "phonetic": "/sʌtʃ/",
+    "score": 4
+  },
+  {
+    "word": "mean",
+    "zh": "意思是、意味着",
+    "pos": "verb",
+    "phonetic": "/miːn/",
+    "score": 4
+  },
+  {
+    "word": "letter",
+    "zh": "信件",
+    "pos": "noun",
+    "phonetic": "/ˈletər/",
+    "score": 4
+  },
+  {
+    "word": "see",
+    "zh": "看",
+    "pos": "verb",
+    "phonetic": "/siː/",
+    "score": 4
+  },
+  {
+    "word": "three",
+    "zh": "三",
+    "pos": "noun",
+    "phonetic": "/θriː/",
+    "score": 4
+  },
+  {
+    "word": "those",
+    "zh": "那些",
+    "pos": "noun",
+    "phonetic": "/ðoʊz/",
+    "score": 4
+  },
+  {
+    "word": "end",
+    "zh": "结束",
+    "pos": "noun",
+    "phonetic": "/end/",
+    "score": 4
+  },
+  {
+    "word": "once",
+    "zh": "曾经、一次",
+    "pos": "noun",
+    "phonetic": "/wʌns/",
+    "score": 4
+  },
+  {
+    "word": "company",
+    "zh": "公司、陪伴",
+    "pos": "adjective",
+    "phonetic": "/ˈkʌmpəni/",
+    "score": 4
+  },
+  {
+    "word": "conversation",
+    "zh": "对话",
+    "pos": "noun",
+    "phonetic": "/ˌkɒnvərˈseɪʃn/",
+    "score": 4
+  },
+  {
+    "word": "problem",
+    "zh": "问题",
+    "pos": "noun",
+    "phonetic": "/ˈprɒbləm/",
+    "score": 4
+  },
+  {
+    "word": "university",
+    "zh": "大学",
+    "pos": "noun",
+    "phonetic": "/ˌjuːnɪˈvɜːrsəti/",
+    "score": 4
+  },
+  {
+    "word": "human",
+    "zh": "人",
+    "pos": "noun",
+    "phonetic": "/ˈhjuːmən/",
+    "score": 4
+  },
+  {
+    "word": "state",
+    "zh": "陈述、状态",
+    "pos": "noun",
+    "phonetic": "/steɪt/",
+    "score": 4
+  },
+  {
+    "word": "want",
+    "zh": "想要",
+    "pos": "verb",
+    "phonetic": "/wɒnt/",
+    "score": 4
+  },
+  {
+    "word": "must",
+    "zh": "必须",
+    "pos": "noun",
+    "phonetic": "/mʌst/",
+    "score": 4
+  },
+  {
+    "word": "food",
+    "zh": "食物",
+    "pos": "noun",
+    "phonetic": "/fuːd/",
+    "score": 4
+  },
+  {
+    "word": "country",
+    "zh": "国家",
+    "pos": "adjective",
+    "phonetic": "/ˈkʌntri/",
+    "score": 4
+  }
+]
