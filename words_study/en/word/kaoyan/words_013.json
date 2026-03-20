@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "受欢迎的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "popular"
+    },
+    {
+        "zh":  "论述、争论、争吵",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "argue"
+    },
+    {
+        "zh":  "自然科学的、肉体的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "physical"
+    },
+    {
+        "zh":  "团队",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "team"
+    },
+    {
+        "zh":  "行动、行为",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "action"
+    },
+    {
+        "zh":  "材料",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "material"
+    },
+    {
+        "zh":  "证明",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prove"
+    },
+    {
+        "zh":  "比较",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "compare"
+    },
+    {
+        "zh":  "比赛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "competition"
+    },
+    {
+        "zh":  "没有",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nothing"
+    },
+    {
+        "zh":  "也许",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "perhaps"
+    },
+    {
+        "zh":  "私人的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "private"
+    },
+    {
+        "zh":  "请、使愉快",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "please"
+    },
+    {
+        "zh":  "前往",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "head"
+    },
+    {
+        "zh":  "街道",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "street"
+    },
+    {
+        "zh":  "可行的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "available"
+    },
+    {
+        "zh":  "当前、电流、趋向",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "current"
+    },
+    {
+        "zh":  "男孩",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "boy"
+    },
+    {
+        "zh":  "目标",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "goal"
+    },
+    {
+        "zh":  "丢失",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "loss"
+    },
+    {
+        "zh":  "证据",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "evidence"
+    },
+    {
+        "zh":  "一共",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "together"
+    },
+    {
+        "zh":  "加速",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "speed"
+    },
+    {
+        "zh":  "中间的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "middle"
+    },
+    {
+        "zh":  "沿着",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "along"
+    },
+    {
+        "zh":  "销售",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sale"
+    },
+    {
+        "zh":  "生产",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "production"
+    },
+    {
+        "zh":  "年级",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grade"
+    },
+    {
+        "zh":  "参观、访问",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "visit"
+    },
+    {
+        "zh":  "内容、目录、满足的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "content"
+    },
+    {
+        "zh":  "来源",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "source"
+    },
+    {
+        "zh":  "安全",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "security"
+    },
+    {
+        "zh":  "压力",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pressure"
+    },
+    {
+        "zh":  "间隙、分歧",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "gap"
+    },
+    {
+        "zh":  "穿过",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "across"
+    },
+    {
+        "zh":  "让",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "let"
+    },
+    {
+        "zh":  "依赖",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "depend"
+    },
+    {
+        "zh":  "尤其",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "especially"
+    },
+    {
+        "zh":  "现代的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "modern"
+    },
+    {
+        "zh":  "仅仅",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "simply"
+    },
+    {
+        "zh":  "农场",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "farm"
+    },
+    {
+        "zh":  "接近、方法",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "approach"
+    },
+    {
+        "zh":  "更正、纠正",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "correct"
+    },
+    {
+        "zh":  "特别的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "special"
+    },
+    {
+        "zh":  "希望",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hope"
+    },
+    {
+        "zh":  "某人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "someone"
+    },
+    {
+        "zh":  "扬声器、说话人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "speaker"
+    },
+    {
+        "zh":  "智力",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "intelligence"
+    },
+    {
+        "zh":  "图片",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "picture"
+    },
+    {
+        "zh":  "调查、测量",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "survey"
+    }
+]

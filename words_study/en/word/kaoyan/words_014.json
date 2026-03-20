@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "每人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "everyone"
+    },
+    {
+        "zh":  "事件",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "event"
+    },
+    {
+        "zh":  "两者之一",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "either"
+    },
+    {
+        "zh":  "步骤",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "step"
+    },
+    {
+        "zh":  "习惯",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "habit"
+    },
+    {
+        "zh":  "责任",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "responsibility"
+    },
+    {
+        "zh":  "相似的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "similar"
+    },
+    {
+        "zh":  "必要的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "necessary"
+    },
+    {
+        "zh":  "机会",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "chance"
+    },
+    {
+        "zh":  "国外的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "foreign"
+    },
+    {
+        "zh":  "应用",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "apply"
+    },
+    {
+        "zh":  "父亲",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "father"
+    },
+    {
+        "zh":  "驾驶员",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "driver"
+    },
+    {
+        "zh":  "油",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "oil"
+    },
+    {
+        "zh":  "任何事",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "anything"
+    },
+    {
+        "zh":  "进入、存取",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "access"
+    },
+    {
+        "zh":  "体育运动",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sport"
+    },
+    {
+        "zh":  "存在",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "exist"
+    },
+    {
+        "zh":  "优势",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "advantage"
+    },
+    {
+        "zh":  "报纸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "newspaper"
+    },
+    {
+        "zh":  "记得",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "remember"
+    },
+    {
+        "zh":  "同意",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "agree"
+    },
+    {
+        "zh":  "经理",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "manager"
+    },
+    {
+        "zh":  "着陆、土地",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "land"
+    },
+    {
+        "zh":  "解答",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "solve"
+    },
+    {
+        "zh":  "功能",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "function"
+    },
+    {
+        "zh":  "经营、管理",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "management"
+    },
+    {
+        "zh":  "短语",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "phrase"
+    },
+    {
+        "zh":  "实验",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "experiment"
+    },
+    {
+        "zh":  "结构",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "structure"
+    },
+    {
+        "zh":  "每件事",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "everything"
+    },
+    {
+        "zh":  "坐在",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sit"
+    },
+    {
+        "zh":  "寻求",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "seek"
+    },
+    {
+        "zh":  "消息",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "message"
+    },
+    {
+        "zh":  "每、经",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "per"
+    },
+    {
+        "zh":  "促进",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "promote"
+    },
+    {
+        "zh":  "算计、人物、数字",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "figure"
+    },
+    {
+        "zh":  "路",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "road"
+    },
+    {
+        "zh":  "限制",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "limit"
+    },
+    {
+        "zh":  "有时",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sometimes"
+    },
+    {
+        "zh":  "恐惧",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fear"
+    },
+    {
+        "zh":  "供应",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "supply"
+    },
+    {
+        "zh":  "争论、论据",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "argument"
+    },
+    {
+        "zh":  "讲述、使相互关联",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "relate"
+    },
+    {
+        "zh":  "有效的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "effective"
+    },
+    {
+        "zh":  "阻止",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prevent"
+    },
+    {
+        "zh":  "模式、图案",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pattern"
+    },
+    {
+        "zh":  "宝贝",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "baby"
+    },
+    {
+        "zh":  "搜索",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "search"
+    },
+    {
+        "zh":  "它自己",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "itself"
+    }
+]

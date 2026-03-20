@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "愤怒",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "outrage"
+    },
+    {
+        "zh":  "祈祷",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pray"
+    },
+    {
+        "zh":  "宣传",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "propaganda"
+    },
+    {
+        "zh":  "唤醒、激起",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rouse"
+    },
+    {
+        "zh":  "讽刺",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "satire"
+    },
+    {
+        "zh":  "溜",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sneak"
+    },
+    {
+        "zh":  "茎",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stalk"
+    },
+    {
+        "zh":  "交响乐",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "symphony"
+    },
+    {
+        "zh":  "卷起、藏起",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tuck"
+    },
+    {
+        "zh":  "无论什么",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "whatsoever"
+    },
+    {
+        "zh":  "鞭子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "whip"
+    },
+    {
+        "zh":  "手腕",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wrist"
+    },
+    {
+        "zh":  "鼓掌",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "applause"
+    },
+    {
+        "zh":  "灰",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ash"
+    },
+    {
+        "zh":  "保释",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bail"
+    },
+    {
+        "zh":  "长凳",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bench"
+    },
+    {
+        "zh":  "更好的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "better"
+    },
+    {
+        "zh":  "支持",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bolster"
+    },
+    {
+        "zh":  "反弹",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bounce"
+    },
+    {
+        "zh":  "复杂的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "complicate"
+    },
+    {
+        "zh":  "认真的、负责的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "conscientious"
+    },
+    {
+        "zh":  "冠状病毒",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "coronavirus"
+    },
+    {
+        "zh":  "起重机",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "crane"
+    },
+    {
+        "zh":  "水晶",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "crystal"
+    },
+    {
+        "zh":  "达到高潮、结束",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "culminate"
+    },
+    {
+        "zh":  "碗橱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cupboard"
+    },
+    {
+        "zh":  "沮丧",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dismay"
+    },
+    {
+        "zh":  "疏散",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "evacuate"
+    },
+    {
+        "zh":  "羽毛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "feather"
+    },
+    {
+        "zh":  "化肥",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fertiliser"
+    },
+    {
+        "zh":  "封建的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "feudal"
+    },
+    {
+        "zh":  "壁炉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fireplace"
+    },
+    {
+        "zh":  "喷泉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fountain"
+    },
+    {
+        "zh":  "蛙",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "frog"
+    },
+    {
+        "zh":  "细菌、胚芽",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "germ"
+    },
+    {
+        "zh":  "滑翔",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "glide"
+    },
+    {
+        "zh":  "继承人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "heir"
+    },
+    {
+        "zh":  "逼近的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "imminent"
+    },
+    {
+        "zh":  "抑制",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "inhibit"
+    },
+    {
+        "zh":  "内部的、向内、内部",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "inward"
+    },
+    {
+        "zh":  "爵士乐",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "jazz"
+    },
+    {
+        "zh":  "连接",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "junction"
+    },
+    {
+        "zh":  "绑架",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "kidnap"
+    },
+    {
+        "zh":  "环",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "loop"
+    },
+    {
+        "zh":  "传教士",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "missionary"
+    },
+    {
+        "zh":  "潮湿的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "moist"
+    },
+    {
+        "zh":  "裸体的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "naked"
+    },
+    {
+        "zh":  "大衣",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "overcoat"
+    },
+    {
+        "zh":  "溢出",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "overflow"
+    },
+    {
+        "zh":  "原谅",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pardon"
+    }
+]

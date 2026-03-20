@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "优于",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "excel"
+    },
+    {
+        "zh":  "然而",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nonetheless"
+    },
+    {
+        "zh":  "排队",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "queue"
+    },
+    {
+        "zh":  "征服",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "conquer"
+    },
+    {
+        "zh":  "反驳",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "contradict"
+    },
+    {
+        "zh":  "泄露",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "leak"
+    },
+    {
+        "zh":  "抓住",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "seize"
+    },
+    {
+        "zh":  "真实的、真正的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "authentic"
+    },
+    {
+        "zh":  "协调、坐标",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "coordinate"
+    },
+    {
+        "zh":  "髋",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hip"
+    },
+    {
+        "zh":  "可行的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "feasible"
+    },
+    {
+        "zh":  "阴暗的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "gloomy"
+    },
+    {
+        "zh":  "暗示",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hint"
+    },
+    {
+        "zh":  "文盲",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "illiterate"
+    },
+    {
+        "zh":  "熨",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "iron"
+    },
+    {
+        "zh":  "嘴唇",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lip"
+    },
+    {
+        "zh":  "画家",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "painter"
+    },
+    {
+        "zh":  "搅拌",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stir"
+    },
+    {
+        "zh":  "苦的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bitter"
+    },
+    {
+        "zh":  "消化",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "digest"
+    },
+    {
+        "zh":  "奇异的、外来的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "exotic"
+    },
+    {
+        "zh":  "懒惰的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lazy"
+    },
+    {
+        "zh":  "遵守、服从",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "obey"
+    },
+    {
+        "zh":  "黄油",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "butter"
+    },
+    {
+        "zh":  "地毯",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "carpet"
+    },
+    {
+        "zh":  "平民",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "civilian"
+    },
+    {
+        "zh":  "别针、固定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pin"
+    },
+    {
+        "zh":  "黄色",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "yellow"
+    },
+    {
+        "zh":  "馅饼",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pie"
+    },
+    {
+        "zh":  "取回、恢复",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "retrieve"
+    },
+    {
+        "zh":  "浪漫、冒险故事",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "romance"
+    },
+    {
+        "zh":  "车间",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "workshop"
+    },
+    {
+        "zh":  "帽子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cap"
+    },
+    {
+        "zh":  "同样地",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "likewise"
+    },
+    {
+        "zh":  "轻蔑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "contempt"
+    },
+    {
+        "zh":  "女王",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "queen"
+    },
+    {
+        "zh":  "喷射、喷气式飞机",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "jet"
+    },
+    {
+        "zh":  "相识的人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "acquaintance"
+    },
+    {
+        "zh":  "海湾",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bay"
+    },
+    {
+        "zh":  "咬",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bite"
+    },
+    {
+        "zh":  "描述、描绘",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "depict"
+    },
+    {
+        "zh":  "维度",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dimension"
+    },
+    {
+        "zh":  "精确",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "precision"
+    },
+    {
+        "zh":  "岸上",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shore"
+    },
+    {
+        "zh":  "肤浅的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "superficial"
+    },
+    {
+        "zh":  "统一",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "unity"
+    },
+    {
+        "zh":  "提供",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "furnish"
+    },
+    {
+        "zh":  "宫殿",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "palace"
+    },
+    {
+        "zh":  "激怒",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "provoke"
+    },
+    {
+        "zh":  "感激的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grateful"
+    }
+]

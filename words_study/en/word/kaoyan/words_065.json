@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "刹车",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "brake"
+    },
+    {
+        "zh":  "日历",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "calendar"
+    },
+    {
+        "zh":  "证书",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "certificate"
+    },
+    {
+        "zh":  "堂兄弟姐妹",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cousin"
+    },
+    {
+        "zh":  "乳制品",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dairy"
+    },
+    {
+        "zh":  "腐烂",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "decay"
+    },
+    {
+        "zh":  "抓取、夺取",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grab"
+    },
+    {
+        "zh":  "悲惨的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "miserable"
+    },
+    {
+        "zh":  "从业者",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "practitioner"
+    },
+    {
+        "zh":  "命题",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "proposition"
+    },
+    {
+        "zh":  "合格",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "qualify"
+    },
+    {
+        "zh":  "鞋底、唯一的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sole"
+    },
+    {
+        "zh":  "火星、引起",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "spark"
+    },
+    {
+        "zh":  "运动员",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sportsman"
+    },
+    {
+        "zh":  "纸巾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tissue"
+    },
+    {
+        "zh":  "损失、通行费",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "toll"
+    },
+    {
+        "zh":  "核实",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "verify"
+    },
+    {
+        "zh":  "强制的、义务的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "compulsory"
+    },
+    {
+        "zh":  "网络空间",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cyberspace"
+    },
+    {
+        "zh":  "黎明",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dawn"
+    },
+    {
+        "zh":  "踢",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "kick"
+    },
+    {
+        "zh":  "市长",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mayor"
+    },
+    {
+        "zh":  "主观的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "subjective"
+    },
+    {
+        "zh":  "及时的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "timely"
+    },
+    {
+        "zh":  "病房",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ward"
+    },
+    {
+        "zh":  "包裹",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wrap"
+    },
+    {
+        "zh":  "高度",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "altitude"
+    },
+    {
+        "zh":  "牛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cattle"
+    },
+    {
+        "zh":  "村舍",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cottage"
+    },
+    {
+        "zh":  "淹没",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "drown"
+    },
+    {
+        "zh":  "帝国",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "empire"
+    },
+    {
+        "zh":  "无知",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ignorance"
+    },
+    {
+        "zh":  "房东",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "landlord"
+    },
+    {
+        "zh":  "预防",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "precaution"
+    },
+    {
+        "zh":  "繁荣的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prosperous"
+    },
+    {
+        "zh":  "紧张的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tense"
+    },
+    {
+        "zh":  "对抗",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "versus"
+    },
+    {
+        "zh":  "分配",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "allocate"
+    },
+    {
+        "zh":  "乞求",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "beg"
+    },
+    {
+        "zh":  "高兴的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "glad"
+    },
+    {
+        "zh":  "感染",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "infect"
+    },
+    {
+        "zh":  "混乱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mess"
+    },
+    {
+        "zh":  "讨厌的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "troublesome"
+    },
+    {
+        "zh":  "委托",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "delegate"
+    },
+    {
+        "zh":  "潜水、跳水",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dive"
+    },
+    {
+        "zh":  "跳跃",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hop"
+    },
+    {
+        "zh":  "幼儿园",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "kindergarten"
+    },
+    {
+        "zh":  "垃圾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "litter"
+    },
+    {
+        "zh":  "护照",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "passport"
+    },
+    {
+        "zh":  "轻拍",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pat"
+    }
+]

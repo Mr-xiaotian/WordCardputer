@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "中间体、中等的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "intermediate"
+    },
+    {
+        "zh":  "无价的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "invaluable"
+    },
+    {
+        "zh":  "行话",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "jargon"
+    },
+    {
+        "zh":  "丛林",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "jungle"
+    },
+    {
+        "zh":  "门外汉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "layman"
+    },
+    {
+        "zh":  "地区",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "locality"
+    },
+    {
+        "zh":  "中午",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "noon"
+    },
+    {
+        "zh":  "气味",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "odor"
+    },
+    {
+        "zh":  "可以、好的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "okay"
+    },
+    {
+        "zh":  "光学的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "optical"
+    },
+    {
+        "zh":  "最佳的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "optimum"
+    },
+    {
+        "zh":  "协定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pact"
+    },
+    {
+        "zh":  "坚持",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "persevere"
+    },
+    {
+        "zh":  "药房",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pharmacy"
+    },
+    {
+        "zh":  "粉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "powder"
+    },
+    {
+        "zh":  "主要的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "predominant"
+    },
+    {
+        "zh":  "假定、推测",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "presume"
+    },
+    {
+        "zh":  "协议",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "protocol"
+    },
+    {
+        "zh":  "紫色",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "purple"
+    },
+    {
+        "zh":  "强奸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rape"
+    },
+    {
+        "zh":  "回收、利用",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reclaim"
+    },
+    {
+        "zh":  "镇压",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "repression"
+    },
+    {
+        "zh":  "脊",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ridge"
+    },
+    {
+        "zh":  "生锈",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rust"
+    },
+    {
+        "zh":  "酱汁",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sauce"
+    },
+    {
+        "zh":  "兄弟姐妹",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sibling"
+    },
+    {
+        "zh":  "掴、侮辱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slap"
+    },
+    {
+        "zh":  "陈腐的、不新鲜的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stale"
+    },
+    {
+        "zh":  "皮带",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "strap"
+    },
+    {
+        "zh":  "潜入水中、浸没",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "submerge"
+    },
+    {
+        "zh":  "晚餐",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "supper"
+    },
+    {
+        "zh":  "倾斜",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tilt"
+    },
+    {
+        "zh":  "商标",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "trademark"
+    },
+    {
+        "zh":  "修剪、装饰",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "trim"
+    },
+    {
+        "zh":  "打字员",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "typist"
+    },
+    {
+        "zh":  "审判地、犯罪地点",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "venue"
+    },
+    {
+        "zh":  "多才多艺的、通用的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "versatile"
+    },
+    {
+        "zh":  "每年的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "yearly"
+    },
+    {
+        "zh":  "项链",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "necklace"
+    },
+    {
+        "zh":  "节俭",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "thrift"
+    },
+    {
+        "zh":  "疲倦",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "weary"
+    },
+    {
+        "zh":  "飞机",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "aeroplane"
+    },
+    {
+        "zh":  "水泥",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cement"
+    },
+    {
+        "zh":  "检查",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "inspect"
+    },
+    {
+        "zh":  "迂回的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "roundabout"
+    },
+    {
+        "zh":  "遵守",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "abide"
+    },
+    {
+        "zh":  "上岸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ashore"
+    },
+    {
+        "zh":  "烟囱",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "chimney"
+    },
+    {
+        "zh":  "爪",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "claw"
+    },
+    {
+        "zh":  "通讯记者",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "correspondent"
+    }
+]

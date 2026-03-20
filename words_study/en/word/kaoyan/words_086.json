@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "探测器",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "detector"
+    },
+    {
+        "zh":  "认真",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "earnest"
+    },
+    {
+        "zh":  "虚弱的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "feeble"
+    },
+    {
+        "zh":  "星系",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "galaxy"
+    },
+    {
+        "zh":  "你好",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hello"
+    },
+    {
+        "zh":  "反讽",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "irony"
+    },
+    {
+        "zh":  "模子、模型",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mold"
+    },
+    {
+        "zh":  "起诉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prosecute"
+    },
+    {
+        "zh":  "野蛮人、凶猛的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "savage"
+    },
+    {
+        "zh":  "监视",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "surveillance"
+    },
+    {
+        "zh":  "短暂的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "transient"
+    },
+    {
+        "zh":  "突然的、陡峭的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "abrupt"
+    },
+    {
+        "zh":  "使附属、附属机构",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "affiliate"
+    },
+    {
+        "zh":  "调整、排列",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "align"
+    },
+    {
+        "zh":  "攻击",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "assault"
+    },
+    {
+        "zh":  "开始",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "beginning"
+    },
+    {
+        "zh":  "结合",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "conjunction"
+    },
+    {
+        "zh":  "巩固、统一",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "consolidate"
+    },
+    {
+        "zh":  "建议",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "counsel"
+    },
+    {
+        "zh":  "批评",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "criticise"
+    },
+    {
+        "zh":  "类型",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "genre"
+    },
+    {
+        "zh":  "她的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hers"
+    },
+    {
+        "zh":  "在头顶上、在空中",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "overhead"
+    },
+    {
+        "zh":  "重叠",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "overlap"
+    },
+    {
+        "zh":  "政权",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "regime"
+    },
+    {
+        "zh":  "汤",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "soup"
+    },
+    {
+        "zh":  "极好的、可怕的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "terrific"
+    },
+    {
+        "zh":  "联合、结合",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "unite"
+    },
+    {
+        "zh":  "称赞、欢呼",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "acclaim"
+    },
+    {
+        "zh":  "救护车",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ambulance"
+    },
+    {
+        "zh":  "助动词、辅助的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "auxiliary"
+    },
+    {
+        "zh":  "投票",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ballot"
+    },
+    {
+        "zh":  "糖果",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "candy"
+    },
+    {
+        "zh":  "碳水化合物",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "carbohydrate"
+    },
+    {
+        "zh":  "群",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cluster"
+    },
+    {
+        "zh":  "联合",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "coalition"
+    },
+    {
+        "zh":  "警察",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cop"
+    },
+    {
+        "zh":  "铜",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "copper"
+    },
+    {
+        "zh":  "长沙发、睡椅",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "couch"
+    },
+    {
+        "zh":  "方言",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dialect"
+    },
+    {
+        "zh":  "扰乱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "disturbance"
+    },
+    {
+        "zh":  "经验主义的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "empirical"
+    },
+    {
+        "zh":  "系上",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fasten"
+    },
+    {
+        "zh":  "胶水",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "glue"
+    },
+    {
+        "zh":  "呻吟",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "groan"
+    },
+    {
+        "zh":  "新奇的经验",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "novelty"
+    },
+    {
+        "zh":  "穿透",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pierce"
+    },
+    {
+        "zh":  "熟练",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "proficiency"
+    },
+    {
+        "zh":  "传闻",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rumor"
+    },
+    {
+        "zh":  "恐吓、惊吓",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scare"
+    }
+]

@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "盯着",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stare"
+    },
+    {
+        "zh":  "游荡",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wander"
+    },
+    {
+        "zh":  "非凡的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "extraordinary"
+    },
+    {
+        "zh":  "擦亮",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "polish"
+    },
+    {
+        "zh":  "轻微的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slight"
+    },
+    {
+        "zh":  "坦白的、直率的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "frank"
+    },
+    {
+        "zh":  "不幸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "misfortune"
+    },
+    {
+        "zh":  "抢劫",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rob"
+    },
+    {
+        "zh":  "外科医生",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "surgeon"
+    },
+    {
+        "zh":  "传输",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "transmission"
+    },
+    {
+        "zh":  "轨道",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "orbit"
+    },
+    {
+        "zh":  "预定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reservation"
+    },
+    {
+        "zh":  "闪亮的、聪明的、出色的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "brilliant"
+    },
+    {
+        "zh":  "小玩意儿",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "gadget"
+    },
+    {
+        "zh":  "操场",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "playground"
+    },
+    {
+        "zh":  "房客、租户",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tenant"
+    },
+    {
+        "zh":  "值得的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "worthwhile"
+    },
+    {
+        "zh":  "断言",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "assert"
+    },
+    {
+        "zh":  "神秘的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mysterious"
+    },
+    {
+        "zh":  "部分、薄片",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slice"
+    },
+    {
+        "zh":  "篮球",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "basketball"
+    },
+    {
+        "zh":  "固有的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "inherent"
+    },
+    {
+        "zh":  "六十",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sixty"
+    },
+    {
+        "zh":  "头条新闻",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "headline"
+    },
+    {
+        "zh":  "指定",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "specify"
+    },
+    {
+        "zh":  "标签",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tag"
+    },
+    {
+        "zh":  "利润、边缘",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "margin"
+    },
+    {
+        "zh":  "提取",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "extract"
+    },
+    {
+        "zh":  "议程、日程",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "agenda"
+    },
+    {
+        "zh":  "笑话",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "joke"
+    },
+    {
+        "zh":  "悲观的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pessimistic"
+    },
+    {
+        "zh":  "曲调",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tune"
+    },
+    {
+        "zh":  "道歉",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "apology"
+    },
+    {
+        "zh":  "大声的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "loud"
+    },
+    {
+        "zh":  "描绘",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "portray"
+    },
+    {
+        "zh":  "迸发、爆发",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "burst"
+    },
+    {
+        "zh":  "兴奋",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "excitement"
+    },
+    {
+        "zh":  "地理",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "geography"
+    },
+    {
+        "zh":  "普遍的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prevalent"
+    },
+    {
+        "zh":  "沉默",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "silence"
+    },
+    {
+        "zh":  "理论上的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "theoretical"
+    },
+    {
+        "zh":  "谋杀",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "murder"
+    },
+    {
+        "zh":  "严格的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rigorous"
+    },
+    {
+        "zh":  "服务员",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "waiter"
+    },
+    {
+        "zh":  "玉米",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "corn"
+    },
+    {
+        "zh":  "自己",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "oneself"
+    },
+    {
+        "zh":  "阴影",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shadow"
+    },
+    {
+        "zh":  "舌头",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tongue"
+    },
+    {
+        "zh":  "兴趣",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hobby"
+    },
+    {
+        "zh":  "笔记本电脑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "laptop"
+    }
+]

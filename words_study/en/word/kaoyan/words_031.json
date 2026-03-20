@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "快的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rapid"
+    },
+    {
+        "zh":  "情愿的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "willing"
+    },
+    {
+        "zh":  "好奇心",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "curiosity"
+    },
+    {
+        "zh":  "幼年",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "childhood"
+    },
+    {
+        "zh":  "系",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tie"
+    },
+    {
+        "zh":  "攀爬",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "climb"
+    },
+    {
+        "zh":  "网、净的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "net"
+    },
+    {
+        "zh":  "没有",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "none"
+    },
+    {
+        "zh":  "遍布的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "widespread"
+    },
+    {
+        "zh":  "茎、词干",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stem"
+    },
+    {
+        "zh":  "抛弃",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "abandon"
+    },
+    {
+        "zh":  "英镑、磅",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pound"
+    },
+    {
+        "zh":  "习惯、惠顾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "custom"
+    },
+    {
+        "zh":  "费用",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fee"
+    },
+    {
+        "zh":  "岛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "island"
+    },
+    {
+        "zh":  "合适的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "suitable"
+    },
+    {
+        "zh":  "喜欢、赞同",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "favor"
+    },
+    {
+        "zh":  "使安全、争取到",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "secure"
+    },
+    {
+        "zh":  "出席、存在",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "presence"
+    },
+    {
+        "zh":  "运输",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "transport"
+    },
+    {
+        "zh":  "独立的、私营的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "independent"
+    },
+    {
+        "zh":  "概念、见解、打算",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "notion"
+    },
+    {
+        "zh":  "区别、使有特色",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "distinguish"
+    },
+    {
+        "zh":  "收藏",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "collection"
+    },
+    {
+        "zh":  "观点、判断力",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "perspective"
+    },
+    {
+        "zh":  "小心的、细致的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "careful"
+    },
+    {
+        "zh":  "玩具",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "toy"
+    },
+    {
+        "zh":  "友谊",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "friendship"
+    },
+    {
+        "zh":  "扔",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "throw"
+    },
+    {
+        "zh":  "雄心、志向",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ambition"
+    },
+    {
+        "zh":  "巨人、巨大的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "giant"
+    },
+    {
+        "zh":  "定义、清晰度",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "definition"
+    },
+    {
+        "zh":  "高度、身高",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "height"
+    },
+    {
+        "zh":  "拒绝",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reject"
+    },
+    {
+        "zh":  "消失",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "disappear"
+    },
+    {
+        "zh":  "典型的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "typical"
+    },
+    {
+        "zh":  "黑暗的、深色的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dark"
+    },
+    {
+        "zh":  "适合",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "suit"
+    },
+    {
+        "zh":  "退出",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "quit"
+    },
+    {
+        "zh":  "领导",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "leadership"
+    },
+    {
+        "zh":  "表现",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "behave"
+    },
+    {
+        "zh":  "激发",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "inspire"
+    },
+    {
+        "zh":  "青春、年轻人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "youth"
+    },
+    {
+        "zh":  "暴力、狂热",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "violence"
+    },
+    {
+        "zh":  "监视器",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "monitor"
+    },
+    {
+        "zh":  "厨房",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "kitchen"
+    },
+    {
+        "zh":  "现象",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "phenomenon"
+    },
+    {
+        "zh":  "医师",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "physician"
+    },
+    {
+        "zh":  "男演员",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "actor"
+    },
+    {
+        "zh":  "程度、范围",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "extent"
+    }
+]

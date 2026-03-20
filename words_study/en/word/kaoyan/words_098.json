@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "偏离",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deviate"
+    },
+    {
+        "zh":  "直径",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "diameter"
+    },
+    {
+        "zh":  "谨慎",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "discretion"
+    },
+    {
+        "zh":  "自我",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ego"
+    },
+    {
+        "zh":  "雄辩的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eloquent"
+    },
+    {
+        "zh":  "围墙、附件",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "enclosure"
+    },
+    {
+        "zh":  "告别",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "farewell"
+    },
+    {
+        "zh":  "投掷",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fling"
+    },
+    {
+        "zh":  "流利的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fluent"
+    },
+    {
+        "zh":  "摩擦",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "friction"
+    },
+    {
+        "zh":  "霜",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "frost"
+    },
+    {
+        "zh":  "冰川",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "glacier"
+    },
+    {
+        "zh":  "辉煌的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "glorious"
+    },
+    {
+        "zh":  "可怕的、冷酷的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grim"
+    },
+    {
+        "zh":  "杂货店",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grocer"
+    },
+    {
+        "zh":  "探索",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grope"
+    },
+    {
+        "zh":  "铰链",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hinge"
+    },
+    {
+        "zh":  "光荣的、可敬的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "honorable"
+    },
+    {
+        "zh":  "水平的、水平线",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "horizontal"
+    },
+    {
+        "zh":  "喇叭",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "horn"
+    },
+    {
+        "zh":  "潮湿的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "humid"
+    },
+    {
+        "zh":  "跪",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "kneel"
+    },
+    {
+        "zh":  "潜在的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "latent"
+    },
+    {
+        "zh":  "传单",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "leaflet"
+    },
+    {
+        "zh":  "线性的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "linear"
+    },
+    {
+        "zh":  "百万富翁",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "millionaire"
+    },
+    {
+        "zh":  "减去",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "minus"
+    },
+    {
+        "zh":  "镍",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nickel"
+    },
+    {
+        "zh":  "名词",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "noun"
+    },
+    {
+        "zh":  "正统的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "orthodox"
+    },
+    {
+        "zh":  "发射台、衬垫",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pad"
+    },
+    {
+        "zh":  "参数",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "parameter"
+    },
+    {
+        "zh":  "守护神",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "patron"
+    },
+    {
+        "zh":  "小的、琐碎的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "petty"
+    },
+    {
+        "zh":  "加速、小型卡车、拾音器、获得",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pickup"
+    },
+    {
+        "zh":  "支柱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pillar"
+    },
+    {
+        "zh":  "复数",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "plural"
+    },
+    {
+        "zh":  "门廊",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "porch"
+    },
+    {
+        "zh":  "阻止",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "preclude"
+    },
+    {
+        "zh":  "借口",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pretext"
+    },
+    {
+        "zh":  "兔子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rabbit"
+    },
+    {
+        "zh":  "行李架",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rack"
+    },
+    {
+        "zh":  "疹子、轻率的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rash"
+    },
+    {
+        "zh":  "残余",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "remnant"
+    },
+    {
+        "zh":  "责备",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reproach"
+    },
+    {
+        "zh":  "不安宁的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "restless"
+    },
+    {
+        "zh":  "反抗",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "revolt"
+    },
+    {
+        "zh":  "熟的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ripe"
+    },
+    {
+        "zh":  "长袍",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "robe"
+    },
+    {
+        "zh":  "水手",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sailor"
+    }
+]

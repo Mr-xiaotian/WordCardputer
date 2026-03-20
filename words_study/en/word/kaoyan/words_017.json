@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "掉下",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "drop"
+    },
+    {
+        "zh":  "装置、方法",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "device"
+    },
+    {
+        "zh":  "法庭、球场",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "court"
+    },
+    {
+        "zh":  "药",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "drug"
+    },
+    {
+        "zh":  "温暖",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "warm"
+    },
+    {
+        "zh":  "范围",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "range"
+    },
+    {
+        "zh":  "解决方案",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "solution"
+    },
+    {
+        "zh":  "重要的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "essential"
+    },
+    {
+        "zh":  "特定的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "particular"
+    },
+    {
+        "zh":  "时尚",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fashion"
+    },
+    {
+        "zh":  "表明",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "indicate"
+    },
+    {
+        "zh":  "事故",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "accident"
+    },
+    {
+        "zh":  "慢的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slow"
+    },
+    {
+        "zh":  "六",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "six"
+    },
+    {
+        "zh":  "附上、附加",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "attach"
+    },
+    {
+        "zh":  "尊重",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "respect"
+    },
+    {
+        "zh":  "错误",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "error"
+    },
+    {
+        "zh":  "快乐的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "happy"
+    },
+    {
+        "zh":  "信用",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "credit"
+    },
+    {
+        "zh":  "贵的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "expensive"
+    },
+    {
+        "zh":  "完成",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "finish"
+    },
+    {
+        "zh":  "深的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deep"
+    },
+    {
+        "zh":  "账单",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bill"
+    },
+    {
+        "zh":  "火、开除",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fire"
+    },
+    {
+        "zh":  "景点、站点",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "site"
+    },
+    {
+        "zh":  "时刻",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "moment"
+    },
+    {
+        "zh":  "信仰、相信",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "belief"
+    },
+    {
+        "zh":  "博物馆",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "museum"
+    },
+    {
+        "zh":  "最终地",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "finally"
+    },
+    {
+        "zh":  "演说、地址",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "address"
+    },
+    {
+        "zh":  "概念",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "concept"
+    },
+    {
+        "zh":  "犯罪",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "crime"
+    },
+    {
+        "zh":  "损害",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "damage"
+    },
+    {
+        "zh":  "消极的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "negative"
+    },
+    {
+        "zh":  "大小",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "size"
+    },
+    {
+        "zh":  "饭馆",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "restaurant"
+    },
+    {
+        "zh":  "联邦的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "federal"
+    },
+    {
+        "zh":  "劳动力",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "labor"
+    },
+    {
+        "zh":  "进步",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "progress"
+    },
+    {
+        "zh":  "机器人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "robot"
+    },
+    {
+        "zh":  "运动",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "movement"
+    },
+    {
+        "zh":  "天气",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "weather"
+    },
+    {
+        "zh":  "错误",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mistake"
+    },
+    {
+        "zh":  "推断",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "infer"
+    },
+    {
+        "zh":  "进入",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "enter"
+    },
+    {
+        "zh":  "收费、索价、充电",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "charge"
+    },
+    {
+        "zh":  "医药",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "medicine"
+    },
+    {
+        "zh":  "吸引、使参加",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "engage"
+    },
+    {
+        "zh":  "实行的、经理",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "executive"
+    },
+    {
+        "zh":  "广泛的、宽的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wide"
+    }
+]

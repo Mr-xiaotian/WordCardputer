@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "环境、背景",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "setting"
+    },
+    {
+        "zh":  "娱乐",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "amuse"
+    },
+    {
+        "zh":  "任何人",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "anybody"
+    },
+    {
+        "zh":  "手推车",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cart"
+    },
+    {
+        "zh":  "顺从",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "comply"
+    },
+    {
+        "zh":  "人口的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "demographic"
+    },
+    {
+        "zh":  "模仿",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "imitation"
+    },
+    {
+        "zh":  "发生率",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "incidence"
+    },
+    {
+        "zh":  "邀请",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "invitation"
+    },
+    {
+        "zh":  "磨",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mill"
+    },
+    {
+        "zh":  "极好的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "super"
+    },
+    {
+        "zh":  "蛋糕",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cake"
+    },
+    {
+        "zh":  "中风",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stroke"
+    },
+    {
+        "zh":  "激增",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "surge"
+    },
+    {
+        "zh":  "作证",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "testify"
+    },
+    {
+        "zh":  "母牛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cow"
+    },
+    {
+        "zh":  "徘徊、逗留",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "linger"
+    },
+    {
+        "zh":  "减轻",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "alleviate"
+    },
+    {
+        "zh":  "市中心",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "downtown"
+    },
+    {
+        "zh":  "飓风",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hurricane"
+    },
+    {
+        "zh":  "补丁、修补",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "patch"
+    },
+    {
+        "zh":  "茶",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tea"
+    },
+    {
+        "zh":  "痛苦",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "misery"
+    },
+    {
+        "zh":  "主",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lord"
+    },
+    {
+        "zh":  "大怒、狂怒",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rage"
+    },
+    {
+        "zh":  "优雅的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "elegant"
+    },
+    {
+        "zh":  "缺陷",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "flaw"
+    },
+    {
+        "zh":  "规划、制订",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "formulate"
+    },
+    {
+        "zh":  "温和的、适度的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "moderate"
+    },
+    {
+        "zh":  "信赖",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reliance"
+    },
+    {
+        "zh":  "潮水、潮流",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tide"
+    },
+    {
+        "zh":  "保证、誓言",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pledge"
+    },
+    {
+        "zh":  "猛咬、拍摄、突然的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "snap"
+    },
+    {
+        "zh":  "无疑地",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "undoubtedly"
+    },
+    {
+        "zh":  "签证",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "visa"
+    },
+    {
+        "zh":  "翼",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wing"
+    },
+    {
+        "zh":  "通勤",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "commute"
+    },
+    {
+        "zh":  "敢",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dare"
+    },
+    {
+        "zh":  "精力旺盛的、能量的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "energetic"
+    },
+    {
+        "zh":  "旗",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "flag"
+    },
+    {
+        "zh":  "边境、边界",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "frontier"
+    },
+    {
+        "zh":  "错觉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "illusion"
+    },
+    {
+        "zh":  "口号",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slogan"
+    },
+    {
+        "zh":  "船",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "vessel"
+    },
+    {
+        "zh":  "估计",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "compute"
+    },
+    {
+        "zh":  "情节",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "episode"
+    },
+    {
+        "zh":  "迹象、指示",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "indication"
+    },
+    {
+        "zh":  "挨饿",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "starve"
+    },
+    {
+        "zh":  "引导、驾驶",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "steer"
+    },
+    {
+        "zh":  "优势",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "superiority"
+    }
+]

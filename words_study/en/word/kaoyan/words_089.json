@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "目录",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "directory"
+    },
+    {
+        "zh":  "玩具娃娃",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "doll"
+    },
+    {
+        "zh":  "瞌睡",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "doze"
+    },
+    {
+        "zh":  "拍打",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "flap"
+    },
+    {
+        "zh":  "肉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "flesh"
+    },
+    {
+        "zh":  "叉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fork"
+    },
+    {
+        "zh":  "瞪着、怒视",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "glare"
+    },
+    {
+        "zh":  "匆忙的、轻率的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hasty"
+    },
+    {
+        "zh":  "推动力",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "impetus"
+    },
+    {
+        "zh":  "获利的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lucrative"
+    },
+    {
+        "zh":  "顺从的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "obedient"
+    },
+    {
+        "zh":  "臭氧",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ozone"
+    },
+    {
+        "zh":  "戳、刺",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "poke"
+    },
+    {
+        "zh":  "辐射、放射",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "radiate"
+    },
+    {
+        "zh":  "控制",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rein"
+    },
+    {
+        "zh":  "腐烂",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rot"
+    },
+    {
+        "zh":  "叹息",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sigh"
+    },
+    {
+        "zh":  "非凡的、单数的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "singular"
+    },
+    {
+        "zh":  "烟雾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "smog"
+    },
+    {
+        "zh":  "抢夺、抓住",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "snatch"
+    },
+    {
+        "zh":  "吃惊",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "startle"
+    },
+    {
+        "zh":  "楼上",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "upstairs"
+    },
+    {
+        "zh":  "后果",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "aftermath"
+    },
+    {
+        "zh":  "鼓掌",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "applaud"
+    },
+    {
+        "zh":  "评估",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "appraisal"
+    },
+    {
+        "zh":  "自信、保险",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "assurance"
+    },
+    {
+        "zh":  "理发师",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "barber"
+    },
+    {
+        "zh":  "垃圾箱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bin"
+    },
+    {
+        "zh":  "新娘",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bride"
+    },
+    {
+        "zh":  "子弹",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bullet"
+    },
+    {
+        "zh":  "船长",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "captain"
+    },
+    {
+        "zh":  "轻视",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "despise"
+    },
+    {
+        "zh":  "呼喊",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "exclaim"
+    },
+    {
+        "zh":  "功绩、技艺",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "feat"
+    },
+    {
+        "zh":  "消防队员",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fireman"
+    },
+    {
+        "zh":  "瞬间的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "instantaneous"
+    },
+    {
+        "zh":  "原封不动的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "intact"
+    },
+    {
+        "zh":  "打扰、侵入",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "intrude"
+    },
+    {
+        "zh":  "隐喻",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "metaphor"
+    },
+    {
+        "zh":  "呻吟、抱怨",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "moan"
+    },
+    {
+        "zh":  "肌肉的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "muscular"
+    },
+    {
+        "zh":  "麻烦",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nuisance"
+    },
+    {
+        "zh":  "相对论",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "relativity"
+    },
+    {
+        "zh":  "除去、搬迁",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "removal"
+    },
+    {
+        "zh":  "步枪",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rifle"
+    },
+    {
+        "zh":  "真诚的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sincere"
+    },
+    {
+        "zh":  "取消",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "undo"
+    },
+    {
+        "zh":  "疏远",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "alienate"
+    },
+    {
+        "zh":  "上升",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ascend"
+    },
+    {
+        "zh":  "确定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ascertain"
+    }
+]

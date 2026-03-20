@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "赌咒、发誓",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "swear"
+    },
+    {
+        "zh":  "迅速的、雨燕",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "swift"
+    },
+    {
+        "zh":  "口渴的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "thirsty"
+    },
+    {
+        "zh":  "检查制度",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "censorship"
+    },
+    {
+        "zh":  "槽",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slot"
+    },
+    {
+        "zh":  "肯定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "affirm"
+    },
+    {
+        "zh":  "吸收",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "assimilate"
+    },
+    {
+        "zh":  "皱眉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "frown"
+    },
+    {
+        "zh":  "侧面、侧面的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lateral"
+    },
+    {
+        "zh":  "前言",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "preface"
+    },
+    {
+        "zh":  "疑问、质问",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "query"
+    },
+    {
+        "zh":  "报道、溅泼的量",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "splash"
+    },
+    {
+        "zh":  "跨、步伐",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stride"
+    },
+    {
+        "zh":  "火炬",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "torch"
+    },
+    {
+        "zh":  "屠夫",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "butcher"
+    },
+    {
+        "zh":  "压缩",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "compress"
+    },
+    {
+        "zh":  "弥漫",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "diffuse"
+    },
+    {
+        "zh":  "辨别",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "discern"
+    },
+    {
+        "zh":  "善良",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "goodness"
+    },
+    {
+        "zh":  "悲伤",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grieve"
+    },
+    {
+        "zh":  "沉默的、哑的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mute"
+    },
+    {
+        "zh":  "烤",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "roast"
+    },
+    {
+        "zh":  "贫民窟",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slum"
+    },
+    {
+        "zh":  "管家、管理",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "steward"
+    },
+    {
+        "zh":  "稻草",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "straw"
+    },
+    {
+        "zh":  "可行的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "viable"
+    },
+    {
+        "zh":  "后来",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "afterward"
+    },
+    {
+        "zh":  "天使",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "angel"
+    },
+    {
+        "zh":  "大错",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "blunder"
+    },
+    {
+        "zh":  "电话亭",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "booth"
+    },
+    {
+        "zh":  "雪茄烟",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cigar"
+    },
+    {
+        "zh":  "推荐",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "commend"
+    },
+    {
+        "zh":  "联邦",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "commonwealth"
+    },
+    {
+        "zh":  "庆祝、祝贺",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "congratulate"
+    },
+    {
+        "zh":  "板球、蟋蟀",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cricket"
+    },
+    {
+        "zh":  "转移",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "diversion"
+    },
+    {
+        "zh":  "生态",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ecology"
+    },
+    {
+        "zh":  "手肘",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "elbow"
+    },
+    {
+        "zh":  "公平、权益",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "equity"
+    },
+    {
+        "zh":  "协会",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "guild"
+    },
+    {
+        "zh":  "仪器的、有帮助的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "instrumental"
+    },
+    {
+        "zh":  "键盘",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "keyboard"
+    },
+    {
+        "zh":  "纬度",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "latitude"
+    },
+    {
+        "zh":  "酒",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "liquor"
+    },
+    {
+        "zh":  "手稿",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "manuscript"
+    },
+    {
+        "zh":  "犁",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "plough"
+    },
+    {
+        "zh":  "套房",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "suite"
+    },
+    {
+        "zh":  "极好的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "superb"
+    },
+    {
+        "zh":  "拷问",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "torture"
+    },
+    {
+        "zh":  "锻炼",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "workout"
+    }
+]

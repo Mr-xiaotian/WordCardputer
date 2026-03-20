@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "记者",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "journalist"
+    },
+    {
+        "zh":  "裁判",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "judgment"
+    },
+    {
+        "zh":  "繁荣",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "boom"
+    },
+    {
+        "zh":  "公正地、相当地",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fairly"
+    },
+    {
+        "zh":  "稳定的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stable"
+    },
+    {
+        "zh":  "比赛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "contest"
+    },
+    {
+        "zh":  "不合法的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "illegal"
+    },
+    {
+        "zh":  "区域",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "zone"
+    },
+    {
+        "zh":  "除了之外、而且",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "besides"
+    },
+    {
+        "zh":  "哲学",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "philosophy"
+    },
+    {
+        "zh":  "修改、缓和",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "modify"
+    },
+    {
+        "zh":  "乡村的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rural"
+    },
+    {
+        "zh":  "神、上帝",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "god"
+    },
+    {
+        "zh":  "不情愿的、勉强的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reluctant"
+    },
+    {
+        "zh":  "尖的、清晰的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sharp"
+    },
+    {
+        "zh":  "充足的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "adequate"
+    },
+    {
+        "zh":  "牛奶",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "milk"
+    },
+    {
+        "zh":  "神秘",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mystery"
+    },
+    {
+        "zh":  "读写能力",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "literacy"
+    },
+    {
+        "zh":  "紧急情况",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "emergency"
+    },
+    {
+        "zh":  "桥",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bridge"
+    },
+    {
+        "zh":  "草",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grass"
+    },
+    {
+        "zh":  "奴隶",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slave"
+    },
+    {
+        "zh":  "特权、优先权",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "privilege"
+    },
+    {
+        "zh":  "恢复、归还",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "restore"
+    },
+    {
+        "zh":  "沮丧、难过",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "upset"
+    },
+    {
+        "zh":  "同行",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "counterpart"
+    },
+    {
+        "zh":  "加速",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "accelerate"
+    },
+    {
+        "zh":  "时代",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "era"
+    },
+    {
+        "zh":  "错误的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "false"
+    },
+    {
+        "zh":  "统一的、制服",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "uniform"
+    },
+    {
+        "zh":  "一对",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pair"
+    },
+    {
+        "zh":  "有利可图的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "profitable"
+    },
+    {
+        "zh":  "监狱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prison"
+    },
+    {
+        "zh":  "呼吸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "breath"
+    },
+    {
+        "zh":  "障碍",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "barrier"
+    },
+    {
+        "zh":  "养育、繁殖",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "breed"
+    },
+    {
+        "zh":  "绘画",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "painting"
+    },
+    {
+        "zh":  "段",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "segment"
+    },
+    {
+        "zh":  "水坝",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dam"
+    },
+    {
+        "zh":  "基础设施",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "infrastructure"
+    },
+    {
+        "zh":  "风景",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "landscape"
+    },
+    {
+        "zh":  "援助",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "assist"
+    },
+    {
+        "zh":  "决定性的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "crucial"
+    },
+    {
+        "zh":  "粉丝、扇子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fan"
+    },
+    {
+        "zh":  "岩石、震动",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rock"
+    },
+    {
+        "zh":  "奉献",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "devote"
+    },
+    {
+        "zh":  "永恒的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "permanent"
+    },
+    {
+        "zh":  "广播",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "broadcast"
+    },
+    {
+        "zh":  "桌子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "desk"
+    }
+]

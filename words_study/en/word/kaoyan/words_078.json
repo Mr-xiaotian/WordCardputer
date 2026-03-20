@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "取代",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "displace"
+    },
+    {
+        "zh":  "回声",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "echo"
+    },
+    {
+        "zh":  "唤起",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "evoke"
+    },
+    {
+        "zh":  "葬礼",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "funeral"
+    },
+    {
+        "zh":  "哺乳动物",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mammal"
+    },
+    {
+        "zh":  "中间",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "midst"
+    },
+    {
+        "zh":  "抵消",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "offset"
+    },
+    {
+        "zh":  "农民",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "peasant"
+    },
+    {
+        "zh":  "斥责",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scold"
+    },
+    {
+        "zh":  "暴跌",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slump"
+    },
+    {
+        "zh":  "尾巴",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tail"
+    },
+    {
+        "zh":  "打字机",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "typewriter"
+    },
+    {
+        "zh":  "口音",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "accent"
+    },
+    {
+        "zh":  "符合、一致",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "accordance"
+    },
+    {
+        "zh":  "周年纪念",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "anniversary"
+    },
+    {
+        "zh":  "香蕉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "banana"
+    },
+    {
+        "zh":  "花",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bloom"
+    },
+    {
+        "zh":  "大灾难",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "catastrophe"
+    },
+    {
+        "zh":  "证明",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "certify"
+    },
+    {
+        "zh":  "碰撞",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "collide"
+    },
+    {
+        "zh":  "绳索",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cord"
+    },
+    {
+        "zh":  "否认",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "denial"
+    },
+    {
+        "zh":  "集体宿舍",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dormitory"
+    },
+    {
+        "zh":  "柠檬",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lemon"
+    },
+    {
+        "zh":  "盎司",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ounce"
+    },
+    {
+        "zh":  "行人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pedestrian"
+    },
+    {
+        "zh":  "航行、帆",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sail"
+    },
+    {
+        "zh":  "色拉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "salad"
+    },
+    {
+        "zh":  "场景",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scenario"
+    },
+    {
+        "zh":  "游览",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sightseeing"
+    },
+    {
+        "zh":  "丝",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "silk"
+    },
+    {
+        "zh":  "斜坡、倾斜",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slope"
+    },
+    {
+        "zh":  "呜咽、哭泣",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sob"
+    },
+    {
+        "zh":  "战争",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "warfare"
+    },
+    {
+        "zh":  "青少年",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "juvenile"
+    },
+    {
+        "zh":  "朝圣者",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pilgrim"
+    },
+    {
+        "zh":  "体育场",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stadium"
+    },
+    {
+        "zh":  "逃避",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "evade"
+    },
+    {
+        "zh":  "使饱和、使充满",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "saturate"
+    },
+    {
+        "zh":  "象征、象征性的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "token"
+    },
+    {
+        "zh":  "良心",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "conscience"
+    },
+    {
+        "zh":  "不断的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "continual"
+    },
+    {
+        "zh":  "勤奋的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "diligent"
+    },
+    {
+        "zh":  "例证",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "exemplify"
+    },
+    {
+        "zh":  "冰雹",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hail"
+    },
+    {
+        "zh":  "数字的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "numerical"
+    },
+    {
+        "zh":  "有秩序的、整齐的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "orderly"
+    },
+    {
+        "zh":  "保证、授权",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "warrant"
+    },
+    {
+        "zh":  "包含",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "comprise"
+    },
+    {
+        "zh":  "牙齿的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dental"
+    }
+]

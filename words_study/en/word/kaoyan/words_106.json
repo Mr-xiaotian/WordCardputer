@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "大蒜",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "garlic"
+    },
+    {
+        "zh":  "概括",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "generalise"
+    },
+    {
+        "zh":  "优雅的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "graceful"
+    },
+    {
+        "zh":  "骚扰",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "harassment"
+    },
+    {
+        "zh":  "今后",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "henceforth"
+    },
+    {
+        "zh":  "白痴",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "idiot"
+    },
+    {
+        "zh":  "开创、开始",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "inaugurate"
+    },
+    {
+        "zh":  "性交",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "intercourse"
+    },
+    {
+        "zh":  "象牙",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ivory"
+    },
+    {
+        "zh":  "水壶",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "kettle"
+    },
+    {
+        "zh":  "风筝",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "kite"
+    },
+    {
+        "zh":  "旋钮",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "knob"
+    },
+    {
+        "zh":  "灯笼",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lantern"
+    },
+    {
+        "zh":  "盖子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lid"
+    },
+    {
+        "zh":  "经度",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "longitude"
+    },
+    {
+        "zh":  "抒情诗",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lyric"
+    },
+    {
+        "zh":  "操纵、策略",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "manoeuvre"
+    },
+    {
+        "zh":  "甜瓜",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "melon"
+    },
+    {
+        "zh":  "麦克风",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "microphone"
+    },
+    {
+        "zh":  "激进分子",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "militant"
+    },
+    {
+        "zh":  "雾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mist"
+    },
+    {
+        "zh":  "马赛克",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mosaic"
+    },
+    {
+        "zh":  "蚊子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mosquito"
+    },
+    {
+        "zh":  "蘑菇",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mushroom"
+    },
+    {
+        "zh":  "咕哝、抱怨",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mutter"
+    },
+    {
+        "zh":  "餐巾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "napkin"
+    },
+    {
+        "zh":  "侄子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nephew"
+    },
+    {
+        "zh":  "面条",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "noodle"
+    },
+    {
+        "zh":  "怀旧的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nostalgic"
+    },
+    {
+        "zh":  "誓言",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "oath"
+    },
+    {
+        "zh":  "过时的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "obsolete"
+    },
+    {
+        "zh":  "偷听",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "overhear"
+    },
+    {
+        "zh":  "瘫痪",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "paralyse"
+    },
+    {
+        "zh":  "过路人",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "passerby"
+    },
+    {
+        "zh":  "爪子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "paw"
+    },
+    {
+        "zh":  "花生",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "peanut"
+    },
+    {
+        "zh":  "枕、枕头",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pillow"
+    },
+    {
+        "zh":  "瓷",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "porcelain"
+    },
+    {
+        "zh":  "辐射的、发光的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "radiant"
+    },
+    {
+        "zh":  "赎回",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "redeem"
+    },
+    {
+        "zh":  "卷",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reel"
+    },
+    {
+        "zh":  "喜欢、享受",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "relish"
+    },
+    {
+        "zh":  "剩余物、廉价出售",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "remainder"
+    },
+    {
+        "zh":  "谜",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "riddle"
+    },
+    {
+        "zh":  "突出的、显著的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "salient"
+    },
+    {
+        "zh":  "心智健全的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sane"
+    },
+    {
+        "zh":  "缝",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "seam"
+    },
+    {
+        "zh":  "快门",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shutter"
+    },
+    {
+        "zh":  "围攻",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "siege"
+    },
+    {
+        "zh":  "拖鞋",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slipper"
+    }
+]

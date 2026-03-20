@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "势利的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "snobbish"
+    },
+    {
+        "zh":  "芽",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sprout"
+    },
+    {
+        "zh":  "蹒跚",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stagger"
+    },
+    {
+        "zh":  "静态的、静电",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "static"
+    },
+    {
+        "zh":  "凳子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stool"
+    },
+    {
+        "zh":  "简化",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "streamline"
+    },
+    {
+        "zh":  "概括",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "summarise"
+    },
+    {
+        "zh":  "超声波",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "supersonic"
+    },
+    {
+        "zh":  "天鹅",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "swan"
+    },
+    {
+        "zh":  "匀称",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "symmetry"
+    },
+    {
+        "zh":  "节奏",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tempo"
+    },
+    {
+        "zh":  "暂时的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "temporal"
+    },
+    {
+        "zh":  "讨厌的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tiresome"
+    },
+    {
+        "zh":  "琐事、浪费",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "trifle"
+    },
+    {
+        "zh":  "浴盆、桶",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tub"
+    },
+    {
+        "zh":  "理解",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "understanding"
+    },
+    {
+        "zh":  "阀门",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "valve"
+    },
+    {
+        "zh":  "变化",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "variance"
+    },
+    {
+        "zh":  "花瓶",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "vase"
+    },
+    {
+        "zh":  "背心",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "vest"
+    },
+    {
+        "zh":  "颤动",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "vibrate"
+    },
+    {
+        "zh":  "不稳定的、挥发物",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "volatile"
+    },
+    {
+        "zh":  "伏特",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "volt"
+    },
+    {
+        "zh":  "瀑布",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "waterfall"
+    },
+    {
+        "zh":  "蜡",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wax"
+    },
+    {
+        "zh":  "旋转、回旋",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "whirl"
+    },
+    {
+        "zh":  "女巫",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "witch"
+    },
+    {
+        "zh":  "羊毛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wool"
+    },
+    {
+        "zh":  "猛扭、痛苦",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wrench"
+    },
+    {
+        "zh":  "皱纹",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wrinkle"
+    },
+    {
+        "zh":  "据所说、根据",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "according to"
+    },
+    {
+        "zh":  "习惯",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "accustom"
+    },
+    {
+        "zh":  "副词",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "adverb"
+    },
+    {
+        "zh":  "空调",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "air conditioning"
+    },
+    {
+        "zh":  "虽然",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "albeit"
+    },
+    {
+        "zh":  "模拟的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "analog"
+    },
+    {
+        "zh":  "道歉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "apologise"
+    },
+    {
+        "zh":  "四月",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "April"
+    },
+    {
+        "zh":  "考古学",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "archeology"
+    },
+    {
+        "zh":  "人工制品",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "artefact"
+    },
+    {
+        "zh":  "八月",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "August"
+    },
+    {
+        "zh":  "听觉的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "aural"
+    },
+    {
+        "zh":  "圣经",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "Bible"
+    },
+    {
+        "zh":  "植物",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "botany"
+    },
+    {
+        "zh":  "肠",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bowel"
+    },
+    {
+        "zh":  "保龄球",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bowling"
+    },
+    {
+        "zh":  "支撑、支架",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "brace"
+    },
+    {
+        "zh":  "白兰地酒",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "brandy"
+    },
+    {
+        "zh":  "缓冲",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "buffer"
+    },
+    {
+        "zh":  "卷心菜",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cabbage"
+    }
+]

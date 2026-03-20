@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "多样化、种类",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "variety"
+    },
+    {
+        "zh":  "比赛、竞速",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "race"
+    },
+    {
+        "zh":  "目标、物体",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "object"
+    },
+    {
+        "zh":  "管理、设法做到",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "manage"
+    },
+    {
+        "zh":  "医院",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hospital"
+    },
+    {
+        "zh":  "官方的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "official"
+    },
+    {
+        "zh":  "大的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "huge"
+    },
+    {
+        "zh":  "雇佣",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hire"
+    },
+    {
+        "zh":  "酒店",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hotel"
+    },
+    {
+        "zh":  "对待",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "treat"
+    },
+    {
+        "zh":  "演奏、执行",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "perform"
+    },
+    {
+        "zh":  "雇主",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "employer"
+    },
+    {
+        "zh":  "文学",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "literature"
+    },
+    {
+        "zh":  "利润",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "profit"
+    },
+    {
+        "zh":  "文章",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "article"
+    },
+    {
+        "zh":  "体重",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "weight"
+    },
+    {
+        "zh":  "旅行",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "trip"
+    },
+    {
+        "zh":  "投资",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "investment"
+    },
+    {
+        "zh":  "预期的、到期的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "due"
+    },
+    {
+        "zh":  "样子、方面",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "aspect"
+    },
+    {
+        "zh":  "穿着",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wear"
+    },
+    {
+        "zh":  "定义",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "define"
+    },
+    {
+        "zh":  "平衡",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "balance"
+    },
+    {
+        "zh":  "使能够",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "enable"
+    },
+    {
+        "zh":  "消费、消耗",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "consumption"
+    },
+    {
+        "zh":  "性格",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "character"
+    },
+    {
+        "zh":  "危机",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "crisis"
+    },
+    {
+        "zh":  "美元",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dollar"
+    },
+    {
+        "zh":  "绿的、未熟的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "green"
+    },
+    {
+        "zh":  "移民",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "immigrant"
+    },
+    {
+        "zh":  "联系",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "contact"
+    },
+    {
+        "zh":  "冷的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cold"
+    },
+    {
+        "zh":  "现实、真实的事物",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reality"
+    },
+    {
+        "zh":  "部门",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "department"
+    },
+    {
+        "zh":  "评论",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "comment"
+    },
+    {
+        "zh":  "板",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "board"
+    },
+    {
+        "zh":  "后果、结果",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "consequence"
+    },
+    {
+        "zh":  "风格",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "style"
+    },
+    {
+        "zh":  "打斗",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fight"
+    },
+    {
+        "zh":  "建议",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "advice"
+    },
+    {
+        "zh":  "饭",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "meal"
+    },
+    {
+        "zh":  "担心",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "worry"
+    },
+    {
+        "zh":  "工具",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tool"
+    },
+    {
+        "zh":  "浪费",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "waste"
+    },
+    {
+        "zh":  "预测",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "predict"
+    },
+    {
+        "zh":  "尽管",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "despite"
+    },
+    {
+        "zh":  "早晨",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "morning"
+    },
+    {
+        "zh":  "运营、操作",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "operation"
+    },
+    {
+        "zh":  "工业的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "industrial"
+    },
+    {
+        "zh":  "阶段",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stage"
+    }
+]

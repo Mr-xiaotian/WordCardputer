@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "背面、后退",
+        "pos":  "noun",
+        "phonetic":  "/bæk/",
+        "score":  5,
+        "en":  "back"
+    },
+    {
+        "zh":  "经济上的",
+        "pos":  "adjective",
+        "phonetic":  "/ˌiːkəˈnɒmɪk/",
+        "score":  5,
+        "en":  "economic"
+    },
+    {
+        "zh":  "大",
+        "pos":  "noun",
+        "phonetic":  "/bɪɡ/",
+        "score":  5,
+        "en":  "big"
+    },
+    {
+        "zh":  "开始",
+        "pos":  "verb",
+        "phonetic":  "/bɪˈɡɪn/",
+        "score":  5,
+        "en":  "begin"
+    },
+    {
+        "zh":  "带领",
+        "pos":  "verb",
+        "phonetic":  "/liːd/",
+        "score":  5,
+        "en":  "lead"
+    },
+    {
+        "zh":  "建造",
+        "pos":  "verb",
+        "phonetic":  "/bɪld/",
+        "score":  5,
+        "en":  "build"
+    },
+    {
+        "zh":  "早期的",
+        "pos":  "adjective",
+        "phonetic":  "/ˈɜːrli/",
+        "score":  5,
+        "en":  "early"
+    },
+    {
+        "zh":  "关闭、不在原处",
+        "pos":  "noun",
+        "phonetic":  "/ɔːf/",
+        "score":  5,
+        "en":  "off"
+    },
+    {
+        "zh":  "花",
+        "pos":  "verb",
+        "phonetic":  "/spend/",
+        "score":  5,
+        "en":  "spend"
+    },
+    {
+        "zh":  "少、小",
+        "pos":  "noun",
+        "phonetic":  "/ˈlɪtl/",
+        "score":  5,
+        "en":  "little"
+    },
+    {
+        "zh":  "银行",
+        "pos":  "noun",
+        "phonetic":  "/bæŋk/",
+        "score":  5,
+        "en":  "bank"
+    },
+    {
+        "zh":  "困难的",
+        "pos":  "adjective",
+        "phonetic":  "/hɑːrd/",
+        "score":  5,
+        "en":  "hard"
+    },
+    {
+        "zh":  "花费",
+        "pos":  "noun",
+        "phonetic":  "/kɔːst/",
+        "score":  5,
+        "en":  "cost"
+    },
+    {
+        "zh":  "班级",
+        "pos":  "noun",
+        "phonetic":  "/klɑːs/",
+        "score":  5,
+        "en":  "class"
+    },
+    {
+        "zh":  "小组",
+        "pos":  "noun",
+        "phonetic":  "/ɡruːp/",
+        "score":  5,
+        "en":  "group"
+    },
+    {
+        "zh":  "价格",
+        "pos":  "noun",
+        "phonetic":  "/praɪs/",
+        "score":  5,
+        "en":  "price"
+    },
+    {
+        "zh":  "效果",
+        "pos":  "noun",
+        "phonetic":  "/ɪˈfekt/",
+        "score":  5,
+        "en":  "effect"
+    },
+    {
+        "zh":  "理解",
+        "pos":  "noun",
+        "phonetic":  "/ˌkɒmprɪˈhenʃn/",
+        "score":  5,
+        "en":  "comprehension"
+    },
+    {
+        "zh":  "在今天、现今",
+        "pos":  "adjective",
+        "phonetic":  "/təˈdeɪ/",
+        "score":  5,
+        "en":  "today"
+    },
+    {
+        "zh":  "告诉",
+        "pos":  "verb",
+        "phonetic":  "/tel/",
+        "score":  5,
+        "en":  "tell"
+    },
+    {
+        "zh":  "设定",
+        "pos":  "verb",
+        "phonetic":  "/set/",
+        "score":  5,
+        "en":  "set"
+    },
+    {
+        "zh":  "某事",
+        "pos":  "adjective",
+        "phonetic":  "/ˈsʌmθɪŋ/",
+        "score":  5,
+        "en":  "something"
+    },
+    {
+        "zh":  "玩、扮演、戏剧",
+        "pos":  "verb",
+        "phonetic":  "/pleɪ/",
+        "score":  5,
+        "en":  "play"
+    },
+    {
+        "zh":  "很可能的、大概",
+        "pos":  "adjective",
+        "phonetic":  "/ˈlaɪkli/",
+        "score":  5,
+        "en":  "likely"
+    },
+    {
+        "zh":  "翻转",
+        "pos":  "noun",
+        "phonetic":  "/tɜːrn/",
+        "score":  5,
+        "en":  "turn"
+    },
+    {
+        "zh":  "课程",
+        "pos":  "noun",
+        "phonetic":  "/kɔːrs/",
+        "score":  5,
+        "en":  "course"
+    },
+    {
+        "zh":  "购买",
+        "pos":  "verb",
+        "phonetic":  "/baɪ/",
+        "score":  5,
+        "en":  "buy"
+    },
+    {
+        "zh":  "理解",
+        "pos":  "verb",
+        "phonetic":  "/ˌʌndərˈstænd/",
+        "score":  5,
+        "en":  "understand"
+    },
+    {
+        "zh":  "提供",
+        "pos":  "verb",
+        "phonetic":  "/ˈɔːfər/",
+        "score":  5,
+        "en":  "offer"
+    },
+    {
+        "zh":  "服务、公共设施",
+        "pos":  "noun",
+        "phonetic":  "/ˈsɜːrvɪs/",
+        "score":  5,
+        "en":  "service"
+    },
+    {
+        "zh":  "小的",
+        "pos":  "adjective",
+        "phonetic":  "/smɔːl/",
+        "score":  5,
+        "en":  "small"
+    },
+    {
+        "zh":  "产品",
+        "pos":  "noun",
+        "phonetic":  "/ˈprɒdʌkt/",
+        "score":  5,
+        "en":  "product"
+    },
+    {
+        "zh":  "经历",
+        "pos":  "noun",
+        "phonetic":  "/ɪkˈspɪəriəns/",
+        "score":  5,
+        "en":  "experience"
+    },
+    {
+        "zh":  "建议",
+        "pos":  "noun",
+        "phonetic":  "/səˈdʒest/",
+        "score":  5,
+        "en":  "suggest"
+    },
+    {
+        "zh":  "决定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "decide"
+    },
+    {
+        "zh":  "测试",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "test"
+    },
+    {
+        "zh":  "科学家",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scientist"
+    },
+    {
+        "zh":  "带来",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bring"
+    },
+    {
+        "zh":  "自从、因为、既然",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "since"
+    },
+    {
+        "zh":  "但是、然而",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "however"
+    },
+    {
+        "zh":  "人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "person"
+    },
+    {
+        "zh":  "教师",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "teacher"
+    },
+    {
+        "zh":  "周围、环绕",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "around"
+    },
+    {
+        "zh":  "是否",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "whether"
+    },
+    {
+        "zh":  "未来",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "future"
+    },
+    {
+        "zh":  "理由",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reason"
+    },
+    {
+        "zh":  "景观",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "view"
+    },
+    {
+        "zh":  "水",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "water"
+    },
+    {
+        "zh":  "改进、提高",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "improve"
+    },
+    {
+        "zh":  "关心、在意",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "care"
+    }
+]

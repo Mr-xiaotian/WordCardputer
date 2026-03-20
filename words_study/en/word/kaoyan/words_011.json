@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "切、砍",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cut"
+    },
+    {
+        "zh":  "大人、成人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "adult"
+    },
+    {
+        "zh":  "国际的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "international"
+    },
+    {
+        "zh":  "训练",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "training"
+    },
+    {
+        "zh":  "一般的、总的、将军",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "general"
+    },
+    {
+        "zh":  "自然界、性质",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nature"
+    },
+    {
+        "zh":  "类型、输入",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "type"
+    },
+    {
+        "zh":  "医生",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "doctor"
+    },
+    {
+        "zh":  "妈妈",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mother"
+    },
+    {
+        "zh":  "情况",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "situation"
+    },
+    {
+        "zh":  "几个",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "several"
+    },
+    {
+        "zh":  "保存、拯救",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "save"
+    },
+    {
+        "zh":  "论文",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "essay"
+    },
+    {
+        "zh":  "游戏",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "game"
+    },
+    {
+        "zh":  "毕业、获学位",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "graduate"
+    },
+    {
+        "zh":  "十年",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "decade"
+    },
+    {
+        "zh":  "医疗的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "medical"
+    },
+    {
+        "zh":  "错过、想念",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "miss"
+    },
+    {
+        "zh":  "列车、行列",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "train"
+    },
+    {
+        "zh":  "第三",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "third"
+    },
+    {
+        "zh":  "采访、面试",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "interview"
+    },
+    {
+        "zh":  "阻止",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stop"
+    },
+    {
+        "zh":  "财政的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "financial"
+    },
+    {
+        "zh":  "到达、达到",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reach"
+    },
+    {
+        "zh":  "职业的、专业的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "professional"
+    },
+    {
+        "zh":  "标牌",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sign"
+    },
+    {
+        "zh":  "地球、泥土",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "earth"
+    },
+    {
+        "zh":  "项目、计划",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "project"
+    },
+    {
+        "zh":  "产生、一代人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "generation"
+    },
+    {
+        "zh":  "标准",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "standard"
+    },
+    {
+        "zh":  "战争",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "war"
+    },
+    {
+        "zh":  "故事",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "story"
+    },
+    {
+        "zh":  "丰富的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rich"
+    },
+    {
+        "zh":  "后来、其后",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "later"
+    },
+    {
+        "zh":  "再次",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "again"
+    },
+    {
+        "zh":  "空气",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "air"
+    },
+    {
+        "zh":  "夜晚",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "night"
+    },
+    {
+        "zh":  "包含",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "contain"
+    },
+    {
+        "zh":  "主要的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "main"
+    },
+    {
+        "zh":  "很快的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "soon"
+    },
+    {
+        "zh":  "声音",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sound"
+    },
+    {
+        "zh":  "爱",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "love"
+    },
+    {
+        "zh":  "账户",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "account"
+    },
+    {
+        "zh":  "回归、返回",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "return"
+    },
+    {
+        "zh":  "影响",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "affect"
+    },
+    {
+        "zh":  "解释、翻译、转变",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "translate"
+    },
+    {
+        "zh":  "肯定的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sure"
+    },
+    {
+        "zh":  "描述",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "describe"
+    },
+    {
+        "zh":  "目的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "purpose"
+    },
+    {
+        "zh":  "满的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "full"
+    }
+]

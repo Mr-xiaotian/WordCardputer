@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "宇航员",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "astronaut"
+    },
+    {
+        "zh":  "商讨",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "confer"
+    },
+    {
+        "zh":  "定罪",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "conviction"
+    },
+    {
+        "zh":  "视力",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eyesight"
+    },
+    {
+        "zh":  "织物",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fabric"
+    },
+    {
+        "zh":  "片段",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fragment"
+    },
+    {
+        "zh":  "操作的、运作的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "operational"
+    },
+    {
+        "zh":  "电报",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "telegraph"
+    },
+    {
+        "zh":  "动物园",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "zoo"
+    },
+    {
+        "zh":  "荒唐、可笑的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "absurd"
+    },
+    {
+        "zh":  "匿名的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "anonymous"
+    },
+    {
+        "zh":  "奶酪",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cheese"
+    },
+    {
+        "zh":  "后裔、后代",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "descendant"
+    },
+    {
+        "zh":  "向下",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "downward"
+    },
+    {
+        "zh":  "使尴尬、窘迫",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "embarrass"
+    },
+    {
+        "zh":  "可能性",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "probability"
+    },
+    {
+        "zh":  "风景",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scenery"
+    },
+    {
+        "zh":  "极限、最大限度的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "utmost"
+    },
+    {
+        "zh":  "无论哪一个",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "whichever"
+    },
+    {
+        "zh":  "赤裸的、空的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bare"
+    },
+    {
+        "zh":  "承认",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "confess"
+    },
+    {
+        "zh":  "息票",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "coupon"
+    },
+    {
+        "zh":  "释放",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "discharge"
+    },
+    {
+        "zh":  "下水道、排出",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "drain"
+    },
+    {
+        "zh":  "垃圾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "garbage"
+    },
+    {
+        "zh":  "障碍",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "handicap"
+    },
+    {
+        "zh":  "钩",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hook"
+    },
+    {
+        "zh":  "可怕的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "horrible"
+    },
+    {
+        "zh":  "生气的、着迷的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mad"
+    },
+    {
+        "zh":  "马拉松",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "marathon"
+    },
+    {
+        "zh":  "可选的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "optional"
+    },
+    {
+        "zh":  "定位",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "orientation"
+    },
+    {
+        "zh":  "坑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pit"
+    },
+    {
+        "zh":  "问卷",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "questionnaire"
+    },
+    {
+        "zh":  "桩、赌注",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stake"
+    },
+    {
+        "zh":  "胃",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stomach"
+    },
+    {
+        "zh":  "条约",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "treaty"
+    },
+    {
+        "zh":  "处女",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "virgin"
+    },
+    {
+        "zh":  "告知",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "acquaint"
+    },
+    {
+        "zh":  "归因于",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ascribe"
+    },
+    {
+        "zh":  "可怕的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "awful"
+    },
+    {
+        "zh":  "按钮",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "button"
+    },
+    {
+        "zh":  "洞穴",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cave"
+    },
+    {
+        "zh":  "相辅相成、补语",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "complement"
+    },
+    {
+        "zh":  "机密的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "confidential"
+    },
+    {
+        "zh":  "齿轮",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "gear"
+    },
+    {
+        "zh":  "安装",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "installation"
+    },
+    {
+        "zh":  "活泼的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lively"
+    },
+    {
+        "zh":  "轻便的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "portable"
+    },
+    {
+        "zh":  "祈祷",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prayer"
+    }
+]

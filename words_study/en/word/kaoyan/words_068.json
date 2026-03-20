@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "圆木、原木",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "log"
+    },
+    {
+        "zh":  "有吸引力的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "magnetic"
+    },
+    {
+        "zh":  "七十",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "seventy"
+    },
+    {
+        "zh":  "苗条的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slim"
+    },
+    {
+        "zh":  "超越",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "surpass"
+    },
+    {
+        "zh":  "弯曲",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bend"
+    },
+    {
+        "zh":  "慈善",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "charity"
+    },
+    {
+        "zh":  "澄清",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "clarify"
+    },
+    {
+        "zh":  "反抗、藐视",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "defy"
+    },
+    {
+        "zh":  "感激",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "gratitude"
+    },
+    {
+        "zh":  "道德",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "morality"
+    },
+    {
+        "zh":  "天堂",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "paradise"
+    },
+    {
+        "zh":  "王子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prince"
+    },
+    {
+        "zh":  "报复",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "revenge"
+    },
+    {
+        "zh":  "先导、货车",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "van"
+    },
+    {
+        "zh":  "冠军",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "champion"
+    },
+    {
+        "zh":  "国际象棋",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "chess"
+    },
+    {
+        "zh":  "巧克力",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "chocolate"
+    },
+    {
+        "zh":  "亲爱的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dear"
+    },
+    {
+        "zh":  "欺骗",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deceive"
+    },
+    {
+        "zh":  "恐怖",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "horror"
+    },
+    {
+        "zh":  "果汁",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "juice"
+    },
+    {
+        "zh":  "公主",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "princess"
+    },
+    {
+        "zh":  "淋浴",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shower"
+    },
+    {
+        "zh":  "门槛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "threshold"
+    },
+    {
+        "zh":  "声音的、声乐作品",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "vocal"
+    },
+    {
+        "zh":  "自治",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "autonomy"
+    },
+    {
+        "zh":  "多云的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cloudy"
+    },
+    {
+        "zh":  "悲痛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grief"
+    },
+    {
+        "zh":  "等级制度",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hierarchy"
+    },
+    {
+        "zh":  "很可能的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "probable"
+    },
+    {
+        "zh":  "木制的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wooden"
+    },
+    {
+        "zh":  "比较的、比较级",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "comparative"
+    },
+    {
+        "zh":  "卡通",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cartoon"
+    },
+    {
+        "zh":  "奖章",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "medal"
+    },
+    {
+        "zh":  "分离、派遣",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "detach"
+    },
+    {
+        "zh":  "耐用持久的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "durable"
+    },
+    {
+        "zh":  "部分的、偏袒的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "partial"
+    },
+    {
+        "zh":  "食肉动物",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "predator"
+    },
+    {
+        "zh":  "残忍的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cruel"
+    },
+    {
+        "zh":  "修补、修理",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mend"
+    },
+    {
+        "zh":  "渐进的、先进的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "progressive"
+    },
+    {
+        "zh":  "比率",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ratio"
+    },
+    {
+        "zh":  "订阅",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "subscribe"
+    },
+    {
+        "zh":  "策略",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tactic"
+    },
+    {
+        "zh":  "限制",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "constrain"
+    },
+    {
+        "zh":  "牙科医生",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dentist"
+    },
+    {
+        "zh":  "俯卧的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prone"
+    },
+    {
+        "zh":  "提神",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "refresh"
+    },
+    {
+        "zh":  "合作的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cooperative"
+    }
+]

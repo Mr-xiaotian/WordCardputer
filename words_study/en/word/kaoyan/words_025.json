@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "扫描",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scan"
+    },
+    {
+        "zh":  "规定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "regulation"
+    },
+    {
+        "zh":  "护士、护理",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nurse"
+    },
+    {
+        "zh":  "暴露",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "expose"
+    },
+    {
+        "zh":  "生物、生存",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "being"
+    },
+    {
+        "zh":  "真相",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "truth"
+    },
+    {
+        "zh":  "距离",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "distance"
+    },
+    {
+        "zh":  "数数",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "count"
+    },
+    {
+        "zh":  "打",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hit"
+    },
+    {
+        "zh":  "票",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ticket"
+    },
+    {
+        "zh":  "结合",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "combine"
+    },
+    {
+        "zh":  "禁止",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ban"
+    },
+    {
+        "zh":  "一点",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bit"
+    },
+    {
+        "zh":  "不可能的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "impossible"
+    },
+    {
+        "zh":  "原子的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nuclear"
+    },
+    {
+        "zh":  "基础",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "basis"
+    },
+    {
+        "zh":  "往上推、增加",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "boost"
+    },
+    {
+        "zh":  "雨",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rain"
+    },
+    {
+        "zh":  "预留",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reserve"
+    },
+    {
+        "zh":  "狗",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dog"
+    },
+    {
+        "zh":  "生产力",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "productivity"
+    },
+    {
+        "zh":  "纪律",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "discipline"
+    },
+    {
+        "zh":  "座位",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "seat"
+    },
+    {
+        "zh":  "革命、旋转",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "revolution"
+    },
+    {
+        "zh":  "奖",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prize"
+    },
+    {
+        "zh":  "初级的、最初的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "primary"
+    },
+    {
+        "zh":  "先前的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "previous"
+    },
+    {
+        "zh":  "吸引人的、动人的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "attractive"
+    },
+    {
+        "zh":  "传达、交流",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "communicate"
+    },
+    {
+        "zh":  "灾难",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "disaster"
+    },
+    {
+        "zh":  "股票、库存",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stock"
+    },
+    {
+        "zh":  "迅速的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "quick"
+    },
+    {
+        "zh":  "飞",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fly"
+    },
+    {
+        "zh":  "热",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "heat"
+    },
+    {
+        "zh":  "候选人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "candidate"
+    },
+    {
+        "zh":  "身份",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "identity"
+    },
+    {
+        "zh":  "修理、补救",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "repair"
+    },
+    {
+        "zh":  "八",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eight"
+    },
+    {
+        "zh":  "眼泪、撕碎",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tear"
+    },
+    {
+        "zh":  "网",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "web"
+    },
+    {
+        "zh":  "报刊、新闻界",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "press"
+    },
+    {
+        "zh":  "最初的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "original"
+    },
+    {
+        "zh":  "会议",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "conference"
+    },
+    {
+        "zh":  "发现、污点",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "spot"
+    },
+    {
+        "zh":  "信号",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "signal"
+    },
+    {
+        "zh":  "产生、引起",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "generate"
+    },
+    {
+        "zh":  "预期",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "expectation"
+    },
+    {
+        "zh":  "经济衰退、退后",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "recession"
+    },
+    {
+        "zh":  "给穿衣",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "clothe"
+    },
+    {
+        "zh":  "灵巧、天资",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "facility"
+    }
+]

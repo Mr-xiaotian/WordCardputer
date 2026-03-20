@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "群",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "swarm"
+    },
+    {
+        "zh":  "讨论会",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "symposium"
+    },
+    {
+        "zh":  "温度计",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "thermometer"
+    },
+    {
+        "zh":  "保留、扣留",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "withhold"
+    },
+    {
+        "zh":  "箭",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "arrow"
+    },
+    {
+        "zh":  "行李",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "baggage"
+    },
+    {
+        "zh":  "钝的、直率的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "blunt"
+    },
+    {
+        "zh":  "擦伤、挫伤",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bruise"
+    },
+    {
+        "zh":  "嗡嗡声、电话",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "buzz"
+    },
+    {
+        "zh":  "驾驶室",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cab"
+    },
+    {
+        "zh":  "钙",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "calcium"
+    },
+    {
+        "zh":  "指南针",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "compass"
+    },
+    {
+        "zh":  "楼下",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "downstairs"
+    },
+    {
+        "zh":  "染色、染料",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dye"
+    },
+    {
+        "zh":  "保险丝、融合",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fuse"
+    },
+    {
+        "zh":  "人质",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hostage"
+    },
+    {
+        "zh":  "慢跑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "jog"
+    },
+    {
+        "zh":  "刀",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "knife"
+    },
+    {
+        "zh":  "块",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "loaf"
+    },
+    {
+        "zh":  "月亮的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lunar"
+    },
+    {
+        "zh":  "草地",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "meadow"
+    },
+    {
+        "zh":  "数据包",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "packet"
+    },
+    {
+        "zh":  "管道工",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "plumber"
+    },
+    {
+        "zh":  "精神病学",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "psychiatry"
+    },
+    {
+        "zh":  "球拍",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "racket"
+    },
+    {
+        "zh":  "背诵",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "recite"
+    },
+    {
+        "zh":  "保存、记忆力",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "retention"
+    },
+    {
+        "zh":  "速记",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shorthand"
+    },
+    {
+        "zh":  "抿一口",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sip"
+    },
+    {
+        "zh":  "固执的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stubborn"
+    },
+    {
+        "zh":  "手推车",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "trolley"
+    },
+    {
+        "zh":  "修正",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "amend"
+    },
+    {
+        "zh":  "踝",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ankle"
+    },
+    {
+        "zh":  "贫瘠的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "barren"
+    },
+    {
+        "zh":  "盆地",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "basin"
+    },
+    {
+        "zh":  "蝙蝠",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bat"
+    },
+    {
+        "zh":  "兽",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "beast"
+    },
+    {
+        "zh":  "黄铜的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "brass"
+    },
+    {
+        "zh":  "违反",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "breach"
+    },
+    {
+        "zh":  "扫帚",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "broom"
+    },
+    {
+        "zh":  "帆布",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "canvas"
+    },
+    {
+        "zh":  "出纳员",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cashier"
+    },
+    {
+        "zh":  "下巴",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "chin"
+    },
+    {
+        "zh":  "合唱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "chorus"
+    },
+    {
+        "zh":  "文明",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "civilisation"
+    },
+    {
+        "zh":  "黏土",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "clay"
+    },
+    {
+        "zh":  "间隔、划分",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "compartment"
+    },
+    {
+        "zh":  "同情",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "compassion"
+    },
+    {
+        "zh":  "鹿",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deer"
+    },
+    {
+        "zh":  "扣留",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "detain"
+    }
+]

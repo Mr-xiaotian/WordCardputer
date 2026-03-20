@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "离开",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "depart"
+    },
+    {
+        "zh":  "忍耐",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "endurance"
+    },
+    {
+        "zh":  "瞥见",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "glimpse"
+    },
+    {
+        "zh":  "（外）祖母",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grandmother"
+    },
+    {
+        "zh":  "探测、探针",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "probe"
+    },
+    {
+        "zh":  "监视",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scrutiny"
+    },
+    {
+        "zh":  "缺点",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shortcoming"
+    },
+    {
+        "zh":  "次要的、下级的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "subordinate"
+    },
+    {
+        "zh":  "拉、拽",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "drag"
+    },
+    {
+        "zh":  "开支",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "expenditure"
+    },
+    {
+        "zh":  "幻想",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fantasy"
+    },
+    {
+        "zh":  "灰色的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grey"
+    },
+    {
+        "zh":  "侮辱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "insult"
+    },
+    {
+        "zh":  "说服",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "persuasion"
+    },
+    {
+        "zh":  "塞、插头",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "plug"
+    },
+    {
+        "zh":  "启示",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "revelation"
+    },
+    {
+        "zh":  "使恐怖、使害怕",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "terrify"
+    },
+    {
+        "zh":  "算法",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "algorithm"
+    },
+    {
+        "zh":  "拒绝参加",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "boycott"
+    },
+    {
+        "zh":  "一致",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "coincide"
+    },
+    {
+        "zh":  "经销商",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dealer"
+    },
+    {
+        "zh":  "处理",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "disposal"
+    },
+    {
+        "zh":  "发烧",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fever"
+    },
+    {
+        "zh":  "原谅",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "forgive"
+    },
+    {
+        "zh":  "草坪",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lawn"
+    },
+    {
+        "zh":  "小屋、门房",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lodge"
+    },
+    {
+        "zh":  "窝",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nest"
+    },
+    {
+        "zh":  "药丸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pill"
+    },
+    {
+        "zh":  "光谱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "spectrum"
+    },
+    {
+        "zh":  "火鸡",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "turkey"
+    },
+    {
+        "zh":  "浴室",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bathroom"
+    },
+    {
+        "zh":  "胸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "chest"
+    },
+    {
+        "zh":  "愚蠢的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "foolish"
+    },
+    {
+        "zh":  "挫败、使灰心",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "frustrate"
+    },
+    {
+        "zh":  "灯",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lamp"
+    },
+    {
+        "zh":  "联盟",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "league"
+    },
+    {
+        "zh":  "平板电脑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tablet"
+    },
+    {
+        "zh":  "富裕的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "affluent"
+    },
+    {
+        "zh":  "内阁",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cabinet"
+    },
+    {
+        "zh":  "碰撞",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "collision"
+    },
+    {
+        "zh":  "美味的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "delicious"
+    },
+    {
+        "zh":  "鸭",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "duck"
+    },
+    {
+        "zh":  "纪念碑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "monument"
+    },
+    {
+        "zh":  "梨树",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pear"
+    },
+    {
+        "zh":  "蜘蛛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "spider"
+    },
+    {
+        "zh":  "堆",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stack"
+    },
+    {
+        "zh":  "驯服的、驯养",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tame"
+    },
+    {
+        "zh":  "帐篷",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tent"
+    },
+    {
+        "zh":  "西红柿",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tomato"
+    },
+    {
+        "zh":  "头盔",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "helmet"
+    }
+]

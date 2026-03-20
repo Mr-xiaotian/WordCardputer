@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "电影",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "movie"
+    },
+    {
+        "zh":  "特征、独有的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "characteristic"
+    },
+    {
+        "zh":  "参加",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "join"
+    },
+    {
+        "zh":  "运转、动手术",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "operate"
+    },
+    {
+        "zh":  "污染",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pollution"
+    },
+    {
+        "zh":  "讨论",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "discuss"
+    },
+    {
+        "zh":  "延伸、延展",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "extend"
+    },
+    {
+        "zh":  "恰当的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "appropriate"
+    },
+    {
+        "zh":  "比赛、匹配",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "match"
+    },
+    {
+        "zh":  "日期",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "date"
+    },
+    {
+        "zh":  "古老的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ancient"
+    },
+    {
+        "zh":  "多数、半数以上",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "majority"
+    },
+    {
+        "zh":  "好奇、奇观",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wonder"
+    },
+    {
+        "zh":  "森林",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "forest"
+    },
+    {
+        "zh":  "独特的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "unique"
+    },
+    {
+        "zh":  "发现、调查结果",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "finding"
+    },
+    {
+        "zh":  "气体、天然气",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "gas"
+    },
+    {
+        "zh":  "分开",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "separate"
+    },
+    {
+        "zh":  "观众",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "audience"
+    },
+    {
+        "zh":  "车站",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "station"
+    },
+    {
+        "zh":  "碳、复写纸",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "carbon"
+    },
+    {
+        "zh":  "女性、雌性",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "female"
+    },
+    {
+        "zh":  "总结",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "conclude"
+    },
+    {
+        "zh":  "雇佣、采用",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "employ"
+    },
+    {
+        "zh":  "总结",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "conclusion"
+    },
+    {
+        "zh":  "道德的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "moral"
+    },
+    {
+        "zh":  "表达、措词",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "expression"
+    },
+    {
+        "zh":  "墙壁",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wall"
+    },
+    {
+        "zh":  "温度",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "temperature"
+    },
+    {
+        "zh":  "原则",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "principle"
+    },
+    {
+        "zh":  "获得",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "acquire"
+    },
+    {
+        "zh":  "邮件",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mail"
+    },
+    {
+        "zh":  "消耗、耗尽",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "consume"
+    },
+    {
+        "zh":  "意识的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "aware"
+    },
+    {
+        "zh":  "物主",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "owner"
+    },
+    {
+        "zh":  "教室",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "classroom"
+    },
+    {
+        "zh":  "校园",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "campus"
+    },
+    {
+        "zh":  "痛苦",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pain"
+    },
+    {
+        "zh":  "援助",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "aid"
+    },
+    {
+        "zh":  "怀疑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "doubt"
+    },
+    {
+        "zh":  "冰、使结冰",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ice"
+    },
+    {
+        "zh":  "细胞",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cell"
+    },
+    {
+        "zh":  "信任",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "confidence"
+    },
+    {
+        "zh":  "想象",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "imagine"
+    },
+    {
+        "zh":  "口味",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "taste"
+    },
+    {
+        "zh":  "居民、居住的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "resident"
+    },
+    {
+        "zh":  "平等的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "equal"
+    },
+    {
+        "zh":  "年长的、资格老的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "senior"
+    },
+    {
+        "zh":  "正餐",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dinner"
+    },
+    {
+        "zh":  "革新、新方法",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "innovation"
+    }
+]

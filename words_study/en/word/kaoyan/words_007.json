@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "益处、好处",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "benefit"
+    },
+    {
+        "zh":  "低的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "low"
+    },
+    {
+        "zh":  "项目",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "program"
+    },
+    {
+        "zh":  "工人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "worker"
+    },
+    {
+        "zh":  "市场",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "market"
+    },
+    {
+        "zh":  "教",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "teach"
+    },
+    {
+        "zh":  "支持",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "support"
+    },
+    {
+        "zh":  "在……之中",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "among"
+    },
+    {
+        "zh":  "仁慈的、种类",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "kind"
+    },
+    {
+        "zh":  "朋友",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "friend"
+    },
+    {
+        "zh":  "技术",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "skill"
+    },
+    {
+        "zh":  "然而",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "yet"
+    },
+    {
+        "zh":  "形式、形成",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "form"
+    },
+    {
+        "zh":  "包括",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "include"
+    },
+    {
+        "zh":  "移动",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "move"
+    },
+    {
+        "zh":  "相当的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rather"
+    },
+    {
+        "zh":  "创造",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "create"
+    },
+    {
+        "zh":  "从不",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "never"
+    },
+    {
+        "zh":  "世纪",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "century"
+    },
+    {
+        "zh":  "坏的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bad"
+    },
+    {
+        "zh":  "吃",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eat"
+    },
+    {
+        "zh":  "总是",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "always"
+    },
+    {
+        "zh":  "最小的、最少的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "least"
+    },
+    {
+        "zh":  "面对",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "face"
+    },
+    {
+        "zh":  "计划",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "plan"
+    },
+    {
+        "zh":  "考虑",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "consider"
+    },
+    {
+        "zh":  "工业、行业",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "industry"
+    },
+    {
+        "zh":  "他们自己、他们亲自",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "themselves"
+    },
+    {
+        "zh":  "过程、进程",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "process"
+    },
+    {
+        "zh":  "比率",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rate"
+    },
+    {
+        "zh":  "事实",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fact"
+    },
+    {
+        "zh":  "房子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "house"
+    },
+    {
+        "zh":  "文化",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "culture"
+    },
+    {
+        "zh":  "力、功率",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "power"
+    },
+    {
+        "zh":  "分享",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "share"
+    },
+    {
+        "zh":  "地区、范围",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "area"
+    },
+    {
+        "zh":  "百万",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "million"
+    },
+    {
+        "zh":  "很、许多",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lot"
+    },
+    {
+        "zh":  "感觉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sense"
+    },
+    {
+        "zh":  "失去、失败",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lose"
+    },
+    {
+        "zh":  "相对、相反",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "against"
+    },
+    {
+        "zh":  "上升",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rise"
+    },
+    {
+        "zh":  "精力",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "energy"
+    },
+    {
+        "zh":  "控制",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "control"
+    },
+    {
+        "zh":  "空间",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "space"
+    },
+    {
+        "zh":  "情况",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "case"
+    },
+    {
+        "zh":  "握着、坚持",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hold"
+    },
+    {
+        "zh":  "可能的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "possible"
+    },
+    {
+        "zh":  "能力",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ability"
+    },
+    {
+        "zh":  "动物",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "animal"
+    }
+]

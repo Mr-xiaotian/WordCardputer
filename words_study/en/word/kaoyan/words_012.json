@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "房间",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "room"
+    },
+    {
+        "zh":  "出现",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "appear"
+    },
+    {
+        "zh":  "冲击",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "impact"
+    },
+    {
+        "zh":  "一段时间",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "period"
+    },
+    {
+        "zh":  "电视",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "television"
+    },
+    {
+        "zh":  "相当的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "quite"
+    },
+    {
+        "zh":  "位置",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "position"
+    },
+    {
+        "zh":  "态度",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "attitude"
+    },
+    {
+        "zh":  "机器",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "machine"
+    },
+    {
+        "zh":  "清楚的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "clear"
+    },
+    {
+        "zh":  "田地、场地、领域",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "field"
+    },
+    {
+        "zh":  "经过",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pass"
+    },
+    {
+        "zh":  "在…下面",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "below"
+    },
+    {
+        "zh":  "这里",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "here"
+    },
+    {
+        "zh":  "沟通",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "communication"
+    },
+    {
+        "zh":  "保护",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "protect"
+    },
+    {
+        "zh":  "表演",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "performance"
+    },
+    {
+        "zh":  "讲座",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lecture"
+    },
+    {
+        "zh":  "因素、因子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "factor"
+    },
+    {
+        "zh":  "顶端",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "top"
+    },
+    {
+        "zh":  "牢固的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "firm"
+    },
+    {
+        "zh":  "画画",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "draw"
+    },
+    {
+        "zh":  "记忆",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "memory"
+    },
+    {
+        "zh":  "全部的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "whole"
+    },
+    {
+        "zh":  "作家",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "writer"
+    },
+    {
+        "zh":  "观看",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "watch"
+    },
+    {
+        "zh":  "死亡",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "death"
+    },
+    {
+        "zh":  "白色的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "white"
+    },
+    {
+        "zh":  "学术的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "academic"
+    },
+    {
+        "zh":  "携带、承受",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bear"
+    },
+    {
+        "zh":  "重要性",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "importance"
+    },
+    {
+        "zh":  "拒绝、下降",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "decline"
+    },
+    {
+        "zh":  "索要、声称",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "claim"
+    },
+    {
+        "zh":  "模型",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "model"
+    },
+    {
+        "zh":  "错误的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wrong"
+    },
+    {
+        "zh":  "专家、专门的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "expert"
+    },
+    {
+        "zh":  "携带",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "carry"
+    },
+    {
+        "zh":  "行为、行动、扮演",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "act"
+    },
+    {
+        "zh":  "发送",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "send"
+    },
+    {
+        "zh":  "接受",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "accept"
+    },
+    {
+        "zh":  "潜在的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "potential"
+    },
+    {
+        "zh":  "温度、程度",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "degree"
+    },
+    {
+        "zh":  "资源",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "resource"
+    },
+    {
+        "zh":  "暂停",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pause"
+    },
+    {
+        "zh":  "意见",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "opinion"
+    },
+    {
+        "zh":  "收入",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "income"
+    },
+    {
+        "zh":  "数量",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "amount"
+    },
+    {
+        "zh":  "疾病",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "disease"
+    },
+    {
+        "zh":  "站立",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stand"
+    },
+    {
+        "zh":  "政治的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "political"
+    }
+]

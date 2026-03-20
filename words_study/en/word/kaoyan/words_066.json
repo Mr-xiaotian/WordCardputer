@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "潜在的、预期的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prospective"
+    },
+    {
+        "zh":  "叔",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "uncle"
+    },
+    {
+        "zh":  "蓝图",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "blueprint"
+    },
+    {
+        "zh":  "联合、联邦",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "federation"
+    },
+    {
+        "zh":  "望远镜",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "telescope"
+    },
+    {
+        "zh":  "支票",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cheque"
+    },
+    {
+        "zh":  "共和政体的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "republican"
+    },
+    {
+        "zh":  "仪式",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ritual"
+    },
+    {
+        "zh":  "消失",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "vanish"
+    },
+    {
+        "zh":  "汽油",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "petrol"
+    },
+    {
+        "zh":  "随后的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "subsequent"
+    },
+    {
+        "zh":  "奖金",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bonus"
+    },
+    {
+        "zh":  "同意",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "consent"
+    },
+    {
+        "zh":  "气泡",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bubble"
+    },
+    {
+        "zh":  "紧握、紧抓",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grip"
+    },
+    {
+        "zh":  "谦逊的、卑微的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "humble"
+    },
+    {
+        "zh":  "海军",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "navy"
+    },
+    {
+        "zh":  "好交际的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sociable"
+    },
+    {
+        "zh":  "蚂蚁",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ant"
+    },
+    {
+        "zh":  "背叛",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "betray"
+    },
+    {
+        "zh":  "少数",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "handful"
+    },
+    {
+        "zh":  "紧急的、祈使的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "imperative"
+    },
+    {
+        "zh":  "估算、认为",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reckon"
+    },
+    {
+        "zh":  "严重的、敏锐的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "acute"
+    },
+    {
+        "zh":  "城堡",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "castle"
+    },
+    {
+        "zh":  "体贴的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "considerate"
+    },
+    {
+        "zh":  "尊严",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dignity"
+    },
+    {
+        "zh":  "加强、增加",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "heighten"
+    },
+    {
+        "zh":  "宏伟的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "magnificent"
+    },
+    {
+        "zh":  "米",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "metre"
+    },
+    {
+        "zh":  "节奏、韵律",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rhythm"
+    },
+    {
+        "zh":  "喉咙",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "throat"
+    },
+    {
+        "zh":  "整洁的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tidy"
+    },
+    {
+        "zh":  "电线",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wire"
+    },
+    {
+        "zh":  "悬崖",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cliff"
+    },
+    {
+        "zh":  "曲线",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "curve"
+    },
+    {
+        "zh":  "命运",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "destiny"
+    },
+    {
+        "zh":  "暗淡的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dim"
+    },
+    {
+        "zh":  "悖论",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "paradox"
+    },
+    {
+        "zh":  "重复地",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "repeatedly"
+    },
+    {
+        "zh":  "解决方案、决心",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "resolution"
+    },
+    {
+        "zh":  "喊叫",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scream"
+    },
+    {
+        "zh":  "阴影",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shade"
+    },
+    {
+        "zh":  "合作",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "collaborate"
+    },
+    {
+        "zh":  "县",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "county"
+    },
+    {
+        "zh":  "恶化",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deteriorate"
+    },
+    {
+        "zh":  "方程式",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "equation"
+    },
+    {
+        "zh":  "橙色的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "orange"
+    },
+    {
+        "zh":  "推迟",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "postpone"
+    },
+    {
+        "zh":  "发音",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pronounce"
+    }
+]

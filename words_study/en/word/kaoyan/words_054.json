@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "巨大的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tremendous"
+    },
+    {
+        "zh":  "自愿的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "voluntary"
+    },
+    {
+        "zh":  "精确度",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "accuracy"
+    },
+    {
+        "zh":  "银",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "silver"
+    },
+    {
+        "zh":  "羞愧",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shame"
+    },
+    {
+        "zh":  "耐心",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "patience"
+    },
+    {
+        "zh":  "模棱两可的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ambiguous"
+    },
+    {
+        "zh":  "可疑的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "suspicious"
+    },
+    {
+        "zh":  "礼貌的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "polite"
+    },
+    {
+        "zh":  "勇气",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "courage"
+    },
+    {
+        "zh":  "贵族的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "noble"
+    },
+    {
+        "zh":  "暂停",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "suspend"
+    },
+    {
+        "zh":  "逐渐削弱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "undermine"
+    },
+    {
+        "zh":  "深思熟虑的、故意的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deliberate"
+    },
+    {
+        "zh":  "操作人员",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "operator"
+    },
+    {
+        "zh":  "代替",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "substitute"
+    },
+    {
+        "zh":  "车费",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fare"
+    },
+    {
+        "zh":  "污染",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pollute"
+    },
+    {
+        "zh":  "突出的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prominent"
+    },
+    {
+        "zh":  "厚的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "thick"
+    },
+    {
+        "zh":  "丰富",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "enrich"
+    },
+    {
+        "zh":  "家伙",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "guy"
+    },
+    {
+        "zh":  "语言的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "verbal"
+    },
+    {
+        "zh":  "代表",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "behalf"
+    },
+    {
+        "zh":  "容忍",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tolerate"
+    },
+    {
+        "zh":  "独特的、特殊的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "peculiar"
+    },
+    {
+        "zh":  "半球",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hemisphere"
+    },
+    {
+        "zh":  "纯粹的、纯的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pure"
+    },
+    {
+        "zh":  "前景",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "outlook"
+    },
+    {
+        "zh":  "后方、培育",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rear"
+    },
+    {
+        "zh":  "可比较的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "comparable"
+    },
+    {
+        "zh":  "投射、铸造",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cast"
+    },
+    {
+        "zh":  "相互的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mutual"
+    },
+    {
+        "zh":  "组织",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "organisation"
+    },
+    {
+        "zh":  "行、排",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "row"
+    },
+    {
+        "zh":  "欢呼",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cheer"
+    },
+    {
+        "zh":  "强度",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "intensity"
+    },
+    {
+        "zh":  "培育",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nurture"
+    },
+    {
+        "zh":  "尊敬",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "esteem"
+    },
+    {
+        "zh":  "解放",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "liberate"
+    },
+    {
+        "zh":  "网球",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tennis"
+    },
+    {
+        "zh":  "接受",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "acceptance"
+    },
+    {
+        "zh":  "共识",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "consensus"
+    },
+    {
+        "zh":  "棉花",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cotton"
+    },
+    {
+        "zh":  "神经",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nerve"
+    },
+    {
+        "zh":  "坚持",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "persist"
+    },
+    {
+        "zh":  "经历",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "undergo"
+    },
+    {
+        "zh":  "钱包",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wallet"
+    },
+    {
+        "zh":  "洗",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wash"
+    },
+    {
+        "zh":  "睡着",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "asleep"
+    }
+]

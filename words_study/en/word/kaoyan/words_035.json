@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "相反的、倒退的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reverse"
+    },
+    {
+        "zh":  "文档",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "document"
+    },
+    {
+        "zh":  "掠过",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "skim"
+    },
+    {
+        "zh":  "乐观的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "optimistic"
+    },
+    {
+        "zh":  "稍微",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "somewhat"
+    },
+    {
+        "zh":  "有技能的、熟练的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "skilled"
+    },
+    {
+        "zh":  "欣赏、感激",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "appreciate"
+    },
+    {
+        "zh":  "招待、娱乐",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "entertainment"
+    },
+    {
+        "zh":  "谁也不、小人物",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nobody"
+    },
+    {
+        "zh":  "满意、乐事",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "satisfaction"
+    },
+    {
+        "zh":  "恢复",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "recover"
+    },
+    {
+        "zh":  "房间、公寓",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "apartment"
+    },
+    {
+        "zh":  "姐妹",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sister"
+    },
+    {
+        "zh":  "盘子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "plate"
+    },
+    {
+        "zh":  "证明…正当",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "justify"
+    },
+    {
+        "zh":  "死去的、麻木的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dead"
+    },
+    {
+        "zh":  "仪式",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ceremony"
+    },
+    {
+        "zh":  "在别处",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "elsewhere"
+    },
+    {
+        "zh":  "步骤",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "procedure"
+    },
+    {
+        "zh":  "不太可能",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "unlikely"
+    },
+    {
+        "zh":  "严格的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "strict"
+    },
+    {
+        "zh":  "棍、刺、粘贴",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stick"
+    },
+    {
+        "zh":  "观察、言论",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "observation"
+    },
+    {
+        "zh":  "传达、输送",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "convey"
+    },
+    {
+        "zh":  "虚拟、实际上的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "virtual"
+    },
+    {
+        "zh":  "使泄气",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "discourage"
+    },
+    {
+        "zh":  "拥堵、果酱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "jam"
+    },
+    {
+        "zh":  "位置",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "location"
+    },
+    {
+        "zh":  "教练",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "coach"
+    },
+    {
+        "zh":  "优点、价值、值得",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "merit"
+    },
+    {
+        "zh":  "机会、重大活动",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "occasion"
+    },
+    {
+        "zh":  "瓶子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bottle"
+    },
+    {
+        "zh":  "后果、言下之意",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "implication"
+    },
+    {
+        "zh":  "不可避免的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "inevitable"
+    },
+    {
+        "zh":  "风",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wind"
+    },
+    {
+        "zh":  "惊讶",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "surprise"
+    },
+    {
+        "zh":  "独立",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "independence"
+    },
+    {
+        "zh":  "在旁边",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "aside"
+    },
+    {
+        "zh":  "结合、约束、捆绑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bind"
+    },
+    {
+        "zh":  "捕获、战利品、拍摄、引起注意",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "capture"
+    },
+    {
+        "zh":  "满意、使确信",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "satisfy"
+    },
+    {
+        "zh":  "招募、新兵",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "recruit"
+    },
+    {
+        "zh":  "皮",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "skin"
+    },
+    {
+        "zh":  "零售",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "retail"
+    },
+    {
+        "zh":  "生病的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sick"
+    },
+    {
+        "zh":  "谷物",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grain"
+    },
+    {
+        "zh":  "渴望的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eager"
+    },
+    {
+        "zh":  "提议、求婚",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "proposal"
+    },
+    {
+        "zh":  "摘录",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "excerpt"
+    },
+    {
+        "zh":  "简短的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "brief"
+    }
+]

@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "饮料",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "beverage"
+    },
+    {
+        "zh":  "电灯泡",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bulb"
+    },
+    {
+        "zh":  "建立、直立的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "erect"
+    },
+    {
+        "zh":  "期满、终止",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "expire"
+    },
+    {
+        "zh":  "优雅",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grace"
+    },
+    {
+        "zh":  "海湾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "gulf"
+    },
+    {
+        "zh":  "布局",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "layout"
+    },
+    {
+        "zh":  "图书管理员",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "librarian"
+    },
+    {
+        "zh":  "情人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lover"
+    },
+    {
+        "zh":  "婚姻的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "marital"
+    },
+    {
+        "zh":  "针",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "needle"
+    },
+    {
+        "zh":  "先例",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "precedent"
+    },
+    {
+        "zh":  "酒吧",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pub"
+    },
+    {
+        "zh":  "鲁莽的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reckless"
+    },
+    {
+        "zh":  "泄漏",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "spill"
+    },
+    {
+        "zh":  "楼梯",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stair"
+    },
+    {
+        "zh":  "羞耻的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ashamed"
+    },
+    {
+        "zh":  "姑、姨",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "aunt"
+    },
+    {
+        "zh":  "秃头的、单调的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bald"
+    },
+    {
+        "zh":  "破产的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bankrupt"
+    },
+    {
+        "zh":  "窒息、抑制",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "choke"
+    },
+    {
+        "zh":  "累积的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cumulative"
+    },
+    {
+        "zh":  "可疑的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dubious"
+    },
+    {
+        "zh":  "鹰",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "eagle"
+    },
+    {
+        "zh":  "温柔地",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "gently"
+    },
+    {
+        "zh":  "完整的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "integral"
+    },
+    {
+        "zh":  "调停",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mediate"
+    },
+    {
+        "zh":  "组织",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "organise"
+    },
+    {
+        "zh":  "赶上",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "overtake"
+    },
+    {
+        "zh":  "脉搏",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pulse"
+    },
+    {
+        "zh":  "量化",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "quantify"
+    },
+    {
+        "zh":  "各自的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "respective"
+    },
+    {
+        "zh":  "骚乱、暴乱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "riot"
+    },
+    {
+        "zh":  "坐落在、的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "situate"
+    },
+    {
+        "zh":  "滑冰",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "skate"
+    },
+    {
+        "zh":  "规格",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "specification"
+    },
+    {
+        "zh":  "汗水",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sweat"
+    },
+    {
+        "zh":  "运输",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "transit"
+    },
+    {
+        "zh":  "暴跌、跌倒",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tumble"
+    },
+    {
+        "zh":  "说唱音乐、轻敲",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rap"
+    },
+    {
+        "zh":  "地质学",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "geology"
+    },
+    {
+        "zh":  "推理",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "inference"
+    },
+    {
+        "zh":  "可卡因",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cocaine"
+    },
+    {
+        "zh":  "图表",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "graph"
+    },
+    {
+        "zh":  "君主",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "monarch"
+    },
+    {
+        "zh":  "大量、多数",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "multitude"
+    },
+    {
+        "zh":  "连续",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "succession"
+    },
+    {
+        "zh":  "类比",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "analogy"
+    },
+    {
+        "zh":  "绝望",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "despair"
+    },
+    {
+        "zh":  "伪造、建立",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "forge"
+    }
+]

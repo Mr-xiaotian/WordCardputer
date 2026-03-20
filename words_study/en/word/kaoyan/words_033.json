@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "官员、军官",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "officer"
+    },
+    {
+        "zh":  "智慧",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wisdom"
+    },
+    {
+        "zh":  "移动的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mobile"
+    },
+    {
+        "zh":  "情绪、心情",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mood"
+    },
+    {
+        "zh":  "症状",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "symptom"
+    },
+    {
+        "zh":  "漠不关心的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "indifferent"
+    },
+    {
+        "zh":  "忽视、疏忽",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "neglect"
+    },
+    {
+        "zh":  "改变",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "transform"
+    },
+    {
+        "zh":  "明亮的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bright"
+    },
+    {
+        "zh":  "恢复、重获",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "recovery"
+    },
+    {
+        "zh":  "名誉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reputation"
+    },
+    {
+        "zh":  "错误",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fault"
+    },
+    {
+        "zh":  "通货膨胀",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "inflation"
+    },
+    {
+        "zh":  "气氛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "atmosphere"
+    },
+    {
+        "zh":  "宗教、信念",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "religion"
+    },
+    {
+        "zh":  "根、根本",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "root"
+    },
+    {
+        "zh":  "严重的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "severe"
+    },
+    {
+        "zh":  "否定",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deny"
+    },
+    {
+        "zh":  "评估",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "assess"
+    },
+    {
+        "zh":  "极端",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "extreme"
+    },
+    {
+        "zh":  "介绍、传入",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "introduction"
+    },
+    {
+        "zh":  "很少的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "seldom"
+    },
+    {
+        "zh":  "末端、小费、提示",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tip"
+    },
+    {
+        "zh":  "少数",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "minority"
+    },
+    {
+        "zh":  "相关的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "relevant"
+    },
+    {
+        "zh":  "酷、使冷静",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cool"
+    },
+    {
+        "zh":  "值得、应得",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deserve"
+    },
+    {
+        "zh":  "重复",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "repeat"
+    },
+    {
+        "zh":  "政治家",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "politician"
+    },
+    {
+        "zh":  "摆姿势、造成、提出",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pose"
+    },
+    {
+        "zh":  "主席、椅子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "chair"
+    },
+    {
+        "zh":  "美好的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "beautiful"
+    },
+    {
+        "zh":  "器官的、有机物的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "organic"
+    },
+    {
+        "zh":  "重要的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "vital"
+    },
+    {
+        "zh":  "备选的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "alternative"
+    },
+    {
+        "zh":  "取消",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cancel"
+    },
+    {
+        "zh":  "深度",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "depth"
+    },
+    {
+        "zh":  "蛋白质",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "protein"
+    },
+    {
+        "zh":  "职业",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "profession"
+    },
+    {
+        "zh":  "专家",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "specialist"
+    },
+    {
+        "zh":  "仅仅的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mere"
+    },
+    {
+        "zh":  "相反的、对立面",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "opposite"
+    },
+    {
+        "zh":  "拥有、具有",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "possess"
+    },
+    {
+        "zh":  "认出、承认",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "recognition"
+    },
+    {
+        "zh":  "属性",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "attribute"
+    },
+    {
+        "zh":  "链",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "chain"
+    },
+    {
+        "zh":  "遥远的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "remote"
+    },
+    {
+        "zh":  "明天、来日",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tomorrow"
+    },
+    {
+        "zh":  "洲、大陆",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "continent"
+    },
+    {
+        "zh":  "减少、降低",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reduction"
+    }
+]

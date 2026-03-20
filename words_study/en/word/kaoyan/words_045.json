@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "所有",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ownership"
+    },
+    {
+        "zh":  "发源、开创",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "originate"
+    },
+    {
+        "zh":  "航空器",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "aircraft"
+    },
+    {
+        "zh":  "伦理",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ethic"
+    },
+    {
+        "zh":  "外部的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "external"
+    },
+    {
+        "zh":  "普遍的、宇宙的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "universal"
+    },
+    {
+        "zh":  "反应",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "react"
+    },
+    {
+        "zh":  "代表、有代表性的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "representative"
+    },
+    {
+        "zh":  "大量的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "substantial"
+    },
+    {
+        "zh":  "资格",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "qualification"
+    },
+    {
+        "zh":  "保留",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "retain"
+    },
+    {
+        "zh":  "嘴",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mouth"
+    },
+    {
+        "zh":  "投票",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "poll"
+    },
+    {
+        "zh":  "经过",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "via"
+    },
+    {
+        "zh":  "神话",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "myth"
+    },
+    {
+        "zh":  "稳定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stability"
+    },
+    {
+        "zh":  "出租车",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "taxi"
+    },
+    {
+        "zh":  "滑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "slip"
+    },
+    {
+        "zh":  "口袋",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pocket"
+    },
+    {
+        "zh":  "化石",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fossil"
+    },
+    {
+        "zh":  "女士",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lady"
+    },
+    {
+        "zh":  "滚动、卷",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "roll"
+    },
+    {
+        "zh":  "论坛",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "forum"
+    },
+    {
+        "zh":  "准备",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "preparation"
+    },
+    {
+        "zh":  "运气、好运",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "luck"
+    },
+    {
+        "zh":  "奖学金、学问",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scholarship"
+    },
+    {
+        "zh":  "栏杆、铁轨",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rail"
+    },
+    {
+        "zh":  "院长、主任",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dean"
+    },
+    {
+        "zh":  "俯瞰、忽略",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "overlook"
+    },
+    {
+        "zh":  "保卫、防守",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "defend"
+    },
+    {
+        "zh":  "解散",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dismiss"
+    },
+    {
+        "zh":  "加强",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reinforce"
+    },
+    {
+        "zh":  "打扰",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bother"
+    },
+    {
+        "zh":  "克服",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "overcome"
+    },
+    {
+        "zh":  "学院",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "academy"
+    },
+    {
+        "zh":  "超级市场",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "supermarket"
+    },
+    {
+        "zh":  "有雄心的、艰巨的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ambitious"
+    },
+    {
+        "zh":  "屋顶",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "roof"
+    },
+    {
+        "zh":  "小偷",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "thief"
+    },
+    {
+        "zh":  "积累",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "accumulate"
+    },
+    {
+        "zh":  "孤独地",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lonely"
+    },
+    {
+        "zh":  "加仑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "gallon"
+    },
+    {
+        "zh":  "导师",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tutor"
+    },
+    {
+        "zh":  "铁路",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "railway"
+    },
+    {
+        "zh":  "整合",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "integrate"
+    },
+    {
+        "zh":  "不包括",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "exclude"
+    },
+    {
+        "zh":  "随意的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "casual"
+    },
+    {
+        "zh":  "东方、定位、使适应",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "orient"
+    },
+    {
+        "zh":  "组成部分",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "component"
+    },
+    {
+        "zh":  "一打",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dozen"
+    }
+]

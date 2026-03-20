@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "点燃",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "ignite"
+    },
+    {
+        "zh":  "工业化",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "industrialise"
+    },
+    {
+        "zh":  "珠宝",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "jewel"
+    },
+    {
+        "zh":  "肾",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "kidney"
+    },
+    {
+        "zh":  "公里",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "kilometre"
+    },
+    {
+        "zh":  "失效、流逝",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lapse"
+    },
+    {
+        "zh":  "租约",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lease"
+    },
+    {
+        "zh":  "跛行、柔软的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "limp"
+    },
+    {
+        "zh":  "可爱的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lovely"
+    },
+    {
+        "zh":  "民族",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nationality"
+    },
+    {
+        "zh":  "名义上的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nominal"
+    },
+    {
+        "zh":  "通知",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "notify"
+    },
+    {
+        "zh":  "橡木",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "oak"
+    },
+    {
+        "zh":  "苍白的、暗淡的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pale"
+    },
+    {
+        "zh":  "平装书",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "paperback"
+    },
+    {
+        "zh":  "路面",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pavement"
+    },
+    {
+        "zh":  "品脱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pint"
+    },
+    {
+        "zh":  "罗马教皇",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pope"
+    },
+    {
+        "zh":  "排演、预演",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rehearse"
+    },
+    {
+        "zh":  "偿还",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "repay"
+    },
+    {
+        "zh":  "解雇",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sack"
+    },
+    {
+        "zh":  "骨架",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "skeleton"
+    },
+    {
+        "zh":  "壮观",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "spectacular"
+    },
+    {
+        "zh":  "雕塑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "statue"
+    },
+    {
+        "zh":  "立体声",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stereo"
+    },
+    {
+        "zh":  "缕",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "strand"
+    },
+    {
+        "zh":  "纠纷、纠缠",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tangle"
+    },
+    {
+        "zh":  "庙宇",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "temple"
+    },
+    {
+        "zh":  "超越",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "transcend"
+    },
+    {
+        "zh":  "利用",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "utilise"
+    },
+    {
+        "zh":  "素食者",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "vegetarian"
+    },
+    {
+        "zh":  "工作日",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "weekday"
+    },
+    {
+        "zh":  "炉子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "furnace"
+    },
+    {
+        "zh":  "纺织品",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "textile"
+    },
+    {
+        "zh":  "食堂",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "canteen"
+    },
+    {
+        "zh":  "凝结、浓缩",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "condense"
+    },
+    {
+        "zh":  "表示",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "denote"
+    },
+    {
+        "zh":  "区分",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "differentiate"
+    },
+    {
+        "zh":  "咧嘴笑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grin"
+    },
+    {
+        "zh":  "港口",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "harbor"
+    },
+    {
+        "zh":  "匆忙",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "haste"
+    },
+    {
+        "zh":  "姿势",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "posture"
+    },
+    {
+        "zh":  "雷达",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "radar"
+    },
+    {
+        "zh":  "昵称",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nickname"
+    },
+    {
+        "zh":  "主持",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "preside"
+    },
+    {
+        "zh":  "撕裂、裂缝",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rip"
+    },
+    {
+        "zh":  "烤、烤面包",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "toast"
+    },
+    {
+        "zh":  "真空",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "vacuum"
+    },
+    {
+        "zh":  "气球",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "balloon"
+    },
+    {
+        "zh":  "手册",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "brochure"
+    }
+]

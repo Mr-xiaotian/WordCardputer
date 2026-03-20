@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "每日的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "everyday"
+    },
+    {
+        "zh":  "百分比",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "percentage"
+    },
+    {
+        "zh":  "版本",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "version"
+    },
+    {
+        "zh":  "戏剧性的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dramatic"
+    },
+    {
+        "zh":  "刺激、使兴奋",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stimulate"
+    },
+    {
+        "zh":  "安排",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "arrange"
+    },
+    {
+        "zh":  "能力、院系",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "faculty"
+    },
+    {
+        "zh":  "赞美、表扬",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "praise"
+    },
+    {
+        "zh":  "志愿者",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "volunteer"
+    },
+    {
+        "zh":  "石头",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "stone"
+    },
+    {
+        "zh":  "章节",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "chapter"
+    },
+    {
+        "zh":  "与此同时",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "meanwhile"
+    },
+    {
+        "zh":  "察觉、理解",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "perceive"
+    },
+    {
+        "zh":  "仅仅",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "merely"
+    },
+    {
+        "zh":  "吸收",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "absorb"
+    },
+    {
+        "zh":  "属于",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "belong"
+    },
+    {
+        "zh":  "弱的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "weak"
+    },
+    {
+        "zh":  "事情、事务",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "affair"
+    },
+    {
+        "zh":  "本科的、本科生",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "undergraduate"
+    },
+    {
+        "zh":  "分配、指定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "assign"
+    },
+    {
+        "zh":  "任务、使命",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mission"
+    },
+    {
+        "zh":  "欢乐",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "joy"
+    },
+    {
+        "zh":  "公路",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "highway"
+    },
+    {
+        "zh":  "公布、出版",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "publication"
+    },
+    {
+        "zh":  "诗歌",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "poetry"
+    },
+    {
+        "zh":  "通常的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "usual"
+    },
+    {
+        "zh":  "必要、必然性",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "necessity"
+    },
+    {
+        "zh":  "调整",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "adjust"
+    },
+    {
+        "zh":  "宣布",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "announce"
+    },
+    {
+        "zh":  "暴露、揭发",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "exposure"
+    },
+    {
+        "zh":  "承认",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "acknowledge"
+    },
+    {
+        "zh":  "想象",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "imagination"
+    },
+    {
+        "zh":  "指出、位于",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "locate"
+    },
+    {
+        "zh":  "刺激、动机",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "incentive"
+    },
+    {
+        "zh":  "受害者",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "victim"
+    },
+    {
+        "zh":  "航线",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "airline"
+    },
+    {
+        "zh":  "自信的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "confident"
+    },
+    {
+        "zh":  "偏爱",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "preference"
+    },
+    {
+        "zh":  "赞同",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "approve"
+    },
+    {
+        "zh":  "借",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "borrow"
+    },
+    {
+        "zh":  "任务",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "assignment"
+    },
+    {
+        "zh":  "可靠的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "reliable"
+    },
+    {
+        "zh":  "资产、天赋",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "asset"
+    },
+    {
+        "zh":  "坚定的、经常的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "constant"
+    },
+    {
+        "zh":  "空闲、悠闲",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "leisure"
+    },
+    {
+        "zh":  "相当大的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "considerable"
+    },
+    {
+        "zh":  "美丽、美人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "beauty"
+    },
+    {
+        "zh":  "巨大的、大规模的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "massive"
+    },
+    {
+        "zh":  "理事会",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "council"
+    },
+    {
+        "zh":  "完全的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "entire"
+    }
+]

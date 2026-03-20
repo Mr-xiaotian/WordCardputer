@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "精英",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "elite"
+    },
+    {
+        "zh":  "审判、试用",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "trial"
+    },
+    {
+        "zh":  "使发展",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "evolve"
+    },
+    {
+        "zh":  "误导",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mislead"
+    },
+    {
+        "zh":  "区分、卓越",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "distinction"
+    },
+    {
+        "zh":  "自动",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "automation"
+    },
+    {
+        "zh":  "工艺",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "craft"
+    },
+    {
+        "zh":  "丰富、大量",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "plenty"
+    },
+    {
+        "zh":  "蔬菜",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "vegetable"
+    },
+    {
+        "zh":  "课程",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "curriculum"
+    },
+    {
+        "zh":  "灵活的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "flexible"
+    },
+    {
+        "zh":  "猫",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cat"
+    },
+    {
+        "zh":  "皇家的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "royal"
+    },
+    {
+        "zh":  "使显著、强调",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "highlight"
+    },
+    {
+        "zh":  "评价、评论",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "remark"
+    },
+    {
+        "zh":  "比较",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "comparison"
+    },
+    {
+        "zh":  "管理、调节",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "regulate"
+    },
+    {
+        "zh":  "相反的、对方的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "contrary"
+    },
+    {
+        "zh":  "冲",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "rush"
+    },
+    {
+        "zh":  "互动",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "interact"
+    },
+    {
+        "zh":  "紧张的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nervous"
+    },
+    {
+        "zh":  "包、袋",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bag"
+    },
+    {
+        "zh":  "计划、密谋",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scheme"
+    },
+    {
+        "zh":  "警报",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "alarm"
+    },
+    {
+        "zh":  "遗弃、沙漠",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "desert"
+    },
+    {
+        "zh":  "海滩",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "beach"
+    },
+    {
+        "zh":  "使用、用法",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "usage"
+    },
+    {
+        "zh":  "例外的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "exceptional"
+    },
+    {
+        "zh":  "内部的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "internal"
+    },
+    {
+        "zh":  "邪恶的、坏的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "evil"
+    },
+    {
+        "zh":  "周围",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "surround"
+    },
+    {
+        "zh":  "底下",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bottom"
+    },
+    {
+        "zh":  "扩张",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "expansion"
+    },
+    {
+        "zh":  "然而",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "whereas"
+    },
+    {
+        "zh":  "执照、许可",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "license"
+    },
+    {
+        "zh":  "旅行",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "journey"
+    },
+    {
+        "zh":  "预期、先发制人",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "anticipate"
+    },
+    {
+        "zh":  "剥夺",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "deprive"
+    },
+    {
+        "zh":  "财政",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "finance"
+    },
+    {
+        "zh":  "缺席",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "absence"
+    },
+    {
+        "zh":  "指导方针、指导原则",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "guideline"
+    },
+    {
+        "zh":  "路线",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "route"
+    },
+    {
+        "zh":  "无论何时",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "whenever"
+    },
+    {
+        "zh":  "固体的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "solid"
+    },
+    {
+        "zh":  "提取、利用",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tap"
+    },
+    {
+        "zh":  "我自己、我亲自",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "myself"
+    },
+    {
+        "zh":  "种子、播种",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "seed"
+    },
+    {
+        "zh":  "抗议",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "protest"
+    },
+    {
+        "zh":  "顺从、递交",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "submit"
+    },
+    {
+        "zh":  "音乐的、音调优美的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "musical"
+    }
+]

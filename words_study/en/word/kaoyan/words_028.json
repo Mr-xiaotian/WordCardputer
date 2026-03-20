@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "口译、解释",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "interpret"
+    },
+    {
+        "zh":  "律师",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lawyer"
+    },
+    {
+        "zh":  "现今",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nowadays"
+    },
+    {
+        "zh":  "优先",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "priority"
+    },
+    {
+        "zh":  "军事的、军队",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "military"
+    },
+    {
+        "zh":  "处理、应对",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cope"
+    },
+    {
+        "zh":  "提议、提名",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "propose"
+    },
+    {
+        "zh":  "亲戚、比较的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "relative"
+    },
+    {
+        "zh":  "性",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sex"
+    },
+    {
+        "zh":  "拉",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pull"
+    },
+    {
+        "zh":  "新鲜的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fresh"
+    },
+    {
+        "zh":  "聚集、挤满",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "crowd"
+    },
+    {
+        "zh":  "景色、前景",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prospect"
+    },
+    {
+        "zh":  "支付",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "payment"
+    },
+    {
+        "zh":  "技术的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "technical"
+    },
+    {
+        "zh":  "鱼",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fish"
+    },
+    {
+        "zh":  "出生",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "birth"
+    },
+    {
+        "zh":  "焦虑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "anxiety"
+    },
+    {
+        "zh":  "常规、惯例",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "routine"
+    },
+    {
+        "zh":  "心理学",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "psychology"
+    },
+    {
+        "zh":  "到国外、广为流传",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "abroad"
+    },
+    {
+        "zh":  "喂食",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "feed"
+    },
+    {
+        "zh":  "才华、人才",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "talent"
+    },
+    {
+        "zh":  "虚构、小说",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fiction"
+    },
+    {
+        "zh":  "飞机",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "plane"
+    },
+    {
+        "zh":  "下午",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "afternoon"
+    },
+    {
+        "zh":  "鞋子",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shoe"
+    },
+    {
+        "zh":  "人文、人性",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "humanity"
+    },
+    {
+        "zh":  "保护、保存",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "preserve"
+    },
+    {
+        "zh":  "解释",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "explanation"
+    },
+    {
+        "zh":  "流动",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "flow"
+    },
+    {
+        "zh":  "技术",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "technique"
+    },
+    {
+        "zh":  "醒来",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wake"
+    },
+    {
+        "zh":  "伤害",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hurt"
+    },
+    {
+        "zh":  "组成、在于",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "consist"
+    },
+    {
+        "zh":  "主人、精通、掌握",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "master"
+    },
+    {
+        "zh":  "笑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "smile"
+    },
+    {
+        "zh":  "使人信服",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "convince"
+    },
+    {
+        "zh":  "推迟",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "delay"
+    },
+    {
+        "zh":  "宽的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "broad"
+    },
+    {
+        "zh":  "足够的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sufficient"
+    },
+    {
+        "zh":  "大部分",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mostly"
+    },
+    {
+        "zh":  "不同的、不像",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "unlike"
+    },
+    {
+        "zh":  "摧毁",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "destroy"
+    },
+    {
+        "zh":  "肉类",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "meat"
+    },
+    {
+        "zh":  "工资、发动",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wage"
+    },
+    {
+        "zh":  "视力、想象",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "vision"
+    },
+    {
+        "zh":  "富裕的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wealthy"
+    },
+    {
+        "zh":  "展览",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "exhibit"
+    },
+    {
+        "zh":  "块、阻止、街区",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "block"
+    }
+]

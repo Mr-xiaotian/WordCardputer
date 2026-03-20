@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "高兴",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "delight"
+    },
+    {
+        "zh":  "天才",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "genius"
+    },
+    {
+        "zh":  "远的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "distant"
+    },
+    {
+        "zh":  "多种多样的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "diverse"
+    },
+    {
+        "zh":  "命运、财产",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fortune"
+    },
+    {
+        "zh":  "胜利",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "victory"
+    },
+    {
+        "zh":  "反馈",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "feedback"
+    },
+    {
+        "zh":  "唤醒、激发",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "arouse"
+    },
+    {
+        "zh":  "悲伤的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sad"
+    },
+    {
+        "zh":  "主题",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "theme"
+    },
+    {
+        "zh":  "正方形",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "square"
+    },
+    {
+        "zh":  "防卫",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "defense"
+    },
+    {
+        "zh":  "促进",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "facilitate"
+    },
+    {
+        "zh":  "软的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "soft"
+    },
+    {
+        "zh":  "结合",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "combination"
+    },
+    {
+        "zh":  "摇",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shake"
+    },
+    {
+        "zh":  "世故的、复杂的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sophisticated"
+    },
+    {
+        "zh":  "猴子",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "monkey"
+    },
+    {
+        "zh":  "数据库",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "database"
+    },
+    {
+        "zh":  "习俗、会议",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "convention"
+    },
+    {
+        "zh":  "企业、事业",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "enterprise"
+    },
+    {
+        "zh":  "临时的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "temporary"
+    },
+    {
+        "zh":  "依靠的、取决于……的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "dependent"
+    },
+    {
+        "zh":  "有智慧的、英明的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wise"
+    },
+    {
+        "zh":  "值得注意的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "remarkable"
+    },
+    {
+        "zh":  "马",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "horse"
+    },
+    {
+        "zh":  "数量、数额",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "quantity"
+    },
+    {
+        "zh":  "致命的、宿命的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fatal"
+    },
+    {
+        "zh":  "游说、门廊",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "lobby"
+    },
+    {
+        "zh":  "冷静、镇定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "calm"
+    },
+    {
+        "zh":  "同时代的、现代的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "contemporary"
+    },
+    {
+        "zh":  "流行、占优势",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prevail"
+    },
+    {
+        "zh":  "诡计、技巧",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "trick"
+    },
+    {
+        "zh":  "谨慎的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cautious"
+    },
+    {
+        "zh":  "转变",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "convert"
+    },
+    {
+        "zh":  "好奇的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "curious"
+    },
+    {
+        "zh":  "埋",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bury"
+    },
+    {
+        "zh":  "旱灾",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "drought"
+    },
+    {
+        "zh":  "池塘",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pool"
+    },
+    {
+        "zh":  "使确信、担保",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "assure"
+    },
+    {
+        "zh":  "版本",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "edition"
+    },
+    {
+        "zh":  "引诱、引起",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "induce"
+    },
+    {
+        "zh":  "部分",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "portion"
+    },
+    {
+        "zh":  "同学",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "classmate"
+    },
+    {
+        "zh":  "宏伟的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "grand"
+    },
+    {
+        "zh":  "脱去、棚",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shed"
+    },
+    {
+        "zh":  "自豪、自满",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pride"
+    },
+    {
+        "zh":  "足球",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "soccer"
+    },
+    {
+        "zh":  "同情",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sympathy"
+    },
+    {
+        "zh":  "机制、方法",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "mechanism"
+    }
+]

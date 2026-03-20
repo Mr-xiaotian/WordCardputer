@@ -1,0 +1,352 @@
+[
+    {
+        "zh":  "水果",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "fruit"
+    },
+    {
+        "zh":  "场景",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "scene"
+    },
+    {
+        "zh":  "隐藏",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hide"
+    },
+    {
+        "zh":  "输出、出口",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "export"
+    },
+    {
+        "zh":  "展览会、陈列",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "exhibition"
+    },
+    {
+        "zh":  "长度",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "length"
+    },
+    {
+        "zh":  "耕作、培养",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "cultivate"
+    },
+    {
+        "zh":  "边界",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "border"
+    },
+    {
+        "zh":  "边、刀口",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "edge"
+    },
+    {
+        "zh":  "回收",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "recycle"
+    },
+    {
+        "zh":  "宝藏",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "treasure"
+    },
+    {
+        "zh":  "细菌",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "bacteria"
+    },
+    {
+        "zh":  "选择、精选物",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "selection"
+    },
+    {
+        "zh":  "支撑、忍受",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "sustain"
+    },
+    {
+        "zh":  "每人",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "everybody"
+    },
+    {
+        "zh":  "有帮助的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "helpful"
+    },
+    {
+        "zh":  "工具、乐器",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "instrument"
+    },
+    {
+        "zh":  "疲惫的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "tired"
+    },
+    {
+        "zh":  "头发",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hair"
+    },
+    {
+        "zh":  "允许进入、承认",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "admission"
+    },
+    {
+        "zh":  "不顾、不管怎样",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "regardless"
+    },
+    {
+        "zh":  "空的",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "empty"
+    },
+    {
+        "zh":  "春天、跳跃",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "spring"
+    },
+    {
+        "zh":  "山谷",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "valley"
+    },
+    {
+        "zh":  "衣物",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "clothing"
+    },
+    {
+        "zh":  "很好的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "nice"
+    },
+    {
+        "zh":  "宇宙",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "universe"
+    },
+    {
+        "zh":  "追求、追赶",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "pursuit"
+    },
+    {
+        "zh":  "神志清醒的、意识到的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "conscious"
+    },
+    {
+        "zh":  "笑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "laugh"
+    },
+    {
+        "zh":  "使面临、勇敢地面对",
+        "pos":  "adverb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "confront"
+    },
+    {
+        "zh":  "假定",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "assumption"
+    },
+    {
+        "zh":  "同等",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "equality"
+    },
+    {
+        "zh":  "玻璃、玻璃杯",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "glass"
+    },
+    {
+        "zh":  "给……题名、给……权利",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "entitle"
+    },
+    {
+        "zh":  "敏捷的、提示",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "prompt"
+    },
+    {
+        "zh":  "怀疑",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "suspect"
+    },
+    {
+        "zh":  "精神",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "spirit"
+    },
+    {
+        "zh":  "英雄",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "hero"
+    },
+    {
+        "zh":  "野生的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "wild"
+    },
+    {
+        "zh":  "肌肉、体力",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "muscle"
+    },
+    {
+        "zh":  "击败",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "beat"
+    },
+    {
+        "zh":  "最高点",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "peak"
+    },
+    {
+        "zh":  "手臂",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "arm"
+    },
+    {
+        "zh":  "起皱、减少",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "shrink"
+    },
+    {
+        "zh":  "过渡、转变",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "transition"
+    },
+    {
+        "zh":  "优秀的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "excellent"
+    },
+    {
+        "zh":  "删除",
+        "pos":  "noun",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "delete"
+    },
+    {
+        "zh":  "种族的",
+        "pos":  "adjective",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "racial"
+    },
+    {
+        "zh":  "使……困惑",
+        "pos":  "verb",
+        "phonetic":  "/.../",
+        "score":  5,
+        "en":  "puzzle"
+    }
+]
