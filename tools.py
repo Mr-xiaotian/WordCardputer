@@ -2,6 +2,7 @@ import os
 import json
 import math
 import wave
+import subprocess
 import requests
 import binascii
 from typing import List, Tuple
@@ -14,7 +15,7 @@ from statistics import mean, median
 load_dotenv()  # 默认会在当前目录和父目录寻找 .env
 api_key = os.getenv("API_KEY")
 
-def generate_tts(
+def generate_tts_minimax(
     text: str,
     output_path: Path = Path("output.wav"),
     model: str = "speech-2.6-turbo",
@@ -96,6 +97,55 @@ def generate_tts(
             return False, msg
 
     except Exception as e:
+        return False, str(e)
+
+
+def generate_tts_youdao(text: str, output_path: str | Path) -> Tuple[bool, str]:
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    temp_mp3 = output_path.with_suffix(".mp3.tmp")
+
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        }
+        response = requests.get(
+            "https://dict.youdao.com/dictvoice",
+            params={"audio": text, "type": 2},
+            headers=headers,
+            timeout=10,
+        )
+        if response.status_code != 200 or len(response.content) <= 1000:
+            return False, f"download failed (status: {response.status_code})"
+
+        with temp_mp3.open("wb") as f:
+            f.write(response.content)
+
+        result = subprocess.run(
+            [
+                "ffmpeg",
+                "-y",
+                "-i",
+                str(temp_mp3),
+                "-ar",
+                "16000",
+                "-ac",
+                "1",
+                "-c:a",
+                "pcm_s16le",
+                str(output_path),
+            ],
+            capture_output=True,
+            timeout=30,
+        )
+        temp_mp3.unlink(missing_ok=True)
+
+        if result.returncode == 0 and output_path.exists():
+            return True, str(output_path)
+        err = result.stderr.decode(errors="ignore").strip()
+        return False, err or "ffmpeg failed"
+    except Exception as e:
+        temp_mp3.unlink(missing_ok=True)
         return False, str(e)
 
 
