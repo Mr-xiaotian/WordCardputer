@@ -2,350 +2,350 @@
     {
         "zh": "耐用的；持久的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/durable/",
         "score": 3,
         "en": "durable"
     },
     {
         "zh": "持续时间；期间",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/duration/",
         "score": 3,
         "en": "duration"
     },
     {
         "zh": "矮小的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/dwarf/",
         "score": 3,
         "en": "dwarf"
     },
     {
         "zh": "给…染色",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/dye/",
         "score": 3,
         "en": "dye"
     },
     {
-        "zh": "诚实的，真诚的",
+        "zh": "诚实的；真诚的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/earnest/",
         "score": 3,
         "en": "earnest"
     },
     {
-        "zh": "容易，简便；舒适，安逸",
+        "zh": "容易；简便；舒适",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/ease/",
         "score": 3,
         "en": "ease"
     },
     {
         "zh": "生态；生态学",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/ecology/",
         "score": 3,
         "en": "ecology"
     },
     {
-        "zh": "（有关）经济的，经济上的；有利可图的",
+        "zh": "经济的；经济上的；有利可图的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/economic/",
         "score": 3,
         "en": "economic"
     },
     {
         "zh": "经济实惠的；精打细算的；简练的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/economical/",
         "score": 3,
         "en": "economical"
     },
     {
         "zh": "经济学；经济情况；经济因素",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/economics/",
         "score": 3,
         "en": "economics"
     },
     {
-        "zh": "经济，经济情况；经济制度；节约",
+        "zh": "经济；经济情况；经济制度",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/economy/",
         "score": 3,
         "en": "economy"
     },
     {
-        "zh": "编辑，校订（文章，书籍等）；编选，编纂；剪辑，剪接（影片，电视节目等）；主编（杂志，报纸等）",
+        "zh": "编辑；校订",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/edit/",
         "score": 3,
         "en": "edit"
     },
     {
-        "zh": "版本；（书、报等的）版次；一份，一期",
+        "zh": "版本；版次；一份",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/edition/",
         "score": 3,
         "en": "edition"
     },
     {
-        "zh": "主编，编辑；记者，通讯员；剪辑师；编辑程序",
+        "zh": "主编；编辑；记者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/editor/",
         "score": 3,
         "en": "editor"
     },
     {
-        "zh": "（尤指在学校或大学）教育；教导；训练",
+        "zh": "教育；教导；训练",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/educate/",
         "score": 3,
         "en": "educate"
     },
     {
-        "zh": "有效的；事实上的；（法律、协议等）生效的",
+        "zh": "有效的；事实上的；生效的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/effective/",
         "score": 3,
         "en": "effective"
     },
     {
-        "zh": "（与）平等主义（有关）的，主张人人平等的",
+        "zh": "平等主义的；主张人人平等的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/egalitarian/",
         "score": 3,
         "en": "egalitarian"
     },
     {
-        "zh": "自尊心；自我意识；自我；自负",
+        "zh": "自尊心；自我意识；自我",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/ego/",
         "score": 3,
         "en": "ego"
     },
     {
-        "zh": "用肘推，用肘挤",
+        "zh": "用肘推；用肘挤",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/elbow/",
         "score": 3,
         "en": "elbow"
     },
     {
         "zh": "选举；选择做某事",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/elect/",
         "score": 3,
         "en": "elect"
     },
     {
         "zh": "电子的；电子器件的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/electronic/",
         "score": 3,
         "en": "electronic"
     },
     {
-        "zh": "（外观或举止）优雅的；雅致的，讲究的；精美的；简练的，简洁的",
+        "zh": "优雅的；雅致的；讲究的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/elegant/",
         "score": 3,
         "en": "elegant"
     },
     {
-        "zh": "要素；元素；少量；（大团体或社会中的）一组，一伙；（学科的）基本原理，纲要；（尤指动物的）自然环境；电热元件；（the elements）恶劣的天气",
+        "zh": "要素；元素；少量",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/element/",
         "score": 3,
         "en": "element"
     },
     {
-        "zh": "基本的，简单的；初级的",
+        "zh": "基本的；简单的；初级的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/elementary/",
         "score": 3,
         "en": "elementary"
     },
     {
-        "zh": "提拔，晋升；使升高；举起，抬起；使精神振奋",
+        "zh": "提拔；晋升；使升高",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/elevate/",
         "score": 3,
         "en": "elevate"
     },
     {
-        "zh": "有资格的；（尤指作为结婚对象）合适的，令人中意的",
+        "zh": "有资格的；合适的；令人中意的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/eligible/",
         "score": 3,
         "en": "eligible"
     },
     {
-        "zh": "消除，根除，排除；（比赛中）淘汰；消灭（敌人）",
+        "zh": "消除；根除；排除",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/eliminate/",
         "score": 3,
         "en": "eliminate"
     },
     {
-        "zh": "上层集团，社会精英，掌权人物",
+        "zh": "上层集团；社会精英；掌权人物",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/elite/",
         "score": 3,
         "en": "elite"
     },
     {
-        "zh": "在别处，到别处",
+        "zh": "在别处；到别处",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/elsewhere/",
         "score": 3,
         "en": "elsewhere"
     },
     {
-        "zh": "（观点，事实）不为（某人）所理解（或记得）；躲避，逃避",
+        "zh": "不为所理解；躲避",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/elude/",
         "score": 3,
         "en": "elude"
     },
     {
-        "zh": "把（物体）牢牢嵌入；埋置；派遣（随军记者）",
+        "zh": "把牢牢嵌入；埋置；派遣",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/embed/",
         "score": 3,
         "en": "embed"
     },
     {
         "zh": "余火；灰烬",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/ember/",
         "score": 3,
         "en": "ember"
     },
     {
-        "zh": "具象化（思想、品质等）；包含，收录",
+        "zh": "具象化；包含；收录",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/embody/",
         "score": 3,
         "en": "embody"
     },
     {
-        "zh": "胚，胚胎；事物的萌芽期",
+        "zh": "胚；胚胎；事物的萌芽期",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/embryo/",
         "score": 3,
         "en": "embryo"
     },
     {
-        "zh": "（从暗处）出现；（事实、真相）暴露；崭露头角；（从困境中）摆脱出来，幸存下来",
+        "zh": "出现；暴露；崭露头角",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/emerge/",
         "score": 3,
         "en": "emerge"
     },
     {
-        "zh": "紧急情况，突发事件",
+        "zh": "紧急情况；突发事件",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/emergency/",
         "score": 3,
         "en": "emergency"
     },
     {
-        "zh": "移居，移民至国外",
+        "zh": "移居；移民至国外",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/emigrate/",
         "score": 3,
         "en": "emigrate"
     },
     {
-        "zh": "发出（声音或噪音）；散发（光、热、气味等）",
+        "zh": "发出；散发",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/emit/",
         "score": 3,
         "en": "emit"
     },
     {
-        "zh": "情感，情绪；激情",
+        "zh": "情感；情绪；激情",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/emotion/",
         "score": 3,
         "en": "emotion"
     },
     {
-        "zh": "强调，重视；重点；（对词语或语句的）强调，重读",
+        "zh": "强调；重视；重点",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/emphasis/",
         "score": 3,
         "en": "emphasis"
     },
     {
         "zh": "经验主义的；依靠经验的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/empirical/",
         "score": 3,
         "en": "empirical"
     },
     {
-        "zh": "竞争; 仿效; [自]仿真(技术)",
+        "zh": "竞争；仿效；[自]仿真(技术)",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/emulation/",
         "score": 3,
         "en": "emulation"
     },
     {
-        "zh": "包含，包括；围绕",
+        "zh": "包含；包括；围绕",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/encompass/",
         "score": 3,
         "en": "encompass"
     },
     {
-        "zh": "（公开）赞同，支持；代言；（在支票背面）签名",
+        "zh": "赞同；支持；代言",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/endorse/",
         "score": 3,
         "en": "endorse"
     },
     {
-        "zh": "忍耐力，耐久力",
+        "zh": "忍耐力；耐久力",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/endurance/",
         "score": 3,
         "en": "endurance"
     },
     {
-        "zh": "精力充沛的，积极的",
+        "zh": "精力充沛的；积极的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/energetic/",
         "score": 3,
         "en": "energetic"
     },
     {
-        "zh": "强制执行，实施（法律或规章）；强迫，迫使",
+        "zh": "强制执行；实施；强迫",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/enforce/",
         "score": 3,
         "en": "enforce"
     },
     {
-        "zh": "订婚；约会；预约；交战；了解；雇用",
+        "zh": "订婚；约会；预约",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/engagement/",
         "score": 3,
         "en": "engagement"
     },
     {
-        "zh": "发动机，引擎；火车头；工具，手段",
+        "zh": "发动机；引擎；火车头",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/engine/",
         "score": 3,
         "en": "engine"
     },
     {
-        "zh": "雕刻（文字，图案）；铭记",
+        "zh": "雕刻；铭记",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/engrave/",
         "score": 3,
         "en": "engrave"
     }

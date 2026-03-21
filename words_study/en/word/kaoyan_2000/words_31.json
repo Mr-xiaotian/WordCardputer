@@ -1,351 +1,351 @@
 [
     {
-        "zh": "谜；疑问，难题",
+        "zh": "谜；疑问；难题",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/puzzle/",
         "score": 3,
         "en": "puzzle"
     },
     {
         "zh": "金字塔；锥体；金字塔式的结构",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/pyramid/",
         "score": 3,
         "en": "pyramid"
     },
     {
-        "zh": "（使）增至四倍，（使）变为四倍",
+        "zh": "增至四倍；变为四倍",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/quadruple/",
         "score": 3,
         "en": "quadruple"
     },
     {
-        "zh": "资格，学历；取得资格；素质，技能；合格，达标",
+        "zh": "资格；学历；取得资格",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/qualification/",
         "score": 3,
         "en": "qualification"
     },
     {
-        "zh": "（使）取得资格，（使）合格；（使）有权利…；适合，配得上；（语法）修饰，限定",
+        "zh": "取得资格；合格；有权利…",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/qualify/",
         "score": 3,
         "en": "qualify"
     },
     {
-        "zh": "疑问，询问；问号",
+        "zh": "疑问；询问；问号",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/query/",
         "score": 3,
         "en": "query"
     },
     {
-        "zh": "（长久或辛勤的）寻求，探索",
+        "zh": "寻求；探索",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/quest/",
         "score": 3,
         "en": "quest"
     },
     {
-        "zh": "调查表，问卷",
+        "zh": "调查表；问卷",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/questionnaire/",
         "score": 3,
         "en": "questionnaire"
     },
     {
-        "zh": "行列，长队；（储存的数据）队列",
+        "zh": "行列；长队；队列",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/queue/",
         "score": 3,
         "en": "queue"
     },
     {
-        "zh": "怪异的性格；怪癖；偶发事件；怪事；巧合",
+        "zh": "怪异的性格；怪癖；偶发事件",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/quirk/",
         "score": 3,
         "en": "quirk"
     },
     {
-        "zh": "离开（某地）；辞去（工作等）；停止，戒掉；关闭（计算机程序等）",
+        "zh": "离开；辞去；停止",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/quit/",
         "score": 3,
         "en": "quit"
     },
     {
-        "zh": "定额，限额；指标，配额；（候选人当选所需的）规定票数，最低票数",
+        "zh": "定额；限额；指标",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/quota/",
         "score": 3,
         "en": "quota"
     },
     {
-        "zh": "种族的，种族之间的；人种的",
+        "zh": "种族的；种族之间的；人种的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/racial/",
         "score": 3,
         "en": "racial"
     },
     {
         "zh": "雷达；对…的敏感性",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/radar/",
         "score": 3,
         "en": "radar"
     },
     {
-        "zh": "（光、热等）辐射，放射；显示（品质）；向周围伸展",
+        "zh": "辐射；放射；显示",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/radiate/",
         "score": 3,
         "en": "radiate"
     },
     {
         "zh": "半径；半径范围；周围",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/radius/",
         "score": 3,
         "en": "radius"
     },
     {
-        "zh": "暴怒；（某情况引起的）暴力行为",
+        "zh": "暴怒；暴力行为",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rage/",
         "score": 3,
         "en": "rage"
     },
     {
-        "zh": "铁轨，铁路；栏杆，扶手；横杆",
+        "zh": "铁轨；铁路；栏杆",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rail/",
         "score": 3,
         "en": "rail"
     },
     {
-        "zh": "耙子，耙状工具",
+        "zh": "耙子；耙状工具",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rake/",
         "score": 3,
         "en": "rake"
     },
     {
-        "zh": "群众大会；拉力赛车；（尤指股价的）止跌回升；（网球等比赛中的）连续对打",
+        "zh": "群众大会；拉力赛车；止跌回升",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rally/",
         "score": 3,
         "en": "rally"
     },
     {
-        "zh": "军衔；社会地位；等级，级别；成员；队列，排，行",
+        "zh": "军衔；社会地位；等级",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rank/",
         "score": 3,
         "en": "rank"
     },
     {
-        "zh": "说唱音乐；叩击，快速的敲击",
+        "zh": "说唱音乐；叩击；快速的敲击",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rap/",
         "score": 3,
         "en": "rap"
     },
     {
-        "zh": "（事情、境况等）稀有的，罕见的；（东西）珍贵的；（肉、蛋）半熟的",
+        "zh": "稀有的；罕见的；珍贵的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/rare/",
         "score": 3,
         "en": "rare"
     },
     {
         "zh": "很少；难得；稀有地",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/rarely/",
         "score": 3,
         "en": "rarely"
     },
     {
         "zh": "老鼠",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rat/",
         "score": 3,
         "en": "rat"
     },
     {
-        "zh": "级别，等级;〈pl.〉收视率，收听率；信用程度",
+        "zh": "级别；等级；〈pl.〉收视率",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rating/",
         "score": 3,
         "en": "rating"
     },
     {
-        "zh": "比例，比率",
+        "zh": "比例；比率",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/ratio/",
         "score": 3,
         "en": "ratio"
     },
     {
-        "zh": "（食物）生的；未加工的；（数据等）未经处理的；（身体部位）擦伤的；（情感等）直接的；（事物）质朴的，真实的；无经验的；（天气）阴冷的",
+        "zh": "生的；未加工的；未经处理的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/raw/",
         "score": 3,
         "en": "raw"
     },
     {
-        "zh": "作出反应，回应；有不良反应；起化学反应",
+        "zh": "作出反应；回应；有不良反应",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/react/",
         "score": 3,
         "en": "react"
     },
     {
-        "zh": "快捷地，便利地；欣然地，乐意地",
+        "zh": "快捷地；便利地；欣然地",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/readily/",
         "score": 3,
         "en": "readily"
     },
     {
-        "zh": "现实的，实事求是的；明智的；可实现的；逼真的",
+        "zh": "现实的；实事求是的；明智的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/realistic/",
         "score": 3,
         "en": "realistic"
     },
     {
         "zh": "领域；王国",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/realm/",
         "score": 3,
         "en": "realm"
     },
     {
-        "zh": "获得，收到，得到（报答，好处）；收割，收获",
+        "zh": "获得；收到；得到（报答",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/reap/",
         "score": 3,
         "en": "reap"
     },
     {
-        "zh": "（尤指建筑物或车辆等的）后部；臀部",
+        "zh": "后部；臀部",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rear/",
         "score": 3,
         "en": "rear"
     },
     {
-        "zh": "合理的，明智的；合乎情理的，可接受的；（价格）公道的；不错的，过得去的",
+        "zh": "合理的；明智的；合乎情理的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/reasonable/",
         "score": 3,
         "en": "reasonable"
     },
     {
-        "zh": "使…安心，打消疑虑",
+        "zh": "使…安心；打消疑虑",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/reassure/",
         "score": 3,
         "en": "reassure"
     },
     {
-        "zh": "叛乱者，造反者；叛逆者，不守规矩的人",
+        "zh": "叛乱者；造反者；叛逆者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rebel/",
         "score": 3,
         "en": "rebel"
     },
     {
-        "zh": "记起，回忆起；使想到；召回（某人或某产品）",
+        "zh": "记起；回忆起；使想到",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/recall/",
         "score": 3,
         "en": "recall"
     },
     {
-        "zh": "收据，收条；接收，收到",
+        "zh": "收据；收条；接收",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/receipt/",
         "score": 3,
         "en": "receipt"
     },
     {
-        "zh": "接待区；接待仪式；反响；接纳，迎接；信号接收效果",
+        "zh": "接待区；接待仪式；反响",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/reception/",
         "score": 3,
         "en": "reception"
     },
     {
-        "zh": "经济衰退（期）；退后，撤回",
+        "zh": "经济衰退；退后；撤回",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/recession/",
         "score": 3,
         "en": "recession"
     },
     {
-        "zh": "受方，接受者",
+        "zh": "受方；接受者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/recipient/",
         "score": 3,
         "en": "recipient"
     },
     {
-        "zh": "背诵，朗诵，当众吟诵；列举，详述",
+        "zh": "背诵；朗诵；当众吟诵",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/recite/",
         "score": 3,
         "en": "recite"
     },
     {
-        "zh": "鲁莽的，不计后果的，无所顾及的",
+        "zh": "鲁莽的；不计后果的；无所顾及的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/reckless/",
         "score": 3,
         "en": "reckless"
     },
     {
-        "zh": "认为，以为；估计，计算；预计，料想",
+        "zh": "认为；以为；估计",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/reckon/",
         "score": 3,
         "en": "reckon"
     },
     {
-        "zh": "认出，识别；承认，认可；赞誉，赏识",
+        "zh": "认出；识别；承认",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/recognition/",
         "score": 3,
         "en": "recognition"
     },
     {
-        "zh": "推荐；建议，劝告；使受欢迎",
+        "zh": "推荐；建议；劝告",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/recommend/",
         "score": 3,
         "en": "recommend"
     },
     {
-        "zh": "改正，纠正，矫正",
+        "zh": "改正；纠正；矫正",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/rectify/",
         "score": 3,
         "en": "rectify"
     },
     {
-        "zh": "再发生，反复出现",
+        "zh": "再发生；反复出现",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/recur/",
         "score": 3,
         "en": "recur"
     },
     {
-        "zh": "回收利用（废品）；重新使用（方法、玩笑等）",
+        "zh": "回收利用；重新使用",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/recycle/",
         "score": 3,
         "en": "recycle"
     }

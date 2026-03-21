@@ -1,351 +1,351 @@
 [
     {
-        "zh": "可怕的，令人敬畏的，难对付的",
+        "zh": "可怕的；令人敬畏的；难对付的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/formidable/",
         "score": 3,
         "en": "formidable"
     },
     {
-        "zh": "公式；方案，规划；分子式；配方；惯用语，套话",
+        "zh": "公式；方案；规划",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/formula/",
         "score": 3,
         "en": "formula"
     },
     {
-        "zh": "制定计划；构想；确切表达；认真阐述",
+        "zh": "制定计划；构想；确切表达",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/formulate/",
         "score": 3,
         "en": "formulate"
     },
     {
-        "zh": "化石；老人；老顽固，老古董",
+        "zh": "化石；老人；老顽固",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/fossil/",
         "score": 3,
         "en": "fossil"
     },
     {
-        "zh": "促进；培养；鼓励；养育，抚养",
+        "zh": "促进；培养；鼓励",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/foster/",
         "score": 3,
         "en": "foster"
     },
     {
-        "zh": "基础，根据；（组织或机构的）创建；地基；基金会；粉底霜",
+        "zh": "基础；根据；创建",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/foundation/",
         "score": 3,
         "en": "foundation"
     },
     {
-        "zh": "易碎的，脆的；脆弱的，不牢固的；纤巧的，精细的；虚弱的",
+        "zh": "易碎的；脆的；脆弱的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/fragile/",
         "score": 3,
         "en": "fragile"
     },
     {
         "zh": "碎片；片段",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/fragment/",
         "score": 3,
         "en": "fragment"
     },
     {
-        "zh": "（建筑物或物体的）框架；（体系的）结构，机制；信仰，准则",
+        "zh": "框架；结构；机制",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/framework/",
         "score": 3,
         "en": "framework"
     },
     {
         "zh": "欺诈罪；骗子；冒牌货",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/fraud/",
         "score": 3,
         "en": "fraud"
     },
     {
-        "zh": "运送，托运（货物）；使充满，使负担",
+        "zh": "运送；托运；使充满",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/freight/",
         "score": 3,
         "en": "freight"
     },
     {
-        "zh": "频率；频繁；出现率，发生率",
+        "zh": "频率；频繁；出现率",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/frequency/",
         "score": 3,
         "en": "frequency"
     },
     {
-        "zh": "边境，边界；边远地区；（学科或活动的）尖端，前沿",
+        "zh": "边境；边界；边远地区",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/frontier/",
         "score": 3,
         "en": "frontier"
     },
     {
         "zh": "皱眉",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/frown/",
         "score": 3,
         "en": "frown"
     },
     {
-        "zh": "多产的，果实累累的；富有成效的",
+        "zh": "多产的；果实累累的；富有成效的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/fruitful/",
         "score": 3,
         "en": "fruitful"
     },
     {
-        "zh": "使沮丧，使懊恼；阻止，挫败",
+        "zh": "使沮丧；使懊恼；阻止",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/frustrate/",
         "score": 3,
         "en": "frustrate"
     },
     {
-        "zh": "完成；实现，履行；起…作用；使高兴",
+        "zh": "完成；实现；履行",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/fulfill/",
         "score": 3,
         "en": "fulfill"
     },
     {
-        "zh": "发怒，恼火；冒烟",
+        "zh": "发怒；恼火；冒烟",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/fume/",
         "score": 3,
         "en": "fume"
     },
     {
-        "zh": "基金，专款；储备；（funds）资金，现款",
+        "zh": "基金；专款；储备",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/fund/",
         "score": 3,
         "en": "fund"
     },
     {
-        "zh": "基础的，基本的；根本的，重大的；主要的；必要的",
+        "zh": "基础的；基本的；根本的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/fundamental/",
         "score": 3,
         "en": "fundamental"
     },
     {
-        "zh": "（动物的）皮毛；人造毛皮；毛皮大衣",
+        "zh": "皮毛；人造毛皮；毛皮大衣",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/fur/",
         "score": 3,
         "en": "fur"
     },
     {
-        "zh": "布置（房间等）；向…提供，供应",
+        "zh": "布置；向…提供；供应",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/furnish/",
         "score": 3,
         "en": "furnish"
     },
     {
-        "zh": "融合；熔化；（在电器中）安装保险丝；（因保险丝熔断而）停止工作",
+        "zh": "融合；熔化；安装保险丝",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/fuse/",
         "score": 3,
         "en": "fuse"
     },
     {
         "zh": "未来学家",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/futurologist/",
         "score": 3,
         "en": "futurologist"
     },
     {
-        "zh": "星系；一群（杰出或著名的人物）；（the Galaxy）银河，银河系",
+        "zh": "星系；一群；银河",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/galaxy/",
         "score": 3,
         "en": "galaxy"
     },
     {
-        "zh": "画廊；（艺术作品的）陈列室，美术馆；私家画店；长廊；（剧院）顶层楼座",
+        "zh": "画廊；陈列室；美术馆",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/gallery/",
         "score": 3,
         "en": "gallery"
     },
     {
-        "zh": "赌博；打赌；冒风险；以…为赌注",
+        "zh": "赌博；打赌；冒风险",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/gamble/",
         "score": 3,
         "en": "gamble"
     },
     {
-        "zh": "缺口，裂口；分歧，差距；间隙；缺口，空白",
+        "zh": "缺口；裂口；分歧",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/gap/",
         "score": 3,
         "en": "gap"
     },
     {
-        "zh": "（一件）衣服",
+        "zh": "衣服",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/garment/",
         "score": 3,
         "en": "garment"
     },
     {
-        "zh": "气体；气体燃料；毒气；汽油",
+        "zh": "气体；气体燃料；毒气",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/gas/",
         "score": 3,
         "en": "gas"
     },
     {
-        "zh": "排挡，齿轮；（汽车的）档位；（某种活动的）设备，用具；所有物；器械，装置；（做事的）速度",
+        "zh": "排挡；齿轮；档位",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/gear/",
         "score": 3,
         "en": "gear"
     },
     {
-        "zh": "产生（能量，尤指电）；造成，引起",
+        "zh": "产生；造成",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/generate/",
         "score": 3,
         "en": "generate"
     },
     {
-        "zh": "慷慨的，大方的，宽宏大量的；丰盛的；大量的",
+        "zh": "慷慨的；大方的；宽宏大量的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/generous/",
         "score": 3,
         "en": "generous"
     },
     {
         "zh": "遗传学",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/genetics/",
         "score": 3,
         "en": "genetics"
     },
     {
-        "zh": "天资，天赋；天才人物；才能，本领",
+        "zh": "天资；天赋；天才人物",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/genius/",
         "score": 3,
         "en": "genius"
     },
     {
-        "zh": "地质学；（某地区的）地质情况",
+        "zh": "地质学；地质情况",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/geology/",
         "score": 3,
         "en": "geology"
     },
     {
         "zh": "几何学",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/geometry/",
         "score": 3,
         "en": "geometry"
     },
     {
         "zh": "地球物理学的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/geophysical/",
         "score": 3,
         "en": "geophysical"
     },
     {
-        "zh": "手势；示意动作；（表明感情或意图的）姿态，表示",
+        "zh": "手势；示意动作；姿态",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/gesture/",
         "score": 3,
         "en": "gesture"
     },
     {
-        "zh": "鬼魂，幽灵",
+        "zh": "鬼魂；幽灵",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/ghost/",
         "score": 3,
         "en": "ghost"
     },
     {
-        "zh": "巨大的，庞大的",
+        "zh": "巨大的；庞大的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/gigantic/",
         "score": 3,
         "en": "gigantic"
     },
     {
         "zh": "小发明",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/gizmo/",
         "score": 3,
         "en": "gizmo"
     },
     {
-        "zh": "魅力，诱惑力",
+        "zh": "魅力；诱惑力",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/glamour/",
         "score": 3,
         "en": "glamour"
     },
     {
-        "zh": "怒视，瞪眼；强光",
+        "zh": "怒视；瞪眼；强光",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/glare/",
         "score": 3,
         "en": "glare"
     },
     {
         "zh": "一瞥；短暂的感受",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/glimpse/",
         "score": 3,
         "en": "glimpse"
     },
     {
-        "zh": "全世界的，全球的；整体的，全面的",
+        "zh": "全世界的；全球的；整体的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/global/",
         "score": 3,
         "en": "global"
     },
     {
-        "zh": "地球，世界；球体，球状物；地球仪",
+        "zh": "地球；世界；球体",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/globe/",
         "score": 3,
         "en": "globe"
     },
     {
-        "zh": "荣誉；荣耀，骄傲；壮丽，辉煌；（对上帝的）赞颂，崇拜",
+        "zh": "荣誉；荣耀；骄傲",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/glory/",
         "score": 3,
         "en": "glory"
     },
     {
         "zh": "手套",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/glove/",
         "score": 3,
         "en": "glove"
     },
     {
-        "zh": "统治，管理；控制，支配",
+        "zh": "统治；管理；控制",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/govern/",
         "score": 3,
         "en": "govern"
     }

@@ -2,350 +2,350 @@
     {
         "zh": "滴答响；打对号",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/tick/",
         "score": 3,
         "en": "tick"
     },
     {
-        "zh": "潮，潮汐；【喻】潮流，趋势；浪潮",
+        "zh": "潮；潮汐；【喻】潮流",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tide/",
         "score": 3,
         "en": "tide"
     },
     {
         "zh": "木料；林木",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/timber/",
         "score": 3,
         "en": "timber"
     },
     {
-        "zh": "及时的，适时的",
+        "zh": "及时的；适时的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/timely/",
         "score": 3,
         "en": "timely"
     },
     {
-        "zh": "标题，题目；头衔，职称；（书刊的）一种，一本；冠军",
+        "zh": "标题；题目；头衔",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/title/",
         "score": 3,
         "en": "title"
     },
     {
-        "zh": "烤面包，吐司；祝酒，干杯；广受赞誉的人",
+        "zh": "烤面包；吐司；祝酒",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/toast/",
         "score": 3,
         "en": "toast"
     },
     {
-        "zh": "苦干，艰辛的工作",
+        "zh": "苦干；艰辛的工作",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/toil/",
         "score": 3,
         "en": "toil"
     },
     {
-        "zh": "象征，标志；代币，专用辅币；代金券；礼券",
+        "zh": "象征；标志；代币",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/token/",
         "score": 3,
         "en": "token"
     },
     {
-        "zh": "忍受，容忍，宽容；忍耐力",
+        "zh": "忍受；容忍；宽容",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tolerance/",
         "score": 3,
         "en": "tolerance"
     },
     {
-        "zh": "死亡人数；（道路，桥梁的）通行费；钟声；长途电话费",
+        "zh": "死亡人数；通行费",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/toll/",
         "score": 3,
         "en": "toll"
     },
     {
-        "zh": "坟墓，冢；葬身之地",
+        "zh": "坟墓；冢；葬身之地",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tomb/",
         "score": 3,
         "en": "tomb"
     },
     {
-        "zh": "语气，口吻；风格，基调，格调；音色；色调；声调；声音信号；健壮",
+        "zh": "语气；口吻；风格",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tone/",
         "score": 3,
         "en": "tone"
     },
     {
-        "zh": "手电筒；火炬，火把",
+        "zh": "手电筒；火炬；火把",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/torch/",
         "score": 3,
         "en": "torch"
     },
     {
         "zh": "【律】民事侵权行为",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tort/",
         "score": 3,
         "en": "tort"
     },
     {
-        "zh": "拷问，拷打；使痛苦，使受煎熬",
+        "zh": "拷问；拷打；使痛苦",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/torture/",
         "score": 3,
         "en": "torture"
     },
     {
-        "zh": "艰苦的；严厉的；坚韧不拔的；彪悍的；嚼不烂的；坚固的；倒霉的",
+        "zh": "艰苦的；严厉的；坚韧不拔的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/tough/",
         "score": 3,
         "en": "tough"
     },
     {
-        "zh": "比赛，锦标赛，联赛",
+        "zh": "比赛；锦标赛；联赛",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tournament/",
         "score": 3,
         "en": "tournament"
     },
     {
-        "zh": "拖，拉，拽",
+        "zh": "拖；拉；拽",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/tow/",
         "score": 3,
         "en": "tow"
     },
     {
-        "zh": "拖拉机，牵引车；拖车头，牵引车头",
+        "zh": "拖拉机；牵引车；拖车头",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tractor/",
         "score": 3,
         "en": "tractor"
     },
     {
-        "zh": "悲惨的，可悲的；悲剧的",
+        "zh": "悲惨的；可悲的；悲剧的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/tragic/",
         "score": 3,
         "en": "tragic"
     },
     {
-        "zh": "足迹，踪迹，痕迹；（乡间）小道；（特定）路线",
+        "zh": "足迹；踪迹；痕迹",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/trail/",
         "score": 3,
         "en": "trail"
     },
     {
-        "zh": "（尤指人的）特征，特点；遗传特征",
+        "zh": "特征；特点；遗传特征",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/trait/",
         "score": 3,
         "en": "trait"
     },
     {
         "zh": "有轨电车",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tram/",
         "score": 3,
         "en": "tram"
     },
     {
-        "zh": "（一笔）交易，业务；处理，办理",
+        "zh": "交易；业务；处理",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/transaction/",
         "score": 3,
         "en": "transaction"
     },
     {
-        "zh": "（使）转移；（使）调动，转岗；转让（权力、财产等）；传染（疾病）；（使）转会；换乘；转存，转录",
+        "zh": "转移；调动；转岗",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/transfer/",
         "score": 3,
         "en": "transfer"
     },
     {
-        "zh": "（使）改变形态（或性质、外观），彻底改变；转化",
+        "zh": "改变形态；彻底改变；转化",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/transform/",
         "score": 3,
         "en": "transform"
     },
     {
         "zh": "晶体管；晶体管收音机",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/transistor/",
         "score": 3,
         "en": "transistor"
     },
     {
-        "zh": "传送，发送；传播，传染；（节目）播送，广播；变速器",
+        "zh": "传送；发送；传播",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/transmission/",
         "score": 3,
         "en": "transmission"
     },
     {
-        "zh": "传送，输送；播送；传播，传染；传（热、声等），透（光等）",
+        "zh": "传送；输送；播送",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/transmit/",
         "score": 3,
         "en": "transmit"
     },
     {
-        "zh": "移植（器官等）；移栽，移种（植物）；使迁移，使移居",
+        "zh": "移植；移栽；移种",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/transplant/",
         "score": 3,
         "en": "transplant"
     },
     {
-        "zh": "运输，输送；交通运输系统；交通工具，运输工具",
+        "zh": "运输；输送；交通运输系统",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/transport/",
         "score": 3,
         "en": "transport"
     },
     {
-        "zh": "盘，碟，托盘",
+        "zh": "盘；碟；托盘",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tray/",
         "score": 3,
         "en": "tray"
     },
     {
-        "zh": "（国家间的）条约，协定",
+        "zh": "条约；协定",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/treaty/",
         "score": 3,
         "en": "treaty"
     },
     {
-        "zh": "（因紧张等）颤抖；颤动；担心，焦虑",
+        "zh": "颤抖；颤动；担心",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/tremble/",
         "score": 3,
         "en": "tremble"
     },
     {
-        "zh": "惊人的，极好的；（数额、规模或强度上的）极大的，巨大的",
+        "zh": "惊人的；极好的；极大的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/tremendous/",
         "score": 3,
         "en": "tremendous"
     },
     {
-        "zh": "倾向，趋势；时髦，时尚",
+        "zh": "倾向；趋势；时髦",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/trend/",
         "score": 3,
         "en": "trend"
     },
     {
-        "zh": "审讯，审判；（对能力、质量等的）试验，试用；预赛，选拔赛；令人伤脑筋的人（或物），考验",
+        "zh": "审讯；审判；试验",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/trial/",
         "score": 3,
         "en": "trial"
     },
     {
-        "zh": "部落；族，群；一伙，一帮，一类",
+        "zh": "部落；族；群",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tribe/",
         "score": 3,
         "en": "tribe"
     },
     {
-        "zh": "（向某人表达敬意的）致敬行为，颂词，哀悼；（良好效果或影响的）体现；（一国向强国交付的）贡品，贡金",
+        "zh": "致敬行为；颂词；哀悼",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tribute/",
         "score": 3,
         "en": "tribute"
     },
     {
-        "zh": "起因，诱因；扳机；触发器",
+        "zh": "起因；诱因；扳机",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/trigger/",
         "score": 3,
         "en": "trigger"
     },
     {
-        "zh": "使增至三倍，使成三倍",
+        "zh": "使增至三倍；使成三倍",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/triple/",
         "score": 3,
         "en": "triple"
     },
     {
-        "zh": "重大胜利，巨大成功；成功的典范；（因胜利而）心满意足，狂喜",
+        "zh": "重大胜利；巨大成功；成功的典范",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/triumph/",
         "score": 3,
         "en": "triumph"
     },
     {
-        "zh": "不重要的，琐碎的，微不足道的",
+        "zh": "不重要的；琐碎的；微不足道的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/trivial/",
         "score": 3,
         "en": "trivial"
     },
     {
-        "zh": "部队，军队；一群，一队",
+        "zh": "部队；军队；一群",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/troop/",
         "score": 3,
         "en": "troop"
     },
     {
-        "zh": "回归线；（the tropic）热带地区",
+        "zh": "回归线；热带地区",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tropic/",
         "score": 3,
         "en": "tropic"
     },
     {
-        "zh": "喇叭，小号；喇叭形物",
+        "zh": "喇叭；小号；喇叭形物",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/trumpet/",
         "score": 3,
         "en": "trumpet"
     },
     {
-        "zh": "管子；管状物；（装牙膏等的）软管；管状器官；（the tube）电视机，伦敦地下铁道",
+        "zh": "管子；管状物；软管",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tube/",
         "score": 3,
         "en": "tube"
     },
     {
-        "zh": "把…塞进，卷起；把…藏入；把…盖住或裹紧",
+        "zh": "把…塞进；卷起；把…藏入",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/tuck/",
         "score": 3,
         "en": "tuck"
     },
     {
-        "zh": "拉，拖，拽",
+        "zh": "拉；拖；拽",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/tug/",
         "score": 3,
         "en": "tug"
     },
     {
-        "zh": "（尤指大专院校或私立学校的）学费；（尤指对个人或小组的）教学，指导",
+        "zh": "学费；教学；指导",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tuition/",
         "score": 3,
         "en": "tuition"
     }

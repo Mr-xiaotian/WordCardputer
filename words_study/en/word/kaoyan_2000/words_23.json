@@ -1,351 +1,351 @@
 [
     {
-        "zh": "传说，传奇人物；（地图或书中图表的）图例；（物品上的）铭文",
+        "zh": "传说；传奇人物；图例",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/legend/",
         "score": 3,
         "en": "legend"
     },
     {
-        "zh": "立法；法律，法规",
+        "zh": "立法；法律；法规",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/legislation/",
         "score": 3,
         "en": "legislation"
     },
     {
-        "zh": "合法的；正当的，合理的；（小孩）合法婚姻所生的",
+        "zh": "合法的；正当的；合理的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/legitimate/",
         "score": 3,
         "en": "legitimate"
     },
     {
-        "zh": "休闲；空闲，闲暇",
+        "zh": "休闲；空闲；闲暇",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/leisure/",
         "score": 3,
         "en": "leisure"
     },
     {
-        "zh": "透镜，镜片",
+        "zh": "透镜；镜片",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/lens/",
         "score": 3,
         "en": "lens"
     },
     {
-        "zh": "以免；唯恐，担心",
+        "zh": "以免；唯恐；担心",
         "pos": "conj",
-        "phonetic": "",
+        "phonetic": "/lest/",
         "score": 3,
         "en": "lest"
     },
     {
-        "zh": "杠杆；操纵杆，控制杆；施压的行为",
+        "zh": "杠杆；操纵杆；控制杆",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/lever/",
         "score": 3,
         "en": "lever"
     },
     {
-        "zh": "责任，义务；负债，债务；累赘",
+        "zh": "责任；义务；负债",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/liability/",
         "score": 3,
         "en": "liability"
     },
     {
         "zh": "负法律责任的；易于…的；可能做…的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/liable/",
         "score": 3,
         "en": "liable"
     },
     {
-        "zh": "思想开明的；（政治、经济）自由的；人文教育的；（支持）自由党的；慷慨的，大量（给予）的；不拘泥字面的，灵活的",
+        "zh": "思想开明的；自由的；人文教育的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/liberal/",
         "score": 3,
         "en": "liberal"
     },
     {
         "zh": "解放；使摆脱约束",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/liberate/",
         "score": 3,
         "en": "liberate"
     },
     {
-        "zh": "自由；冒犯的举动，放肆的行为",
+        "zh": "自由；冒犯的举动；放肆的行为",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/liberty/",
         "score": 3,
         "en": "liberty"
     },
     {
-        "zh": "可能（性）",
+        "zh": "可能",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/likelihood/",
         "score": 3,
         "en": "likelihood"
     },
     {
-        "zh": "同样地，类似地；还，亦",
+        "zh": "同样地；类似地；还",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/likewise/",
         "score": 3,
         "en": "likewise"
     },
     {
-        "zh": "（人、四足动物的）肢，肢体；树枝，树杈；（鸟的）翼",
+        "zh": "肢；肢体；树枝",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/limb/",
         "score": 3,
         "en": "limb"
     },
     {
-        "zh": "限制，控制；限制因素；局限性",
+        "zh": "限制；控制；限制因素",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/limitation/",
         "score": 3,
         "en": "limitation"
     },
     {
         "zh": "有限的；受…限制的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/limited/",
         "score": 3,
         "en": "limited"
     },
     {
         "zh": "跛行",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/limp/",
         "score": 3,
         "en": "limp"
     },
     {
-        "zh": "语言的，语言学的",
+        "zh": "语言的；语言学的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/linguistic/",
         "score": 3,
         "en": "linguistic"
     },
     {
         "zh": "烈性酒",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/liquor/",
         "score": 3,
         "en": "liquor"
     },
     {
-        "zh": "读写能力；（特定领域的）能力，知识",
+        "zh": "读写能力；能力；知识",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/literacy/",
         "score": 3,
         "en": "literacy"
     },
     {
         "zh": "字面上地；确实地；简直",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/literally/",
         "score": 3,
         "en": "literally"
     },
     {
         "zh": "民主制度；民主国家；民主精神",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/literary/",
         "score": 3,
         "en": "literary"
     },
     {
-        "zh": "文学；文学作品；文献，资料；印刷品",
+        "zh": "文学；文学作品；文献",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/literature/",
         "score": 3,
         "en": "literature"
     },
     {
-        "zh": "生活，生计",
+        "zh": "生活；生计",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/livelihood/",
         "score": 3,
         "en": "livelihood"
     },
     {
-        "zh": "肝，肝脏",
+        "zh": "肝；肝脏",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/liver/",
         "score": 3,
         "en": "liver"
     },
     {
-        "zh": "借出，贷与",
+        "zh": "借出；贷与",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/loan/",
         "score": 3,
         "en": "loan"
     },
     {
-        "zh": "门厅，大厅；游说团体；游说",
+        "zh": "门厅；大厅；游说团体",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/lobby/",
         "score": 3,
         "en": "lobby"
     },
     {
-        "zh": "当地的，地方的；（身体上）局部的",
+        "zh": "当地的；地方的；局部的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/local/",
         "score": 3,
         "en": "local"
     },
     {
-        "zh": "确定…的位置；把…建在；定居，营业",
+        "zh": "确定…的位置；把…建在；定居",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/locate/",
         "score": 3,
         "en": "locate"
     },
     {
-        "zh": "地点；定位，准确位置；外景拍摄地",
+        "zh": "地点；定位；准确位置",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/location/",
         "score": 3,
         "en": "location"
     },
     {
-        "zh": "逻辑，思维方式；（做事的）道理；逻辑学",
+        "zh": "逻辑；思维方式；道理",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/logic/",
         "score": 3,
         "en": "logic"
     },
     {
-        "zh": "（尤指阴森地）隐约出现，赫然出现；（危机等）可能发生，逐渐逼近",
+        "zh": "隐约出现；赫然出现；可能发生",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/loom/",
         "score": 3,
         "en": "loom"
     },
     {
-        "zh": "（使）松散，松开；（使）放松；（使）变弱，疏远",
+        "zh": "松散；松开；放松",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/loosen/",
         "score": 3,
         "en": "loosen"
     },
     {
         "zh": "彩票抽奖；碰运气的事",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/lottery/",
         "score": 3,
         "en": "lottery"
     },
     {
-        "zh": "（旅馆、剧场或俱乐部的）休息室；（机场等的）等候室；起居室",
+        "zh": "休息室；等候室；起居室",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/lounge/",
         "score": 3,
         "en": "lounge"
     },
     {
-        "zh": "（在数量、强度或程度上）减低；放低",
+        "zh": "减低；放低",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/lower/",
         "score": 3,
         "en": "lower"
     },
     {
-        "zh": "忠诚的，忠贞的",
+        "zh": "忠诚的；忠贞的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/loyal/",
         "score": 3,
         "en": "loyal"
     },
     {
-        "zh": "忠诚，忠心；（loyalties）效忠",
+        "zh": "忠诚；忠心；效忠",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/loyalty/",
         "score": 3,
         "en": "loyalty"
     },
     {
-        "zh": "缓慢地移动，笨拙地行进；伐木；烦扰；迫使担负职责",
+        "zh": "缓慢地移动；笨拙地行进；伐木",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/lumber/",
         "score": 3,
         "en": "lumber"
     },
     {
-        "zh": "肿块；（通常为无定形的）块；隆起；笨重的人",
+        "zh": "肿块；块；隆起",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/lump/",
         "score": 3,
         "en": "lump"
     },
     {
-        "zh": "诱惑力；鱼饵，诱饵",
+        "zh": "诱惑力；鱼饵；诱饵",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/lure/",
         "score": 3,
         "en": "lure"
     },
     {
-        "zh": "奢侈的，豪华的",
+        "zh": "奢侈的；豪华的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/luxury/",
         "score": 3,
         "en": "luxury"
     },
     {
-        "zh": "魔法，法术；魔术，戏法；魅力，魔力",
+        "zh": "魔法；法术；魔术",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/magic/",
         "score": 3,
         "en": "magic"
     },
     {
-        "zh": "有磁力的；（卡片等）带磁的；有魅力的",
+        "zh": "有磁力的；带磁的；有魅力的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/magnetic/",
         "score": 3,
         "en": "magnetic"
     },
     {
-        "zh": "壮丽的，华丽的；出色的，值得称赞的",
+        "zh": "壮丽的；华丽的；出色的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/magnificent/",
         "score": 3,
         "en": "magnificent"
     },
     {
         "zh": "放大；增强；夸张",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/magnify/",
         "score": 3,
         "en": "magnify"
     },
     {
-        "zh": "女仆，仕女；少女，未婚年轻女子",
+        "zh": "女仆；仕女；少女",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/maid/",
         "score": 3,
         "en": "maid"
     },
     {
-        "zh": "大陆，本土",
+        "zh": "大陆；本土",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/mainland/",
         "score": 3,
         "en": "mainland"
     },
     {
-        "zh": "维持，保持；坚持认为；维修，保养；供养，赡养",
+        "zh": "维持；保持；坚持认为",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/maintain/",
         "score": 3,
         "en": "maintain"
     }

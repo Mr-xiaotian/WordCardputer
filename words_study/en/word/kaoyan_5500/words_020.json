@@ -245,7 +245,7 @@
         "en":  "danger"
     },
     {
-        "zh":  "（一）件、碎片",
+        "zh":  "件、碎片",
         "pos":  "noun",
         "phonetic":  "/.../",
         "score":  5,
@@ -308,7 +308,7 @@
         "en":  "colleague"
     },
     {
-        "zh":  "想要（做某事）",
+        "zh":  "想要",
         "pos":  "verb",
         "phonetic":  "/.../",
         "score":  5,

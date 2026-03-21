@@ -1,351 +1,351 @@
 [
     {
-        "zh": "态度，看法；我行我素的作派；姿势",
+        "zh": "态度；看法；我行我素的作派",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/attitude/",
         "score": 3,
         "en": "attitude"
     },
     {
-        "zh": "吸引，引来；引起，激起；使（人）产生兴趣（或好感）",
+        "zh": "吸引；引来；引起",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/attract/",
         "score": 3,
         "en": "attract"
     },
     {
         "zh": "拍卖",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/auction/",
         "score": 3,
         "en": "auction"
     },
     {
-        "zh": "观众，听众；读者；会见，觐见",
+        "zh": "观众；听众；读者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/audience/",
         "score": 3,
         "en": "audience"
     },
     {
-        "zh": "音频的，声音的",
+        "zh": "音频的；声音的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/audio/",
         "score": 3,
         "en": "audio"
     },
     {
-        "zh": "扩大，增加，提高",
+        "zh": "扩大；增加；提高",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/augment/",
         "score": 3,
         "en": "augment"
     },
     {
-        "zh": "真正的，真迹的；真实的，正宗的；逼真的；可靠的",
+        "zh": "真正的；真迹的；真实的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/authentic/",
         "score": 3,
         "en": "authentic"
     },
     {
-        "zh": "当局，当权者；权威，威信；批准，授权；权力， 当权（地位）；职权",
+        "zh": "当局；当权者；权威",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/authority/",
         "score": 3,
         "en": "authority"
     },
     {
         "zh": "汽车",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/automobile/",
         "score": 3,
         "en": "automobile"
     },
     {
-        "zh": "可获得的，可找到的；有空的",
+        "zh": "可获得的；可找到的；有空的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/available/",
         "score": 3,
         "en": "available"
     },
     {
-        "zh": "林荫道；大街；途径，手段",
+        "zh": "林荫道；大街；途径",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/avenue/",
         "score": 3,
         "en": "avenue"
     },
     {
-        "zh": "平均的；普通的，平常的；正常标准的",
+        "zh": "平均的；普通的；平常的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/average/",
         "score": 3,
         "en": "average"
     },
     {
-        "zh": "防止，避免；转移（目光、注意力等）",
+        "zh": "防止；避免；转移",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/avert/",
         "score": 3,
         "en": "avert"
     },
     {
-        "zh": "避免做（某事）；回避，躲避；避让",
+        "zh": "避免做；回避；躲避",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/avoid/",
         "score": 3,
         "en": "avoid"
     },
     {
-        "zh": "（人）等待（事件）；（事件，情况）等着（某人）；期待",
+        "zh": "等待；等着",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/await/",
         "score": 3,
         "en": "await"
     },
     {
-        "zh": "奖；奖金，奖品；（收入的）增加；（赔偿的）裁定额",
+        "zh": "奖；奖金；奖品",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/award/",
         "score": 3,
         "en": "award"
     },
     {
-        "zh": "很坏的，糟糕的；非常多的；骇人听闻的，可怕的",
+        "zh": "很坏的；糟糕的；非常多的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/awful/",
         "score": 3,
         "en": "awful"
     },
     {
-        "zh": "（使人）尴尬的；难对付的；笨拙的；产生困难的；不方便的",
+        "zh": "尴尬的；难对付的；笨拙的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/awkward/",
         "score": 3,
         "en": "awkward"
     },
     {
-        "zh": "轴；对称轴；坐标轴；轴心",
+        "zh": "轴；对称轴；坐标轴",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/axis/",
         "score": 3,
         "en": "axis"
     },
     {
-        "zh": "单身汉；学士（仅用于头衔或固定表达且B大写）",
+        "zh": "单身汉；学士",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bachelor/",
         "score": 3,
         "en": "bachelor"
     },
     {
-        "zh": "【喻】支柱，栋梁；主干；主要成分",
+        "zh": "【喻】支柱；栋梁；主干",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/backbone/",
         "score": 3,
         "en": "backbone"
     },
     {
-        "zh": "（家庭、职业等）出身；（事态发展）背景；（画面、照片等）背景；幕后；底色",
+        "zh": "出身；背景；背景",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/background/",
         "score": 3,
         "en": "background"
     },
     {
-        "zh": "向后的；倒退的；落后的；（学习）落后的",
+        "zh": "向后的；倒退的；落后的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/backward/",
         "score": 3,
         "en": "backward"
     },
     {
-        "zh": "咸肉，熏肉",
+        "zh": "咸肉；熏肉",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bacon/",
         "score": 3,
         "en": "bacon"
     },
     {
-        "zh": "行李；（感情或思想上的）包袱",
+        "zh": "行李；包袱",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/baggage/",
         "score": 3,
         "en": "baggage"
     },
     {
         "zh": "面包店",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bakery/",
         "score": 3,
         "en": "bakery"
     },
     {
         "zh": "芭蕾舞；芭蕾舞剧；芭蕾舞团",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/ballet/",
         "score": 3,
         "en": "ballet"
     },
     {
-        "zh": "膨胀，涨大；（数量）猛增；乘热气球飞行",
+        "zh": "膨胀；涨大；猛增",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/balloon/",
         "score": 3,
         "en": "balloon"
     },
     {
-        "zh": "无记名投票表决（或选举）；选票；投票总数",
+        "zh": "无记名投票表决；选票；投票总数",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/ballot/",
         "score": 3,
         "en": "ballot"
     },
     {
-        "zh": "（官方或依法）禁止，取缔",
+        "zh": "禁止；取缔",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/ban/",
         "score": 3,
         "en": "ban"
     },
     {
-        "zh": "乐队，音乐组合；条，带；波段；一群，一伙；（年龄，价格等）范围，段",
+        "zh": "乐队；音乐组合；条",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/band/",
         "score": 3,
         "en": "band"
     },
     {
-        "zh": "猛敲；砰地关上；猛摔；碰撞",
+        "zh": "猛敲；砰地关上；猛摔",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/bang/",
         "score": 3,
         "en": "bang"
     },
     {
         "zh": "横幅",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/banner/",
         "score": 3,
         "en": "banner"
     },
     {
-        "zh": "酒吧；吧台；小吃店；条，块，棒；障碍；（音乐）小节",
+        "zh": "酒吧；吧台；小吃店",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bar/",
         "score": 3,
         "en": "bar"
     },
     {
-        "zh": "（为男子服务的）理发师；（男子）理发店",
+        "zh": "理发师；理发店",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/barber/",
         "score": 3,
         "en": "barber"
     },
     {
-        "zh": "仅仅，勉强；几乎不；刚好，不超过；刚刚",
+        "zh": "仅仅；勉强；几乎不",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/barely/",
         "score": 3,
         "en": "barely"
     },
     {
-        "zh": "物美价廉的东西；交易，协议",
+        "zh": "物美价廉的东西；交易；协议",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bargain/",
         "score": 3,
         "en": "bargain"
     },
     {
-        "zh": "障碍，关卡；屏障；分界线；难以逾越的数量（水平、数目等）",
+        "zh": "障碍；关卡；屏障",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/barrier/",
         "score": 3,
         "en": "barrier"
     },
     {
-        "zh": "进行易货贸易，作物物交换",
+        "zh": "进行易货贸易；作物物交换",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/barter/",
         "score": 3,
         "en": "barter"
     },
     {
-        "zh": "基础，要素；标准，方式；原因",
+        "zh": "基础；要素；标准",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/basis/",
         "score": 3,
         "en": "basis"
     },
     {
-        "zh": "电池，蓄电池；排炮；殴打罪；（a battery of）一组",
+        "zh": "电池；蓄电池；排炮",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/battery/",
         "score": 3,
         "en": "battery"
     },
     {
-        "zh": "（on behalf of）代表某人；为了某人",
+        "zh": "代表某人；为了某人",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/behalf/",
         "score": 3,
         "en": "behalf"
     },
     {
-        "zh": "行为, 举止, 待人接物的方式; (动物或人对环境或刺激的)反应行为, 习惯; (机器的)特性; 运转情况",
+        "zh": "行为；举止；待人接物的方式",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/behaviour/",
         "score": 3,
         "en": "behaviour"
     },
     {
-        "zh": "在…的下层，在…底下；（在级别上）低于，次于",
+        "zh": "在…的下层；在…底下；低于",
         "pos": "prep",
-        "phonetic": "",
+        "phonetic": "/beneath/",
         "score": 3,
         "en": "beneath"
     },
     {
-        "zh": "有帮助的，有利的",
+        "zh": "有帮助的；有利的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/beneficial/",
         "score": 3,
         "en": "beneficial"
     },
     {
-        "zh": "和善的；无害的；宜人的；（肿瘤）良性的",
+        "zh": "和善的；无害的；宜人的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/benign/",
         "score": 3,
         "en": "benign"
     },
     {
         "zh": "浆果",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/berry/",
         "score": 3,
         "en": "berry"
     },
     {
         "zh": "饮料",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/beverage/",
         "score": 3,
         "en": "beverage"
     },
     {
-        "zh": "使迷惑，使糊涂",
+        "zh": "使迷惑；使糊涂",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/bewilder/",
         "score": 3,
         "en": "bewilder"
     },
     {
-        "zh": "偏见，偏心，偏袒",
+        "zh": "偏见；偏心；偏袒",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bias/",
         "score": 3,
         "en": "bias"
     }

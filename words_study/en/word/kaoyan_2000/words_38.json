@@ -2,350 +2,350 @@
     {
         "zh": "象征",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/symbolize/",
         "score": 3,
         "en": "symbolize"
     },
     {
-        "zh": "同情的，有同情心的；赞成的，支持的；讨喜的",
+        "zh": "同情的；有同情心的；赞成的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/sympathetic/",
         "score": 3,
         "en": "sympathetic"
     },
     {
         "zh": "同情；支持；意气相投",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/sympathy/",
         "score": 3,
         "en": "sympathy"
     },
     {
         "zh": "症状；征兆",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/symptom/",
         "score": 3,
         "en": "symptom"
     },
     {
-        "zh": "综合症状；典型意见，典型表现",
+        "zh": "综合症状；典型意见；典型表现",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/syndrome/",
         "score": 3,
         "en": "syndrome"
     },
     {
-        "zh": "结合，综合体；合成",
+        "zh": "结合；综合体；合成",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/synthesis/",
         "score": 3,
         "en": "synthesis"
     },
     {
-        "zh": "系统的，成体系的，有条理的",
+        "zh": "系统的；成体系的；有条理的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/systematic/",
         "score": 3,
         "en": "systematic"
     },
     {
-        "zh": "片剂，药片；碑，匾；便签簿；平板电脑",
+        "zh": "片剂；药片；碑",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tablet/",
         "score": 3,
         "en": "tablet"
     },
     {
-        "zh": "（文化或宗教习俗方面的）禁忌，忌讳；禁止，避讳",
+        "zh": "禁忌；忌讳；禁止",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/taboo/",
         "score": 3,
         "en": "taboo"
     },
     {
-        "zh": "处理，解决（难题）；交涉；抓获；（足球等比赛中）抢断",
+        "zh": "处理；解决；交涉",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/tackle/",
         "score": 3,
         "en": "tackle"
     },
     {
-        "zh": "策略，战术",
+        "zh": "策略；战术",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tactics/",
         "score": 3,
         "en": "tactics"
     },
     {
-        "zh": "人才，有天赋的人；才能，天赋",
+        "zh": "人才；有天赋的人；才能",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/talent/",
         "score": 3,
         "en": "talent"
     },
     {
-        "zh": "明确的，实际的；可感知的，触摸得到的",
+        "zh": "明确的；实际的；可感知的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/tangible/",
         "score": 3,
         "en": "tangible"
     },
     {
-        "zh": "关税；价目表，收费表",
+        "zh": "关税；价目表；收费表",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tariff/",
         "score": 3,
         "en": "tariff"
     },
     {
         "zh": "对…征税；使负重担；使受压力",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/tax/",
         "score": 3,
         "en": "tax"
     },
     {
-        "zh": "戏弄，取笑；招惹，逗弄（动物）；梳理（毛发等）；撩拨",
+        "zh": "戏弄；取笑；招惹",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/tease/",
         "score": 3,
         "en": "tease"
     },
     {
-        "zh": "技术员，技师；（艺术、体育等）的技巧精湛者",
+        "zh": "技术员；技师；的技巧精湛者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/technician/",
         "score": 3,
         "en": "technician"
     },
     {
-        "zh": "（13～19岁的）青少年",
+        "zh": "青少年",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/teenager/",
         "score": 3,
         "en": "teenager"
     },
     {
         "zh": "十几岁(13~19岁)",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/teens/",
         "score": 3,
         "en": "teens"
     },
     {
         "zh": "电报",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/telegraph/",
         "score": 3,
         "en": "telegraph"
     },
     {
         "zh": "望远镜",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/telescope/",
         "score": 3,
         "en": "telescope"
     },
     {
-        "zh": "脾气，性情；心情，情绪；怒气",
+        "zh": "脾气；性情；心情",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/temper/",
         "score": 3,
         "en": "temper"
     },
     {
-        "zh": "性情，气质；喜怒无常",
+        "zh": "性情；气质；喜怒无常",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/temperament/",
         "score": 3,
         "en": "temperament"
     },
     {
-        "zh": "模板，样板；模式",
+        "zh": "模板；样板；模式",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/template/",
         "score": 3,
         "en": "template"
     },
     {
-        "zh": "临时的，暂时的，短暂的",
+        "zh": "临时的；暂时的；短暂的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/temporary/",
         "score": 3,
         "en": "temporary"
     },
     {
-        "zh": "引诱，诱惑；鼓动",
+        "zh": "引诱；诱惑；鼓动",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/tempt/",
         "score": 3,
         "en": "tempt"
     },
     {
         "zh": "拉紧的；紧张的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/tense/",
         "score": 3,
         "en": "tense"
     },
     {
-        "zh": "紧张局势；矛盾；（情绪上）紧张；（文艺作品中的）紧张气氛；张力，拉紧程度",
+        "zh": "紧张局势；矛盾；紧张",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/tension/",
         "score": 3,
         "en": "tension"
     },
     {
-        "zh": "（交通工具的）终点站；航站楼；（电脑）终端；（电路的）端子，接头",
+        "zh": "终点站；航站楼；终端",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/terminal/",
         "score": 3,
         "en": "terminal"
     },
     {
-        "zh": "结束，终止；到达终点站",
+        "zh": "结束；终止；到达终点站",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/terminate/",
         "score": 3,
         "en": "terminate"
     },
     {
-        "zh": "极好的，绝妙的；极其巨大的",
+        "zh": "极好的；绝妙的；极其巨大的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/terrific/",
         "score": 3,
         "en": "terrific"
     },
     {
-        "zh": "领土；（个人、群体、动物等占据或负责的）地盘，地区；（具有某种特征的）地带；（知识等）领域",
+        "zh": "领土；地盘；地区",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/territory/",
         "score": 3,
         "en": "territory"
     },
     {
-        "zh": "恐惧，惊骇；令人恐惧的人（或事）；（通常出于政治目的的）恐怖行动",
+        "zh": "恐惧；惊骇；令人恐惧的人",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/terror/",
         "score": 3,
         "en": "terror"
     },
     {
-        "zh": "（尤指出庭）作证；证明，证实",
+        "zh": "作证；证明；证实",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/testify/",
         "score": 3,
         "en": "testify"
     },
     {
-        "zh": "纺织品；（textiles）纺织业",
+        "zh": "纺织品；纺织业",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/textile/",
         "score": 3,
         "en": "textile"
     },
     {
-        "zh": "感恩节；感恩（上帝）",
+        "zh": "感恩节；感恩",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/thanksgiving/",
         "score": 3,
         "en": "thanksgiving"
     },
     {
         "zh": "偷窃；盗窃罪",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/theft/",
         "score": 3,
         "en": "theft"
     },
     {
-        "zh": "题目，主题；（乐曲）主旋律；主题音乐",
+        "zh": "题目；主题；主旋律",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/theme/",
         "score": 3,
         "en": "theme"
     },
     {
-        "zh": "学说，理论；原理；看法，推测",
+        "zh": "学说；理论；原理",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/theory/",
         "score": 3,
         "en": "theory"
     },
     {
-        "zh": "疗法，治疗，理疗",
+        "zh": "疗法；治疗；理疗",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/therapy/",
         "score": 3,
         "en": "therapy"
     },
     {
-        "zh": "因此，从而",
+        "zh": "因此；从而",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/thereby/",
         "score": 3,
         "en": "thereby"
     },
     {
         "zh": "温度计",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/thermometer/",
         "score": 3,
         "en": "thermometer"
     },
     {
-        "zh": "论题，命题；论文，毕业（或学位）论文",
+        "zh": "论题；命题；论文",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/thesis/",
         "score": 3,
         "en": "thesis"
     },
     {
-        "zh": "彻底的，深入的；仔细的，周到的；十足的",
+        "zh": "彻底的；深入的；仔细的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/thorough/",
         "score": 3,
         "en": "thorough"
     },
     {
-        "zh": "经缜密思考的；沉思的，思考的；体贴的，关心的；富有思想性的",
+        "zh": "经缜密思考的；沉思的；思考的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/thoughtful/",
         "score": 3,
         "en": "thoughtful"
     },
     {
-        "zh": "威胁，恐吓；凶兆，征兆；构成威胁的人（或事物）",
+        "zh": "威胁；恐吓；凶兆",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/threat/",
         "score": 3,
         "en": "threat"
     },
     {
-        "zh": "威胁，恐吓；危及，对……构成威胁；预示凶兆",
+        "zh": "威胁；恐吓；危及",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/threaten/",
         "score": 3,
         "en": "threaten"
     },
     {
-        "zh": "门槛，门口；阈，界；开端",
+        "zh": "门槛；门口；阈",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/threshold/",
         "score": 3,
         "en": "threshold"
     },
     {
-        "zh": "使非常兴奋，感到激动",
+        "zh": "使非常兴奋；感到激动",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/thrill/",
         "score": 3,
         "en": "thrill"
     },
     {
-        "zh": "咽喉，喉咙",
+        "zh": "咽喉；喉咙",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/throat/",
         "score": 3,
         "en": "throat"
     }

@@ -2,350 +2,350 @@
     {
         "zh": "《圣经》；权威著作",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bible/",
         "score": 3,
         "en": "bible"
     },
     {
-        "zh": "出价；投标；努力争取；叫牌；问候；道别",
+        "zh": "出价；投标；努力争取",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/bid/",
         "score": 3,
         "en": "bid"
     },
     {
         "zh": "垃圾箱；储物容器",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bin/",
         "score": 3,
         "en": "bin"
     },
     {
         "zh": "生物医学的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/biomedical/",
         "score": 3,
         "en": "biomedical"
     },
     {
-        "zh": "奇异的，怪诞的",
+        "zh": "奇异的；怪诞的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/bizarre/",
         "score": 3,
         "en": "bizarre"
     },
     {
-        "zh": "空白的；空着的；无表情的；不理解的；完全的，彻底的",
+        "zh": "空白的；空着的；无表情的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/blank/",
         "score": 3,
         "en": "blank"
     },
     {
-        "zh": "毛毯，毯子；〈喻〉覆盖物，覆盖层",
+        "zh": "毛毯；毯子；〈喻〉覆盖物",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/blanket/",
         "score": 3,
         "en": "blanket"
     },
     {
-        "zh": "前景暗淡的；（地方）荒凉的；（天气）阴冷的",
+        "zh": "前景暗淡的；荒凉的；阴冷的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/bleak/",
         "score": 3,
         "en": "bleak"
     },
     {
-        "zh": "块；大块；大块石板（或木板）；一批，一组；街区；大楼，大厦；阻碍",
+        "zh": "块；大块；大块石板",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/block/",
         "score": 3,
         "en": "block"
     },
     {
         "zh": "堵塞；封锁；妨碍",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/blockage/",
         "score": 3,
         "en": "blockage"
     },
     {
-        "zh": "网络日志，博客",
+        "zh": "网络日志；博客",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/blog/",
         "score": 3,
         "en": "blog"
     },
     {
         "zh": "花",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/blossom/",
         "score": 3,
         "en": "blossom"
     },
     {
-        "zh": "蓝图；行动方案；（生物细胞的）模板",
+        "zh": "蓝图；行动方案；模板",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/blueprint/",
         "score": 3,
         "en": "blueprint"
     },
     {
         "zh": "率直的；钝的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/blunt/",
         "score": 3,
         "en": "blunt"
     },
     {
-        "zh": "自夸，吹嘘；拥有（值得自豪的东西）",
+        "zh": "自夸；吹嘘；拥有",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/boast/",
         "score": 3,
         "en": "boast"
     },
     {
-        "zh": "（人或举止）大胆自信的，敢于冒险的；（颜色、线条等）明显的，轮廓突出的；（印刷字）黑体的",
+        "zh": "大胆自信的；敢于冒险的；明显的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/bold/",
         "score": 3,
         "en": "bold"
     },
     {
-        "zh": "奖金，红利；意外收获",
+        "zh": "奖金；红利；意外收获",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bonus/",
         "score": 3,
         "en": "bonus"
     },
     {
-        "zh": "兴旺，繁荣；流行，风靡；隆隆声；水栅；支架",
+        "zh": "兴旺；繁荣；流行",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/boom/",
         "score": 3,
         "en": "boom"
     },
     {
         "zh": "促进；增强；使增长",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/boost/",
         "score": 3,
         "en": "boost"
     },
     {
-        "zh": "靴子；（汽车后部的）行李箱；猛踢",
+        "zh": "靴子；行李箱；猛踢",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/boot/",
         "score": 3,
         "en": "boot"
     },
     {
-        "zh": "小隔间（如公用电话亭等）；隔开的用餐区；临时货摊",
+        "zh": "小隔间；隔开的用餐区；临时货摊",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/booth/",
         "score": 3,
         "en": "booth"
     },
     {
-        "zh": "国界，边界；镶边；（路边或草地边的）狭长花坛",
+        "zh": "国界；边界；镶边",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/border/",
         "score": 3,
         "en": "border"
     },
     {
-        "zh": "边界，分界线；界限",
+        "zh": "边界；分界线；界限",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/boundary/",
         "score": 3,
         "en": "boundary"
     },
     {
-        "zh": "制动器，刹车；阻力，障碍",
+        "zh": "制动器；刹车；阻力",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/brake/",
         "score": 3,
         "en": "brake"
     },
     {
         "zh": "品牌；类型；烙印",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/brand/",
         "score": 3,
         "en": "brand"
     },
     {
         "zh": "勇敢",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bravery/",
         "score": 3,
         "en": "bravery"
     },
     {
-        "zh": "（车辆、机器）故障；（关系）破裂；精神崩溃；数字细目",
+        "zh": "故障；破裂；精神崩溃",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/breakdown/",
         "score": 3,
         "en": "breakdown"
     },
     {
-        "zh": "突破，重大成就",
+        "zh": "突破；重大成就",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/breakthrough/",
         "score": 3,
         "en": "breakthrough"
     },
     {
-        "zh": "（女性的）乳房；胸部",
+        "zh": "乳房；胸部",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/breast/",
         "score": 3,
         "en": "breast"
     },
     {
-        "zh": "砖，砖块；积木",
+        "zh": "砖；砖块；积木",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/brick/",
         "score": 3,
         "en": "brick"
     },
     {
-        "zh": "简短的，简洁的；短暂的，短时间的；（衣服）过短的",
+        "zh": "简短的；简洁的；短暂的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/brief/",
         "score": 3,
         "en": "brief"
     },
     {
-        "zh": "(东西的)边缘, 边; 帽檐",
+        "zh": "(东西的)边缘；边；帽檐",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/brim/",
         "score": 3,
         "en": "brim"
     },
     {
-        "zh": "轻快的；（生意）兴隆的；（气候）寒冷而清新的；干脆利索的",
+        "zh": "轻快的；兴隆的；寒冷而清新的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/brisk/",
         "score": 3,
         "en": "brisk"
     },
     {
         "zh": "小册子",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/brochure/",
         "score": 3,
         "en": "brochure"
     },
     {
-        "zh": "手足情谊，兄弟关系",
+        "zh": "手足情谊；兄弟关系",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/brotherhood/",
         "score": 3,
         "en": "brotherhood"
     },
     {
-        "zh": "野蛮的，残忍的；直截了当的，不顾他人感受的",
+        "zh": "野蛮的；残忍的；直截了当的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/brutal/",
         "score": 3,
         "en": "brutal"
     },
     {
         "zh": "预算；政府年度预算",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/budget/",
         "score": 3,
         "en": "budget"
     },
     {
-        "zh": "电灯泡；（植物的）鳞茎",
+        "zh": "电灯泡；鳞茎",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bulb/",
         "score": 3,
         "en": "bulb"
     },
     {
-        "zh": "主体，大部分；（大）体积或量；巨大的体重（或身形）",
+        "zh": "主体；大部分；体积或量",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bulk/",
         "score": 3,
         "en": "bulk"
     },
     {
-        "zh": "公告，告示；新闻快报；简报",
+        "zh": "公告；告示；新闻快报",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bulletin/",
         "score": 3,
         "en": "bulletin"
     },
     {
-        "zh": "碰撞，撞上；颠簸前进；把（某人）掉换到（另一群体或位置）；（从某群体）调出",
+        "zh": "碰撞；撞上；颠簸前进",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/bump/",
         "score": 3,
         "en": "bump"
     },
     {
-        "zh": "负担，重负",
+        "zh": "负担；重负",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/burden/",
         "score": 3,
         "en": "burden"
     },
     {
-        "zh": "官僚主义，官僚作风；官僚体制，官僚国家",
+        "zh": "官僚主义；官僚作风；官僚体制",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/bureaucracy/",
         "score": 3,
         "en": "bureaucracy"
     },
     {
         "zh": "蝴蝶；蝶泳",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/butterfly/",
         "score": 3,
         "en": "butterfly"
     },
     {
-        "zh": "出租车；（公交车、火车等的）驾驶室",
+        "zh": "出租车；驾驶室",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/cab/",
         "score": 3,
         "en": "cab"
     },
     {
-        "zh": "（轮船上生活或睡觉的）隔间；（飞机的）座舱；小木屋",
+        "zh": "隔间；座舱；小木屋",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/cabin/",
         "score": 3,
         "en": "cabin"
     },
     {
         "zh": "钙",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/calcium/",
         "score": 3,
         "en": "calcium"
     },
     {
-        "zh": "日历，挂历；日程表；历法",
+        "zh": "日历；挂历；日程表",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/calendar/",
         "score": 3,
         "en": "calendar"
     },
     {
-        "zh": "卡路里（热量单位）；大卡，千卡（食物的热量单位）",
+        "zh": "卡路里；大卡；千卡",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/calorie/",
         "score": 3,
         "en": "calorie"
     },
     {
-        "zh": "战役；活动；运动（为取得某目的而组织的活动）",
+        "zh": "战役；活动；运动",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/campaign/",
         "score": 3,
         "en": "campaign"
     }

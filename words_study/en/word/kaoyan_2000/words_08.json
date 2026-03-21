@@ -1,351 +1,351 @@
 [
     {
-        "zh": "全面的；无所不包的；综合性的；广泛的",
+        "zh": "全面的；无所不包的；综合性的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/comprehensive/",
         "score": 3,
         "en": "comprehensive"
     },
     {
-        "zh": "压缩；精简，浓缩",
+        "zh": "压缩；精简；浓缩",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/compress/",
         "score": 3,
         "en": "compress"
     },
     {
-        "zh": "由…组成，包含；是（某事物的）组成部分",
+        "zh": "由…组成；包含；是组成部分",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/comprise/",
         "score": 3,
         "en": "comprise"
     },
     {
-        "zh": "强制的，强迫的；必须做的",
+        "zh": "强制的；强迫的；必须做的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/compulsory/",
         "score": 3,
         "en": "compulsory"
     },
     {
-        "zh": "隐藏，隐瞒，掩盖",
+        "zh": "隐藏；隐瞒；掩盖",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/conceal/",
         "score": 3,
         "en": "conceal"
     },
     {
-        "zh": "集中注意力，聚精会神；使…集中（聚集）；（使）浓缩",
+        "zh": "集中注意力；聚精会神；使…集中",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/concentrate/",
         "score": 3,
         "en": "concentrate"
     },
     {
-        "zh": "构思，构想；对…的理解，概念；怀孕，受孕",
+        "zh": "构思；构想；对…的理解",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/conception/",
         "score": 3,
         "en": "conception"
     },
     {
-        "zh": "让步，妥协；给予；准予；价格优惠，减价；特许权；摊位",
+        "zh": "让步；妥协；给予",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/concession/",
         "score": 3,
         "en": "concession"
     },
     {
-        "zh": "结论；结束，结局；（条约等的）达成，缔结",
+        "zh": "结论；结束；结局",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/conclusion/",
         "score": 3,
         "en": "conclusion"
     },
     {
-        "zh": "谴责；判处（刑罚）；迫使…接受困境；宣告…不安全；表明有罪",
+        "zh": "谴责；判处；迫使…接受困境",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/condemn/",
         "score": 3,
         "en": "condemn"
     },
     {
-        "zh": "（乐团等）指挥；售票员；列车员；导体",
+        "zh": "指挥；售票员；列车员",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/conductor/",
         "score": 3,
         "en": "conductor"
     },
     {
-        "zh": "授予（头衔、学位等）；商谈，协商",
+        "zh": "授予；商谈；协商",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/confer/",
         "score": 3,
         "en": "confer"
     },
     {
-        "zh": "讨论会，协商会；体育协会",
+        "zh": "讨论会；协商会；体育协会",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/conference/",
         "score": 3,
         "en": "conference"
     },
     {
-        "zh": "承认，坦白；供认罪行；忏悔",
+        "zh": "承认；坦白；供认罪行",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/confess/",
         "score": 3,
         "en": "confess"
     },
     {
-        "zh": "信任，信赖；自信心；秘密，机密",
+        "zh": "信任；信赖；自信心",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/confidence/",
         "score": 3,
         "en": "confidence"
     },
     {
         "zh": "确信的；有把握的；自信的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/confident/",
         "score": 3,
         "en": "confident"
     },
     {
         "zh": "限制；监禁；使局限于",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/confine/",
         "score": 3,
         "en": "confine"
     },
     {
-        "zh": "证实，确认；使确信；批准",
+        "zh": "证实；确认；使确信",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/confirm/",
         "score": 3,
         "en": "confirm"
     },
     {
-        "zh": "顺应（潮流、大多数人）；遵从（法律、规则）；相一致",
+        "zh": "顺应；遵从；相一致",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/conform/",
         "score": 3,
         "en": "conform"
     },
     {
-        "zh": "正视；处理（问题，困难）；面对（持有敌对或不同意见的人）；面临；遭遇；直面",
+        "zh": "正视；处理",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/confront/",
         "score": 3,
         "en": "confront"
     },
     {
-        "zh": "使迷惑，使糊涂；混淆；使…难以理解",
+        "zh": "使迷惑；使糊涂；混淆",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/confuse/",
         "score": 3,
         "en": "confuse"
     },
     {
-        "zh": "困惑；混淆；困窘，尴尬；混乱局面",
+        "zh": "困惑；混淆；困窘",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/confusion/",
         "score": 3,
         "en": "confusion"
     },
     {
         "zh": "拥塞；充血",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/congestion/",
         "score": 3,
         "en": "congestion"
     },
     {
-        "zh": "（事件）同时（或同地）发生；结合；连接词",
+        "zh": "同时发生；结合；连接词",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/conjunction/",
         "score": 3,
         "en": "conjunction"
     },
     {
-        "zh": "意识到的；神志清醒的，有知觉的；（行为等）有意的；（行为等）慎重的；对…特别感兴趣的",
+        "zh": "意识到的；神志清醒的；有知觉的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/conscious/",
         "score": 3,
         "en": "conscious"
     },
     {
         "zh": "共识",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/consensus/",
         "score": 3,
         "en": "consensus"
     },
     {
-        "zh": "同意；赞成，准许；正式批文",
+        "zh": "同意；赞成；准许",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/consent/",
         "score": 3,
         "en": "consent"
     },
     {
-        "zh": "结果，后果；重要性",
+        "zh": "结果；后果；重要性",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/consequence/",
         "score": 3,
         "en": "consequence"
     },
     {
-        "zh": "随之发生的, 作为结果的; 合乎逻辑的; 逻辑上一致的",
+        "zh": "随之发生的；作为结果的；合乎逻辑的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/consequent/",
         "score": 3,
         "en": "consequent"
     },
     {
-        "zh": "（环境）保护；（对艺术品等的）保护；节约",
+        "zh": "保护；保护；节约",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/conservation/",
         "score": 3,
         "en": "conservation"
     },
     {
-        "zh": "（规模、数量、程度等）相当大的，相当重要的",
+        "zh": "相当大的；相当重要的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/considerable/",
         "score": 3,
         "en": "considerable"
     },
     {
-        "zh": "存在于；由…组成，由…构成",
+        "zh": "存在于；由…组成；由…构成",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/consist/",
         "score": 3,
         "en": "consist"
     },
     {
-        "zh": "持续的；始终如一的；（和…）相符的；（观点等）前后一致的",
+        "zh": "持续的；始终如一的；相符的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/consistent/",
         "score": 3,
         "en": "consistent"
     },
     {
-        "zh": "（使）巩固，加强（位置，力量）；合并，统一",
+        "zh": "巩固；加强",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/consolidate/",
         "score": 3,
         "en": "consolidate"
     },
     {
-        "zh": "惹人注目的，显眼的",
+        "zh": "惹人注目的；显眼的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/conspicuous/",
         "score": 3,
         "en": "conspicuous"
     },
     {
-        "zh": "连续不断的，重复的；恒定的",
+        "zh": "连续不断的；重复的；恒定的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/constant/",
         "score": 3,
         "en": "constant"
     },
     {
-        "zh": "成分，构成要素；选民",
+        "zh": "成分；构成要素；选民",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/constituent/",
         "score": 3,
         "en": "constituent"
     },
     {
-        "zh": "被算作；组成，构成；成立，设立",
+        "zh": "被算作；组成；构成",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/constitute/",
         "score": 3,
         "en": "constitute"
     },
     {
-        "zh": "限制；约束；强迫；迫使",
+        "zh": "限制；约束；强迫",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/constrain/",
         "score": 3,
         "en": "constrain"
     },
     {
         "zh": "顾问；高级顾问医师",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/consultant/",
         "score": 3,
         "en": "consultant"
     },
     {
-        "zh": "接触；传达；联系；遭遇，遇见；见面；交往；关系；（contacts）隐形眼镜",
+        "zh": "接触；传达；联系",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/contact/",
         "score": 3,
         "en": "contact"
     },
     {
-        "zh": "思量，考虑，考虑接受；沉思；凝视",
+        "zh": "思量；考虑；考虑接受",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/contemplate/",
         "score": 3,
         "en": "contemplate"
     },
     {
         "zh": "当代的；同时代的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/contemporary/",
         "score": 3,
         "en": "contemporary"
     },
     {
-        "zh": "轻视，轻蔑，蔑视",
+        "zh": "轻视；轻蔑；蔑视",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/contempt/",
         "score": 3,
         "en": "contempt"
     },
     {
-        "zh": "主张，声称；竞争，争夺；解决",
+        "zh": "主张；声称；竞争",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/contend/",
         "score": 3,
         "en": "contend"
     },
     {
-        "zh": "（尤指争论中所持的）论点；争论；争夺",
+        "zh": "论点；争论；争夺",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/contention/",
         "score": 3,
         "en": "contention"
     },
     {
-        "zh": "接连不断的，连续的；多次的，频繁的",
+        "zh": "接连不断的；连续的；多次的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/continual/",
         "score": 3,
         "en": "continual"
     },
     {
-        "zh": "不断的，持续的；没有间隔的",
+        "zh": "不断的；持续的；没有间隔的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/continuous/",
         "score": 3,
         "en": "continuous"
     },
     {
-        "zh": "（尤指雇用、销售或租赁）合同，契约",
+        "zh": "合同；契约",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/contract/",
         "score": 3,
         "en": "contract"
     },
     {
-        "zh": "反驳，反斥；相抵触，使矛盾",
+        "zh": "反驳；反斥；相抵触",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/contradict/",
         "score": 3,
         "en": "contradict"
     }

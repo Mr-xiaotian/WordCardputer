@@ -1,351 +1,351 @@
 [
     {
-        "zh": "预约，预定（座位等）；为…保留；保持，留有（权利）",
+        "zh": "预约；预定；为…保留",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/reserve/",
         "score": 3,
         "en": "reserve"
     },
     {
-        "zh": "水库，蓄水池；（大量的）储备；储液器",
+        "zh": "水库；蓄水池；储备",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/reservoir/",
         "score": 3,
         "en": "reservoir"
     },
     {
-        "zh": "住所，住宅；居住，定居；居住权",
+        "zh": "住所；住宅；居住",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/residence/",
         "score": 3,
         "en": "residence"
     },
     {
-        "zh": "居民，定居者；住客，寄宿者;（美国）高级专科住院医师",
+        "zh": "居民；定居者；住客",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/resident/",
         "score": 3,
         "en": "resident"
     },
     {
-        "zh": "抵抗，抵制；耐得住，抵御…诱惑，忍住；使不受…伤害",
+        "zh": "抵抗；抵制；耐得住",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/resist/",
         "score": 3,
         "en": "resist"
     },
     {
-        "zh": "抵制的；有抵抗力的；（-resistant，构成形容词）耐…的，抗…的",
+        "zh": "抵制的；有抵抗力的；（-resistant",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/resistant/",
         "score": 3,
         "en": "resistant"
     },
     {
         "zh": "坚决的；有决心的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/resolute/",
         "score": 3,
         "en": "resolute"
     },
     {
-        "zh": "（resort to） 诉诸，求助于",
+        "zh": " 诉诸；求助于",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/resort/",
         "score": 3,
         "en": "resort"
     },
     {
-        "zh": "财力，资源； （resources）勇气，谋略",
+        "zh": "财力；资源；勇气",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/resource/",
         "score": 3,
         "en": "resource"
     },
     {
-        "zh": "回复，回答；（人）作出反应；响应；应对；有起色",
+        "zh": "回复；回答；作出反应",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/respond/",
         "score": 3,
         "en": "respond"
     },
     {
-        "zh": "责任，职责，义务",
+        "zh": "责任；职责；义务",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/responsibility/",
         "score": 3,
         "en": "responsibility"
     },
     {
-        "zh": "有责任，负责；应受责备；（对上级）承担责任；（人）可靠的；责任重大的",
+        "zh": "有责任；负责；应受责备",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/responsible/",
         "score": 3,
         "en": "responsible"
     },
     {
-        "zh": "（使）恢复；使复位；使复职；修复，翻新；归还",
+        "zh": "恢复；使复位；使复职",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/restore/",
         "score": 3,
         "en": "restore"
     },
     {
-        "zh": "抑制（情绪等）；控制，限制；制止，管制",
+        "zh": "抑制；控制；限制",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/restrain/",
         "score": 3,
         "en": "restrain"
     },
     {
-        "zh": "控制，限制；克制，抑制；制伏；制约因素；座椅安全带",
+        "zh": "控制；限制；克制",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/restraint/",
         "score": 3,
         "en": "restraint"
     },
     {
-        "zh": "限制，限定；束缚，阻碍（行动）；约束",
+        "zh": "限制；限定；束缚",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/restrict/",
         "score": 3,
         "en": "restrict"
     },
     {
-        "zh": "重新开始；继续；恢复（地位、席位）",
+        "zh": "重新开始；继续；恢复",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/resume/",
         "score": 3,
         "en": "resume"
     },
     {
         "zh": "零售",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/retail/",
         "score": 3,
         "en": "retail"
     },
     {
-        "zh": "保持，保留；保持，存留",
+        "zh": "保持；保留；保持",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/retain/",
         "score": 3,
         "en": "retain"
     },
     {
-        "zh": "退休；退赛，退役；离开（去僻静处）；撤退，撤离；（陪审团）退庭；就寝",
+        "zh": "退休；退赛；退役",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/retire/",
         "score": 3,
         "en": "retire"
     },
     {
-        "zh": "撤退；离开，消退；改变主意，退缩；隐退，逃避；跌价",
+        "zh": "撤退；离开；消退",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/retreat/",
         "score": 3,
         "en": "retreat"
     },
     {
-        "zh": "回顾，回想",
+        "zh": "回顾；回想",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/retrospect/",
         "score": 3,
         "en": "retrospect"
     },
     {
-        "zh": "披露，揭露；被曝光的真相，秘闻",
+        "zh": "披露；揭露；被曝光的真相",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/revelation/",
         "score": 3,
         "en": "revelation"
     },
     {
-        "zh": "尊敬，敬畏，崇敬",
+        "zh": "尊敬；敬畏；崇敬",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/revere/",
         "score": 3,
         "en": "revere"
     },
     {
-        "zh": "颠倒，彻底改变；废除（决定，法律）；使反转；交换（位置或功能）；承认错误；倒车",
+        "zh": "颠倒；彻底改变；废除（决定",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/reverse/",
         "score": 3,
         "en": "reverse"
     },
     {
-        "zh": "修改，修订（书刊等）；复习；改变（意见等）",
+        "zh": "修改；修订；复习",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/revise/",
         "score": 3,
         "en": "revise"
     },
     {
-        "zh": "（使）苏醒，复活；重新使用；重新上演",
+        "zh": "苏醒；复活；重新使用",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/revive/",
         "score": 3,
         "en": "revive"
     },
     {
-        "zh": "革命的；革新的，巨变的",
+        "zh": "革命的；革新的；巨变的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/revolutionary/",
         "score": 3,
         "en": "revolutionary"
     },
     {
-        "zh": "旋转；（revolve around）围绕…转；以…为中心，围绕（某个主题）",
+        "zh": "旋转；围绕…转；以…为中心",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/revolve/",
         "score": 3,
         "en": "revolve"
     },
     {
-        "zh": "（运动或声音的）韵律，节律；规律性变化",
+        "zh": "韵律；节律；规律性变化",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rhythm/",
         "score": 3,
         "en": "rhythm"
     },
     {
-        "zh": "带子；带状物；绶带；（打印机）色带",
+        "zh": "带子；带状物；绶带",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/ribbon/",
         "score": 3,
         "en": "ribbon"
     },
     {
-        "zh": "死板的；固执的；坚硬的，僵直的；过于严厉的",
+        "zh": "死板的；固执的；坚硬的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/rigid/",
         "score": 3,
         "en": "rigid"
     },
     {
-        "zh": "谨慎的，细致的；严格的，严厉的",
+        "zh": "谨慎的；细致的；严格的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/rigorous/",
         "score": 3,
         "en": "rigorous"
     },
     {
-        "zh": "撕裂，裂开；扯掉；穿过，穿透",
+        "zh": "撕裂；裂开；扯掉",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/rip/",
         "score": 3,
         "en": "rip"
     },
     {
-        "zh": "危险；风险；风险因素；信贷对象",
+        "zh": "危险；风险；风险因素",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/risk/",
         "score": 3,
         "en": "risk"
     },
     {
-        "zh": "宗教仪式，典礼；习惯，习俗",
+        "zh": "宗教仪式；典礼；习惯",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/ritual/",
         "score": 3,
         "en": "ritual"
     },
     {
-        "zh": "强健的；经久耐用的，结实坚固的；有活力的；坚定的，信心满满的",
+        "zh": "强健的；经久耐用的；结实坚固的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/robust/",
         "score": 3,
         "en": "robust"
     },
     {
-        "zh": "道路，路线；行车路线，航线；途径，方法",
+        "zh": "道路；路线；行车路线",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/route/",
         "score": 3,
         "en": "route"
     },
     {
-        "zh": "惯例；常规；固定程序；例行公事；日常工作；无聊，乏味；一系列动作",
+        "zh": "惯例；常规；固定程序",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/routine/",
         "score": 3,
         "en": "routine"
     },
     {
-        "zh": "王室的；皇家的；庄严的，高贵的",
+        "zh": "王室的；皇家的；庄严的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/royal/",
         "score": 3,
         "en": "royal"
     },
     {
-        "zh": "毁灭，毁坏；（使）破产，（使）失去地位；（使）成为废墟",
+        "zh": "毁灭；毁坏；破产",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/ruin/",
         "score": 3,
         "en": "ruin"
     },
     {
-        "zh": "乡村的，农村的；有乡村特色的",
+        "zh": "乡村的；农村的；有乡村特色的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/rural/",
         "score": 3,
         "en": "rural"
     },
     {
-        "zh": "神圣的；宗教的；受尊重的，值得崇敬的",
+        "zh": "神圣的；宗教的；受尊重的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/sacred/",
         "score": 3,
         "en": "sacred"
     },
     {
         "zh": "牺牲；祭品；献祭",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/sacrifice/",
         "score": 3,
         "en": "sacrifice"
     },
     {
-        "zh": "保护，保障，捍卫",
+        "zh": "保护；保障；捍卫",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/safeguard/",
         "score": 3,
         "en": "safeguard"
     },
     {
         "zh": "缘故；价值；日本清酒",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/sake/",
         "score": 3,
         "en": "sake"
     },
     {
-        "zh": "薪金，薪水",
+        "zh": "薪金；薪水",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/salary/",
         "score": 3,
         "en": "salary"
     },
     {
-        "zh": "制裁；许可，批准；处罚，约束",
+        "zh": "制裁；许可；批准",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/sanction/",
         "score": 3,
         "en": "sanction"
     },
     {
         "zh": "令人满意的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/satisfactory/",
         "score": 3,
         "en": "satisfactory"
     },
     {
-        "zh": "凶恶的，凶残的；猛烈抨击的；未开化的，野蛮的",
+        "zh": "凶恶的；凶残的；猛烈抨击的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/savage/",
         "score": 3,
         "en": "savage"
     }

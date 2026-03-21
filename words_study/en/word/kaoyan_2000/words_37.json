@@ -1,351 +1,351 @@
 [
     {
-        "zh": "隶属的，从属的；次要的",
+        "zh": "隶属的；从属的；次要的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/subordinate/",
         "score": 3,
         "en": "subordinate"
     },
     {
-        "zh": "定期订购（杂志等）；定期订阅（服务）；定期捐款；申请，报名；（subscribe to）同意；（subscribe for）认购（股份）",
+        "zh": "定期订购；定期订阅；定期捐款",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/subscribe/",
         "score": 3,
         "en": "subscribe"
     },
     {
-        "zh": "随后的，后来的；紧接的",
+        "zh": "随后的；后来的；紧接的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/subsequent/",
         "score": 3,
         "en": "subsequent"
     },
     {
-        "zh": "财政补贴，津贴，补助金",
+        "zh": "财政补贴；津贴；补助金",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/subsidy/",
         "score": 3,
         "en": "subsidy"
     },
     {
-        "zh": "大量的，重大的；结实的，牢固的；本质的；实体的，真实存在的",
+        "zh": "大量的；重大的；结实的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/substantial/",
         "score": 3,
         "en": "substantial"
     },
     {
-        "zh": "代替者，代替物；替补（运动员）",
+        "zh": "代替者；代替物；替补",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/substitute/",
         "score": 3,
         "en": "substitute"
     },
     {
         "zh": "地铁；地下通道",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/subway/",
         "score": 3,
         "en": "subway"
     },
     {
-        "zh": "连续，一连串；交替，更迭；继任，继任权",
+        "zh": "连续；一连串；交替",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/succession/",
         "score": 3,
         "en": "succession"
     },
     {
-        "zh": "连续的，相继的",
+        "zh": "连续的；相继的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/successive/",
         "score": 3,
         "en": "successive"
     },
     {
-        "zh": "突然的，骤然的",
+        "zh": "突然的；骤然的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/sudden/",
         "score": 3,
         "en": "sudden"
     },
     {
-        "zh": "控告，提起诉讼",
+        "zh": "控告；提起诉讼",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/sue/",
         "score": 3,
         "en": "sue"
     },
     {
-        "zh": "足够的，充足的",
+        "zh": "足够的；充足的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/sufficient/",
         "score": 3,
         "en": "sufficient"
     },
     {
         "zh": "自杀；自取灭亡的行为；自杀者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/suicide/",
         "score": 3,
         "en": "suicide"
     },
     {
-        "zh": "总数，和；金额；算术",
+        "zh": "总数；和；金额",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/sum/",
         "score": 3,
         "en": "sum"
     },
     {
         "zh": "总结；概括；概要",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/summary/",
         "score": 3,
         "en": "summary"
     },
     {
-        "zh": "最高点，顶峰；峰会",
+        "zh": "最高点；顶峰；峰会",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/summit/",
         "score": 3,
         "en": "summit"
     },
     {
-        "zh": "极佳的，卓越的，质量极高的",
+        "zh": "极佳的；卓越的；质量极高的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/superb/",
         "score": 3,
         "en": "superb"
     },
     {
-        "zh": "肤浅的；表面的；外面的；表层的",
+        "zh": "肤浅的；表面的；外面的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/superficial/",
         "score": 3,
         "en": "superficial"
     },
     {
-        "zh": "过剩的，多余的",
+        "zh": "过剩的；多余的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/superfluous/",
         "score": 3,
         "en": "superfluous"
     },
     {
-        "zh": "更好的，占优势的；更高级别的；有优越感的；高质量的",
+        "zh": "更好的；占优势的；更高级别的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/superior/",
         "score": 3,
         "en": "superior"
     },
     {
-        "zh": "优势，优越性；优越感，盛气凌人的行为",
+        "zh": "优势；优越性；优越感",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/superiority/",
         "score": 3,
         "en": "superiority"
     },
     {
-        "zh": "超市，超级市场",
+        "zh": "超市；超级市场",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/supermarket/",
         "score": 3,
         "en": "supermarket"
     },
     {
-        "zh": "迷信，迷信观念",
+        "zh": "迷信；迷信观念",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/superstition/",
         "score": 3,
         "en": "superstition"
     },
     {
-        "zh": "监督，指导，主管",
+        "zh": "监督；指导；主管",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/supervise/",
         "score": 3,
         "en": "supervise"
     },
     {
-        "zh": "补充，增补",
+        "zh": "补充；增补",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/supplement/",
         "score": 3,
         "en": "supplement"
     },
     {
-        "zh": "（地位）最高的，至高无上的；最大的",
+        "zh": "最高的；至高无上的；最大的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/supreme/",
         "score": 3,
         "en": "supreme"
     },
     {
-        "zh": "表面，表层；台面，操作台；表象，外观",
+        "zh": "表面；表层；台面",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/surface/",
         "score": 3,
         "en": "surface"
     },
     {
-        "zh": "（强烈感情的）突发；数量激增；（浪）奔涌向前；（电流等）浪涌",
+        "zh": "突发；数量激增；奔涌向前",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/surge/",
         "score": 3,
         "en": "surge"
     },
     {
         "zh": "外科医生",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/surgeon/",
         "score": 3,
         "en": "surgeon"
     },
     {
-        "zh": "外科手术；诊室，手术室；应诊时间；（议员的）接待时间",
+        "zh": "外科手术；诊室；手术室",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/surgery/",
         "score": 3,
         "en": "surgery"
     },
     {
-        "zh": "超过，胜过，优于",
+        "zh": "超过；胜过；优于",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/surpass/",
         "score": 3,
         "en": "surpass"
     },
     {
-        "zh": "过剩，剩余，剩余额；盈余，顺差",
+        "zh": "过剩；剩余；剩余额",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/surplus/",
         "score": 3,
         "en": "surplus"
     },
     {
-        "zh": "围绕，环绕；使包围；与…紧密相关；（surround oneself with）喜欢被（某种人或事物）环绕",
+        "zh": "围绕；环绕；使包围",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/surround/",
         "score": 3,
         "en": "surround"
     },
     {
-        "zh": "周围的事物，环境",
+        "zh": "周围的事物；环境",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/surroundings/",
         "score": 3,
         "en": "surroundings"
     },
     {
-        "zh": "监视，监控",
+        "zh": "监视；监控",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/surveillance/",
         "score": 3,
         "en": "surveillance"
     },
     {
-        "zh": "民意调查；测量，勘测；概述",
+        "zh": "民意调查；测量；勘测",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/survey/",
         "score": 3,
         "en": "survey"
     },
     {
-        "zh": "敏感的；过敏的；易动感情的；易受影响的；可能有…的",
+        "zh": "敏感的；过敏的；易动感情的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/susceptible/",
         "score": 3,
         "en": "susceptible"
     },
     {
         "zh": "怀疑；觉得",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/suspect/",
         "score": 3,
         "en": "suspect"
     },
     {
-        "zh": "悬，挂；暂停，中止；延缓，推迟；使停职（或停学）",
+        "zh": "悬；挂；暂停",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/suspend/",
         "score": 3,
         "en": "suspend"
     },
     {
-        "zh": "暂缓；暂时停职；（车辆减震用的）悬架",
+        "zh": "暂缓；暂时停职；悬架",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/suspension/",
         "score": 3,
         "en": "suspension"
     },
     {
-        "zh": "怀疑；（不确定的）感觉；猜疑，不放心；（suspicion of）少许，一点儿",
+        "zh": "怀疑；感觉；猜疑",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/suspicion/",
         "score": 3,
         "en": "suspicion"
     },
     {
-        "zh": "引起怀疑的，可疑的；表示怀疑的",
+        "zh": "引起怀疑的；可疑的；表示怀疑的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/suspicious/",
         "score": 3,
         "en": "suspicious"
     },
     {
-        "zh": "保持；使持续不断；（在体力或精神方面）支持，支撑；认可，确认；证明",
+        "zh": "保持；使持续不断；支持",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/sustain/",
         "score": 3,
         "en": "sustain"
     },
     {
-        "zh": "吞下，咽下；（因紧张等）做吞咽动作；吞没；用尽；信以为真；掩饰（情感）；忍受（批评等）",
+        "zh": "吞下；咽下；做吞咽动作",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/swallow/",
         "score": 3,
         "en": "swallow"
     },
     {
-        "zh": "沼泽，沼地",
+        "zh": "沼泽；沼地",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/swamp/",
         "score": 3,
         "en": "swamp"
     },
     {
-        "zh": "一大群（蜜蜂等昆虫）；一大批（向同方向移动的人）",
+        "zh": "一大群；一大批",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/swarm/",
         "score": 3,
         "en": "swarm"
     },
     {
-        "zh": "诅咒，咒骂；发誓要做，郑重承诺；发誓说；使发誓",
+        "zh": "诅咒；咒骂；发誓要做",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/swear/",
         "score": 3,
         "en": "swear"
     },
     {
-        "zh": "摇摆，摆动；纵身跃向；转动，转弯；突然转向；朝…打去；使…改变（意见、情绪等）",
+        "zh": "摇摆；摆动；纵身跃向",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/swing/",
         "score": 3,
         "en": "swing"
     },
     {
-        "zh": "改变，转变；交换，对调；调班",
+        "zh": "改变；转变；交换",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/switch/",
         "score": 3,
         "en": "switch"
     },
     {
-        "zh": "象征，象征物；符号，记号",
+        "zh": "象征；象征物；符号",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/symbol/",
         "score": 3,
         "en": "symbol"
     }

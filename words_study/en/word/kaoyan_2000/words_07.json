@@ -1,351 +1,351 @@
 [
     {
-        "zh": "环形（道路）；电路；巡回赛，巡回表演，巡回审判；赛车道",
+        "zh": "环形；电路；巡回赛",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/circuit/",
         "score": 3,
         "en": "circuit"
     },
     {
-        "zh": "血液循环; 流通, 环流; (货币、资料等)流通, 流传; (书报等)发行, 发行量",
+        "zh": "血液循环；流通；环流",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/circulation/",
         "score": 3,
         "en": "circulation"
     },
     {
-        "zh": "情况，条件，形势，环境",
+        "zh": "情况；条件；形势",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/circumstance/",
         "score": 3,
         "en": "circumstance"
     },
     {
-        "zh": "引用，援引；提及（原因）；传唤，传讯；嘉奖，表彰",
+        "zh": "引用；援引；提及",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/cite/",
         "score": 3,
         "en": "cite"
     },
     {
-        "zh": "平民的；公民的；民用的（区别于军事、宗教事务的）；文明的；民事的",
+        "zh": "平民的；公民的；民用的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/civil/",
         "score": 3,
         "en": "civil"
     },
     {
-        "zh": "澄清，阐明；净化",
+        "zh": "澄清；阐明；净化",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/clarify/",
         "score": 3,
         "en": "clarify"
     },
     {
-        "zh": "典型的，古典的；第一流的；有代表性的",
+        "zh": "典型的；古典的；第一流的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/classic/",
         "score": 3,
         "en": "classic"
     },
     {
-        "zh": "经典的，传统的；典型的；（音乐）古典的；与古希腊和古罗马有关的",
+        "zh": "经典的；传统的；典型的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/classical/",
         "score": 3,
         "en": "classical"
     },
     {
-        "zh": "爪子；（虾蟹类的）钳，螯；爪形（或钳形）工具",
+        "zh": "爪子；钳；螯",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/claw/",
         "score": 3,
         "en": "claw"
     },
     {
-        "zh": "修剪；夹住；碰撞；（从报纸上）剪下",
+        "zh": "修剪；夹住；碰撞",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/clip/",
         "score": 3,
         "en": "clip"
     },
     {
-        "zh": "私党，小集团，派系",
+        "zh": "私党；小集团；派系",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/clique/",
         "score": 3,
         "en": "clique"
     },
     {
-        "zh": "遮盖，隐藏",
+        "zh": "遮盖；隐藏",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/cloak/",
         "score": 3,
         "en": "cloak"
     },
     {
-        "zh": "无性繁殖，克隆",
+        "zh": "无性繁殖；克隆",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/clone/",
         "score": 3,
         "en": "clone"
     },
     {
-        "zh": "教练；私人教师；长途客车；四轮马车；火车车厢",
+        "zh": "教练；私人教师；长途客车",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/coach/",
         "score": 3,
         "en": "coach"
     },
     {
         "zh": "(齿轮的)钝齿",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/cog/",
         "score": 3,
         "en": "cog"
     },
     {
-        "zh": "认知的，认识的，有感知能力的",
+        "zh": "认知的；认识的；有感知能力的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/cognitive/",
         "score": 3,
         "en": "cognitive"
     },
     {
-        "zh": "（看法、思想等）连贯的，条理清晰的；（人）有表达能力的",
+        "zh": "连贯的；条理清晰的；有表达能力的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/coherent/",
         "score": 3,
         "en": "coherent"
     },
     {
-        "zh": "同时发生；（意见等）相同，相符；位置重合，重叠",
+        "zh": "同时发生；相同；相符",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/coincide/",
         "score": 3,
         "en": "coincide"
     },
     {
-        "zh": "合作，协作；勾结，通敌",
+        "zh": "合作；协作；勾结",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/collaborate/",
         "score": 3,
         "en": "collaborate"
     },
     {
-        "zh": "收藏品；采集，收集；一群，一批；聚积，取走；作品集；募捐；系列时装",
+        "zh": "收藏品；采集；收集",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/collection/",
         "score": 3,
         "en": "collection"
     },
     {
-        "zh": "（与）殖民地（有关）的；殖民地所特有的；殖民国家的",
+        "zh": "殖民地的；殖民地所特有的；殖民国家的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/colonial/",
         "score": 3,
         "en": "colonial"
     },
     {
-        "zh": "殖民地；（某一类人的）聚居地；聚居人群（或动植物群体）",
+        "zh": "殖民地；聚居地；聚居人群",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/colony/",
         "score": 3,
         "en": "colony"
     },
     {
-        "zh": "柱，纪念柱；柱状物；纵行，列；（报刊的）栏；专栏；（人或车辆的）长列",
+        "zh": "柱；纪念柱；柱状物",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/column/",
         "score": 3,
         "en": "column"
     },
     {
-        "zh": "战斗，搏斗；打仗",
+        "zh": "战斗；搏斗；打仗",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/combat/",
         "score": 3,
         "en": "combat"
     },
     {
-        "zh": "结合（体），混合（体）；（用于解锁）数字密码组合",
+        "zh": "结合；混合；数字密码组合",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/combination/",
         "score": 3,
         "en": "combination"
     },
     {
-        "zh": "（戏剧流派）喜剧，喜剧片；滑稽，幽默",
+        "zh": "喜剧；喜剧片；滑稽",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/comedy/",
         "score": 3,
         "en": "comedy"
     },
     {
         "zh": "滑稽的；喜剧的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/comic/",
         "score": 3,
         "en": "comic"
     },
     {
-        "zh": "命令；控制，管辖；指挥部；（对知识的）掌握；（计算机）指令",
+        "zh": "命令；控制；管辖",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/command/",
         "score": 3,
         "en": "command"
     },
     {
-        "zh": "纪念（人或事物）",
+        "zh": "纪念",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/commemorate/",
         "score": 3,
         "en": "commemorate"
     },
     {
-        "zh": "贸易，商业",
+        "zh": "贸易；商业",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/commerce/",
         "score": 3,
         "en": "commerce"
     },
     {
         "zh": "正式委托；任命…为军官",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/commission/",
         "score": 3,
         "en": "commission"
     },
     {
-        "zh": "犯罪；进行（自杀）；承诺，保证；全心全意投入；公开表态；花（时间、金钱）；送入（医院、监狱）；记牢；记（在纸上）",
+        "zh": "犯罪；进行；承诺",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/commit/",
         "score": 3,
         "en": "commit"
     },
     {
         "zh": "委员会",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/committee/",
         "score": 3,
         "en": "committee"
     },
     {
         "zh": "商品；有用的东西",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/commodity/",
         "score": 3,
         "en": "commodity"
     },
     {
-        "zh": "交流；传达（想法，情感）；沟通；传播（疾病等）；（房间）相通",
+        "zh": "交流；传达",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/communicate/",
         "score": 3,
         "en": "communicate"
     },
     {
-        "zh": "交流，交际；通信；信息，书信",
+        "zh": "交流；交际；通信",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/communication/",
         "score": 3,
         "en": "communication"
     },
     {
-        "zh": "社区；团体；团体精神；（动植物）群落",
+        "zh": "社区；团体；团体精神",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/community/",
         "score": 3,
         "en": "community"
     },
     {
         "zh": "乘公共交通通勤；减刑",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/commute/",
         "score": 3,
         "en": "commute"
     },
     {
-        "zh": "类似的，可比较的；相当的",
+        "zh": "类似的；可比较的；相当的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/comparable/",
         "score": 3,
         "en": "comparable"
     },
     {
         "zh": "比较的；比较研究的；用比较方法的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/comparative/",
         "score": 3,
         "en": "comparative"
     },
     {
-        "zh": "比较，对比，对照；比喻，比拟",
+        "zh": "比较；对比；对照",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/comparison/",
         "score": 3,
         "en": "comparison"
     },
     {
-        "zh": "强迫，使必须；引起（反应）",
+        "zh": "强迫；使必须；引起",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/compel/",
         "score": 3,
         "en": "compel"
     },
     {
-        "zh": "能力，胜任；技能；权限",
+        "zh": "能力；胜任；技能",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/competence/",
         "score": 3,
         "en": "competence"
     },
     {
-        "zh": "编写，编纂；收集（信息，资料）；（计算机）编译",
+        "zh": "编写；编纂；收集（信息",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/compile/",
         "score": 3,
         "en": "compile"
     },
     {
-        "zh": "抱怨，埋怨；投诉；（不严重的）疾病",
+        "zh": "抱怨；埋怨；投诉",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/complaint/",
         "score": 3,
         "en": "complaint"
     },
     {
-        "zh": "复杂的，难懂的",
+        "zh": "复杂的；难懂的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/complicated/",
         "score": 3,
         "en": "complicated"
     },
     {
-        "zh": "遵从，服从",
+        "zh": "遵从；服从",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/comply/",
         "score": 3,
         "en": "comply"
     },
     {
         "zh": "组成部分；零件",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/component/",
         "score": 3,
         "en": "component"
     },
     {
-        "zh": "成分；组成方式；（艺术）作品；作曲；作文",
+        "zh": "成分；组成方式；作品",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/composition/",
         "score": 3,
         "en": "composition"
     },
     {
-        "zh": "理解，理解力；（语言学习中的）理解练习",
+        "zh": "理解；理解力；理解练习",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/comprehension/",
         "score": 3,
         "en": "comprehension"
     }

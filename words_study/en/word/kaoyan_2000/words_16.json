@@ -2,350 +2,350 @@
     {
         "zh": "牵强的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/farfetched/",
         "score": 3,
         "en": "farfetched"
     },
     {
-        "zh": "时尚，（衣服、发型等）流行款式；潮流，时兴；时尚界；方式",
+        "zh": "时尚；流行款式；潮流",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/fashion/",
         "score": 3,
         "en": "fashion"
     },
     {
-        "zh": "时尚的，时髦的，流行的；时髦人物使用的，有钱人常去的",
+        "zh": "时尚的；时髦的；流行的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/fashionable/",
         "score": 3,
         "en": "fashionable"
     },
     {
-        "zh": "致命的；灾难性的，导致失败的",
+        "zh": "致命的；灾难性的；导致失败的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/fatal/",
         "score": 3,
         "en": "fatal"
     },
     {
-        "zh": "疲惫；厌倦；（金属或木材的）疲劳",
+        "zh": "疲惫；厌倦；疲劳",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/fatigue/",
         "score": 3,
         "en": "fatigue"
     },
     {
-        "zh": "有缺陷的，有错误的",
+        "zh": "有缺陷的；有错误的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/faulty/",
         "score": 3,
         "en": "faulty"
     },
     {
-        "zh": "（对某人或某事物）有利的，顺利的；赞许的",
+        "zh": "有利的；顺利的；赞许的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/favourable/",
         "score": 3,
         "en": "favourable"
     },
     {
         "zh": "特别喜爱的人或事物；最有希望的获胜者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/favourite/",
         "score": 3,
         "en": "favourite"
     },
     {
-        "zh": "可怕的，吓人的；担忧的",
+        "zh": "可怕的；吓人的；担忧的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/fearful/",
         "score": 3,
         "en": "fearful"
     },
     {
-        "zh": "可行的，行得通的",
+        "zh": "可行的；行得通的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/feasible/",
         "score": 3,
         "en": "feasible"
     },
     {
-        "zh": "功绩，壮举",
+        "zh": "功绩；壮举",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/feat/",
         "score": 3,
         "en": "feat"
     },
     {
-        "zh": "特征，特色；（报纸、电视等的）专题节目；面容的一部分（如眼、口等）；（电影的）正片",
+        "zh": "特征；特色；专题节目",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/feature/",
         "score": 3,
         "en": "feature"
     },
     {
-        "zh": "联邦，联邦制国家；联合会；结成联邦或联盟",
+        "zh": "联邦；联邦制国家；联合会",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/federation/",
         "score": 3,
         "en": "federation"
     },
     {
-        "zh": "费用；酬金，专业服务费",
+        "zh": "费用；酬金；专业服务费",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/fee/",
         "score": 3,
         "en": "fee"
     },
     {
-        "zh": "（尤指因年老或疾病而）虚弱的，衰弱的，乏力的；无效的；不可信的",
+        "zh": "虚弱的；衰弱的；乏力的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/feeble/",
         "score": 3,
         "en": "feeble"
     },
     {
-        "zh": "反馈；（电器的）反馈噪音",
+        "zh": "反馈；反馈噪音",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/feedback/",
         "score": 3,
         "en": "feedback"
     },
     {
-        "zh": "女性的；母的；女性特有的；能结果实的；（电气设备）阴的",
+        "zh": "女性的；母的；女性特有的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/female/",
         "score": 3,
         "en": "female"
     },
     {
-        "zh": "肥沃的，富饶的；能生育的；促进的；（想象力）丰富的",
+        "zh": "肥沃的；富饶的；能生育的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/fertile/",
         "score": 3,
         "en": "fertile"
     },
     {
-        "zh": "节日；（音乐、艺术等）节",
+        "zh": "节日；节",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/festival/",
         "score": 3,
         "en": "festival"
     },
     {
         "zh": "兴奋地",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/feverishly/",
         "score": 3,
         "en": "feverishly"
     },
     {
-        "zh": "小说；虚构的事，谎言",
+        "zh": "小说；虚构的事；谎言",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/fiction/",
         "score": 3,
         "en": "fiction"
     },
     {
-        "zh": "（人或动物）凶猛的；（动作或情感）强烈的，猛烈的；（天气等）狂暴的",
+        "zh": "凶猛的；强烈的；猛烈的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/fierce/",
         "score": 3,
         "en": "fierce"
     },
     {
-        "zh": "文件；文件夹；档案；锉刀；排成一行的人（或物）",
+        "zh": "文件；文件夹；档案",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/file/",
         "score": 3,
         "en": "file"
     },
     {
         "zh": "过滤器；筛选程序",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/filter/",
         "score": 3,
         "en": "filter"
     },
     {
-        "zh": "为（个人，企业）供给资金",
+        "zh": "为供给资金",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/finance/",
         "score": 3,
         "en": "finance"
     },
     {
         "zh": "财政的；金融的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/financial/",
         "score": 3,
         "en": "financial"
     },
     {
-        "zh": "有限的，有限制的；（语法）限定性的",
+        "zh": "有限的；有限制的；限定性的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/finite/",
         "score": 3,
         "en": "finite"
     },
     {
         "zh": "财政的；国库的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/fiscal/",
         "score": 3,
         "en": "fiscal"
     },
     {
-        "zh": "裂缝，裂沟",
+        "zh": "裂缝；裂沟",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/fissure/",
         "score": 3,
         "en": "fissure"
     },
     {
-        "zh": "振（翅）；（上下）拍打，（左右）摆动；忧虑，激动",
+        "zh": "振；拍打；摆动",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/flap/",
         "score": 3,
         "en": "flap"
     },
     {
-        "zh": "闪光；闪现；快速出示；飞驰；突然想到；显示；（用光）发出信号",
+        "zh": "闪光；闪现；快速出示",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/flash/",
         "score": 3,
         "en": "flash"
     },
     {
-        "zh": "错误，缺陷；（性格）缺点；裂痕，瑕疵",
+        "zh": "错误；缺陷；缺点",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/flaw/",
         "score": 3,
         "en": "flaw"
     },
     {
-        "zh": "逃离，逃跑，迅速离开",
+        "zh": "逃离；逃跑；迅速离开",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/flee/",
         "score": 3,
         "en": "flee"
     },
     {
         "zh": "舰队；捕鱼船队；车队",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/fleet/",
         "score": 3,
         "en": "fleet"
     },
     {
-        "zh": "肉；（人的）皮肤；果肉",
+        "zh": "肉；皮肤；果肉",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/flesh/",
         "score": 3,
         "en": "flesh"
     },
     {
-        "zh": "适应性强的，灵活的；柔韧的，易弯曲的",
+        "zh": "适应性强的；灵活的；柔韧的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/flexible/",
         "score": 3,
         "en": "flexible"
     },
     {
         "zh": "轻抛；蹦跳；快速翻动",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/flip/",
         "score": 3,
         "en": "flip"
     },
     {
-        "zh": "兽群，鸟群；一大群；信众；小块填料；植绒材料",
+        "zh": "兽群；鸟群；一大群",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/flock/",
         "score": 3,
         "en": "flock"
     },
     {
         "zh": "流行性感冒",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/flu/",
         "score": 3,
         "en": "flu"
     },
     {
-        "zh": "波动，起伏不定",
+        "zh": "波动；起伏不定",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/fluctuate/",
         "score": 3,
         "en": "fluctuate"
     },
     {
-        "zh": "人；家人；大伙儿；普通百姓",
+        "zh": "人；家人；大伙儿",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/folk/",
         "score": 3,
         "en": "folk"
     },
     {
-        "zh": "禁止；阻止，妨碍",
+        "zh": "禁止；阻止；妨碍",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/forbid/",
         "score": 3,
         "en": "forbid"
     },
     {
-        "zh": "预报，预测",
+        "zh": "预报；预测",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/forecast/",
         "score": 3,
         "en": "forecast"
     },
     {
         "zh": "最重要的；最著名的；最前的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/foremost/",
         "score": 3,
         "en": "foremost"
     },
     {
-        "zh": "预见，预知",
+        "zh": "预见；预知",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/foresee/",
         "score": 3,
         "en": "foresee"
     },
     {
-        "zh": "伪造，假冒；艰苦干成，努力缔造；锻造；稳步前进",
+        "zh": "伪造；假冒；艰苦干成",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/forge/",
         "score": 3,
         "en": "forge"
     },
     {
-        "zh": "（场合、言论等）正式的；（服装）适合正式场合的；官方的，正式的；（教育等）正规的；形式上的；布置整齐的",
+        "zh": "正式的；适合正式场合的；官方的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/formal/",
         "score": 3,
         "en": "formal"
     },
     {
-        "zh": "总体安排，程式；（出版物等的）版式，开本；（计算机）格式",
+        "zh": "总体安排；程式；版式",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/format/",
         "score": 3,
         "en": "format"
     },
     {
-        "zh": "组成，形成；形成物；队形",
+        "zh": "组成；形成；形成物",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/formation/",
         "score": 3,
         "en": "formation"
     },
     {
-        "zh": "以前的；昔日的；（两者中）前者的",
+        "zh": "以前的；昔日的；前者的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/former/",
         "score": 3,
         "en": "former"
     }

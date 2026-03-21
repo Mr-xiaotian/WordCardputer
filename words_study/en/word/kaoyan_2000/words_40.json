@@ -1,351 +1,351 @@
 [
     {
-        "zh": "动荡的，混乱的；汹涌的；（人）骚动的",
+        "zh": "动荡的；混乱的；汹涌的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/turbulent/",
         "score": 3,
         "en": "turbulent"
     },
     {
-        "zh": "营业额，成交量；人员更替率；货物周转率",
+        "zh": "营业额；成交量；人员更替率",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/turnover/",
         "score": 3,
         "en": "turnover"
     },
     {
-        "zh": "使弯曲；扭转（身体部位）；（用手）转动；（道路，河流）曲折，盘旋；扭伤；使缠绕；歪曲，曲解（事实）；捻，搓（线等）",
+        "zh": "使弯曲；扭转；转动",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/twist/",
         "score": 3,
         "en": "twist"
     },
     {
         "zh": "打字机",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/typewriter/",
         "score": 3,
         "en": "typewriter"
     },
     {
         "zh": "典型的；一贯的；特有的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/typical/",
         "score": 3,
         "en": "typical"
     },
     {
         "zh": "打字员",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/typist/",
         "score": 3,
         "en": "typist"
     },
     {
-        "zh": "最终的；终极的；根本的，基本的",
+        "zh": "最终的；终极的；根本的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/ultimate/",
         "score": 3,
         "en": "ultimate"
     },
     {
-        "zh": "（意见，决定，投票）全体一致的；意见一致的",
+        "zh": "全体一致的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/unanimous/",
         "score": 3,
         "en": "unanimous"
     },
     {
-        "zh": "揭发，发现；揭开（遮盖物）",
+        "zh": "揭发；发现；揭开",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/uncover/",
         "score": 3,
         "en": "uncover"
     },
     {
-        "zh": "低估；对…认识不足，轻视",
+        "zh": "低估；对…认识不足；轻视",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/underestimate/",
         "score": 3,
         "en": "underestimate"
     },
     {
-        "zh": "经历，经受，遭受",
+        "zh": "经历；经受；遭受",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/undergo/",
         "score": 3,
         "en": "undergo"
     },
     {
-        "zh": "地下的；暗中的，秘密的",
+        "zh": "地下的；暗中的；秘密的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/underground/",
         "score": 3,
         "en": "underground"
     },
     {
-        "zh": "强调；突出；在（词语等下）画线；画底线标出",
+        "zh": "强调；突出；在画线",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/underline/",
         "score": 3,
         "en": "underline"
     },
     {
-        "zh": "含蓄的；潜在的；根本的；在下面的",
+        "zh": "含蓄的；潜在的；根本的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/underlying/",
         "score": 3,
         "en": "underlying"
     },
     {
         "zh": "暗中破坏；逐渐削弱；侵蚀…的基础",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/undermine/",
         "score": 3,
         "en": "undermine"
     },
     {
-        "zh": "不合意的；有害的；讨厌的；令人不愉快的；不想要的；不得人心的；易惹麻烦的",
+        "zh": "不合意的；有害的；讨厌的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/undesirable/",
         "score": 3,
         "en": "undesirable"
     },
     {
-        "zh": "不适当的，过度的",
+        "zh": "不适当的；过度的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/undue/",
         "score": 3,
         "en": "undue"
     },
     {
-        "zh": "忧虑的，令人不安的；不稳定的；不和谐的，矛盾的",
+        "zh": "忧虑的；令人不安的；不稳定的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/uneasy/",
         "score": 3,
         "en": "uneasy"
     },
     {
-        "zh": "失业人数；失业比率；失业；失业状态",
+        "zh": "失业人数；失业比率；失业",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/unemployment/",
         "score": 3,
         "en": "unemployment"
     },
     {
-        "zh": "透露；展现（思想，信息）；（使）展开，打开",
+        "zh": "透露；展现",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/unfold/",
         "score": 3,
         "en": "unfold"
     },
     {
-        "zh": "协会，工会，同盟；联合，合并；一致，融洽；结婚；婚姻",
+        "zh": "协会；工会；同盟",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/union/",
         "score": 3,
         "en": "union"
     },
     {
-        "zh": "独一无二的；独特的；属于特定（人、地方或物）的",
+        "zh": "独一无二的；独特的；属于特定的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/unique/",
         "score": 3,
         "en": "unique"
     },
     {
-        "zh": "团结一致；统一；和谐，协调；一致性；联合体，整体",
+        "zh": "团结一致；统一；和谐",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/unity/",
         "score": 3,
         "en": "unity"
     },
     {
-        "zh": "全世界的，普遍的；普遍存在的，广泛适用的",
+        "zh": "全世界的；普遍的；普遍存在的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/universal/",
         "score": 3,
         "en": "universal"
     },
     {
-        "zh": "宇宙；领域，体系，范围",
+        "zh": "宇宙；领域；体系",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/universe/",
         "score": 3,
         "en": "universe"
     },
     {
         "zh": "不大可能发生的；非理想的；难以信服的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/unlikely/",
         "score": 3,
         "en": "unlikely"
     },
     {
         "zh": "更新；使现代化",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/update/",
         "score": 3,
         "en": "update"
     },
     {
-        "zh": "使升级，改进；提拔，提升；提高（乘客住客等的）待遇；提高（设施等的）档次",
+        "zh": "使升级；改进；提拔",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/upgrade/",
         "score": 3,
         "en": "upgrade"
     },
     {
-        "zh": "上面的，上层的；上部的，靠上的；内陆的，高地的",
+        "zh": "上面的；上层的；上部的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/upper/",
         "score": 3,
         "en": "upper"
     },
     {
-        "zh": "打乱，扰乱；使…心烦意乱，使失望，使苦恼；弄翻，打翻；使肠胃不适",
+        "zh": "打乱；扰乱；使…心烦意乱",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/upset/",
         "score": 3,
         "en": "upset"
     },
     {
-        "zh": "向上的，朝上的；（价格、数量）上涨的",
+        "zh": "向上的；朝上的；上涨的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/upward/",
         "score": 3,
         "en": "upward"
     },
     {
-        "zh": "敦促，催促；竭力主张；驱赶，鞭策",
+        "zh": "敦促；催促；竭力主张",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/urge/",
         "score": 3,
         "en": "urge"
     },
     {
-        "zh": "紧急的，迫切的；急切的，催促的",
+        "zh": "紧急的；迫切的；急切的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/urgent/",
         "score": 3,
         "en": "urgent"
     },
     {
         "zh": "最大的；极度的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/utmost/",
         "score": 3,
         "en": "utmost"
     },
     {
-        "zh": "完全的，彻底的，十足的",
+        "zh": "完全的；彻底的；十足的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/utter/",
         "score": 3,
         "en": "utter"
     },
     {
-        "zh": "[医]预防接种; 牛痘疤",
+        "zh": "[医]预防接种；牛痘疤",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/vaccination/",
         "score": 3,
         "en": "vaccination"
     },
     {
-        "zh": "疫苗，菌苗",
+        "zh": "疫苗；菌苗",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/vaccine/",
         "score": 3,
         "en": "vaccine"
     },
     {
-        "zh": "模糊的，不明确的；朦胧的；粗略的；心不在焉的，茫然的",
+        "zh": "模糊的；不明确的；朦胧的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/vague/",
         "score": 3,
         "en": "vague"
     },
     {
-        "zh": "徒劳的，徒然的；自负的，自视过高的",
+        "zh": "徒劳的；徒然的；自负的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/vain/",
         "score": 3,
         "en": "vain"
     },
     {
-        "zh": "突然消失；灭亡，绝迹",
+        "zh": "突然消失；灭亡；绝迹",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/vanish/",
         "score": 3,
         "en": "vanish"
     },
     {
-        "zh": "多变的，易变的；可更改的，可变的",
+        "zh": "多变的；易变的；可更改的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/variable/",
         "score": 3,
         "en": "variable"
     },
     {
-        "zh": "变化，变更；变种；变奏曲",
+        "zh": "变化；变更；变种",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/variation/",
         "score": 3,
         "en": "variation"
     },
     {
-        "zh": "巨大的，广阔的，庞大的，大量的",
+        "zh": "巨大的；广阔的；庞大的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/vast/",
         "score": 3,
         "en": "vast"
     },
     {
-        "zh": "速度；高速，快速",
+        "zh": "速度；高速；快速",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/velocity/",
         "score": 3,
         "en": "velocity"
     },
     {
-        "zh": "使通风；公开表达（意见等）",
+        "zh": "使通风；公开表达",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/ventilate/",
         "score": 3,
         "en": "ventilate"
     },
     {
-        "zh": "冒险去；小心地说，谨慎地做；冒着（失去某物）的危险",
+        "zh": "冒险去；小心地说；谨慎地做",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/venture/",
         "score": 3,
         "en": "venture"
     },
     {
-        "zh": "（法院作出的）裁决，判决；（经过思考后的）判断，意见",
+        "zh": "裁决；判决；判断",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/verdict/",
         "score": 3,
         "en": "verdict"
     },
     {
-        "zh": "核实；证明，证实",
+        "zh": "核实；证明；证实",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/verify/",
         "score": 3,
         "en": "verify"
     },
     {
-        "zh": "（电影、剧本等的）版本，变体；（其他人对于某事的不同）说法",
+        "zh": "版本；变体；说法",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/version/",
         "score": 3,
         "en": "version"
     },
     {
         "zh": "垂直的；纵向的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/vertical/",
         "score": 3,
         "en": "vertical"
     }

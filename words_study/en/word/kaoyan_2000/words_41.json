@@ -1,351 +1,351 @@
 [
     {
-        "zh": "退伍军人，老兵；有经验的人，老手",
+        "zh": "退伍军人；老兵；有经验的人",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/veteran/",
         "score": 3,
         "en": "veteran"
     },
     {
-        "zh": "行使否决权，拒绝认可；拒不接受，否决，反对",
+        "zh": "行使否决权；拒绝认可；拒不接受",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/veto/",
         "score": 3,
         "en": "veto"
     },
     {
-        "zh": "弱点，不良习惯；堕落，邪恶；犯罪活动；老虎钳",
+        "zh": "弱点；不良习惯；堕落",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/vice/",
         "score": 3,
         "en": "vice"
     },
     {
-        "zh": "狂暴的，残酷的；凶猛危险的；恶毒的；充满仇恨的；恶劣的，严重的",
+        "zh": "狂暴的；残酷的；凶猛危险的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/vicious/",
         "score": 3,
         "en": "vicious"
     },
     {
-        "zh": "受害者，遭难者，罹难者；祭品",
+        "zh": "受害者；遭难者；罹难者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/victim/",
         "score": 3,
         "en": "victim"
     },
     {
-        "zh": "录像，视频；录像带；录像机；录制",
+        "zh": "录像；视频；录像带",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/video/",
         "score": 3,
         "en": "video"
     },
     {
-        "zh": "暴力，暴行；（言行的）狂暴，激烈，猛烈",
+        "zh": "暴力；暴行；狂暴",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/violence/",
         "score": 3,
         "en": "violence"
     },
     {
-        "zh": "处女；童男；无经验的人；新手",
+        "zh": "处女；童男；无经验的人",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/virgin/",
         "score": 3,
         "en": "virgin"
     },
     {
-        "zh": "虚拟的，模拟的；实际上的，实质上的",
+        "zh": "虚拟的；模拟的；实际上的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/virtual/",
         "score": 3,
         "en": "virtual"
     },
     {
-        "zh": "德行，高尚的道德；美德，优秀品质；优点，长处",
+        "zh": "德行；高尚的道德；美德",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/virtue/",
         "score": 3,
         "en": "virtue"
     },
     {
         "zh": "病毒；计算机程序的病毒",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/virus/",
         "score": 3,
         "en": "virus"
     },
     {
-        "zh": "必不可少的，至关重要的；维持生命必须的；生气勃勃的，充满生机的",
+        "zh": "必不可少的；至关重要的；维持生命必须的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/vital/",
         "score": 3,
         "en": "vital"
     },
     {
-        "zh": "维生素，维他命",
+        "zh": "维生素；维他命",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/vitamin/",
         "score": 3,
         "en": "vitamin"
     },
     {
-        "zh": "词汇量；（某种语言或学科的）词汇；（教材中的）词汇表",
+        "zh": "词汇量；词汇；词汇表",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/vocabulary/",
         "score": 3,
         "en": "vocabulary"
     },
     {
-        "zh": "嗓音的，发声的；直言不讳的，大声表达的",
+        "zh": "嗓音的；发声的；直言不讳的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/vocal/",
         "score": 3,
         "en": "vocal"
     },
     {
-        "zh": "易变的，不稳定的；易挥发的",
+        "zh": "易变的；不稳定的；易挥发的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/volatile/",
         "score": 3,
         "en": "volatile"
     },
     {
         "zh": "火山",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/volcano/",
         "score": 3,
         "en": "volcano"
     },
     {
-        "zh": "量，额；体积，容量；音量；（书）卷，册；合订本",
+        "zh": "量；额；体积",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/volume/",
         "score": 3,
         "en": "volume"
     },
     {
         "zh": "元音；元音字母",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/vowel/",
         "score": 3,
         "en": "vowel"
     },
     {
-        "zh": "（身体或情感上）易受攻击的，易受伤害的；脆弱的",
+        "zh": "易受攻击的；易受伤害的；脆弱的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/vulnerable/",
         "score": 3,
         "en": "vulnerable"
     },
     {
-        "zh": "工资，工钱（尤指日薪或周薪）",
+        "zh": "工资；工钱",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/wage/",
         "score": 3,
         "en": "wage"
     },
     {
-        "zh": "游荡，漫步，闲逛；偏离（正道）；走神；蜿蜒；（目光）无目的地移动",
+        "zh": "游荡；漫步；闲逛",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/wander/",
         "score": 3,
         "en": "wander"
     },
     {
-        "zh": "病房；选区；受监护人（尤指儿童）",
+        "zh": "病房；选区；受监护人",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/ward/",
         "score": 3,
         "en": "ward"
     },
     {
-        "zh": "衣柜，衣橱；（一个人的）全部衣物",
+        "zh": "衣柜；衣橱；全部衣物",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/wardrobe/",
         "score": 3,
         "en": "wardrobe"
     },
     {
         "zh": "使有必要；使正当；使恰当",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/warrant/",
         "score": 3,
         "en": "warrant"
     },
     {
         "zh": "富有的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/wealthy/",
         "score": 3,
         "en": "wealthy"
     },
     {
-        "zh": "疲劳的；令人厌烦的；（对…）感到不耐烦的",
+        "zh": "疲劳的；令人厌烦的；感到不耐烦的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/weary/",
         "score": 3,
         "en": "weary"
     },
     {
-        "zh": "楔子，楔形物",
+        "zh": "楔子；楔形物",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/wedge/",
         "score": 3,
         "en": "wedge"
     },
     {
-        "zh": "焊接，熔接，锻接",
+        "zh": "焊接；熔接；锻接",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/weld/",
         "score": 3,
         "en": "weld"
     },
     {
-        "zh": "幸福；（社会）福利；社会保障金",
+        "zh": "幸福；福利；社会保障金",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/welfare/",
         "score": 3,
         "en": "welfare"
     },
     {
-        "zh": "借以，凭",
+        "zh": "借以；凭",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/whereby/",
         "score": 3,
         "en": "whereby"
     },
     {
-        "zh": "旋风，涡动；猛烈的势力",
+        "zh": "旋风；涡动；猛烈的势力",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/whirlwind/",
         "score": 3,
         "en": "whirlwind"
     },
     {
         "zh": "批发地；大规模地",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/wholesale/",
         "score": 3,
         "en": "wholesale"
     },
     {
-        "zh": "分布（或散布）广的，普遍的",
+        "zh": "分布广的；普遍的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/widespread/",
         "score": 3,
         "en": "widespread"
     },
     {
-        "zh": "寡妇，遗孀，孀妇",
+        "zh": "寡妇；遗孀；孀妇",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/widow/",
         "score": 3,
         "en": "widow"
     },
     {
-        "zh": "智力，领悟力；明智；风趣，机智；机智幽默的人",
+        "zh": "智力；领悟力；明智",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/wit/",
         "score": 3,
         "en": "wit"
     },
     {
-        "zh": "撤回，撤离；提取，取（款）；停止提供；退出；脱离（社会）",
+        "zh": "撤回；撤离；提取",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/withdraw/",
         "score": 3,
         "en": "withdraw"
     },
     {
-        "zh": "拒给，不给",
+        "zh": "拒给；不给",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/withhold/",
         "score": 3,
         "en": "withhold"
     },
     {
         "zh": "目击者；证人；见证人",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/witness/",
         "score": 3,
         "en": "witness"
     },
     {
-        "zh": "在全世界，在世界各地",
+        "zh": "在全世界；在世界各地",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/worldwide/",
         "score": 3,
         "en": "worldwide"
     },
     {
-        "zh": "崇敬，爱戴；（对上帝或神的）崇拜",
+        "zh": "崇敬；爱戴；崇拜",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/worship/",
         "score": 3,
         "en": "worship"
     },
     {
-        "zh": "值得的，值得做的，重要的，有价值的；有趣的",
+        "zh": "值得的；值得做的；重要的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/worthwhile/",
         "score": 3,
         "en": "worthwhile"
     },
     {
-        "zh": "值得尊敬的；（worthy of）值得…的，有…的典型特征",
+        "zh": "值得尊敬的；值得…的；有…的典型特征",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/worthy/",
         "score": 3,
         "en": "worthy"
     },
     {
-        "zh": "包，裹；用…包裹；（文字）换行",
+        "zh": "包；裹；用…包裹",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/wrap/",
         "score": 3,
         "en": "wrap"
     },
     {
-        "zh": "手腕，腕关节",
+        "zh": "手腕；腕关节",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/wrist/",
         "score": 3,
         "en": "wrist"
     },
     {
-        "zh": "微黄的，发黄的",
+        "zh": "微黄的；发黄的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/yellowish/",
         "score": 3,
         "en": "yellowish"
     },
     {
-        "zh": "出产（产品、作物等），产生（收益等）；屈服，让步；放弃；（因受压）活动，变形；让行",
+        "zh": "出产；产生；屈服",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/yield/",
         "score": 3,
         "en": "yield"
     },
     {
         "zh": "年轻人；少年；儿童",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/youngster/",
         "score": 3,
         "en": "youngster"
     },
     {
-        "zh": "热情，热忱",
+        "zh": "热情；热忱",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/zeal/",
         "score": 3,
         "en": "zeal"
     },
     {
-        "zh": "（有某种特点、特性、目的、用途等的）地带，区域；气候带",
+        "zh": "地带；区域；气候带",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/zone/",
         "score": 3,
         "en": "zone"
     }

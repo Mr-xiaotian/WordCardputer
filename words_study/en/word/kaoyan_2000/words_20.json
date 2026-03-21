@@ -1,351 +1,351 @@
 [
     {
-        "zh": "想象力；想象，幻想物",
+        "zh": "想象力；想象；幻想物",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/imagination/",
         "score": 3,
         "en": "imagination"
     },
     {
-        "zh": "有想象力的，创新的",
+        "zh": "有想象力的；创新的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/imaginative/",
         "score": 3,
         "en": "imaginative"
     },
     {
-        "zh": "模仿，仿效；（常为逗乐）学…的样",
+        "zh": "模仿；仿效；学…的样",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/imitate/",
         "score": 3,
         "en": "imitate"
     },
     {
-        "zh": "模仿，效仿；赝品，仿品；滑稽模仿",
+        "zh": "模仿；效仿；赝品",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/imitation/",
         "score": 3,
         "en": "imitation"
     },
     {
-        "zh": "巨大的，广大的",
+        "zh": "巨大的；广大的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/immense/",
         "score": 3,
         "en": "immense"
     },
     {
-        "zh": "移民，侨民",
+        "zh": "移民；侨民",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/immigrant/",
         "score": 3,
         "en": "immigrant"
     },
     {
-        "zh": "有免疫力的；不受影响的；受保护的，豁免的",
+        "zh": "有免疫力的；不受影响的；受保护的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/immune/",
         "score": 3,
         "en": "immune"
     },
     {
-        "zh": "重要紧急的事，必要的事；（语法）祈使语气，祈使语气动词",
+        "zh": "重要紧急的事；必要的事；祈使语气",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/imperative/",
         "score": 3,
         "en": "imperative"
     },
     {
-        "zh": "贯彻，实行，履行（决定、计划、协议等）；使生效",
+        "zh": "贯彻；实行；履行",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/implement/",
         "score": 3,
         "en": "implement"
     },
     {
-        "zh": "含蓄的，不言明的；内含的；绝对的，完全的",
+        "zh": "含蓄的；不言明的；内含的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/implicit/",
         "score": 3,
         "en": "implicit"
     },
     {
-        "zh": "暗示，暗指；意味；表明；使…有必要",
+        "zh": "暗示；暗指；意味",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/imply/",
         "score": 3,
         "en": "imply"
     },
     {
-        "zh": "进口，引进；【计】输入，导入",
+        "zh": "进口；引进；【计】输入",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/import/",
         "score": 3,
         "en": "import"
     },
     {
-        "zh": "推行，强制实行；把…强加于；使承受（令人不快的事物）；勉强（某人做）",
+        "zh": "推行；强制实行；把…强加于",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/impose/",
         "score": 3,
         "en": "impose"
     },
     {
         "zh": "穷困的；无力的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/impoverished/",
         "score": 3,
         "en": "impoverished"
     },
     {
         "zh": "给人深刻印象的；使人敬佩的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/impressive/",
         "score": 3,
         "en": "impressive"
     },
     {
         "zh": "禁锢；关押",
         "pos": "vt",
-        "phonetic": "",
+        "phonetic": "/imprison/",
         "score": 3,
         "en": "imprison"
     },
     {
-        "zh": "先天的；天生的，生来的",
+        "zh": "先天的；天生的；生来的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/inborn/",
         "score": 3,
         "en": "inborn"
     },
     {
         "zh": "激励；刺激；鼓励",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/incentive/",
         "score": 3,
         "en": "incentive"
     },
     {
-        "zh": "（疾病、犯罪等的）发生率；发生范围，影响程度",
+        "zh": "发生率；发生范围；影响程度",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/incidence/",
         "score": 3,
         "en": "incidence"
     },
     {
-        "zh": "（使）倾向于；（使）倾斜；点头（以示同意等）",
+        "zh": "倾向于；倾斜；点头",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/incline/",
         "score": 3,
         "en": "incline"
     },
     {
         "zh": "全部包含在内的；范围广泛的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/inclusive/",
         "score": 3,
         "en": "inclusive"
     },
     {
-        "zh": "不完整的，不完全的；未完成的",
+        "zh": "不完整的；不完全的；未完成的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/incomplete/",
         "score": 3,
         "en": "incomplete"
     },
     {
-        "zh": "不断增加地，日益",
+        "zh": "不断增加地；日益",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/increasingly/",
         "score": 3,
         "en": "increasingly"
     },
     {
-        "zh": "难以置信的，惊人的；极好的，极大的",
+        "zh": "难以置信的；惊人的；极好的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/incredible/",
         "score": 3,
         "en": "incredible"
     },
     {
-        "zh": "招致，遭受；带来（花费等）",
+        "zh": "招致；遭受；带来",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/incur/",
         "score": 3,
         "en": "incur"
     },
     {
-        "zh": "独立，自主，自立",
+        "zh": "独立；自主；自立",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/independence/",
         "score": 3,
         "en": "independence"
     },
     {
-        "zh": "（国家）独立的；（人）自立的；有主见的；不相关的；公正的，无偏见的；私营的；无党派的",
+        "zh": "独立的；自立的；有主见的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/independent/",
         "score": 3,
         "en": "independent"
     },
     {
-        "zh": "索引；指标，标志；（消费）指数",
+        "zh": "索引；指标；标志",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/index/",
         "score": 3,
         "en": "index"
     },
     {
-        "zh": "表明；暗示；指出；象征，代表；（仪器等）指示；（车辆打转向灯）指示转向",
+        "zh": "表明；暗示；指出",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/indicate/",
         "score": 3,
         "en": "indicate"
     },
     {
-        "zh": "漠不关心的，不感兴趣的；一般的",
+        "zh": "漠不关心的；不感兴趣的；一般的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/indifferent/",
         "score": 3,
         "en": "indifferent"
     },
     {
-        "zh": "愤慨；愤怒；义愤；气愤",
+        "zh": "愤慨；愤怒；义愤",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/indignation/",
         "score": 3,
         "en": "indignation"
     },
     {
         "zh": "不可或缺的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/indispensable/",
         "score": 3,
         "en": "indispensable"
     },
     {
-        "zh": "导致，引起；诱使，劝说；催生",
+        "zh": "导致；引起；诱使",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/induce/",
         "score": 3,
         "en": "induce"
     },
     {
-        "zh": "沉溺于；放纵，迁就；满足（欲望）；参加（违法活动）",
+        "zh": "沉溺于；放纵；迁就",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/indulge/",
         "score": 3,
         "en": "indulge"
     },
     {
         "zh": "不适当地；无能地",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/ineptly/",
         "score": 3,
         "en": "ineptly"
     },
     {
-        "zh": "必然发生的，不可避免的",
+        "zh": "必然发生的；不可避免的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/inevitable/",
         "score": 3,
         "en": "inevitable"
     },
     {
-        "zh": "（过程）不可阻挡的",
+        "zh": "不可阻挡的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/inexorable/",
         "score": 3,
         "en": "inexorable"
     },
     {
         "zh": "婴儿；幼儿",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/infant/",
         "score": 3,
         "en": "infant"
     },
     {
-        "zh": "传染病；传染，感染；传播",
+        "zh": "传染病；传染；感染",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/infection/",
         "score": 3,
         "en": "infection"
     },
     {
-        "zh": "推断，推定；暗示，暗指",
+        "zh": "推断；推定；暗示",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/infer/",
         "score": 3,
         "en": "infer"
     },
     {
-        "zh": "级别低的；（质量等）较差的，次的",
+        "zh": "级别低的；较差的；次的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/inferior/",
         "score": 3,
         "en": "inferior"
     },
     {
         "zh": "通货膨胀；充气",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/inflation/",
         "score": 3,
         "en": "inflation"
     },
     {
-        "zh": "影响，作用；支配力，势力； 有影响的人（或事物）",
+        "zh": "影响；作用；支配力",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/influence/",
         "score": 3,
         "en": "influence"
     },
     {
-        "zh": "有权势的，有影响力的",
+        "zh": "有权势的；有影响力的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/influential/",
         "score": 3,
         "en": "influential"
     },
     {
-        "zh": "通知，告知；影响；了解，熟悉",
+        "zh": "通知；告知；影响",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/inform/",
         "score": 3,
         "en": "inform"
     },
     {
-        "zh": "（国家、组织等的）基础设施",
+        "zh": "基础设施",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/infrastructure/",
         "score": 3,
         "en": "infrastructure"
     },
     {
-        "zh": "成分；（烹饪的）原料；因素，要素",
+        "zh": "成分；原料；因素",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/ingredient/",
         "score": 3,
         "en": "ingredient"
     },
     {
-        "zh": "居住，栖息",
+        "zh": "居住；栖息",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/inhabit/",
         "score": 3,
         "en": "inhabit"
     },
     {
         "zh": "居民；栖息动物",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/inhabitant/",
         "score": 3,
         "en": "inhabitant"
     },
     {
-        "zh": "吸入（空气、气体、烟等）",
+        "zh": "吸入",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/inhale/",
         "score": 3,
         "en": "inhale"
     }

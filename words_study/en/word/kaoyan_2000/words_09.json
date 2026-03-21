@@ -1,351 +1,351 @@
 [
     {
-        "zh": "（两种或以上说法、信仰等）对立的；相反的，截然不同的",
+        "zh": "对立的；相反的；截然不同的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/contrary/",
         "score": 3,
         "en": "contrary"
     },
     {
-        "zh": "对比，对照；差异；对照物，对立面",
+        "zh": "对比；对照；差异",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/contrast/",
         "score": 3,
         "en": "contrast"
     },
     {
-        "zh": "贡献；捐款；定期缴款；一则（内容）",
+        "zh": "贡献；捐款；定期缴款",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/contribution/",
         "score": 3,
         "en": "contribution"
     },
     {
-        "zh": "（公开的）争论，争议",
+        "zh": "争论；争议",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/controversy/",
         "score": 3,
         "en": "controversy"
     },
     {
-        "zh": "便利，方便；便利设备",
+        "zh": "便利；方便；便利设备",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/convenience/",
         "score": 3,
         "en": "convenience"
     },
     {
-        "zh": "习俗，惯例；（尤指政党、行业或组织举行的）大会；会议；国际公约；（文学、艺术或戏剧的）传统手法",
+        "zh": "习俗；惯例；大会",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/convention/",
         "score": 3,
         "en": "convention"
     },
     {
-        "zh": "从不同方向聚集，汇合；（在一点上）会合，集中；（思想、观点等）趋近",
+        "zh": "从不同方向聚集；汇合；会合",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/converge/",
         "score": 3,
         "en": "converge"
     },
     {
-        "zh": "判罪，定罪；坚定的信念；坚定，深信",
+        "zh": "判罪；定罪；坚定的信念",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/conviction/",
         "score": 3,
         "en": "conviction"
     },
     {
-        "zh": "使确信，使信服；劝说，说服",
+        "zh": "使确信；使信服；劝说",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/convince/",
         "score": 3,
         "en": "convince"
     },
     {
-        "zh": "合作，协力；配合",
+        "zh": "合作；协力；配合",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/cooperate/",
         "score": 3,
         "en": "cooperate"
     },
     {
         "zh": "合作的；配合的；有共同利益的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/cooperative/",
         "score": 3,
         "en": "cooperative"
     },
     {
-        "zh": "配合，协作；使身体动作协调；搭配（衣服、家具等）",
+        "zh": "配合；协作；使身体动作协调",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/coordinate/",
         "score": 3,
         "en": "coordinate"
     },
     {
-        "zh": "铜；铜币（coppers）",
+        "zh": "铜；铜币",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/copper/",
         "score": 3,
         "en": "copper"
     },
     {
-        "zh": "公司的；法人的；全体的，共同的",
+        "zh": "公司的；法人的；全体的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/corporate/",
         "score": 3,
         "en": "corporate"
     },
     {
-        "zh": "公司，企业；法人（团体）",
+        "zh": "公司；企业；法人",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/corporation/",
         "score": 3,
         "en": "corporation"
     },
     {
-        "zh": "相互关联，相互依赖；显示…之间的相关性",
+        "zh": "相互关联；相互依赖；显示…之间的相关性",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/correlate/",
         "score": 3,
         "en": "correlate"
     },
     {
-        "zh": "相符；一致；（特征、形式或功能）相似；相当；通信",
+        "zh": "相符；一致；相似",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/correspond/",
         "score": 3,
         "en": "correspond"
     },
     {
-        "zh": "通信联系；来往信件； 相关，相似",
+        "zh": "通信联系；来往信件；相关",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/correspondence/",
         "score": 3,
         "en": "correspondence"
     },
     {
-        "zh": "记者，通讯员；（与形容词连用）通信者",
+        "zh": "记者；通讯员；通信者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/correspondent/",
         "score": 3,
         "en": "correspondent"
     },
     {
-        "zh": "走廊，过道；（两国或城市间的）走廊地带；（沿河的）狭长地带",
+        "zh": "走廊；过道；走廊地带",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/corridor/",
         "score": 3,
         "en": "corridor"
     },
     {
-        "zh": "贪污的，腐败的；不诚实的，不道德的；有缺陷的，有错误的",
+        "zh": "贪污的；腐败的；不诚实的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/corrupt/",
         "score": 3,
         "en": "corrupt"
     },
     {
         "zh": "宇宙的；巨大且重要的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/cosmic/",
         "score": 3,
         "en": "cosmic"
     },
     {
-        "zh": "昂贵的，花费多的；造成损失的",
+        "zh": "昂贵的；花费多的；造成损失的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/costly/",
         "score": 3,
         "en": "costly"
     },
     {
-        "zh": "长沙发；（诊室内的）诊察台",
+        "zh": "长沙发；诊察台",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/couch/",
         "score": 3,
         "en": "couch"
     },
     {
-        "zh": "政务委员会，地方议会；地方服务机构；委员会；协商会议；（由当地政务委员会提供且租金有补贴的）住宅",
+        "zh": "政务委员会；地方议会；地方服务机构",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/council/",
         "score": 3,
         "en": "council"
     },
     {
-        "zh": "律师，法律顾问；忠告，建议",
+        "zh": "律师；法律顾问；忠告",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/counsel/",
         "score": 3,
         "en": "counsel"
     },
     {
         "zh": "反驳；抵消",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/counter/",
         "score": 3,
         "en": "counter"
     },
     {
-        "zh": "职位（或作用）相当的人，对应的事物；副本",
+        "zh": "职位相当的人；对应的事物；副本",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/counterpart/",
         "score": 3,
         "en": "counterpart"
     },
     {
-        "zh": "（英国、爱尔兰的）郡；（美国的）县",
+        "zh": "郡；县",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/county/",
         "score": 3,
         "en": "county"
     },
     {
-        "zh": "法庭；宫廷；球场；大厅；（ the court）王室成员，全体出庭人员",
+        "zh": "法庭；宫廷；球场",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/court/",
         "score": 3,
         "en": "court"
     },
     {
-        "zh": "新闻报道；（书等的）信息范围；覆盖范围",
+        "zh": "新闻报道；信息范围；覆盖范围",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/coverage/",
         "score": 3,
         "en": "coverage"
     },
     {
-        "zh": "工艺，手艺；技能，技巧；骗术，诡计；船；飞行器；职业",
+        "zh": "工艺；手艺；技能",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/craft/",
         "score": 3,
         "en": "craft"
     },
     {
-        "zh": "创造，创作；造成，引起；册封",
+        "zh": "创造；创作；造成",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/create/",
         "score": 3,
         "en": "create"
     },
     {
         "zh": "创造性的；有创造力的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/creative/",
         "score": 3,
         "en": "creative"
     },
     {
-        "zh": "生物，动物；（具有某种特质的）人",
+        "zh": "生物；动物；人",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/creature/",
         "score": 3,
         "en": "creature"
     },
     {
-        "zh": "资格, 资历; 资格证书; (品格的) 证明信, 推荐书",
+        "zh": "资格；资历；资格证书",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/credentials/",
         "score": 3,
         "en": "credentials"
     },
     {
-        "zh": "可信的，可靠的；有可能成功的",
+        "zh": "可信的；可靠的；有可能成功的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/credible/",
         "score": 3,
         "en": "credible"
     },
     {
-        "zh": "信誉，信用；称赞，赞扬；学分；赊购；贷款；结余；摄制人员名单",
+        "zh": "信誉；信用；称赞",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/credit/",
         "score": 3,
         "en": "credit"
     },
     {
-        "zh": "悄悄地缓慢行进，蹑手蹑脚地移动；爬行，匍匐；逐渐发生，不知不觉地出现；（植物）攀缘，蔓生；（雾、云等）弥漫；卑躬屈膝，巴结奉承",
+        "zh": "悄悄地缓慢行进；蹑手蹑脚地移动；爬行",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/creep/",
         "score": 3,
         "en": "creep"
     },
     {
         "zh": "板球运动；蟋蟀",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/cricket/",
         "score": 3,
         "en": "cricket"
     },
     {
         "zh": "犯罪行为；罪行；罪过",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/crime/",
         "score": 3,
         "en": "crime"
     },
     {
         "zh": "犯罪的；刑事的；道德错误的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/criminal/",
         "score": 3,
         "en": "criminal"
     },
     {
         "zh": "危急时刻；危机",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/crisis/",
         "score": 3,
         "en": "crisis"
     },
     {
-        "zh": "标准，准则",
+        "zh": "标准；准则",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/criterion/",
         "score": 3,
         "en": "criterion"
     },
     {
-        "zh": "（文艺作品的）评论家；批评者",
+        "zh": "评论家；批评者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/critic/",
         "score": 3,
         "en": "critic"
     },
     {
-        "zh": "批评，批判；（对文章等的）评论",
+        "zh": "批评；批判；评论",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/criticism/",
         "score": 3,
         "en": "criticism"
     },
     {
-        "zh": "王冠，冕；王权；君王；花冠，桂冠；（某物的）顶部；克朗（货币单位）",
+        "zh": "王冠；冕；王权",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/crown/",
         "score": 3,
         "en": "crown"
     },
     {
         "zh": "至关重要的；决定性的；关键性的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/crucial/",
         "score": 3,
         "en": "crucial"
     },
     {
-        "zh": "粗糙的，粗制的；粗鲁的；粗略的，大概的；天然的",
+        "zh": "粗糙的；粗制的；粗鲁的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/crude/",
         "score": 3,
         "en": "crude"
     },
     {
         "zh": "黄瓜",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/cucumber/",
         "score": 3,
         "en": "cucumber"
     }

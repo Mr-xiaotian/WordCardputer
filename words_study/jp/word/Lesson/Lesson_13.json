@@ -1,7 +1,7 @@
 [
   { "jp": "すてる", "kanji": "捨てる", "zh": "扔掉", "tone": 0, "score": 3 },
   { "jp": "ぬぐ", "kanji": "脱ぐ", "zh": "脱下", "tone": 1, "score": 3 },
-  { "jp": "つける", "kanji": "", "zh": "开（电器）", "tone": 2, "score": 3 },
+  { "jp": "つける", "kanji": "", "zh": "开", "tone": 2, "score": 3 },
   { "jp": "おくれる", "kanji": "遅れる", "zh": "迟到", "tone": 0, "score": 3 },
   { "jp": "たつ", "kanji": "立つ", "zh": "站立; 离开", "tone": 1, "score": 3 },
   { "jp": "せき", "kanji": "席", "zh": "座位", "tone": 1, "score": 3 },

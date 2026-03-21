@@ -1,351 +1,351 @@
 [
     {
-        "zh": "规模；程度；范围；刻度；（人或物的）等级，级别；比例尺；秤；鱼鳞；水垢；牙垢；音阶",
+        "zh": "规模；程度；范围",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/scale/",
         "score": 3,
         "en": "scale"
     },
     {
         "zh": "丑事；丑闻；关于丑行的传言",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/scandal/",
         "score": 3,
         "en": "scandal"
     },
     {
-        "zh": "（尤指食物、金钱或其他资源）缺乏的；供不应求的；稀少的，罕见的",
+        "zh": "缺乏的；供不应求的；稀少的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/scarce/",
         "score": 3,
         "en": "scarce"
     },
     {
-        "zh": "勉强，刚刚；几乎不；刚一…就；实在不应该",
+        "zh": "勉强；刚刚；几乎不",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/scarcely/",
         "score": 3,
         "en": "scarcely"
     },
     {
-        "zh": "离散的，分散的",
+        "zh": "离散的；分散的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/scattered/",
         "score": 3,
         "en": "scattered"
     },
     {
-        "zh": "风景，景色；舞台布景",
+        "zh": "风景；景色；舞台布景",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/scenery/",
         "score": 3,
         "en": "scenery"
     },
     {
-        "zh": "计划，规划，方案；诡计，阴谋",
+        "zh": "计划；规划；方案",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/scheme/",
         "score": 3,
         "en": "scheme"
     },
     {
         "zh": "分裂；分歧；分派",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/schism/",
         "score": 3,
         "en": "schism"
     },
     {
-        "zh": "（尤指人文学科的）学者；奖学金获得者",
+        "zh": "学者；奖学金获得者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/scholar/",
         "score": 3,
         "en": "scholar"
     },
     {
-        "zh": "（活动、话题的）范围；机会；…镜",
+        "zh": "范围；机会；…镜",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/scope/",
         "score": 3,
         "en": "scope"
     },
     {
-        "zh": "得分，比分；成绩，分数；二十个；许多；实情；（音乐）总谱",
+        "zh": "得分；比分；成绩",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/score/",
         "score": 3,
         "en": "score"
     },
     {
-        "zh": "轻蔑，鄙视；不屑于做，轻蔑地拒绝",
+        "zh": "轻蔑；鄙视；不屑于做",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/scorn/",
         "score": 3,
         "en": "scorn"
     },
     {
-        "zh": "挠（痒处）；划破，抓伤；擦破；刮损；刮出刺耳声；勉强维持生活；取消；退出",
+        "zh": "挠；划破；抓伤",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/scratch/",
         "score": 3,
         "en": "scratch"
     },
     {
-        "zh": "螺丝（钉）；旋拧（螺丝）",
+        "zh": "螺丝；旋拧",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/screw/",
         "score": 3,
         "en": "screw"
     },
     {
         "zh": "仔细检查；认真彻底的审查",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/scrutiny/",
         "score": 3,
         "en": "scrutiny"
     },
     {
-        "zh": "封住；密封；覆盖表面；确定；封锁",
+        "zh": "封住；密封；覆盖表面",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/seal/",
         "score": 3,
         "en": "seal"
     },
     {
-        "zh": "海边，海滨",
+        "zh": "海边；海滨",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/seaside/",
         "score": 3,
         "en": "seaside"
     },
     {
-        "zh": "次要的，从属的；间接的，继发的；中学的，中等教育的",
+        "zh": "次要的；从属的；间接的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/secondary/",
         "score": 3,
         "en": "secondary"
     },
     {
-        "zh": "部分；部门；部件；（文章等的）节，章；阶层；地区；（医学）切开",
+        "zh": "部分；部门；部件",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/section/",
         "score": 3,
         "en": "section"
     },
     {
-        "zh": "安全的；安心的；牢固的，严密把守的；有把握的；可靠的",
+        "zh": "安全的；安心的；牢固的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/secure/",
         "score": 3,
         "en": "secure"
     },
     {
-        "zh": "安全措施；安保部门；担保；安全；抵押品；（securities）证券",
+        "zh": "安全措施；安保部门；担保",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/security/",
         "score": 3,
         "en": "security"
     },
     {
-        "zh": "表面上，看似；据说",
+        "zh": "表面上；看似；据说",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/seemingly/",
         "score": 3,
         "en": "seemingly"
     },
     {
-        "zh": "部分；（水果的）瓣",
+        "zh": "部分；瓣",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/segment/",
         "score": 3,
         "en": "segment"
     },
     {
-        "zh": "选择，挑选；选中，选定",
+        "zh": "选择；挑选；选中",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/select/",
         "score": 3,
         "en": "select"
     },
     {
         "zh": "选择性的；精挑细选的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/selective/",
         "score": 3,
         "en": "selective"
     },
     {
         "zh": "学期",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/semester/",
         "score": 3,
         "en": "semester"
     },
     {
-        "zh": "研讨会；（大学的）研讨课",
+        "zh": "研讨会；研讨课",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/seminar/",
         "score": 3,
         "en": "seminar"
     },
     {
-        "zh": "级别或地位（更）高的，资深的；（比赛）成人的，高级水平的；中等学校的；毕业年级的",
+        "zh": "级别或地位高的；资深的；成人的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/senior/",
         "score": 3,
         "en": "senior"
     },
     {
-        "zh": "感觉，知觉；感觉能力；轰动；引起轰动的人或事；直觉",
+        "zh": "感觉；知觉；感觉能力",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/sensation/",
         "score": 3,
         "en": "sensation"
     },
     {
-        "zh": "（人）理智的；（行为）合理的；（服装等）朴素而实用的；意识到",
+        "zh": "理智的；合理的；朴素而实用的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/sensible/",
         "score": 3,
         "en": "sensible"
     },
     {
-        "zh": "情绪；观点，看法；（过于）伤感",
+        "zh": "情绪；观点；看法",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/sentiment/",
         "score": 3,
         "en": "sentiment"
     },
     {
-        "zh": "分；分成；分离；分开",
+        "zh": "分；分成；分离",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/separation/",
         "score": 3,
         "en": "separation"
     },
     {
-        "zh": "一系列；顺序；（电影中的）一组镜头",
+        "zh": "一系列；顺序；一组镜头",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/sequence/",
         "score": 3,
         "en": "sequence"
     },
     {
-        "zh": "（进行某活动连续的）一段时间；（审议或立法机构的）会议；（法庭的）开庭",
+        "zh": "一段时间；会议；开庭",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/session/",
         "score": 3,
         "en": "session"
     },
     {
-        "zh": "倒退，挫折",
+        "zh": "倒退；挫折",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/setback/",
         "score": 3,
         "en": "setback"
     },
     {
-        "zh": "环境，背景；情节背景；档位； （为诗等谱的）曲；（供一人使用的）一套餐具；底座，底板",
+        "zh": "环境；背景；情节背景",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/setting/",
         "score": 3,
         "en": "setting"
     },
     {
-        "zh": "解决，处理；协议；（欠款的）偿还；定居点；移民，开拓",
+        "zh": "解决；处理；协议",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/settlement/",
         "score": 3,
         "en": "settlement"
     },
     {
-        "zh": "缝，缝纫；缝补",
+        "zh": "缝；缝纫；缝补",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/sew/",
         "score": 3,
         "en": "sew"
     },
     {
-        "zh": "浅的，不深的；肤浅的",
+        "zh": "浅的；不深的；肤浅的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/shallow/",
         "score": 3,
         "en": "shallow"
     },
     {
-        "zh": "鲨鱼；骗子，奸商",
+        "zh": "鲨鱼；骗子；奸商",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/shark/",
         "score": 3,
         "en": "shark"
     },
     {
-        "zh": "棚，简易房；工棚，厂房",
+        "zh": "棚；简易房；工棚",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/shed/",
         "score": 3,
         "en": "shed"
     },
     {
-        "zh": "完全的，纯粹的；陡峭的；（织物等）轻薄透明的；用于强调事物的大小、程度、数量等",
+        "zh": "完全的；纯粹的；陡峭的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/sheer/",
         "score": 3,
         "en": "sheer"
     },
     {
-        "zh": "（动物、坚果等的）壳；壳状物；（建筑物等的）框架；炮弹；（人的）表面性格",
+        "zh": "壳；壳状物；框架",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/shell/",
         "score": 3,
         "en": "shell"
     },
     {
-        "zh": "住处，居所；遮蔽；遮盖物；避难所",
+        "zh": "住处；居所；遮蔽",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/shelter/",
         "score": 3,
         "en": "shelter"
     },
     {
-        "zh": "盾牌；屏障，保护人，掩护物；挡板；盾形徽章",
+        "zh": "盾牌；屏障；保护人",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/shield/",
         "score": 3,
         "en": "shield"
     },
     {
-        "zh": "转移，移动；转变（方向或焦点）；改变（态度、观点等）；转嫁（责任）；换挡",
+        "zh": "转移；移动；转变",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/shift/",
         "score": 3,
         "en": "shift"
     },
     {
-        "zh": "不足，缺少，短缺",
+        "zh": "不足；缺少；短缺",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/shortage/",
         "score": 3,
         "en": "shortage"
     },
     {
         "zh": "速记法；简约表达方式",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/shorthand/",
         "score": 3,
         "en": "shorthand"
     },
     {
         "zh": "(供最后挑选或考虑用的)候选人名单",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/shortlist/",
         "score": 3,
         "en": "shortlist"
     },
     {
-        "zh": "推，猛推；乱扔，乱丢",
+        "zh": "推；猛推；乱扔",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/shove/",
         "score": 3,
         "en": "shove"
     }

@@ -1,351 +1,351 @@
 [
     {
-        "zh": "减少，缩减；减价，折扣；（图片等的）缩图",
+        "zh": "减少；缩减；减价",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/reduction/",
         "score": 3,
         "en": "reduction"
     },
     {
-        "zh": "提及；参考，查阅；参考书目；征求（意见）；推荐信；推荐人；（为方便查询所用的）标记",
+        "zh": "提及；参考；查阅",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/reference/",
         "score": 3,
         "en": "reference"
     },
     {
-        "zh": "克制，避免",
+        "zh": "克制；避免",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/refrain/",
         "score": 3,
         "en": "refrain"
     },
     {
-        "zh": "使恢复精力；使更新（想法等）；使重新想起；刷新（网页）",
+        "zh": "使恢复精力；使更新；使重新想起",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/refresh/",
         "score": 3,
         "en": "refresh"
     },
     {
         "zh": "冷冻的；冰冻的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/refrigerated/",
         "score": 3,
         "en": "refrigerated"
     },
     {
-        "zh": "避难；避难所，庇护所；慰藉",
+        "zh": "避难；避难所；庇护所",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/refuge/",
         "score": 3,
         "en": "refuge"
     },
     {
-        "zh": "避难者，逃亡者，难民",
+        "zh": "避难者；逃亡者；难民",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/refugee/",
         "score": 3,
         "en": "refugee"
     },
     {
-        "zh": "拒绝，回绝",
+        "zh": "拒绝；回绝",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/refusal/",
         "score": 3,
         "en": "refusal"
     },
     {
-        "zh": "（尤指抽象物）重新获得；恢复使用；收回",
+        "zh": "重新获得；恢复使用；收回",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/regain/",
         "score": 3,
         "en": "regain"
     },
     {
         "zh": "关于",
         "pos": "prep",
-        "phonetic": "",
+        "phonetic": "/regarding/",
         "score": 3,
         "en": "regarding"
     },
     {
-        "zh": "不顾，不管；无论，不论",
+        "zh": "不顾；不管；无论",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/regardless/",
         "score": 3,
         "en": "regardless"
     },
     {
-        "zh": "统治制度，政权；组织方法，管理体制",
+        "zh": "统治制度；政权；组织方法",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/regime/",
         "score": 3,
         "en": "regime"
     },
     {
-        "zh": "区域，地方；行政区；（某个）身体部位",
+        "zh": "区域；地方；行政区",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/region/",
         "score": 3,
         "en": "region"
     },
     {
-        "zh": "登记，注册；发表意见；测量，显示；流露出，表达出；注意到；挂号邮寄",
+        "zh": "登记；注册；发表意见",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/register/",
         "score": 3,
         "en": "register"
     },
     {
-        "zh": "（用规则条例）约束，管理；控制，调节（速度、温度等）",
+        "zh": "约束；管理；控制",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/regulate/",
         "score": 3,
         "en": "regulate"
     },
     {
-        "zh": "统治，支配；统治期，（君主）在位期；任期",
+        "zh": "统治；支配；统治期",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/reign/",
         "score": 3,
         "en": "reign"
     },
     {
-        "zh": "加强，加固；强化；（感情，看法，习惯）增进，加深",
+        "zh": "加强；加固；强化",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/reinforce/",
         "score": 3,
         "en": "reinforce"
     },
     {
-        "zh": "拒绝（提议、建议、观点等）；（因质量不好而）废弃；不录用，不录取；冷落，嫌弃；排异，排斥（移植的器官）",
+        "zh": "拒绝；废弃；不录用",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/reject/",
         "score": 3,
         "en": "reject"
     },
     {
-        "zh": "关系，联系，关联",
+        "zh": "关系；联系；关联",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/relationship/",
         "score": 3,
         "en": "relationship"
     },
     {
-        "zh": "放松，休息；（使）冷静；松开；放宽（规定或控制等）",
+        "zh": "放松；休息；冷静",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/relax/",
         "score": 3,
         "en": "relax"
     },
     {
-        "zh": "相关的，切题的；有意义的",
+        "zh": "相关的；切题的；有意义的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/relevant/",
         "score": 3,
         "en": "relevant"
     },
     {
-        "zh": "可信赖的；（信息等）真实可靠的",
+        "zh": "可信赖的；真实可靠的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/reliable/",
         "score": 3,
         "en": "reliable"
     },
     {
-        "zh": "信赖，依靠",
+        "zh": "信赖；依靠",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/reliance/",
         "score": 3,
         "en": "reliance"
     },
     {
-        "zh": "（忧虑或痛苦消除后感到的）宽慰，欣慰，放心；免除，减轻；援救，救济；补助",
+        "zh": "宽慰；欣慰；放心",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/relief/",
         "score": 3,
         "en": "relief"
     },
     {
-        "zh": "减轻（痛苦）；缓解（问题）；调剂，使有趣；给…换班",
+        "zh": "减轻；缓解；调剂",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/relieve/",
         "score": 3,
         "en": "relieve"
     },
     {
-        "zh": "宗教，宗教信仰；教派；特别的兴趣",
+        "zh": "宗教；宗教信仰；教派",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/religion/",
         "score": 3,
         "en": "religion"
     },
     {
-        "zh": "宗教的；（人）虔诚的",
+        "zh": "宗教的；虔诚的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/religious/",
         "score": 3,
         "en": "religious"
     },
     {
-        "zh": "不情愿的，勉强的",
+        "zh": "不情愿的；勉强的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/reluctant/",
         "score": 3,
         "en": "reluctant"
     },
     {
-        "zh": "（rely on）依赖；信任",
+        "zh": "依赖；信任",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/rely/",
         "score": 3,
         "en": "rely"
     },
     {
-        "zh": "仍然是，保持；剩余，遗留；逗留，停留；仍需去做",
+        "zh": "仍然是；保持；剩余",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/remain/",
         "score": 3,
         "en": "remain"
     },
     {
         "zh": "评论；言论",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/remark/",
         "score": 3,
         "en": "remark"
     },
     {
-        "zh": "不同寻常的，非凡的；引人注目的",
+        "zh": "不同寻常的；非凡的；引人注目的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/remarkable/",
         "score": 3,
         "en": "remarkable"
     },
     {
-        "zh": "偏远的；遥远的，久远的；关系疏远的；远程的；极不相同的；冷漠的；微小的，机会渺茫的",
+        "zh": "偏远的；遥远的；久远的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/remote/",
         "score": 3,
         "en": "remote"
     },
     {
-        "zh": "移动，搬动；去除；免职，解职；搬迁",
+        "zh": "移动；搬动；去除",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/removal/",
         "score": 3,
         "en": "removal"
     },
     {
-        "zh": "复兴，再生；（the Renaissance）文艺复兴（时期）",
+        "zh": "复兴；再生；文艺复兴",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/renaissance/",
         "score": 3,
         "en": "renaissance"
     },
     {
-        "zh": "使变成…状态；给予，提供；提交；表达，表演；翻译；粉刷；使（脂肪）熔化",
+        "zh": "使变成…状态；给予；提供",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/render/",
         "score": 3,
         "en": "render"
     },
     {
-        "zh": "重新开始；延长…的期限；重申；更新，更换",
+        "zh": "重新开始；延长…的期限；重申",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/renew/",
         "score": 3,
         "en": "renew"
     },
     {
-        "zh": "租金，房租；裂缝",
+        "zh": "租金；房租；裂缝",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rent/",
         "score": 3,
         "en": "rent"
     },
     {
-        "zh": "重复的，再三的",
+        "zh": "重复的；再三的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/repeated/",
         "score": 3,
         "en": "repeated"
     },
     {
-        "zh": "（剧团、表演者等熟谙并可随时演出的）全部剧目；全部才能",
+        "zh": "全部剧目；全部才能",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/repertoire/",
         "score": 3,
         "en": "repertoire"
     },
     {
-        "zh": "代替，取代；用…替换；更换，更新；把…放回原位",
+        "zh": "代替；取代；用…替换",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/replace/",
         "score": 3,
         "en": "replace"
     },
     {
         "zh": "记者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/reporter/",
         "score": 3,
         "en": "reporter"
     },
     {
-        "zh": "代表；作为…的代表，维护…的利益；相当于，意味着；体现；象征，表示；展示，描述；正式提出（意见、抗议等）",
+        "zh": "代表；作为…的代表；维护…的利益",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/represent/",
         "score": 3,
         "en": "represent"
     },
     {
-        "zh": "代表；销售代表；代理人；典型人物；（美国）众议院议员",
+        "zh": "代表；销售代表；代理人",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/representative/",
         "score": 3,
         "en": "representative"
     },
     {
-        "zh": "繁殖，生育；复制，复印；再生产，再现",
+        "zh": "繁殖；生育；复制",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/reproduce/",
         "score": 3,
         "en": "reproduce"
     },
     {
         "zh": "共和党人",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/republican/",
         "score": 3,
         "en": "republican"
     },
     {
-        "zh": "名声，名誉",
+        "zh": "名声；名誉",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/reputation/",
         "score": 3,
         "en": "reputation"
     },
     {
-        "zh": "解救，救援，被救援；营救行动",
+        "zh": "解救；救援；被救援",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/rescue/",
         "score": 3,
         "en": "rescue"
     },
     {
         "zh": "看起来像；与…相似",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/resemble/",
         "score": 3,
         "en": "resemble"
     },
     {
-        "zh": "愤恨，憎恶，怨恨",
+        "zh": "愤恨；憎恶；怨恨",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/resent/",
         "score": 3,
         "en": "resent"
     }

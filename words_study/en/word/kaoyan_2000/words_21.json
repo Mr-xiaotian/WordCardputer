@@ -1,351 +1,351 @@
 [
     {
-        "zh": "内在的，固有的，本性的",
+        "zh": "内在的；固有的；本性的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/inherent/",
         "score": 3,
         "en": "inherent"
     },
     {
-        "zh": "继承；经遗传获得（品质、身体特征等）；继任，接手",
+        "zh": "继承；经遗传获得；继任",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/inherit/",
         "score": 3,
         "en": "inherit"
     },
     {
-        "zh": "最初的，开始的",
+        "zh": "最初的；开始的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/initial/",
         "score": 3,
         "en": "initial"
     },
     {
-        "zh": "主动的行动；倡议；新方案；举措；首创精神；主动性，积极性",
+        "zh": "主动的行动；倡议；新方案",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/initiative/",
         "score": 3,
         "en": "initiative"
     },
     {
-        "zh": "（给…）注射；（给…）增加；投入（资金或资源等）",
+        "zh": "注射；增加；投入",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/inject/",
         "score": 3,
         "en": "inject"
     },
     {
-        "zh": "伤害，使受伤；损伤（名誉等）",
+        "zh": "伤害；使受伤；损伤",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/injure/",
         "score": 3,
         "en": "injure"
     },
     {
-        "zh": "（身体的）伤害，损害；（感情等的）受伤",
+        "zh": "伤害；损害；受伤",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/injury/",
         "score": 3,
         "en": "injury"
     },
     {
-        "zh": "天生的，生来的，先天的",
+        "zh": "天生的；生来的；先天的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/innate/",
         "score": 3,
         "en": "innate"
     },
     {
-        "zh": "里面的，内部的；内心的",
+        "zh": "里面的；内部的；内心的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/inner/",
         "score": 3,
         "en": "inner"
     },
     {
-        "zh": "无恶意的，无意冒犯的；清白的，无罪的；天真的，无邪的",
+        "zh": "无恶意的；无意冒犯的；清白的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/innocent/",
         "score": 3,
         "en": "innocent"
     },
     {
-        "zh": "无数的，数不清的",
+        "zh": "无数的；数不清的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/innumerable/",
         "score": 3,
         "en": "innumerable"
     },
     {
-        "zh": "输入，投入（资源等）；输入的信息",
+        "zh": "输入；投入；输入的信息",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/input/",
         "score": 3,
         "en": "input"
     },
     {
         "zh": "昆虫",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/insect/",
         "score": 3,
         "en": "insect"
     },
     {
         "zh": "隐蔽的；阴险的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/insidious/",
         "score": 3,
         "en": "insidious"
     },
     {
-        "zh": "洞察力，领悟；深刻的见解",
+        "zh": "洞察力；领悟；深刻的见解",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/insight/",
         "score": 3,
         "en": "insight"
     },
     {
-        "zh": "振奋，鼓舞；灵感；启发灵感；鼓舞人心（的人或物）；妙计，好主意",
+        "zh": "振奋；鼓舞；灵感",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/inspiration/",
         "score": 3,
         "en": "inspiration"
     },
     {
-        "zh": "激励，鼓舞；启发，使产生灵感；激起，唤起（感情）",
+        "zh": "激励；鼓舞；启发",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/inspire/",
         "score": 3,
         "en": "inspire"
     },
     {
-        "zh": "不安定，不稳定；（精神的）变化无常",
+        "zh": "不安定；不稳定；变化无常",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/instability/",
         "score": 3,
         "en": "instability"
     },
     {
-        "zh": "分期付款（的一期）；（连载故事或连续剧的）一期，一集；安装",
+        "zh": "分期付款；一期；一集",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/installment/",
         "score": 3,
         "en": "installment"
     },
     {
-        "zh": "直觉；本能，天性；天赋，天资",
+        "zh": "直觉；本能；天性",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/instinct/",
         "score": 3,
         "en": "instinct"
     },
     {
-        "zh": "协会，研究所",
+        "zh": "协会；研究所",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/institute/",
         "score": 3,
         "en": "institute"
     },
     {
-        "zh": "机构；（由来已久的）制度，风俗习惯；建立，制定",
+        "zh": "机构；制度；风俗习惯",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/institution/",
         "score": 3,
         "en": "institution"
     },
     {
-        "zh": "指示，命令；教授，指导；告知",
+        "zh": "指示；命令；教授",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/instruct/",
         "score": 3,
         "en": "instruct"
     },
     {
-        "zh": "保险，保险费，保险业；安全保障",
+        "zh": "保险；保险费；保险业",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/insurance/",
         "score": 3,
         "en": "insurance"
     },
     {
         "zh": "投保；承保",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/insure/",
         "score": 3,
         "en": "insure"
     },
     {
-        "zh": "（食物等的）摄取量；新纳入人数；（液体、空气等的）进口；吸收，吸入",
+        "zh": "摄取量；新纳入人数；进口",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/intake/",
         "score": 3,
         "en": "intake"
     },
     {
-        "zh": "耿直，正直诚实；完整，完全",
+        "zh": "耿直；正直诚实；完整",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/integrity/",
         "score": 3,
         "en": "integrity"
     },
     {
-        "zh": "智力的，脑力的；有才智的",
+        "zh": "智力的；脑力的；有才智的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/intellectual/",
         "score": 3,
         "en": "intellectual"
     },
     {
-        "zh": "智力，才智；智能；情报；情报人员（或机构）",
+        "zh": "智力；才智；智能",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/intelligence/",
         "score": 3,
         "en": "intelligence"
     },
     {
-        "zh": "聪明的；（动物等）有智力的；智能的",
+        "zh": "聪明的；有智力的；智能的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/intelligent/",
         "score": 3,
         "en": "intelligent"
     },
     {
-        "zh": "（尤指商业、经济中）集中使用的；密集使用的；加强的，密集的；集约（经营）的",
+        "zh": "集中使用的；密集使用的；加强的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/intensive/",
         "score": 3,
         "en": "intensive"
     },
     {
-        "zh": "专心的，专注的；决心的，执意的；急切的",
+        "zh": "专心的；专注的；决心的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/intent/",
         "score": 3,
         "en": "intent"
     },
     {
-        "zh": "意图，目的",
+        "zh": "意图；目的",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/intention/",
         "score": 3,
         "en": "intention"
     },
     {
-        "zh": "交流，沟通；相互作用，相互影响",
+        "zh": "交流；沟通；相互作用",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/interact/",
         "score": 3,
         "en": "interact"
     },
     {
-        "zh": "干预，干涉；妨碍",
+        "zh": "干预；干涉；妨碍",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/interfere/",
         "score": 3,
         "en": "interfere"
     },
     {
         "zh": "间歇；过渡期间",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/interim/",
         "score": 3,
         "en": "interim"
     },
     {
-        "zh": "内部的；内政的；内地的；内心的",
+        "zh": "内部的；内政的；内地的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/interior/",
         "score": 3,
         "en": "interior"
     },
     {
         "zh": "相连的；连锁的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/interlocking/",
         "score": 3,
         "en": "interlocking"
     },
     {
-        "zh": "间歇的，断断续续的",
+        "zh": "间歇的；断断续续的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/intermittent/",
         "score": 3,
         "en": "intermittent"
     },
     {
-        "zh": "内部的，里面的；体内的；国内的，内政的；自身的，本质的；内心的",
+        "zh": "内部的；里面的；体内的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/internal/",
         "score": 3,
         "en": "internal"
     },
     {
-        "zh": "诠释，解释；领会；口译；演绎",
+        "zh": "诠释；解释；领会",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/interpret/",
         "score": 3,
         "en": "interpret"
     },
     {
-        "zh": "插嘴，打断；使中断；遮挡",
+        "zh": "插嘴；打断；使中断",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/interrupt/",
         "score": 3,
         "en": "interrupt"
     },
     {
-        "zh": "介入，插手；插嘴，打断；阻碍，阻挠；介于…之间",
+        "zh": "介入；插手；插嘴",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/intervene/",
         "score": 3,
         "en": "intervene"
     },
     {
-        "zh": "面试；采访；（私下）面谈，会晤",
+        "zh": "面试；采访；面谈",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/interview/",
         "score": 3,
         "en": "interview"
     },
     {
         "zh": "企业内部互联网",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/intranet/",
         "score": 3,
         "en": "intranet"
     },
     {
-        "zh": "错综复杂的，复杂精细的",
+        "zh": "错综复杂的；复杂精细的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/intricate/",
         "score": 3,
         "en": "intricate"
     },
     {
-        "zh": "内在的，本质的，固有的",
+        "zh": "内在的；本质的；固有的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/intrinsic/",
         "score": 3,
         "en": "intrinsic"
     },
     {
-        "zh": "介绍；引进，传入；（首次对产品，措施，概念等）推行，采用，采取；导言，导论；初次经历；入门课程；前奏",
+        "zh": "介绍；引进；传入",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/introduction/",
         "score": 3,
         "en": "introduction"
     },
     {
-        "zh": "侵入，闯入；扰乱，侵扰",
+        "zh": "侵入；闯入；扰乱",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/intrude/",
         "score": 3,
         "en": "intrude"
     },
     {
-        "zh": "（法律上）无效的；（论点）站不住脚的",
+        "zh": "无效的；站不住脚的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/invalid/",
         "score": 3,
         "en": "invalid"
     }

@@ -2,350 +2,350 @@
     {
         "zh": "佛教徒(的)",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/Buddhist/",
         "score": 3,
         "en": "Buddhist"
     },
     {
         "zh": "基督教徒",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/Christian/",
         "score": 3,
         "en": "Christian"
     },
     {
         "zh": "多瑙河",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/Danube/",
         "score": 3,
         "en": "Danube"
     },
     {
-        "zh": "拉丁语的；拉丁语系国家（或民族）的",
+        "zh": "拉丁语的；拉丁语系国家的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/Latin/",
         "score": 3,
         "en": "Latin"
     },
     {
         "zh": "医疗保险(制度)",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/Medicare/",
         "score": 3,
         "en": "Medicare"
     },
     {
-        "zh": "容忍，忍受；逗留，居住；（abide by）遵守（法律等）",
+        "zh": "容忍；忍受；逗留",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/abide/",
         "score": 3,
         "en": "abide"
     },
     {
-        "zh": "在船（或飞机、火车或其他交通工具）上",
+        "zh": "在船上",
         "pos": "prep",
-        "phonetic": "",
+        "phonetic": "/aboard/",
         "score": 3,
         "en": "aboard"
     },
     {
-        "zh": "废止，废除",
+        "zh": "废止；废除",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/abolish/",
         "score": 3,
         "en": "abolish"
     },
     {
         "zh": "大量存在；富于；充满",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/abound/",
         "score": 3,
         "en": "abound"
     },
     {
-        "zh": "〈喻〉跟上（最新新闻、思想或信息）；并肩地，并排地",
+        "zh": "〈喻〉跟上；并肩地；并排地",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/abreast/",
         "score": 3,
         "en": "abreast"
     },
     {
-        "zh": "到国外，在国外；广为流传",
+        "zh": "到国外；在国外；广为流传",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/abroad/",
         "score": 3,
         "en": "abroad"
     },
     {
-        "zh": "突然的，意外的；（举止、言谈等）唐突的，鲁莽的",
+        "zh": "突然的；意外的；唐突的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/abrupt/",
         "score": 3,
         "en": "abrupt"
     },
     {
-        "zh": "缺席；不存在，缺乏",
+        "zh": "缺席；不存在；缺乏",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/absence/",
         "score": 3,
         "en": "absence"
     },
     {
-        "zh": "完全的，全部的；十足的；肯定的，无疑的；不受限制的；独立的，绝对的",
+        "zh": "完全的；全部的；十足的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/absolute/",
         "score": 3,
         "en": "absolute"
     },
     {
-        "zh": "吸收（液体、气体、光、热等）；使并入，同化；理解，掌握；使全神贯注；使缓冲；能应付，承担（费用，变化，结果等）；大量消耗（金钱，时间等）",
+        "zh": "吸收；使并入；同化",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/absorb/",
         "score": 3,
         "en": "absorb"
     },
     {
-        "zh": "抽象的，理论的；抽象派（有关）的",
+        "zh": "抽象的；理论的；抽象派的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/abstract/",
         "score": 3,
         "en": "abstract"
     },
     {
-        "zh": "滥用；虐待；辱骂，诋毁",
+        "zh": "滥用；虐待；辱骂",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/abuse/",
         "score": 3,
         "en": "abuse"
     },
     {
-        "zh": "学业的；学术的；学校的；学习良好的；纯理论的",
+        "zh": "学业的；学术的；学校的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/academic/",
         "score": 3,
         "en": "academic"
     },
     {
-        "zh": "研究院，学会；专科学校；（美国的）私立学校",
+        "zh": "研究院；学会；专科学校",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/academy/",
         "score": 3,
         "en": "academy"
     },
     {
-        "zh": "（使）加速，加快",
+        "zh": "加速；加快",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/accelerate/",
         "score": 3,
         "en": "accelerate"
     },
     {
-        "zh": "接受（礼物，邀请等）；认同，同意；接纳，接受；承认；逆来顺受，容忍",
+        "zh": "接受；认同",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/acceptance/",
         "score": 3,
         "en": "acceptance"
     },
     {
-        "zh": "通路；（使用或见到的）机会，权利",
+        "zh": "通路；机会；权利",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/access/",
         "score": 3,
         "en": "access"
     },
     {
-        "zh": "称赞，给予高度评价",
+        "zh": "称赞；给予高度评价",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/acclaim/",
         "score": 3,
         "en": "acclaim"
     },
     {
-        "zh": "容纳；适应；提供住宿；顾及",
+        "zh": "容纳；适应；提供住宿",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/accommodate/",
         "score": 3,
         "en": "accommodate"
     },
     {
-        "zh": "住处，办公处；和解，调解；（accommodations）住宿，膳宿",
+        "zh": "住处；办公处；和解",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/accommodation/",
         "score": 3,
         "en": "accommodation"
     },
     {
-        "zh": "陪伴；伴随，与…一起发生；给…伴奏",
+        "zh": "陪伴；伴随；与…一起发生",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/accompany/",
         "score": 3,
         "en": "accompany"
     },
     {
-        "zh": "完成，实现",
+        "zh": "完成；实现",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/accomplish/",
         "score": 3,
         "en": "accomplish"
     },
     {
-        "zh": "因此，从而；相应地，照着（办）",
+        "zh": "因此；从而；相应地",
         "pos": "adv",
-        "phonetic": "",
+        "phonetic": "/accordingly/",
         "score": 3,
         "en": "accordingly"
     },
     {
-        "zh": "认为是，视为；说明，解释；（在数量、比例方面）占比",
+        "zh": "认为是；视为；说明",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/account/",
         "score": 3,
         "en": "account"
     },
     {
-        "zh": "会计人员，会计师",
+        "zh": "会计人员；会计师",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/accountant/",
         "score": 3,
         "en": "accountant"
     },
     {
-        "zh": "积累；（数量）逐渐增加",
+        "zh": "积累；逐渐增加",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/accumulate/",
         "score": 3,
         "en": "accumulate"
     },
     {
-        "zh": "准确（性），精确（性）",
+        "zh": "准确；精确",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/accuracy/",
         "score": 3,
         "en": "accuracy"
     },
     {
-        "zh": "指责；控告，控诉",
+        "zh": "指责；控告；控诉",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/accuse/",
         "score": 3,
         "en": "accuse"
     },
     {
-        "zh": "酸味的；酸性的；（言辞）尖酸的",
+        "zh": "酸味的；酸性的；尖酸的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/acid/",
         "score": 3,
         "en": "acid"
     },
     {
-        "zh": "泛泛之交，认识的人；了解，有交情",
+        "zh": "泛泛之交；认识的人；了解",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/acquaintance/",
         "score": 3,
         "en": "acquaintance"
     },
     {
-        "zh": "（尤指为达成一目的）行动，行动过程；行为；诉讼；情节；作用",
+        "zh": "行动；行动过程；行为",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/action/",
         "score": 3,
         "en": "action"
     },
     {
-        "zh": "使活动，启动，激活",
+        "zh": "使活动；启动；激活",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/activate/",
         "score": 3,
         "en": "activate"
     },
     {
-        "zh": "活动；（事情发生或发展的）状况",
+        "zh": "活动；状况",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/activity/",
         "score": 3,
         "en": "activity"
     },
     {
-        "zh": "严重的；（疾病）急性的；（感官）灵敏的；敏锐的；锐角的",
+        "zh": "严重的；急性的；灵敏的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/acute/",
         "score": 3,
         "en": "acute"
     },
     {
-        "zh": "（吸毒）上瘾的人；对…入迷的人",
+        "zh": "上瘾的人；对…入迷的人",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/addict/",
         "score": 3,
         "en": "addict"
     },
     {
-        "zh": "加，加法；增加；添加物",
+        "zh": "加；加法；增加",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/addition/",
         "score": 3,
         "en": "addition"
     },
     {
         "zh": "添加剂",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/additive/",
         "score": 3,
         "en": "additive"
     },
     {
-        "zh": "足够的，合乎需求的，充分的",
+        "zh": "足够的；合乎需求的；充分的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/adequate/",
         "score": 3,
         "en": "adequate"
     },
     {
-        "zh": "（企业、学校）管理，行政（机构）；执行；（尤指美国）政府；（药）施用",
+        "zh": "管理；行政；执行",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/administration/",
         "score": 3,
         "en": "administration"
     },
     {
-        "zh": "准许加入，进入权；入场费；（对过错、罪行的）承认，招供",
+        "zh": "准许加入；进入权；入场费",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/admission/",
         "score": 3,
         "en": "admission"
     },
     {
         "zh": "成年人；成年动物",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/adult/",
         "score": 3,
         "en": "adult"
     },
     {
-        "zh": "先进的；高等的（课程）；（发展）晚期的",
+        "zh": "先进的；高等的；晚期的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/advanced/",
         "score": 3,
         "en": "advanced"
     },
     {
-        "zh": "优势，有利条件；优点",
+        "zh": "优势；有利条件；优点",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/advantage/",
         "score": 3,
         "en": "advantage"
     },
     {
-        "zh": "来临，（重要人物、事的）出现，到来",
+        "zh": "来临；出现；到来",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/advent/",
         "score": 3,
         "en": "advent"
     },
     {
-        "zh": "为…做广告；宣传，让人知道（品质，事实）；（在报纸、互联网等上）公布，征聘",
+        "zh": "为…做广告；宣传；让人知道（品质",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/advertise/",
         "score": 3,
         "en": "advertise"
     }

@@ -1,351 +1,351 @@
 [
     {
-        "zh": "（个人或群体的）特权；特惠待遇；荣幸",
+        "zh": "特权；特惠待遇；荣幸",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/privilege/",
         "score": 3,
         "en": "privilege"
     },
     {
-        "zh": "盘问，追问；探查，探测",
+        "zh": "盘问；追问；探查",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/probe/",
         "score": 3,
         "en": "probe"
     },
     {
-        "zh": "程序，手续，步骤；外科手术",
+        "zh": "程序；手续；步骤",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/procedure/",
         "score": 3,
         "en": "procedure"
     },
     {
-        "zh": "继续（做某事）；（某事）继续发展；行进",
+        "zh": "继续；继续发展；行进",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/proceed/",
         "score": 3,
         "en": "proceed"
     },
     {
-        "zh": "行列，列队行进，游行；（一个接着一个而来的）一队人",
+        "zh": "行列；列队行进；游行",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/procession/",
         "score": 3,
         "en": "procession"
     },
     {
         "zh": "产品；产物",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/product/",
         "score": 3,
         "en": "product"
     },
     {
-        "zh": "生产的，多产的；富有成效的；引起，导致",
+        "zh": "生产的；多产的；富有成效的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/productive/",
         "score": 3,
         "en": "productive"
     },
     {
-        "zh": "生产力；生产率（尤指工业投入与产出的比率）",
+        "zh": "生产力；生产率",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/productivity/",
         "score": 3,
         "en": "productivity"
     },
     {
-        "zh": "声称，自称；公开表明",
+        "zh": "声称；自称；公开表明",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/profess/",
         "score": 3,
         "en": "profess"
     },
     {
-        "zh": "专业的；（人）职业的；训练有素的；职业上的；职业性的，非业余的",
+        "zh": "专业的；职业的；训练有素的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/professional/",
         "score": 3,
         "en": "professional"
     },
     {
-        "zh": "（人的）侧影，侧面轮廓；简介，概述；印象，形象；外形，轮廓",
+        "zh": "侧影；侧面轮廓；简介",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/profile/",
         "score": 3,
         "en": "profile"
     },
     {
-        "zh": "利润，盈利；益处，好处；利益",
+        "zh": "利润；盈利；益处",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/profit/",
         "score": 3,
         "en": "profit"
     },
     {
-        "zh": "盈利的，有利可图的；有益的，有用的",
+        "zh": "盈利的；有利可图的；有益的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/profitable/",
         "score": 3,
         "en": "profitable"
     },
     {
-        "zh": "进步的，先进的；逐步发生的",
+        "zh": "进步的；先进的；逐步发生的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/progressive/",
         "score": 3,
         "en": "progressive"
     },
     {
-        "zh": "（通过法律、条例等）禁止；阻止",
+        "zh": "禁止；阻止",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/prohibit/",
         "score": 3,
         "en": "prohibit"
     },
     {
-        "zh": "工程，项目；（学生的）专题研究；方案，计划",
+        "zh": "工程；项目；专题研究",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/project/",
         "score": 3,
         "en": "project"
     },
     {
-        "zh": "延长，拖长",
+        "zh": "延长；拖长",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/prolong/",
         "score": 3,
         "en": "prolong"
     },
     {
-        "zh": "重要的，杰出的；突出的，显眼的；凸起的，高耸的",
+        "zh": "重要的；杰出的；突出的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/prominent/",
         "score": 3,
         "en": "prominent"
     },
     {
-        "zh": "有希望的，有前途的",
+        "zh": "有希望的；有前途的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/promising/",
         "score": 3,
         "en": "promising"
     },
     {
-        "zh": "促进，推动；促销，推销；晋升",
+        "zh": "促进；推动；促销",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/promote/",
         "score": 3,
         "en": "promote"
     },
     {
-        "zh": "迅速的，立刻的；敏捷的；准时的",
+        "zh": "迅速的；立刻的；敏捷的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/prompt/",
         "score": 3,
         "en": "prompt"
     },
     {
         "zh": "易于遭受…的；有做…倾向的；俯卧的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/prone/",
         "score": 3,
         "en": "prone"
     },
     {
-        "zh": "显著的，非常明显的",
+        "zh": "显著的；非常明显的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/pronounced/",
         "score": 3,
         "en": "pronounced"
     },
     {
-        "zh": "证据；证实，证明；（proofs）校样",
+        "zh": "证据；证实；证明",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/proof/",
         "score": 3,
         "en": "proof"
     },
     {
-        "zh": "（政治）宣传，鼓吹",
+        "zh": "宣传；鼓吹",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/propaganda/",
         "score": 3,
         "en": "propaganda"
     },
     {
-        "zh": "推动，驱动；驱使；推搡",
+        "zh": "推动；驱动；驱使",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/propel/",
         "score": 3,
         "en": "propel"
     },
     {
-        "zh": "所有物，财产；房地产；特质，特性",
+        "zh": "所有物；财产；房地产",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/property/",
         "score": 3,
         "en": "property"
     },
     {
-        "zh": "建议者，支持者",
+        "zh": "建议者；支持者",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/proponent/",
         "score": 3,
         "en": "proponent"
     },
     {
-        "zh": "部分，份额；比例；（proportions）大小，规模",
+        "zh": "部分；份额；比例",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/proportion/",
         "score": 3,
         "en": "proportion"
     },
     {
-        "zh": "提议，建议；求婚",
+        "zh": "提议；建议；求婚",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/proposal/",
         "score": 3,
         "en": "proposal"
     },
     {
-        "zh": "提议，建议；打算，计划；求婚；提名；提供（解释）",
+        "zh": "提议；建议；打算",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/propose/",
         "score": 3,
         "en": "propose"
     },
     {
         "zh": "散文",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/prose/",
         "score": 3,
         "en": "prose"
     },
     {
-        "zh": "起诉，控告；担任控方律师；继续从事或参与",
+        "zh": "起诉；控告；担任控方律师",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/prosecute/",
         "score": 3,
         "en": "prosecute"
     },
     {
-        "zh": "可能性，希望；前景，前途；（比赛中）有望获胜者；风景，景色",
+        "zh": "可能性；希望；前景",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/prospect/",
         "score": 3,
         "en": "prospect"
     },
     {
-        "zh": "繁荣，兴旺，昌盛",
+        "zh": "繁荣；兴旺；昌盛",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/prosperity/",
         "score": 3,
         "en": "prosperity"
     },
     {
-        "zh": "繁荣的，兴旺的，富足的",
+        "zh": "繁荣的；兴旺的；富足的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/prosperous/",
         "score": 3,
         "en": "prosperous"
     },
     {
         "zh": "蛋白质",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/protein/",
         "score": 3,
         "en": "protein"
     },
     {
-        "zh": "抗议，（公开）反对；坚称，争辩",
+        "zh": "抗议；反对；坚称",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/protest/",
         "score": 3,
         "en": "protest"
     },
     {
-        "zh": "省，一级行政区；（知识，职责等）范围，领域",
+        "zh": "省；一级行政区；（知识",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/province/",
         "score": 3,
         "en": "province"
     },
     {
-        "zh": "提供，供给；粮食，给养，供给品；条款，规定；（为将来做的）准备",
+        "zh": "提供；供给；粮食",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/provision/",
         "score": 3,
         "en": "provision"
     },
     {
-        "zh": "引起，激起；激怒，刺激",
+        "zh": "引起；激起；激怒",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/provoke/",
         "score": 3,
         "en": "provoke"
     },
     {
-        "zh": "谨慎的，慎重的，精明的",
+        "zh": "谨慎的；慎重的；精明的",
         "pos": "adj",
-        "phonetic": "",
+        "phonetic": "/prudent/",
         "score": 3,
         "en": "prudent"
     },
     {
-        "zh": "心理学；心理（特征）",
+        "zh": "心理学；心理",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/psychology/",
         "score": 3,
         "en": "psychology"
     },
     {
-        "zh": "出版物；出版，发行；发表，刊登",
+        "zh": "出版物；出版；发行",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/publication/",
         "score": 3,
         "en": "publication"
     },
     {
-        "zh": "宣传，报道；宣传工作；公众的关注",
+        "zh": "宣传；报道；宣传工作",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/publicity/",
         "score": 3,
         "en": "publicity"
     },
     {
         "zh": "木偶；傀儡",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/puppet/",
         "score": 3,
         "en": "puppet"
     },
     {
-        "zh": "使（某物或心灵）净化；精炼，提纯",
+        "zh": "使净化；精炼；提纯",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/purify/",
         "score": 3,
         "en": "purify"
     },
     {
-        "zh": "（尤指女用）小钱包，小钱袋；财源，资金",
+        "zh": "小钱包；小钱袋；财源",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/purse/",
         "score": 3,
         "en": "purse"
     },
     {
-        "zh": "追求；贯彻，执行；追究，追查；追逐，追赶",
+        "zh": "追求；贯彻；执行",
         "pos": "v",
-        "phonetic": "",
+        "phonetic": "/pursue/",
         "score": 3,
         "en": "pursue"
     },
     {
-        "zh": "追求，寻找；追赶，跟踪；消遣，爱好",
+        "zh": "追求；寻找；追赶",
         "pos": "n",
-        "phonetic": "",
+        "phonetic": "/pursuit/",
         "score": 3,
         "en": "pursuit"
     }
