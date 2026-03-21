@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "病，疾病；不健全，弊端",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "disease"
+    },
+    {
+        "zh": "丢脸的人（或事）；不受欢迎的人（或事）；耻辱； 不光彩",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "disgrace"
+    },
+    {
+        "zh": "不予考虑；解散，把…打发走；开除，免职；去除，摒除（思想、感情等）；驳回，不受理",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "dismiss"
+    },
+    {
+        "zh": "杂乱，混乱，凌乱；骚乱；（身体）失调；（精神）失常",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "disorder"
+    },
+    {
+        "zh": "诋毁的; 贬低的; 轻蔑的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "disparaging"
+    },
+    {
+        "zh": "取代；代替；转移；迫使（某人）离开家园；免职",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "displace"
+    },
+    {
+        "zh": "移位；替代，取代；迫使迁居；排水量",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "displacement"
+    },
+    {
+        "zh": "陈列，展示；显露（特性、情感等）；（在计算机屏幕上）显示",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "display"
+    },
+    {
+        "zh": "性格，性情；倾向；排列，布置；（金钱、财产等）处置",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "disposition"
+    },
+    {
+        "zh": "不相称的；不成比例的；太大（或太小）的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "disproportionate"
+    },
+    {
+        "zh": "争论，辩论；争端，纠纷",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dispute"
+    },
+    {
+        "zh": "差异，区别；杰出，卓越；区分；（给学生的）优等评分",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "distinction"
+    },
+    {
+        "zh": "辨别，区分；成为…的特征，使有别于；看清，听清；使著名",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "distinguish"
+    },
+    {
+        "zh": "分发；分配；分销；分布",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "distribute"
+    },
+    {
+        "zh": "地区，区域；行政区",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "district"
+    },
+    {
+        "zh": "打扰，干扰；使焦虑，使担心；弄乱，搅乱",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "disturb"
+    },
+    {
+        "zh": "干扰，妨碍；骚乱，动乱；失调，紊乱",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "disturbance"
+    },
+    {
+        "zh": "抛弃，丢弃；（飞机）在海上迫降",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "ditch"
+    },
+    {
+        "zh": "不同的，多种多样的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "diverse"
+    },
+    {
+        "zh": "转向，偏离；令人分心的事；改道路线；消遣，娱乐",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "diversion"
+    },
+    {
+        "zh": "转移（注意力），使分心；使绕道；改变…的用途；供消遣",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "divert"
+    },
+    {
+        "zh": "红利，股息；回报，效益；被除数",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dividend"
+    },
+    {
+        "zh": "离婚；分离",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "divorce"
+    },
+    {
+        "zh": "码头，船坞；月台；被告席；（docks）港区",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dock"
+    },
+    {
+        "zh": "教义，信条；学说；（政府政策的）正式声明",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "doctrine"
+    },
+    {
+        "zh": "公文，文件，文献，证件；（计算机）文档",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "document"
+    },
+    {
+        "zh": "纪录片，纪实节目",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "documentary"
+    },
+    {
+        "zh": "（活动）范围；（知识）领域；领土，领地；（计算机）域",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "domain"
+    },
+    {
+        "zh": "穹顶，圆屋顶；穹顶建筑物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dome"
+    },
+    {
+        "zh": "国内的；家用的；家务的；享受家庭乐趣的；（动物）驯养的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "domestic"
+    },
+    {
+        "zh": "首要的，占支配地位的；显性基因的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "dominant"
+    },
+    {
+        "zh": "支配；统治；控制；俯视；占据优势",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "dominate"
+    },
+    {
+        "zh": "（尤指向慈善机构）捐赠；献（血），捐赠（器官）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "donate"
+    },
+    {
+        "zh": "死亡；毁灭；劫数，厄运",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "doom"
+    },
+    {
+        "zh": "门口；门廊",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "doorway"
+    },
+    {
+        "zh": "（火山）暂时休眠的，暂时不活动的，静止的；隐匿的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "dormant"
+    },
+    {
+        "zh": "一份，一次，一点；（药物等的）一剂，一服",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dose"
+    },
+    {
+        "zh": "点，小圆点",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dot"
+    },
+    {
+        "zh": "(汽车等)调低速挡",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "downshifting"
+    },
+    {
+        "zh": "使变小; 缩小规模; 实行精简, 裁员",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "downsizing"
+    },
+    {
+        "zh": "下降的；向下的；日趋恶化的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "downward"
+    },
+    {
+        "zh": "草稿；草案；草图；汇票；征兵；风",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "draft"
+    },
+    {
+        "zh": "（使）流走，流光；喝光；使（金钱、精力等）耗尽；使心力交瘁",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "drain"
+    },
+    {
+        "zh": "戏剧，话剧，剧；戏剧性情节；戏剧效果；激动，刺激",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "drama"
+    },
+    {
+        "zh": "巨大的，令人吃惊的；激动人心的；有关戏剧的，戏剧学的；夸张做作的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "dramatic"
+    },
+    {
+        "zh": "激烈的，猛烈的，急剧的；严厉的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "drastic"
+    },
+    {
+        "zh": "缺点，不利条件",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "drawback"
+    },
+    {
+        "zh": "漂流，移动；缓慢移动；使漂浮；顺其自然地做；无意间陷入；堆积",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "drift"
+    },
+    {
+        "zh": "无聊的，枯燥的；不明亮的，没光泽的；（声音）低沉的，不清晰的；（天气）阴沉的；（疼痛）隐约的；迟钝的；萧条的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "dull"
+    },
+    {
+        "zh": "笨的，愚蠢的；哑的，无言的；一时说不出话的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "dumb"
+    }
+]

@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "（活动，服务）在线的，网上的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "online"
+    },
+    {
+        "zh": "孔，洞；开端；开幕式；开放；职位空缺；良机；开襟",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "opening"
+    },
+    {
+        "zh": "歌剧；歌剧院",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "opera"
+    },
+    {
+        "zh": "操作上的，运作中的；日常业务的；可使用的；军事行动的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "operational"
+    },
+    {
+        "zh": "操作人员；接线员；经营者，专业公司；投机取巧的人",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "operator"
+    },
+    {
+        "zh": "对手，敌手，竞争者；反对者",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "opponent"
+    },
+    {
+        "zh": "反对，阻挠；抵抗；（竞赛中）与…对垒",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "oppose"
+    },
+    {
+        "zh": "乐观主义；乐观",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "optimism"
+    },
+    {
+        "zh": "乐观的，乐观主义的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "optimistic"
+    },
+    {
+        "zh": "可以任选的，非强制的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "optional"
+    },
+    {
+        "zh": "口头的；口腔的；口服的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "oral"
+    },
+    {
+        "zh": "管弦乐队；（剧院中）靠近舞台的座位",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "orchestra"
+    },
+    {
+        "zh": "有条理的，整齐的；守秩序的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "orderly"
+    },
+    {
+        "zh": "（人体或动植物的）器官；管风琴；风琴；（官方的）机构，机关；机关报刊",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "organ"
+    },
+    {
+        "zh": "有机种植的；有机物的；器官的；有机统一的；逐步的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "organic"
+    },
+    {
+        "zh": "有机体，生物，微生物；有机组织",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "organism"
+    },
+    {
+        "zh": "朝向，面对（某个目的）；确认方位；使熟悉，使适应",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "orient"
+    },
+    {
+        "zh": "方向，朝向；目标；（个人的）基本信仰，取向；（任职等前的）培训，迎新会",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "orientation"
+    },
+    {
+        "zh": "起源；出身，身世",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "origin"
+    },
+    {
+        "zh": "原来的；起初的；独创的；真迹的；原作的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "original"
+    },
+    {
+        "zh": "发源，来自；创造，发明",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "originate"
+    },
+    {
+        "zh": "装饰品；首饰，饰物；摆设，点缀；为…增添光彩的人（或事物）",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "ornament"
+    },
+    {
+        "zh": "孤儿",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "orphan"
+    },
+    {
+        "zh": "（暴力、疾病等坏事的）爆发，突然发生",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "outbreak"
+    },
+    {
+        "zh": "(火山、感情等)爆发；突发",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "outburst"
+    },
+    {
+        "zh": "结果，效果",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "outcome"
+    },
+    {
+        "zh": "过时的，不流行的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "outdated"
+    },
+    {
+        "zh": "外表的，外面的；远离中心的，外围的；客观外界的，非主观的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "outer"
+    },
+    {
+        "zh": "出口；发泄途径，排遣；商店；分销点",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "outlet"
+    },
+    {
+        "zh": "提纲，梗概；轮廓；略图，草图",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "outline"
+    },
+    {
+        "zh": "景色，风光；观点，见解；展望，前景；世界观，人生观",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "outlook"
+    },
+    {
+        "zh": "产量，输出（量）；输出功率；输出端",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "output"
+    },
+    {
+        "zh": "愤怒，愤慨；暴行，骇人听闻的事",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "outrage"
+    },
+    {
+        "zh": "开始，开端",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "outset"
+    },
+    {
+        "zh": "头顶上的，地面以上的；经费的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "overhead"
+    },
+    {
+        "zh": "（使物体）重叠；（使时间、范围等）重合",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "overlap"
+    },
+    {
+        "zh": "忽略，未注意到；对…不予理会；俯视",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "overlook"
+    },
+    {
+        "zh": "评价过高的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "overrated"
+    },
+    {
+        "zh": "外国的，海外的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "overseas"
+    },
+    {
+        "zh": "俯瞰，眺望；监督，监视(某人或某物)",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "oversee"
+    },
+    {
+        "zh": "加班；加班时间；加班费；加时赛",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "overtime"
+    },
+    {
+        "zh": "推翻（既定事实、决定，体制等）；使无效；翻倒，倾覆",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "overturn"
+    },
+    {
+        "zh": "应付的, 未付的, 欠着的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "owing"
+    },
+    {
+        "zh": "所有权，产权，物主身份",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "ownership"
+    },
+    {
+        "zh": "氧化物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "oxide"
+    },
+    {
+        "zh": "氧，氧气",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "oxygen"
+    },
+    {
+        "zh": "臭氧",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "ozone"
+    },
+    {
+        "zh": "（移动的）速度；（发展的）节奏；步距，步幅",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "pace"
+    },
+    {
+        "zh": "包裹；包装盒，包装袋；一组或一套（建议等）",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "package"
+    },
+    {
+        "zh": "手掌，手心；棕榈树",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "palm"
+    }
+]

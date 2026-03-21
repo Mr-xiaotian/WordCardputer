@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "擅长；出色；突出",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "excel"
+    },
+    {
+        "zh": "例外",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "exception"
+    },
+    {
+        "zh": "杰出的，卓越的；特殊的，异常的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "exceptional"
+    },
+    {
+        "zh": "过量，过度；超过的量；免赔额；（excesses）放肆行为，越轨行为",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "excess"
+    },
+    {
+        "zh": "兴奋，刺激；令人兴奋的事物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "excitement"
+    },
+    {
+        "zh": "对…不予考虑；排除；不准…进入；把…排斥在外",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "exclude"
+    },
+    {
+        "zh": "专用的，独占的；独家的；排外的；排斥的；高档的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "exclusive"
+    },
+    {
+        "zh": "经营管理的；行政的，有执行权的；高级的，供重要人物使用的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "executive"
+    },
+    {
+        "zh": "被免除（责任或义务）的，被豁免的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "exempt"
+    },
+    {
+        "zh": "使筋疲力尽；花光，耗尽；详尽讨论",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "exhaust"
+    },
+    {
+        "zh": "展览，展出；显示出（感情、品质或能力等）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "exhibit"
+    },
+    {
+        "zh": "存在；（尤指艰难的）生活方式",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "existence"
+    },
+    {
+        "zh": "外（国）来的；具有异国情调的；奇异的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "exotic"
+    },
+    {
+        "zh": "扩大，膨胀；拓展，扩展；详谈，细谈",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "expand"
+    },
+    {
+        "zh": "扩大；扩充；扩展",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "expansion"
+    },
+    {
+        "zh": "预期，期待；希望；（expectations）期望，指望",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "expectation"
+    },
+    {
+        "zh": "消费；耗费",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "expend"
+    },
+    {
+        "zh": "花费，支出；（精力、时间等的）消耗",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "expenditure"
+    },
+    {
+        "zh": "花费；（expenses）开支，开销",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "expense"
+    },
+    {
+        "zh": "专门知识（或技能等），专长",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "expertise"
+    },
+    {
+        "zh": "（期限）终止，失效；到期；届满；逝世",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "expire"
+    },
+    {
+        "zh": "（表达等）清楚明白的；（说话）清晰明确的；直截了当的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "explicit"
+    },
+    {
+        "zh": "探索，研究；勘查，考察；（用手或身体某部）探查，摸索",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "explore"
+    },
+    {
+        "zh": "爆炸，爆裂（声）；猛增，激增；（感情）突然爆发",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "explosion"
+    },
+    {
+        "zh": "易爆炸的；爆炸性的；暴躁的；激增的；可能引起冲动的；（声音）爆发的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "explosive"
+    },
+    {
+        "zh": "出口，输出；传播",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "export"
+    },
+    {
+        "zh": "暴露；揭露；使面临（有害事物）；使接触；曝光",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "expose"
+    },
+    {
+        "zh": "伸长，拓展；扩大（范围）；延长，延期",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "extend"
+    },
+    {
+        "zh": "广阔的；广泛的；巨大的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "extensive"
+    },
+    {
+        "zh": "程度；范围，大小",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "extent"
+    },
+    {
+        "zh": "外部的；外面的；外来的；对外的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "external"
+    },
+    {
+        "zh": "（生物的种、科或其他更大种群）灭绝的，绝种的；（火山）死的，不活动的；（习俗，工作等）消失的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "extinct"
+    },
+    {
+        "zh": "扑灭；使（火，光）熄灭；消灭；毁灭",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "extinguish"
+    },
+    {
+        "zh": "非凡的，非同寻常的；卓越的；不同寻常地多（或大）；（会议）特别的，临时的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "extraordinary"
+    },
+    {
+        "zh": "过于昂贵的；耗费过多的；奢侈的；（言行等）放肆的，过分的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "extravagant"
+    },
+    {
+        "zh": "眉毛",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "eyebrow"
+    },
+    {
+        "zh": "织物，布料；（社会、机构、建筑等的）结构",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "fabric"
+    },
+    {
+        "zh": "编造，捏造；装配，组装",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "fabricate"
+    },
+    {
+        "zh": "极好的，绝妙的；巨大的；寓言式的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "fabulous"
+    },
+    {
+        "zh": "（有特定用途的）场所、设施或设备；天赋",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "facility"
+    },
+    {
+        "zh": "天赋；能力；（高等院校中的）院，系；全体教员",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "faculty"
+    },
+    {
+        "zh": "忠实的；忠贞的；如实的，准确的；可信任的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "faithful"
+    },
+    {
+        "zh": "忠诚地，如实地",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "faithfully"
+    },
+    {
+        "zh": "谬误，谬论",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "fallacy"
+    },
+    {
+        "zh": "后果，余波；（核爆炸后的）放射性坠尘",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "fallout"
+    },
+    {
+        "zh": "声誉，名望",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "fame"
+    },
+    {
+        "zh": "喜欢，想要；爱慕；认为，想象",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "fancy"
+    },
+    {
+        "zh": "奇异的，幻想的，异想天开的；极好的；很大的；荒诞不经的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "fantastic"
+    },
+    {
+        "zh": "想象；幻想（世界）；幻想作品",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "fantasy"
+    },
+    {
+        "zh": "（车、船、机票等）费用；出租车乘客；饭菜",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "fare"
+    }
+]

@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "可取的；明智的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "advisable"
+    },
+    {
+        "zh": "拥护，支持，提倡",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "advocate"
+    },
+    {
+        "zh": "（尤指用飞机）来自空中的，在空中进行的；空气中的；航空的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "aerial"
+    },
+    {
+        "zh": "航空学，航空术",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "aeronautics"
+    },
+    {
+        "zh": "影响；使感染（疾病）；深深打动；假装",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "affect"
+    },
+    {
+        "zh": "使隶属；加入，并入（机构等）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "affiliate"
+    },
+    {
+        "zh": "喜好, 喜爱; 类同, 密切关系",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "affinity"
+    },
+    {
+        "zh": "肯定属实，断言；证实，确认",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "affirm"
+    },
+    {
+        "zh": "后来，以后",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "afterwards"
+    },
+    {
+        "zh": "中介，代理机构；（政府）专门机构",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "agency"
+    },
+    {
+        "zh": "备忘录，日程表；议事日程；（政治）议题；潜在意图（或目的）",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "agenda"
+    },
+    {
+        "zh": "代理人；（演员、音乐家、作家等的）经纪人；特工，间谍；（化学）剂；动因，原动力",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "agent"
+    },
+    {
+        "zh": "（精神或肉体）极度痛苦",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "agony"
+    },
+    {
+        "zh": "航空器，飞机",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "aircraft"
+    },
+    {
+        "zh": "航空公司",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "airline"
+    },
+    {
+        "zh": "闹钟；警报；警报器；恐慌",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "alarm"
+    },
+    {
+        "zh": "酒，乙醇",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "alcohol"
+    },
+    {
+        "zh": "机敏的，机警的；意识到的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "alert"
+    },
+    {
+        "zh": "外侨，外国人；外星人",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "alien"
+    },
+    {
+        "zh": "相同地，相似地；也",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "alike"
+    },
+    {
+        "zh": "断言, 宣称; 主张; 辩解; 指控",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "allegation"
+    },
+    {
+        "zh": "拥护；忠诚",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "allegiance"
+    },
+    {
+        "zh": "减轻，缓解，缓和",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "alleviate"
+    },
+    {
+        "zh": "联盟；结盟",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "alliance"
+    },
+    {
+        "zh": "分配，拨给",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "allot"
+    },
+    {
+        "zh": "津贴，补助；限额，定量",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "allowance"
+    },
+    {
+        "zh": "同时，共存；与…一起，与…合作；在…旁边",
+        "pos": "prep",
+        "phonetic": "",
+        "score": 3,
+        "en": "alongside"
+    },
+    {
+        "zh": "字母表",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "alphabet"
+    },
+    {
+        "zh": "（使）改变，变更；修改（衣服使更合身）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "alter"
+    },
+    {
+        "zh": "（使）交替，（使）轮流",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "alternate"
+    },
+    {
+        "zh": "可供替代的；非传统的，另类的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "alternative"
+    },
+    {
+        "zh": "业余的，非专业的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "amateur"
+    },
+    {
+        "zh": "使惊奇，使惊愕，使惊叹",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "amaze"
+    },
+    {
+        "zh": "模棱两可的，不明确的，含糊的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "ambiguous"
+    },
+    {
+        "zh": "野心，抱负，志向；追求的目标，长久的愿望",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "ambition"
+    },
+    {
+        "zh": "有野心的，有抱负的；费力的，费时的，费钱的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "ambitious"
+    },
+    {
+        "zh": "在…过程中；在…中间",
+        "pos": "prep",
+        "phonetic": "",
+        "score": 3,
+        "en": "amid"
+    },
+    {
+        "zh": "足够的；丰满的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "ample"
+    },
+    {
+        "zh": "放大，增强（声音、信号等）；详述，进一步说明",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "amplify"
+    },
+    {
+        "zh": "逗…笑；给…以娱乐（或消遣）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "amuse"
+    },
+    {
+        "zh": "比拟说明，类比；比喻",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "analogy"
+    },
+    {
+        "zh": "分析的，解析的，分析型的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "analytic"
+    },
+    {
+        "zh": "机体结构；解剖学；解剖构造",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "anatomy"
+    },
+    {
+        "zh": "祖宗，祖先；（动植物的）原种",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "ancestor"
+    },
+    {
+        "zh": "古代的；古老的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "ancient"
+    },
+    {
+        "zh": "轶事，趣闻；传闻",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "anecdote"
+    },
+    {
+        "zh": "重新，再",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "anew"
+    },
+    {
+        "zh": "角，斜角；角度；视角，立场",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "angle"
+    },
+    {
+        "zh": "使心烦，使生气；打扰",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "annoy"
+    },
+    {
+        "zh": "每年的，一年一次的；一年内的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "annual"
+    }
+]

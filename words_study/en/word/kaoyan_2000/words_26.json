@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "狭窄地; 以毫厘之差; 勉强地; 严密地; 仔细地; 心地偏狭地",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "narrowly"
+    },
+    {
+        "zh": "极差的；令人厌恶的；下流的，龌龊的；恼人的；严重的；不受欢迎的；糟糕的，恶心的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "nasty"
+    },
+    {
+        "zh": "海军的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "naval"
+    },
+    {
+        "zh": "〈非正式〉带人找路，指路；（尤指小心、艰难地）在…上航行（或行驶）；【计算机】浏览（网站、因特网等）；测定位置；导航；驾驶；航行于，横渡;〈喻〉设法穿越",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "navigate"
+    },
+    {
+        "zh": "必需品；必然性；需要；必然，必要",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "necessity"
+    },
+    {
+        "zh": "通过洽谈达成，谈成；谈判，洽谈，协商；通过，越过（险要路段）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "negotiate"
+    },
+    {
+        "zh": "神经；勇气，气魄；鲁莽；（nerves）精神承受力，神经紧张",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "nerve"
+    },
+    {
+        "zh": "鸟巢，巢穴；藏匿处，秘密窝点；家，安乐窝；（套叠在一起的）一套物件",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "nest"
+    },
+    {
+        "zh": "神经学，神经病学",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "neurology"
+    },
+    {
+        "zh": "中立的；不含褒贬义的；素净的；非酸非碱的；不带电的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "neutral"
+    },
+    {
+        "zh": "（孩童，动物）新生的，刚出生的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "newborn"
+    },
+    {
+        "zh": "时事通讯，业务通讯",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "newsletter"
+    },
+    {
+        "zh": "新闻编辑室",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "newsroom"
+    },
+    {
+        "zh": "绰号，外号，诨名",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "nickname"
+    },
+    {
+        "zh": "噩梦；梦魇；可怕的经历",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "nightmare"
+    },
+    {
+        "zh": "尽管如此，依然",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "nonetheless"
+    },
+    {
+        "zh": "胡言乱语；毫无意义的话；愚蠢的行为",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "nonsense"
+    },
+    {
+        "zh": "值得注意的，显著的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "noteworthy"
+    },
+    {
+        "zh": "声名狼藉的，臭名昭著的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "notorious"
+    },
+    {
+        "zh": "新奇，新颖；新奇的事物（或人）；小饰物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "novelty"
+    },
+    {
+        "zh": "任何地方都不；没有任何地方，无处",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "nowhere"
+    },
+    {
+        "zh": "核子的，原子核的；核能的；核武器的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "nuclear"
+    },
+    {
+        "zh": "麻烦事，讨厌的东西；妨害行为",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "nuisance"
+    },
+    {
+        "zh": "数字的；用数字表示的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "numerical"
+    },
+    {
+        "zh": "众多的，许多的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "numerous"
+    },
+    {
+        "zh": "托儿所，幼儿园；保育室；苗圃",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "nursery"
+    },
+    {
+        "zh": "养育，培养；扶持，帮助；助长，滋长",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "nurture"
+    },
+    {
+        "zh": "营养，滋养；营养的吸收",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "nutrition"
+    },
+    {
+        "zh": "肥胖症，过度肥胖",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "obesity"
+    },
+    {
+        "zh": "反对，异议；反对的理由",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "objection"
+    },
+    {
+        "zh": "目的；目标",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "objective"
+    },
+    {
+        "zh": "义务；责任，职责",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "obligation"
+    },
+    {
+        "zh": "模糊的；不确定的；费解的；鲜为人知的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "obscure"
+    },
+    {
+        "zh": "观察，观测；观察力；（对事物的）评论",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "observation"
+    },
+    {
+        "zh": "使痴迷, 使迷恋, 使着迷; 唠叨, 挂念",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "obsess"
+    },
+    {
+        "zh": "得到，获得；流行；存在",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "obtain"
+    },
+    {
+        "zh": "明显的；公认的，当然的；平淡无奇的，无新意的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "obvious"
+    },
+    {
+        "zh": "…的时候，场景；重大场合；时机，机会；理由，原因",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "occasion"
+    },
+    {
+        "zh": "工作；职业；消遣；业余活动；占领；（房屋、土地等）居住，使用",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "occupation"
+    },
+    {
+        "zh": "占据（时间、空间等）；使用（房屋），居住；侵占，占领；忙于做…；任职",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "occupy"
+    },
+    {
+        "zh": "（某事的）发生，出现；发生或存在的事",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "occurrence"
+    },
+    {
+        "zh": "冒犯，得罪；违反（常规）；使不快；犯罪",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "offend"
+    },
+    {
+        "zh": "冒犯的，无礼的；攻击性的；令人不适的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "offensive"
+    },
+    {
+        "zh": "抵消，弥补，补偿",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "offset"
+    },
+    {
+        "zh": "近海的，海面上的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "offshore"
+    },
+    {
+        "zh": "子女，后代；幼崽；幼苗",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "offspring"
+    },
+    {
+        "zh": "橄榄；橄榄树，橄榄枝；橄榄绿",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "olive"
+    },
+    {
+        "zh": "肿瘤学家",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "oncologist"
+    },
+    {
+        "zh": "即将来临的，接近的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "oncoming"
+    },
+    {
+        "zh": "洋葱（头）",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "onion"
+    }
+]

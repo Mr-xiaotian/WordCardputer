@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "统治者；（美国）州长；（学校）董事；主管，负责人",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "governor"
+    },
+    {
+        "zh": "女式礼服，女裙；（法官等穿的）长袍；（医院穿的）罩衣",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "gown"
+    },
+    {
+        "zh": "优雅；文雅；宽限期；恩宠；阁下，大人；（graces）风度",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "grace"
+    },
+    {
+        "zh": "克(公制基本重量单位)",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "gram"
+    },
+    {
+        "zh": "语法；语法书；语法的应用",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "grammar"
+    },
+    {
+        "zh": "壮丽的，堂皇的；宏伟的，重大的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "grand"
+    },
+    {
+        "zh": "同意，准许；（勉强）承认",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "grant"
+    },
+    {
+        "zh": "葡萄",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "grape"
+    },
+    {
+        "zh": "图，图表，曲线图",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "graph"
+    },
+    {
+        "zh": "抓紧，抓牢；领会，明白；急忙抓住（机会）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "grasp"
+    },
+    {
+        "zh": "感激的，感谢的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "grateful"
+    },
+    {
+        "zh": "纵情（于）；沉湎（于）；满足（欲望）；使满意，使高兴；纵容",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "gratify"
+    },
+    {
+        "zh": "感激，感谢",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "gratitude"
+    },
+    {
+        "zh": "严重性；地心引力，重力；庄重，严肃",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "gravity"
+    },
+    {
+        "zh": "温室，暖房",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "greenhouse"
+    },
+    {
+        "zh": "（尤指因某人去世而）感到悲痛；使悲伤，使伤心",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "grieve"
+    },
+    {
+        "zh": "呻吟；呻吟着说；抱怨；（木头等）发出嘎吱的声音",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "groan"
+    },
+    {
+        "zh": "总的；严重的；令人恶心的；粗鲁的；肥胖而丑陋的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "gross"
+    },
+    {
+        "zh": "发出低沉的怒吼；咆哮；发牢骚地说",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "growl"
+    },
+    {
+        "zh": "保证，担保；保修单；保证金；抵押品",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "guarantee"
+    },
+    {
+        "zh": "守卫者；保护者；看守人；监护人",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "guardian"
+    },
+    {
+        "zh": "引导，指导",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "guidance"
+    },
+    {
+        "zh": "指导方针，准则；参考",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "guideline"
+    },
+    {
+        "zh": "内疚；罪行，有罪；罪责",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "guilt"
+    },
+    {
+        "zh": "犯罪的，有罪责的；感到内疚的，惭愧的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "guilty"
+    },
+    {
+        "zh": "口香糖；齿龈；树胶",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "gum"
+    },
+    {
+        "zh": "男人；家伙；伙计",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "guy"
+    },
+    {
+        "zh": "（动植物的）生长环境，栖息地",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "habitat"
+    },
+    {
+        "zh": "赞扬；招手（叫出租车）；下冰雹；打招呼，欢迎；（hail from）来自，出生于",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "hail"
+    },
+    {
+        "zh": "（使）停止，停下；（口令）立定",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "halt"
+    },
+    {
+        "zh": "阻碍，防止",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "hamper"
+    },
+    {
+        "zh": "少数，少量；一把，一小撮",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "handful"
+    },
+    {
+        "zh": "生理缺陷，残疾；障碍；阻碍",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "handicap"
+    },
+    {
+        "zh": "处理，应付；搬动，（用手）拿；操控，控制；买卖",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "handle"
+    },
+    {
+        "zh": "笔迹，书法；手写",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "handwriting"
+    },
+    {
+        "zh": "易使用的，便利的；手边的，近便的；手巧的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "handy"
+    },
+    {
+        "zh": "艰难，困苦",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hardship"
+    },
+    {
+        "zh": "硬件；五金制品；设备",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hardware"
+    },
+    {
+        "zh": "伤害，损害",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "harm"
+    },
+    {
+        "zh": "和谐，融洽；和声；协调",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "harmony"
+    },
+    {
+        "zh": "残酷的；恶劣的，严酷的；刺眼的，刺耳的，刺激性强的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "harsh"
+    },
+    {
+        "zh": "匆忙，仓促",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "haste"
+    },
+    {
+        "zh": "憎恨，憎恶，厌恶",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hatred"
+    },
+    {
+        "zh": "鹰，隼；鹰派人物（主张使用武力或强硬手段）",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hawk"
+    },
+    {
+        "zh": "危险，危害",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hazard"
+    },
+    {
+        "zh": "（使）康复，复原；（使创伤、裂痕等）弥合；治愈；使快乐",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "heal"
+    },
+    {
+        "zh": "听力，听觉；听证会；解释、申辩的机会",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hearing"
+    },
+    {
+        "zh": "公顷",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hectare"
+    },
+    {
+        "zh": "用树篱围住；包围，限制；拐弯抹角，闪烁其词；防备（金钱损失）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "hedge"
+    },
+    {
+        "zh": "脚后跟；（鞋、袜）后跟；手掌根；（heels）高跟鞋",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "heel"
+    }
+]

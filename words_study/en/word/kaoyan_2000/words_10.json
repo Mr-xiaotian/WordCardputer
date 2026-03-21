@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "暗示，提示，信号；（台球）球杆",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "cue"
+    },
+    {
+        "zh": "耕作；种植，培育；结交，建立（关系）；逐渐形成（某种态度、举止等）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "cultivate"
+    },
+    {
+        "zh": "狡猾的，狡诈的；灵巧的，巧妙的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "cunning"
+    },
+    {
+        "zh": "抑制，控制，约束",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "curb"
+    },
+    {
+        "zh": "好奇心；珍品，奇物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "curiosity"
+    },
+    {
+        "zh": "好奇的，求知欲强的；稀奇的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "curious"
+    },
+    {
+        "zh": "（使）卷曲，弯曲；蜷缩；（使）缠绕，旋转；撅起（嘴）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "curl"
+    },
+    {
+        "zh": "通货；货币；流通，流转",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "currency"
+    },
+    {
+        "zh": "课程，（学校等的）全部课程",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "curriculum"
+    },
+    {
+        "zh": "曲线，弧线",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "curve"
+    },
+    {
+        "zh": "计算机世界，网络空间",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "cyberspace"
+    },
+    {
+        "zh": "自行车，摩托车；周期，循环；圈",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "cycle"
+    },
+    {
+        "zh": "（表示愤怒）讨厌，混账；强烈批评，谴责；（上帝）使某人下地狱",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "damn"
+    },
+    {
+        "zh": "疾驰，猛冲；仓促，匆忙；短跑；锐气，冲劲；少量，少许；破折号",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dash"
+    },
+    {
+        "zh": "数据；（计算机中储存的）资料",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "data"
+    },
+    {
+        "zh": "数据库",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "database"
+    },
+    {
+        "zh": "致命的；极度的，彻底的；非常有效的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "deadly"
+    },
+    {
+        "zh": "交易商，贸易商；毒品贩子",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dealer"
+    },
+    {
+        "zh": "（大学）学院院长，系主任；学监；主任牧师",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dean"
+    },
+    {
+        "zh": "腐烂，腐坏；（社会、制度，机构等的）衰败，衰退",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "decay"
+    },
+    {
+        "zh": "相当不错的；正派的；得体的，适当的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "decent"
+    },
+    {
+        "zh": "决定性的，关键的；坚决的，果断的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "decisive"
+    },
+    {
+        "zh": "公布，宣布；声称，断言；申报（收益、应税物品）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "declare"
+    },
+    {
+        "zh": "减少，下降；衰退；谢绝，婉言拒绝",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "decline"
+    },
+    {
+        "zh": "装饰，装修；粉刷；装点；授予（某人）奖章",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "decorate"
+    },
+    {
+        "zh": "（使大小、数量等）减少，降低",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "decrease"
+    },
+    {
+        "zh": "致力于，献身于；把（书等作品）献给；为……举行落成典礼",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "dedicate"
+    },
+    {
+        "zh": "推论，推断；演绎出（事实，结论）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "deduce"
+    },
+    {
+        "zh": "认为，视为，相信",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "deem"
+    },
+    {
+        "zh": "违约；不履行义务；默认，预设",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "default"
+    },
+    {
+        "zh": "被告",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "defendant"
+    },
+    {
+        "zh": "推迟，延迟，延期",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "defer"
+    },
+    {
+        "zh": "缺乏，不足；缺点，缺陷",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "deficiency"
+    },
+    {
+        "zh": "下定义；明确，阐明；确定…的界线",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "define"
+    },
+    {
+        "zh": "定义，释义；清晰度",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "definition"
+    },
+    {
+        "zh": "违抗，蔑视；难以解释（或描述等）；经受住",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "defy"
+    },
+    {
+        "zh": "故意的，存心的；从容不迫的，不慌不忙的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "deliberate"
+    },
+    {
+        "zh": "易碎的；虚弱的；小巧的；精密的；微妙的；需要小心处理的；（味道等）柔和的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "delicate"
+    },
+    {
+        "zh": "不良行为，少年犯罪",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "delinquency"
+    },
+    {
+        "zh": "传送，交付；发表，宣布；履行诺言；交出；助产，接生；解救；给予（打击）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "deliver"
+    },
+    {
+        "zh": "投递，传送；分娩；（演讲、表演等的）风格；投球",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "delivery"
+    },
+    {
+        "zh": "强烈要求；需要",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "demand"
+    },
+    {
+        "zh": "（与）民主（有关）的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "democratic"
+    },
+    {
+        "zh": "人口统计学家",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "demographer"
+    },
+    {
+        "zh": "象征，预示；表示，意指",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "denote"
+    },
+    {
+        "zh": "密集，浓度；密度",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "density"
+    },
+    {
+        "zh": "牙医；牙科诊所",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dentist"
+    },
+    {
+        "zh": "否认；拒绝给予",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "deny"
+    },
+    {
+        "zh": "离开，出发；违反，背离；（特定时间）离开的飞机（火车等）",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "departure"
+    },
+    {
+        "zh": "依赖，依靠；信任",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dependence"
+    }
+]

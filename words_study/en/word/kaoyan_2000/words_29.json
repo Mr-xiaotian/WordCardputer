@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "纵身投入，一头进入；将…投入，将…插入；（使）突然陷入；（使）投身于；骤降，猛跌；开始（说话或行动）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "plunge"
+    },
+    {
+        "zh": "加上；和，以及",
+        "pos": "prep",
+        "phonetic": "",
+        "score": 3,
+        "en": "plus"
+    },
+    {
+        "zh": "毒药，毒物，毒素；极有害的思想",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "poison"
+    },
+    {
+        "zh": "有毒的；（动物等）能分泌毒素的；令人厌恶的，恶毒的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "poisonous"
+    },
+    {
+        "zh": "擦光，磨光；修改，润色",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "polish"
+    },
+    {
+        "zh": "政治家，政客",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "politician"
+    },
+    {
+        "zh": "政治，政治事务；权术，钩心斗角；（个人）政治观点；政治学；政治局势",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "politics"
+    },
+    {
+        "zh": "民意调查；选举投票；得票数；（the polls）政治大选，投票站",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "poll"
+    },
+    {
+        "zh": "沉思，琢磨，考虑",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "ponder"
+    },
+    {
+        "zh": "流行音乐；（短促清脆的爆裂声）砰；（称呼）爸爸",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "pop"
+    },
+    {
+        "zh": "普及，流行，受欢迎",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "popularity"
+    },
+    {
+        "zh": "（与）平民党（有关）的；（与）平民主义（有关）的；（与）平民论（有关）的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "populist"
+    },
+    {
+        "zh": "部分；（食物的）一份；分担的责任",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "portion"
+    },
+    {
+        "zh": "描写，描绘；表现；扮演（角色）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "portray"
+    },
+    {
+        "zh": "造成，引起（问题）；提问；冒充；招摇；摆姿势",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "pose"
+    },
+    {
+        "zh": "有；具有（特质）；持有；[律]占有，支配；影响，控制",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "possess"
+    },
+    {
+        "zh": "可能性；可选择的方法；机会；（possibilities）潜力，改进的余地",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "possibility"
+    },
+    {
+        "zh": "强壮的；有权势的，有影响力的；强有力的；有感染力的；浓烈的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "powerful"
+    },
+    {
+        "zh": "从业者（尤指医生或律师）；实践者；专业人才",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "practitioner"
+    },
+    {
+        "zh": "祈祷，祷告；祷文，祷辞；企盼的事，祈望",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "prayer"
+    },
+    {
+        "zh": "先于；走在…前面；处于…之前",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "precede"
+    },
+    {
+        "zh": "先例，前例；传统；（法律）判例，范例",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "precedent"
+    },
+    {
+        "zh": "在前的，在先的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "preceding"
+    },
+    {
+        "zh": "珍奇的，珍稀的；宝贵的；（人）矫揉造作的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "precious"
+    },
+    {
+        "zh": "精确的，明确的；恰好的；认真的，一丝不苟的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "precise"
+    },
+    {
+        "zh": "前辈，前任；原有事物，前身",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "predecessor"
+    },
+    {
+        "zh": "显著的；盛行的；占主导地位的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "predominant"
+    },
+    {
+        "zh": "更可取的，较适合的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "preferable"
+    },
+    {
+        "zh": "怀孕的；饱含的；意味深长的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "pregnant"
+    },
+    {
+        "zh": "偏见，成见",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "prejudice"
+    },
+    {
+        "zh": "保险费；额外费用",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "premium"
+    },
+    {
+        "zh": "准备（动作，过程），预备；制剂，配置品",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "preparation"
+    },
+    {
+        "zh": "给…开药，为…开处方；规定，指定",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "prescribe"
+    },
+    {
+        "zh": "处方，药方；处方药；开处方；诀窍，秘诀",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "prescription"
+    },
+    {
+        "zh": "（人）出席，在场；（物）存在；风度；幽灵；部队",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "presence"
+    },
+    {
+        "zh": "一会儿，不久；现在，目前",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "presently"
+    },
+    {
+        "zh": "保护，维护；维持……的原样；保养；贮存；使存活，保全",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "preserve"
+    },
+    {
+        "zh": "（心理）压力；（用力按压产生的）压力；压强；气压；催促，呼吁",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "pressure"
+    },
+    {
+        "zh": "威信，声望，威望",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "prestige"
+    },
+    {
+        "zh": "推测起来，大概",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "presumably"
+    },
+    {
+        "zh": "流行，盛行；获胜；占优势，占上风",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "prevail"
+    },
+    {
+        "zh": "流行的，盛行的，普遍的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "prevalent"
+    },
+    {
+        "zh": "捕食；剥削，占便宜；使烦扰",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "prey"
+    },
+    {
+        "zh": "牧师，神父；僧侣；神职人员",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "priest"
+    },
+    {
+        "zh": "主要的，最重要的；最初的；初等教育的，小学的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "primary"
+    },
+    {
+        "zh": "首要的，主要的；优质的；典型的；最优的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "prime"
+    },
+    {
+        "zh": "原始的，远古的；落后的；（感觉或欲望）原始本能的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "primitive"
+    },
+    {
+        "zh": "公主；王妃；（被宠坏的）娇小姐",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "princess"
+    },
+    {
+        "zh": "先前的；优先的；在前面的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "prior"
+    },
+    {
+        "zh": "私有的；私人的；私下的；私营的；私立的；偏僻的；孤僻的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "private"
+    }
+]

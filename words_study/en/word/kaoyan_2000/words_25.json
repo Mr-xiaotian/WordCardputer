@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "磨粉机；磨坊，面粉厂；制造厂",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "mill"
+    },
+    {
+        "zh": "一千年, 千周年纪念日, 千禧年（复数millennia）",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "millennium"
+    },
+    {
+        "zh": "使最小化；使减少到最低限度；贬低，使不重要",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "minimize"
+    },
+    {
+        "zh": "最低限度的，最小的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "minimum"
+    },
+    {
+        "zh": "较小的，轻微的，次要的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "minor"
+    },
+    {
+        "zh": "少数（人、派）；少数族裔",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "minority"
+    },
+    {
+        "zh": "痛苦的；令人不快的；（人）乖戾的，脾气坏的；少的可怜的；惨痛的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "miserable"
+    },
+    {
+        "zh": "痛苦；穷困；不幸的事",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "misery"
+    },
+    {
+        "zh": "不幸，灾祸",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "misfortune"
+    },
+    {
+        "zh": "被误导的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "misguided"
+    },
+    {
+        "zh": "误导；使误入歧途",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "mislead"
+    },
+    {
+        "zh": "滥用，误用",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "misuse"
+    },
+    {
+        "zh": "混合，结合体；混合物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "mixture"
+    },
+    {
+        "zh": "呻吟；抱怨，发牢骚；（风）发出萧萧声",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "moan"
+    },
+    {
+        "zh": "可动的，可移动的；（人）流动的；（面部特征）多变的；行动方便的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "mobile"
+    },
+    {
+        "zh": "嘲笑，讥笑，嘲弄；不尊重；蔑视",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "mock"
+    },
+    {
+        "zh": "方式；（设备的）模式；状态，状况；（艺术等的）风格；（音乐的）调式",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "mode"
+    },
+    {
+        "zh": "温和的；适度的，中等的；合理的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "moderate"
+    },
+    {
+        "zh": "现代的，近代的，现代化的，摩登的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "modern"
+    },
+    {
+        "zh": "不太大的，些许的；谦虚的；（穿着）庄重的，朴素的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "modest"
+    },
+    {
+        "zh": "调整，修改；使…缓和；（语法）修饰",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "modify"
+    },
+    {
+        "zh": "动力，势头；动量；冲力",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "momentum"
+    },
+    {
+        "zh": "君主，帝王",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "monarch"
+    },
+    {
+        "zh": "君主政体；君主制；王室；皇室",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "monarchy"
+    },
+    {
+        "zh": "垄断；垄断企业；（某类人）专有的东西，专利品",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "monopoly"
+    },
+    {
+        "zh": "单调乏味的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "monotonous"
+    },
+    {
+        "zh": "怪物；巨物；恶人",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "monster"
+    },
+    {
+        "zh": "心情，情绪；坏脾气；气氛；（语法）语气",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "mood"
+    },
+    {
+        "zh": "（关于）道德的；道德上的；有道德的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "moral"
+    },
+    {
+        "zh": "道德；道德准则；道德体系",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "morality"
+    },
+    {
+        "zh": "再者，加之，而且",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "moreover"
+    },
+    {
+        "zh": "吗啡",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "morphine"
+    },
+    {
+        "zh": "终将死亡的；致命的；不共戴天的；极端的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "mortal"
+    },
+    {
+        "zh": "（向银行等）抵押（房产）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "mortgage"
+    },
+    {
+        "zh": "主要地；一般，通常",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "mostly"
+    },
+    {
+        "zh": "运动，移动；动作；提议",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "motion"
+    },
+    {
+        "zh": "动机，缘由，目的",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "motive"
+    },
+    {
+        "zh": "驾驶者；坐汽车的人",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "motorist"
+    },
+    {
+        "zh": "[英]高速公路",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "motorway"
+    },
+    {
+        "zh": "众多，大量；群众，民众；人群",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "multitude"
+    },
+    {
+        "zh": "市政的，地方政府的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "municipal"
+    },
+    {
+        "zh": "肌肉；体力；权力，影响力",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "muscle"
+    },
+    {
+        "zh": "肌肉的；肌肉发达的，强壮的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "muscular"
+    },
+    {
+        "zh": "可变性，易变性",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "mutability"
+    },
+    {
+        "zh": "沉默的，无声的；哑的；（声音）降低的；温和的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "mute"
+    },
+    {
+        "zh": "共同的，共有的；相互的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "mutual"
+    },
+    {
+        "zh": "神秘，奥秘；奥义；神秘的事物，难以理解之事；疑案小说（或电影、戏剧）",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "mystery"
+    },
+    {
+        "zh": "神话；虚构的故事，荒诞的说法",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "myth"
+    },
+    {
+        "zh": "（人，行为）无经验的；幼稚的；缺乏判断力的；天真的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "naive"
+    },
+    {
+        "zh": "叙述，叙述技巧；记叙文",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "narrative"
+    }
+]

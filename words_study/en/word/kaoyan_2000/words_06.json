@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "（大学、学院）校园；（学校、医院等机构的）场地",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "campus"
+    },
+    {
+        "zh": "运河，沟渠；（体内的）管，道",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "canal"
+    },
+    {
+        "zh": "取消，撤销；废除；抵消；注销",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "cancel"
+    },
+    {
+        "zh": "癌，癌症；（社会）毒瘤",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "cancer"
+    },
+    {
+        "zh": "候选人，申请人；应试者；攻读学位者；适合…的人（或物），可能有…结局的人（或物）",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "candidate"
+    },
+    {
+        "zh": "食堂；水壶；餐具盒",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "canteen"
+    },
+    {
+        "zh": "容量，容纳能力；（理解、办事）能力；职责；生产量；（发动机）功率",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "capacity"
+    },
+    {
+        "zh": "斗篷，披肩；海角，岬",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "cape"
+    },
+    {
+        "zh": "碳水化合物；（carbohydrates）含碳水化合物的食物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "carbohydrate"
+    },
+    {
+        "zh": "碳；复写纸",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "carbon"
+    },
+    {
+        "zh": "事业，职业；职业生涯，经历",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "career"
+    },
+    {
+        "zh": "船货，货物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "cargo"
+    },
+    {
+        "zh": "病菌携带者；运输工具，运送人；运输公司；航空母舰；运输车；通信公司",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "carrier"
+    },
+    {
+        "zh": "雕刻；刻；把熟肉切成块；艰苦创业",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "carve"
+    },
+    {
+        "zh": "现金；资金，金钱",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "cash"
+    },
+    {
+        "zh": "投，抛；投射（光、影、视线等）；怀疑；选派角色；蜕（皮）；把某人描写为；投票；铸造",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "cast"
+    },
+    {
+        "zh": "漫不经心的，无所谓的；随便的，非正式的；马虎的；偶然的，碰巧的；临时的，不定期的；（感情）不深的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "casual"
+    },
+    {
+        "zh": "伤亡人员；受害者，受损物；急诊室",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "casualty"
+    },
+    {
+        "zh": "（有详细评论和解释的）艺术展品（或收藏品）目录",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "catalogue"
+    },
+    {
+        "zh": "白内障；大瀑布",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "cataract"
+    },
+    {
+        "zh": "种类，类别，范畴",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "category"
+    },
+    {
+        "zh": "（为活动）提供饮食，承办酒席；（cater to）迎合，满足需要",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "cater"
+    },
+    {
+        "zh": "（与）原因（有关）的；构成原因的；因果关系的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "causal"
+    },
+    {
+        "zh": "警告，提醒，告诫",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "caution"
+    },
+    {
+        "zh": "小心的，谨慎的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "cautious"
+    },
+    {
+        "zh": "（使）停止，终止",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "cease"
+    },
+    {
+        "zh": "名人，名流；名望，名声",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "celebrity"
+    },
+    {
+        "zh": "水泥；混凝土；胶合剂；起巩固作用的纽带",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "cement"
+    },
+    {
+        "zh": "人口普查（调查）",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "census"
+    },
+    {
+        "zh": "集中(化)，中央集权化",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "centralization"
+    },
+    {
+        "zh": "典礼，仪式；礼节，礼仪",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "ceremony"
+    },
+    {
+        "zh": "证明，证书；合格证书，结业证书，文凭",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "certificate"
+    },
+    {
+        "zh": "议院；会议厅；房间，室；（人体、植物或机器内的）腔，室；洞穴",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "chamber"
+    },
+    {
+        "zh": "冠军；拥护者",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "champion"
+    },
+    {
+        "zh": "（德国或奥地利的）总理；大学校长；（英国）财政大臣",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "chancellor"
+    },
+    {
+        "zh": "电视台；频道；表达方式；水渠；航道；海峡；（channels）渠道",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "channel"
+    },
+    {
+        "zh": "章（节）；时代，篇章",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "chapter"
+    },
+    {
+        "zh": "特性，特征，特点，特色",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "characteristic"
+    },
+    {
+        "zh": "慈善机构；慈善，仁慈，宽大；救济，施舍的财物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "charity"
+    },
+    {
+        "zh": "吸引力；（人的）魅力；（手链等的）挂坠；符咒",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "charm"
+    },
+    {
+        "zh": "宪章；特许状；（法律或政策的）不完善，漏洞；（飞机、船等的）租赁",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "charter"
+    },
+    {
+        "zh": "欺骗；作弊；（对伴侣等）不忠",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "cheat"
+    },
+    {
+        "zh": "乐观的；愉快的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "cheery"
+    },
+    {
+        "zh": "厨师，主厨",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "chef"
+    },
+    {
+        "zh": "化学家；药剂师；药店",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "chemist"
+    },
+    {
+        "zh": "咀嚼；咬",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "chew"
+    },
+    {
+        "zh": "芯片；（英国）炸薯条，（美国）炸薯片；缺口；碎屑；筹码",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "chip"
+    },
+    {
+        "zh": "砍，劈，剁；猪排，羊排；掌劈",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "chop"
+    },
+    {
+        "zh": "（尤指疾病）慢性的，难以根除的；积习难改的；（问题）严重的，顽固的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "chronic"
+    },
+    {
+        "zh": "相当大的数量；厚片，大块",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "chunk"
+    }
+]

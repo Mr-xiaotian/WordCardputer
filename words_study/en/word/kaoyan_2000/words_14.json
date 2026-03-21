@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "启发，阐明",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "enlighten"
+    },
+    {
+        "zh": "巨大的，庞大的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "enormous"
+    },
+    {
+        "zh": "登记；注册；使加入",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "enroll"
+    },
+    {
+        "zh": "保证，确保",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "ensure"
+    },
+    {
+        "zh": "公司，企业；（重大）计划，事业；进取心，创业精神",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "enterprise"
+    },
+    {
+        "zh": "娱乐活动；娱乐，招待",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "entertainment"
+    },
+    {
+        "zh": "热情，热忱；热衷的事物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "enthusiasm"
+    },
+    {
+        "zh": "热情的，热心的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "enthusiastic"
+    },
+    {
+        "zh": "全部的，整个的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "entire"
+    },
+    {
+        "zh": "使有权利，使符合资格；给…命名，给…题名",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "entitle"
+    },
+    {
+        "zh": "实体，独立存在体",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "entity"
+    },
+    {
+        "zh": "企业家，创业者",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "entrepreneur"
+    },
+    {
+        "zh": "进入（资格）；加入；参赛人数；参赛作品；条目；入口",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "entry"
+    },
+    {
+        "zh": "环境，条件；（the environment）自然环境",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "environment"
+    },
+    {
+        "zh": "想象，设想",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "envisage"
+    },
+    {
+        "zh": "想象; 设想; 展望",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "envision"
+    },
+    {
+        "zh": "羡慕；忌妒；（not envy sb/sth）庆幸",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "envy"
+    },
+    {
+        "zh": "流行病；（迅速）蔓延，泛滥",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "epidemic"
+    },
+    {
+        "zh": "绰号, 修饰语, 别称, 诨名",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "epithet"
+    },
+    {
+        "zh": "时代，纪元，时期",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "epoch"
+    },
+    {
+        "zh": "平等，均等",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "equality"
+    },
+    {
+        "zh": "方程式，等式；等同看待；制衡局面",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "equation"
+    },
+    {
+        "zh": "配备，装备；使做好思想准备，使有所准备",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "equip"
+    },
+    {
+        "zh": "时代，时期，纪元",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "era"
+    },
+    {
+        "zh": "建立，建造；搭起；设立",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "erect"
+    },
+    {
+        "zh": "错误的，不正确的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "erroneous"
+    },
+    {
+        "zh": "错误；失误",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "error"
+    },
+    {
+        "zh": "（火山）爆发；突然发生；（情绪等）迸发；（皮肤上）突然出现（疹子等）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "erupt"
+    },
+    {
+        "zh": "间谍活动",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "espionage"
+    },
+    {
+        "zh": "（学生写的）短文；（作家写的）文章；企图，尝试",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "essay"
+    },
+    {
+        "zh": "本质，实质，精髓；香精，精油",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "essence"
+    },
+    {
+        "zh": "必不可少的；本质的，根本的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "essential"
+    },
+    {
+        "zh": "设立，创立；建立（关系）；确定，证实；使立足，使被认可",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "establish"
+    },
+    {
+        "zh": "庄园；财产，遗产；住宅区；工业区",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "estate"
+    },
+    {
+        "zh": "尊敬，敬重",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "esteem"
+    },
+    {
+        "zh": "估计，估价",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "estimate"
+    },
+    {
+        "zh": "道德规范，伦理标准；行为准则；（ethics）伦理学",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "ethic"
+    },
+    {
+        "zh": "（与）种族（有关）的；少数民族的；具有异国风情的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "ethnic"
+    },
+    {
+        "zh": "安乐死",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "euthanasia"
+    },
+    {
+        "zh": "逃脱，避开；逃避（责任）；回避（讨论某事）；想不出，不发生",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "evade"
+    },
+    {
+        "zh": "（使）蒸发，挥发；（抽象事物）逐渐消失",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "evaporate"
+    },
+    {
+        "zh": "（节日等的）前夜，前夕",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "eve"
+    },
+    {
+        "zh": "根据，证明；证据",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "evidence"
+    },
+    {
+        "zh": "明显的，清楚的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "evident"
+    },
+    {
+        "zh": "恶毒的，邪恶的，有害的；令人讨厌的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "evil"
+    },
+    {
+        "zh": "引起，唤起（记忆、情感等）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "evoke"
+    },
+    {
+        "zh": "进化；演化；发展；演变",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "evolution"
+    },
+    {
+        "zh": "逐步发展（演变）；（动植物等）进化，进化形成",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "evolve"
+    },
+    {
+        "zh": "（尤指古代遗址的）挖掘；发掘；挖掘地",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "excavation"
+    },
+    {
+        "zh": "超过（某数量）；超越（限制、规定）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "exceed"
+    }
+]

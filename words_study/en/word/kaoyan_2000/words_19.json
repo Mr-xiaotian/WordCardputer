@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "（使）加强，提高",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "heighten"
+    },
+    {
+        "zh": "直升机",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "helicopter"
+    },
+    {
+        "zh": "头盔，防护帽",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "helmet"
+    },
+    {
+        "zh": "有帮助的，有益的，有用的；给予帮助的，乐于帮助的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "helpful"
+    },
+    {
+        "zh": "（地球的）半球；大脑半球",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hemisphere"
+    },
+    {
+        "zh": "因此，由此；此后",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "hence"
+    },
+    {
+        "zh": "药草，香草；草本植物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "herb"
+    },
+    {
+        "zh": "遗产；传统",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "heritage"
+    },
+    {
+        "zh": "英雄的，英勇的；艰苦卓绝的；和英雄有关的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "heroic"
+    },
+    {
+        "zh": "海洛因",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "heroin"
+    },
+    {
+        "zh": "犹豫，迟疑；顾虑",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "hesitate"
+    },
+    {
+        "zh": "突出，强调；突出显示，（用不同颜色）标出",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "highlight"
+    },
+    {
+        "zh": "（尤指连接主要城镇的）主干道，大路，公路",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "highway"
+    },
+    {
+        "zh": "阻碍，妨碍",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "hinder"
+    },
+    {
+        "zh": "暗示，提示；迹象；少许；秘诀，窍门",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hint"
+    },
+    {
+        "zh": "历史学家",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "historian"
+    },
+    {
+        "zh": "历史上著名的，历史上重大的；历史性的；有史时期的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "historic"
+    },
+    {
+        "zh": "到目前为止，迄今",
+        "pos": "adv",
+        "phonetic": "",
+        "score": 3,
+        "en": "hitherto"
+    },
+    {
+        "zh": "持有者，占有者；（台、架等的）支持物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "holder"
+    },
+    {
+        "zh": "神圣的，与宗教有关的；圣洁的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "holy"
+    },
+    {
+        "zh": "谋杀；凶杀；他杀；杀人；杀人者",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "homicide"
+    },
+    {
+        "zh": "诚实；正直；坦率",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "honesty"
+    },
+    {
+        "zh": "挂钩，鱼钩；钩拳；曲线球",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hook"
+    },
+    {
+        "zh": "地平线；眼界，阅历",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "horizon"
+    },
+    {
+        "zh": "令人恐怖的，可怕的；糟糕的；极讨厌的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "horrible"
+    },
+    {
+        "zh": "病人（或临终病人）收容所；救济院；济贫院",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hospice"
+    },
+    {
+        "zh": "好客，殷勤；（款待客人的）食物、饮料、服务等",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hospitality"
+    },
+    {
+        "zh": "主人；东道主；主持人；许多，大量；（寄生动植物的）宿主；（计算机网络的）主机",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "host"
+    },
+    {
+        "zh": "人质",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hostage"
+    },
+    {
+        "zh": "怀有敌意的，敌对的；强烈反对的；不利的，恶劣的；敌人的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "hostile"
+    },
+    {
+        "zh": "家庭，一家人；家务",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "household"
+    },
+    {
+        "zh": "盘旋；彷徨，徘徊；处于不稳定状态",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "hover"
+    },
+    {
+        "zh": "拥抱",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hug"
+    },
+    {
+        "zh": "哼（曲子）；发嗡嗡声；活跃",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "hum"
+    },
+    {
+        "zh": "人，人类；人性；人道，仁慈；（the humanities）人文学科",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "humanity"
+    },
+    {
+        "zh": "有幽默感的，诙谐的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "humorous"
+    },
+    {
+        "zh": "打猎，猎杀；搜寻；追捕",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "hunt"
+    },
+    {
+        "zh": "氢",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hydrogen"
+    },
+    {
+        "zh": "伪善，虚伪",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hypocrisy"
+    },
+    {
+        "zh": "假设，假说；猜想，猜测",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "hypothesis"
+    },
+    {
+        "zh": "冰山",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "iceberg"
+    },
+    {
+        "zh": "理想的，完美的；想象的，不切实际的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "ideal"
+    },
+    {
+        "zh": "意识形态，思想体系",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "ideology"
+    },
+    {
+        "zh": "习语，惯用语；语言和语法；典型风格",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "idiom"
+    },
+    {
+        "zh": "懒惰的；（机器，工厂）闲置的；（人）没有工作的；漫无目的的；无用的；（时间）空闲的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "idle"
+    },
+    {
+        "zh": "无知的，愚昧的；无礼的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "ignorant"
+    },
+    {
+        "zh": "非法的，不合法的（尤指违背刑法的）",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "illegal"
+    },
+    {
+        "zh": "不会读写的，文盲的；（对某学科）外行的；行文不通顺的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "illiterate"
+    },
+    {
+        "zh": "照明，照亮；阐明，解释；用彩灯装饰，使容光焕发",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "illuminate"
+    },
+    {
+        "zh": "（用例子、图画）解释说明；加插图，表明…存在",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "illustrate"
+    }
+]

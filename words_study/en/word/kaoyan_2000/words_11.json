@@ -1,0 +1,352 @@
+[
+    {
+        "zh": "依靠的，依赖的；取决于…的；有瘾的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "dependent"
+    },
+    {
+        "zh": "损耗，耗尽",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "depletion"
+    },
+    {
+        "zh": "放下，放置；存钱；支付（定金、保证金等）；使沉积；寄存",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "deposit"
+    },
+    {
+        "zh": "（人）沮丧的，消沉的；降低的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "depressed"
+    },
+    {
+        "zh": "剥夺，使丧失，使不能享有",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "deprive"
+    },
+    {
+        "zh": "从…衍生出，源自；（从…中）获得，得到",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "derive"
+    },
+    {
+        "zh": "下来，下降；降临，来临；堕落；陷入（糟糕境地）；突然到来",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "descend"
+    },
+    {
+        "zh": "后裔，后代；衍生物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "descendant"
+    },
+    {
+        "zh": "下落，下降；斜坡；血统，出身；沉沦，没落",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "descent"
+    },
+    {
+        "zh": "描述，形容（人，事）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "describe"
+    },
+    {
+        "zh": "描述，形容；种类",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "description"
+    },
+    {
+        "zh": "应得，值得",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "deserve"
+    },
+    {
+        "zh": "命名，指定；委派，委任；表明",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "designate"
+    },
+    {
+        "zh": "绝望",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "despair"
+    },
+    {
+        "zh": "绝望的，孤注一掷的；极度渴望的；极危险的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "desperate"
+    },
+    {
+        "zh": "目的地，送达地点；终点",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "destination"
+    },
+    {
+        "zh": "命运；天数，定数",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "destiny"
+    },
+    {
+        "zh": "摧毁，毁灭",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "destruction"
+    },
+    {
+        "zh": "破坏性的，毁灭性的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "destructive"
+    },
+    {
+        "zh": "拆卸；脱离；挣脱，摆脱；派遣，分派",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "detach"
+    },
+    {
+        "zh": "发现，查明；探测",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "detect"
+    },
+    {
+        "zh": "探测器，检测器",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "detector"
+    },
+    {
+        "zh": "恶化，变坏",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "deteriorate"
+    },
+    {
+        "zh": "有害的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "detrimental"
+    },
+    {
+        "zh": "仪器，设备；爆炸装置；手段，策略；花招，诡计",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "device"
+    },
+    {
+        "zh": "设计，发明，想出",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "devise"
+    },
+    {
+        "zh": "糖尿病；多尿症",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "diabetes"
+    },
+    {
+        "zh": "诊断（疾病）；判断（问题的原因）",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "diagnose"
+    },
+    {
+        "zh": "（特定地区或社会群体的）方言，土话，特有用语",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dialect"
+    },
+    {
+        "zh": "口述；使听写；命令，发号施令；影响，支配；（逻辑或常识）使人相信",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "dictate"
+    },
+    {
+        "zh": "日常饮食；（为健康或减肥等目的的）规定饮食；大量单一的东西",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "diet"
+    },
+    {
+        "zh": "不同于，有区别；持不同意见，不同意",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "differ"
+    },
+    {
+        "zh": "区分，辨别；使不同；差别对待",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "differentiate"
+    },
+    {
+        "zh": "传播，普及；（气体、液体等）扩散，弥漫；（光线等）漫射；消除，缓解",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "diffuse"
+    },
+    {
+        "zh": "进退两难的窘境，困境",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dilemma"
+    },
+    {
+        "zh": "勤奋的，刻苦的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "diligent"
+    },
+    {
+        "zh": "（光线）暗淡的；（地方）昏暗的；（人影等）不分明的；（记忆等）模糊的；（前景）暗淡的；（人）愚笨的；视力差的",
+        "pos": "adj",
+        "phonetic": "",
+        "score": 3,
+        "en": "dim"
+    },
+    {
+        "zh": "减少，缩减；贬低，轻视",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "diminish"
+    },
+    {
+        "zh": "二氧化物",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "dioxide"
+    },
+    {
+        "zh": "毕业文凭；学位证书",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "diploma"
+    },
+    {
+        "zh": "目录，名录；电话号码簿",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "directory"
+    },
+    {
+        "zh": "使残废，使丧失能力；使失效",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "disable"
+    },
+    {
+        "zh": "灾难，大祸（如事故或自然灾害）；不幸事件；不幸",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "disaster"
+    },
+    {
+        "zh": "察觉出，了解到；依稀分辨出，隐约看见",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "discern"
+    },
+    {
+        "zh": "纪律；训练方法，行为准则；自制力；（尤指大学的）学科",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "discipline"
+    },
+    {
+        "zh": "泄漏（秘密）；透露（新消息）；揭露，使公开",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "disclose"
+    },
+    {
+        "zh": "打折；认为…不重要，低估",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "discount"
+    },
+    {
+        "zh": "使气馁，使灰心；劝阻",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "discourage"
+    },
+    {
+        "zh": "演讲，论文；语篇，语话；会话",
+        "pos": "n",
+        "phonetic": "",
+        "score": 3,
+        "en": "discourse"
+    },
+    {
+        "zh": "区别，辨别；歧视，区别对待",
+        "pos": "v",
+        "phonetic": "",
+        "score": 3,
+        "en": "discriminate"
+    }
+]
