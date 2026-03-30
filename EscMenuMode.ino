@@ -4,9 +4,11 @@ std::vector<String> escItems = {
     "保存进度",
     "学习统计",
     "重新选择词库",
+    "重新选择语言",
     "进入学习模式",
-    "进入听读模式",      
+    "进入听读模式",
     "进入听写模式",
+    "按键帮助",
 };
 
 int escIndex = 0;
@@ -120,21 +122,34 @@ void loopEscMenuMode() {
                 return;
             }
             else if (escIndex == 3) {
-                // 进入学习页面
-                appMode = MODE_STUDY;
-                drawStudyWord();  // 刷新学习界面
+                // 重新选择语言（先自动保存）
+                autoSaveIfNeeded();
+                appMode = MODE_LANG_SELECT;
+                initLanguageSelectMode();
                 return;
             }
             else if (escIndex == 4) {
+                // 进入学习页面
+                appMode = MODE_STUDY;
+                drawStudyWord();
+                return;
+            }
+            else if (escIndex == 5) {
                 // 进入听读模式
                 appMode = MODE_LISTEN;
                 initListenMode();
                 return;
             }
-            else if (escIndex == 5) {
+            else if (escIndex == 6) {
                 // 进入听写模式
                 appMode = MODE_DICTATION;
                 initDictationMode();
+                return;
+            }
+            else if (escIndex == 7) {
+                // 按键帮助
+                showKeyHelp();
+                drawEscMenu();
                 return;
             }
         }
