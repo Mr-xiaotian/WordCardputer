@@ -1,5 +1,5 @@
 /**
- * @file StringUtils.ino
+ * @file UtilsString.ino
  * @brief 字符串绘制与转换工具函数
  *
  * 提供自适应字号的文本绘制、屏幕角落文本绘制，

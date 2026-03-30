@@ -1,5 +1,5 @@
 /**
- * @file ListenMode.ino
+ * @file ModeListen.ino
  * @brief 听读模式
  *
  * 实现单词自动循环播放功能。每个单词自动播放 3 次语音，

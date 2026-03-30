@@ -1,5 +1,5 @@
 /**
- * @file ImeUtils.ino
+ * @file UtilsIme.ino
  * @brief 日语输入法（IME）工具函数
  *
  * 提供罗马音到假名的转换功能，包含完整的罗马音映射表

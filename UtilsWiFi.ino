@@ -1,5 +1,5 @@
 /**
- * @file WiFiUtils.ino
+ * @file UtilsWiFi.ino
  * @brief WiFi 连接与时间同步工具
  *
  * 提供从 SD 卡读取 WiFi 凭据并自动连接的功能，

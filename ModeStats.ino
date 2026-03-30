@@ -1,5 +1,5 @@
 /**
- * @file StatsMode.ino
+ * @file ModeStats.ino
  * @brief 学习统计模式
  *
  * 对当前加载的词库进行学习数据统计和展示。

@@ -1,5 +1,5 @@
 /**
- * @file KeyHelpMode.ino
+ * @file ModeKeyHelp.ino
  * @brief 按键帮助页面模块
  *
  * 提供分页的按键帮助说明界面，共包含三个页面：

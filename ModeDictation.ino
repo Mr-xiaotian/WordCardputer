@@ -1,5 +1,5 @@
 /**
- * @file DictationMode.ino
+ * @file ModeDictation.ino
  * @brief 听写模式（带 Level1 日语罗马音输入法）
  *
  * 实现单词听写功能，支持英语和日语两种语言。

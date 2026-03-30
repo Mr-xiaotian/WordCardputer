@@ -1,5 +1,5 @@
 /**
- * @file LangSelectMode.ino
+ * @file ModeLangSelect.ino
  * @brief 语言选择模式
  *
  * 提供语言选择界面，允许用户在日语和英语之间切换学习语言。

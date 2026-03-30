@@ -1,5 +1,5 @@
 /**
- * @file EscMenuMode.ino
+ * @file ModeEscMenu.ino
  * @brief ESC 菜单页面
  *
  * 提供应用内全局菜单功能，用户可通过 ESC 键（`）随时呼出。

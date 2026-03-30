@@ -1,5 +1,5 @@
 /**
- * @file FileSelectMode.ino
+ * @file ModeFileSelect.ino
  * @brief 文件选择模式
  *
  * 提供 SD 卡上词库文件的浏览和选择功能。
