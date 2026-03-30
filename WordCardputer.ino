@@ -47,6 +47,11 @@ int langIndex = 0;
 
 unsigned long volumeMessageDeadline = 0;  // 音量消息显示截止时间
 
+// ---------- 自动保存 ----------
+bool scoresDirty = false;                 // 是否有未保存的 score 变更
+int dirtyCount = 0;                       // 累计变更次数
+const int autoSaveThreshold = 5;          // 每 N 次变更自动保存
+
 // ---------- 自动亮度管理 ----------
 bool userAction = false;                  // 标记是否有用户操作
 unsigned long lastActivityTime = 0;       // 上次活动时间
@@ -105,6 +110,8 @@ void setLanguage(StudyLanguage lang);
 bool loadWordsFromJSON(const String &path);
 bool saveListToJSON(const String &filepath, const std::vector<Word> &list);
 void saveDictationMistakesAsWordList();
+void autoSaveIfNeeded();
+void markScoreDirty();
 
 int pickWeightedRandom();
 

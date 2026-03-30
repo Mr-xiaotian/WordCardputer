@@ -132,6 +132,9 @@ void drawJapaneseWord(Word &w)
 
 void startStudyMode(const String &filePath)
 {
+    // 加载新词库前，先保存旧词库的进度
+    autoSaveIfNeeded();
+
     bool ok = loadWordsFromJSON(filePath);
     if (!ok)
     {
@@ -224,11 +227,13 @@ void loopStudyMode()
         if (status.enter)
         {
             words[wordIndex].score = min(5, words[wordIndex].score + 1);
+            markScoreDirty();
         }
         // Del = 不熟,降低熟练度
         else if (status.del)
         {
             words[wordIndex].score = max(1, words[wordIndex].score - 1);
+            markScoreDirty();
         }
         if (status.enter || status.del)
         {

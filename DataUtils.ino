@@ -164,6 +164,28 @@ int pickWeightedRandom()
     return random(words.size());
 }
 
+// 标记 score 已变更，累计达到阈值时自动保存
+void markScoreDirty() {
+    scoresDirty = true;
+    dirtyCount++;
+    if (dirtyCount >= autoSaveThreshold) {
+        autoSaveIfNeeded();
+    }
+}
+
+// 如果有未保存的变更，则写入 SD 卡
+void autoSaveIfNeeded() {
+    if (!scoresDirty || selectedFilePath.isEmpty() || words.empty()) return;
+
+    if (saveListToJSON(selectedFilePath, words)) {
+        Serial.println("[AutoSave] 进度已自动保存");
+    } else {
+        Serial.println("[AutoSave] 自动保存失败");
+    }
+    scoresDirty = false;
+    dirtyCount = 0;
+}
+
 void saveDictationMistakesAsWordList() {
     if (dictErrors.empty()) return;
 

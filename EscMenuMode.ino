@@ -40,6 +40,7 @@ void loopEscMenuMode() {
 
         for (auto c : st.word) {
             if (c == '`') {  // ESC 键
+                autoSaveIfNeeded();
                 appMode = previousMode;
                 if (previousMode == MODE_STUDY) {
                     drawStudyWord();
@@ -85,6 +86,8 @@ void loopEscMenuMode() {
             if (escIndex == 0) {
                 // 保存到 JSON
                 if (saveListToJSON(selectedFilePath, words)) {
+                    scoresDirty = false;
+                    dirtyCount = 0;
                     // 显示保存成功
                     canvas.fillSprite(BLACK);
                     canvas.setTextDatum(middle_center);
@@ -110,7 +113,8 @@ void loopEscMenuMode() {
                 return;
             }
             else if (escIndex == 2) {
-                // 进入词库选择
+                // 进入词库选择（先自动保存）
+                autoSaveIfNeeded();
                 appMode = MODE_FILE_SELECT;
                 initFileSelectMode();
                 return;
