@@ -1,3 +1,12 @@
+/**
+ * @file EscMenuMode.ino
+ * @brief ESC 菜单页面
+ *
+ * 提供应用内全局菜单功能，用户可通过 ESC 键（`）随时呼出。
+ * 菜单选项包括：保存进度、学习统计、重新选择词库/语言、
+ * 切换学习/听读/听写模式、查看按键帮助等。
+ */
+
 // ========== ESC 菜单页面 ==========
 
 std::vector<String> escItems = {
@@ -14,6 +23,11 @@ std::vector<String> escItems = {
 int escIndex = 0;
 int escScoll = 0;
 
+/**
+ * 初始化 ESC 菜单模式
+ *
+ * 将菜单光标和滚动位置重置为起始状态，然后绘制菜单界面。
+ */
 void initEscMenuMode() {
     escIndex = 0;
     escScoll = 0;
@@ -21,7 +35,12 @@ void initEscMenuMode() {
     drawEscMenu();
 }
 
-// ---------- 绘制 ESC 菜单 ----------
+/**
+ * 绘制 ESC 菜单界面
+ *
+ * 调用通用菜单绘制函数 drawTextMenu，以列表形式展示所有菜单选项，
+ * 高亮当前选中项，并处理列表滚动显示。
+ */
 void drawEscMenu() {
     // 直接复用通用菜单绘制！
     drawTextMenu(
@@ -34,7 +53,16 @@ void drawEscMenu() {
     );
 }
 
-// ---------- ESC 菜单逻辑 ----------
+/**
+ * ESC 菜单模式的主循环函数，处理菜单输入和功能分发
+ *
+ * 处理以下键盘操作：
+ * - ESC 键（`）返回先前模式（自动保存进度）
+ * - 分号键（;）向上移动光标，句号键（.）向下移动光标
+ * - Enter 键执行选中的菜单项：
+ *   0=保存进度  1=学习统计  2=重新选择词库  3=重新选择语言
+ *   4=学习模式  5=听读模式  6=听写模式  7=按键帮助
+ */
 void loopEscMenuMode() {
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
         auto st = M5Cardputer.Keyboard.keysState();

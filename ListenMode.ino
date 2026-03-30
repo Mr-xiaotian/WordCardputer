@@ -1,3 +1,12 @@
+/**
+ * @file ListenMode.ino
+ * @brief 听读模式
+ *
+ * 实现单词自动循环播放功能。每个单词自动播放 3 次语音，
+ * 播放完毕后自动切换到下一个单词（基于权重随机选取）。
+ * 同时在屏幕上显示单词文本、注音和中文释义，支持音量调节。
+ */
+
 // =============== 听读模式 ===============
 
 // 播放控制
@@ -6,6 +15,15 @@ unsigned long listenNextActionTime = 0;          // 下一次动作的时间点
 const unsigned long listenRepeatInterval = 1200; // 每次播放之间的间隔（毫秒）
 const unsigned long listenNextWordDelay = 600;   // 播完3次后,切到下一个单词前等待的时间
 
+/**
+ * 获取当前单词用于语音播放的文本
+ *
+ * 根据当前语言设置返回对应的音频文本。
+ * 英语模式返回英文单词，日语模式返回日语假名。
+ *
+ * @param w 单词对象
+ * @return 用于语音播放的文本字符串
+ */
 String listenAudioText(const Word &w)
 {
     if (currentLanguage == LANG_EN)
@@ -13,7 +31,13 @@ String listenAudioText(const Word &w)
     return w.jp;
 }
 
-// ---------- 初始化听读模式 ----------
+/**
+ * 初始化听读模式
+ *
+ * 检查词库是否已加载（为空则显示提示并返回），
+ * 通过权重随机算法选取第一个单词，重置播放计数器和定时器，
+ * 然后绘制听读界面并立即开始播放。
+ */
 void initListenMode()
 {
     if (words.empty())
@@ -35,7 +59,13 @@ void initListenMode()
     drawListenWord();
 }
 
-// ---------- 绘制听读模式界面 ----------
+/**
+ * 绘制听读模式界面
+ *
+ * 在屏幕上渲染当前单词的详细信息。英语模式显示单词、音标和词性；
+ * 日语模式显示日语文本和汉字读音。底部统一显示中文释义。
+ * 左上角标注"听读模式"，音量调节时右上角显示当前音量值。
+ */
 void drawListenWord()
 {
     canvas.fillSprite(BLACK);
@@ -105,7 +135,14 @@ void drawListenWord()
     canvas.pushSprite(0, 0);
 }
 
-// ---------- 听读模式循环逻辑 ----------
+/**
+ * 听读模式的主循环函数
+ *
+ * 处理两部分逻辑：
+ * 1. 键盘输入：ESC 键（`）返回菜单，分号键增大音量，句号键减小音量
+ * 2. 自动播放控制：每个单词播放 3 次（间隔 listenRepeatInterval 毫秒），
+ *    播完后等待 listenNextWordDelay 毫秒，然后通过权重随机切换到下一个单词
+ */
 void loopListenMode()
 {
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())

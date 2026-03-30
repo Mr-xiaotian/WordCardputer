@@ -1,3 +1,24 @@
+/**
+ * @file StringUtils.ino
+ * @brief 字符串绘制与转换工具函数
+ *
+ * 提供自适应字号的文本绘制、屏幕角落文本绘制，
+ * 以及 IPA 国际音标 Unicode 符号到 ASCII 近似字符的转换功能。
+ */
+
+/**
+ * 自适应字号绘制文本
+ *
+ * 以指定的基准字号开始尝试绘制文本，如果文本宽度超出画布可用宽度（画布宽度 - 20px），
+ * 则逐步缩小字号（每次减 0.1），直到文本适配宽度或达到最小字号 0.8。
+ * 文本以居中对齐方式绘制在指定坐标处。
+ *
+ * @param cv 目标画布引用
+ * @param text 要绘制的文本内容
+ * @param x 绘制中心点的 X 坐标
+ * @param y 绘制中心点的 Y 坐标
+ * @param baseSize 初始字号大小
+ */
 void drawAutoFitString(M5Canvas &cv, const String &text,
                        int x, int y, float baseSize)
 {
@@ -21,6 +42,15 @@ void drawAutoFitString(M5Canvas &cv, const String &text,
     cv.drawString(text, x, y);
 }
 
+/**
+ * 在画布左上角绘制小号灰色文本
+ *
+ * 使用深灰色、1.0 字号在画布左上角 (8, 5) 位置绘制文本，
+ * 常用于显示页面标题或状态标签。
+ *
+ * @param cv 目标画布引用
+ * @param text 要绘制的文本内容
+ */
 void drawTopLeftString(M5Canvas &cv, const String &text)
 {
     cv.setTextDatum(top_left);
@@ -29,6 +59,15 @@ void drawTopLeftString(M5Canvas &cv, const String &text)
     cv.drawString(text, 8, 5);
 }
 
+/**
+ * 在画布右上角绘制小号灰色文本
+ *
+ * 使用深灰色、1.0 字号在画布右上角（右边距 8px，顶部 5px）位置绘制文本，
+ * 常用于显示页码或计数器等辅助信息。
+ *
+ * @param cv 目标画布引用
+ * @param text 要绘制的文本内容
+ */
 void drawTopRightString(M5Canvas &cv, const String &text)
 {
     cv.setTextDatum(top_right);
@@ -37,6 +76,24 @@ void drawTopRightString(M5Canvas &cv, const String &text)
     cv.drawString(text, cv.width() - 8, 5);
 }
 
+/**
+ * 将 IPA 国际音标 Unicode 符号转换为 ASCII 近似表示
+ *
+ * 逐字节扫描输入字符串，将常见的 IPA 音标 Unicode 字符替换为
+ * 对应的 ASCII 近似写法。例如：
+ * - ae (U+00E6) -> "ae"
+ * - eth (U+00F0) / theta (U+03B8) -> "th"
+ * - eng (U+014B) -> "ng"
+ * - esh (U+0283) -> "sh"
+ * - schwa (U+0259) -> "e"
+ * - 长音符号 (U+02D0) -> ":"
+ * - 重音符号 (U+02C8) -> "'"
+ *
+ * ASCII 字符原样保留，无法识别的多字节字符将被跳过。
+ *
+ * @param s 包含 IPA 音标的 UTF-8 字符串
+ * @return 转换后的 ASCII 近似字符串
+ */
 String asciiPhonetic(const String &s)
 {
     String out;

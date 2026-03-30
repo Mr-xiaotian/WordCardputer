@@ -1,3 +1,12 @@
+/**
+ * @file DictationMode.ino
+ * @brief 听写模式（带 Level1 日语罗马音输入法）
+ *
+ * 实现单词听写功能，支持英语和日语两种语言。
+ * 英语模式下直接键入字母；日语模式下通过罗马音输入法将按键转换为假名。
+ * 听写完成后展示正确/错误统计，并提供错误回顾功能。
+ */
+
 // =============== 听写模式（带 Level1 日语输入法） ===============
 
 std::vector<int> dictOrder; // 随机顺序
@@ -19,6 +28,15 @@ bool useKatakana = false;
 // 错误回顾
 bool dictInReview = false; // 是否正在错误回顾
 
+/**
+ * 获取当前单词的听写提示文本
+ *
+ * 根据当前语言设置，返回用于语音播放和答案比对的文本。
+ * 英语模式返回英文单词，日语模式返回日语假名。
+ *
+ * @param w 单词对象
+ * @return 用于听写的目标文本（英文单词或日语假名）
+ */
 String dictationPromptText(const Word &w)
 {
     if (currentLanguage == LANG_EN)
@@ -26,6 +44,15 @@ String dictationPromptText(const Word &w)
     return w.jp;
 }
 
+/**
+ * 判断字符是否为合法的英语输入字符
+ *
+ * 合法字符包括：大小写字母、数字、撇号、连字符、下划线和空格。
+ * 用于在英语听写模式下过滤键盘输入。
+ *
+ * @param c 待检测的字符
+ * @return 该字符是否为合法的英语输入字符
+ */
 bool isEnglishInputChar(char c)
 {
     return (c >= 'a' && c <= 'z') ||
@@ -34,6 +61,15 @@ bool isEnglishInputChar(char c)
            c == '\'' || c == '-' || c == '_' || c == ' ';
 }
 
+/**
+ * 规范化英语答案字符串，用于答案比对
+ *
+ * 进行以下处理：去除首尾空白、转为小写、将下划线替换为空格、
+ * 合并连续空格为单个空格。确保用户输入与标准答案的格式一致。
+ *
+ * @param s 原始输入字符串
+ * @return 规范化后的字符串
+ */
 String normalizeEnglishAnswer(String s)
 {
     s.trim();
@@ -59,7 +95,14 @@ String normalizeEnglishAnswer(String s)
     return out;
 }
 
-// ---------- 初始化听写模式 ----------
+/**
+ * 初始化听写模式
+ *
+ * 检查词库是否已加载，生成随机顺序的单词序列，
+ * 重置所有输入状态（罗马音缓冲、候选假名、已提交文本）和统计计数，
+ * 绘制初始界面并播放第一个单词的语音。
+ * 若词库为空则显示错误提示。
+ */
 void initDictationMode()
 {
     if (words.empty())
@@ -102,7 +145,13 @@ void initDictationMode()
     playAudioForWord(dictationPromptText(words[dictOrder[dictPos]]));
 }
 
-// ---------- 绘制答题中的画面 ----------
+/**
+ * 绘制听写答题界面
+ *
+ * 在屏幕上渲染当前听写输入状态。英语模式显示已输入的英文字母、
+ * 音标和词性；日语模式显示已提交的假名加当前罗马音缓冲，
+ * 以及候选假名提示。底部显示当前进度（第几个/总数）。
+ */
 void drawDictationInput()
 {
     canvas.fillSprite(BLACK);
@@ -159,7 +208,12 @@ void drawDictationInput()
     canvas.pushSprite(0, 0);
 }
 
-// ---------- 绘制总结界面 ----------
+/**
+ * 绘制听写结果总结界面
+ *
+ * 在屏幕上显示本次听写的正确数和错误数。
+ * 用户可按 Enter 键继续：若有错误则进入错误回顾，否则返回 ESC 菜单。
+ */
 void drawDictationSummary()
 {
     canvas.fillSprite(BLACK);
@@ -180,7 +234,13 @@ void drawDictationSummary()
     canvas.pushSprite(0, 0);
 }
 
-// ---------- 绘制错误回顾界面 ----------
+/**
+ * 绘制错误回顾页面
+ *
+ * 显示当前错误记录的正确答案（绿色）和用户的错误答案（红色），
+ * 底部显示当前页码。若无错误记录则显示"没有错误记录"提示。
+ * 支持左右翻页浏览所有错误，以及 Fn 键重播当前单词语音。
+ */
 void drawDictationReviewPage()
 {
     canvas.fillSprite(BLACK);
@@ -224,7 +284,13 @@ void drawDictationReviewPage()
     canvas.pushSprite(0, 0);
 }
 
-// 帮助函数：提交当前候选假名（由 ';' 或 Enter 触发）
+/**
+ * 提交当前候选假名到已确认文本
+ *
+ * 将当前罗马音缓冲区匹配到的候选假名追加到 commitText 中，
+ * 并清空罗马音缓冲区和候选假名。由分号键或 Enter 键触发。
+ * 若当前无候选假名则不做任何操作。
+ */
 void commitCandidate()
 {
     if (candidateKana.length() > 0)
@@ -235,11 +301,32 @@ void commitCandidate()
     }
 }
 
+/**
+ * 判断字符是否可以形成促音（双辅音）
+ *
+ * 在日语罗马音输入中，连续输入相同的辅音（如 kk、ss、tt、pp）
+ * 会触发促音「っ/ッ」的输入。本函数判断给定字符是否属于
+ * 可以产生促音的辅音字母（k、s、t、p）。
+ *
+ * @param c 待检测的字符（小写字母）
+ * @return 该字符是否为可产生促音的辅音
+ */
 bool isSokuonConsonant(char c) {
     return c=='k' || c=='s' || c=='t' || c=='p';
 }
 
-// ---------- 听写模式逻辑 ----------
+/**
+ * 听写模式的主循环函数
+ *
+ * 处理听写模式中的所有键盘输入和状态转换，包括：
+ * - ESC 键（`）返回菜单
+ * - 总结界面的 Enter 键进入错误回顾或返回菜单
+ * - 错误回顾模式下的翻页（,/.）和重播（Fn）
+ * - 英语模式的字符输入、删除和答案提交
+ * - 日语模式的罗马音输入、促音检测、假名候选、Shift 切换片假名
+ * - Enter 键提交答案并判定正误，自动切换到下一个单词
+ * - 所有单词完成后保存错误记录并显示总结
+ */
 void loopDictationMode()
 {
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())

@@ -1,3 +1,17 @@
+/**
+ * @file ImeUtils.ino
+ * @brief 日语输入法（IME）工具函数
+ *
+ * 提供罗马音到假名的转换功能，包含完整的罗马音映射表
+ * （清音、浊音、半浊音、拗音、长音），以及 UTF-8 字符串
+ * 末尾字符删除功能，用于支持日语听写模式的输入处理。
+ */
+
+/**
+ * 罗马音映射表条目结构体
+ *
+ * 每条记录包含一个罗马音拼写及其对应的平假名和片假名。
+ */
 struct RomajiMap
 {
     const char *romaji;
@@ -5,6 +19,16 @@ struct RomajiMap
     const char *kata; // 片假名
 };
 
+/**
+ * 罗马音到假名的完整映射表
+ *
+ * 包含日语五十音图的所有基本音节映射：
+ * - 清音（あ行 ~ わ行）
+ * - 浊音（が行、ざ行、だ行、ば行）
+ * - 半浊音（ぱ行）
+ * - 拗音（きゃ行、しゃ行、ちゃ行等）
+ * - 长音符号（ー）
+ */
 static const RomajiMap ROMAJI_TABLE[] = {
 
     // --- 清音 ---
@@ -44,12 +68,20 @@ static const RomajiMap ROMAJI_TABLE[] = {
     {"-", "", "ー"},
 };
 
+/** 映射表条目总数 */
 static const int ROMAJI_TABLE_SIZE = sizeof(ROMAJI_TABLE) / sizeof(ROMAJI_TABLE[0]);
 
-// ---------- 罗马音转换表 ----------
-// 根据当前 romajiBuffer 返回“候选假名”
-// 仅当 buffer 完全匹配某一条 romaji 时才返回假名,否则返回 ""。
-// 不修改 buffer,本函数只是“看一眼”。
+/**
+ * 在罗马音映射表中查找匹配的假名
+ *
+ * 将输入的罗马音缓冲区内容与映射表逐条比较（忽略大小写），
+ * 如果找到完全匹配的条目，则根据当前输入模式返回对应的
+ * 平假名或片假名。不修改传入的缓冲区，仅做只读查询。
+ *
+ * @param buffer 当前罗马音输入缓冲区
+ * @param useKatakana 为 true 时返回片假名，为 false 时返回平假名
+ * @return 匹配到的假名字符串，未匹配时返回空字符串
+ */
 String matchRomaji(const String &buffer, bool useKatakana)
 {
     if (buffer.length() == 0)
@@ -66,7 +98,15 @@ String matchRomaji(const String &buffer, bool useKatakana)
     return "";
 }
 
-// 删除 UTF-8 字符串末尾的一个“完整字符”
+/**
+ * 删除 UTF-8 字符串末尾的一个完整字符
+ *
+ * 从字符串末尾向前扫描，跳过所有 UTF-8 后续字节（10xxxxxx），
+ * 定位到最后一个字符的起始字节，然后将其及之后的内容全部移除。
+ * 可正确处理多字节 UTF-8 字符（如中文、日文假名等）。
+ *
+ * @param s 要操作的字符串引用，会被直接修改
+ */
 void removeLastUTF8Char(String &s)
 {
     int len = s.length();

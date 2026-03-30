@@ -1,3 +1,20 @@
+/**
+ * AudioUtils.ino - 音频播放工具
+ *
+ * 提供从 SD 卡读取 WAV 文件并通过 M5Cardputer 扬声器播放的功能。
+ * 支持 8/16 位 PCM 格式、单声道/立体声，采用三重缓冲流式播放以降低内存占用。
+ */
+
+/**
+ * 流式播放 SD 卡上的 WAV 音频文件
+ *
+ * 解析 WAV 文件头（RIFF/fmt/data 块），验证格式后使用三重缓冲（3 x 1024 字节）
+ * 逐块读取音频数据并送入 M5 Speaker 播放。支持 8 位和 16 位 PCM 编码，
+ * 自动识别采样率和声道数。此实现风格与 M5Stack 官方 demo 一致。
+ *
+ * @param path SD 卡上 WAV 文件的完整路径
+ * @return true 播放成功；false 文件无法打开、格式不支持或找不到 data 块
+ */
 // ------------------- 官方风格流式 WAV 播放 -------------------
 bool playWavStream(const String& path) {
     File file = SD.open(path);
@@ -103,6 +120,16 @@ bool playWavStream(const String& path) {
     return true;
 }
 
+/**
+ * 播放指定单词的发音音频
+ *
+ * 根据单词文本在 currentAudioRoot 目录下查找对应的 WAV 文件（格式：单词.wav）。
+ * 若音频文件不存在则播放一个短促的提示音（880Hz）作为反馈。
+ * 播放前会等待上一段音频播放完毕，避免声音重叠。
+ * 若 WAV 文件解析失败则播放低频提示音（440Hz）提醒用户。
+ *
+ * @param jpWord 要播放发音的单词文本（日语假名或英语单词）
+ */
 void playAudioForWord(const String& jpWord) {
     if (jpWord.length() == 0)
         return;

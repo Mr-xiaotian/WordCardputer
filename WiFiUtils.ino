@@ -1,7 +1,26 @@
+/**
+ * @file WiFiUtils.ino
+ * @brief WiFi 连接与时间同步工具
+ *
+ * 提供从 SD 卡读取 WiFi 凭据并自动连接的功能，
+ * 以及通过 NTP 获取格式化时间字符串的功能。
+ * WiFi 连接成功后会自动同步 NTP 时间（UTC+8）。
+ */
+
 #include <WiFi.h>
 #include <time.h>
 
-// 从 SD 卡 /words_study/.env 读取 WIFI_SSID 和 WIFI_PASS 并连接
+/**
+ * 从 SD 卡读取 WiFi 凭据并连接网络
+ *
+ * 读取 /words_study/.env 文件，解析其中的 WIFI_SSID 和 WIFI_PASS 字段，
+ * 然后尝试连接 WiFi。连接超时时间为 8 秒。
+ * 连接成功后会自动配置 NTP 时间同步（UTC+8 时区）。
+ *
+ * .env 文件格式示例：
+ *   WIFI_SSID=MyNetwork
+ *   WIFI_PASS=MyPassword
+ */
 void connectWiFiFromEnv() {
     File envFile = SD.open("/words_study/.env");
     if (!envFile) {
@@ -56,8 +75,15 @@ void connectWiFiFromEnv() {
     delay(500);
 }
 
-// 获取当前时间字符串，格式: "26-03-30_16-28"（年-月-日_时-分）
-// 如果未联网或时间未同步，返回 millis() 作为 fallback
+/**
+ * 获取当前 NTP 时间的格式化字符串
+ *
+ * 返回格式为 "YY-MM-DD_HH-MM"（如 "26-03-30_16-28"）的时间字符串。
+ * 如果 WiFi 未连接或 NTP 时间未同步，则使用 millis() 的值作为回退，
+ * 返回开机以来的毫秒数字符串。
+ *
+ * @return 格式化的时间字符串，或 millis() 毫秒数字符串
+ */
 String getNtpTimeString() {
     struct tm t;
     if (wifiConnected && getLocalTime(&t, 100)) {

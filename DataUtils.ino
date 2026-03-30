@@ -1,3 +1,24 @@
+/**
+ * DataUtils.ino - 数据持久化与词库管理工具
+ *
+ * 负责从 SD 卡加载/保存 JSON 格式的词库文件，包括：
+ * - 词库的读取与解析（支持日语/英语两种格式）
+ * - 词库的序列化与写入
+ * - 基于熟练度的加权随机抽词算法
+ * - 学习进度自动保存机制
+ * - 听写错词的导出功能
+ */
+
+/**
+ * 从 SD 卡加载 JSON 格式的词库文件
+ *
+ * 读取指定路径的 JSON 文件，解析为 Word 结构体数组并存入全局变量 words。
+ * 根据 currentLanguage 决定解析日语字段还是英语字段。
+ * 每个单词的 score（熟练度）会被限制在 1~5 范围内，默认值为 3。
+ *
+ * @param filepath SD 卡上 JSON 文件的完整路径
+ * @return true 加载成功且词库不为空；false 文件不存在、为空、解析失败或无有效单词
+ */
 bool loadWordsFromJSON(const String &filepath)
 {
     File file = SD.open(filepath);
@@ -79,6 +100,17 @@ bool loadWordsFromJSON(const String &filepath)
     return !words.empty();
 }
 
+/**
+ * 将单词列表保存为 JSON 文件到 SD 卡
+ *
+ * 将指定的 Word 列表序列化为 JSON 数组并写入 SD 卡。若目标文件已存在则先删除再写入。
+ * 根据 currentLanguage 决定写入日语字段还是英语字段，同时保存 score 熟练度。
+ * 输出格式为带缩进的 Pretty JSON，便于人工查看。
+ *
+ * @param filepath SD 卡上的目标文件路径
+ * @param list 要保存的单词列表
+ * @return true 写入成功；false 文件无法打开或序列化失败
+ */
 bool saveListToJSON(const String &filepath, const std::vector<Word> &list)
 {
     if (SD.exists(filepath))
@@ -143,6 +175,15 @@ bool saveListToJSON(const String &filepath, const std::vector<Word> &list)
     return true;
 }
 
+/**
+ * 基于熟练度的加权随机抽词
+ *
+ * 使用反向权重策略：熟练度越低的单词被抽中的概率越高。
+ * 权重计算公式为 (6 - score)，即 score=1 的单词权重为 5，
+ * score=5 的单词权重为 1，从而让不熟悉的单词更频繁出现。
+ *
+ * @return 被选中的单词在 words 数组中的索引；若词库为空返回 0
+ */
 int pickWeightedRandom()
 {
     if (words.empty())
@@ -164,6 +205,12 @@ int pickWeightedRandom()
     return random(words.size());
 }
 
+/**
+ * 标记学习进度已变更，达到阈值时触发自动保存
+ *
+ * 每次调用将 dirtyCount 加 1，当累计变更次数达到 autoSaveThreshold 时，
+ * 自动调用 autoSaveIfNeeded() 将进度写入 SD 卡，避免频繁写盘。
+ */
 // 标记 score 已变更，累计达到阈值时自动保存
 void markScoreDirty() {
     scoresDirty = true;
@@ -173,6 +220,12 @@ void markScoreDirty() {
     }
 }
 
+/**
+ * 自动保存学习进度（如果有未保存的变更）
+ *
+ * 检查 scoresDirty 标志，若有未保存的变更且当前词库路径和单词列表有效，
+ * 则将整个词库（含最新 score）写回原文件。保存完成后重置脏标记和计数器。
+ */
 // 如果有未保存的变更，则写入 SD 卡
 void autoSaveIfNeeded() {
     if (!scoresDirty || selectedFilePath.isEmpty() || words.empty()) return;
@@ -186,6 +239,13 @@ void autoSaveIfNeeded() {
     dirtyCount = 0;
 }
 
+/**
+ * 将听写错误单词导出为新的词库文件
+ *
+ * 从 dictErrors 中提取所有答错的单词，保存到 SD 卡的 Mistake 子文件夹中。
+ * 文件名格式为 "原词库名(时间戳).json"，方便用户后续针对错词进行重点复习。
+ * 若 Mistake 文件夹不存在则自动创建。
+ */
 void saveDictationMistakesAsWordList() {
     if (dictErrors.empty()) return;
 

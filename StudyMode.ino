@@ -1,7 +1,22 @@
-// 学习模式公共变量
-bool showMeaning = false;
-bool showAnkiSideA = true; // true=先显示日语/英语, false=先显示中文
+/**
+ * StudyMode.ino - 闪卡学习模式
+ *
+ * 实现类似 Anki 的双面闪卡学习功能。支持日语和英语两种语言的卡片显示，
+ * 卡片正面/反面随机切换（Side A: 外语优先；Side B: 中文优先）。
+ * 用户可通过键盘控制翻卡、调节音量、播放发音、以及调整熟练度评分。
+ */
 
+// 学习模式公共变量
+bool showMeaning = false;      // 是否显示释义（翻卡状态）
+bool showAnkiSideA = true;     // true=先显示外语（Side A），false=先显示中文（Side B）
+
+/**
+ * 绘制当前闪卡的完整画面
+ *
+ * 清屏后根据 currentLanguage 调用对应的语言绘制函数渲染卡片内容，
+ * 左上角显示当前单词的熟练度评分，右上角在音量调节后短暂显示音量值。
+ * 若词库为空则显示错误提示。
+ */
 void drawStudyWord()
 {
     canvas.fillSprite(BLACK);
@@ -39,6 +54,15 @@ void drawStudyWord()
 }
 
 
+/**
+ * 绘制英语单词闪卡
+ *
+ * Side A（showAnkiSideA=true）：主显英语单词和音标，翻卡后显示中文释义。
+ * Side B（showAnkiSideA=false）：主显中文释义和词性，翻卡后显示英语原文。
+ * 文字大小自动适配屏幕宽度，颜色编码区分不同信息层级。
+ *
+ * @param w 要显示的单词引用
+ */
 void drawEnglishWord(Word &w)
 {
     if (showAnkiSideA)
@@ -86,6 +110,15 @@ void drawEnglishWord(Word &w)
     }
 }
 
+/**
+ * 绘制日语单词闪卡
+ *
+ * Side A（showAnkiSideA=true）：主显日语假名和声调，翻卡后显示中文释义。
+ * Side B（showAnkiSideA=false）：主显中文释义和汉字，翻卡后显示日语假名。
+ * 文字大小自动适配屏幕宽度，颜色编码区分不同信息层级。
+ *
+ * @param w 要显示的单词引用
+ */
 void drawJapaneseWord(Word &w)
 {
     if (showAnkiSideA)
@@ -130,6 +163,15 @@ void drawJapaneseWord(Word &w)
     }
 }
 
+/**
+ * 初始化学习模式并加载词库
+ *
+ * 切换词库前先自动保存上一个词库的学习进度，然后从指定路径加载新词库。
+ * 加载成功后通过加权随机算法选取第一个单词并绘制闪卡。
+ * 加载失败或词库为空时在屏幕上显示错误提示。
+ *
+ * @param filePath SD 卡上词库 JSON 文件的完整路径
+ */
 void startStudyMode(const String &filePath)
 {
     // 加载新词库前，先保存旧词库的进度
@@ -166,6 +208,19 @@ void startStudyMode(const String &filePath)
     drawStudyWord();
 }
 
+/**
+ * 学习模式主循环 - 处理键盘输入
+ *
+ * 支持以下操作：
+ * - BtnA（物理按钮）：切换释义显示（翻卡）
+ * - ` (ESC)：打开 ESC 菜单
+ * - ; / . ：增大/减小音量
+ * - Fn：播放当前单词发音
+ * - Enter：标记为"记住"，提升熟练度并跳到下一个单词
+ * - Del：标记为"不熟"，降低熟练度并跳到下一个单词
+ *
+ * Enter/Del 操作后会随机切换 Side A/B 并重新抽词。
+ */
 void loopStudyMode()
 {
     // BtnA键 → 切换释义
