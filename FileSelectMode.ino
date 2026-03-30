@@ -56,6 +56,8 @@ void initFileSelectMode()
         if (aDir != bDir) return aDir;  // 文件夹排前面
         return strcmp(a.c_str(), b.c_str()) < 0;
     });
+
+    drawFileSelect();
 }
 
 // --------- 绘制文件选择页面 ---------
@@ -150,7 +152,6 @@ void loopFileSelectMode()
             }
         }
 
+        drawFileSelect();
     }
-
-    drawFileSelect();
 }
