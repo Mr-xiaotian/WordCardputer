@@ -138,6 +138,7 @@ void drawSimpleTable(
 String matchRomaji(const String &buffer, bool useKatakana);
 void removeLastUTF8Char(String &s);
 void connectWiFiFromEnv();
+String getNtpTimeString();
 
 // =============== 主程序 ===============
 void setup() {

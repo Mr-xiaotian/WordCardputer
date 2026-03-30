@@ -1,4 +1,5 @@
 #include <WiFi.h>
+#include <time.h>
 
 // 从 SD 卡 /words_study/.env 读取 WIFI_SSID 和 WIFI_PASS 并连接
 void connectWiFiFromEnv() {
@@ -44,9 +45,27 @@ void connectWiFiFromEnv() {
         wifiConnected = true;
         Serial.printf("[WiFi] 已连接, IP: %s\n", WiFi.localIP().toString().c_str());
         M5Cardputer.Display.printf("OK: %s\n", WiFi.localIP().toString().c_str());
+
+        // 同步 NTP 时间 (UTC+8)
+        configTime(8 * 3600, 0, "pool.ntp.org", "time.nist.gov");
+        Serial.println("[WiFi] NTP 时间同步中...");
     } else {
         Serial.println("[WiFi] 连接超时，继续离线运行");
         M5Cardputer.Display.println("WiFi 连接超时");
     }
     delay(500);
+}
+
+// 获取当前时间字符串，格式: "26-03-30_16-28"（年-月-日_时-分）
+// 如果未联网或时间未同步，返回 millis() 作为 fallback
+String getNtpTimeString() {
+    struct tm t;
+    if (wifiConnected && getLocalTime(&t, 100)) {
+        char buf[20];
+        snprintf(buf, sizeof(buf), "%02d-%02d-%02d_%02d-%02d",
+                 t.tm_year % 100, t.tm_mon + 1, t.tm_mday,
+                 t.tm_hour, t.tm_min);
+        return String(buf);
+    }
+    return String(millis());
 }

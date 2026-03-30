@@ -172,8 +172,15 @@ void saveDictationMistakesAsWordList() {
         SD.mkdir(folder);
     }
 
-    // 自动生成文件名
-    String filename = folder + "/mistake_" + String(millis()) + ".json";
+    // 从当前词库文件名提取名称（去掉 .json 后缀）
+    String baseName = selectedFilePath;
+    int slashPos = baseName.lastIndexOf('/');
+    if (slashPos >= 0) baseName = baseName.substring(slashPos + 1);
+    if (baseName.endsWith(".json")) baseName = baseName.substring(0, baseName.length() - 5);
+
+    // 用词库名 + 时间戳命名，如: word_01(26-03-30_16-28).json
+    String timeStr = getNtpTimeString();
+    String filename = folder + "/" + baseName + "(" + timeStr + ").json";
 
     // 构造纯 Word 列表
     std::vector<Word> mistakeList;
