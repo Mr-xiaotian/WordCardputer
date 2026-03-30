@@ -33,6 +33,7 @@ AppMode previousMode = MODE_FILE_SELECT;  // 记录上一个模式
 M5Canvas canvas(&M5Cardputer.Display);
 const int visibleLines = 4;
 int soundVolume = 192;
+bool wifiConnected = false;
 
 StudyLanguage currentLanguage = LANG_JP;
 String currentWordRoot = "/words_study/jp/word";
@@ -136,6 +137,7 @@ void drawSimpleTable(
 
 String matchRomaji(const String &buffer, bool useKatakana);
 void removeLastUTF8Char(String &s);
+void connectWiFiFromEnv();
 
 void drawLanguageSelect()
 {
@@ -244,6 +246,9 @@ void setup() {
         M5Cardputer.Display.println("未找到词库文件夹");
         while (1) delay(10);
     }
+
+    // 尝试从 .env 连接 WiFi
+    connectWiFiFromEnv();
 
     // 初始化亮度
     M5Cardputer.Display.setBrightness(normalBrightness);
