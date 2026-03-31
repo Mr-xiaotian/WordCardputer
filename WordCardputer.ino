@@ -11,6 +11,7 @@
 #include "esp_system.h"
 #include <SPI.h>
 #include <SD.h>
+#include <WiFi.h>
 #include <ArduinoJson.h>
 
 #define SD_SPI_SCK_PIN  40
