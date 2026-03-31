@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>WordCardputer</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#111;color:#e0e0e0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15px;-webkit-text-size-adjust:100%}
+nav{display:flex;background:#1a1a1a;border-bottom:1px solid #333;position:sticky;top:0;z-index:10}
+nav button{flex:1;padding:14px 0;background:none;border:none;color:#888;font-size:14px;cursor:pointer;border-bottom:2px solid transparent;transition:all .2s}
+nav button.active{color:#4fc3f7;border-bottom-color:#4fc3f7}
+section{display:none;padding:16px;max-width:600px;margin:0 auto}
+section.active{display:block}
+h2{font-size:16px;color:#4fc3f7;margin-bottom:12px}
+.card{background:#1e1e1e;border-radius:8px;padding:14px;margin-bottom:10px}
+.breadcrumb{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:12px;font-size:13px}
+.breadcrumb span{color:#4fc3f7;cursor:pointer}
+.breadcrumb span:last-child{color:#888;cursor:default}
+.file-item{display:flex;align-items:center;padding:12px;border-bottom:1px solid #2a2a2a;cursor:pointer;min-height:48px}
+.file-item:last-child{border-bottom:none}
+.file-item:active{background:#2a2a2a}
+.file-icon{width:28px;font-size:18px;flex-shrink:0}
+.file-name{flex:1;word-break:break-all}
+.file-size{color:#666;font-size:12px;margin-left:8px;flex-shrink:0}
+.file-actions{display:flex;gap:6px;margin-left:8px;flex-shrink:0}
+.btn{padding:8px 16px;border-radius:6px;border:none;cursor:pointer;font-size:13px;min-height:44px;transition:background .2s}
+.btn-sm{padding:6px 10px;min-height:36px;font-size:12px}
+.btn-primary{background:#4fc3f7;color:#111}
+.btn-danger{background:#e74c3c;color:#fff}
+.btn-ghost{background:none;color:#888;border:1px solid #444}
+.btn-primary:active{background:#039be5}
+.btn-danger:active{background:#c0392b}
+.toolbar{display:flex;gap:8px;margin-bottom:12px}
+input[type=file]{display:none}
+.stat-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #2a2a2a}
+.stat-label{color:#888}
+.stat-value{font-weight:600}
+.bar-group{margin-top:12px}
+.bar-row{display:flex;align-items:center;margin-bottom:8px}
+.bar-label{width:50px;color:#888;font-size:13px;flex-shrink:0}
+.bar-track{flex:1;background:#2a2a2a;border-radius:4px;height:22px;overflow:hidden;margin:0 8px}
+.bar-fill{height:100%;border-radius:4px;transition:width .4s}
+.bar-count{width:40px;text-align:right;font-size:13px;color:#888;flex-shrink:0}
+.slider-group{margin-bottom:16px}
+.slider-group label{display:flex;justify-content:space-between;margin-bottom:6px;color:#888;font-size:13px}
+.slider-group label span:last-child{color:#e0e0e0;font-weight:600}
+input[type=range]{width:100%;height:36px;-webkit-appearance:none;appearance:none;background:transparent;cursor:pointer}
+input[type=range]::-webkit-slider-track{height:6px;background:#2a2a2a;border-radius:3px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;background:#4fc3f7;border-radius:50%;margin-top:-8px}
+.info-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #2a2a2a;font-size:13px}
+.info-label{color:#666}
+.status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+.status-ok{background:#4caf50}
+.status-off{background:#666}
+.empty{text-align:center;color:#666;padding:32px 0}
+.loading{text-align:center;color:#666;padding:24px 0}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#333;color:#fff;padding:10px 20px;border-radius:6px;font-size:13px;z-index:100;opacity:0;transition:opacity .3s}
+.toast.show{opacity:1}
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:50;display:flex;align-items:center;justify-content:center}
+.modal{background:#1e1e1e;border-radius:10px;padding:20px;width:90%;max-width:320px;text-align:center}
+.modal p{margin:12px 0 18px;color:#bbb;font-size:14px}
+.modal .btns{display:flex;gap:8px;justify-content:center}
+.level-text{font-weight:700;font-size:15px}
+.level-5{color:#4caf50}.level-4{color:#4fc3f7}.level-3{color:#ffc107}.level-2{color:#ff9800}.level-1{color:#e74c3c}
+</style>
+</head>
+<body>
+
+<nav>
+    <button class="active" onclick="switchTab('files')">文件管理</button>
+    <button onclick="switchTab('stats')">学习统计</button>
+    <button onclick="switchTab('settings')">设备设置</button>
+</nav>
+
+<section id="tab-files" class="active">
+    <div class="toolbar">
+        <button class="btn btn-primary" onclick="document.getElementById('upload-input').click()">上传文件</button>
+        <input type="file" id="upload-input" accept=".json" multiple onchange="uploadFiles(this.files)">
+        <button class="btn btn-ghost" onclick="loadFiles()">刷新</button>
+    </div>
+    <div class="breadcrumb" id="breadcrumb"></div>
+    <div class="card" id="file-list"><div class="loading">加载中...</div></div>
+</section>
+
+<section id="tab-stats">
+    <div class="card" id="stats-overview"></div>
+    <div class="card" id="stats-bars"></div>
+</section>
+
+<section id="tab-settings">
+    <h2>音频与显示</h2>
+    <div class="card">
+        <div class="slider-group">
+            <label><span>音量</span><span id="vol-val">--</span></label>
+            <input type="range" id="vol-slider" min="0" max="255" oninput="updateSetting('volume',this.value)">
+        </div>
+        <div class="slider-group">
+            <label><span>亮度</span><span id="bri-val">--</span></label>
+            <input type="range" id="bri-slider" min="10" max="255" oninput="updateSetting('brightness',this.value)">
+        </div>
+    </div>
+    <h2>设备信息</h2>
+    <div class="card" id="device-info"><div class="loading">加载中...</div></div>
+</section>
+
+<div class="toast" id="toast"></div>
+
+<script>
+let currentPath='';
+let settingsTimer=null;
+
+function switchTab(name){
+    document.querySelectorAll('nav button').forEach((b,i)=>{
+        b.classList.toggle('active',b.textContent.includes(
+            name==='files'?'文件':name==='stats'?'统计':'设置'
+        ));
+    });
+    document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+    document.getElementById('tab-'+name).classList.add('active');
+    if(name==='files')loadFiles();
+    if(name==='stats')loadStats();
+    if(name==='settings'){loadSettings();loadDevice();}
+}
+
+function toast(msg){
+    const t=document.getElementById('toast');
+    t.textContent=msg;t.classList.add('show');
+    setTimeout(()=>t.classList.remove('show'),2000);
+}
+
+function confirm(msg,onYes){
+    const bg=document.createElement('div');bg.className='modal-bg';
+    bg.innerHTML=`<div class="modal"><p>${msg}</p><div class="btns">
+        <button class="btn btn-ghost" id="modal-no">取消</button>
+        <button class="btn btn-danger" id="modal-yes">确认删除</button>
+    </div></div>`;
+    document.body.appendChild(bg);
+    bg.querySelector('#modal-no').onclick=()=>bg.remove();
+    bg.querySelector('#modal-yes').onclick=()=>{bg.remove();onYes();};
+    bg.onclick=e=>{if(e.target===bg)bg.remove();};
+}
+
+// ===== Files =====
+
+async function loadFiles(path){
+    if(path!==undefined)currentPath=path;
+    const el=document.getElementById('file-list');
+    el.innerHTML='<div class="loading">加载中...</div>';
+    try{
+        const url=currentPath?`/api/files?path=${encodeURIComponent(currentPath)}`:'/api/files';
+        const r=await fetch(url);const d=await r.json();
+        currentPath=d.path;
+        renderBreadcrumb(d.path);
+        if(!d.items||d.items.length===0){
+            el.innerHTML='<div class="empty">此目录为空</div>';return;
+        }
+        // sort: dirs first, then alpha
+        d.items.sort((a,b)=>{
+            if(a.isDir!==b.isDir)return a.isDir?-1:1;
+            return a.name.localeCompare(b.name);
+        });
+        el.innerHTML=d.items.map(it=>{
+            const icon=it.isDir?'📁':'📄';
+            const size=it.isDir?'':formatSize(it.size);
+            const delBtn=it.isDir?'':`<button class="btn btn-sm btn-danger" onclick="event.stopPropagation();deleteFile('${escape(d.path+'/'+it.name)}')">删除</button>`;
+            const dlBtn=it.isDir?'':`<button class="btn btn-sm btn-ghost" onclick="event.stopPropagation();downloadFile('${escape(d.path+'/'+it.name)}','${escape(it.name)}')">下载</button>`;
+            const click=it.isDir?`onclick="loadFiles('${escape(d.path+'/'+it.name)}')"`
+                :'';
+            return `<div class="file-item" ${click}>
+                <span class="file-icon">${icon}</span>
+                <span class="file-name">${esc(it.name)}</span>
+                <span class="file-size">${size}</span>
+                <div class="file-actions">${dlBtn}${delBtn}</div>
+            </div>`;
+        }).join('');
+    }catch(e){
+        el.innerHTML='<div class="empty">加载失败</div>';
+    }
+}
+
+function renderBreadcrumb(path){
+    const el=document.getElementById('breadcrumb');
+    const parts=path.replace(/^\/words_study\/?/,'').split('/').filter(Boolean);
+    let html='<span onclick="loadFiles(\'/words_study\')">words_study</span>';
+    let acc='/words_study';
+    parts.forEach((p,i)=>{
+        acc+='/'+p;
+        html+=' / ';
+        if(i<parts.length-1)html+=`<span onclick="loadFiles('${escape(acc)}')">${esc(p)}</span>`;
+        else html+=`<span>${esc(p)}</span>`;
+    });
+    el.innerHTML=html;
+}
+
+async function uploadFiles(fileList){
+    for(const file of fileList){
+        const fd=new FormData();fd.append('file',file);
+        try{
+            await fetch(`/api/files/upload?path=${encodeURIComponent(currentPath)}`,{method:'POST',body:fd});
+            toast(file.name+' 上传成功');
+        }catch(e){toast('上传失败');}
+    }
+    document.getElementById('upload-input').value='';
+    loadFiles();
+}
+
+function deleteFile(path){
+    path=unescape(path);
+    const name=path.split('/').pop();
+    confirm(`确定删除 ${esc(name)} ?`,async()=>{
+        try{
+            await fetch(`/api/files?path=${encodeURIComponent(path)}`,{method:'DELETE'});
+            toast('已删除');loadFiles();
+        }catch(e){toast('删除失败');}
+    });
+}
+
+function downloadFile(path,name){
+    path=unescape(path);name=unescape(name);
+    const a=document.createElement('a');
+    a.href='/api/files/download?path='+encodeURIComponent(path);
+    a.download=name;a.click();
+}
+
+// ===== Stats =====
+
+async function loadStats(){
+    const ov=document.getElementById('stats-overview');
+    const br=document.getElementById('stats-bars');
+    ov.innerHTML='<div class="loading">加载中...</div>';
+    br.innerHTML='';
+    try{
+        const r=await fetch('/api/stats');const d=await r.json();
+        if(d.total===0){
+            ov.innerHTML='<div class="empty">请先在设备上加载词库</div>';return;
+        }
+        const lvl=levelClass(d.avg);
+        ov.innerHTML=`
+            <div class="stat-row"><span class="stat-label">词库</span><span class="stat-value">${esc(d.file)}</span></div>
+            <div class="stat-row"><span class="stat-label">总数</span><span class="stat-value">${d.total}</span></div>
+            <div class="stat-row"><span class="stat-label">平均分</span><span class="stat-value">${d.avg}</span></div>
+            <div class="stat-row"><span class="stat-label">中位数</span><span class="stat-value">${d.median}</span></div>
+            <div class="stat-row"><span class="stat-label">评价</span><span class="stat-value level-text ${lvl}">${esc(d.level)}</span></div>
+        `;
+        const colors=['','#e74c3c','#ff9800','#ffc107','#4fc3f7','#4caf50'];
+        const max=Math.max(...Object.values(d.counts),1);
+        br.innerHTML='<h2 style="margin-bottom:8px">分数分布</h2><div class="bar-group">'+
+            [1,2,3,4,5].map(i=>{
+                const c=d.counts[i]||0;
+                const pct=Math.round(c/d.total*100);
+                const w=Math.round(c/max*100);
+                return `<div class="bar-row">
+                    <span class="bar-label">等级${i}</span>
+                    <div class="bar-track"><div class="bar-fill" style="width:${w}%;background:${colors[i]}"></div></div>
+                    <span class="bar-count">${c} (${pct}%)</span>
+                </div>`;
+            }).join('')+'</div>';
+    }catch(e){ov.innerHTML='<div class="empty">加载失败</div>';}
+}
+
+function levelClass(avg){
+    if(avg>=4.5)return'level-5';if(avg>=3.8)return'level-4';
+    if(avg>=3)return'level-3';if(avg>=2)return'level-2';return'level-1';
+}
+
+// ===== Settings =====
+
+async function loadSettings(){
+    try{
+        const r=await fetch('/api/settings');const d=await r.json();
+        document.getElementById('vol-slider').value=d.volume;
+        document.getElementById('vol-val').textContent=d.volume;
+        document.getElementById('bri-slider').value=d.brightness;
+        document.getElementById('bri-val').textContent=d.brightness;
+    }catch(e){}
+}
+
+function updateSetting(key,val){
+    val=parseInt(val);
+    if(key==='volume')document.getElementById('vol-val').textContent=val;
+    if(key==='brightness')document.getElementById('bri-val').textContent=val;
+    clearTimeout(settingsTimer);
+    settingsTimer=setTimeout(()=>{
+        fetch('/api/settings',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body:JSON.stringify({[key]:val})
+        });
+    },150);
+}
+
+async function loadDevice(){
+    const el=document.getElementById('device-info');
+    try{
+        const r=await fetch('/api/device');const d=await r.json();
+        const h=Math.floor(d.uptime/3600);const m=Math.floor((d.uptime%3600)/60);
+        el.innerHTML=`
+            <div class="info-row"><span class="info-label">IP 地址</span><span>${d.ip}</span></div>
+            <div class="info-row"><span class="info-label">可用内存</span><span>${formatSize(d.freeHeap)}</span></div>
+            <div class="info-row"><span class="info-label">运行时间</span><span>${h}h ${m}m</span></div>
+        `;
+    }catch(e){el.innerHTML='<div class="empty">加载失败</div>';}
+}
+
+// ===== Utils =====
+
+function formatSize(b){
+    if(b==null)return'';
+    if(b<1024)return b+'B';
+    if(b<1048576)return(b/1024).toFixed(1)+'KB';
+    return(b/1048576).toFixed(1)+'MB';
+}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function escape(s){return s.replace(/'/g,"\\'");}
+
+// Init
+loadFiles();
+</script>
+</body>
+</html>

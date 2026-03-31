@@ -159,6 +159,9 @@ void removeLastUTF8Char(String &s);
 void connectWiFiFromEnv();
 String getNtpTimeString();
 
+void initWebServer();
+void handleWebServer();
+
 // =============== 主程序 ===============
 
 /**
@@ -199,6 +202,11 @@ void setup() {
 
     // 尝试从 .env 连接 WiFi
     connectWiFiFromEnv();
+
+    // 启动 Web 控制面板
+    if (wifiConnected) {
+        initWebServer();
+    }
 
     // 初始化亮度
     M5Cardputer.Display.setBrightness(normalBrightness);
@@ -241,6 +249,9 @@ void loop() {
     } else if (appMode == MODE_STATS) {
         loopStatsMode();
     }
+
+    // -------- Web 服务器处理 --------
+    handleWebServer();
 
     // -------- 自动亮度控制 --------
     unsigned long now = millis();

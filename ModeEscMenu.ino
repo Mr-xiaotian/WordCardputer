@@ -18,6 +18,7 @@ std::vector<String> escItems = {
     "进入听读模式",
     "进入听写模式",
     "按键帮助",
+    "Web 控制台",
 };
 
 int escIndex = 0;
@@ -61,7 +62,7 @@ void drawEscMenu() {
  * - 分号键（;）向上移动光标，句号键（.）向下移动光标
  * - Enter 键执行选中的菜单项：
  *   0=保存进度  1=学习统计  2=重新选择词库  3=重新选择语言
- *   4=学习模式  5=听读模式  6=听写模式  7=按键帮助
+ *   4=学习模式  5=听读模式  6=听写模式  7=按键帮助  8=Web控制台
  */
 void loopEscMenuMode() {
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
@@ -177,6 +178,40 @@ void loopEscMenuMode() {
             else if (escIndex == 7) {
                 // 按键帮助
                 showKeyHelp();
+                drawEscMenu();
+                return;
+            }
+            else if (escIndex == 8) {
+                // Web 控制台 —— 显示 IP 地址
+                canvas.fillSprite(BLACK);
+                canvas.setTextFont(&fonts::efontCN_16);
+                canvas.setTextDatum(middle_center);
+                if (wifiConnected) {
+                    canvas.setTextColor(GREEN);
+                    canvas.setTextSize(1.2);
+                    canvas.drawString("Web 控制台", canvas.width() / 2, canvas.height() / 2 - 28);
+                    canvas.setTextColor(CYAN);
+                    canvas.setTextSize(1.0);
+                    String url = "http://" + WiFi.localIP().toString();
+                    canvas.drawString(url, canvas.width() / 2, canvas.height() / 2 + 8);
+                    canvas.setTextColor(TFT_DARKGREY);
+                    canvas.setTextSize(0.9);
+                    canvas.drawString("在浏览器中打开以上地址", canvas.width() / 2, canvas.height() / 2 + 38);
+                } else {
+                    canvas.setTextColor(RED);
+                    canvas.setTextSize(1.2);
+                    canvas.drawString("WiFi 未连接", canvas.width() / 2, canvas.height() / 2);
+                }
+                canvas.pushSprite(0, 0);
+                // 等待任意键返回
+                while (true) {
+                    M5Cardputer.update();
+                    if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
+                        userAction = true;
+                        break;
+                    }
+                    delay(30);
+                }
                 drawEscMenu();
                 return;
             }
