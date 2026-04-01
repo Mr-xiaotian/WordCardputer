@@ -36,9 +36,9 @@ bool loadWordsFromJSON(const String &filepath)
         return false;
     }
 
-    if (fileSize >= 2)
+    if (fileSize >= 2 * 1024 * 1024)
     {
-        Serial.printf("文件大小: %d 字节\n", fileSize);
+        Serial.printf("文件超过2MB,大小: %d 字节\n", fileSize);
         file.close();
         return false;
     }
