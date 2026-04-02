@@ -139,7 +139,7 @@ String asciiPhonetic(const String &s)
  * @param message 要显示的提示文本
  * @param color 文字颜色，默认红色
  */
-void drawCenterMessage(M5Canvas &cv, const String &message, uint16_t color = RED) {
+void drawCenterMessage(M5Canvas &cv, const String &message, uint16_t color) {
     cv.fillSprite(BLACK);
     cv.setTextDatum(middle_center);
     cv.setTextColor(color);

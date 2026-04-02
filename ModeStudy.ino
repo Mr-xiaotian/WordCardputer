@@ -180,12 +180,12 @@ void startStudyMode(const String &filePath)
     bool ok = loadWordsFromJSON(filePath);
     if (!ok)
     {
-        drawErrorMessage(canvas, "词库加载失败");
+        drawCenterMessage(canvas, "词库加载失败");
         return;
     }
     else if (words.empty())
     {
-        drawErrorMessage(canvas, "词库为空");
+        drawCenterMessage(canvas, "词库为空");
         return;
     }
 
