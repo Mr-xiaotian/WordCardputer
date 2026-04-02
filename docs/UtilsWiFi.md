@@ -1,18 +1,29 @@
 # UtilsWiFi.ino
 
 ## 概述
-`UtilsWiFi.ino` 负责管理设备的**网络连接与系统时钟同步**。这是支持 Web 控制台和正确生成时间戳文件（如错题本）的基础组件。
+`UtilsWiFi.ino` 负责管理设备的**网络连接、凭据持久化与系统时钟同步**。这是支持 Web 控制台和正确生成时间戳文件（如错题本）的基础组件。
 
 ## 核心内容
-- **读取凭据与连接 (`connectWiFi`)**：
-  - **凭据读取**：启动时尝试打开 SD 卡上的 `/words_study/.env` 配置文件，逐行解析以提取 `WIFI_SSID` 和 `WIFI_PASS`。
-  - **网络连接**：调用 ESP32 的 `WiFi.begin` 接口进行连接。
-  - **超时控制**：在 `while` 循环中加入计时器（最大 8 秒），防止因网络问题导致设备在启动阶段永久卡死。
-  - **NTP 同步**：如果成功连接到 WiFi，则立即调用 `configTime` 连接到 `pool.ntp.org` 进行时间同步，并将系统时区硬编码设置为东八区（UTC+8）。
-- **时间获取 (`getFormattedTime`)**：
-  - 提供一个快速获取当前本地时间的函数。
-  - 通过 `getLocalTime` 获取结构化的时间信息，并将其格式化为紧凑的字符串（例如 `20240321_143000`），主要用于生成唯一的文件名。
+- **WiFi 凭据持久化**：
+  - **数据结构**：定义 `WiFiCredential` 结构体（`ssid` + `pass`），维护全局列表 `savedWiFiList`。
+  - **存储格式**：以 JSON 数组形式保存在 `/words_study/wifi.json`，支持多组 WiFi 凭据。
+  - **加载 (`loadSavedWiFiCredentials`)**：从 SD 卡读取 wifi.json，解析填充到 `savedWiFiList`。
+  - **保存 (`saveWiFiCredential`)**：连接成功后自动调用。同名 SSID 更新密码，新 SSID 追加条目，写回 wifi.json。
+  - **查找 (`findSavedPassword`)**：根据 SSID 查找已保存密码，供扫描列表自动连接使用。
+- **扫描连接 (`attemptWiFiConnect`)**：
+  - 使用用户选中的 SSID 和密码尝试连接（超时 10 秒）。
+  - 连接成功后：同步 NTP、启用 Modem Sleep、保存凭据到 SD 卡、启动 Web 控制台。
+- **扫描结果处理 (`processWiFiScanResults`)**：
+  - 去重并按信号强度排序。
+  - 已保存凭据的 SSID 在列表中显示 `★` 前缀标记。
+- **省电管理**：
+  - 连接成功后启用 `WIFI_PS_MIN_MODEM`（最小 Modem Sleep），在无数据传输时自动关闭射频以降低功耗。
+- **时间获取 (`getNtpTimeString`)**：
+  - 返回格式化时间字符串（`YY-MM-DD_HH-MM`），用于生成唯一文件名。
+  - WiFi 未连接时回退到 `millis()` 值。
+- **信号指示 (`rssiIndicator`)**：
+  - 将 RSSI 数值转换为可视化信号强度符号（`[###]`、`[## ]`、`[#  ]`）。
 
 ## 关联模块
-- **前置依赖**：在 `WordCardputer.ino` 的 `setup` 阶段最先被调用，为后续的 Web 服务启动扫清障碍。
+- **被调用方**：`ModeWiFiScan.ino` 调用扫描结果处理、凭据加载和连接函数。
 - **服务提供**：为 `UtilsWebServer.ino` 提供底层网络层支持，为 `UtilsData.ino`（保存错题时）提供时间戳。
