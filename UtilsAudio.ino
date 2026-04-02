@@ -6,6 +6,28 @@
  */
 
 /**
+ * 处理音量调节按键
+ *
+ * 根据按键字符调整全局音量（';' 加 10，'.' 减 10），
+ * 更新扬声器音量并设置音量 HUD 显示计时器。
+ *
+ * @param c 按键字符
+ * @return true 如果音量发生了变化，false 如果按键不是音量键
+ */
+bool adjustVolume(char c) {
+    if (c == ';') {
+        soundVolume = min(255, soundVolume + 10);
+    } else if (c == '.') {
+        soundVolume = max(0, soundVolume - 10);
+    } else {
+        return false;
+    }
+    M5.Speaker.setVolume(soundVolume);
+    volumeMessageDeadline = millis() + 2000;
+    return true;
+}
+
+/**
  * 流式播放 SD 卡上的 WAV 音频文件
  *
  * 解析 WAV 文件头（RIFF/fmt/data 块），验证格式后使用三重缓冲（3 x 1024 字节）

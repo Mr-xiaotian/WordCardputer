@@ -6,6 +6,36 @@
  */
 
 /**
+ * 菜单光标导航（带滚动和循环翻页）
+ *
+ * 向上或向下移动菜单光标，自动处理循环翻页和滚动窗口跟随。
+ * 从首项上翻到末项、从末项下翻到首项时自动调整滚动位置。
+ *
+ * @param index 当前选中索引（会被修改）
+ * @param scroll 当前滚动偏移（会被修改）
+ * @param itemCount 菜单项总数
+ * @param visible 一屏可见行数
+ * @param moveUp true 向上移动，false 向下移动
+ */
+void navigateMenu(int &index, int &scroll, int itemCount, int visible, bool moveUp) {
+    if (moveUp) {
+        index = (index - 1 + itemCount) % itemCount;
+        if (index == itemCount - 1) {
+            scroll = max(0, itemCount - visible);
+        } else if (index < scroll) {
+            scroll = index;
+        }
+    } else {
+        index = (index + 1) % itemCount;
+        if (index == 0) {
+            scroll = 0;
+        } else if (index >= scroll + visible) {
+            scroll = index - visible + 1;
+        }
+    }
+}
+
+/**
  * 绘制通用可滚动文本菜单
  *
  * 在画布上绘制一个完整的菜单界面，包含：

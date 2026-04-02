@@ -86,29 +86,11 @@ void loopEscMenuMode() {
             }
 
             if (c == ';') {  // 上
-                escIndex = (escIndex - 1 + escItems.size()) % escItems.size();
-                if (escIndex == escItems.size() - 1)
-                {
-                    // ✅ 从第一行上翻到最后一行
-                    escScoll = max(0, (int)escItems.size() - visibleLines);
-                }
-                else if (escIndex < escScoll)
-                {
-                    escScoll = escIndex;
-                }
+                navigateMenu(escIndex, escScoll, escItems.size(), visibleLines, true);
                 drawEscMenu();
             }
             if (c == '.') {  // 下
-                escIndex = (escIndex + 1) % escItems.size();
-                if (escIndex == 0)
-                {
-                    // ✅ 从最后一行下翻回到第一行
-                    escScoll = 0;
-                }
-                else if (escIndex >= escScoll + visibleLines)
-                {
-                    escScoll = escIndex - visibleLines + 1;
-                }
+                navigateMenu(escIndex, escScoll, escItems.size(), visibleLines, false);
                 drawEscMenu();
             }
         }

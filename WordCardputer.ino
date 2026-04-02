@@ -133,6 +133,8 @@ void drawAutoFitString(M5Canvas &cv, const String &text,
 void drawTopLeftString(M5Canvas &cv, const String &text);
 void drawTopRightString(M5Canvas &cv, const String &text);
 void drawCenterMessage(M5Canvas &cv, const String &message, uint16_t color = RED);
+void navigateMenu(int &index, int &scroll, int itemCount, int visible, bool moveUp);
+bool adjustVolume(char c);
                        
 void drawTextMenu(
     M5Canvas &cv,

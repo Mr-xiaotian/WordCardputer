@@ -235,21 +235,11 @@ void loopStudyMode()
                 initEscMenuMode();
                 return;
             }
-            else if (c == ';')
-            { // 上
-                soundVolume = min(255, soundVolume + 10);
-            }
-            else if (c == '.')
-            { // 下
-                soundVolume = max(0, soundVolume - 10);
-            }
-
-            if (c == ';' || c == '.')
+            else if (c == ';' || c == '.')
             {
-                M5.Speaker.setVolume(soundVolume);
-
-                volumeMessageDeadline = millis() + 2000;
-                drawStudyWord();
+                if (adjustVolume(c)) {
+                    drawStudyWord();
+                }
             }
         }
 

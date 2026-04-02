@@ -122,30 +122,12 @@ void loopFileSelectMode()
         {
             if (c == ';')
             {
-                fileIndex = (fileIndex - 1 + files.size()) % files.size();
-                if (fileIndex == files.size() - 1)
-                {
-                    // ✅ 从第一行上翻到最后一行
-                    fileScroll = max(0, (int)files.size() - visibleLines);
-                }
-                else if (fileIndex < fileScroll)
-                {
-                    fileScroll = fileIndex;
-                }
+                navigateMenu(fileIndex, fileScroll, files.size(), visibleLines, true);
             }
 
             if (c == '.')
             {
-                fileIndex = (fileIndex + 1) % files.size();
-                if (fileIndex == 0)
-                {
-                    // ✅ 从最后一行下翻回到第一行
-                    fileScroll = 0;
-                }
-                else if (fileIndex >= fileScroll + visibleLines)
-                {
-                    fileScroll = fileIndex - visibleLines + 1;
-                }
+                navigateMenu(fileIndex, fileScroll, files.size(), visibleLines, false);
             }
         }
 

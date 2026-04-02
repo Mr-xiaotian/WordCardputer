@@ -155,25 +155,12 @@ void loopListenMode()
                 return;
             }
 
-            // 处理音量调节（复用学习模式逻辑）
-            if (c == ';')
-            { // 上：音量+
-                soundVolume = min(255, soundVolume + 10);
-            }
-            else if (c == '.')
-            { // 下：音量-
-                soundVolume = max(0, soundVolume - 10);
-            }
-
+            // 处理音量调节
             if (c == ';' || c == '.')
             {
-                M5.Speaker.setVolume(soundVolume);
-
-                // 顺便也可以显示一下 HUD（复用 StudyMode 的那套变量）
-                volumeMessageDeadline = millis() + 2000;
-
-                // 重画当前单词（保持 HUD 内容）
-                drawListenWord();
+                if (adjustVolume(c)) {
+                    drawListenWord();
+                }
             }
         }
     }
