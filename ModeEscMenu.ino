@@ -101,10 +101,10 @@ void loopEscMenuMode() {
                 if (saveListToJSON(selectedFilePath, words)) {
                     scoresDirty = false;
                     dirtyCount = 0;
-                    drawCenterMessage(canvas, "保存成功！", GREEN);
+                    drawCenterString(canvas, "保存成功！", GREEN, 1.2);
                     delay(600);
                 } else {
-                    drawCenterMessage(canvas, "保存失败！");
+                    drawCenterString(canvas, "保存失败！", RED, 1.2);
                     delay(800);
                 }
                 // 保存后仍停留在 ESC 菜单

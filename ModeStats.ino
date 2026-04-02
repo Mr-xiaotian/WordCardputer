@@ -27,18 +27,12 @@ void drawStatsPage()
 {
     canvas.fillSprite(BLACK);
     canvas.setTextFont(&fonts::efontCN_16);
-    canvas.setTextDatum(top_left);
-    canvas.setTextColor(GREEN);
-    canvas.setTextSize(1.2);
-    canvas.drawString("学习统计", 8, 6);
-    canvas.setTextDatum(top_right);
-    canvas.setTextColor(TFT_DARKGREY);
-    canvas.setTextSize(1.0);
-    canvas.drawString(String(statsPage + 1) + "/3", canvas.width() - 8, 8);
+    drawTopLeftString(canvas, "学习统计", GREEN, 1.2);
+    drawTopRightString(canvas, String(statsPage + 1) + "/3", TFT_DARKGREY, 1.0);
 
     if (statsTotal == 0)
     {
-        drawCenterMessage(canvas, "请先加载词库");
+        drawCenterString(canvas, "请先加载词库", RED, 1.2);
         return;
     }
 

@@ -53,8 +53,8 @@ void drawKeyHelpPage(int page) {
     canvas.fillSprite(BLACK);
     canvas.setTextFont(&fonts::efontCN_16);
 
-    drawTopLeftString(canvas, helpTitles[page]);
-    drawTopRightString(canvas, String(page + 1) + "/" + String(helpTotalPages));
+    drawTopLeftString(canvas, helpTitles[page], TFT_DARKGREY, 1.0);
+    drawTopRightString(canvas, String(page + 1) + "/" + String(helpTotalPages), TFT_DARKGREY, 1.0);
 
     std::vector<String> headers = { "按键", "功能" };
     std::vector<int> colXs = { 8, 90 };

@@ -108,7 +108,7 @@ void loopFileSelectMode()
 {
     // 如果没有任何文件,直接显示提示并返回
     if (files.empty()) {
-        drawCenterMessage(canvas, "无词库文件");
+        drawCenterString(canvas, "无词库文件", RED, 1.2);
         delay(200);
         return;
     }

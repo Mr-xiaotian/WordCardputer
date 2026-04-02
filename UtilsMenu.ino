@@ -71,18 +71,12 @@ void drawTextMenu(
     cv.setTextFont(&fonts::efontCN_16);
 
     // 标题（左上角）
-    cv.setTextDatum(top_left);
-    cv.setTextColor(GREEN);
-    cv.setTextSize(1.2);
-    cv.drawString(title, 8, 8);
+    drawTopLeftString(cv, title, GREEN, 1.2);
 
     // 电量（右上角）
     if (showBattery) {
         int batteryLevel = M5Cardputer.Power.getBatteryLevel();
-        cv.setTextDatum(top_right);
-        cv.setTextColor(TFT_DARKGREY);
-        cv.setTextSize(1.0);
-        cv.drawString(String(batteryLevel) + " %", cv.width() - 8, 8);
+        drawTopRightString(cv, String(batteryLevel) + " %", TFT_DARKGREY, 1.0);
     }
 
     // 列表区域

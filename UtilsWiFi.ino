@@ -179,7 +179,7 @@ void processWiFiScanResults(int count) {
  */
 void attemptWiFiConnect() {
     wifiScanState = WIFI_CONNECTING;
-    drawCenterMessage(canvas, "连接中...", YELLOW);
+    drawCenterString(canvas, "连接中...", YELLOW, 1.2);
 
     WiFi.mode(WIFI_STA);
     WiFi.disconnect(true);

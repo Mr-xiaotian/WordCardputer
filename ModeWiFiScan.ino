@@ -35,7 +35,7 @@ String wifiResultMessage = "";
  * 绘制扫描中提示
  */
 void drawWiFiScanning() {
-    drawCenterMessage(canvas, "扫描中...", CYAN);
+    drawCenterString(canvas, "扫描中...", CYAN, 1.2);
 }
 
 /**
@@ -56,13 +56,10 @@ void drawWiFiList() {
 /**
  * 绘制密码输入覆盖层
  *
- * 先绘制 WiFi 列表作为背景，然后在下半部分覆盖密码输入界面。
+ * 绘制密码输入界面。
  * 显示选中的 SSID、密码（星号遮盖）和操作提示。
  */
 void drawPasswordOverlay() {
-    // 先画背景列表
-    drawWiFiList();
-
     // 覆盖下半部分
     canvas.fillRect(0, 60, canvas.width(), canvas.height() - 60, BLACK);
     canvas.drawLine(4, 62, canvas.width() - 4, 62, TFT_DARKGREY);
@@ -91,7 +88,7 @@ void drawPasswordOverlay() {
     // 底部提示
     canvas.setTextDatum(bottom_center);
     canvas.setTextColor(TFT_DARKGREY);
-    canvas.setTextSize(0.9);
+    canvas.setTextSize(1.0);
     canvas.drawString("Enter 连接    ` 返回", canvas.width() / 2, canvas.height() - 4);
 
     canvas.pushSprite(0, 0);

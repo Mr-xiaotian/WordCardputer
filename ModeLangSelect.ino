@@ -74,7 +74,7 @@ void loopLanguageSelectMode()
             String root = (lang == LANG_JP) ? "/words_study/jp" : "/words_study/en";
             if (!SD.exists(root))
             {
-                drawCenterMessage(canvas, "未找到词库文件夹");
+                drawCenterString(canvas, "未找到词库文件夹", RED, 1.2);
                 delay(600);
                 drawLanguageSelect();
                 return;

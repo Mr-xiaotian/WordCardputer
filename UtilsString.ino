@@ -43,37 +43,41 @@ void drawAutoFitString(M5Canvas &cv, const String &text,
 }
 
 /**
- * 在画布左上角绘制小号灰色文本
+ * 在画布左上角绘制文本
  *
- * 使用深灰色、1.0 字号在画布左上角 (8, 5) 位置绘制文本，
+ * 在画布左上角 (8, 8) 位置绘制指定颜色和字号的文本，
  * 常用于显示页面标题或状态标签。
  *
  * @param cv 目标画布引用
  * @param text 要绘制的文本内容
+ * @param color 文本颜色
+ * @param size 字号大小
  */
-void drawTopLeftString(M5Canvas &cv, const String &text)
+void drawTopLeftString(M5Canvas &cv, const String &text, uint16_t color, float size)
 {
     cv.setTextDatum(top_left);
-    cv.setTextColor(TFT_DARKGREY);
-    cv.setTextSize(1.0);
-    cv.drawString(text, 8, 5);
+    cv.setTextColor(color);
+    cv.setTextSize(size);
+    cv.drawString(text, 8, 8);
 }
 
 /**
- * 在画布右上角绘制小号灰色文本
+ * 在画布右上角绘制文本
  *
- * 使用深灰色、1.0 字号在画布右上角（右边距 8px，顶部 5px）位置绘制文本，
- * 常用于显示页码或计数器等辅助信息。
+ * 在画布右上角（右边距 8px，顶部 8px）位置绘制指定颜色和字号的文本，
+ * 常用于显示页码、计数器或电量等辅助信息。
  *
  * @param cv 目标画布引用
  * @param text 要绘制的文本内容
+ * @param color 文本颜色
+ * @param size 字号大小
  */
-void drawTopRightString(M5Canvas &cv, const String &text)
+void drawTopRightString(M5Canvas &cv, const String &text, uint16_t color, float size)
 {
     cv.setTextDatum(top_right);
-    cv.setTextColor(TFT_DARKGREY);
-    cv.setTextSize(1.0);
-    cv.drawString(text, cv.width() - 8, 5);
+    cv.setTextColor(color);
+    cv.setTextSize(size);
+    cv.drawString(text, cv.width() - 8, 8);
 }
 
 /**
@@ -189,12 +193,13 @@ String normalizeEnglishAnswer(String s)
  * @param cv 目标画布引用
  * @param message 要显示的提示文本
  * @param color 文字颜色，默认红色
+ * @param size 文字大小，默认 1.2
  */
-void drawCenterMessage(M5Canvas &cv, const String &message, uint16_t color) {
+void drawCenterString(M5Canvas &cv, const String &message, uint16_t color, float size) {
     cv.fillSprite(BLACK);
     cv.setTextDatum(middle_center);
     cv.setTextColor(color);
-    cv.setTextSize(1.2);
+    cv.setTextSize(size);
     cv.drawString(message, cv.width() / 2, cv.height() / 2);
     cv.pushSprite(0, 0);
 }

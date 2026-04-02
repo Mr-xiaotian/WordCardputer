@@ -100,59 +100,73 @@ std::vector<DictError> dictErrors;  // 听写错误列表
 int reviewPos = 0;                  // 当前错误回顾的索引
 
 // ---------- 函数声明（在其他 .ino 中实现） ----------
+
+// --- ModeFileSelect.ino ---
 void initFileSelectMode();
 void loopFileSelectMode();
 
-void startStudyMode(const String &filePath);
+// --- ModeStudy.ino ---
 void loopStudyMode();
 
+// --- ModeEscMenu.ino ---
 void initEscMenuMode();
 void loopEscMenuMode();
 
+// --- ModeDictation.ino ---
 void initDictationMode();
 void loopDictationMode();
 
-void initListenMode();    
-void loopListenMode();    
+// --- ModeListen.ino ---
+void initListenMode();
+void loopListenMode();
 
+// --- ModeStats.ino ---
 void initStatsMode();
 void loopStatsMode();
 
+// --- ModeLangSelect.ino ---
 void initLanguageSelectMode();
 void loopLanguageSelectMode();
-void setLanguage(StudyLanguage lang);
 
+// --- ModeWiFiScan.ino ---
+void initWiFiScanMode();
+void loopWiFiScanMode();
+
+// --- ModeKeyHelp.ino ---
+void initKeyHelpMode();
+void loopKeyHelpMode();
+
+// --- UtilsData.ino ---
 bool loadWordsFromJSON(const String &path);
 bool saveListToJSON(const String &filepath, const std::vector<Word> &list);
 void saveDictationMistakesAsWordList();
 void autoSaveIfNeeded();
 void markScoreDirty();
-
 int pickWeightedRandom();
-
 String dictationPromptText(const Word &w);
 String listenAudioText(const Word &w);
 String statsFileName(const String &path);
 void computeStatsFromWords();
+void setLanguage(StudyLanguage lang);
+void startStudyMode(const String &filePath);
 
+// --- UtilsString.ino ---
+void drawAutoFitString(M5Canvas &cv, const String &text,
+                       int x, int y, float baseSize);
+void drawTopLeftString(M5Canvas &cv, const String &text, uint16_t color, float size);
+void drawTopRightString(M5Canvas &cv, const String &text, uint16_t color, float size);
+void drawCenterString(M5Canvas &cv, const String &message, uint16_t color, float size);
 bool isEnglishInputChar(char c);
 String normalizeEnglishAnswer(String s);
 
+// --- UtilsIme.ino ---
 void commitCandidate();
 bool isSokuonConsonant(char c);
+String matchRomaji(const String &buffer, bool useKatakana);
+void removeLastUTF8Char(String &s);
 
-String rssiIndicator(int rssi);
-void processWiFiScanResults(int count);
-void attemptWiFiConnect();
-
-void drawAutoFitString(M5Canvas &cv, const String &text,
-                       int x, int y, float baseSize);
-void drawTopLeftString(M5Canvas &cv, const String &text);
-void drawTopRightString(M5Canvas &cv, const String &text);
-void drawCenterMessage(M5Canvas &cv, const String &message, uint16_t color = RED);
+// --- UtilsMenu.ino ---
 void navigateMenu(int &index, int &scroll, int itemCount, int visible, bool moveUp);
-bool adjustVolume(char c);
-                       
 void drawTextMenu(
     M5Canvas &cv,
     const String &title,
@@ -175,20 +189,20 @@ void drawSimpleTable(
     const std::vector<std::vector<String>> &rows
 );
 
-String matchRomaji(const String &buffer, bool useKatakana);
-void removeLastUTF8Char(String &s);
+// --- UtilsAudio.ino ---
+bool adjustVolume(char c);
+
+// --- UtilsWiFi.ino ---
 void connectWiFiFromEnv();
 String getNtpTimeString();
+String rssiIndicator(int rssi);
+void processWiFiScanResults(int count);
+void attemptWiFiConnect();
 
+// --- UtilsWebServer.ino ---
 void initWebServer();
 void handleWebServer();
 extern bool webServerRunning;
-
-void initWiFiScanMode();
-void loopWiFiScanMode();
-
-void initKeyHelpMode();
-void loopKeyHelpMode();
 
 // =============== 主程序 ===============
 

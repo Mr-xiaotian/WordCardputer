@@ -27,7 +27,7 @@ void initListenMode()
     if (words.empty())
     {
         // 理论上应该已经在 StudyMode 中加载过词库
-        drawCenterMessage(canvas, "请先加载词库");
+        drawCenterString(canvas, "请先加载词库", RED, 1.2);
         return;
     }
 
@@ -103,12 +103,12 @@ void drawListenWord()
     drawAutoFitString(canvas, w.zh, canvas.width() / 2, canvas.height() / 2 + 40, 1.5); // 显示中文释义
 
     // 模式
-    drawTopLeftString(canvas, "听读模式");
+    drawTopLeftString(canvas, "听读模式", TFT_DARKGREY, 1.0);
 
     // HUD 显示音量变化
     if (millis() < volumeMessageDeadline)
     {
-        drawTopRightString(canvas, String(soundVolume));
+        drawTopRightString(canvas, String(soundVolume), TFT_DARKGREY, 1.0);
     }
 
     canvas.pushSprite(0, 0);

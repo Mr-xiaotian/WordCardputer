@@ -40,7 +40,7 @@ void initDictationMode()
 {
     if (words.empty())
     {
-        drawCenterMessage(canvas, "请先加载词库");
+        drawCenterString(canvas, "请先加载词库", RED, 1.2);
         return;
     }
 
@@ -86,9 +86,9 @@ void drawDictationInput()
 
     canvas.setTextFont(&fonts::efontCN_16);
     if (currentLanguage == LANG_EN)
-        drawTopLeftString(canvas, "英语听写");
+        drawTopLeftString(canvas, "英语听写", TFT_DARKGREY, 1.0);
     else if (currentLanguage == LANG_JP)
-        drawTopLeftString(canvas, "日语听写");
+        drawTopLeftString(canvas, "日语听写", TFT_DARKGREY, 1.0);
 
     canvas.setTextDatum(middle_center);
     canvas.setTextColor(WHITE);
@@ -147,7 +147,7 @@ void drawDictationSummary()
     canvas.fillSprite(BLACK);
     canvas.setTextFont(&fonts::efontCN_16);
 
-    drawTopLeftString(canvas, "听写总结");
+    drawTopLeftString(canvas, "听写总结", TFT_DARKGREY, 1.0);
 
     canvas.setTextDatum(middle_center);
     canvas.setTextSize(1.3);
@@ -188,7 +188,7 @@ void drawDictationReviewPage()
 
     // 标题
     canvas.setTextFont(&fonts::efontCN_16);
-    drawTopLeftString(canvas, "错误回顾");
+    drawTopLeftString(canvas, "错误回顾", TFT_DARKGREY, 1.0);
 
 
     // 正确答案
