@@ -22,13 +22,14 @@
 // --------- 模式定义 ----------
 /** 应用运行模式枚举，控制主循环中的分发逻辑 */
 enum AppMode {
-    MODE_LANG_SELECT,
-    MODE_FILE_SELECT,
-    MODE_STUDY,
-    MODE_ESC_MENU,      //  ESC 菜单模式
-    MODE_DICTATION,     // 听写模式
-    MODE_LISTEN,        // 听读模式
-    MODE_STATS,         // 学习统计模式
+    MODE_LANG_SELECT,  // 语言选择模式
+    MODE_FILE_SELECT,  // 文件选择模式
+    MODE_STUDY,        // 学习模式
+    MODE_ESC_MENU,     // ESC 菜单模式
+    MODE_DICTATION,    // 听写模式
+    MODE_LISTEN,       // 听读模式
+    MODE_STATS,        // 学习统计模式
+    MODE_WIFI_SCAN,    // WiFi 扫描连接模式
 };
 
 /** 学习语言枚举：日语或英语 */
@@ -165,6 +166,10 @@ String getNtpTimeString();
 
 void initWebServer();
 void handleWebServer();
+extern bool webServerRunning;
+
+void initWiFiScanMode();
+void loopWiFiScanMode();
 
 // =============== 主程序 ===============
 
@@ -202,14 +207,6 @@ void setup() {
     if (!jpExists && !enExists) {
         M5Cardputer.Display.println("未找到词库文件夹");
         while (1) delay(10);
-    }
-
-    // 尝试从 .env 连接 WiFi
-    connectWiFiFromEnv();
-
-    // 启动 Web 控制面板
-    if (wifiConnected) {
-        initWebServer();
     }
 
     // 初始化亮度
@@ -252,6 +249,8 @@ void loop() {
         loopListenMode();
     } else if (appMode == MODE_STATS) {
         loopStatsMode();
+    } else if (appMode == MODE_WIFI_SCAN) {
+        loopWiFiScanMode();
     }
 
     // -------- Web 服务器处理 --------
