@@ -193,7 +193,6 @@ void drawSimpleTable(
 bool adjustVolume(char c);
 
 // --- UtilsWiFi.ino ---
-void connectWiFiFromEnv();
 String getNtpTimeString();
 String rssiIndicator(int rssi);
 void processWiFiScanResults(int count);
@@ -217,9 +216,8 @@ extern bool webServerRunning;
  * 2. 初始化音频输出（扬声器）
  * 3. 手动初始化 SPI 总线并挂载 SD 卡
  * 4. 检查词库文件夹是否存在
- * 5. 尝试从 .env 文件连接 WiFi（用于 NTP 时间）
- * 6. 设置屏幕亮度、创建离屏画布
- * 7. 进入语言选择模式
+ * 5. 设置屏幕亮度、创建离屏画布
+ * 6. 进入语言选择模式
  */
 void setup() {
     randomSeed(esp_random());
