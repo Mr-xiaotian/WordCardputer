@@ -98,17 +98,6 @@ void drawDictationInput()
         drawAutoFitString(canvas, dictEnInput, canvas.width() / 2, canvas.height() / 2 - 10, 2.0);
         Word &w = words[dictOrder[dictPos]];
         String sub = asciiPhonetic(w.phonetic);
-        if (w.pos.length() > 0)
-        {
-            if (sub.length() > 0)
-                sub += "  ";
-            sub += w.pos;
-        }
-        if (sub.length() > 0)
-        {
-            canvas.setTextColor(TFT_CYAN);
-            drawAutoFitString(canvas, sub, canvas.width() / 2, canvas.height() / 2 + 20, 1.2);
-        }
     }
     else if (currentLanguage == LANG_JP)
     {
@@ -175,11 +164,7 @@ void drawDictationReviewPage()
 
     if (dictErrors.empty())
     {
-        canvas.setTextFont(&fonts::efontCN_16);
-        canvas.setTextDatum(middle_center);
-        canvas.setTextColor(TFT_DARKGREY);
-        canvas.drawString("没有错误记录", canvas.width() / 2, canvas.height() / 2);
-        canvas.pushSprite(0, 0);
+        drawCenterString(canvas, "没有错误记录", TFT_DARKGREY, 1.2);
         return;
     }
 

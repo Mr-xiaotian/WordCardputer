@@ -154,6 +154,8 @@ void initWiFiScanMode() {
     wifiScanState = WIFI_SCANNING;
     drawWiFiScanning();
 
+    loadSavedWiFiCredentials();
+
     WiFi.mode(WIFI_STA);
     WiFi.disconnect(true);
     delay(100);
@@ -206,9 +208,15 @@ void loopWiFiScanMode() {
 
         if (st.enter && !wifiSSIDs.empty()) {
             wifiSelectedSSID = wifiRawSSIDs[wifiListIndex];
-            wifiPasswordInput = "";
-            wifiScanState = WIFI_PASSWORD;
-            drawPasswordOverlay();
+            String savedPass = findSavedPassword(wifiSelectedSSID);
+            if (savedPass.length() > 0) {
+                wifiPasswordInput = savedPass;
+                attemptWiFiConnect();
+            } else {
+                wifiPasswordInput = "";
+                wifiScanState = WIFI_PASSWORD;
+                drawPasswordOverlay();
+            }
         }
         return;
     }

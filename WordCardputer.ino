@@ -198,6 +198,9 @@ String getNtpTimeString();
 String rssiIndicator(int rssi);
 void processWiFiScanResults(int count);
 void attemptWiFiConnect();
+void loadSavedWiFiCredentials();
+void saveWiFiCredential(const String &ssid, const String &pass);
+String findSavedPassword(const String &ssid);
 
 // --- UtilsWebServer.ino ---
 void initWebServer();

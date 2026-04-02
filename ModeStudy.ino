@@ -24,9 +24,7 @@ void drawStudyWord()
 
     if (words.empty())
     {
-        canvas.setTextColor(RED);
-        canvas.drawString("未找到单词数据", canvas.width() / 2, canvas.height() / 2);
-        canvas.pushSprite(0, 0);
+        drawCenterString(canvas, "未找到单词数据", RED, 1.2);
         return;
     }
 

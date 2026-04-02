@@ -73,10 +73,13 @@ void drawTextMenu(
     // 标题（左上角）
     drawTopLeftString(cv, title, GREEN, 1.2);
 
-    // 电量（右上角）
+    // 电量 + WiFi 状态（右上角）
     if (showBattery) {
         int batteryLevel = M5Cardputer.Power.getBatteryLevel();
-        drawTopRightString(cv, String(batteryLevel) + " %", TFT_DARKGREY, 1.0);
+        String hud = "";
+        if (wifiConnected) hud += "W ";
+        hud += String(batteryLevel) + " %";
+        drawTopRightString(cv, hud, TFT_DARKGREY, 1.0);
     }
 
     // 列表区域

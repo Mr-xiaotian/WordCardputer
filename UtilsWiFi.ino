@@ -10,6 +10,92 @@
 #include <WiFi.h>
 #include <time.h>
 
+// ---------- WiFi 凭据持久化 ----------
+struct WiFiCredential {
+    String ssid;
+    String pass;
+};
+std::vector<WiFiCredential> savedWiFiList;
+
+/**
+ * 从 SD 卡加载已保存的 WiFi 凭据
+ *
+ * 读取 /words_study/wifi.json，解析 JSON 数组到 savedWiFiList。
+ * 文件不存在或解析失败时静默忽略。
+ */
+void loadSavedWiFiCredentials() {
+    savedWiFiList.clear();
+    File f = SD.open("/words_study/wifi.json");
+    if (!f) return;
+
+    DynamicJsonDocument doc(4096);
+    if (deserializeJson(doc, f) != DeserializationError::Ok) {
+        f.close();
+        return;
+    }
+    f.close();
+
+    JsonArray arr = doc.as<JsonArray>();
+    for (JsonObject obj : arr) {
+        WiFiCredential c;
+        c.ssid = obj["ssid"].as<String>();
+        c.pass = obj["pass"].as<String>();
+        if (c.ssid.length() > 0) {
+            savedWiFiList.push_back(c);
+        }
+    }
+}
+
+/**
+ * 保存一组 WiFi 凭据到 SD 卡
+ *
+ * 若同名 SSID 已存在则更新密码，否则追加新条目。
+ * 将完整列表序列化写回 /words_study/wifi.json。
+ *
+ * @param ssid 网络名称
+ * @param pass 密码
+ */
+void saveWiFiCredential(const String &ssid, const String &pass) {
+    bool found = false;
+    for (auto &c : savedWiFiList) {
+        if (c.ssid == ssid) {
+            c.pass = pass;
+            found = true;
+            break;
+        }
+    }
+    if (!found) {
+        savedWiFiList.push_back({ssid, pass});
+    }
+
+    SD.remove("/words_study/wifi.json");
+    File f = SD.open("/words_study/wifi.json", FILE_WRITE);
+    if (!f) return;
+
+    DynamicJsonDocument doc(4096);
+    JsonArray arr = doc.to<JsonArray>();
+    for (auto &c : savedWiFiList) {
+        JsonObject obj = arr.createNestedObject();
+        obj["ssid"] = c.ssid;
+        obj["pass"] = c.pass;
+    }
+    serializeJson(doc, f);
+    f.close();
+}
+
+/**
+ * 查找已保存的 WiFi 密码
+ *
+ * @param ssid 要查找的网络名称
+ * @return 已保存的密码，未找到返回空字符串
+ */
+String findSavedPassword(const String &ssid) {
+    for (auto &c : savedWiFiList) {
+        if (c.ssid == ssid) return c.pass;
+    }
+    return "";
+}
+
 /**
  * 从 SD 卡读取 WiFi 凭据并连接网络
  *
@@ -72,6 +158,9 @@ void connectWiFiFromEnv() {
         // 同步 NTP 时间 (UTC+8)
         configTime(8 * 3600, 0, "pool.ntp.org", "time.nist.gov");
         Serial.println("[WiFi] NTP 时间同步中...");
+
+        // 启用 Modem Sleep 省电（无数据传输时自动关闭射频）
+        WiFi.setSleep(WIFI_PS_MIN_MODEM);
     } else {
         Serial.printf("[WiFi] 连接失败, status=%d\n", WiFi.status());
         M5Cardputer.Display.printf("WiFi 失败(%d)\n", WiFi.status());
@@ -160,7 +249,10 @@ void processWiFiScanResults(int count) {
     // 构建显示列表
     for (auto &e : entries) {
         wifiRawSSIDs.push_back(e.ssid);
-        wifiSSIDs.push_back(e.ssid + " " + rssiIndicator(e.rssi));
+        String label = "";
+        if (findSavedPassword(e.ssid).length() > 0) label += "★ ";
+        label += e.ssid + " " + rssiIndicator(e.rssi);
+        wifiSSIDs.push_back(label);
     }
 
     WiFi.scanDelete();
@@ -198,6 +290,12 @@ void attemptWiFiConnect() {
 
         // NTP 时间同步
         configTime(8 * 3600, 0, "pool.ntp.org", "time.nist.gov");
+
+        // 启用 Modem Sleep 省电
+        WiFi.setSleep(WIFI_PS_MIN_MODEM);
+
+        // 保存凭据到 SD 卡
+        saveWiFiCredential(wifiSelectedSSID, wifiPasswordInput);
 
         // 启动 Web 控制台
         if (!webServerRunning) {

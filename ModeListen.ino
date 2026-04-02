@@ -52,10 +52,7 @@ void drawListenWord()
 
     if (words.empty())
     {
-        canvas.setTextColor(RED);
-        canvas.setTextSize(1.6);
-        canvas.drawString("未找到单词数据", canvas.width() / 2, canvas.height() / 2);
-        canvas.pushSprite(0, 0);
+        drawCenterString(canvas, "未找到单词数据", RED, 1.2);
         return;
     }
 
@@ -76,8 +73,8 @@ void drawListenWord()
         }
         if (sub.length() > 0)
         {
-            canvas.setTextColor(ORANGE);
-            canvas.setTextSize(1.2);
+            canvas.setTextColor(GREEN);
+            canvas.setTextSize(1.3);
             drawAutoFitString(canvas, sub, canvas.width() / 2, canvas.height() / 2 + 10, 1.2);
         }
     }
