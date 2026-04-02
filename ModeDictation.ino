@@ -107,12 +107,7 @@ void initDictationMode()
 {
     if (words.empty())
     {
-        canvas.fillSprite(BLACK);
-        canvas.setTextDatum(middle_center);
-        canvas.setTextColor(RED);
-        canvas.setTextSize(1.6);
-        canvas.drawString("请先加载词库", canvas.width() / 2, canvas.height() / 2);
-        canvas.pushSprite(0, 0);
+        drawCenterMessage(canvas, "请先加载词库");
         return;
     }
 

@@ -132,6 +132,7 @@ void drawAutoFitString(M5Canvas &cv, const String &text,
                        int x, int y, float baseSize);
 void drawTopLeftString(M5Canvas &cv, const String &text);
 void drawTopRightString(M5Canvas &cv, const String &text);
+void drawCenterMessage(M5Canvas &cv, const String &message, uint16_t color = RED);
                        
 void drawTextMenu(
     M5Canvas &cv,

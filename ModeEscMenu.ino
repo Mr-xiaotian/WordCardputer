@@ -119,19 +119,10 @@ void loopEscMenuMode() {
                 if (saveListToJSON(selectedFilePath, words)) {
                     scoresDirty = false;
                     dirtyCount = 0;
-                    // 显示保存成功
-                    canvas.fillSprite(BLACK);
-                    canvas.setTextDatum(middle_center);
-                    canvas.setTextColor(GREEN);
-                    canvas.drawString("保存成功！", canvas.width()/2, canvas.height()/2);
-                    canvas.pushSprite(0, 0);
+                    drawCenterMessage(canvas, "保存成功！", GREEN);
                     delay(600);
                 } else {
-                    canvas.fillSprite(BLACK);
-                    canvas.setTextDatum(middle_center);
-                    canvas.setTextColor(RED);
-                    canvas.drawString("保存失败！", canvas.width()/2, canvas.height()/2);
-                    canvas.pushSprite(0, 0);
+                    drawCenterMessage(canvas, "保存失败！");
                     delay(800);
                 }
                 // 保存后仍停留在 ESC 菜单

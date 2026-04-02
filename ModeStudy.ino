@@ -180,24 +180,12 @@ void startStudyMode(const String &filePath)
     bool ok = loadWordsFromJSON(filePath);
     if (!ok)
     {
-        M5Cardputer.Display.fillScreen(BLACK);
-        canvas.fillSprite(BLACK);
-        canvas.setTextDatum(middle_center);
-        canvas.setTextColor(RED);
-        canvas.setTextSize(1.2);
-        canvas.drawString("词库加载失败", canvas.width() / 2, canvas.height() / 2);
-        canvas.pushSprite(0, 0);
+        drawErrorMessage(canvas, "词库加载失败");
         return;
     }
     else if (words.empty())
     {
-        M5Cardputer.Display.fillScreen(BLACK);
-        canvas.fillSprite(BLACK);
-        canvas.setTextDatum(middle_center);
-        canvas.setTextColor(RED);
-        canvas.setTextSize(1.2);
-        canvas.drawString("词库为空", canvas.width() / 2, canvas.height() / 2);
-        canvas.pushSprite(0, 0);
+        drawErrorMessage(canvas, "词库为空");
         return;
     }
 

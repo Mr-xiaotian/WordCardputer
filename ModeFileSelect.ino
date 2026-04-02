@@ -108,11 +108,7 @@ void loopFileSelectMode()
 {
     // 如果没有任何文件,直接显示提示并返回
     if (files.empty()) {
-        canvas.fillSprite(BLACK);
-        canvas.setTextDatum(middle_center);
-        canvas.setTextColor(RED);
-        canvas.drawString("无词库文件", canvas.width()/2, canvas.height()/2);
-        canvas.pushSprite(0, 0);
+        drawCenterMessage(canvas, "无词库文件");
         delay(200);
         return;
     }

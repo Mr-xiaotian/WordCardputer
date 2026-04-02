@@ -128,3 +128,22 @@ String asciiPhonetic(const String &s)
     }
     return out;
 }
+
+
+/**
+ * 在屏幕中央绘制提示信息
+ *
+ * 清空画布后居中显示消息文本，适用于各模式中的错误/成功/状态提示。
+ *
+ * @param cv 目标画布引用
+ * @param message 要显示的提示文本
+ * @param color 文字颜色，默认红色
+ */
+void drawCenterMessage(M5Canvas &cv, const String &message, uint16_t color = RED) {
+    cv.fillSprite(BLACK);
+    cv.setTextDatum(middle_center);
+    cv.setTextColor(color);
+    cv.setTextSize(1.2);
+    cv.drawString(message, cv.width() / 2, cv.height() / 2);
+    cv.pushSprite(0, 0);
+}
