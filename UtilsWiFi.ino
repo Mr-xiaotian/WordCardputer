@@ -49,15 +49,19 @@ void connectWiFiFromEnv() {
         return;
     }
 
-    Serial.printf("[WiFi] 正在连接 %s ...\n", ssid.c_str());
+    Serial.printf("[WiFi] SSID=[%s] len=%d\n", ssid.c_str(), ssid.length());
+    Serial.printf("[WiFi] PASS=[%s] len=%d\n", pass.c_str(), pass.length());
     M5Cardputer.Display.printf("WiFi: %s ...\n", ssid.c_str());
 
     WiFi.mode(WIFI_STA);
+    WiFi.disconnect(true);  // 先清除旧连接状态
+    delay(100);
     WiFi.begin(ssid.c_str(), pass.c_str());
 
     unsigned long startMs = millis();
-    while (WiFi.status() != WL_CONNECTED && millis() - startMs < 8000) {
-        delay(300);
+    while (WiFi.status() != WL_CONNECTED && millis() - startMs < 15000) {
+        delay(500);
+        Serial.printf("[WiFi] status=%d elapsed=%lums\n", WiFi.status(), millis() - startMs);
     }
 
     if (WiFi.status() == WL_CONNECTED) {
@@ -69,8 +73,8 @@ void connectWiFiFromEnv() {
         configTime(8 * 3600, 0, "pool.ntp.org", "time.nist.gov");
         Serial.println("[WiFi] NTP 时间同步中...");
     } else {
-        Serial.println("[WiFi] 连接超时，继续离线运行");
-        M5Cardputer.Display.println("WiFi 连接超时");
+        Serial.printf("[WiFi] 连接失败, status=%d\n", WiFi.status());
+        M5Cardputer.Display.printf("WiFi 失败(%d)\n", WiFi.status());
     }
     delay(500);
 }
