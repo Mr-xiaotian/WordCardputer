@@ -120,7 +120,7 @@ void drawWiFiStatusPage() {
 
     if (webServerRunning) {
         canvas.setTextColor(GREEN);
-        canvas.setTextSize(0.9);
+        canvas.setTextSize(1.0);
         canvas.drawString("Web 控制台运行中", canvas.width() / 2, canvas.height() / 2 + 30);
     }
 

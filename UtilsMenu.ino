@@ -77,8 +77,8 @@ void drawTextMenu(
     if (showBattery) {
         int batteryLevel = M5Cardputer.Power.getBatteryLevel();
         String hud = "";
-        if (wifiConnected) hud += "W ";
-        hud += String(batteryLevel) + " %";
+        if (wifiConnected) hud += "WIFI ";
+        hud += String(batteryLevel) + "%";
         drawTopRightString(cv, hud, TFT_DARKGREY, 1.0);
     }
 
