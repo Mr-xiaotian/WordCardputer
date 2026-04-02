@@ -5,7 +5,8 @@
  * 提供 WiFi 网络扫描、选择和连接功能。
  * 扫描附近的 WiFi 网络并以列表形式展示，用户选择 SSID 后
  * 通过密码输入覆盖层完成连接。连接成功后自动启动 Web 控制台
- * 并同步 NTP 时间。
+ * 并同步 NTP 时间。WiFi 已连接时显示双页界面（列表 + 状态页），
+ * 可通过 ,/. 翻页随时查看 IP 地址。
  */
 
 #include <WiFi.h>
@@ -15,7 +16,6 @@ enum WiFiScanState {
     WIFI_LIST,
     WIFI_PASSWORD,
     WIFI_CONNECTING,
-    WIFI_RESULT,
 };
 
 WiFiScanState wifiScanState = WIFI_SCANNING;
@@ -30,6 +30,8 @@ String wifiPasswordInput = "";
 
 bool wifiConnectSuccess = false;
 String wifiResultMessage = "";
+
+int wifiPage = 0;  // 0=列表页, 1=状态页（仅 WiFi 已连接时可用）
 
 /**
  * 绘制扫描中提示
@@ -95,42 +97,38 @@ void drawPasswordOverlay() {
 }
 
 /**
- * 绘制连接结果页面
+ * 绘制 WiFi 状态页
  *
- * 成功时显示 IP 地址和 Web 控制台启动信息，
- * 失败时显示错误码。按任意键返回菜单。
+ * 显示当前 WiFi 连接信息：SSID、IP 地址和 Web 控制台状态。
+ * 底部提示可通过翻页返回网络列表。
  */
-void drawWiFiResult() {
+void drawWiFiStatusPage() {
     canvas.fillSprite(BLACK);
     canvas.setTextFont(&fonts::efontCN_16);
+
+    drawTopLeftString(canvas, "WiFi 状态", GREEN, 1.2);
+
     canvas.setTextDatum(middle_center);
 
-    if (wifiConnectSuccess) {
+    canvas.setTextColor(CYAN);
+    canvas.setTextSize(1.2);
+    canvas.drawString(WiFi.SSID(), canvas.width() / 2, canvas.height() / 2 - 25);
+
+    canvas.setTextColor(WHITE);
+    canvas.setTextSize(1.0);
+    canvas.drawString("IP: " + WiFi.localIP().toString(), canvas.width() / 2, canvas.height() / 2 + 5);
+
+    if (webServerRunning) {
         canvas.setTextColor(GREEN);
-        canvas.setTextSize(1.2);
-        canvas.drawString("连接成功!", canvas.width() / 2, canvas.height() / 2 - 30);
-
-        canvas.setTextColor(CYAN);
-        canvas.setTextSize(1.0);
-        canvas.drawString("IP: " + WiFi.localIP().toString(), canvas.width() / 2, canvas.height() / 2);
-
-        canvas.setTextColor(TFT_DARKGREY);
         canvas.setTextSize(0.9);
-        canvas.drawString("Web 控制台已启动", canvas.width() / 2, canvas.height() / 2 + 25);
-    } else {
-        canvas.setTextColor(RED);
-        canvas.setTextSize(1.2);
-        canvas.drawString("连接失败", canvas.width() / 2, canvas.height() / 2 - 15);
-
-        canvas.setTextColor(TFT_DARKGREY);
-        canvas.setTextSize(0.9);
-        canvas.drawString(wifiResultMessage, canvas.width() / 2, canvas.height() / 2 + 15);
+        canvas.drawString("Web 控制台运行中", canvas.width() / 2, canvas.height() / 2 + 30);
     }
 
+    // 底部页码
     canvas.setTextDatum(bottom_center);
     canvas.setTextColor(TFT_DARKGREY);
-    canvas.setTextSize(0.9);
-    canvas.drawString("按任意键返回", canvas.width() / 2, canvas.height() - 6);
+    canvas.setTextSize(1.0);
+    canvas.drawString("2/2", canvas.width() / 2, canvas.height() - 6);
 
     canvas.pushSprite(0, 0);
 }
@@ -138,8 +136,8 @@ void drawWiFiResult() {
 /**
  * 初始化 WiFi 扫描模式
  *
- * 重置所有状态变量，显示扫描提示，执行阻塞式网络扫描，
- * 然后显示扫描结果列表。
+ * 若 WiFi 已连接，加载凭据并扫描网络后跳到状态页。
+ * 否则正常扫描并显示网络列表。
  */
 void initWiFiScanMode() {
     wifiSSIDs.clear();
@@ -151,26 +149,40 @@ void initWiFiScanMode() {
     wifiConnectSuccess = false;
     wifiResultMessage = "";
 
-    wifiScanState = WIFI_SCANNING;
-    drawWiFiScanning();
-
     loadSavedWiFiCredentials();
 
-    WiFi.mode(WIFI_STA);
-    WiFi.disconnect(true);
-    delay(100);
+    if (wifiConnected) {
+        // WiFi 已连接：后台扫描填充列表，直接显示状态页
+        wifiScanState = WIFI_LIST;
+        wifiPage = 1;
+        drawWiFiStatusPage();
 
-    int count = WiFi.scanNetworks();
-    processWiFiScanResults(count);
+        // 异步扫描填充列表供翻页使用
+        int count = WiFi.scanNetworks(false, false, false, 300);
+        processWiFiScanResults(count);
+        wifiPage = 1;  // processWiFiScanResults 会设为 WIFI_LIST，保持在状态页
+    } else {
+        // 未连接：正常扫描流程
+        wifiPage = 0;
+        wifiScanState = WIFI_SCANNING;
+        drawWiFiScanning();
+
+        WiFi.mode(WIFI_STA);
+        WiFi.disconnect(true);
+        delay(100);
+
+        int count = WiFi.scanNetworks();
+        processWiFiScanResults(count);
+    }
 }
 
 /**
  * WiFi 扫描模式的主循环函数
  *
  * 根据当前子状态分发键盘输入：
- * - LIST：浏览和选择网络
+ * - LIST（page 0）：浏览和选择网络，WiFi 已连接时可翻到状态页
+ * - LIST（page 1）：状态页，可翻回列表页
  * - PASSWORD：输入密码
- * - RESULT：任意键返回菜单
  */
 void loopWiFiScanMode() {
     if (!(M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()))
@@ -179,14 +191,24 @@ void loopWiFiScanMode() {
     auto st = M5Cardputer.Keyboard.keysState();
     userAction = true;
 
-    // --- 结果页：任意键返回菜单 ---
-    if (wifiScanState == WIFI_RESULT) {
-        appMode = MODE_ESC_MENU;
-        initEscMenuMode();
+    // --- 状态页（page 1） ---
+    if (wifiScanState == WIFI_LIST && wifiPage == 1) {
+        for (auto c : st.word) {
+            if (c == '`') {
+                appMode = MODE_ESC_MENU;
+                initEscMenuMode();
+                return;
+            }
+            if (c == ',' || c == '/') {
+                wifiPage = 0;
+                drawWiFiList();
+                return;
+            }
+        }
         return;
     }
 
-    // --- 网络列表 ---
+    // --- 网络列表（page 0） ---
     if (wifiScanState == WIFI_LIST) {
         for (auto c : st.word) {
             if (c == '`') {
@@ -204,6 +226,13 @@ void loopWiFiScanMode() {
                              wifiSSIDs.size(), visibleLines, false);
                 drawWiFiList();
             }
+            if (c == ',' || c == '/') {
+                if (wifiConnected) {
+                    wifiPage = 1;
+                    drawWiFiStatusPage();
+                    return;
+                }
+            }
         }
 
         if (st.enter && !wifiSSIDs.empty()) {
@@ -212,6 +241,11 @@ void loopWiFiScanMode() {
             if (savedPass.length() > 0) {
                 wifiPasswordInput = savedPass;
                 attemptWiFiConnect();
+                if (wifiConnectSuccess) {
+                    wifiPage = 1;
+                    wifiScanState = WIFI_LIST;
+                    drawWiFiStatusPage();
+                }
             } else {
                 wifiPasswordInput = "";
                 wifiScanState = WIFI_PASSWORD;
@@ -242,6 +276,11 @@ void loopWiFiScanMode() {
 
         if (st.enter) {
             attemptWiFiConnect();
+            if (wifiConnectSuccess) {
+                wifiPage = 1;
+                wifiScanState = WIFI_LIST;
+                drawWiFiStatusPage();
+            }
         }
         return;
     }

@@ -195,10 +195,11 @@ void processWiFiScanResults(int count) {
  * 执行 WiFi 连接
  *
  * 使用选中的 SSID 和输入的密码尝试连接，超时 10 秒。
- * 连接成功后自动同步 NTP 时间并启动 Web 控制台。
+ * 连接成功后自动同步 NTP 时间、启用省电、保存凭据并启动 Web 控制台。
+ * 连接失败时显示错误提示后返回列表。
+ * 调用者负责处理成功后的页面跳转。
  */
 void attemptWiFiConnect() {
-    wifiScanState = WIFI_CONNECTING;
     drawCenterString(canvas, "连接中...", YELLOW, 1.2);
 
     WiFi.mode(WIFI_STA);
@@ -214,7 +215,6 @@ void attemptWiFiConnect() {
     if (WiFi.status() == WL_CONNECTED) {
         wifiConnected = true;
         wifiConnectSuccess = true;
-        wifiResultMessage = WiFi.localIP().toString();
 
         // NTP 时间同步
         configTime(8 * 3600, 0, "pool.ntp.org", "time.nist.gov");
@@ -231,9 +231,11 @@ void attemptWiFiConnect() {
         }
     } else {
         wifiConnectSuccess = false;
-        wifiResultMessage = "错误码: " + String(WiFi.status());
-    }
 
-    wifiScanState = WIFI_RESULT;
-    drawWiFiResult();
+        // 显示失败提示后返回列表
+        drawCenterString(canvas, "连接失败 (" + String(WiFi.status()) + ")", RED, 1.2);
+        delay(1500);
+        wifiScanState = WIFI_LIST;
+        drawWiFiList();
+    }
 }
