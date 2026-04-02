@@ -240,6 +240,189 @@ void autoSaveIfNeeded() {
 }
 
 /**
+ * 获取当前单词的听写提示文本
+ *
+ * 根据当前语言设置，返回用于语音播放和答案比对的文本。
+ * 英语模式返回英文单词，日语模式返回日语假名。
+ *
+ * @param w 单词对象
+ * @return 用于听写的目标文本（英文单词或日语假名）
+ */
+String dictationPromptText(const Word &w)
+{
+    if (currentLanguage == LANG_EN)
+        return w.en;
+    return w.jp;
+}
+
+/**
+ * 获取当前单词用于语音播放的文本
+ *
+ * 根据当前语言设置返回对应的音频文本。
+ * 英语模式返回英文单词，日语模式返回日语假名。
+ *
+ * @param w 单词对象
+ * @return 用于语音播放的文本字符串
+ */
+String listenAudioText(const Word &w)
+{
+    if (currentLanguage == LANG_EN)
+        return w.en;
+    return w.jp;
+}
+
+/**
+ * 从文件路径中提取文件名
+ *
+ * 查找路径中最后一个"/"字符，返回其后的部分作为文件名。
+ * 若路径中不包含"/"则返回整个路径字符串。
+ *
+ * @param path 完整的文件路径
+ * @return 提取出的文件名部分
+ */
+String statsFileName(const String &path)
+{
+    int pos = path.lastIndexOf('/');
+    if (pos >= 0 && pos + 1 < (int)path.length())
+    {
+        return path.substring(pos + 1);
+    }
+    return path;
+}
+
+/**
+ * 从当前词库计算学习统计数据
+ *
+ * 遍历所有单词，统计各等级（1-5）的数量、计算平均分和中位数，
+ * 并根据平均分生成掌握程度评价文字（非常熟练/较为熟练/掌握中/不牢固/需要重点复习）。
+ * 分数不在 1-5 范围内的默认按 3 处理。词库为空时设置提示文字并直接返回。
+ */
+void computeStatsFromWords()
+{
+    for (int i = 0; i < 6; i++)
+    {
+        statsCounts[i] = 0;
+    }
+    statsTotal = words.size();
+    statsAvg = 0;
+    statsMedian = 0;
+    statsLevel = "";
+
+    if (statsTotal == 0)
+    {
+        statsLevel = "词库为空";
+        return;
+    }
+
+    std::vector<int> scores;
+    scores.reserve(statsTotal);
+    long sum = 0;
+
+    for (auto &w : words)
+    {
+        int score = w.score;
+        if (score < 1 || score > 5)
+            score = 3;
+        scores.push_back(score);
+        statsCounts[score] += 1;
+        sum += score;
+    }
+
+    statsAvg = (float)sum / (float)statsTotal;
+    std::sort(scores.begin(), scores.end());
+
+    if (statsTotal % 2 == 1)
+    {
+        statsMedian = scores[statsTotal / 2];
+    }
+    else
+    {
+        int mid = statsTotal / 2;
+        statsMedian = (scores[mid - 1] + scores[mid]) / 2.0f;
+    }
+
+    if (statsAvg >= 4.5)
+    {
+        statsLevel = "非常熟练";
+    }
+    else if (statsAvg >= 3.8)
+    {
+        statsLevel = "较为熟练";
+    }
+    else if (statsAvg >= 3.0)
+    {
+        statsLevel = "掌握中";
+    }
+    else if (statsAvg >= 2.0)
+    {
+        statsLevel = "不牢固";
+    }
+    else
+    {
+        statsLevel = "需要重点复习";
+    }
+}
+
+/**
+ * 设置当前学习语言并更新相关路径
+ *
+ * 根据所选语言设置词库根目录和音频根目录的路径，
+ * 同时重置当前目录和已选文件路径，并清空已加载的单词列表。
+ *
+ * @param lang 要设置的语言枚举值（LANG_JP 或 LANG_EN）
+ */
+void setLanguage(StudyLanguage lang)
+{
+    currentLanguage = lang;
+    if (currentLanguage == LANG_JP)
+    {
+        currentWordRoot = "/words_study/jp/word";
+        currentAudioRoot = "/words_study/jp/audio";
+    }
+    else
+    {
+        currentWordRoot = "/words_study/en/word";
+        currentAudioRoot = "/words_study/en/audio";
+    }
+    currentDir = currentWordRoot;
+    selectedFilePath = "";
+    words.clear();
+}
+
+/**
+ * 初始化学习模式并加载词库
+ *
+ * 切换词库前先自动保存上一个词库的学习进度，然后从指定路径加载新词库。
+ * 加载成功后通过加权随机算法选取第一个单词并绘制闪卡。
+ * 加载失败或词库为空时在屏幕上显示错误提示。
+ *
+ * @param filePath SD 卡上词库 JSON 文件的完整路径
+ */
+void startStudyMode(const String &filePath)
+{
+    // 加载新词库前，先保存旧词库的进度
+    autoSaveIfNeeded();
+
+    bool ok = loadWordsFromJSON(filePath);
+    if (!ok)
+    {
+        drawCenterMessage(canvas, "词库加载失败");
+        return;
+    }
+    else if (words.empty())
+    {
+        drawCenterMessage(canvas, "词库为空");
+        return;
+    }
+
+    wordIndex = pickWeightedRandom();
+    showMeaning = false;
+    if (currentLanguage == LANG_EN)
+        showAnkiSideA = true;
+    drawStudyWord();
+}
+
+/**
  * 将听写错误单词导出为新的词库文件
  *
  * 从 dictErrors 中提取所有答错的单词，保存到 SD 卡的 Mistake 子文件夹中。

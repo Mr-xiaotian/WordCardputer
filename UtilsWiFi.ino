@@ -99,3 +99,115 @@ String getNtpTimeString() {
     }
     return String(millis());
 }
+
+/**
+ * 将 RSSI 信号强度转为可视指示符
+ *
+ * @param rssi 信号强度值（负数，越大越强）
+ * @return 信号指示字符串
+ */
+String rssiIndicator(int rssi) {
+    if (rssi > -50) return "[###]";
+    if (rssi > -70) return "[## ]";
+    return "[#  ]";
+}
+
+/**
+ * 处理扫描结果，去重并按信号强度排序
+ *
+ * @param count WiFi.scanNetworks() 返回的网络数量
+ */
+void processWiFiScanResults(int count) {
+    wifiSSIDs.clear();
+    wifiRawSSIDs.clear();
+
+    if (count <= 0) {
+        wifiScanState = WIFI_LIST;
+        drawWiFiList();
+        return;
+    }
+
+    // 收集并去重
+    struct WifiEntry {
+        String ssid;
+        int rssi;
+    };
+    std::vector<WifiEntry> entries;
+
+    for (int i = 0; i < count; i++) {
+        String ssid = WiFi.SSID(i);
+        if (ssid.length() == 0) continue;
+
+        // 去重：保留信号最强的
+        bool dup = false;
+        for (auto &e : entries) {
+            if (e.ssid == ssid) {
+                if (WiFi.RSSI(i) > e.rssi) e.rssi = WiFi.RSSI(i);
+                dup = true;
+                break;
+            }
+        }
+        if (!dup) {
+            entries.push_back({ssid, WiFi.RSSI(i)});
+        }
+    }
+
+    // 按信号强度排序
+    std::sort(entries.begin(), entries.end(), [](const WifiEntry &a, const WifiEntry &b) {
+        return a.rssi > b.rssi;
+    });
+
+    // 构建显示列表
+    for (auto &e : entries) {
+        wifiRawSSIDs.push_back(e.ssid);
+        wifiSSIDs.push_back(e.ssid + " " + rssiIndicator(e.rssi));
+    }
+
+    WiFi.scanDelete();
+
+    wifiListIndex = 0;
+    wifiListScroll = 0;
+    wifiScanState = WIFI_LIST;
+    drawWiFiList();
+}
+
+/**
+ * 执行 WiFi 连接
+ *
+ * 使用选中的 SSID 和输入的密码尝试连接，超时 10 秒。
+ * 连接成功后自动同步 NTP 时间并启动 Web 控制台。
+ */
+void attemptWiFiConnect() {
+    wifiScanState = WIFI_CONNECTING;
+    drawCenterMessage(canvas, "连接中...", YELLOW);
+
+    WiFi.mode(WIFI_STA);
+    WiFi.disconnect(true);
+    delay(100);
+    WiFi.begin(wifiSelectedSSID.c_str(), wifiPasswordInput.c_str());
+
+    unsigned long startMs = millis();
+    while (WiFi.status() != WL_CONNECTED && millis() - startMs < 10000) {
+        delay(500);
+    }
+
+    if (WiFi.status() == WL_CONNECTED) {
+        wifiConnected = true;
+        wifiConnectSuccess = true;
+        wifiResultMessage = WiFi.localIP().toString();
+
+        // NTP 时间同步
+        configTime(8 * 3600, 0, "pool.ntp.org", "time.nist.gov");
+
+        // 启动 Web 控制台
+        if (!webServerRunning) {
+            initWebServer();
+        }
+    } else {
+        wifiConnectSuccess = false;
+        wifiResultMessage = "错误码: " + String(WiFi.status());
+    }
+
+    wifiScanState = WIFI_RESULT;
+    drawWiFiResult();
+}

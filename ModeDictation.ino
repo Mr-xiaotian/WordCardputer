@@ -29,73 +29,6 @@ bool useKatakana = false;
 bool dictInReview = false; // 是否正在错误回顾
 
 /**
- * 获取当前单词的听写提示文本
- *
- * 根据当前语言设置，返回用于语音播放和答案比对的文本。
- * 英语模式返回英文单词，日语模式返回日语假名。
- *
- * @param w 单词对象
- * @return 用于听写的目标文本（英文单词或日语假名）
- */
-String dictationPromptText(const Word &w)
-{
-    if (currentLanguage == LANG_EN)
-        return w.en;
-    return w.jp;
-}
-
-/**
- * 判断字符是否为合法的英语输入字符
- *
- * 合法字符包括：大小写字母、数字、撇号、连字符、下划线和空格。
- * 用于在英语听写模式下过滤键盘输入。
- *
- * @param c 待检测的字符
- * @return 该字符是否为合法的英语输入字符
- */
-bool isEnglishInputChar(char c)
-{
-    return (c >= 'a' && c <= 'z') ||
-           (c >= 'A' && c <= 'Z') ||
-           (c >= '0' && c <= '9') ||
-           c == '\'' || c == '-' || c == '_' || c == ' ';
-}
-
-/**
- * 规范化英语答案字符串，用于答案比对
- *
- * 进行以下处理：去除首尾空白、转为小写、将下划线替换为空格、
- * 合并连续空格为单个空格。确保用户输入与标准答案的格式一致。
- *
- * @param s 原始输入字符串
- * @return 规范化后的字符串
- */
-String normalizeEnglishAnswer(String s)
-{
-    s.trim();
-    s.toLowerCase();
-    String out = "";
-    bool prevSpace = false;
-    for (size_t i = 0; i < s.length(); ++i)
-    {
-        char c = s[i];
-        if (c == '_')
-            c = ' ';
-        if (c == ' ' || c == '\t')
-        {
-            if (!prevSpace && out.length() > 0)
-                out += ' ';
-            prevSpace = true;
-            continue;
-        }
-        prevSpace = false;
-        out += c;
-    }
-    out.trim();
-    return out;
-}
-
-/**
  * 初始化听写模式
  *
  * 检查词库是否已加载，生成随机顺序的单词序列，
@@ -277,37 +210,6 @@ void drawDictationReviewPage()
         canvas.width() / 2, canvas.height() - 10);
 
     canvas.pushSprite(0, 0);
-}
-
-/**
- * 提交当前候选假名到已确认文本
- *
- * 将当前罗马音缓冲区匹配到的候选假名追加到 commitText 中，
- * 并清空罗马音缓冲区和候选假名。由分号键或 Enter 键触发。
- * 若当前无候选假名则不做任何操作。
- */
-void commitCandidate()
-{
-    if (candidateKana.length() > 0)
-    {
-        commitText += candidateKana;
-        romajiBuffer = "";
-        candidateKana = "";
-    }
-}
-
-/**
- * 判断字符是否可以形成促音（双辅音）
- *
- * 在日语罗马音输入中，连续输入相同的辅音（如 kk、ss、tt、pp）
- * 会触发促音「っ/ッ」的输入。本函数判断给定字符是否属于
- * 可以产生促音的辅音字母（k、s、t、p）。
- *
- * @param c 待检测的字符（小写字母）
- * @return 该字符是否为可产生促音的辅音
- */
-bool isSokuonConsonant(char c) {
-    return c=='k' || c=='s' || c=='t' || c=='p';
 }
 
 /**

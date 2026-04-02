@@ -131,6 +131,57 @@ String asciiPhonetic(const String &s)
 
 
 /**
+ * 判断字符是否为合法的英语输入字符
+ *
+ * 合法字符包括：大小写字母、数字、撇号、连字符、下划线和空格。
+ * 用于在英语听写模式下过滤键盘输入。
+ *
+ * @param c 待检测的字符
+ * @return 该字符是否为合法的英语输入字符
+ */
+bool isEnglishInputChar(char c)
+{
+    return (c >= 'a' && c <= 'z') ||
+           (c >= 'A' && c <= 'Z') ||
+           (c >= '0' && c <= '9') ||
+           c == '\'' || c == '-' || c == '_' || c == ' ';
+}
+
+/**
+ * 规范化英语答案字符串，用于答案比对
+ *
+ * 进行以下处理：去除首尾空白、转为小写、将下划线替换为空格、
+ * 合并连续空格为单个空格。确保用户输入与标准答案的格式一致。
+ *
+ * @param s 原始输入字符串
+ * @return 规范化后的字符串
+ */
+String normalizeEnglishAnswer(String s)
+{
+    s.trim();
+    s.toLowerCase();
+    String out = "";
+    bool prevSpace = false;
+    for (size_t i = 0; i < s.length(); ++i)
+    {
+        char c = s[i];
+        if (c == '_')
+            c = ' ';
+        if (c == ' ' || c == '\t')
+        {
+            if (!prevSpace && out.length() > 0)
+                out += ' ';
+            prevSpace = true;
+            continue;
+        }
+        prevSpace = false;
+        out += c;
+    }
+    out.trim();
+    return out;
+}
+
+/**
  * 在屏幕中央绘制提示信息
  *
  * 清空画布后居中显示消息文本，适用于各模式中的错误/成功/状态提示。

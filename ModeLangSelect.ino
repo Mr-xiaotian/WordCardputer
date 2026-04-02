@@ -28,32 +28,6 @@ void drawLanguageSelect()
 }
 
 /**
- * 设置当前学习语言并更新相关路径
- *
- * 根据所选语言设置词库根目录和音频根目录的路径，
- * 同时重置当前目录和已选文件路径，并清空已加载的单词列表。
- *
- * @param lang 要设置的语言枚举值（LANG_JP 或 LANG_EN）
- */
-void setLanguage(StudyLanguage lang)
-{
-    currentLanguage = lang;
-    if (currentLanguage == LANG_JP)
-    {
-        currentWordRoot = "/words_study/jp/word";
-        currentAudioRoot = "/words_study/jp/audio";
-    }
-    else
-    {
-        currentWordRoot = "/words_study/en/word";
-        currentAudioRoot = "/words_study/en/audio";
-    }
-    currentDir = currentWordRoot;
-    selectedFilePath = "";
-    words.clear();
-}
-
-/**
  * 初始化语言选择模式
  *
  * 将语言选择索引重置为 0（默认选中第一项），并绘制语言选择菜单。

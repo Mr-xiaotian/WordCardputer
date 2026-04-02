@@ -8,6 +8,37 @@
  */
 
 /**
+ * 提交当前候选假名到已确认文本
+ *
+ * 将当前罗马音缓冲区匹配到的候选假名追加到 commitText 中，
+ * 并清空罗马音缓冲区和候选假名。由分号键或 Enter 键触发。
+ * 若当前无候选假名则不做任何操作。
+ */
+void commitCandidate()
+{
+    if (candidateKana.length() > 0)
+    {
+        commitText += candidateKana;
+        romajiBuffer = "";
+        candidateKana = "";
+    }
+}
+
+/**
+ * 判断字符是否可以形成促音（双辅音）
+ *
+ * 在日语罗马音输入中，连续输入相同的辅音（如 kk、ss、tt、pp）
+ * 会触发促音「っ/ッ」的输入。本函数判断给定字符是否属于
+ * 可以产生促音的辅音字母（k、s、t、p）。
+ *
+ * @param c 待检测的字符（小写字母）
+ * @return 该字符是否为可产生促音的辅音
+ */
+bool isSokuonConsonant(char c) {
+    return c=='k' || c=='s' || c=='t' || c=='p';
+}
+
+/**
  * 罗马音映射表条目结构体
  *
  * 每条记录包含一个罗马音拼写及其对应的平假名和片假名。

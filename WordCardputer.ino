@@ -30,6 +30,7 @@ enum AppMode {
     MODE_LISTEN,       // 听读模式
     MODE_STATS,        // 学习统计模式
     MODE_WIFI_SCAN,    // WiFi 扫描连接模式
+    MODE_KEY_HELP,     // 按键帮助模式
 };
 
 /** 学习语言枚举：日语或英语 */
@@ -129,6 +130,21 @@ void markScoreDirty();
 
 int pickWeightedRandom();
 
+String dictationPromptText(const Word &w);
+String listenAudioText(const Word &w);
+String statsFileName(const String &path);
+void computeStatsFromWords();
+
+bool isEnglishInputChar(char c);
+String normalizeEnglishAnswer(String s);
+
+void commitCandidate();
+bool isSokuonConsonant(char c);
+
+String rssiIndicator(int rssi);
+void processWiFiScanResults(int count);
+void attemptWiFiConnect();
+
 void drawAutoFitString(M5Canvas &cv, const String &text,
                        int x, int y, float baseSize);
 void drawTopLeftString(M5Canvas &cv, const String &text);
@@ -170,6 +186,9 @@ extern bool webServerRunning;
 
 void initWiFiScanMode();
 void loopWiFiScanMode();
+
+void initKeyHelpMode();
+void loopKeyHelpMode();
 
 // =============== 主程序 ===============
 
@@ -251,6 +270,8 @@ void loop() {
         loopStatsMode();
     } else if (appMode == MODE_WIFI_SCAN) {
         loopWiFiScanMode();
+    } else if (appMode == MODE_KEY_HELP) {
+        loopKeyHelpMode();
     }
 
     // -------- Web 服务器处理 --------

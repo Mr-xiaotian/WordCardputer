@@ -39,6 +39,8 @@ std::vector<std::vector<String>> helpPage2 = {
     { ";",       "确认当前假名" },
 };
 
+int helpPage = 0;
+
 /**
  * 绘制指定页码的按键帮助页面
  *
@@ -68,40 +70,47 @@ void drawKeyHelpPage(int page) {
 }
 
 /**
- * 显示按键帮助页面并进入导航循环
+ * 初始化按键帮助模式
  *
- * 从第一页开始显示帮助内容，进入阻塞式循环等待用户输入：
+ * 将页码重置为第一页并绘制帮助页面。
+ */
+void initKeyHelpMode() {
+    helpPage = 0;
+    drawKeyHelpPage(helpPage);
+}
+
+/**
+ * 按键帮助模式的主循环函数
+ *
+ * 处理以下键盘操作：
+ * - '`' 键（ESC）：返回 ESC 菜单
  * - ',' 键：切换到上一页（循环翻页）
  * - '/' 键：切换到下一页（循环翻页）
- * - '`' 键（ESC）：退出帮助页面，返回调用者
  */
-void showKeyHelp() {
-    int helpPage = 0;
-    drawKeyHelpPage(helpPage);
+void loopKeyHelpMode() {
+    if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
+        auto st = M5Cardputer.Keyboard.keysState();
+        userAction = true;
 
-    while (true) {
-        M5Cardputer.update();
-        if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
-            auto st = M5Cardputer.Keyboard.keysState();
-            userAction = true;
-
-            bool nav = false;
-            for (auto c : st.word) {
-                if (c == '`') return;
-                if (c == ',') {
-                    helpPage = (helpPage - 1 + helpTotalPages) % helpTotalPages;
-                    nav = true;
-                }
-                if (c == '/') {
-                    helpPage = (helpPage + 1) % helpTotalPages;
-                    nav = true;
-                }
+        bool nav = false;
+        for (auto c : st.word) {
+            if (c == '`') {
+                appMode = MODE_ESC_MENU;
+                initEscMenuMode();
+                return;
             }
-
-            if (nav) {
-                drawKeyHelpPage(helpPage);
+            if (c == ',') {
+                helpPage = (helpPage - 1 + helpTotalPages) % helpTotalPages;
+                nav = true;
+            }
+            if (c == '/') {
+                helpPage = (helpPage + 1) % helpTotalPages;
+                nav = true;
             }
         }
-        delay(30);
+
+        if (nav) {
+            drawKeyHelpPage(helpPage);
+        }
     }
 }

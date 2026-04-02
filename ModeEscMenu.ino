@@ -150,8 +150,8 @@ void loopEscMenuMode() {
             }
             else if (escIndex == 7) {
                 // 按键帮助
-                showKeyHelp();
-                drawEscMenu();
+                appMode = MODE_KEY_HELP;
+                initKeyHelpMode();
                 return;
             }
             else if (escIndex == 8) {

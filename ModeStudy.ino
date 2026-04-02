@@ -164,39 +164,6 @@ void drawJapaneseWord(Word &w)
 }
 
 /**
- * 初始化学习模式并加载词库
- *
- * 切换词库前先自动保存上一个词库的学习进度，然后从指定路径加载新词库。
- * 加载成功后通过加权随机算法选取第一个单词并绘制闪卡。
- * 加载失败或词库为空时在屏幕上显示错误提示。
- *
- * @param filePath SD 卡上词库 JSON 文件的完整路径
- */
-void startStudyMode(const String &filePath)
-{
-    // 加载新词库前，先保存旧词库的进度
-    autoSaveIfNeeded();
-
-    bool ok = loadWordsFromJSON(filePath);
-    if (!ok)
-    {
-        drawCenterMessage(canvas, "词库加载失败");
-        return;
-    }
-    else if (words.empty())
-    {
-        drawCenterMessage(canvas, "词库为空");
-        return;
-    }
-
-    wordIndex = pickWeightedRandom();
-    showMeaning = false;
-    if (currentLanguage == LANG_EN)
-        showAnkiSideA = true;
-    drawStudyWord();
-}
-
-/**
  * 学习模式主循环 - 处理键盘输入
  *
  * 支持以下操作：
