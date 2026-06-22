@@ -1,22 +1,98 @@
 # UtilsAudio.ino
 
-## 概述
-`UtilsAudio.ino` 是项目的**音频播放引擎**。它封装了与 M5Stack 扬声器交互的底层逻辑，主要用于从 SD 卡中流式读取并播放本地 WAV 音频文件（例如单词发音）。
+> 最后更新日期: 2026/06/22
 
-## 核心内容
-- **流式播放核心 (`playWavStream`)**：
-  - 负责打开指定路径的音频文件并进行二进制流解析。
-  - **WAV 头解析**：按照标准格式读取 `RIFF`、`fmt ` 块，提取并验证采样率、声道数和位深（支持 8-bit 和 16-bit PCM）。
-  - **数据定位**：跳过非音频数据，精确查找到 `data` 块的起始位置。
-  - **三重缓冲机制**：这部分采用了类似官方 demo 的设计，使用 3 个 1024 字节的缓冲区交替读取 SD 卡和喂给 I2S 硬件。这极大地降低了内存占用，并防止了播放过程中的卡顿。
-- **单词发音控制 (`playAudioForWord`)**：
-  - 上层业务的直接调用入口。
-  - 接收单词字符串，自动将其与当前语言的音频根目录拼接成完整路径（如 `/words_study/en/audio/apple.wav`）。
-  - **容错与反馈**：
-    - 在播放新音频前，如果扬声器仍在发声，会先安全停止（Stop）前一个音频。
-    - 如果在 SD 卡上找不到对应的音频文件，会调用蜂鸣器发出高频提示音（880Hz）作为反馈。
-    - 如果文件存在但格式不受支持或解析失败，会发出低频警告音（440Hz）。
+## 作用
 
-## 关联模块
-- 为 `ModeStudy.ino`（主动点击播放）、`ModeListen.ino`（自动循环播放）和 `ModeDictation.ino`（提示与复盘播放）提供音频输出能力。
-- 依赖 M5Unified 提供的 `M5.Speaker` 接口。
+`UtilsAudio.ino` 是项目的 **音频播放引擎**。负责音量调节、从 SD 卡流式读取 WAV 文件并通过 M5Cardputer 扬声器播放，同时提供按单词名查找音频的便捷接口。
+
+## 核心函数
+
+| 函数 | 作用 |
+|------|------|
+| `adjustVolume(c)` | 根据 `;` / `.` 调整全局音量并显示 HUD |
+| `playWavStream(path)` | 流式解析并播放 WAV 文件 |
+| `playAudioForWord(word)` | 按单词名拼接路径并播放音频 |
+
+## 关键流程
+
+### 音量调节
+
+```mermaid
+flowchart LR
+    A[按键 ;] --> B[soundVolume += 10]
+    A[按键 .] --> C[soundVolume -= 10]
+    B & C --> D[限制在 0~255]
+    D --> E[M5.Speaker.setVolume]
+    E --> F[volumeMessageDeadline = now + 2000ms]
+```
+
+### WAV 流式播放
+
+```mermaid
+flowchart TD
+    A[SD.open 文件] --> B[读取 WAV 头]
+    B --> C[验证 RIFF/WAVE/fmt/data]
+    C -->|不通过| D[返回 false]
+    C -->|通过| E[定位到 data 块]
+    E --> F[3 x 1024 字节缓冲循环]
+    F --> G[playRaw 喂给 I2S]
+    G --> H{remain > 0?}
+    H -->|是| F
+    H -->|否| I[关闭文件]
+```
+
+## 重要细节
+
+### WAV 格式支持
+
+| 参数 | 支持值 |
+|------|--------|
+| 编码 | PCM（audiofmt == 1） |
+| 位深 | 8-bit 或 16-bit |
+| 声道 | 单声道或立体声 |
+| 采样率 | 任意（由文件头决定） |
+
+- 不支持 MP3、AAC 等压缩格式。
+- 文件头中 `fmt ` 块之后可能跟随其他 chunk（如 `LIST`），代码会跳过非 `data` chunk。
+
+### 音频路径规则
+
+```
+/words_study/<lang>/audio/<word>.wav
+```
+
+- 日语：`/words_study/jp/audio/あめ.wav`
+- 英语：`/words_study/en/audio/apple.wav`
+
+### 容错反馈
+
+| 场景 | 行为 |
+|------|------|
+| 文件不存在 | 串口打印 + 880Hz 提示音 |
+| 正在播放其他音频 | 等待并停止后再播放 |
+| WAV 解析失败 | 440Hz 警告音 |
+
+## 使用示例
+
+### 播放当前学习单词
+
+```cpp
+if (currentLanguage == LANG_JP) {
+    playAudioForWord(words[wordIndex].jp);
+} else {
+    playAudioForWord(words[wordIndex].en);
+}
+```
+
+### 直接播放指定 WAV
+
+```cpp
+playWavStream("/words_study/en/audio/custom.wav");
+```
+
+## 注意事项
+
+- `playAudioForWord()` 在播放前会阻塞等待当前音频结束，避免重叠；因此不适合在需要低延迟的场景调用。
+- 三重缓冲（3×1024 字节）可降低内存占用，但播放高采样率长音频时仍可能出现短暂卡顿，建议使用 16kHz 单声道 16-bit。
+- `playRaw` 的 `repeat=1` 参数来自 M5Stack 官方 demo，表示该缓冲块播放 1 次，不要误以为是循环播放。

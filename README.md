@@ -81,8 +81,8 @@ SD 卡根目录/
 
 ```json
 [
-  { “jp”: “わたし”, “zh”: “我”, “kanji”: “私”, “tone”: 0, “score”: 3 },
-  { “jp”: “ほん”, “zh”: “书”, “kanji”: “本”, “tone”: 0, “score”: 3 }
+  { "jp": "わたし", "zh": "我", "kanji": "私", "tone": 0, "score": 3 },
+  { "jp": "ほん", "zh": "书", "kanji": "本", "tone": 0, "score": 3 }
 ]
 ```
 
@@ -90,8 +90,8 @@ SD 卡根目录/
 
 ```json
 [
-  { “en”: “run”, “zh”: “跑；运行”, “pos”: “verb”, “phonetic”: “/rʌn/”, “score”: 3 },
-  { “en”: “apple”, “zh”: “苹果”, “pos”: “noun”, “phonetic”: “/ˈæpəl/”, “score”: 3 }
+  { "en": "run", "zh": "跑；运行", "pos": "verb", "phonetic": "/rʌn/", "score": 3 },
+  { "en": "apple", "zh": "苹果", "pos": "noun", "phonetic": "/ˈæpəl/", "score": 3 }
 ]
 ```
 
@@ -99,7 +99,7 @@ SD 卡根目录/
 
 ## Web 控制面板
 
-WiFi 连接后，设备自动启动 HTTP 服务器。通过 ESC 菜单 → “Web 控制台” 查看设备 IP 地址，在同一局域网的浏览器中访问 `http://<IP>` 即可使用：
+WiFi 连接后，设备自动启动 HTTP 服务器。通过 ESC 菜单 → "Web 控制台" 查看设备 IP 地址，在同一局域网的浏览器中访问 `http://<IP>` 即可使用：
 
 - **文件管理**：浏览、上传、下载、删除 SD 卡上的词库文件
 - **学习统计**：查看当前词库的分数分布和掌握评价
@@ -173,4 +173,4 @@ Author: Mr-xiaotian
 Email: mingxiaomingtian@gmail.com
 Project Link: [https://github.com/Mr-xiaotian/WordCardputer](https://github.com/Mr-xiaotian/WordCardputer)
 
-> *“让硬件成为记忆的一部分。”*
+> *"让硬件成为记忆的一部分。"*

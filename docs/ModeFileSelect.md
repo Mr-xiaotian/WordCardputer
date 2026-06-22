@@ -1,25 +1,75 @@
 # ModeFileSelect.ino
 
-## 概述
-`ModeFileSelect.ino` 实现了**文件选择模式**，它提供了一个直观的文件浏览器界面，让用户能够在设备上浏览 SD 卡中的词库目录并选择要学习的 JSON 文件。
+> 最后更新日期: 2026/06/22
 
-## 核心内容
-- **目录扫描与解析 (`initFileSelectMode`)**：
-  - 打开 SD 卡的当前工作目录（默认为所选语言的词库根目录）。
-  - 遍历目录内容，过滤掉系统隐藏项（如 `.` 和 `..`）。
-  - 识别子文件夹（末尾追加 `/` 标识）和有效的 `.json` 词库文件。
-  - 对文件列表进行排序：文件夹优先排在前面，同类项按字母顺序排列。
-- **界面渲染 (`drawFileSelect`)**：
-  - 调用 `UtilsMenu.ino` 提供的通用菜单绘制函数 `drawTextMenu`。
-  - 在屏幕上以列表形式展示文件，处理高亮选择和页面滚动。
-- **交互控制 (`loopFileSelectMode`)**：
-  - 监听 M5Cardputer 键盘输入。
-  - `;/` 键：上下移动光标，并处理列表的循环滚动。
-  - `Enter` 键：
-    - 若选中文件夹，则进入该子目录并重新扫描。
-    - 若选中 JSON 文件，则设置目标路径，切换到**学习模式**（`MODE_STUDY`）并加载该词库。
-  - `Del` 键：返回上一级目录（限制在词库根目录之内）。
+## 作用
 
-## 关联模块
-- **界面工具**：依赖 `UtilsMenu.ino` 进行菜单的统一绘制。
-- **数据加载**：选择文件后，调用 `ModeStudy.ino` 的 `startStudyMode` 开始加载数据并切换应用状态。
+`ModeFileSelect.ino` 实现 **SD 卡词库文件浏览器**。用户在选择语言后进入该模式，浏览 `/words_study/<lang>/word` 下的子目录与 JSON 词库文件，选中后加载并进入学习模式。
+
+## 核心对象
+
+| 对象 | 类型 | 说明 |
+|------|------|------|
+| `files` | `std::vector<String>` | 当前目录下的文件/文件夹列表 |
+| `fileIndex` | `int` | 当前选中索引 |
+| `fileScroll` | `int` | 当前滚动偏移 |
+| `currentDir` | `String` | 文件浏览器当前目录 |
+
+## 关键流程
+
+```mermaid
+flowchart TD
+    A[initFileSelectMode] --> B{currentDir 是否在 currentWordRoot 下?}
+    B -->|否| C[重置为根目录]
+    B -->|是| D[打开当前目录]
+    D --> E[遍历文件]
+    E --> F[过滤 . / ..]
+    F --> G[区分文件夹与 JSON]
+    G --> H[排序: 文件夹优先]
+    H --> I[drawTextMenu]
+    I --> J{用户按键}
+    J -->|; / .| K[navigateMenu]
+    J -->|Enter| L{选中项类型}
+    L -->|文件夹/| M[进入子目录]
+    L -->|JSON| N[startStudyMode]
+    J -->|Del| O[返回上级目录]
+```
+
+## 重要细节
+
+- **列表排序规则**：
+  - 文件夹排在文件前面。
+  - 同类型按字母顺序升序排列。
+- **目录保护**：`Del` 返回上级目录时，若当前已在 `currentWordRoot` 则不再回退，避免跳出词库根目录。
+- **文件过滤**：只识别 `.json` 文件；文件夹以 `/` 后缀标识。
+- **空目录处理**：若 `files` 为空，直接显示“无词库文件”提示并忽略后续输入。
+
+## 使用示例
+
+### 浏览并选择词库
+
+假设目录结构为：
+
+```
+/words_study/en/word/
+├── basics/
+│   └── day_01.json
+├── travel/
+│   └── airport.json
+└── review.json
+```
+
+1. 进入文件选择后看到：
+   ```
+   > basics/
+     travel/
+     review.json
+   ```
+2. 按 `.` 移动到 `basics/`，按 Enter 进入。
+3. 按 `.` 选中 `day_01.json`，按 Enter 开始学习。
+4. 按 Del 可返回上级目录。
+
+## 注意事项
+
+- 选择 JSON 文件后，会调用 `startStudyMode()`，该函数会先 `autoSaveIfNeeded()` 保存上一个词库的进度，再加载新词库。
+- 文件列表不会递归显示子目录内容，必须一层层进入。
