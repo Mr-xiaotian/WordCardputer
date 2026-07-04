@@ -149,14 +149,28 @@ void loopWiFiScanMode();
 void initKeyHelpMode();
 void loopKeyHelpMode();
 
-// --- UtilsData.ino ---
-// 数据层已从 JSON 文件切换为 SQLite；词库选择语义为 source / chapter。
+// --- UtilsDb.ino ---
+// SQLite 访问、词库浏览、导入导出辅助。
+String currentDbFilePath();
+const char *currentWordTable();
+String sqliteColumnText(sqlite3_stmt *stmt, int col);
+bool openVocabularyDb(sqlite3 **db);
+bool prepareStatement(sqlite3 *db, const String &sql, sqlite3_stmt **stmt);
 bool loadWordsFromDB(const String &source, const String &chapter);
 bool saveCurrentWordsToDB();
 bool saveWordListToDB(const String &source, const String &chapter, const std::vector<Word> &list);
 bool loadSourceList(std::vector<String> &items);
 bool loadChapterList(const String &source, std::vector<String> &items);
 bool sourceHasChapters(const String &source);
+int normalizeScoreValue(int score);
+String fileStem(const String &filename);
+bool isValidVocabPath(const String &path);
+bool parseVocabPath(const String &path, bool &isRoot, String &source, String &chapter);
+bool deriveUploadTarget(const String &path, const String &filename, String &source, String &chapter);
+bool importJsonFileToDb(const String &jsonPath, const String &source, const String &chapter, int &importedCount, String &error);
+
+// --- UtilsData.ino ---
+// 运行时词库状态、统计、自动保存与学习流程。
 void saveDictationMistakesAsWordList();
 void autoSaveIfNeeded();
 void markScoreDirty();

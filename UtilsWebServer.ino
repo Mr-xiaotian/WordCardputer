@@ -3,7 +3,7 @@
  * @brief Web 控制面板服务器
  *
  * 在 ESP32 上运行轻量级 HTTP 服务器，提供浏览器端的设备管理面板。
- * 功能包括：SD 卡文件浏览/上传/删除、学习统计查看、音量亮度调节。
+ * 功能包括：词库数据库浏览、JSON 导入导出、词库删除、学习统计查看、音量亮度调节。
  * 仅在 WiFi 连接成功后启动，前端页面从 SD 卡加载。
  */
 
@@ -12,17 +12,88 @@
 WebServer server(80);
 bool webServerRunning = false;
 File uploadFile;
+String uploadTempPath = "";
+String uploadTargetSource = "";
+String uploadTargetChapter = "";
+String uploadError = "";
+int uploadImportedCount = 0;
 
 /**
- * 校验 SD 卡路径是否合法
- *
- * 路径必须以 /words_study/ 开头且不包含 ".."，防止目录穿越攻击。
- *
- * @param path 待校验的路径
- * @return true 路径合法，false 路径非法
+ * 将指定 source / chapter 导出为 JSON 数组
  */
-bool isValidSDPath(const String &path) {
-    return path.startsWith("/words_study/") && path.indexOf("..") == -1;
+bool streamWordListAsJson(const String &source, const String &chapter, const String &downloadName) {
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
+
+    if (!openVocabularyDb(&db)) {
+        return false;
+    }
+
+    String sql;
+    if (currentLanguage == LANG_JP) {
+        sql = "SELECT jp, zh, kanji, romaji, tone, score FROM jp_words "
+              "WHERE source = ?1 AND (?2 = '' OR chapter = ?2) ORDER BY id";
+    } else {
+        sql = "SELECT en, zh, pos, phonetic, score FROM en_words "
+              "WHERE source = ?1 AND (?2 = '' OR chapter = ?2) ORDER BY id";
+    }
+
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    sqlite3_bind_text(stmt, 1, source.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(stmt, 2, chapter.c_str(), -1, SQLITE_TRANSIENT);
+
+    server.sendHeader("Content-Disposition", "attachment; filename=\"" + downloadName + "\"");
+    server.setContentLength(CONTENT_LENGTH_UNKNOWN);
+    server.send(200, "application/json", "");
+
+    bool first = true;
+    server.sendContent("[");
+    while (true) {
+        int rc = sqlite3_step(stmt);
+        if (rc == SQLITE_ROW) {
+            DynamicJsonDocument item(512);
+            if (currentLanguage == LANG_JP) {
+                item["jp"] = sqliteColumnText(stmt, 0);
+                item["zh"] = sqliteColumnText(stmt, 1);
+                item["kanji"] = sqliteColumnText(stmt, 2);
+                item["romaji"] = sqliteColumnText(stmt, 3);
+                item["tone"] = sqlite3_column_int(stmt, 4);
+                item["score"] = normalizeScoreValue(sqlite3_column_int(stmt, 5));
+            } else {
+                item["en"] = sqliteColumnText(stmt, 0);
+                item["zh"] = sqliteColumnText(stmt, 1);
+                item["pos"] = sqliteColumnText(stmt, 2);
+                item["phonetic"] = sqliteColumnText(stmt, 3);
+                item["score"] = normalizeScoreValue(sqlite3_column_int(stmt, 4));
+            }
+
+            String line;
+            serializeJson(item, line);
+            if (!first) {
+                server.sendContent(",");
+            }
+            server.sendContent(line);
+            first = false;
+            continue;
+        }
+
+        if (rc != SQLITE_DONE) {
+            Serial.printf("[Web] 导出词库失败: %s\n", sqlite3_errmsg(db));
+            sqlite3_finalize(stmt);
+            sqlite3_close(db);
+            return false;
+        }
+        break;
+    }
+
+    server.sendContent("]");
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return true;
 }
 
 /**
@@ -72,10 +143,10 @@ void handleRoot() {
     f.close();
 }
 
-// ========== 文件管理 API ==========
+// ========== 词库管理 API ==========
 
 /**
- * GET /api/files?path=<dir> — 列出目录下的文件和文件夹
+ * GET /api/files?path=<virtual-path> — 列出数据库中的 source / chapter
  */
 void handleApiFiles() {
     sendCorsHeaders();
@@ -83,43 +154,92 @@ void handleApiFiles() {
     if (path.isEmpty()) {
         path = currentWordRoot;
     }
-    if (!isValidSDPath(path)) {
-        sendJsonError(400, "Invalid path");
-        return;
-    }
-
-    File dir = SD.open(path);
-    if (!dir || !dir.isDirectory()) {
-        sendJsonError(404, "Directory not found");
-        if (dir) dir.close();
-        return;
+    if (!isValidVocabPath(path)) {
+        path = currentWordRoot;
     }
 
     DynamicJsonDocument doc(4096);
     doc["path"] = path;
+    doc["root"] = currentWordRoot;
+    doc["language"] = (currentLanguage == LANG_JP) ? "jp" : "en";
     JsonArray items = doc.createNestedArray("items");
-
-    int count = 0;
-    while (count < 100) {
-        File entry = dir.openNextFile();
-        if (!entry) break;
-
-        String name = entry.name();
-        if (name == "." || name == "..") {
-            entry.close();
-            continue;
-        }
-
-        JsonObject item = items.createNestedObject();
-        item["name"] = name;
-        item["isDir"] = entry.isDirectory();
-        if (!entry.isDirectory()) {
-            item["size"] = entry.size();
-        }
-        entry.close();
-        count++;
+    bool isRoot = false;
+    String source;
+    String chapter;
+    if (!parseVocabPath(path, isRoot, source, chapter)) {
+        sendJsonError(400, "Invalid path");
+        return;
     }
-    dir.close();
+
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
+    if (!openVocabularyDb(&db)) {
+        sendJsonError(500, "Open database failed");
+        return;
+    }
+
+    if (isRoot) {
+        String sql = String("SELECT source, COUNT(*), COUNT(DISTINCT NULLIF(chapter, '')) ")
+                   + "FROM " + currentWordTable()
+                   + " GROUP BY source ORDER BY source COLLATE NOCASE";
+        if (!prepareStatement(db, sql, &stmt)) {
+            sqlite3_close(db);
+            sendJsonError(500, "Query failed");
+            return;
+        }
+
+        while (sqlite3_step(stmt) == SQLITE_ROW) {
+            JsonObject item = items.createNestedObject();
+            int chapterCount = sqlite3_column_int(stmt, 2);
+            item["name"] = sqliteColumnText(stmt, 0);
+            item["kind"] = "source";
+            item["isDir"] = chapterCount > 0;
+            item["wordCount"] = sqlite3_column_int(stmt, 1);
+            item["chapterCount"] = chapterCount;
+        }
+    } else if (chapter.isEmpty()) {
+        String totalSql = String("SELECT COUNT(*) FROM ") + currentWordTable() + " WHERE source = ?1";
+        if (!prepareStatement(db, totalSql, &stmt)) {
+            sqlite3_close(db);
+            sendJsonError(500, "Query failed");
+            return;
+        }
+        sqlite3_bind_text(stmt, 1, source.c_str(), -1, SQLITE_TRANSIENT);
+        int totalCount = 0;
+        if (sqlite3_step(stmt) == SQLITE_ROW) {
+            totalCount = sqlite3_column_int(stmt, 0);
+        }
+        sqlite3_finalize(stmt);
+        stmt = nullptr;
+
+        String chapterSql = String("SELECT chapter, COUNT(*) FROM ") + currentWordTable()
+                          + " WHERE source = ?1 AND chapter <> '' GROUP BY chapter ORDER BY chapter COLLATE NOCASE";
+        if (!prepareStatement(db, chapterSql, &stmt)) {
+            sqlite3_close(db);
+            sendJsonError(500, "Query failed");
+            return;
+        }
+        sqlite3_bind_text(stmt, 1, source.c_str(), -1, SQLITE_TRANSIENT);
+
+        JsonObject allItem = items.createNestedObject();
+        allItem["name"] = "全部";
+        allItem["kind"] = "chapter";
+        allItem["isDir"] = false;
+        allItem["wordCount"] = totalCount;
+
+        while (sqlite3_step(stmt) == SQLITE_ROW) {
+            JsonObject item = items.createNestedObject();
+            item["name"] = sqliteColumnText(stmt, 0);
+            item["kind"] = "chapter";
+            item["isDir"] = false;
+            item["wordCount"] = sqlite3_column_int(stmt, 1);
+        }
+    }
+
+    if (stmt) {
+        sqlite3_finalize(stmt);
+    }
+    sqlite3_close(db);
 
     String json;
     serializeJson(doc, json);
@@ -127,18 +247,32 @@ void handleApiFiles() {
 }
 
 /**
- * POST /api/files/upload?path=<dir> — 文件上传完成后的响应处理
+ * POST /api/files/upload?path=<virtual-path> — JSON 导入完成后的响应处理
  */
 void handleApiFileUpload() {
     sendCorsHeaders();
-    server.send(200, "application/json", "{\"ok\":true}");
+    if (!uploadError.isEmpty()) {
+        sendJsonError(400, uploadError);
+        return;
+    }
+
+    DynamicJsonDocument doc(256);
+    doc["ok"] = true;
+    doc["source"] = uploadTargetSource;
+    doc["chapter"] = uploadTargetChapter;
+    doc["imported"] = uploadImportedCount;
+    String json;
+    serializeJson(doc, json);
+    server.send(200, "application/json", json);
 }
 
 /**
  * 文件上传分块数据处理
  *
- * 处理 multipart 上传的各阶段：开始时创建文件、写入数据块、结束时关闭文件。
- * 上传目标路径由查询参数 path 指定。
+ * 处理 multipart 上传的各阶段：开始时写入临时文件、结束后导入数据库。
+ * 导入目标由当前虚拟路径推导：
+ * - 根层上传：文件 stem 作为 source
+ * - source 层上传：当前 source + 文件 stem 作为 chapter
  */
 void handleApiFileUploadData() {
     HTTPUpload &upload = server.upload();
@@ -146,12 +280,27 @@ void handleApiFileUploadData() {
     if (dir.isEmpty()) dir = currentWordRoot;
 
     if (upload.status == UPLOAD_FILE_START) {
-        if (!isValidSDPath(dir + "/" + upload.filename)) {
+        uploadError = "";
+        uploadImportedCount = 0;
+        uploadTargetSource = "";
+        uploadTargetChapter = "";
+        uploadTempPath = "";
+
+        if (!deriveUploadTarget(dir, upload.filename, uploadTargetSource, uploadTargetChapter)) {
+            uploadError = "无效导入位置";
             return;
         }
-        String filePath = dir + "/" + upload.filename;
-        uploadFile = SD.open(filePath, FILE_WRITE);
-        Serial.printf("[Web] Upload start: %s\n", filePath.c_str());
+
+        uploadTempPath = "/words_study/.upload_" + String(millis()) + ".json";
+        uploadFile = SD.open(uploadTempPath, FILE_WRITE);
+        if (!uploadFile) {
+            uploadError = "无法创建临时文件";
+            return;
+        }
+        Serial.printf("[Web] Import start: %s -> %s/%s\n",
+                      upload.filename.c_str(),
+                      uploadTargetSource.c_str(),
+                      uploadTargetChapter.c_str());
     }
     else if (upload.status == UPLOAD_FILE_WRITE) {
         if (uploadFile) {
@@ -161,57 +310,113 @@ void handleApiFileUploadData() {
     else if (upload.status == UPLOAD_FILE_END) {
         if (uploadFile) {
             uploadFile.close();
-            Serial.printf("[Web] Upload done: %d bytes\n", upload.totalSize);
+        }
+
+        if (uploadError.isEmpty()) {
+            if (!importJsonFileToDb(uploadTempPath, uploadTargetSource, uploadTargetChapter, uploadImportedCount, uploadError)) {
+                Serial.printf("[Web] Import failed: %s\n", uploadError.c_str());
+            } else {
+                Serial.printf("[Web] Import done: %d words\n", uploadImportedCount);
+            }
+        }
+
+        if (!uploadTempPath.isEmpty()) {
+            SD.remove(uploadTempPath);
         }
     }
     else if (upload.status == UPLOAD_FILE_ABORTED) {
         if (uploadFile) {
             uploadFile.close();
-            Serial.println("[Web] Upload aborted");
         }
+        if (!uploadTempPath.isEmpty()) {
+            SD.remove(uploadTempPath);
+        }
+        uploadError = "上传已中止";
+        Serial.println("[Web] Upload aborted");
     }
 }
 
 /**
- * DELETE /api/files?path=<filepath> — 删除 SD 卡上的文件
+ * DELETE /api/files?path=<virtual-path> — 删除 source 或 chapter
  */
 void handleApiFileDelete() {
     sendCorsHeaders();
     String path = server.arg("path");
-    if (!isValidSDPath(path)) {
+    bool isRoot = false;
+    String source;
+    String chapter;
+    if (!parseVocabPath(path, isRoot, source, chapter) || isRoot || source.isEmpty()) {
         sendJsonError(400, "Invalid path");
         return;
     }
-    if (SD.remove(path)) {
-        server.send(200, "application/json", "{\"ok\":true}");
-    } else {
-        sendJsonError(500, "Delete failed");
+
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
+    if (!openVocabularyDb(&db)) {
+        sendJsonError(500, "Open database failed");
+        return;
     }
+
+    String sql = String("DELETE FROM ") + currentWordTable()
+               + " WHERE source = ?1 AND (?2 = '' OR chapter = ?2)";
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        sendJsonError(500, "Delete failed");
+        return;
+    }
+
+    sqlite3_bind_text(stmt, 1, source.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(stmt, 2, chapter.c_str(), -1, SQLITE_TRANSIENT);
+    int rc = sqlite3_step(stmt);
+    if (rc != SQLITE_DONE) {
+        sqlite3_finalize(stmt);
+        sqlite3_close(db);
+        sendJsonError(500, "Delete failed");
+        return;
+    }
+
+    int changes = sqlite3_changes(db);
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+
+    DynamicJsonDocument doc(128);
+    doc["ok"] = true;
+    doc["deleted"] = changes;
+    String json;
+    serializeJson(doc, json);
+    server.send(200, "application/json", json);
 }
 
 /**
- * GET /api/files/download?path=<filepath> — 下载 SD 卡上的文件
+ * GET /api/files/download?path=<virtual-path> — 将 source / chapter 导出为 JSON
  */
 void handleApiFileDownload() {
     sendCorsHeaders();
     String path = server.arg("path");
-    if (!isValidSDPath(path)) {
+    bool isRoot = false;
+    String source;
+    String chapter;
+    if (!parseVocabPath(path, isRoot, source, chapter) || isRoot || source.isEmpty()) {
         sendJsonError(400, "Invalid path");
         return;
     }
-    File f = SD.open(path);
-    if (!f) {
-        sendJsonError(404, "File not found");
+
+    String downloadName = source;
+    if (!chapter.isEmpty()) {
+        downloadName += "_" + chapter;
+    }
+    downloadName += ".json";
+
+    if (!streamWordListAsJson(source, chapter, downloadName)) {
+        sendJsonError(500, "Export failed");
         return;
     }
-    server.streamFile(f, "application/octet-stream");
-    f.close();
 }
 
 // ========== 统计 API ==========
 
 /**
- * GET /api/stats — 返回当前词库的学习统计数据
+ * GET /api/stats — 返回当前已加载词库的学习统计数据
  */
 void handleApiStats() {
     sendCorsHeaders();
@@ -219,6 +424,9 @@ void handleApiStats() {
 
     DynamicJsonDocument doc(512);
     doc["file"] = statsFileName(selectedFilePath);
+    doc["label"] = selectedFilePath;
+    doc["source"] = selectedSource;
+    doc["chapter"] = selectedChapter;
     doc["total"] = statsTotal;
     doc["avg"] = round(statsAvg * 100) / 100.0;
     doc["median"] = round(statsMedian * 100) / 100.0;
@@ -245,6 +453,7 @@ void handleApiSettingsGet() {
     doc["brightness"] = normalBrightness;
     doc["language"] = (currentLanguage == LANG_JP) ? "jp" : "en";
     doc["loadedFile"] = statsFileName(selectedFilePath);
+    doc["loadedVocab"] = selectedFilePath;
     doc["wifi"] = wifiConnected;
 
     String json;
