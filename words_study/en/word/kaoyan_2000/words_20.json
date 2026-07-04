@@ -42,14 +42,14 @@
         "en": "immigrant"
     },
     {
-        "zh": "有免疫力的；不受影响的；受保护的",
+        "zh": "有免疫力的",
         "pos": "adj",
         "phonetic": "/immune/",
         "score": 3,
         "en": "immune"
     },
     {
-        "zh": "重要紧急的事；必要的事；祈使语气",
+        "zh": "重要紧急的事",
         "pos": "n",
         "phonetic": "/imperative/",
         "score": 3,
@@ -63,7 +63,7 @@
         "en": "implement"
     },
     {
-        "zh": "含蓄的；不言明的；内含的",
+        "zh": "含蓄的",
         "pos": "adj",
         "phonetic": "/implicit/",
         "score": 3,
@@ -77,14 +77,14 @@
         "en": "imply"
     },
     {
-        "zh": "进口；引进；【计】输入",
+        "zh": "进口",
         "pos": "v",
         "phonetic": "/import/",
         "score": 3,
         "en": "import"
     },
     {
-        "zh": "推行；强制实行；把…强加于",
+        "zh": "推行",
         "pos": "v",
         "phonetic": "/impose/",
         "score": 3,
@@ -98,7 +98,7 @@
         "en": "impoverished"
     },
     {
-        "zh": "给人深刻印象的；使人敬佩的",
+        "zh": "给人深刻印象的",
         "pos": "adj",
         "phonetic": "/impressive/",
         "score": 3,
@@ -112,7 +112,7 @@
         "en": "imprison"
     },
     {
-        "zh": "先天的；天生的；生来的",
+        "zh": "先天的",
         "pos": "adj",
         "phonetic": "/inborn/",
         "score": 3,
@@ -126,7 +126,7 @@
         "en": "incentive"
     },
     {
-        "zh": "发生率；发生范围；影响程度",
+        "zh": "发生率",
         "pos": "n",
         "phonetic": "/incidence/",
         "score": 3,
@@ -140,14 +140,14 @@
         "en": "incline"
     },
     {
-        "zh": "全部包含在内的；范围广泛的",
+        "zh": "全部包含在内的",
         "pos": "adj",
         "phonetic": "/inclusive/",
         "score": 3,
         "en": "inclusive"
     },
     {
-        "zh": "不完整的；不完全的；未完成的",
+        "zh": "不完整的",
         "pos": "adj",
         "phonetic": "/incomplete/",
         "score": 3,
@@ -161,7 +161,7 @@
         "en": "increasingly"
     },
     {
-        "zh": "难以置信的；惊人的；极好的",
+        "zh": "难以置信的",
         "pos": "adj",
         "phonetic": "/incredible/",
         "score": 3,
@@ -182,7 +182,7 @@
         "en": "independence"
     },
     {
-        "zh": "独立的；自立的；有主见的",
+        "zh": "独立的",
         "pos": "adj",
         "phonetic": "/independent/",
         "score": 3,
@@ -203,7 +203,7 @@
         "en": "indicate"
     },
     {
-        "zh": "漠不关心的；不感兴趣的；一般的",
+        "zh": "漠不关心的",
         "pos": "adj",
         "phonetic": "/indifferent/",
         "score": 3,
@@ -245,7 +245,7 @@
         "en": "ineptly"
     },
     {
-        "zh": "必然发生的；不可避免的",
+        "zh": "必然发生的",
         "pos": "adj",
         "phonetic": "/inevitable/",
         "score": 3,
@@ -280,7 +280,7 @@
         "en": "infer"
     },
     {
-        "zh": "级别低的；较差的；次的",
+        "zh": "级别低的",
         "pos": "adj",
         "phonetic": "/inferior/",
         "score": 3,

@@ -14,7 +14,7 @@
         "en": "cultivate"
     },
     {
-        "zh": "狡猾的；狡诈的；灵巧的",
+        "zh": "狡猾的",
         "pos": "adj",
         "phonetic": "/cunning/",
         "score": 3,
@@ -35,7 +35,7 @@
         "en": "curiosity"
     },
     {
-        "zh": "好奇的；求知欲强的；稀奇的",
+        "zh": "好奇的",
         "pos": "adj",
         "phonetic": "/curious/",
         "score": 3,
@@ -112,42 +112,42 @@
         "en": "database"
     },
     {
-        "zh": "致命的；极度的；彻底的",
+        "zh": "致命的",
         "pos": "adj",
         "phonetic": "/deadly/",
         "score": 3,
         "en": "deadly"
     },
     {
-        "zh": "交易商；贸易商；毒品贩子",
+        "zh": "交易商",
         "pos": "n",
         "phonetic": "/dealer/",
         "score": 3,
         "en": "dealer"
     },
     {
-        "zh": "学院院长；系主任；学监",
+        "zh": "学院院长",
         "pos": "n",
         "phonetic": "/dean/",
         "score": 3,
         "en": "dean"
     },
     {
-        "zh": "腐烂；腐坏；（社会、制度",
+        "zh": "腐烂",
         "pos": "n",
         "phonetic": "/decay/",
         "score": 3,
         "en": "decay"
     },
     {
-        "zh": "相当不错的；正派的；得体的",
+        "zh": "相当不错的",
         "pos": "adj",
         "phonetic": "/decent/",
         "score": 3,
         "en": "decent"
     },
     {
-        "zh": "决定性的；关键的；坚决的",
+        "zh": "决定性的",
         "pos": "adj",
         "phonetic": "/decisive/",
         "score": 3,
@@ -182,14 +182,14 @@
         "en": "decrease"
     },
     {
-        "zh": "致力于；献身于；把献给",
+        "zh": "致力于",
         "pos": "v",
         "phonetic": "/dedicate/",
         "score": 3,
         "en": "dedicate"
     },
     {
-        "zh": "推论；推断；演绎出（事实",
+        "zh": "推论",
         "pos": "v",
         "phonetic": "/deduce/",
         "score": 3,
@@ -203,7 +203,7 @@
         "en": "deem"
     },
     {
-        "zh": "违约；不履行义务；默认",
+        "zh": "违约",
         "pos": "v",
         "phonetic": "/default/",
         "score": 3,
@@ -252,14 +252,14 @@
         "en": "defy"
     },
     {
-        "zh": "故意的；存心的；从容不迫的",
+        "zh": "故意的",
         "pos": "adj",
         "phonetic": "/deliberate/",
         "score": 3,
         "en": "deliberate"
     },
     {
-        "zh": "易碎的；虚弱的；小巧的",
+        "zh": "易碎的",
         "pos": "adj",
         "phonetic": "/delicate/",
         "score": 3,

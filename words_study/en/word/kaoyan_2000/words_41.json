@@ -1,13 +1,13 @@
 [
     {
-        "zh": "退伍军人；老兵；有经验的人",
+        "zh": "退伍军人",
         "pos": "n",
         "phonetic": "/veteran/",
         "score": 3,
         "en": "veteran"
     },
     {
-        "zh": "行使否决权；拒绝认可；拒不接受",
+        "zh": "行使否决权",
         "pos": "v",
         "phonetic": "/veto/",
         "score": 3,
@@ -21,14 +21,14 @@
         "en": "vice"
     },
     {
-        "zh": "狂暴的；残酷的；凶猛危险的",
+        "zh": "狂暴的",
         "pos": "adj",
         "phonetic": "/vicious/",
         "score": 3,
         "en": "vicious"
     },
     {
-        "zh": "受害者；遭难者；罹难者",
+        "zh": "受害者",
         "pos": "n",
         "phonetic": "/victim/",
         "score": 3,
@@ -49,35 +49,35 @@
         "en": "violence"
     },
     {
-        "zh": "处女；童男；无经验的人",
+        "zh": "处女",
         "pos": "n",
         "phonetic": "/virgin/",
         "score": 3,
         "en": "virgin"
     },
     {
-        "zh": "虚拟的；模拟的；实际上的",
+        "zh": "虚拟的",
         "pos": "adj",
         "phonetic": "/virtual/",
         "score": 3,
         "en": "virtual"
     },
     {
-        "zh": "德行；高尚的道德；美德",
+        "zh": "德行",
         "pos": "n",
         "phonetic": "/virtue/",
         "score": 3,
         "en": "virtue"
     },
     {
-        "zh": "病毒；计算机程序的病毒",
+        "zh": "病毒",
         "pos": "n",
         "phonetic": "/virus/",
         "score": 3,
         "en": "virus"
     },
     {
-        "zh": "必不可少的；至关重要的；维持生命必须的",
+        "zh": "必不可少的",
         "pos": "adj",
         "phonetic": "/vital/",
         "score": 3,
@@ -98,14 +98,14 @@
         "en": "vocabulary"
     },
     {
-        "zh": "嗓音的；发声的；直言不讳的",
+        "zh": "嗓音的",
         "pos": "adj",
         "phonetic": "/vocal/",
         "score": 3,
         "en": "vocal"
     },
     {
-        "zh": "易变的；不稳定的；易挥发的",
+        "zh": "易变的",
         "pos": "adj",
         "phonetic": "/volatile/",
         "score": 3,
@@ -133,7 +133,7 @@
         "en": "vowel"
     },
     {
-        "zh": "易受攻击的；易受伤害的；脆弱的",
+        "zh": "易受攻击的",
         "pos": "adj",
         "phonetic": "/vulnerable/",
         "score": 3,
@@ -168,7 +168,7 @@
         "en": "wardrobe"
     },
     {
-        "zh": "使有必要；使正当；使恰当",
+        "zh": "有必要",
         "pos": "v",
         "phonetic": "/warrant/",
         "score": 3,
@@ -182,7 +182,7 @@
         "en": "wealthy"
     },
     {
-        "zh": "疲劳的；令人厌烦的；感到不耐烦的",
+        "zh": "疲劳的",
         "pos": "adj",
         "phonetic": "/weary/",
         "score": 3,
@@ -203,7 +203,7 @@
         "en": "weld"
     },
     {
-        "zh": "幸福；福利；社会保障金",
+        "zh": "幸福",
         "pos": "n",
         "phonetic": "/welfare/",
         "score": 3,
@@ -217,7 +217,7 @@
         "en": "whereby"
     },
     {
-        "zh": "旋风；涡动；猛烈的势力",
+        "zh": "旋风",
         "pos": "n",
         "phonetic": "/whirlwind/",
         "score": 3,
@@ -287,14 +287,14 @@
         "en": "worship"
     },
     {
-        "zh": "值得的；值得做的；重要的",
+        "zh": "值得的",
         "pos": "adj",
         "phonetic": "/worthwhile/",
         "score": 3,
         "en": "worthwhile"
     },
     {
-        "zh": "值得尊敬的；值得…的；有…的典型特征",
+        "zh": "值得尊敬的",
         "pos": "adj",
         "phonetic": "/worthy/",
         "score": 3,

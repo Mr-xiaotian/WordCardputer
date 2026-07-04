@@ -21,7 +21,7 @@
         "en": "investment"
     },
     {
-        "zh": "隐形的；无形的；隐身的",
+        "zh": "隐形的",
         "pos": "adj",
         "phonetic": "/invisible/",
         "score": 3,
@@ -35,7 +35,7 @@
         "en": "invitation"
     },
     {
-        "zh": "有讽刺意味的情况；反话；讽刺",
+        "zh": "有讽刺意味的情况",
         "pos": "n",
         "phonetic": "/irony/",
         "score": 3,
@@ -84,14 +84,14 @@
         "en": "jaw"
     },
     {
-        "zh": "嫉妒的；妒羡的；吃醋的",
+        "zh": "嫉妒的",
         "pos": "adj",
         "phonetic": "/jealous/",
         "score": 3,
         "en": "jealous"
     },
     {
-        "zh": "喷气式飞机；喷口；喷嘴",
+        "zh": "喷气式飞机",
         "pos": "n",
         "phonetic": "/jet/",
         "score": 3,
@@ -126,7 +126,7 @@
         "en": "juggle"
     },
     {
-        "zh": "废旧物；无用的东西；垃圾",
+        "zh": "废旧物",
         "pos": "n",
         "phonetic": "/junk/",
         "score": 3,
@@ -147,14 +147,14 @@
         "en": "justice"
     },
     {
-        "zh": "少年的；未成年的；幼稚的",
+        "zh": "少年的",
         "pos": "adj",
         "phonetic": "/juvenile/",
         "score": 3,
         "en": "juvenile"
     },
     {
-        "zh": "渴望的；热衷的；着迷的",
+        "zh": "渴望的",
         "pos": "adj",
         "phonetic": "/keen/",
         "score": 3,
@@ -196,7 +196,7 @@
         "en": "kingdom"
     },
     {
-        "zh": "成套用具；配套元件；全套装束",
+        "zh": "成套用具",
         "pos": "n",
         "phonetic": "/kit/",
         "score": 3,
@@ -217,7 +217,7 @@
         "en": "label"
     },
     {
-        "zh": "实验室；研究室；实验用的",
+        "zh": "实验室",
         "pos": "n",
         "phonetic": "/laboratory/",
         "score": 3,
@@ -238,14 +238,14 @@
         "en": "lane"
     },
     {
-        "zh": "便携式电脑；笔记本电脑",
+        "zh": "便携式电脑",
         "pos": "n",
         "phonetic": "/laptop/",
         "score": 3,
         "en": "laptop"
     },
     {
-        "zh": "主要地；基本上；大致上",
+        "zh": "主要地",
         "pos": "adv",
         "phonetic": "/largely/",
         "score": 3,
@@ -266,7 +266,7 @@
         "en": "laughter"
     },
     {
-        "zh": "洗衣物的活；洗衣店；要洗或洗过的衣服",
+        "zh": "洗衣物的活",
         "pos": "n",
         "phonetic": "/laundry/",
         "score": 3,
@@ -315,7 +315,7 @@
         "en": "leadership"
     },
     {
-        "zh": "最重要的；一流的；领先的",
+        "zh": "最重要的",
         "pos": "adj",
         "phonetic": "/leading/",
         "score": 3,
@@ -343,7 +343,7 @@
         "en": "legacy"
     },
     {
-        "zh": "合法的；法定的；法律的",
+        "zh": "合法的",
         "pos": "adj",
         "phonetic": "/legal/",
         "score": 3,

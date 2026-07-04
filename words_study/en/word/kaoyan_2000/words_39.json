@@ -7,7 +7,7 @@
         "en": "tick"
     },
     {
-        "zh": "潮；潮汐；【喻】潮流",
+        "zh": "潮汐",
         "pos": "n",
         "phonetic": "/tide/",
         "score": 3,
@@ -91,7 +91,7 @@
         "en": "torch"
     },
     {
-        "zh": "【律】民事侵权行为",
+        "zh": "侵权行为",
         "pos": "n",
         "phonetic": "/tort/",
         "score": 3,
@@ -105,7 +105,7 @@
         "en": "torture"
     },
     {
-        "zh": "艰苦的；严厉的；坚韧不拔的",
+        "zh": "艰苦的",
         "pos": "adj",
         "phonetic": "/tough/",
         "score": 3,
@@ -126,14 +126,14 @@
         "en": "tow"
     },
     {
-        "zh": "拖拉机；牵引车；拖车头",
+        "zh": "拖拉机",
         "pos": "n",
         "phonetic": "/tractor/",
         "score": 3,
         "en": "tractor"
     },
     {
-        "zh": "悲惨的；可悲的；悲剧的",
+        "zh": "悲惨的",
         "pos": "adj",
         "phonetic": "/tragic/",
         "score": 3,
@@ -175,7 +175,7 @@
         "en": "transfer"
     },
     {
-        "zh": "改变形态；彻底改变；转化",
+        "zh": "改变形态",
         "pos": "v",
         "phonetic": "/transform/",
         "score": 3,
@@ -210,7 +210,7 @@
         "en": "transplant"
     },
     {
-        "zh": "运输；输送；交通运输系统",
+        "zh": "运输",
         "pos": "n",
         "phonetic": "/transport/",
         "score": 3,
@@ -238,7 +238,7 @@
         "en": "tremble"
     },
     {
-        "zh": "惊人的；极好的；极大的",
+        "zh": "惊人的",
         "pos": "adj",
         "phonetic": "/tremendous/",
         "score": 3,
@@ -287,14 +287,14 @@
         "en": "triple"
     },
     {
-        "zh": "重大胜利；巨大成功；成功的典范",
+        "zh": "重大胜利",
         "pos": "n",
         "phonetic": "/triumph/",
         "score": 3,
         "en": "triumph"
     },
     {
-        "zh": "不重要的；琐碎的；微不足道的",
+        "zh": "不重要的",
         "pos": "adj",
         "phonetic": "/trivial/",
         "score": 3,
@@ -329,7 +329,7 @@
         "en": "tube"
     },
     {
-        "zh": "把…塞进；卷起；把…藏入",
+        "zh": "把塞进",
         "pos": "v",
         "phonetic": "/tuck/",
         "score": 3,

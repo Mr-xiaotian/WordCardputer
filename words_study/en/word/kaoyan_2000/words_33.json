@@ -35,7 +35,7 @@
         "en": "resist"
     },
     {
-        "zh": "抵制的；有抵抗力的；（-resistant",
+        "zh": "抵制的",
         "pos": "adj",
         "phonetic": "/resistant/",
         "score": 3,
@@ -77,7 +77,7 @@
         "en": "responsibility"
     },
     {
-        "zh": "有责任；负责；应受责备",
+        "zh": "有责任",
         "pos": "adj",
         "phonetic": "/responsible/",
         "score": 3,
@@ -154,7 +154,7 @@
         "en": "retrospect"
     },
     {
-        "zh": "披露；揭露；被曝光的真相",
+        "zh": "披露",
         "pos": "n",
         "phonetic": "/revelation/",
         "score": 3,
@@ -168,7 +168,7 @@
         "en": "revere"
     },
     {
-        "zh": "颠倒；彻底改变；废除（决定",
+        "zh": "颠倒",
         "pos": "v",
         "phonetic": "/reverse/",
         "score": 3,
@@ -189,21 +189,21 @@
         "en": "revive"
     },
     {
-        "zh": "革命的；革新的；巨变的",
+        "zh": "革命的",
         "pos": "adj",
         "phonetic": "/revolutionary/",
         "score": 3,
         "en": "revolutionary"
     },
     {
-        "zh": "旋转；围绕…转；以…为中心",
+        "zh": "旋转",
         "pos": "v",
         "phonetic": "/revolve/",
         "score": 3,
         "en": "revolve"
     },
     {
-        "zh": "韵律；节律；规律性变化",
+        "zh": "韵律",
         "pos": "n",
         "phonetic": "/rhythm/",
         "score": 3,
@@ -217,14 +217,14 @@
         "en": "ribbon"
     },
     {
-        "zh": "死板的；固执的；坚硬的",
+        "zh": "死板的",
         "pos": "adj",
         "phonetic": "/rigid/",
         "score": 3,
         "en": "rigid"
     },
     {
-        "zh": "谨慎的；细致的；严格的",
+        "zh": "谨慎的",
         "pos": "adj",
         "phonetic": "/rigorous/",
         "score": 3,
@@ -252,7 +252,7 @@
         "en": "ritual"
     },
     {
-        "zh": "强健的；经久耐用的；结实坚固的",
+        "zh": "强健的",
         "pos": "adj",
         "phonetic": "/robust/",
         "score": 3,
@@ -273,7 +273,7 @@
         "en": "routine"
     },
     {
-        "zh": "王室的；皇家的；庄严的",
+        "zh": "王室的",
         "pos": "adj",
         "phonetic": "/royal/",
         "score": 3,
@@ -287,14 +287,14 @@
         "en": "ruin"
     },
     {
-        "zh": "乡村的；农村的；有乡村特色的",
+        "zh": "乡村的",
         "pos": "adj",
         "phonetic": "/rural/",
         "score": 3,
         "en": "rural"
     },
     {
-        "zh": "神圣的；宗教的；受尊重的",
+        "zh": "神圣的",
         "pos": "adj",
         "phonetic": "/sacred/",
         "score": 3,
@@ -343,7 +343,7 @@
         "en": "satisfactory"
     },
     {
-        "zh": "凶恶的；凶残的；猛烈抨击的",
+        "zh": "凶恶的",
         "pos": "adj",
         "phonetic": "/savage/",
         "score": 3,

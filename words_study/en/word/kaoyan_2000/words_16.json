@@ -14,14 +14,14 @@
         "en": "fashion"
     },
     {
-        "zh": "时尚的；时髦的；流行的",
+        "zh": "时尚的",
         "pos": "adj",
         "phonetic": "/fashionable/",
         "score": 3,
         "en": "fashionable"
     },
     {
-        "zh": "致命的；灾难性的；导致失败的",
+        "zh": "致命的",
         "pos": "adj",
         "phonetic": "/fatal/",
         "score": 3,
@@ -42,21 +42,21 @@
         "en": "faulty"
     },
     {
-        "zh": "有利的；顺利的；赞许的",
+        "zh": "有利的",
         "pos": "adj",
         "phonetic": "/favourable/",
         "score": 3,
         "en": "favourable"
     },
     {
-        "zh": "特别喜爱的人或事物；最有希望的获胜者",
+        "zh": "特别喜爱的人或事物",
         "pos": "n",
         "phonetic": "/favourite/",
         "score": 3,
         "en": "favourite"
     },
     {
-        "zh": "可怕的；吓人的；担忧的",
+        "zh": "可怕的",
         "pos": "adj",
         "phonetic": "/fearful/",
         "score": 3,
@@ -84,21 +84,21 @@
         "en": "feature"
     },
     {
-        "zh": "联邦；联邦制国家；联合会",
+        "zh": "联邦",
         "pos": "n",
         "phonetic": "/federation/",
         "score": 3,
         "en": "federation"
     },
     {
-        "zh": "费用；酬金；专业服务费",
+        "zh": "费用",
         "pos": "n",
         "phonetic": "/fee/",
         "score": 3,
         "en": "fee"
     },
     {
-        "zh": "虚弱的；衰弱的；乏力的",
+        "zh": "虚弱的",
         "pos": "adj",
         "phonetic": "/feeble/",
         "score": 3,
@@ -112,14 +112,14 @@
         "en": "feedback"
     },
     {
-        "zh": "女性的；母的；女性特有的",
+        "zh": "女性的",
         "pos": "adj",
         "phonetic": "/female/",
         "score": 3,
         "en": "female"
     },
     {
-        "zh": "肥沃的；富饶的；能生育的",
+        "zh": "肥沃的",
         "pos": "adj",
         "phonetic": "/fertile/",
         "score": 3,
@@ -147,7 +147,7 @@
         "en": "fiction"
     },
     {
-        "zh": "凶猛的；强烈的；猛烈的",
+        "zh": "凶猛的",
         "pos": "adj",
         "phonetic": "/fierce/",
         "score": 3,
@@ -182,7 +182,7 @@
         "en": "financial"
     },
     {
-        "zh": "有限的；有限制的；限定性的",
+        "zh": "有限的",
         "pos": "adj",
         "phonetic": "/finite/",
         "score": 3,
@@ -245,7 +245,7 @@
         "en": "flesh"
     },
     {
-        "zh": "适应性强的；灵活的；柔韧的",
+        "zh": "适应性强的",
         "pos": "adj",
         "phonetic": "/flexible/",
         "score": 3,
@@ -301,7 +301,7 @@
         "en": "forecast"
     },
     {
-        "zh": "最重要的；最著名的；最前的",
+        "zh": "最重要的",
         "pos": "adj",
         "phonetic": "/foremost/",
         "score": 3,
@@ -322,7 +322,7 @@
         "en": "forge"
     },
     {
-        "zh": "正式的；适合正式场合的；官方的",
+        "zh": "正式的",
         "pos": "adj",
         "phonetic": "/formal/",
         "score": 3,
@@ -343,7 +343,7 @@
         "en": "formation"
     },
     {
-        "zh": "以前的；昔日的；前者的",
+        "zh": "以前的",
         "pos": "adj",
         "phonetic": "/former/",
         "score": 3,

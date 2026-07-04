@@ -1,6 +1,6 @@
 [
     {
-        "zh": "全面的；无所不包的；综合性的",
+        "zh": "全面的",
         "pos": "adj",
         "phonetic": "/comprehensive/",
         "score": 3,
@@ -14,14 +14,14 @@
         "en": "compress"
     },
     {
-        "zh": "由…组成；包含；是组成部分",
+        "zh": "组成",
         "pos": "v",
         "phonetic": "/comprise/",
         "score": 3,
         "en": "comprise"
     },
     {
-        "zh": "强制的；强迫的；必须做的",
+        "zh": "强制的",
         "pos": "adj",
         "phonetic": "/compulsory/",
         "score": 3,
@@ -35,14 +35,14 @@
         "en": "conceal"
     },
     {
-        "zh": "集中注意力；聚精会神；使…集中",
+        "zh": "集中注意力",
         "pos": "v",
         "phonetic": "/concentrate/",
         "score": 3,
         "en": "concentrate"
     },
     {
-        "zh": "构思；构想；对…的理解",
+        "zh": "构思",
         "pos": "n",
         "phonetic": "/conception/",
         "score": 3,
@@ -63,7 +63,7 @@
         "en": "conclusion"
     },
     {
-        "zh": "谴责；判处；迫使…接受困境",
+        "zh": "谴责",
         "pos": "v",
         "phonetic": "/condemn/",
         "score": 3,
@@ -84,7 +84,7 @@
         "en": "confer"
     },
     {
-        "zh": "讨论会；协商会；体育协会",
+        "zh": "讨论会",
         "pos": "n",
         "phonetic": "/conference/",
         "score": 3,
@@ -105,7 +105,7 @@
         "en": "confidence"
     },
     {
-        "zh": "确信的；有把握的；自信的",
+        "zh": "确信的",
         "pos": "adj",
         "phonetic": "/confident/",
         "score": 3,
@@ -161,14 +161,14 @@
         "en": "congestion"
     },
     {
-        "zh": "同时发生；结合；连接词",
+        "zh": "同时发生",
         "pos": "n",
         "phonetic": "/conjunction/",
         "score": 3,
         "en": "conjunction"
     },
     {
-        "zh": "意识到的；神志清醒的；有知觉的",
+        "zh": "意识到的",
         "pos": "adj",
         "phonetic": "/conscious/",
         "score": 3,
@@ -196,7 +196,7 @@
         "en": "consequence"
     },
     {
-        "zh": "随之发生的；作为结果的；合乎逻辑的",
+        "zh": "随之发生的",
         "pos": "adj",
         "phonetic": "/consequent/",
         "score": 3,
@@ -217,14 +217,14 @@
         "en": "considerable"
     },
     {
-        "zh": "存在于；由…组成；由…构成",
+        "zh": "存在于",
         "pos": "v",
         "phonetic": "/consist/",
         "score": 3,
         "en": "consist"
     },
     {
-        "zh": "持续的；始终如一的；相符的",
+        "zh": "持续的",
         "pos": "adj",
         "phonetic": "/consistent/",
         "score": 3,
@@ -245,7 +245,7 @@
         "en": "conspicuous"
     },
     {
-        "zh": "连续不断的；重复的；恒定的",
+        "zh": "连续不断的",
         "pos": "adj",
         "phonetic": "/constant/",
         "score": 3,
@@ -322,14 +322,14 @@
         "en": "contention"
     },
     {
-        "zh": "接连不断的；连续的；多次的",
+        "zh": "接连不断的",
         "pos": "adj",
         "phonetic": "/continual/",
         "score": 3,
         "en": "continual"
     },
     {
-        "zh": "不断的；持续的；没有间隔的",
+        "zh": "不断的",
         "pos": "adj",
         "phonetic": "/continuous/",
         "score": 3,

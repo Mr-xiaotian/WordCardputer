@@ -7,14 +7,14 @@
         "en": "scale"
     },
     {
-        "zh": "丑事；丑闻；关于丑行的传言",
+        "zh": "丑事",
         "pos": "n",
         "phonetic": "/scandal/",
         "score": 3,
         "en": "scandal"
     },
     {
-        "zh": "缺乏的；供不应求的；稀少的",
+        "zh": "缺乏的",
         "pos": "adj",
         "phonetic": "/scarce/",
         "score": 3,
@@ -98,7 +98,7 @@
         "en": "screw"
     },
     {
-        "zh": "仔细检查；认真彻底的审查",
+        "zh": "仔细检查",
         "pos": "n",
         "phonetic": "/scrutiny/",
         "score": 3,
@@ -119,7 +119,7 @@
         "en": "seaside"
     },
     {
-        "zh": "次要的；从属的；间接的",
+        "zh": "次要的",
         "pos": "adj",
         "phonetic": "/secondary/",
         "score": 3,
@@ -133,14 +133,14 @@
         "en": "section"
     },
     {
-        "zh": "安全的；安心的；牢固的",
+        "zh": "安全的",
         "pos": "adj",
         "phonetic": "/secure/",
         "score": 3,
         "en": "secure"
     },
     {
-        "zh": "安全措施；安保部门；担保",
+        "zh": "安全措施",
         "pos": "n",
         "phonetic": "/security/",
         "score": 3,
@@ -189,7 +189,7 @@
         "en": "seminar"
     },
     {
-        "zh": "级别或地位高的；资深的；成人的",
+        "zh": "级别或地位高的",
         "pos": "adj",
         "phonetic": "/senior/",
         "score": 3,
@@ -203,7 +203,7 @@
         "en": "sensation"
     },
     {
-        "zh": "理智的；合理的；朴素而实用的",
+        "zh": "理智的",
         "pos": "adj",
         "phonetic": "/sensible/",
         "score": 3,
@@ -224,7 +224,7 @@
         "en": "separation"
     },
     {
-        "zh": "一系列；顺序；一组镜头",
+        "zh": "一系列",
         "pos": "n",
         "phonetic": "/sequence/",
         "score": 3,
@@ -287,7 +287,7 @@
         "en": "shed"
     },
     {
-        "zh": "完全的；纯粹的；陡峭的",
+        "zh": "完全的",
         "pos": "adj",
         "phonetic": "/sheer/",
         "score": 3,
@@ -336,7 +336,7 @@
         "en": "shorthand"
     },
     {
-        "zh": "(供最后挑选或考虑用的)候选人名单",
+        "zh": "入围名单",
         "pos": "n",
         "phonetic": "/shortlist/",
         "score": 3,

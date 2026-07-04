@@ -21,21 +21,21 @@
         "en": "grace"
     },
     {
-        "zh": "克(公制基本重量单位)",
+        "zh": "克",
         "pos": "n",
         "phonetic": "/gram/",
         "score": 3,
         "en": "gram"
     },
     {
-        "zh": "语法；语法书；语法的应用",
+        "zh": "语法",
         "pos": "n",
         "phonetic": "/grammar/",
         "score": 3,
         "en": "grammar"
     },
     {
-        "zh": "壮丽的；堂皇的；宏伟的",
+        "zh": "壮丽的",
         "pos": "adj",
         "phonetic": "/grand/",
         "score": 3,
@@ -91,7 +91,7 @@
         "en": "gratitude"
     },
     {
-        "zh": "严重性；地心引力；重力",
+        "zh": "严重性",
         "pos": "n",
         "phonetic": "/gravity/",
         "score": 3,
@@ -105,7 +105,7 @@
         "en": "greenhouse"
     },
     {
-        "zh": "感到悲痛；使悲伤；使伤心",
+        "zh": "感到悲痛",
         "pos": "v",
         "phonetic": "/grieve/",
         "score": 3,
@@ -119,14 +119,14 @@
         "en": "groan"
     },
     {
-        "zh": "总的；严重的；令人恶心的",
+        "zh": "总的",
         "pos": "adj",
         "phonetic": "/gross/",
         "score": 3,
         "en": "gross"
     },
     {
-        "zh": "发出低沉的怒吼；咆哮；发牢骚地说",
+        "zh": "发出低沉的怒吼",
         "pos": "v",
         "phonetic": "/growl/",
         "score": 3,
@@ -140,7 +140,7 @@
         "en": "guarantee"
     },
     {
-        "zh": "守卫者；保护者；看守人",
+        "zh": "守卫者",
         "pos": "n",
         "phonetic": "/guardian/",
         "score": 3,
@@ -168,7 +168,7 @@
         "en": "guilt"
     },
     {
-        "zh": "犯罪的；有罪责的；感到内疚的",
+        "zh": "犯罪的",
         "pos": "adj",
         "phonetic": "/guilty/",
         "score": 3,
@@ -245,7 +245,7 @@
         "en": "handwriting"
     },
     {
-        "zh": "易使用的；便利的；手边的",
+        "zh": "易使用的",
         "pos": "adj",
         "phonetic": "/handy/",
         "score": 3,
@@ -280,7 +280,7 @@
         "en": "harmony"
     },
     {
-        "zh": "残酷的；恶劣的；严酷的",
+        "zh": "残酷的",
         "pos": "adj",
         "phonetic": "/harsh/",
         "score": 3,
@@ -336,7 +336,7 @@
         "en": "hectare"
     },
     {
-        "zh": "用树篱围住；包围；限制",
+        "zh": "用树篱围住",
         "pos": "v",
         "phonetic": "/hedge/",
         "score": 3,

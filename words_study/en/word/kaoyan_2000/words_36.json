@@ -21,7 +21,7 @@
         "en": "spiral"
     },
     {
-        "zh": "精神的；心灵的；宗教的",
+        "zh": "精神的",
         "pos": "adj",
         "phonetic": "/spiritual/",
         "score": 3,
@@ -49,7 +49,7 @@
         "en": "spoil"
     },
     {
-        "zh": "赞助者；赞助商；倡议人",
+        "zh": "赞助者",
         "pos": "n",
         "phonetic": "/sponsor/",
         "score": 3,
@@ -98,7 +98,7 @@
         "en": "stadium"
     },
     {
-        "zh": "弄脏；留下污渍；给…染色",
+        "zh": "弄脏",
         "pos": "v",
         "phonetic": "/stain/",
         "score": 3,
@@ -154,7 +154,7 @@
         "en": "statesman"
     },
     {
-        "zh": "静止的；不动的；稳定的",
+        "zh": "静止的",
         "pos": "adj",
         "phonetic": "/stationary/",
         "score": 3,
@@ -175,28 +175,28 @@
         "en": "statute"
     },
     {
-        "zh": "稳步的；持续的；稳定的",
+        "zh": "稳步的",
         "pos": "adj",
         "phonetic": "/steady/",
         "score": 3,
         "en": "steady"
     },
     {
-        "zh": "险峻的；陡峭的；急遽的",
+        "zh": "险峻的",
         "pos": "adj",
         "phonetic": "/steep/",
         "score": 3,
         "en": "steep"
     },
     {
-        "zh": "驾驶；掌控方向盘；行驶",
+        "zh": "驾驶",
         "pos": "v",
         "phonetic": "/steer/",
         "score": 3,
         "en": "steer"
     },
     {
-        "zh": "茎、梗、柄；脚；烟斗柄",
+        "zh": "茎梗柄",
         "pos": "n",
         "phonetic": "/stem/",
         "score": 3,
@@ -210,21 +210,21 @@
         "en": "stereotype"
     },
     {
-        "zh": "严厉的；苛刻的；（竞争",
+        "zh": "严厉的",
         "pos": "adj",
         "phonetic": "/stern/",
         "score": 3,
         "en": "stern"
     },
     {
-        "zh": "乘务员；服务员；统筹人",
+        "zh": "乘务员",
         "pos": "n",
         "phonetic": "/steward/",
         "score": 3,
         "en": "steward"
     },
     {
-        "zh": "不易弯曲的；僵硬的；稠的",
+        "zh": "不易弯曲的",
         "pos": "adj",
         "phonetic": "/stiff/",
         "score": 3,
@@ -238,7 +238,7 @@
         "en": "stimulate"
     },
     {
-        "zh": "刺激事物；刺激；刺激物",
+        "zh": "刺激事物",
         "pos": "n",
         "phonetic": "/stimulus/",
         "score": 3,
@@ -287,7 +287,7 @@
         "en": "stove"
     },
     {
-        "zh": "简单的；易懂的；坦诚的",
+        "zh": "简单的",
         "pos": "adj",
         "phonetic": "/straightforward/",
         "score": 3,

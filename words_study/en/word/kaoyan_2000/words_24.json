@@ -7,7 +7,7 @@
         "en": "maintenance"
     },
     {
-        "zh": "大多数；多数票数；法定成年年龄",
+        "zh": "大多数",
         "pos": "n",
         "phonetic": "/majority/",
         "score": 3,
@@ -84,14 +84,14 @@
         "en": "manuscript"
     },
     {
-        "zh": "马拉松赛跑；马拉松式的活动",
+        "zh": "马拉松赛跑",
         "pos": "n",
         "phonetic": "/marathon/",
         "score": 3,
         "en": "marathon"
     },
     {
-        "zh": "海洋的；海军的；海事的",
+        "zh": "海洋的",
         "pos": "adj",
         "phonetic": "/marine/",
         "score": 3,
@@ -105,14 +105,14 @@
         "en": "marital"
     },
     {
-        "zh": "已婚的；婚姻的；全身心投入的",
+        "zh": "已婚的",
         "pos": "adj",
         "phonetic": "/married/",
         "score": 3,
         "en": "married"
     },
     {
-        "zh": "具有男子气质的；男人的；像男人的",
+        "zh": "具有男子气质的",
         "pos": "adj",
         "phonetic": "/masculine/",
         "score": 3,
@@ -133,7 +133,7 @@
         "en": "massacre"
     },
     {
-        "zh": "巨大的；大而重的；结实的",
+        "zh": "巨大的",
         "pos": "adj",
         "phonetic": "/massive/",
         "score": 3,
@@ -154,21 +154,21 @@
         "en": "mate"
     },
     {
-        "zh": "数学相关的；极其精确的",
+        "zh": "数学相关的",
         "pos": "adj",
         "phonetic": "/mathematical/",
         "score": 3,
         "en": "mathematical"
     },
     {
-        "zh": "成熟的；理智的；成年的",
+        "zh": "成熟的",
         "pos": "adj",
         "phonetic": "/mature/",
         "score": 3,
         "en": "mature"
     },
     {
-        "zh": "最高的；最多的；最大极限的",
+        "zh": "最高的",
         "pos": "adj",
         "phonetic": "/maximum/",
         "score": 3,
@@ -196,7 +196,7 @@
         "en": "meantime"
     },
     {
-        "zh": "机械的；机动的；与机械有关的",
+        "zh": "机械的",
         "pos": "adj",
         "phonetic": "/mechanical/",
         "score": 3,
@@ -217,14 +217,14 @@
         "en": "medication"
     },
     {
-        "zh": "平常；平庸(的人)",
+        "zh": "平庸",
         "pos": "n",
         "phonetic": "/mediocrity/",
         "score": 3,
         "en": "mediocrity"
     },
     {
-        "zh": "中等的；中号的；适中的",
+        "zh": "中等的",
         "pos": "adj",
         "phonetic": "/medium/",
         "score": 3,
@@ -238,7 +238,7 @@
         "en": "melt"
     },
     {
-        "zh": "会员资格；会员身份；会员",
+        "zh": "会员资格",
         "pos": "n",
         "phonetic": "/membership/",
         "score": 3,
@@ -252,7 +252,7 @@
         "en": "memory"
     },
     {
-        "zh": "威胁；危险的人；令人恐怖的氛围",
+        "zh": "威胁",
         "pos": "n",
         "phonetic": "/menace/",
         "score": 3,
@@ -294,7 +294,7 @@
         "en": "metropolitan"
     },
     {
-        "zh": "【计】微处理器",
+        "zh": "微处理器",
         "pos": "n",
         "phonetic": "/microprocessor/",
         "score": 3,
@@ -315,35 +315,35 @@
         "en": "midst"
     },
     {
-        "zh": "强而有力的；巨大的；非凡的",
+        "zh": "强而有力的",
         "pos": "adj",
         "phonetic": "/mighty/",
         "score": 3,
         "en": "mighty"
     },
     {
-        "zh": "随季节而迁徙；迁居；移居",
+        "zh": "随季节而迁徙",
         "pos": "v",
         "phonetic": "/migrate/",
         "score": 3,
         "en": "migrate"
     },
     {
-        "zh": "轻微的；温和的；不强烈的",
+        "zh": "轻微的",
         "pos": "adj",
         "phonetic": "/mild/",
         "score": 3,
         "en": "mild"
     },
     {
-        "zh": "【喻】里程碑式事件；里程碑；重大事件",
+        "zh": "里程碑式事件",
         "pos": "n",
         "phonetic": "/milestone/",
         "score": 3,
         "en": "milestone"
     },
     {
-        "zh": "军事的；军人般的；武装部队的",
+        "zh": "军事的",
         "pos": "adj",
         "phonetic": "/military/",
         "score": 3,

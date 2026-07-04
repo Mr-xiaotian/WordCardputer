@@ -1,6 +1,6 @@
 [
     {
-        "zh": "匿名的；不记名的；无特色的",
+        "zh": "匿名的",
         "pos": "adj",
         "phonetic": "/anonymous/",
         "score": 3,
@@ -161,14 +161,14 @@
         "en": "archaeologist"
     },
     {
-        "zh": "建筑师；设计师；缔造者",
+        "zh": "建筑师",
         "pos": "n",
         "phonetic": "/architect/",
         "score": 3,
         "en": "architect"
     },
     {
-        "zh": "建筑学；建筑风格；体系结构",
+        "zh": "建筑学",
         "pos": "n",
         "phonetic": "/architecture/",
         "score": 3,
@@ -196,21 +196,21 @@
         "en": "arrest"
     },
     {
-        "zh": "明确表达；清楚说明；吐字清晰",
+        "zh": "明确表达",
         "pos": "v",
         "phonetic": "/articulate/",
         "score": 3,
         "en": "articulate"
     },
     {
-        "zh": "人工的；人造的；人为的",
+        "zh": "人工的",
         "pos": "adj",
         "phonetic": "/artificial/",
         "score": 3,
         "en": "artificial"
     },
     {
-        "zh": "艺术的；艺术家的；有艺术天赋的",
+        "zh": "艺术的",
         "pos": "adj",
         "phonetic": "/artistic/",
         "score": 3,
@@ -231,7 +231,7 @@
         "en": "aspirin"
     },
     {
-        "zh": "猛烈攻击；袭击；使难受",
+        "zh": "猛烈攻击",
         "pos": "v",
         "phonetic": "/assault/",
         "score": 3,

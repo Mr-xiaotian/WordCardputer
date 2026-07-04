@@ -28,7 +28,7 @@
         "en": "cite"
     },
     {
-        "zh": "平民的；公民的；民用的",
+        "zh": "平民的",
         "pos": "adj",
         "phonetic": "/civil/",
         "score": 3,
@@ -42,14 +42,14 @@
         "en": "clarify"
     },
     {
-        "zh": "典型的；古典的；第一流的",
+        "zh": "典型的",
         "pos": "adj",
         "phonetic": "/classic/",
         "score": 3,
         "en": "classic"
     },
     {
-        "zh": "经典的；传统的；典型的",
+        "zh": "经典的",
         "pos": "adj",
         "phonetic": "/classical/",
         "score": 3,
@@ -91,28 +91,28 @@
         "en": "clone"
     },
     {
-        "zh": "教练；私人教师；长途客车",
+        "zh": "教练",
         "pos": "n",
         "phonetic": "/coach/",
         "score": 3,
         "en": "coach"
     },
     {
-        "zh": "(齿轮的)钝齿",
+        "zh": "齿轮",
         "pos": "n",
         "phonetic": "/cog/",
         "score": 3,
         "en": "cog"
     },
     {
-        "zh": "认知的；认识的；有感知能力的",
+        "zh": "认知的",
         "pos": "adj",
         "phonetic": "/cognitive/",
         "score": 3,
         "en": "cognitive"
     },
     {
-        "zh": "连贯的；条理清晰的；有表达能力的",
+        "zh": "连贯的",
         "pos": "adj",
         "phonetic": "/coherent/",
         "score": 3,
@@ -140,14 +140,14 @@
         "en": "collection"
     },
     {
-        "zh": "殖民地的；殖民地所特有的；殖民国家的",
+        "zh": "殖民地的",
         "pos": "adj",
         "phonetic": "/colonial/",
         "score": 3,
         "en": "colonial"
     },
     {
-        "zh": "殖民地；聚居地；聚居人群",
+        "zh": "殖民地",
         "pos": "n",
         "phonetic": "/colony/",
         "score": 3,
@@ -168,7 +168,7 @@
         "en": "combat"
     },
     {
-        "zh": "结合；混合；数字密码组合",
+        "zh": "结合",
         "pos": "n",
         "phonetic": "/combination/",
         "score": 3,
@@ -210,7 +210,7 @@
         "en": "commerce"
     },
     {
-        "zh": "正式委托；任命…为军官",
+        "zh": "正式委托",
         "pos": "v",
         "phonetic": "/commission/",
         "score": 3,
@@ -266,14 +266,14 @@
         "en": "commute"
     },
     {
-        "zh": "类似的；可比较的；相当的",
+        "zh": "类似的",
         "pos": "adj",
         "phonetic": "/comparable/",
         "score": 3,
         "en": "comparable"
     },
     {
-        "zh": "比较的；比较研究的；用比较方法的",
+        "zh": "比较的",
         "pos": "adj",
         "phonetic": "/comparative/",
         "score": 3,
@@ -301,7 +301,7 @@
         "en": "competence"
     },
     {
-        "zh": "编写；编纂；收集（信息",
+        "zh": "编写",
         "pos": "v",
         "phonetic": "/compile/",
         "score": 3,
@@ -343,7 +343,7 @@
         "en": "composition"
     },
     {
-        "zh": "理解；理解力；理解练习",
+        "zh": "理解",
         "pos": "n",
         "phonetic": "/comprehension/",
         "score": 3,

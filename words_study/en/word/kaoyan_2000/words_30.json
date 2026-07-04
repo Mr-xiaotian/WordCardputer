@@ -42,7 +42,7 @@
         "en": "product"
     },
     {
-        "zh": "生产的；多产的；富有成效的",
+        "zh": "生产的",
         "pos": "adj",
         "phonetic": "/productive/",
         "score": 3,
@@ -63,7 +63,7 @@
         "en": "profess"
     },
     {
-        "zh": "专业的；职业的；训练有素的",
+        "zh": "专业的",
         "pos": "adj",
         "phonetic": "/professional/",
         "score": 3,
@@ -84,14 +84,14 @@
         "en": "profit"
     },
     {
-        "zh": "盈利的；有利可图的；有益的",
+        "zh": "盈利的",
         "pos": "adj",
         "phonetic": "/profitable/",
         "score": 3,
         "en": "profitable"
     },
     {
-        "zh": "进步的；先进的；逐步发生的",
+        "zh": "进步的",
         "pos": "adj",
         "phonetic": "/progressive/",
         "score": 3,
@@ -119,7 +119,7 @@
         "en": "prolong"
     },
     {
-        "zh": "重要的；杰出的；突出的",
+        "zh": "重要的",
         "pos": "adj",
         "phonetic": "/prominent/",
         "score": 3,
@@ -140,14 +140,14 @@
         "en": "promote"
     },
     {
-        "zh": "迅速的；立刻的；敏捷的",
+        "zh": "迅速的",
         "pos": "adj",
         "phonetic": "/prompt/",
         "score": 3,
         "en": "prompt"
     },
     {
-        "zh": "易于遭受…的；有做…倾向的；俯卧的",
+        "zh": "易于…的",
         "pos": "adj",
         "phonetic": "/prone/",
         "score": 3,
@@ -224,7 +224,7 @@
         "en": "prose"
     },
     {
-        "zh": "起诉；控告；担任控方律师",
+        "zh": "起诉",
         "pos": "v",
         "phonetic": "/prosecute/",
         "score": 3,
@@ -245,7 +245,7 @@
         "en": "prosperity"
     },
     {
-        "zh": "繁荣的；兴旺的；富足的",
+        "zh": "繁荣的",
         "pos": "adj",
         "phonetic": "/prosperous/",
         "score": 3,
@@ -266,7 +266,7 @@
         "en": "protest"
     },
     {
-        "zh": "省；一级行政区；（知识",
+        "zh": "省",
         "pos": "n",
         "phonetic": "/province/",
         "score": 3,
@@ -287,7 +287,7 @@
         "en": "provoke"
     },
     {
-        "zh": "谨慎的；慎重的；精明的",
+        "zh": "谨慎的",
         "pos": "adj",
         "phonetic": "/prudent/",
         "score": 3,

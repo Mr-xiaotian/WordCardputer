@@ -49,28 +49,28 @@
         "en": "ecology"
     },
     {
-        "zh": "经济的；经济上的；有利可图的",
+        "zh": "经济的",
         "pos": "adj",
         "phonetic": "/economic/",
         "score": 3,
         "en": "economic"
     },
     {
-        "zh": "经济实惠的；精打细算的；简练的",
+        "zh": "经济实惠的",
         "pos": "adj",
         "phonetic": "/economical/",
         "score": 3,
         "en": "economical"
     },
     {
-        "zh": "经济学；经济情况；经济因素",
+        "zh": "经济学",
         "pos": "n",
         "phonetic": "/economics/",
         "score": 3,
         "en": "economics"
     },
     {
-        "zh": "经济；经济情况；经济制度",
+        "zh": "经济",
         "pos": "n",
         "phonetic": "/economy/",
         "score": 3,
@@ -105,21 +105,21 @@
         "en": "educate"
     },
     {
-        "zh": "有效的；事实上的；生效的",
+        "zh": "有效的",
         "pos": "adj",
         "phonetic": "/effective/",
         "score": 3,
         "en": "effective"
     },
     {
-        "zh": "平等主义的；主张人人平等的",
+        "zh": "平等主义的",
         "pos": "adj",
         "phonetic": "/egalitarian/",
         "score": 3,
         "en": "egalitarian"
     },
     {
-        "zh": "自尊心；自我意识；自我",
+        "zh": "自尊心",
         "pos": "n",
         "phonetic": "/ego/",
         "score": 3,
@@ -147,7 +147,7 @@
         "en": "electronic"
     },
     {
-        "zh": "优雅的；雅致的；讲究的",
+        "zh": "优雅的",
         "pos": "adj",
         "phonetic": "/elegant/",
         "score": 3,
@@ -161,7 +161,7 @@
         "en": "element"
     },
     {
-        "zh": "基本的；简单的；初级的",
+        "zh": "基本的",
         "pos": "adj",
         "phonetic": "/elementary/",
         "score": 3,
@@ -175,7 +175,7 @@
         "en": "elevate"
     },
     {
-        "zh": "有资格的；合适的；令人中意的",
+        "zh": "有资格的",
         "pos": "adj",
         "phonetic": "/eligible/",
         "score": 3,
@@ -189,7 +189,7 @@
         "en": "eliminate"
     },
     {
-        "zh": "上层集团；社会精英；掌权人物",
+        "zh": "上层集团",
         "pos": "n",
         "phonetic": "/elite/",
         "score": 3,
@@ -210,7 +210,7 @@
         "en": "elude"
     },
     {
-        "zh": "把牢牢嵌入；埋置；派遣",
+        "zh": "把牢牢嵌入",
         "pos": "v",
         "phonetic": "/embed/",
         "score": 3,
@@ -231,7 +231,7 @@
         "en": "embody"
     },
     {
-        "zh": "胚；胚胎；事物的萌芽期",
+        "zh": "胚",
         "pos": "n",
         "phonetic": "/embryo/",
         "score": 3,
@@ -280,14 +280,14 @@
         "en": "emphasis"
     },
     {
-        "zh": "经验主义的；依靠经验的",
+        "zh": "经验主义的",
         "pos": "adj",
         "phonetic": "/empirical/",
         "score": 3,
         "en": "empirical"
     },
     {
-        "zh": "竞争；仿效；[自]仿真(技术)",
+        "zh": "竞争",
         "pos": "n",
         "phonetic": "/emulation/",
         "score": 3,

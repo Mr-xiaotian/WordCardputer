@@ -14,7 +14,7 @@
         "en": "exception"
     },
     {
-        "zh": "杰出的；卓越的；特殊的",
+        "zh": "杰出的",
         "pos": "adj",
         "phonetic": "/exceptional/",
         "score": 3,
@@ -28,28 +28,28 @@
         "en": "excess"
     },
     {
-        "zh": "兴奋；刺激；令人兴奋的事物",
+        "zh": "兴奋",
         "pos": "n",
         "phonetic": "/excitement/",
         "score": 3,
         "en": "excitement"
     },
     {
-        "zh": "对…不予考虑；排除；不准…进入",
+        "zh": "排除",
         "pos": "v",
         "phonetic": "/exclude/",
         "score": 3,
         "en": "exclude"
     },
     {
-        "zh": "专用的；独占的；独家的",
+        "zh": "专用的",
         "pos": "adj",
         "phonetic": "/exclusive/",
         "score": 3,
         "en": "exclusive"
     },
     {
-        "zh": "经营管理的；行政的；有执行权的",
+        "zh": "经营管理的",
         "pos": "adj",
         "phonetic": "/executive/",
         "score": 3,
@@ -63,7 +63,7 @@
         "en": "exempt"
     },
     {
-        "zh": "使筋疲力尽；花光；耗尽",
+        "zh": "使筋疲力尽",
         "pos": "v",
         "phonetic": "/exhaust/",
         "score": 3,
@@ -84,7 +84,7 @@
         "en": "existence"
     },
     {
-        "zh": "外来的；具有异国情调的；奇异的",
+        "zh": "外来的",
         "pos": "adj",
         "phonetic": "/exotic/",
         "score": 3,
@@ -147,7 +147,7 @@
         "en": "expire"
     },
     {
-        "zh": "清楚明白的；清晰明确的；直截了当的",
+        "zh": "清楚明白的",
         "pos": "adj",
         "phonetic": "/explicit/",
         "score": 3,
@@ -168,7 +168,7 @@
         "en": "explosion"
     },
     {
-        "zh": "易爆炸的；爆炸性的；暴躁的",
+        "zh": "易爆炸的",
         "pos": "adj",
         "phonetic": "/explosive/",
         "score": 3,
@@ -196,7 +196,7 @@
         "en": "extend"
     },
     {
-        "zh": "广阔的；广泛的；巨大的",
+        "zh": "广阔的",
         "pos": "adj",
         "phonetic": "/extensive/",
         "score": 3,
@@ -210,7 +210,7 @@
         "en": "extent"
     },
     {
-        "zh": "外部的；外面的；外来的",
+        "zh": "外部的",
         "pos": "adj",
         "phonetic": "/external/",
         "score": 3,
@@ -231,14 +231,14 @@
         "en": "extinguish"
     },
     {
-        "zh": "非凡的；非同寻常的；卓越的",
+        "zh": "非凡的",
         "pos": "adj",
         "phonetic": "/extraordinary/",
         "score": 3,
         "en": "extraordinary"
     },
     {
-        "zh": "过于昂贵的；耗费过多的；奢侈的",
+        "zh": "过于昂贵的",
         "pos": "adj",
         "phonetic": "/extravagant/",
         "score": 3,
@@ -266,14 +266,14 @@
         "en": "fabricate"
     },
     {
-        "zh": "极好的；绝妙的；巨大的",
+        "zh": "极好的",
         "pos": "adj",
         "phonetic": "/fabulous/",
         "score": 3,
         "en": "fabulous"
     },
     {
-        "zh": "场所、设施或设备；天赋",
+        "zh": "场所设施或设备",
         "pos": "n",
         "phonetic": "/facility/",
         "score": 3,
@@ -287,7 +287,7 @@
         "en": "faculty"
     },
     {
-        "zh": "忠实的；忠贞的；如实的",
+        "zh": "忠实的",
         "pos": "adj",
         "phonetic": "/faithful/",
         "score": 3,
@@ -308,7 +308,7 @@
         "en": "fallacy"
     },
     {
-        "zh": "后果；余波；放射性坠尘",
+        "zh": "后果",
         "pos": "n",
         "phonetic": "/fallout/",
         "score": 3,
@@ -329,7 +329,7 @@
         "en": "fancy"
     },
     {
-        "zh": "奇异的；幻想的；异想天开的",
+        "zh": "奇异的",
         "pos": "adj",
         "phonetic": "/fantastic/",
         "score": 3,
@@ -343,7 +343,7 @@
         "en": "fantasy"
     },
     {
-        "zh": "费用；出租车乘客；饭菜",
+        "zh": "费用",
         "pos": "n",
         "phonetic": "/fare/",
         "score": 3,

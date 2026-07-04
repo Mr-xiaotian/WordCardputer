@@ -35,21 +35,21 @@
         "en": "bizarre"
     },
     {
-        "zh": "空白的；空着的；无表情的",
+        "zh": "空白的",
         "pos": "adj",
         "phonetic": "/blank/",
         "score": 3,
         "en": "blank"
     },
     {
-        "zh": "毛毯；毯子；〈喻〉覆盖物",
+        "zh": "毛毯",
         "pos": "n",
         "phonetic": "/blanket/",
         "score": 3,
         "en": "blanket"
     },
     {
-        "zh": "前景暗淡的；荒凉的；阴冷的",
+        "zh": "前景暗淡的",
         "pos": "adj",
         "phonetic": "/bleak/",
         "score": 3,
@@ -105,7 +105,7 @@
         "en": "boast"
     },
     {
-        "zh": "大胆自信的；敢于冒险的；明显的",
+        "zh": "大胆自信的",
         "pos": "adj",
         "phonetic": "/bold/",
         "score": 3,
@@ -140,7 +140,7 @@
         "en": "boot"
     },
     {
-        "zh": "小隔间；隔开的用餐区；临时货摊",
+        "zh": "小隔间",
         "pos": "n",
         "phonetic": "/booth/",
         "score": 3,
@@ -210,21 +210,21 @@
         "en": "brick"
     },
     {
-        "zh": "简短的；简洁的；短暂的",
+        "zh": "简短的",
         "pos": "adj",
         "phonetic": "/brief/",
         "score": 3,
         "en": "brief"
     },
     {
-        "zh": "(东西的)边缘；边；帽檐",
+        "zh": "边缘",
         "pos": "n",
         "phonetic": "/brim/",
         "score": 3,
         "en": "brim"
     },
     {
-        "zh": "轻快的；兴隆的；寒冷而清新的",
+        "zh": "轻快的",
         "pos": "adj",
         "phonetic": "/brisk/",
         "score": 3,
@@ -245,7 +245,7 @@
         "en": "brotherhood"
     },
     {
-        "zh": "野蛮的；残忍的；直截了当的",
+        "zh": "野蛮的",
         "pos": "adj",
         "phonetic": "/brutal/",
         "score": 3,
@@ -266,7 +266,7 @@
         "en": "bulb"
     },
     {
-        "zh": "主体；大部分；体积或量",
+        "zh": "主体",
         "pos": "n",
         "phonetic": "/bulk/",
         "score": 3,
@@ -294,7 +294,7 @@
         "en": "burden"
     },
     {
-        "zh": "官僚主义；官僚作风；官僚体制",
+        "zh": "官僚主义",
         "pos": "n",
         "phonetic": "/bureaucracy/",
         "score": 3,

@@ -1,6 +1,6 @@
 [
     {
-        "zh": "纵身投入；一头进入；将…投入",
+        "zh": "纵身投入",
         "pos": "v",
         "phonetic": "/plunge/",
         "score": 3,
@@ -21,7 +21,7 @@
         "en": "poison"
     },
     {
-        "zh": "有毒的；能分泌毒素的；令人厌恶的",
+        "zh": "有毒的",
         "pos": "adj",
         "phonetic": "/poisonous/",
         "score": 3,
@@ -49,7 +49,7 @@
         "en": "politics"
     },
     {
-        "zh": "民意调查；选举投票；得票数",
+        "zh": "民意调查",
         "pos": "n",
         "phonetic": "/poll/",
         "score": 3,
@@ -77,14 +77,14 @@
         "en": "popularity"
     },
     {
-        "zh": "平民党的；平民主义的；平民论的",
+        "zh": "平民党的",
         "pos": "adj",
         "phonetic": "/populist/",
         "score": 3,
         "en": "populist"
     },
     {
-        "zh": "部分；一份；分担的责任",
+        "zh": "部分",
         "pos": "n",
         "phonetic": "/portion/",
         "score": 3,
@@ -112,21 +112,21 @@
         "en": "possess"
     },
     {
-        "zh": "可能性；可选择的方法；机会",
+        "zh": "可能性",
         "pos": "n",
         "phonetic": "/possibility/",
         "score": 3,
         "en": "possibility"
     },
     {
-        "zh": "强壮的；有权势的；有影响力的",
+        "zh": "强壮的",
         "pos": "adj",
         "phonetic": "/powerful/",
         "score": 3,
         "en": "powerful"
     },
     {
-        "zh": "从业者；实践者；专业人才",
+        "zh": "从业者",
         "pos": "n",
         "phonetic": "/practitioner/",
         "score": 3,
@@ -140,7 +140,7 @@
         "en": "prayer"
     },
     {
-        "zh": "先于；走在…前面；处于…之前",
+        "zh": "先于",
         "pos": "v",
         "phonetic": "/precede/",
         "score": 3,
@@ -161,14 +161,14 @@
         "en": "preceding"
     },
     {
-        "zh": "珍奇的；珍稀的；宝贵的",
+        "zh": "珍奇的",
         "pos": "adj",
         "phonetic": "/precious/",
         "score": 3,
         "en": "precious"
     },
     {
-        "zh": "精确的；明确的；恰好的",
+        "zh": "精确的",
         "pos": "adj",
         "phonetic": "/precise/",
         "score": 3,
@@ -182,7 +182,7 @@
         "en": "predecessor"
     },
     {
-        "zh": "显著的；盛行的；占主导地位的",
+        "zh": "显著的",
         "pos": "adj",
         "phonetic": "/predominant/",
         "score": 3,
@@ -196,7 +196,7 @@
         "en": "preferable"
     },
     {
-        "zh": "怀孕的；饱含的；意味深长的",
+        "zh": "怀孕的",
         "pos": "adj",
         "phonetic": "/pregnant/",
         "score": 3,
@@ -224,7 +224,7 @@
         "en": "preparation"
     },
     {
-        "zh": "给…开药；为…开处方；规定",
+        "zh": "开处方",
         "pos": "v",
         "phonetic": "/prescribe/",
         "score": 3,
@@ -252,7 +252,7 @@
         "en": "presently"
     },
     {
-        "zh": "保护；维护；维持……的原样",
+        "zh": "保护",
         "pos": "v",
         "phonetic": "/preserve/",
         "score": 3,
@@ -287,7 +287,7 @@
         "en": "prevail"
     },
     {
-        "zh": "流行的；盛行的；普遍的",
+        "zh": "流行的",
         "pos": "adj",
         "phonetic": "/prevalent/",
         "score": 3,
@@ -308,21 +308,21 @@
         "en": "priest"
     },
     {
-        "zh": "主要的；最重要的；最初的",
+        "zh": "主要的",
         "pos": "adj",
         "phonetic": "/primary/",
         "score": 3,
         "en": "primary"
     },
     {
-        "zh": "首要的；主要的；优质的",
+        "zh": "首要的",
         "pos": "adj",
         "phonetic": "/prime/",
         "score": 3,
         "en": "prime"
     },
     {
-        "zh": "原始的；远古的；落后的",
+        "zh": "原始的",
         "pos": "adj",
         "phonetic": "/primitive/",
         "score": 3,
@@ -336,14 +336,14 @@
         "en": "princess"
     },
     {
-        "zh": "先前的；优先的；在前面的",
+        "zh": "先前的",
         "pos": "adj",
         "phonetic": "/prior/",
         "score": 3,
         "en": "prior"
     },
     {
-        "zh": "私有的；私人的；私下的",
+        "zh": "私有的",
         "pos": "adj",
         "phonetic": "/private/",
         "score": 3,

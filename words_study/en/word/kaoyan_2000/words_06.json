@@ -28,7 +28,7 @@
         "en": "cancer"
     },
     {
-        "zh": "候选人；申请人；应试者",
+        "zh": "候选人",
         "pos": "n",
         "phonetic": "/candidate/",
         "score": 3,
@@ -56,7 +56,7 @@
         "en": "cape"
     },
     {
-        "zh": "碳水化合物；含碳水化合物的食物",
+        "zh": "碳水化合物",
         "pos": "n",
         "phonetic": "/carbohydrate/",
         "score": 3,
@@ -84,14 +84,14 @@
         "en": "cargo"
     },
     {
-        "zh": "病菌携带者；运输工具；运送人",
+        "zh": "病菌携带者",
         "pos": "n",
         "phonetic": "/carrier/",
         "score": 3,
         "en": "carrier"
     },
     {
-        "zh": "雕刻；刻；把熟肉切成块",
+        "zh": "雕刻",
         "pos": "v",
         "phonetic": "/carve/",
         "score": 3,
@@ -112,14 +112,14 @@
         "en": "cast"
     },
     {
-        "zh": "漫不经心的；无所谓的；随便的",
+        "zh": "漫不经心的",
         "pos": "adj",
         "phonetic": "/casual/",
         "score": 3,
         "en": "casual"
     },
     {
-        "zh": "伤亡人员；受害者；受损物",
+        "zh": "伤亡人员",
         "pos": "n",
         "phonetic": "/casualty/",
         "score": 3,
@@ -147,14 +147,14 @@
         "en": "category"
     },
     {
-        "zh": "提供饮食；承办酒席；迎合",
+        "zh": "提供饮食",
         "pos": "v",
         "phonetic": "/cater/",
         "score": 3,
         "en": "cater"
     },
     {
-        "zh": "原因的；构成原因的；因果关系的",
+        "zh": "原因的",
         "pos": "adj",
         "phonetic": "/causal/",
         "score": 3,
@@ -203,7 +203,7 @@
         "en": "census"
     },
     {
-        "zh": "集中(化)；中央集权化",
+        "zh": "集中化",
         "pos": "n",
         "phonetic": "/centralization/",
         "score": 3,
@@ -238,14 +238,14 @@
         "en": "champion"
     },
     {
-        "zh": "总理；大学校长；财政大臣",
+        "zh": "总理",
         "pos": "n",
         "phonetic": "/chancellor/",
         "score": 3,
         "en": "chancellor"
     },
     {
-        "zh": "电视台；频道；表达方式",
+        "zh": "电视台",
         "pos": "n",
         "phonetic": "/channel/",
         "score": 3,
@@ -336,14 +336,14 @@
         "en": "chop"
     },
     {
-        "zh": "慢性的；难以根除的；积习难改的",
+        "zh": "慢性的",
         "pos": "adj",
         "phonetic": "/chronic/",
         "score": 3,
         "en": "chronic"
     },
     {
-        "zh": "相当大的数量；厚片；大块",
+        "zh": "相当大的数量",
         "pos": "n",
         "phonetic": "/chunk/",
         "score": 3,

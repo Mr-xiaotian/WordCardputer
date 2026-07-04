@@ -7,7 +7,7 @@
         "en": "puzzle"
     },
     {
-        "zh": "金字塔；锥体；金字塔式的结构",
+        "zh": "金字塔",
         "pos": "n",
         "phonetic": "/pyramid/",
         "score": 3,
@@ -28,7 +28,7 @@
         "en": "qualification"
     },
     {
-        "zh": "取得资格；合格；有权利…",
+        "zh": "取得资格",
         "pos": "v",
         "phonetic": "/qualify/",
         "score": 3,
@@ -63,7 +63,7 @@
         "en": "queue"
     },
     {
-        "zh": "怪异的性格；怪癖；偶发事件",
+        "zh": "怪异的性格",
         "pos": "n",
         "phonetic": "/quirk/",
         "score": 3,
@@ -84,7 +84,7 @@
         "en": "quota"
     },
     {
-        "zh": "种族的；种族之间的；人种的",
+        "zh": "种族的",
         "pos": "adj",
         "phonetic": "/racial/",
         "score": 3,
@@ -133,7 +133,7 @@
         "en": "rake"
     },
     {
-        "zh": "群众大会；拉力赛车；止跌回升",
+        "zh": "群众大会",
         "pos": "n",
         "phonetic": "/rally/",
         "score": 3,
@@ -147,14 +147,14 @@
         "en": "rank"
     },
     {
-        "zh": "说唱音乐；叩击；快速的敲击",
+        "zh": "说唱音乐",
         "pos": "n",
         "phonetic": "/rap/",
         "score": 3,
         "en": "rap"
     },
     {
-        "zh": "稀有的；罕见的；珍贵的",
+        "zh": "稀有的",
         "pos": "adj",
         "phonetic": "/rare/",
         "score": 3,
@@ -175,7 +175,7 @@
         "en": "rat"
     },
     {
-        "zh": "级别；等级；〈pl.〉收视率",
+        "zh": "级别",
         "pos": "n",
         "phonetic": "/rating/",
         "score": 3,
@@ -189,28 +189,28 @@
         "en": "ratio"
     },
     {
-        "zh": "生的；未加工的；未经处理的",
+        "zh": "生的",
         "pos": "adj",
         "phonetic": "/raw/",
         "score": 3,
         "en": "raw"
     },
     {
-        "zh": "作出反应；回应；有不良反应",
+        "zh": "作出反应",
         "pos": "v",
         "phonetic": "/react/",
         "score": 3,
         "en": "react"
     },
     {
-        "zh": "快捷地；便利地；欣然地",
+        "zh": "快捷地",
         "pos": "adv",
         "phonetic": "/readily/",
         "score": 3,
         "en": "readily"
     },
     {
-        "zh": "现实的；实事求是的；明智的",
+        "zh": "现实的",
         "pos": "adj",
         "phonetic": "/realistic/",
         "score": 3,
@@ -224,7 +224,7 @@
         "en": "realm"
     },
     {
-        "zh": "获得；收到；得到（报答",
+        "zh": "获得",
         "pos": "v",
         "phonetic": "/reap/",
         "score": 3,
@@ -238,7 +238,7 @@
         "en": "rear"
     },
     {
-        "zh": "合理的；明智的；合乎情理的",
+        "zh": "合理的",
         "pos": "adj",
         "phonetic": "/reasonable/",
         "score": 3,
@@ -252,7 +252,7 @@
         "en": "reassure"
     },
     {
-        "zh": "叛乱者；造反者；叛逆者",
+        "zh": "叛乱者",
         "pos": "n",
         "phonetic": "/rebel/",
         "score": 3,
@@ -273,7 +273,7 @@
         "en": "receipt"
     },
     {
-        "zh": "接待区；接待仪式；反响",
+        "zh": "接待区",
         "pos": "n",
         "phonetic": "/reception/",
         "score": 3,
@@ -301,7 +301,7 @@
         "en": "recite"
     },
     {
-        "zh": "鲁莽的；不计后果的；无所顾及的",
+        "zh": "鲁莽的",
         "pos": "adj",
         "phonetic": "/reckless/",
         "score": 3,

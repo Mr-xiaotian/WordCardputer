@@ -1,6 +1,6 @@
 [
     {
-        "zh": "可怕的；令人敬畏的；难对付的",
+        "zh": "可怕的",
         "pos": "adj",
         "phonetic": "/formidable/",
         "score": 3,
@@ -14,7 +14,7 @@
         "en": "formula"
     },
     {
-        "zh": "制定计划；构想；确切表达",
+        "zh": "制定计划",
         "pos": "v",
         "phonetic": "/formulate/",
         "score": 3,
@@ -98,7 +98,7 @@
         "en": "frown"
     },
     {
-        "zh": "多产的；果实累累的；富有成效的",
+        "zh": "多产的",
         "pos": "adj",
         "phonetic": "/fruitful/",
         "score": 3,
@@ -133,14 +133,14 @@
         "en": "fund"
     },
     {
-        "zh": "基础的；基本的；根本的",
+        "zh": "基础的",
         "pos": "adj",
         "phonetic": "/fundamental/",
         "score": 3,
         "en": "fundamental"
     },
     {
-        "zh": "皮毛；人造毛皮；毛皮大衣",
+        "zh": "皮毛",
         "pos": "n",
         "phonetic": "/fur/",
         "score": 3,
@@ -154,7 +154,7 @@
         "en": "furnish"
     },
     {
-        "zh": "融合；熔化；安装保险丝",
+        "zh": "融合",
         "pos": "v",
         "phonetic": "/fuse/",
         "score": 3,
@@ -224,7 +224,7 @@
         "en": "generate"
     },
     {
-        "zh": "慷慨的；大方的；宽宏大量的",
+        "zh": "慷慨的",
         "pos": "adj",
         "phonetic": "/generous/",
         "score": 3,
@@ -315,7 +315,7 @@
         "en": "glimpse"
     },
     {
-        "zh": "全世界的；全球的；整体的",
+        "zh": "全世界的",
         "pos": "adj",
         "phonetic": "/global/",
         "score": 3,

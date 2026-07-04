@@ -7,7 +7,7 @@
         "en": "symbolize"
     },
     {
-        "zh": "同情的；有同情心的；赞成的",
+        "zh": "同情的",
         "pos": "adj",
         "phonetic": "/sympathetic/",
         "score": 3,
@@ -28,7 +28,7 @@
         "en": "symptom"
     },
     {
-        "zh": "综合症状；典型意见；典型表现",
+        "zh": "综合症状",
         "pos": "n",
         "phonetic": "/syndrome/",
         "score": 3,
@@ -42,7 +42,7 @@
         "en": "synthesis"
     },
     {
-        "zh": "系统的；成体系的；有条理的",
+        "zh": "系统的",
         "pos": "adj",
         "phonetic": "/systematic/",
         "score": 3,
@@ -77,14 +77,14 @@
         "en": "tactics"
     },
     {
-        "zh": "人才；有天赋的人；才能",
+        "zh": "人才",
         "pos": "n",
         "phonetic": "/talent/",
         "score": 3,
         "en": "talent"
     },
     {
-        "zh": "明确的；实际的；可感知的",
+        "zh": "明确的",
         "pos": "adj",
         "phonetic": "/tangible/",
         "score": 3,
@@ -98,7 +98,7 @@
         "en": "tariff"
     },
     {
-        "zh": "对…征税；使负重担；使受压力",
+        "zh": "征税",
         "pos": "v",
         "phonetic": "/tax/",
         "score": 3,
@@ -112,7 +112,7 @@
         "en": "tease"
     },
     {
-        "zh": "技术员；技师；的技巧精湛者",
+        "zh": "技术员",
         "pos": "n",
         "phonetic": "/technician/",
         "score": 3,
@@ -126,7 +126,7 @@
         "en": "teenager"
     },
     {
-        "zh": "十几岁(13~19岁)",
+        "zh": "十几岁",
         "pos": "n",
         "phonetic": "/teens/",
         "score": 3,
@@ -168,7 +168,7 @@
         "en": "template"
     },
     {
-        "zh": "临时的；暂时的；短暂的",
+        "zh": "临时的",
         "pos": "adj",
         "phonetic": "/temporary/",
         "score": 3,
@@ -203,14 +203,14 @@
         "en": "terminal"
     },
     {
-        "zh": "结束；终止；到达终点站",
+        "zh": "结束",
         "pos": "v",
         "phonetic": "/terminate/",
         "score": 3,
         "en": "terminate"
     },
     {
-        "zh": "极好的；绝妙的；极其巨大的",
+        "zh": "极好的",
         "pos": "adj",
         "phonetic": "/terrific/",
         "score": 3,
@@ -224,7 +224,7 @@
         "en": "territory"
     },
     {
-        "zh": "恐惧；惊骇；令人恐惧的人",
+        "zh": "恐惧",
         "pos": "n",
         "phonetic": "/terror/",
         "score": 3,
@@ -301,14 +301,14 @@
         "en": "thesis"
     },
     {
-        "zh": "彻底的；深入的；仔细的",
+        "zh": "彻底的",
         "pos": "adj",
         "phonetic": "/thorough/",
         "score": 3,
         "en": "thorough"
     },
     {
-        "zh": "经缜密思考的；沉思的；思考的",
+        "zh": "经缜密思考的",
         "pos": "adj",
         "phonetic": "/thoughtful/",
         "score": 3,

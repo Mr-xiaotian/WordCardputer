@@ -21,7 +21,7 @@
         "en": "refrain"
     },
     {
-        "zh": "使恢复精力；使更新；使重新想起",
+        "zh": "使恢复精力",
         "pos": "v",
         "phonetic": "/refresh/",
         "score": 3,
@@ -56,7 +56,7 @@
         "en": "refusal"
     },
     {
-        "zh": "重新获得；恢复使用；收回",
+        "zh": "重新获得",
         "pos": "v",
         "phonetic": "/regain/",
         "score": 3,
@@ -77,7 +77,7 @@
         "en": "regardless"
     },
     {
-        "zh": "统治制度；政权；组织方法",
+        "zh": "统治制度",
         "pos": "n",
         "phonetic": "/regime/",
         "score": 3,
@@ -140,7 +140,7 @@
         "en": "relax"
     },
     {
-        "zh": "相关的；切题的；有意义的",
+        "zh": "相关的",
         "pos": "adj",
         "phonetic": "/relevant/",
         "score": 3,
@@ -217,14 +217,14 @@
         "en": "remark"
     },
     {
-        "zh": "不同寻常的；非凡的；引人注目的",
+        "zh": "不同寻常的",
         "pos": "adj",
         "phonetic": "/remarkable/",
         "score": 3,
         "en": "remarkable"
     },
     {
-        "zh": "偏远的；遥远的；久远的",
+        "zh": "偏远的",
         "pos": "adj",
         "phonetic": "/remote/",
         "score": 3,
@@ -245,14 +245,14 @@
         "en": "renaissance"
     },
     {
-        "zh": "使变成…状态；给予；提供",
+        "zh": "使成为",
         "pos": "v",
         "phonetic": "/render/",
         "score": 3,
         "en": "render"
     },
     {
-        "zh": "重新开始；延长…的期限；重申",
+        "zh": "重新开始",
         "pos": "v",
         "phonetic": "/renew/",
         "score": 3,
@@ -294,14 +294,14 @@
         "en": "reporter"
     },
     {
-        "zh": "代表；作为…的代表；维护…的利益",
+        "zh": "代表",
         "pos": "v",
         "phonetic": "/represent/",
         "score": 3,
         "en": "represent"
     },
     {
-        "zh": "代表；销售代表；代理人",
+        "zh": "代表",
         "pos": "n",
         "phonetic": "/representative/",
         "score": 3,

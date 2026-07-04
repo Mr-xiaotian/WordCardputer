@@ -1,13 +1,13 @@
 [
     {
-        "zh": "狭窄地；以毫厘之差；勉强地",
+        "zh": "狭窄地",
         "pos": "adv",
         "phonetic": "/narrowly/",
         "score": 3,
         "en": "narrowly"
     },
     {
-        "zh": "极差的；令人厌恶的；下流的",
+        "zh": "极差的",
         "pos": "adj",
         "phonetic": "/nasty/",
         "score": 3,
@@ -21,7 +21,7 @@
         "en": "naval"
     },
     {
-        "zh": "〈非正式〉带人找路；指路；在…上航行",
+        "zh": "带人找路",
         "pos": "v",
         "phonetic": "/navigate/",
         "score": 3,
@@ -35,7 +35,7 @@
         "en": "necessity"
     },
     {
-        "zh": "通过洽谈达成；谈成；谈判",
+        "zh": "通过洽谈达成",
         "pos": "v",
         "phonetic": "/negotiate/",
         "score": 3,
@@ -63,7 +63,7 @@
         "en": "neurology"
     },
     {
-        "zh": "中立的；不含褒贬义的；素净的",
+        "zh": "中立的",
         "pos": "adj",
         "phonetic": "/neutral/",
         "score": 3,
@@ -98,7 +98,7 @@
         "en": "nickname"
     },
     {
-        "zh": "噩梦；梦魇；可怕的经历",
+        "zh": "噩梦",
         "pos": "n",
         "phonetic": "/nightmare/",
         "score": 3,
@@ -112,7 +112,7 @@
         "en": "nonetheless"
     },
     {
-        "zh": "胡言乱语；毫无意义的话；愚蠢的行为",
+        "zh": "胡言乱语",
         "pos": "n",
         "phonetic": "/nonsense/",
         "score": 3,
@@ -126,35 +126,35 @@
         "en": "noteworthy"
     },
     {
-        "zh": "声名狼藉的；臭名昭著的",
+        "zh": "声名狼藉的",
         "pos": "adj",
         "phonetic": "/notorious/",
         "score": 3,
         "en": "notorious"
     },
     {
-        "zh": "新奇；新颖；新奇的事物",
+        "zh": "新奇",
         "pos": "n",
         "phonetic": "/novelty/",
         "score": 3,
         "en": "novelty"
     },
     {
-        "zh": "任何地方都不；没有任何地方；无处",
+        "zh": "无处",
         "pos": "adv",
         "phonetic": "/nowhere/",
         "score": 3,
         "en": "nowhere"
     },
     {
-        "zh": "核子的；原子核的；核能的",
+        "zh": "核子的",
         "pos": "adj",
         "phonetic": "/nuclear/",
         "score": 3,
         "en": "nuclear"
     },
     {
-        "zh": "麻烦事；讨厌的东西；妨害行为",
+        "zh": "麻烦事",
         "pos": "n",
         "phonetic": "/nuisance/",
         "score": 3,
@@ -175,7 +175,7 @@
         "en": "numerous"
     },
     {
-        "zh": "托儿所；幼儿园；保育室",
+        "zh": "托儿所",
         "pos": "n",
         "phonetic": "/nursery/",
         "score": 3,
@@ -189,7 +189,7 @@
         "en": "nurture"
     },
     {
-        "zh": "营养；滋养；营养的吸收",
+        "zh": "营养",
         "pos": "n",
         "phonetic": "/nutrition/",
         "score": 3,
@@ -203,7 +203,7 @@
         "en": "obesity"
     },
     {
-        "zh": "反对；异议；反对的理由",
+        "zh": "反对",
         "pos": "n",
         "phonetic": "/objection/",
         "score": 3,
@@ -224,7 +224,7 @@
         "en": "obligation"
     },
     {
-        "zh": "模糊的；不确定的；费解的",
+        "zh": "模糊的",
         "pos": "adj",
         "phonetic": "/obscure/",
         "score": 3,
@@ -238,7 +238,7 @@
         "en": "observation"
     },
     {
-        "zh": "使痴迷；使迷恋；使着迷",
+        "zh": "使痴迷",
         "pos": "v",
         "phonetic": "/obsess/",
         "score": 3,
@@ -252,14 +252,14 @@
         "en": "obtain"
     },
     {
-        "zh": "明显的；公认的；当然的",
+        "zh": "明显的",
         "pos": "adj",
         "phonetic": "/obvious/",
         "score": 3,
         "en": "obvious"
     },
     {
-        "zh": "…的时候；场景；重大场合",
+        "zh": "的时候",
         "pos": "n",
         "phonetic": "/occasion/",
         "score": 3,
@@ -280,7 +280,7 @@
         "en": "occupy"
     },
     {
-        "zh": "发生；出现；发生或存在的事",
+        "zh": "发生",
         "pos": "n",
         "phonetic": "/occurrence/",
         "score": 3,
@@ -294,7 +294,7 @@
         "en": "offend"
     },
     {
-        "zh": "冒犯的；无礼的；攻击性的",
+        "zh": "冒犯的",
         "pos": "adj",
         "phonetic": "/offensive/",
         "score": 3,

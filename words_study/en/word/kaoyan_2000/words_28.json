@@ -1,6 +1,6 @@
 [
     {
-        "zh": "专题讨论小组；镶板；嵌板",
+        "zh": "专题讨论小组",
         "pos": "n",
         "phonetic": "/panel/",
         "score": 3,
@@ -21,7 +21,7 @@
         "en": "panorama"
     },
     {
-        "zh": "游行；列队行进；招摇过市",
+        "zh": "游行",
         "pos": "v",
         "phonetic": "/parade/",
         "score": 3,
@@ -49,14 +49,14 @@
         "en": "paraphrase"
     },
     {
-        "zh": "议会；国会；一届议会的任期",
+        "zh": "议会",
         "pos": "n",
         "phonetic": "/parliament/",
         "score": 3,
         "en": "parliament"
     },
     {
-        "zh": "部分的；不完全的；偏袒的",
+        "zh": "部分的",
         "pos": "adj",
         "phonetic": "/partial/",
         "score": 3,
@@ -84,7 +84,7 @@
         "en": "passion"
     },
     {
-        "zh": "被动的；消极的；非暴力的",
+        "zh": "被动的",
         "pos": "adj",
         "phonetic": "/passive/",
         "score": 3,
@@ -105,7 +105,7 @@
         "en": "patent"
     },
     {
-        "zh": "家长的；族长的；由男性统治的",
+        "zh": "家长的",
         "pos": "adj",
         "phonetic": "/patriarchal/",
         "score": 3,
@@ -133,7 +133,7 @@
         "en": "pearl"
     },
     {
-        "zh": "奇怪的；不正常的；特别的",
+        "zh": "奇怪的",
         "pos": "adj",
         "phonetic": "/peculiar/",
         "score": 3,
@@ -161,14 +161,14 @@
         "en": "per"
     },
     {
-        "zh": "注意到；意识到；将…视为",
+        "zh": "注意到",
         "pos": "v",
         "phonetic": "/perceive/",
         "score": 3,
         "en": "perceive"
     },
     {
-        "zh": "百分数；百分率；百分比",
+        "zh": "百分数",
         "pos": "n",
         "phonetic": "/percentage/",
         "score": 3,
@@ -189,7 +189,7 @@
         "en": "perish"
     },
     {
-        "zh": "永久的；持久的；永恒的",
+        "zh": "永久的",
         "pos": "adj",
         "phonetic": "/permanent/",
         "score": 3,
@@ -224,7 +224,7 @@
         "en": "persist"
     },
     {
-        "zh": "人事部门；全体人员；职员",
+        "zh": "人事部门",
         "pos": "n",
         "phonetic": "/personnel/",
         "score": 3,
@@ -238,7 +238,7 @@
         "en": "persuasion"
     },
     {
-        "zh": "弥漫性的；渗透性的；遍布的",
+        "zh": "弥漫性的",
         "pos": "adj",
         "phonetic": "/pervasive/",
         "score": 3,
@@ -266,14 +266,14 @@
         "en": "philosopher"
     },
     {
-        "zh": "哲学；哲学体系；思想体系",
+        "zh": "哲学",
         "pos": "n",
         "phonetic": "/philosophy/",
         "score": 3,
         "en": "philosophy"
     },
     {
-        "zh": "身体的；物质的；有形的",
+        "zh": "身体的",
         "pos": "adj",
         "phonetic": "/physical/",
         "score": 3,
@@ -322,7 +322,7 @@
         "en": "plateau"
     },
     {
-        "zh": "貌似合理的；巧言令色的；花言巧语的",
+        "zh": "貌似合理的",
         "pos": "adj",
         "phonetic": "/plausible/",
         "score": 3,

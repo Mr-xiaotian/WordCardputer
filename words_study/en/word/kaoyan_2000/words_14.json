@@ -42,7 +42,7 @@
         "en": "entertainment"
     },
     {
-        "zh": "热情；热忱；热衷的事物",
+        "zh": "热情",
         "pos": "n",
         "phonetic": "/enthusiasm/",
         "score": 3,
@@ -63,7 +63,7 @@
         "en": "entire"
     },
     {
-        "zh": "使有权利；使符合资格；给…命名",
+        "zh": "赋予权利",
         "pos": "v",
         "phonetic": "/entitle/",
         "score": 3,
@@ -112,7 +112,7 @@
         "en": "envision"
     },
     {
-        "zh": "羡慕；忌妒；（not envy sb",
+        "zh": "羡慕",
         "pos": "v",
         "phonetic": "/envy/",
         "score": 3,
@@ -147,14 +147,14 @@
         "en": "equality"
     },
     {
-        "zh": "方程式；等式；等同看待",
+        "zh": "方程式",
         "pos": "n",
         "phonetic": "/equation/",
         "score": 3,
         "en": "equation"
     },
     {
-        "zh": "配备；装备；使做好思想准备",
+        "zh": "配备",
         "pos": "v",
         "phonetic": "/equip/",
         "score": 3,
@@ -217,7 +217,7 @@
         "en": "essence"
     },
     {
-        "zh": "必不可少的；本质的；根本的",
+        "zh": "必不可少的",
         "pos": "adj",
         "phonetic": "/essential/",
         "score": 3,
@@ -252,14 +252,14 @@
         "en": "estimate"
     },
     {
-        "zh": "道德规范；伦理标准；行为准则",
+        "zh": "道德规范",
         "pos": "n",
         "phonetic": "/ethic/",
         "score": 3,
         "en": "ethic"
     },
     {
-        "zh": "种族的；少数民族的；具有异国风情的",
+        "zh": "种族的",
         "pos": "adj",
         "phonetic": "/ethnic/",
         "score": 3,
@@ -308,7 +308,7 @@
         "en": "evident"
     },
     {
-        "zh": "恶毒的；邪恶的；有害的",
+        "zh": "恶毒的",
         "pos": "adj",
         "phonetic": "/evil/",
         "score": 3,
@@ -329,7 +329,7 @@
         "en": "evolution"
     },
     {
-        "zh": "逐步发展；进化；进化形成",
+        "zh": "逐步发展",
         "pos": "v",
         "phonetic": "/evolve/",
         "score": 3,

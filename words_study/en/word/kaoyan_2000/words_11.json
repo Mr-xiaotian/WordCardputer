@@ -1,6 +1,6 @@
 [
     {
-        "zh": "依靠的；依赖的；取决于…的",
+        "zh": "依靠的",
         "pos": "adj",
         "phonetic": "/dependent/",
         "score": 3,
@@ -21,21 +21,21 @@
         "en": "deposit"
     },
     {
-        "zh": "沮丧的；消沉的；降低的",
+        "zh": "沮丧的",
         "pos": "adj",
         "phonetic": "/depressed/",
         "score": 3,
         "en": "depressed"
     },
     {
-        "zh": "剥夺；使丧失；使不能享有",
+        "zh": "剥夺",
         "pos": "v",
         "phonetic": "/deprive/",
         "score": 3,
         "en": "deprive"
     },
     {
-        "zh": "从…衍生出；源自；获得",
+        "zh": "从衍生出",
         "pos": "v",
         "phonetic": "/derive/",
         "score": 3,
@@ -98,14 +98,14 @@
         "en": "despair"
     },
     {
-        "zh": "绝望的；孤注一掷的；极度渴望的",
+        "zh": "绝望的",
         "pos": "adj",
         "phonetic": "/desperate/",
         "score": 3,
         "en": "desperate"
     },
     {
-        "zh": "目的地；送达地点；终点",
+        "zh": "目的地",
         "pos": "n",
         "phonetic": "/destination/",
         "score": 3,
@@ -210,14 +210,14 @@
         "en": "dictate"
     },
     {
-        "zh": "日常饮食；规定饮食；大量单一的东西",
+        "zh": "日常饮食",
         "pos": "n",
         "phonetic": "/diet/",
         "score": 3,
         "en": "diet"
     },
     {
-        "zh": "不同于；有区别；持不同意见",
+        "zh": "不同于",
         "pos": "v",
         "phonetic": "/differ/",
         "score": 3,
@@ -252,7 +252,7 @@
         "en": "diligent"
     },
     {
-        "zh": "暗淡的；昏暗的；不分明的",
+        "zh": "暗淡的",
         "pos": "adj",
         "phonetic": "/dim/",
         "score": 3,
@@ -280,14 +280,14 @@
         "en": "diploma"
     },
     {
-        "zh": "目录；名录；电话号码簿",
+        "zh": "目录",
         "pos": "n",
         "phonetic": "/directory/",
         "score": 3,
         "en": "directory"
     },
     {
-        "zh": "使残废；使丧失能力；使失效",
+        "zh": "使残废",
         "pos": "v",
         "phonetic": "/disable/",
         "score": 3,
@@ -301,14 +301,14 @@
         "en": "disaster"
     },
     {
-        "zh": "察觉出；了解到；依稀分辨出",
+        "zh": "察觉出",
         "pos": "v",
         "phonetic": "/discern/",
         "score": 3,
         "en": "discern"
     },
     {
-        "zh": "纪律；训练方法；行为准则",
+        "zh": "纪律",
         "pos": "n",
         "phonetic": "/discipline/",
         "score": 3,
@@ -322,7 +322,7 @@
         "en": "disclose"
     },
     {
-        "zh": "打折；认为…不重要；低估",
+        "zh": "打折",
         "pos": "v",
         "phonetic": "/discount/",
         "score": 3,

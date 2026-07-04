@@ -21,14 +21,14 @@
         "en": "opera"
     },
     {
-        "zh": "操作上的；运作中的；日常业务的",
+        "zh": "操作上的",
         "pos": "adj",
         "phonetic": "/operational/",
         "score": 3,
         "en": "operational"
     },
     {
-        "zh": "操作人员；接线员；经营者",
+        "zh": "操作人员",
         "pos": "n",
         "phonetic": "/operator/",
         "score": 3,
@@ -70,21 +70,21 @@
         "en": "optional"
     },
     {
-        "zh": "口头的；口腔的；口服的",
+        "zh": "口头的",
         "pos": "adj",
         "phonetic": "/oral/",
         "score": 3,
         "en": "oral"
     },
     {
-        "zh": "管弦乐队；靠近舞台的座位",
+        "zh": "管弦乐队",
         "pos": "n",
         "phonetic": "/orchestra/",
         "score": 3,
         "en": "orchestra"
     },
     {
-        "zh": "有条理的；整齐的；守秩序的",
+        "zh": "有条理的",
         "pos": "adj",
         "phonetic": "/orderly/",
         "score": 3,
@@ -98,7 +98,7 @@
         "en": "organ"
     },
     {
-        "zh": "有机种植的；有机物的；器官的",
+        "zh": "有机种植的",
         "pos": "adj",
         "phonetic": "/organic/",
         "score": 3,
@@ -133,7 +133,7 @@
         "en": "origin"
     },
     {
-        "zh": "原来的；起初的；独创的",
+        "zh": "原来的",
         "pos": "adj",
         "phonetic": "/original/",
         "score": 3,
@@ -168,7 +168,7 @@
         "en": "outbreak"
     },
     {
-        "zh": "(火山、感情等)爆发；突发",
+        "zh": "爆发",
         "pos": "n",
         "phonetic": "/outburst/",
         "score": 3,
@@ -189,7 +189,7 @@
         "en": "outdated"
     },
     {
-        "zh": "外表的；外面的；远离中心的",
+        "zh": "外表的",
         "pos": "adj",
         "phonetic": "/outer/",
         "score": 3,
@@ -238,7 +238,7 @@
         "en": "outset"
     },
     {
-        "zh": "头顶上的；地面以上的；经费的",
+        "zh": "头顶上的",
         "pos": "adj",
         "phonetic": "/overhead/",
         "score": 3,
@@ -252,7 +252,7 @@
         "en": "overlap"
     },
     {
-        "zh": "忽略；未注意到；对…不予理会",
+        "zh": "忽略",
         "pos": "v",
         "phonetic": "/overlook/",
         "score": 3,
@@ -280,7 +280,7 @@
         "en": "oversee"
     },
     {
-        "zh": "加班；加班时间；加班费",
+        "zh": "加班",
         "pos": "n",
         "phonetic": "/overtime/",
         "score": 3,
@@ -294,14 +294,14 @@
         "en": "overturn"
     },
     {
-        "zh": "应付的；未付的；欠着的",
+        "zh": "应付的",
         "pos": "adj",
         "phonetic": "/owing/",
         "score": 3,
         "en": "owing"
     },
     {
-        "zh": "所有权；产权；物主身份",
+        "zh": "所有权",
         "pos": "n",
         "phonetic": "/ownership/",
         "score": 3,

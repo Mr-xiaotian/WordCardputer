@@ -1,34 +1,34 @@
 [
     {
-        "zh": "隶属的；从属的；次要的",
+        "zh": "隶属的",
         "pos": "adj",
         "phonetic": "/subordinate/",
         "score": 3,
         "en": "subordinate"
     },
     {
-        "zh": "定期订购；定期订阅；定期捐款",
+        "zh": "定期订购",
         "pos": "v",
         "phonetic": "/subscribe/",
         "score": 3,
         "en": "subscribe"
     },
     {
-        "zh": "随后的；后来的；紧接的",
+        "zh": "随后的",
         "pos": "adj",
         "phonetic": "/subsequent/",
         "score": 3,
         "en": "subsequent"
     },
     {
-        "zh": "财政补贴；津贴；补助金",
+        "zh": "财政补贴",
         "pos": "n",
         "phonetic": "/subsidy/",
         "score": 3,
         "en": "subsidy"
     },
     {
-        "zh": "大量的；重大的；结实的",
+        "zh": "大量的",
         "pos": "adj",
         "phonetic": "/substantial/",
         "score": 3,
@@ -84,7 +84,7 @@
         "en": "sufficient"
     },
     {
-        "zh": "自杀；自取灭亡的行为；自杀者",
+        "zh": "自杀",
         "pos": "n",
         "phonetic": "/suicide/",
         "score": 3,
@@ -112,14 +112,14 @@
         "en": "summit"
     },
     {
-        "zh": "极佳的；卓越的；质量极高的",
+        "zh": "极佳的",
         "pos": "adj",
         "phonetic": "/superb/",
         "score": 3,
         "en": "superb"
     },
     {
-        "zh": "肤浅的；表面的；外面的",
+        "zh": "肤浅的",
         "pos": "adj",
         "phonetic": "/superficial/",
         "score": 3,
@@ -133,7 +133,7 @@
         "en": "superfluous"
     },
     {
-        "zh": "更好的；占优势的；更高级别的",
+        "zh": "更好的",
         "pos": "adj",
         "phonetic": "/superior/",
         "score": 3,
@@ -175,7 +175,7 @@
         "en": "supplement"
     },
     {
-        "zh": "最高的；至高无上的；最大的",
+        "zh": "最高的",
         "pos": "adj",
         "phonetic": "/supreme/",
         "score": 3,
@@ -189,7 +189,7 @@
         "en": "surface"
     },
     {
-        "zh": "突发；数量激增；奔涌向前",
+        "zh": "突发",
         "pos": "n",
         "phonetic": "/surge/",
         "score": 3,
@@ -203,7 +203,7 @@
         "en": "surgeon"
     },
     {
-        "zh": "外科手术；诊室；手术室",
+        "zh": "外科手术",
         "pos": "n",
         "phonetic": "/surgery/",
         "score": 3,
@@ -252,7 +252,7 @@
         "en": "survey"
     },
     {
-        "zh": "敏感的；过敏的；易动感情的",
+        "zh": "敏感的",
         "pos": "adj",
         "phonetic": "/susceptible/",
         "score": 3,
@@ -287,21 +287,21 @@
         "en": "suspicion"
     },
     {
-        "zh": "引起怀疑的；可疑的；表示怀疑的",
+        "zh": "引起怀疑的",
         "pos": "adj",
         "phonetic": "/suspicious/",
         "score": 3,
         "en": "suspicious"
     },
     {
-        "zh": "保持；使持续不断；支持",
+        "zh": "保持",
         "pos": "v",
         "phonetic": "/sustain/",
         "score": 3,
         "en": "sustain"
     },
     {
-        "zh": "吞下；咽下；做吞咽动作",
+        "zh": "吞下",
         "pos": "v",
         "phonetic": "/swallow/",
         "score": 3,

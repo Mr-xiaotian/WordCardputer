@@ -1,6 +1,6 @@
 [
     {
-        "zh": "态度；看法；我行我素的作派",
+        "zh": "态度",
         "pos": "n",
         "phonetic": "/attitude/",
         "score": 3,
@@ -42,7 +42,7 @@
         "en": "augment"
     },
     {
-        "zh": "真正的；真迹的；真实的",
+        "zh": "真正的",
         "pos": "adj",
         "phonetic": "/authentic/",
         "score": 3,
@@ -63,7 +63,7 @@
         "en": "automobile"
     },
     {
-        "zh": "可获得的；可找到的；有空的",
+        "zh": "可获得的",
         "pos": "adj",
         "phonetic": "/available/",
         "score": 3,
@@ -77,7 +77,7 @@
         "en": "avenue"
     },
     {
-        "zh": "平均的；普通的；平常的",
+        "zh": "平均的",
         "pos": "adj",
         "phonetic": "/average/",
         "score": 3,
@@ -112,14 +112,14 @@
         "en": "award"
     },
     {
-        "zh": "很坏的；糟糕的；非常多的",
+        "zh": "很坏的",
         "pos": "adj",
         "phonetic": "/awful/",
         "score": 3,
         "en": "awful"
     },
     {
-        "zh": "尴尬的；难对付的；笨拙的",
+        "zh": "尴尬的",
         "pos": "adj",
         "phonetic": "/awkward/",
         "score": 3,
@@ -140,7 +140,7 @@
         "en": "bachelor"
     },
     {
-        "zh": "【喻】支柱；栋梁；主干",
+        "zh": "支柱",
         "pos": "n",
         "phonetic": "/backbone/",
         "score": 3,
@@ -154,7 +154,7 @@
         "en": "background"
     },
     {
-        "zh": "向后的；倒退的；落后的",
+        "zh": "向后的",
         "pos": "adj",
         "phonetic": "/backward/",
         "score": 3,
@@ -182,7 +182,7 @@
         "en": "bakery"
     },
     {
-        "zh": "芭蕾舞；芭蕾舞剧；芭蕾舞团",
+        "zh": "芭蕾舞",
         "pos": "n",
         "phonetic": "/ballet/",
         "score": 3,
@@ -196,7 +196,7 @@
         "en": "balloon"
     },
     {
-        "zh": "无记名投票表决；选票；投票总数",
+        "zh": "无记名投票表决",
         "pos": "n",
         "phonetic": "/ballot/",
         "score": 3,
@@ -252,7 +252,7 @@
         "en": "barely"
     },
     {
-        "zh": "物美价廉的东西；交易；协议",
+        "zh": "物美价廉的东西",
         "pos": "n",
         "phonetic": "/bargain/",
         "score": 3,
@@ -266,7 +266,7 @@
         "en": "barrier"
     },
     {
-        "zh": "进行易货贸易；作物物交换",
+        "zh": "进行易货贸易",
         "pos": "v",
         "phonetic": "/barter/",
         "score": 3,
@@ -294,14 +294,14 @@
         "en": "behalf"
     },
     {
-        "zh": "行为；举止；待人接物的方式",
+        "zh": "行为",
         "pos": "n",
         "phonetic": "/behaviour/",
         "score": 3,
         "en": "behaviour"
     },
     {
-        "zh": "在…的下层；在…底下；低于",
+        "zh": "在下方",
         "pos": "prep",
         "phonetic": "/beneath/",
         "score": 3,
@@ -315,7 +315,7 @@
         "en": "beneficial"
     },
     {
-        "zh": "和善的；无害的；宜人的",
+        "zh": "和善的",
         "pos": "adj",
         "phonetic": "/benign/",
         "score": 3,

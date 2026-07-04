@@ -7,7 +7,7 @@
         "en": "shrink"
     },
     {
-        "zh": "往返航班；梭子；航天飞机",
+        "zh": "往返航班",
         "pos": "n",
         "phonetic": "/shuttle/",
         "score": 3,
@@ -49,7 +49,7 @@
         "en": "simplify"
     },
     {
-        "zh": "模仿；计算机模拟；假装",
+        "zh": "模仿",
         "pos": "v",
         "phonetic": "/simulate/",
         "score": 3,
@@ -63,21 +63,21 @@
         "en": "sin"
     },
     {
-        "zh": "诚挚的；诚恳的；诚实的",
+        "zh": "诚挚的",
         "pos": "adj",
         "phonetic": "/sincere/",
         "score": 3,
         "en": "sincere"
     },
     {
-        "zh": "单数的；非凡的；显著的",
+        "zh": "单数的",
         "pos": "adj",
         "phonetic": "/singular/",
         "score": 3,
         "en": "singular"
     },
     {
-        "zh": "熟练的；有技巧的；技术性的",
+        "zh": "熟练的",
         "pos": "adj",
         "phonetic": "/skilled/",
         "score": 3,
@@ -91,14 +91,14 @@
         "en": "skim"
     },
     {
-        "zh": "略过；跳过；轻快地蹦跳",
+        "zh": "略过",
         "pos": "v",
         "phonetic": "/skip/",
         "score": 3,
         "en": "skip"
     },
     {
-        "zh": "奴隶；完全受…控制的人",
+        "zh": "奴隶",
         "pos": "n",
         "phonetic": "/slave/",
         "score": 3,
@@ -147,7 +147,7 @@
         "en": "slot"
     },
     {
-        "zh": "经济活动减退；减速；降低速度",
+        "zh": "经济活动减退",
         "pos": "n",
         "phonetic": "/slowdown/",
         "score": 3,
@@ -168,14 +168,14 @@
         "en": "sly"
     },
     {
-        "zh": "【医】天花",
+        "zh": "天花",
         "pos": "n",
         "phonetic": "/smallpox/",
         "score": 3,
         "en": "smallpox"
     },
     {
-        "zh": "顺利地；光滑地；平稳地",
+        "zh": "顺利地",
         "pos": "adv",
         "phonetic": "/smoothly/",
         "score": 3,
@@ -189,7 +189,7 @@
         "en": "snack"
     },
     {
-        "zh": "断裂；打开或关上；生气地说",
+        "zh": "断裂",
         "pos": "v",
         "phonetic": "/snap/",
         "score": 3,
@@ -217,14 +217,14 @@
         "en": "soar"
     },
     {
-        "zh": "清醒的；冷静的；严肃的",
+        "zh": "清醒的",
         "pos": "adj",
         "phonetic": "/sober/",
         "score": 3,
         "en": "sober"
     },
     {
-        "zh": "好交际的；友善的；合群的",
+        "zh": "好交际的",
         "pos": "adj",
         "phonetic": "/sociable/",
         "score": 3,
@@ -238,7 +238,7 @@
         "en": "sociology"
     },
     {
-        "zh": "唯一的；仅有的；独占的",
+        "zh": "唯一的",
         "pos": "adj",
         "phonetic": "/sole/",
         "score": 3,
@@ -259,14 +259,14 @@
         "en": "solve"
     },
     {
-        "zh": "以某种方式；不知怎地；不知为何",
+        "zh": "以某种方式",
         "pos": "adv",
         "phonetic": "/somehow/",
         "score": 3,
         "en": "somehow"
     },
     {
-        "zh": "有独立主权的；自主的；有至高无上权力的",
+        "zh": "有独立主权的",
         "pos": "adj",
         "phonetic": "/sovereign/",
         "score": 3,
@@ -336,7 +336,7 @@
         "en": "species"
     },
     {
-        "zh": "精彩的表演；壮观的景象；出人意料的情况",
+        "zh": "精彩的表演",
         "pos": "n",
         "phonetic": "/spectacle/",
         "score": 3,
