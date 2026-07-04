@@ -17,7 +17,8 @@ if (-not $cliCandidates) {
 
 $arduinoCli = $cliCandidates[0]
 $librariesPath = Join-Path -Path $HOME\Documents -ChildPath "Arduino\libraries"
-$fqbn = "esp32:esp32:m5stack_cardputer:FlashSize=8M,PartitionScheme=default_8MB"
+$fqbn = "m5stack:esp32:m5stack_cardputer:FlashSize=8M,PartitionScheme=default_8MB"
+$coreSqliteLibrary = Join-Path $env:LOCALAPPDATA "Arduino15\packages\m5stack\hardware\esp32\3.2.5\libraries\Sqlite3Esp32"
 
 $arguments = @(
     "compile"
@@ -25,8 +26,13 @@ $arguments = @(
     $fqbn
     "--libraries"
     $librariesPath
-    $projectRoot
 )
+
+if (Test-Path $coreSqliteLibrary) {
+    $arguments += @("--library", $coreSqliteLibrary)
+}
+
+$arguments += $projectRoot
 
 & $arduinoCli @arguments
 exit $LASTEXITCODE

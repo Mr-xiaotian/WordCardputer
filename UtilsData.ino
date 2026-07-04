@@ -1,178 +1,482 @@
 /**
  * DataUtils.ino - 数据持久化与词库管理工具
  *
- * 负责从 SD 卡加载/保存 JSON 格式的词库文件，包括：
- * - 词库的读取与解析（支持日语/英语两种格式）
- * - 词库的序列化与写入
- * - 基于熟练度的加权随机抽词算法
- * - 学习进度自动保存机制
- * - 听写错词的导出功能
+ * 负责从 SD 卡上的 SQLite 词库加载/保存学习数据，包括：
+ * - 词库浏览（source / chapter）
+ * - 按当前语言读取词条
+ * - 保存 score 进度
+ * - 基于熟练度的加权随机抽词
+ * - 听写错词导出到数据库
  */
+
+namespace {
 
 /**
- * 从 SD 卡加载 JSON 格式的词库文件
+ * 获取当前语言对应的 SQLite 数据库路径
  *
- * 读取指定路径的 JSON 文件，解析为 Word 结构体数组并存入全局变量 words。
- * 根据 currentLanguage 决定解析日语字段还是英语字段。
- * 每个单词的 score（熟练度）会被限制在 1~5 范围内，默认值为 3。
+ * 由于 SQLite 库通过 VFS 访问 SD 卡文件，这里返回带挂载前缀的路径：
+ * - 日语：`/sd/words_study/jp/jp_words.db`
+ * - 英语：`/sd/words_study/en/en_words.db`
  *
- * @param filepath SD 卡上 JSON 文件的完整路径
- * @return true 加载成功且词库不为空；false 文件不存在、为空、解析失败或无有效单词
+ * @return 当前语言对应的数据库完整路径
  */
-bool loadWordsFromJSON(const String &filepath)
+String currentDbFilePath() {
+    if (currentLanguage == LANG_JP) {
+        return "/sd/words_study/jp/jp_words.db";
+    }
+    return "/sd/words_study/en/en_words.db";
+}
+
+/**
+ * 获取当前语言对应的词表名称
+ *
+ * 日语与英语分表存储，避免字段互相干扰：
+ * - 日语：`jp_words`
+ * - 英语：`en_words`
+ *
+ * @return 当前语言对应的 SQLite 表名
+ */
+const char *currentWordTable() {
+    return (currentLanguage == LANG_JP) ? "jp_words" : "en_words";
+}
+
+/**
+ * 从 SQLite 查询结果中读取文本列
+ *
+ * SQLite 的 `sqlite3_column_text()` 返回 `unsigned char*`，
+ * 且当字段为 NULL 时返回空指针。该函数统一完成空值保护和
+ * `String` 转换，避免各处重复判断。
+ *
+ * @param stmt 已执行到当前行的查询语句
+ * @param col  目标列索引
+ * @return 转换后的文本；若为 NULL 则返回空字符串
+ */
+String sqliteColumnText(sqlite3_stmt *stmt, int col) {
+    const unsigned char *txt = sqlite3_column_text(stmt, col);
+    if (!txt) {
+        return "";
+    }
+    return String(reinterpret_cast<const char *>(txt));
+}
+
+/**
+ * 打开当前语言的词库数据库
+ *
+ * 根据当前语言解析数据库路径，并调用 `sqlite3_open()` 打开 SD 卡上的
+ * SQLite 文件。打开失败时输出错误信息并确保返回空指针。
+ *
+ * @param db 输出参数，成功时写入数据库句柄
+ * @return true 打开成功；false 打开失败
+ */
+bool openVocabularyDb(sqlite3 **db) {
+    *db = nullptr;
+    String dbPath = currentDbFilePath();
+    int rc = sqlite3_open(dbPath.c_str(), db);
+    if (rc != SQLITE_OK) {
+        Serial.printf("无法打开数据库: %s (%s)\n", dbPath.c_str(), *db ? sqlite3_errmsg(*db) : "unknown");
+        if (*db) {
+            sqlite3_close(*db);
+            *db = nullptr;
+        }
+        return false;
+    }
+    return true;
+}
+
+/**
+ * 预编译 SQL 语句
+ *
+ * 对传入的 SQL 字符串执行 `sqlite3_prepare_v2()`，并在失败时打印
+ * 数据库错误信息。该函数只负责 prepare，不负责 bind 与 step。
+ *
+ * @param db   已打开的数据库句柄
+ * @param sql  要预编译的 SQL 语句
+ * @param stmt 输出参数，成功时写入语句句柄
+ * @return true 预编译成功；false 失败
+ */
+bool prepareStatement(sqlite3 *db, const String &sql, sqlite3_stmt **stmt) {
+    *stmt = nullptr;
+    int rc = sqlite3_prepare_v2(db, sql.c_str(), -1, stmt, nullptr);
+    if (rc != SQLITE_OK) {
+        Serial.printf("SQL prepare 失败: %s\n", sqlite3_errmsg(db));
+        return false;
+    }
+    return true;
+}
+
+/**
+ * 执行单列字符串查询并收集结果
+ *
+ * 用于读取 source 列表、chapter 列表等“单列多行”的简单查询。
+ * 若传入 bindValue，则绑定到参数 1。
+ *
+ * @param sql       查询语句，结果集第一列必须是文本
+ * @param bindValue 可选绑定值；为 nullptr 时不绑定
+ * @param items     输出结果数组
+ * @return true 查询成功；false 查询失败
+ */
+bool loadSingleColumnList(
+    const String &sql,
+    const String *bindValue,
+    std::vector<String> &items
+) {
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
+    items.clear();
+
+    if (!openVocabularyDb(&db)) {
+        return false;
+    }
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    if (bindValue) {
+        sqlite3_bind_text(stmt, 1, bindValue->c_str(), -1, SQLITE_TRANSIENT);
+    }
+
+    while (true) {
+        int rc = sqlite3_step(stmt);
+        if (rc == SQLITE_ROW) {
+            items.push_back(sqliteColumnText(stmt, 0));
+            continue;
+        }
+        if (rc != SQLITE_DONE) {
+            Serial.printf("SQL 查询失败: %s\n", sqlite3_errmsg(db));
+            sqlite3_finalize(stmt);
+            sqlite3_close(db);
+            return false;
+        }
+        break;
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return true;
+}
+
+}  // namespace
+
+/**
+ * 从 SQLite 数据库加载指定 source / chapter 的词库
+ *
+ * 根据当前语言选择 `jp_words` 或 `en_words`，并按以下规则取数：
+ * - `source` 必须匹配
+ * - `chapter` 为空时，表示加载整个 source
+ * - `chapter` 非空时，仅加载对应章节
+ *
+ * 加载结果会写入全局 `words`，并把数据库主键保存到 `Word::dbId`，
+ * 后续保存 score 时直接回写该记录。
+ *
+ * @param source  词库来源
+ * @param chapter 章节名；空字符串表示整个来源
+ * @return true 加载成功且非空；false 打开失败、SQL 失败或无有效词条
+ */
+bool loadWordsFromDB(const String &source, const String &chapter)
 {
-    File file = SD.open(filepath);
-    if (!file)
-    {
-        Serial.printf("无法打开文件: %s\n", filepath.c_str());
-        return false;
-    }
-
-    size_t fileSize = file.size();
-    if (fileSize == 0)
-    {
-        Serial.printf("空文件: %s\n", filepath.c_str());
-        file.close();
-        return false;
-    }
-
-    if (fileSize >= 2 * 1024 * 1024)
-    {
-        Serial.printf("文件超过2MB,大小: %d 字节\n", fileSize);
-        file.close();
-        return false;
-    }
-
-    size_t capacity = static_cast<size_t>(fileSize * 1.2) + 1024;
-    DynamicJsonDocument doc(capacity);
-    DeserializationError err = deserializeJson(doc, file);
-    file.close();
-    if (err)
-    {
-        Serial.printf("JSON 解析失败: %s\n", err.c_str());
-        return false;
-    }
-    if (!doc.is<JsonArray>())
-    {
-        Serial.printf("JSON 结构不为数组: %s\n", filepath.c_str());
-        return false;
-    }
-
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
     words.clear();
 
-    for (JsonObject obj : doc.as<JsonArray>())
-    {
-        Word w;
-        w.jp = "";
-        w.zh = "";
-        w.kanji = "";
-        w.en = "";
-        w.pos = "";
-        w.phonetic = "";
-        w.tone = -1;
-        int score = obj["score"] | 3;
-        if (score < 1)
-            score = 1;
-        else if (score > 5)
-            score = 5;
-        w.score = score;
-
-        if (currentLanguage == LANG_JP)
-        {
-            w.jp = obj["jp"] | "";
-            w.zh = obj["zh"] | "";
-            w.kanji = obj["kanji"] | "";
-            w.tone = obj["tone"] | -1;
-            if (w.jp.length() > 0)
-                words.push_back(w);
-        }
-        else if (currentLanguage == LANG_EN)
-        {
-            w.en = obj["en"] | "";
-            w.zh = obj["zh"] | "";
-            w.pos = obj["pos"] | "";
-            w.phonetic = obj["phonetic"] | "";
-            if (w.en.length() > 0)
-                words.push_back(w);
-        }
+    if (!openVocabularyDb(&db)) {
+        return false;
     }
 
+    String sql;
+    if (currentLanguage == LANG_JP) {
+        sql = "SELECT id, jp, zh, kanji, romaji, tone, score "
+              "FROM jp_words "
+              "WHERE source = ?1 AND (?2 = '' OR chapter = ?2) "
+              "ORDER BY id";
+    } else {
+        sql = "SELECT id, en, zh, pos, phonetic, score "
+              "FROM en_words "
+              "WHERE source = ?1 AND (?2 = '' OR chapter = ?2) "
+              "ORDER BY id";
+    }
+
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    sqlite3_bind_text(stmt, 1, source.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(stmt, 2, chapter.c_str(), -1, SQLITE_TRANSIENT);
+
+    while (true) {
+        int rc = sqlite3_step(stmt);
+        if (rc == SQLITE_ROW) {
+            Word w;
+            w.dbId = sqlite3_column_int(stmt, 0);
+            w.jp = "";
+            w.zh = "";
+            w.kanji = "";
+            w.romaji = "";
+            w.en = "";
+            w.pos = "";
+            w.phonetic = "";
+            w.tone = -1;
+            int score = sqlite3_column_int(stmt, currentLanguage == LANG_JP ? 6 : 5);
+            if (score < 1) score = 1;
+            if (score > 5) score = 5;
+            w.score = score;
+
+            if (currentLanguage == LANG_JP) {
+                w.jp = sqliteColumnText(stmt, 1);
+                w.zh = sqliteColumnText(stmt, 2);
+                w.kanji = sqliteColumnText(stmt, 3);
+                w.romaji = sqliteColumnText(stmt, 4);
+                w.tone = sqlite3_column_int(stmt, 5);
+                if (!w.jp.isEmpty()) {
+                    words.push_back(w);
+                }
+            } else {
+                w.en = sqliteColumnText(stmt, 1);
+                w.zh = sqliteColumnText(stmt, 2);
+                w.pos = sqliteColumnText(stmt, 3);
+                w.phonetic = sqliteColumnText(stmt, 4);
+                if (!w.en.isEmpty()) {
+                    words.push_back(w);
+                }
+            }
+            continue;
+        }
+
+        if (rc != SQLITE_DONE) {
+            Serial.printf("SQL 读取词库失败: %s\n", sqlite3_errmsg(db));
+            sqlite3_finalize(stmt);
+            sqlite3_close(db);
+            words.clear();
+            return false;
+        }
+        break;
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
     return !words.empty();
 }
 
 /**
- * 将单词列表保存为 JSON 文件到 SD 卡
+ * 将当前内存中的学习进度回写到数据库
  *
- * 将指定的 Word 列表序列化为 JSON 数组并写入 SD 卡。若目标文件已存在则先删除再写入。
- * 根据 currentLanguage 决定写入日语字段还是英语字段，同时保存 score 熟练度。
- * 输出格式为带缩进的 Pretty JSON，便于人工查看。
+ * 这里只更新 `score`，不改动词条正文。更新依据是 `Word::dbId`，
+ * 因此要求当前 `words` 必须来自数据库加载结果。
+ * 为减少写盘次数，整个更新过程放在一个事务中执行。
  *
- * @param filepath SD 卡上的目标文件路径
- * @param list 要保存的单词列表
- * @return true 写入成功；false 文件无法打开或序列化失败
+ * @return true 保存成功；false 任一记录更新失败
  */
-bool saveListToJSON(const String &filepath, const std::vector<Word> &list)
+bool saveCurrentWordsToDB()
 {
-    if (SD.exists(filepath))
-    {
-        SD.remove(filepath);
+    if (words.empty()) {
+        return true;
     }
-    File file = SD.open(filepath, FILE_WRITE);
-    if (!file)
-    {
-        Serial.printf("无法写入文件: %s\n", filepath.c_str());
+
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
+    if (!openVocabularyDb(&db)) {
         return false;
     }
 
-    size_t totalStringLen = 0;
-    for (auto &w : list)
-    {
-        totalStringLen += w.jp.length();
-        totalStringLen += w.zh.length();
-        totalStringLen += w.kanji.length();
-        totalStringLen += w.en.length();
-        totalStringLen += w.pos.length();
-        totalStringLen += w.phonetic.length();
-    }
-    size_t objectSize = (currentLanguage == LANG_JP) ? JSON_OBJECT_SIZE(5) : JSON_OBJECT_SIZE(5);
-    size_t capacity = JSON_ARRAY_SIZE(list.size()) +
-                      list.size() * objectSize +
-                      totalStringLen +
-                      list.size() * 16 +
-                      256;
-    DynamicJsonDocument doc(capacity);
-    JsonArray arr = doc.to<JsonArray>();
-
-    for (auto &w : list)
-    {
-        JsonObject obj = arr.createNestedObject();
-        if (currentLanguage == LANG_JP)
-        {
-            obj["jp"] = w.jp;
-            obj["zh"] = w.zh;
-            obj["kanji"] = w.kanji;
-            obj["tone"] = w.tone;
-            obj["score"] = w.score;
-        }
-        else
-        {
-            obj["en"] = w.en;
-            obj["zh"] = w.zh;
-            obj["pos"] = w.pos;
-            obj["phonetic"] = w.phonetic;
-            obj["score"] = w.score;
-        }
-    }
-
-    if (serializeJsonPretty(doc, file) == 0)
-    {
-        Serial.println("写入 JSON 失败！");
-        file.close();
+    String sql = String("UPDATE ") + currentWordTable() + " SET score = ?1 WHERE id = ?2";
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
         return false;
     }
 
-    file.close();
-    return true;
+    if (sqlite3_exec(db, "BEGIN IMMEDIATE", nullptr, nullptr, nullptr) != SQLITE_OK) {
+        Serial.printf("开启事务失败: %s\n", sqlite3_errmsg(db));
+        sqlite3_finalize(stmt);
+        sqlite3_close(db);
+        return false;
+    }
+
+    bool ok = true;
+    for (auto &w : words) {
+        sqlite3_reset(stmt);
+        sqlite3_clear_bindings(stmt);
+        sqlite3_bind_int(stmt, 1, w.score);
+        sqlite3_bind_int(stmt, 2, w.dbId);
+        int rc = sqlite3_step(stmt);
+        if (rc != SQLITE_DONE) {
+            Serial.printf("写入 score 失败: %s\n", sqlite3_errmsg(db));
+            ok = false;
+            break;
+        }
+    }
+
+    if (ok) {
+        sqlite3_exec(db, "COMMIT", nullptr, nullptr, nullptr);
+    } else {
+        sqlite3_exec(db, "ROLLBACK", nullptr, nullptr, nullptr);
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return ok;
+}
+
+/**
+ * 将一个词条列表写入数据库指定 source / chapter
+ *
+ * 主要用于错题导出等“生成新词库”的场景：
+ * - 日语写入 `jp_words`
+ * - 英语写入 `en_words`
+ *
+ * 若同一 `(source, chapter, jp/en)` 已存在，则执行 upsert，
+ * 用新值覆盖原有正文和 score。
+ *
+ * @param source  目标来源名
+ * @param chapter 目标章节名
+ * @param list    要写入的词条列表
+ * @return true 写入成功；false 事务或 SQL 执行失败
+ */
+bool saveWordListToDB(const String &source, const String &chapter, const std::vector<Word> &list)
+{
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
+    if (!openVocabularyDb(&db)) {
+        return false;
+    }
+
+    String sql;
+    if (currentLanguage == LANG_JP) {
+        sql = "INSERT INTO jp_words (jp, zh, kanji, romaji, tone, score, source, chapter) "
+              "VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8) "
+              "ON CONFLICT(source, chapter, jp) DO UPDATE SET "
+              "zh = excluded.zh, "
+              "kanji = excluded.kanji, "
+              "romaji = excluded.romaji, "
+              "tone = excluded.tone, "
+              "score = excluded.score";
+    } else {
+        sql = "INSERT INTO en_words (en, zh, pos, phonetic, score, source, chapter) "
+              "VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7) "
+              "ON CONFLICT(source, chapter, en) DO UPDATE SET "
+              "zh = excluded.zh, "
+              "pos = excluded.pos, "
+              "phonetic = excluded.phonetic, "
+              "score = excluded.score";
+    }
+
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    if (sqlite3_exec(db, "BEGIN IMMEDIATE", nullptr, nullptr, nullptr) != SQLITE_OK) {
+        Serial.printf("开启事务失败: %s\n", sqlite3_errmsg(db));
+        sqlite3_finalize(stmt);
+        sqlite3_close(db);
+        return false;
+    }
+
+    bool ok = true;
+    for (auto &w : list) {
+        sqlite3_reset(stmt);
+        sqlite3_clear_bindings(stmt);
+        if (currentLanguage == LANG_JP) {
+            sqlite3_bind_text(stmt, 1, w.jp.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(stmt, 2, w.zh.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(stmt, 3, w.kanji.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(stmt, 4, w.romaji.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_int(stmt, 5, w.tone);
+            sqlite3_bind_int(stmt, 6, w.score);
+            sqlite3_bind_text(stmt, 7, source.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(stmt, 8, chapter.c_str(), -1, SQLITE_TRANSIENT);
+        } else {
+            sqlite3_bind_text(stmt, 1, w.en.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(stmt, 2, w.zh.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(stmt, 3, w.pos.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(stmt, 4, w.phonetic.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_int(stmt, 5, w.score);
+            sqlite3_bind_text(stmt, 6, source.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(stmt, 7, chapter.c_str(), -1, SQLITE_TRANSIENT);
+        }
+
+        int rc = sqlite3_step(stmt);
+        if (rc != SQLITE_DONE) {
+            Serial.printf("插入词条失败: %s\n", sqlite3_errmsg(db));
+            ok = false;
+            break;
+        }
+    }
+
+    if (ok) {
+        sqlite3_exec(db, "COMMIT", nullptr, nullptr, nullptr);
+    } else {
+        sqlite3_exec(db, "ROLLBACK", nullptr, nullptr, nullptr);
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return ok;
+}
+
+/**
+ * 加载当前语言下的所有 source 列表
+ *
+ * 结果按不区分大小写的字母序返回，用于文件选择模式的根层菜单。
+ *
+ * @param items 输出的 source 列表
+ * @return true 查询成功；false 查询失败
+ */
+bool loadSourceList(std::vector<String> &items)
+{
+    String sql = String("SELECT DISTINCT source FROM ") + currentWordTable() +
+                 " ORDER BY source COLLATE NOCASE";
+    return loadSingleColumnList(sql, nullptr, items);
+}
+
+/**
+ * 加载指定 source 下的 chapter 列表
+ *
+ * 仅返回非空 chapter，结果按不区分大小写的字母序排序。
+ * 对于没有章节拆分的 source，该列表会为空。
+ *
+ * @param source 目标来源名
+ * @param items  输出的 chapter 列表
+ * @return true 查询成功；false 查询失败
+ */
+bool loadChapterList(const String &source, std::vector<String> &items)
+{
+    String sql = String("SELECT DISTINCT chapter FROM ") + currentWordTable() +
+                 " WHERE source = ?1 AND chapter <> '' ORDER BY chapter COLLATE NOCASE";
+    return loadSingleColumnList(sql, &source, items);
+}
+
+/**
+ * 判断某个 source 是否存在 chapter 结构
+ *
+ * 用于文件选择模式中决定：
+ * - 直接加载整个 source
+ * - 还是先进入 chapter 子层
+ *
+ * @param source 目标来源名
+ * @return true 至少存在一个非空 chapter；false 不存在或查询失败
+ */
+bool sourceHasChapters(const String &source)
+{
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
+    if (!openVocabularyDb(&db)) {
+        return false;
+    }
+
+    String sql = String("SELECT 1 FROM ") + currentWordTable() +
+                 " WHERE source = ?1 AND chapter <> '' LIMIT 1";
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    sqlite3_bind_text(stmt, 1, source.c_str(), -1, SQLITE_TRANSIENT);
+    int rc = sqlite3_step(stmt);
+    bool hasChapter = (rc == SQLITE_ROW);
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return hasChapter;
 }
 
 /**
@@ -187,7 +491,7 @@ bool saveListToJSON(const String &filepath, const std::vector<Word> &list)
 int pickWeightedRandom()
 {
     if (words.empty())
-        return 0; // 兜底,调用方需要自己判断
+        return 0;
 
     int total = 0;
     for (auto &w : words)
@@ -209,9 +513,8 @@ int pickWeightedRandom()
  * 标记学习进度已变更，达到阈值时触发自动保存
  *
  * 每次调用将 dirtyCount 加 1，当累计变更次数达到 autoSaveThreshold 时，
- * 自动调用 autoSaveIfNeeded() 将进度写入 SD 卡，避免频繁写盘。
+ * 自动调用 autoSaveIfNeeded() 将 score 回写到数据库，避免每次评分都立即写盘。
  */
-// 标记 score 已变更，累计达到阈值时自动保存
 void markScoreDirty() {
     scoresDirty = true;
     dirtyCount++;
@@ -223,14 +526,14 @@ void markScoreDirty() {
 /**
  * 自动保存学习进度（如果有未保存的变更）
  *
- * 检查 scoresDirty 标志，若有未保存的变更且当前词库路径和单词列表有效，
- * 则将整个词库（含最新 score）写回原文件。保存完成后重置脏标记和计数器。
+ * 检查 scoresDirty 标志，若当前已加载词库且存在未保存 score，
+ * 则调用 `saveCurrentWordsToDB()` 批量写回数据库。
+ * 保存完成后重置脏标记和计数器。
  */
-// 如果有未保存的变更，则写入 SD 卡
 void autoSaveIfNeeded() {
-    if (!scoresDirty || selectedFilePath.isEmpty() || words.empty()) return;
+    if (!scoresDirty || selectedSource.isEmpty() || words.empty()) return;
 
-    if (saveListToJSON(selectedFilePath, words)) {
+    if (saveCurrentWordsToDB()) {
         Serial.println("[AutoSave] 进度已自动保存");
     } else {
         Serial.println("[AutoSave] 自动保存失败");
@@ -272,16 +575,23 @@ String listenAudioText(const Word &w)
 }
 
 /**
- * 从文件路径中提取文件名
+ * 从当前词库标签中提取用于显示的名称
  *
- * 查找路径中最后一个"/"字符，返回其后的部分作为文件名。
- * 若路径中不包含"/"则返回整个路径字符串。
+ * 迁移到数据库后，`selectedFilePath` 不再是真实文件路径，而是 UI 标签：
+ * - `source`
+ * - `source/chapter`
  *
- * @param path 完整的文件路径
- * @return 提取出的文件名部分
+ * 这里仍保留原有“取最后一段”的行为，使统计页、Web 面板展示简洁名称。
+ *
+ * @param path 当前词库标签
+ * @return 显示用名称
  */
 String statsFileName(const String &path)
 {
+    if (!path.startsWith("/")) {
+        return path;
+    }
+
     int pos = path.lastIndexOf('/');
     if (pos >= 0 && pos + 1 < (int)path.length())
     {
@@ -364,10 +674,10 @@ void computeStatsFromWords()
 }
 
 /**
- * 设置当前学习语言并更新相关路径
+ * 设置当前学习语言并更新相关状态
  *
- * 根据所选语言设置词库根目录和音频根目录的路径，
- * 同时重置当前目录和已选文件路径，并清空已加载的单词列表。
+ * 根据所选语言设置词库浏览根目录和音频根目录，
+ * 同时重置当前虚拟目录、当前已选 source/chapter，以及已加载的单词列表。
  *
  * @param lang 要设置的语言枚举值（LANG_JP 或 LANG_EN）
  */
@@ -386,24 +696,23 @@ void setLanguage(StudyLanguage lang)
     }
     currentDir = currentWordRoot;
     selectedFilePath = "";
+    selectedSource = "";
+    selectedChapter = "";
     words.clear();
 }
 
 /**
- * 初始化学习模式并加载词库
+ * 初始化学习模式并从数据库加载词库
  *
- * 切换词库前先自动保存上一个词库的学习进度，然后从指定路径加载新词库。
+ * 加载新词库前先自动保存旧词库进度，然后根据当前选中的
+ * `selectedSource` / `selectedChapter` 从数据库读取词条。
  * 加载成功后通过加权随机算法选取第一个单词并绘制闪卡。
- * 加载失败或词库为空时在屏幕上显示错误提示。
- *
- * @param filePath SD 卡上词库 JSON 文件的完整路径
  */
-void startStudyMode(const String &filePath)
+void startStudyMode()
 {
-    // 加载新词库前，先保存旧词库的进度
     autoSaveIfNeeded();
 
-    bool ok = loadWordsFromJSON(filePath);
+    bool ok = loadWordsFromDB(selectedSource, selectedChapter);
     if (!ok)
     {
         drawCenterString(canvas, "词库加载失败", RED, 1.2);
@@ -423,39 +732,35 @@ void startStudyMode(const String &filePath)
 }
 
 /**
- * 将听写错误单词导出为新的词库文件
+ * 将听写错误单词导出为新的数据库词库
  *
- * 从 dictErrors 中提取所有答错的单词，保存到 SD 卡的 Mistake 子文件夹中。
- * 文件名格式为 "原词库名(时间戳).json"，方便用户后续针对错词进行重点复习。
- * 若 Mistake 文件夹不存在则自动创建。
+ * 从 dictErrors 中提取所有答错的单词，并写入当前语言数据库中的：
+ * - source = "Mistake"
+ * - chapter = "<当前词库标签>(时间戳)"
+ *
+ * 这样可以继续沿用现有“错题本”概念，同时不再依赖 JSON 文件导出。
  */
 void saveDictationMistakesAsWordList() {
     if (dictErrors.empty()) return;
 
-    String folder = currentWordRoot + "/Mistake";
-    if (!SD.exists(folder)) {
-        SD.mkdir(folder);
-    }
-
-    // 从当前词库文件名提取名称（去掉 .json 后缀）
     String baseName = selectedFilePath;
-    int slashPos = baseName.lastIndexOf('/');
-    if (slashPos >= 0) baseName = baseName.substring(slashPos + 1);
-    if (baseName.endsWith(".json")) baseName = baseName.substring(0, baseName.length() - 5);
+    if (baseName.isEmpty()) {
+        baseName = "Mistake";
+    }
+    baseName.replace("/", "_");
 
-    // 用词库名 + 时间戳命名，如: word_01(26-03-30_16-28).json
     String timeStr = getNtpTimeString();
-    String filename = folder + "/" + baseName + "(" + timeStr + ").json";
+    String chapter = baseName + "(" + timeStr + ")";
 
-    // 构造纯 Word 列表
     std::vector<Word> mistakeList;
     mistakeList.reserve(dictErrors.size());
     for (auto &e : dictErrors) {
         mistakeList.push_back(words[e.wordIndex]);
     }
 
-    // 调用已有的通用方法
-    saveListToJSON(filename, mistakeList);
-
-    Serial.printf("错词已经另存为词库: %s\n", filename.c_str());
+    if (saveWordListToDB("Mistake", chapter, mistakeList)) {
+        Serial.printf("错词已经另存到数据库: Mistake/%s\n", chapter.c_str());
+    } else {
+        Serial.println("错词保存到数据库失败");
+    }
 }

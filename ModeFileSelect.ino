@@ -2,9 +2,8 @@
  * @file ModeFileSelect.ino
  * @brief 文件选择模式
  *
- * 提供 SD 卡上词库文件的浏览和选择功能。
- * 扫描当前目录下的文件夹和 JSON 文件，以列表菜单形式展示，
- * 支持进入子目录、返回上级目录以及选中 JSON 文件加载词库。
+ * 提供词库数据库中的 source / chapter 浏览和选择功能。
+ * 根层展示 source，进入后展示 chapter；无 chapter 的 source 直接加载。
  */
 
 // --------- 文件选择模式变量 ---------
@@ -13,64 +12,37 @@ int fileIndex = 0;
 int fileScroll = 0;
 
 /**
- * 初始化文件选择模式，扫描 SD 卡目录并构建文件列表
+ * 初始化文件选择模式，从数据库构建 source / chapter 列表
  *
- * 清空文件列表，打开当前目录（若不在词库根目录下则重置为根目录），
- * 遍历目录中的文件夹和 JSON 文件加入列表。
- * 列表按文件夹优先、文件名字母序排列，然后绘制选择界面。
+ * currentDir 用作虚拟目录：
+ * - currentWordRoot：source 列表
+ * - currentWordRoot/<source>：chapter 列表
  */
 void initFileSelectMode()
 {
     files.clear();
     fileIndex = 0;
     fileScroll = 0;
-    selectedFilePath = "";
     if (!currentDir.startsWith(currentWordRoot))
     {
         currentDir = currentWordRoot;
     }
 
-    File dir = SD.open(currentDir);
-    if (!dir) {
-        Serial.printf("无法打开目录: %s\n", currentDir.c_str());
-        return;
+    if (currentDir == currentWordRoot) {
+        if (!loadSourceList(files)) {
+            Serial.println("读取 source 列表失败");
+            return;
+        }
+    } else {
+        String source = currentDir.substring(currentWordRoot.length() + 1);
+        if (!loadChapterList(source, files)) {
+            Serial.println("读取 chapter 列表失败");
+            return;
+        }
+        if (!files.empty()) {
+            files.insert(files.begin(), "全部");
+        }
     }
-
-    while (true)
-    {
-        File entry = dir.openNextFile();
-        if (!entry) break;
-
-        String name = entry.name();
-
-        // 跳过系统项
-        if (name == "." || name == "..") {
-            entry.close();
-            continue;
-        }
-
-        // 文件夹
-        if (entry.isDirectory()) {
-            // 顶层显示文件夹
-            files.push_back(name + "/");
-        }
-        // JSON 文件
-        else if (name.endsWith(".json")) {
-            // 显示本层的 JSON
-            files.push_back(name);
-        }
-
-        entry.close();
-    }
-    dir.close();
-
-    // 排序：文件夹优先
-    std::sort(files.begin(), files.end(), [](const String &a, const String &b) {
-        bool aDir = a.endsWith("/");
-        bool bDir = b.endsWith("/");
-        if (aDir != bDir) return aDir;  // 文件夹排前面
-        return strcmp(a.c_str(), b.c_str()) < 0;
-    });
 
     drawFileSelect();
 }
@@ -78,19 +50,20 @@ void initFileSelectMode()
 /**
  * 绘制文件选择菜单页面
  *
- * 调用通用菜单绘制函数 drawTextMenu，以列表形式展示当前目录下的
- * 文件和文件夹。文件夹名称以"/"结尾显示。若列表为空则显示提示文字。
+ * 调用通用菜单绘制函数 drawTextMenu，以列表形式展示当前层级的
+ * source 或 chapter。该模式不再直接浏览 SD 卡真实文件，而是浏览
+ * 数据库中的逻辑结构。若列表为空则显示提示文字。
  */
 void drawFileSelect()
 {
     drawTextMenu(
         canvas,
-        "选择词库文件",   // 标题
+        "选择词库",       // 标题
         files,           // 项目列表
         fileIndex,       // 当前选中
         fileScroll,      // 当前滚动起点
         visibleLines,    // 一屏行数
-        "没有词库文件"    // 空列表提示（可选）
+        "没有词库数据"    // 空列表提示（可选）
     );
 }
 
@@ -98,17 +71,22 @@ void drawFileSelect()
  * 文件选择模式的主循环函数，处理文件浏览输入
  *
  * 处理以下键盘操作：
- * - 分号键（;）向上移动光标，支持循环滚动
- * - 句号键（.）向下移动光标，支持循环滚动
- * - Enter 键选中当前项：文件夹则进入子目录，JSON 文件则加载词库并进入学习模式
- * - Delete 键返回上级目录（不超过词库根目录）
- * 若文件列表为空则显示"无词库文件"提示。
+ * - 分号键（;）向上移动光标
+ * - 句号键（.）向下移动光标
+ * - Enter 键选中当前项：source 可进入 chapter 或直接加载；chapter 则加载词库
+ * - Delete 键返回 source 根层
+ *
+ * `currentDir` 在这里是“虚拟目录”：
+ * - 根层：`currentWordRoot`
+ * - 子层：`currentWordRoot/<source>`
+ *
+ * `selectedFilePath` 仍保留旧名字，但现在只作为显示标签使用，
+ * 真实加载依据是 `selectedSource` 和 `selectedChapter`。
  */
 void loopFileSelectMode()
 {
-    // 如果没有任何文件,直接显示提示并返回
     if (files.empty()) {
-        drawCenterString(canvas, "无词库文件", RED, 1.2);
+        drawCenterString(canvas, "无词库数据", RED, 1.2);
         delay(200);
         return;
     }
@@ -131,31 +109,39 @@ void loopFileSelectMode()
             }
         }
 
-        // 选择
         if (status.enter)
         {
             String item = files[fileIndex];
 
-            // 文件夹 → 进入该目录
-            if (item.endsWith("/")) {
-                currentDir = currentDir + "/" + item.substring(0, item.length() - 1);
-                initFileSelectMode();
-                return;
+            if (currentDir == currentWordRoot) {
+                if (sourceHasChapters(item)) {
+                    currentDir = currentWordRoot + "/" + item;
+                    initFileSelectMode();
+                    return;
+                }
+
+                selectedSource = item;
+                selectedChapter = "";
+                selectedFilePath = item;
+            } else {
+                selectedSource = currentDir.substring(currentWordRoot.length() + 1);
+                selectedChapter = (item == "全部") ? "" : item;
+                selectedFilePath = selectedSource;
+                if (!selectedChapter.isEmpty()) {
+                    selectedFilePath += "/" + selectedChapter;
+                }
             }
 
-            // JSON 文件 → 加载词库
-            selectedFilePath = currentDir + "/" + item;
             appMode = MODE_STUDY;
-            startStudyMode(selectedFilePath);
+            startStudyMode();
             return;
         }
         
-        // 返回
         if (status.del) {
             if (currentDir != currentWordRoot) {
-                int pos = currentDir.lastIndexOf('/');
-                currentDir = currentDir.substring(0, pos);
+                currentDir = currentWordRoot;
                 initFileSelectMode();
+                return;
             }
         }
 

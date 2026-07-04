@@ -13,6 +13,7 @@
 #include <SD.h>
 #include <WiFi.h>
 #include <ArduinoJson.h>
+#include <sqlite3.h>
 
 #define SD_SPI_SCK_PIN  40
 #define SD_SPI_MISO_PIN 39
@@ -49,11 +50,13 @@ int soundVolume = 192;                       // 扬声器音量（0~255）
 bool wifiConnected = false;                  // WiFi 连接状态
 
 StudyLanguage currentLanguage = LANG_JP;     // 当前学习语言
-String currentWordRoot = "/words_study/jp/word";    // 当前词库根目录
+String currentWordRoot = "/words_study/jp/word";    // 当前词库浏览根（虚拟目录）
 String currentAudioRoot = "/words_study/jp/audio";  // 当前音频根目录
 
-String currentDir = "/words_study/jp/word";  // 文件浏览器当前目录
-String selectedFilePath = "";                // 用户所选词库文件路径
+String currentDir = "/words_study/jp/word";  // 词库浏览当前目录（虚拟目录）
+String selectedFilePath = "";                // 当前词库标签（source 或 source/chapter）
+String selectedSource = "";                  // 当前词库来源
+String selectedChapter = "";                 // 当前词库章节；空表示整个 source
 
 std::vector<String> langItems = {"日语", "英语"};  // 语言选择菜单项
 int langIndex = 0;                           // 语言选择菜单索引
@@ -75,11 +78,21 @@ const uint8_t dimBrightness = 40;         // 降低后的亮度
 int loopDelay = 30;                       // 动态延迟时间
 
 // -------- 数据结构 ----------
-/** 单词数据结构，同时兼容日语和英语词库字段 */
+/**
+ * 单词数据结构，同时兼容日语和英语词库字段
+ *
+ * 运行时统一使用一个内存结构承载两种语言的词条：
+ * - 日语使用 `jp / zh / kanji / romaji / tone / score`
+ * - 英语使用 `en / zh / pos / phonetic / score`
+ *
+ * `dbId` 用于把当前内存中的 score 直接回写到 SQLite 对应记录。
+ */
 struct Word {
+    int dbId;        // 数据库主键
     String jp;       // 日语假名
     String zh;       // 中文释义
     String kanji;    // 日语汉字写法
+    String romaji;   // 日语罗马音
     String en;       // 英语单词
     String pos;      // 词性（英语）
     String phonetic; // 音标（英语）
@@ -137,8 +150,13 @@ void initKeyHelpMode();
 void loopKeyHelpMode();
 
 // --- UtilsData.ino ---
-bool loadWordsFromJSON(const String &path);
-bool saveListToJSON(const String &filepath, const std::vector<Word> &list);
+// 数据层已从 JSON 文件切换为 SQLite；词库选择语义为 source / chapter。
+bool loadWordsFromDB(const String &source, const String &chapter);
+bool saveCurrentWordsToDB();
+bool saveWordListToDB(const String &source, const String &chapter, const std::vector<Word> &list);
+bool loadSourceList(std::vector<String> &items);
+bool loadChapterList(const String &source, std::vector<String> &items);
+bool sourceHasChapters(const String &source);
 void saveDictationMistakesAsWordList();
 void autoSaveIfNeeded();
 void markScoreDirty();
@@ -148,7 +166,7 @@ String listenAudioText(const Word &w);
 String statsFileName(const String &path);
 void computeStatsFromWords();
 void setLanguage(StudyLanguage lang);
-void startStudyMode(const String &filePath);
+void startStudyMode();
 
 // --- UtilsString.ino ---
 void drawAutoFitString(M5Canvas &cv, const String &text,
@@ -215,7 +233,7 @@ extern bool webServerRunning;
  * 1. 初始化随机数种子、M5Cardputer 硬件、串口
  * 2. 初始化音频输出（扬声器）
  * 3. 手动初始化 SPI 总线并挂载 SD 卡
- * 4. 检查词库文件夹是否存在
+ * 4. 初始化 SQLite 并检查词库数据库是否存在
  * 5. 设置屏幕亮度、创建离屏画布
  * 6. 进入语言选择模式
  */
@@ -236,10 +254,14 @@ void setup() {
         while (1) delay(10);
     }
 
-    bool jpExists = SD.exists("/words_study/jp");
-    bool enExists = SD.exists("/words_study/en");
+    // 初始化 SQLite 运行时
+    sqlite3_initialize();
+
+    // 至少保证一种语言的词库数据库存在
+    bool jpExists = SD.exists("/words_study/jp/jp_words.db");
+    bool enExists = SD.exists("/words_study/en/en_words.db");
     if (!jpExists && !enExists) {
-        M5Cardputer.Display.println("未找到词库文件夹");
+        M5Cardputer.Display.println("未找到词库数据库");
         while (1) delay(10);
     }
 

@@ -97,8 +97,8 @@ void loopEscMenuMode() {
 
         if (st.enter) {
             if (escIndex == 0) {
-                // 保存到 JSON
-                if (saveListToJSON(selectedFilePath, words)) {
+                // 保存到数据库
+                if (saveCurrentWordsToDB()) {
                     scoresDirty = false;
                     dirtyCount = 0;
                     drawCenterString(canvas, "保存成功！", GREEN, 1.2);
