@@ -3,14 +3,13 @@
  * @brief ESC 菜单页面
  *
  * 提供应用内全局菜单功能，用户可通过 ESC 键（`）随时呼出。
- * 菜单选项包括：保存进度、学习统计、重新选择词库/语言、
+ * 菜单选项包括：学习统计、重新选择词库/语言、
  * 切换学习/听读/听写模式、查看按键帮助等。
  */
 
 // ========== ESC 菜单页面 ==========
 
 std::vector<String> escItems = {
-    "保存进度",
     "学习统计",
     "重新选择词库",
     "重新选择语言",
@@ -58,11 +57,11 @@ void drawEscMenu() {
  * ESC 菜单模式的主循环函数，处理菜单输入和功能分发
  *
  * 处理以下键盘操作：
- * - ESC 键（`）返回先前模式（自动保存进度）
+ * - ESC 键（`）自动保存后返回先前模式
  * - 分号键（;）向上移动光标，句号键（.）向下移动光标
  * - Enter 键执行选中的菜单项：
- *   0=保存进度  1=学习统计  2=重新选择词库  3=重新选择语言
- *   4=学习模式  5=听读模式  6=听写模式  7=按键帮助  8=WiFi连接
+ *   0=学习统计  1=重新选择词库  2=重新选择语言
+ *   3=学习模式  4=听读模式  5=听写模式  6=按键帮助  7=WiFi连接
  */
 void loopEscMenuMode() {
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
@@ -97,64 +96,49 @@ void loopEscMenuMode() {
 
         if (st.enter) {
             if (escIndex == 0) {
-                // 保存到数据库
-                if (saveCurrentWordsToDB()) {
-                    scoresDirty = false;
-                    dirtyCount = 0;
-                    drawCenterString(canvas, "保存成功！", GREEN, 1.2);
-                    delay(600);
-                } else {
-                    drawCenterString(canvas, "保存失败！", RED, 1.2);
-                    delay(800);
-                }
-                // 保存后仍停留在 ESC 菜单
-                drawEscMenu();
-                return;
-            }
-            else if (escIndex == 1) {
                 appMode = MODE_STATS;
                 initStatsMode();
                 return;
             }
-            else if (escIndex == 2) {
+            else if (escIndex == 1) {
                 // 进入词库选择（先自动保存）
                 autoSaveIfNeeded();
                 appMode = MODE_FILE_SELECT;
                 initFileSelectMode();
                 return;
             }
-            else if (escIndex == 3) {
+            else if (escIndex == 2) {
                 // 重新选择语言（先自动保存）
                 autoSaveIfNeeded();
                 appMode = MODE_LANG_SELECT;
                 initLanguageSelectMode();
                 return;
             }
-            else if (escIndex == 4) {
+            else if (escIndex == 3) {
                 // 进入学习页面
                 appMode = MODE_STUDY;
                 drawStudyWord();
                 return;
             }
-            else if (escIndex == 5) {
+            else if (escIndex == 4) {
                 // 进入听读模式
                 appMode = MODE_LISTEN;
                 initListenMode();
                 return;
             }
-            else if (escIndex == 6) {
+            else if (escIndex == 5) {
                 // 进入听写模式
                 appMode = MODE_DICTATION;
                 initDictationMode();
                 return;
             }
-            else if (escIndex == 7) {
+            else if (escIndex == 6) {
                 // 按键帮助
                 appMode = MODE_KEY_HELP;
                 initKeyHelpMode();
                 return;
             }
-            else if (escIndex == 8) {
+            else if (escIndex == 7) {
                 // WiFi 连接
                 appMode = MODE_WIFI_SCAN;
                 initWiFiScanMode();

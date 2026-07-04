@@ -48,6 +48,10 @@ input[type=file]{display:none}
 input[type=range]{width:100%;height:36px;-webkit-appearance:none;appearance:none;background:transparent;cursor:pointer}
 input[type=range]::-webkit-slider-track{height:6px;background:#2a2a2a;border-radius:3px}
 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;background:#4fc3f7;border-radius:50%;margin-top:-8px}
+.number-group{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0}
+.number-group label{color:#888;font-size:13px}
+.number-group input{width:96px;padding:10px 12px;background:#111;border:1px solid #333;border-radius:6px;color:#e0e0e0;font-size:14px}
+.setting-hint{color:#666;font-size:12px;line-height:1.5}
 .info-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #2a2a2a;font-size:13px}
 .info-label{color:#666}
 .status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
@@ -99,6 +103,21 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
             <label><span>亮度</span><span id="bri-val">--</span></label>
             <input type="range" id="bri-slider" min="10" max="255" oninput="updateSetting('brightness',this.value)">
         </div>
+    </div>
+    <h2>自动保存</h2>
+    <div class="card">
+        <div class="number-group">
+            <label for="auto-save-threshold">自动保存阈值</label>
+            <input
+                type="number"
+                id="auto-save-threshold"
+                min="1"
+                step="1"
+                inputmode="numeric"
+                oninput="updateSetting('autoSaveThreshold',this.value)"
+            >
+        </div>
+        <div class="setting-hint">学习数据累计变更达到该次数后自动写回数据库。</div>
     </div>
     <h2>设备信息</h2>
     <div class="card" id="device-info"><div class="loading">加载中...</div></div>
@@ -290,11 +309,17 @@ async function loadSettings(){
         document.getElementById('vol-val').textContent=d.volume;
         document.getElementById('bri-slider').value=d.brightness;
         document.getElementById('bri-val').textContent=d.brightness;
+        document.getElementById('auto-save-threshold').value=d.autoSaveThreshold||1;
     }catch(e){}
 }
 
 function updateSetting(key,val){
     val=parseInt(val);
+    if(Number.isNaN(val))return;
+    if(key==='autoSaveThreshold'){
+        val=Math.max(1,val);
+        document.getElementById('auto-save-threshold').value=val;
+    }
     if(key==='volume')document.getElementById('vol-val').textContent=val;
     if(key==='brightness')document.getElementById('bri-val').textContent=val;
     clearTimeout(settingsTimer);

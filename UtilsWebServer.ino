@@ -451,6 +451,7 @@ void handleApiSettingsGet() {
     DynamicJsonDocument doc(256);
     doc["volume"] = soundVolume;
     doc["brightness"] = normalBrightness;
+    doc["autoSaveThreshold"] = autoSaveThreshold;
     doc["language"] = (currentLanguage == LANG_JP) ? "jp" : "en";
     doc["loadedFile"] = statsFileName(selectedFilePath);
     doc["loadedVocab"] = selectedFilePath;
@@ -462,9 +463,12 @@ void handleApiSettingsGet() {
 }
 
 /**
- * POST /api/settings — 修改音量或亮度设置
+ * POST /api/settings — 修改设备设置
  *
- * 接受 JSON body，支持 "volume"(0-255) 和 "brightness"(10-255) 字段。
+ * 接受 JSON body，支持：
+ * - "volume"(0-255)
+ * - "brightness"(10-255)
+ * - "autoSaveThreshold"(>=1)
  * 修改后会立即写回 `config.json`。
  */
 void handleApiSettingsPost() {
@@ -487,13 +491,17 @@ void handleApiSettingsPost() {
             M5Cardputer.Display.setBrightness(normalBrightness);
         }
     }
+    if (doc.containsKey("autoSaveThreshold")) {
+        autoSaveThreshold = max(1, doc["autoSaveThreshold"].as<int>());
+    }
     saveAppConfig();
 
     // 返回当前值
-    DynamicJsonDocument res(128);
+    DynamicJsonDocument res(192);
     res["ok"] = true;
     res["volume"] = soundVolume;
     res["brightness"] = (int)normalBrightness;
+    res["autoSaveThreshold"] = autoSaveThreshold;
     String json;
     serializeJson(res, json);
     server.send(200, "application/json", json);
