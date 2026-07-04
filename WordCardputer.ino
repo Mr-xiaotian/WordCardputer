@@ -66,15 +66,15 @@ unsigned long volumeMessageDeadline = 0;  // 音量消息显示截止时间
 // ---------- 自动保存 ----------
 bool scoresDirty = false;                 // 是否有未保存的 score 变更
 int dirtyCount = 0;                       // 累计变更次数
-const int autoSaveThreshold = 5;          // 每 N 次变更自动保存
+int autoSaveThreshold = 5;                // 每 N 次变更自动保存
 
 // ---------- 自动亮度管理 ----------
 bool userAction = false;                  // 标记是否有用户操作
 unsigned long lastActivityTime = 0;       // 上次活动时间
 bool isDimmed = false;                    // 是否已进入省电模式
-const unsigned long idleTimeout = 60000;  // 超过60秒无操作则降低亮度
-const uint8_t normalBrightness = 200;     // 正常亮度
-const uint8_t dimBrightness = 40;         // 降低后的亮度
+unsigned long idleTimeout = 60000;        // 超过60秒无操作则降低亮度
+uint8_t normalBrightness = 200;           // 正常亮度
+uint8_t dimBrightness = 40;               // 降低后的亮度
 int loopDelay = 30;                       // 动态延迟时间
 
 // -------- 数据结构 ----------
@@ -111,6 +111,13 @@ struct DictError
 };
 std::vector<DictError> dictErrors;  // 听写错误列表
 int reviewPos = 0;                  // 当前错误回顾的索引
+
+// ---------- 配置 ----------
+struct WiFiCredential {
+    String ssid;
+    String pass;
+};
+std::vector<WiFiCredential> savedWiFiList;
 
 // ---------- 函数声明（在其他 .ino 中实现） ----------
 
@@ -224,6 +231,11 @@ void drawSimpleTable(
 // --- UtilsAudio.ino ---
 bool adjustVolume(char c);
 
+// --- UtilsConfig.ino ---
+String configFilePath();
+bool saveAppConfig();
+void loadAppConfig();
+
 // --- UtilsWiFi.ino ---
 String getNtpTimeString();
 String rssiIndicator(int rssi);
@@ -259,7 +271,6 @@ void setup() {
 
     // 初始化音频输出
     M5.Speaker.begin();
-    M5.Speaker.setVolume(soundVolume);  // 音量范围 0~255,建议 128~192
 
     // 手动初始化 SPI 与 SD 卡
     SPI.begin(SD_SPI_SCK_PIN, SD_SPI_MISO_PIN, SD_SPI_MOSI_PIN, SD_SPI_CS_PIN);
@@ -278,6 +289,11 @@ void setup() {
         M5Cardputer.Display.println("未找到词库数据库");
         while (1) delay(10);
     }
+
+    // 加载配置并同步语言/音量/亮度
+    loadAppConfig();
+    setLanguage(currentLanguage);
+    M5.Speaker.setVolume(soundVolume);
 
     // 初始化亮度
     M5Cardputer.Display.setBrightness(normalBrightness);

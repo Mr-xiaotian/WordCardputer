@@ -10,47 +10,21 @@
 #include <WiFi.h>
 #include <time.h>
 
-// ---------- WiFi 凭据持久化 ----------
-struct WiFiCredential {
-    String ssid;
-    String pass;
-};
-std::vector<WiFiCredential> savedWiFiList;
-
 /**
  * 从 SD 卡加载已保存的 WiFi 凭据
  *
- * 读取 /words_study/wifi.json，解析 JSON 数组到 savedWiFiList。
- * 文件不存在或解析失败时静默忽略。
+ * 从统一配置文件 `/words_study/config.json` 读取 WiFi 列表。
+ * 同时兼容旧版 `wifi.json` 的迁移逻辑，具体实现由 UtilsConfig.ino 提供。
  */
 void loadSavedWiFiCredentials() {
-    savedWiFiList.clear();
-    File f = SD.open("/words_study/wifi.json");
-    if (!f) return;
-
-    DynamicJsonDocument doc(4096);
-    if (deserializeJson(doc, f) != DeserializationError::Ok) {
-        f.close();
-        return;
-    }
-    f.close();
-
-    JsonArray arr = doc.as<JsonArray>();
-    for (JsonObject obj : arr) {
-        WiFiCredential c;
-        c.ssid = obj["ssid"].as<String>();
-        c.pass = obj["pass"].as<String>();
-        if (c.ssid.length() > 0) {
-            savedWiFiList.push_back(c);
-        }
-    }
+    loadAppConfig();
 }
 
 /**
  * 保存一组 WiFi 凭据到 SD 卡
  *
  * 若同名 SSID 已存在则更新密码，否则追加新条目。
- * 将完整列表序列化写回 /words_study/wifi.json。
+ * 将完整列表序列化写回 /words_study/config.json。
  *
  * @param ssid 网络名称
  * @param pass 密码
@@ -67,20 +41,7 @@ void saveWiFiCredential(const String &ssid, const String &pass) {
     if (!found) {
         savedWiFiList.push_back({ssid, pass});
     }
-
-    SD.remove("/words_study/wifi.json");
-    File f = SD.open("/words_study/wifi.json", FILE_WRITE);
-    if (!f) return;
-
-    DynamicJsonDocument doc(4096);
-    JsonArray arr = doc.to<JsonArray>();
-    for (auto &c : savedWiFiList) {
-        JsonObject obj = arr.createNestedObject();
-        obj["ssid"] = c.ssid;
-        obj["pass"] = c.pass;
-    }
-    serializeJson(doc, f);
-    f.close();
+    saveAppConfig();
 }
 
 /**

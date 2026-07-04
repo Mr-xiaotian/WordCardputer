@@ -35,7 +35,7 @@ void drawLanguageSelect()
  */
 void initLanguageSelectMode()
 {
-    langIndex = 0;
+    langIndex = (currentLanguage == LANG_EN) ? 1 : 0;
     drawLanguageSelect();
 }
 
@@ -84,6 +84,7 @@ void loopLanguageSelectMode()
                 return;
             }
             setLanguage(lang);
+            saveAppConfig();
             appMode = MODE_FILE_SELECT;
             initFileSelectMode();
             return;

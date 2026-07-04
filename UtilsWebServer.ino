@@ -465,6 +465,7 @@ void handleApiSettingsGet() {
  * POST /api/settings — 修改音量或亮度设置
  *
  * 接受 JSON body，支持 "volume"(0-255) 和 "brightness"(10-255) 字段。
+ * 修改后会立即写回 `config.json`。
  */
 void handleApiSettingsPost() {
     sendCorsHeaders();
@@ -480,9 +481,13 @@ void handleApiSettingsPost() {
         M5.Speaker.setVolume(soundVolume);
     }
     if (doc.containsKey("brightness")) {
-        uint8_t b = constrain(doc["brightness"].as<int>(), 10, 255);
-        M5Cardputer.Display.setBrightness(b);
+        normalBrightness = constrain(doc["brightness"].as<int>(), 10, 255);
+        dimBrightness = min(dimBrightness, normalBrightness);
+        if (!isDimmed) {
+            M5Cardputer.Display.setBrightness(normalBrightness);
+        }
     }
+    saveAppConfig();
 
     // 返回当前值
     DynamicJsonDocument res(128);

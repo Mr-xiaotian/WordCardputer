@@ -23,6 +23,7 @@ bool adjustVolume(char c) {
         return false;
     }
     M5.Speaker.setVolume(soundVolume);
+    saveAppConfig();
     volumeMessageDeadline = millis() + 2000;
     return true;
 }
