@@ -9,3 +9,8 @@ logs/
 
 .arduino-cli/
 fallback/
+.pio/
+.piohome/
+.piohome_upload/
+.arduino-build/
+.venv/
