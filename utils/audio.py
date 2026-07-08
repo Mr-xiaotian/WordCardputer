@@ -133,3 +133,8 @@ def trim_leading_silence_in_folder(
             summary["errors"].append({"file": str(wav_file), "error": msg})
 
     return summary
+
+
+if __name__ == "__main__":
+    # trim_leading_silence_in_folder(r"D:\Project\WordCardputer\words_study\en\audio")
+    pass
