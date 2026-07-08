@@ -103,11 +103,13 @@ struct Word {
 std::vector<Word> words;  // 当前加载的词库单词列表
 int wordIndex = 0;        // 当前显示/学习的单词索引
 
-/** 听写错误记录，保存用户输入有误的单词索引及其错误输入 */
+/** 听写错误记录，保存回顾所需索引、数据库主键、错误输入和出错时间 */
 struct DictError
 {
-    int wordIndex;   // 对应 words 列表中的索引
-    String wrong;    // 用户输入的错误答案
+    int wordIndex;    // 对应 words 列表中的索引，用于本轮错误回顾
+    int wordDbId;     // 对应原词表的数据库主键，用于落库
+    String wrong;     // 用户输入的错误答案
+    String createdAt; // 记录错误发生时间
 };
 std::vector<DictError> dictErrors;  // 听写错误列表
 int reviewPos = 0;                  // 当前错误回顾的索引
@@ -166,6 +168,7 @@ bool prepareStatement(sqlite3 *db, const String &sql, sqlite3_stmt **stmt);
 bool loadWordsFromDB(const String &source, const String &chapter);
 bool saveCurrentWordsToDB();
 bool saveWordListToDB(const String &source, const String &chapter, const std::vector<Word> &list);
+bool saveDictationErrorsToDB(const std::vector<DictError> &errors);
 bool loadSourceList(std::vector<String> &items);
 bool loadChapterList(const String &source, std::vector<String> &items);
 bool sourceHasChapters(const String &source);
@@ -178,7 +181,6 @@ bool importJsonFileToDb(const String &jsonPath, const String &source, const Stri
 
 // --- UtilsData.ino ---
 // 运行时词库状态、统计、自动保存与学习流程。
-void saveDictationMistakesAsWordList();
 void autoSaveIfNeeded();
 void markScoreDirty();
 int pickWeightedRandom();

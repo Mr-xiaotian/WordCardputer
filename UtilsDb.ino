@@ -40,6 +40,44 @@ const char *currentWordTable() {
 }
 
 /**
+ * 获取当前语言对应的听写错误表名
+ *
+ * 与词表一样，英语和日语分表保存，避免外键语义互相混淆：
+ * - 日语：`jp_dictation_errors`
+ * - 英语：`en_dictation_errors`
+ *
+ * @return 当前语言对应的听写错误表名
+ */
+const char *currentDictationErrorTable() {
+    return (currentLanguage == LANG_JP) ? "jp_dictation_errors" : "en_dictation_errors";
+}
+
+/**
+ * 确保当前语言对应的听写错误表存在
+ *
+ * 错题本改为“错误事件表”后，表结构不再复用词表字段，只保存：
+ * - `word_id`：原词表主键
+ * - `wrong_text`：用户输入的错误答案
+ * - `created_at`：错误发生时间
+ *
+ * @param db 已打开的数据库句柄
+ * @return true 表存在或创建成功；false 创建失败
+ */
+bool ensureDictationErrorTable(sqlite3 *db) {
+    String sql = String("CREATE TABLE IF NOT EXISTS ") + currentDictationErrorTable() +
+                 " ("
+                 "word_id INTEGER NOT NULL, "
+                 "wrong_text TEXT NOT NULL, "
+                 "created_at TEXT NOT NULL"
+                 ")";
+    if (sqlite3_exec(db, sql.c_str(), nullptr, nullptr, nullptr) != SQLITE_OK) {
+        Serial.printf("创建错题表失败: %s\n", sqlite3_errmsg(db));
+        return false;
+    }
+    return true;
+}
+
+/**
  * 从 SQLite 查询结果中读取文本列
  *
  * SQLite 的 `sqlite3_column_text()` 返回 `unsigned char*`，
@@ -630,6 +668,76 @@ bool saveWordListToDB(const String &source, const String &chapter, const std::ve
         int rc = sqlite3_step(stmt);
         if (rc != SQLITE_DONE) {
             Serial.printf("插入词条失败: %s\n", sqlite3_errmsg(db));
+            ok = false;
+            break;
+        }
+    }
+
+    if (ok) {
+        sqlite3_exec(db, "COMMIT", nullptr, nullptr, nullptr);
+    } else {
+        sqlite3_exec(db, "ROLLBACK", nullptr, nullptr, nullptr);
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return ok;
+}
+
+/**
+ * 批量写入本轮听写错误记录
+ *
+ * 每条记录只保存原词表主键、错误输入和错误时间，不再复制完整词条，
+ * 从而把“错题本”从词库快照改成真正的错误事件日志。
+ *
+ * @param errors 本轮听写中记录下来的错误事件
+ * @return true 全部写入成功；false 事务或 SQL 执行失败
+ */
+bool saveDictationErrorsToDB(const std::vector<DictError> &errors)
+{
+    if (errors.empty()) {
+        return true;
+    }
+
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
+    if (!openVocabularyDb(&db)) {
+        return false;
+    }
+    if (!ensureDictationErrorTable(db)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    String sql = String("INSERT INTO ") + currentDictationErrorTable() +
+                 " (word_id, wrong_text, created_at) VALUES (?1, ?2, ?3)";
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    if (sqlite3_exec(db, "BEGIN IMMEDIATE", nullptr, nullptr, nullptr) != SQLITE_OK) {
+        Serial.printf("开启错题事务失败: %s\n", sqlite3_errmsg(db));
+        sqlite3_finalize(stmt);
+        sqlite3_close(db);
+        return false;
+    }
+
+    bool ok = true;
+    for (const auto &e : errors) {
+        if (e.wordDbId <= 0) {
+            continue;
+        }
+
+        sqlite3_reset(stmt);
+        sqlite3_clear_bindings(stmt);
+        sqlite3_bind_int(stmt, 1, e.wordDbId);
+        sqlite3_bind_text(stmt, 2, e.wrong.c_str(), -1, SQLITE_TRANSIENT);
+        sqlite3_bind_text(stmt, 3, e.createdAt.c_str(), -1, SQLITE_TRANSIENT);
+
+        int rc = sqlite3_step(stmt);
+        if (rc != SQLITE_DONE) {
+            Serial.printf("写入错题记录失败: %s\n", sqlite3_errmsg(db));
             ok = false;
             break;
         }

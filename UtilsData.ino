@@ -263,37 +263,3 @@ void startStudyMode()
         showAnkiSideA = true;
     drawStudyWord();
 }
-
-/**
- * 将听写错误单词导出为新的数据库词库
- *
- * 从 dictErrors 中提取所有答错的单词，并写入当前语言数据库中的：
- * - source = "Mistake"
- * - chapter = "<当前词库标签>(时间戳)"
- *
- * 这样可以继续沿用现有“错题本”概念，同时不再依赖 JSON 文件导出。
- */
-void saveDictationMistakesAsWordList() {
-    if (dictErrors.empty()) return;
-
-    String baseName = selectedFilePath;
-    if (baseName.isEmpty()) {
-        baseName = "Mistake";
-    }
-    baseName.replace("/", "_");
-
-    String timeStr = getNtpTimeString();
-    String chapter = baseName + "(" + timeStr + ")";
-
-    std::vector<Word> mistakeList;
-    mistakeList.reserve(dictErrors.size());
-    for (auto &e : dictErrors) {
-        mistakeList.push_back(words[e.wordIndex]);
-    }
-
-    if (saveWordListToDB("Mistake", chapter, mistakeList)) {
-        Serial.printf("错词已经另存到数据库: Mistake/%s\n", chapter.c_str());
-    } else {
-        Serial.println("错词保存到数据库失败");
-    }
-}

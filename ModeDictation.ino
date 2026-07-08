@@ -321,7 +321,12 @@ void loopDictationMode()
                 else
                 {
                     wrongCount++;
-                    dictErrors.push_back({dictOrder[dictPos], dictEnInput});
+                    dictErrors.push_back({
+                        dictOrder[dictPos],
+                        words[dictOrder[dictPos]].dbId,
+                        dictEnInput,
+                        getNtpTimeString()
+                    });
                 }
             }
         }
@@ -407,7 +412,12 @@ void loopDictationMode()
                 else
                 {
                     wrongCount++;
-                    dictErrors.push_back({dictOrder[dictPos], userAnswer});
+                    dictErrors.push_back({
+                        dictOrder[dictPos],
+                        words[dictOrder[dictPos]].dbId,
+                        userAnswer,
+                        getNtpTimeString()
+                    });
                 }
             }
         }
@@ -418,7 +428,13 @@ void loopDictationMode()
 
             if (dictPos >= (int)dictOrder.size())
             {
-                saveDictationMistakesAsWordList();
+                if (dictErrors.empty()) return;
+
+                if (saveDictationErrorsToDB(dictErrors)) {
+                    Serial.printf("已写入 %d 条听写错误记录\n", dictErrors.size());
+                } else {
+                    Serial.println("听写错误记录写入失败");
+                }
                 dictShowSummary = true;
                 drawDictationSummary();
                 return;
