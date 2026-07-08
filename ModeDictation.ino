@@ -325,7 +325,7 @@ void loopDictationMode()
                 }
             }
         }
-        else
+        else if (currentLanguage == LANG_JP)
         {
             for (auto c : st.word)
             {
