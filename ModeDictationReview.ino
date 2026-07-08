@@ -30,7 +30,7 @@ void drawDictationReviewPage()
     DictationReviewEntry &entry = dictationReviewEntries[dictationReviewIndex];
 
     drawTopLeftString(canvas, dictationReviewTitle, TFT_DARKGREY, 1.0);
-    drawTopRightString(canvas, entry.createdAt, TFT_DARKGREY, 0.8);
+    drawTopRightString(canvas, entry.createdAt, TFT_DARKGREY, 1.0);
 
     canvas.setTextDatum(middle_center);
     canvas.setTextFont(&fonts::efontCN_16);

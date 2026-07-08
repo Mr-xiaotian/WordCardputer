@@ -3,7 +3,7 @@
  * @brief ESC 菜单页面
  *
  * 提供应用内全局菜单功能，用户可通过 ESC 键（`）随时呼出。
- * 菜单选项包括：学习统计、重新选择词库/语言、
+ * 菜单选项包括：学习统计、重新选择词源/语言、
  * 切换学习/听读/听写模式、查看过往错题、查看按键帮助等。
  */
 
@@ -11,7 +11,7 @@
 
 std::vector<String> escItems = {
     "学习统计",
-    "重新选择词库",
+    "重新选择词源",
     "重新选择语言",
     "进入学习模式",
     "进入听读模式",
@@ -61,7 +61,7 @@ void drawEscMenu() {
  * - ESC 键（`）自动保存后返回先前模式
  * - 分号键（;）向上移动光标，句号键（.）向下移动光标
  * - Enter 键执行选中的菜单项：
- *   0=学习统计  1=重新选择词库  2=重新选择语言
+ *   0=学习统计  1=重新选择词源  2=重新选择语言
  *   3=学习模式  4=听读模式  5=听写模式  6=过往错题
  *   7=按键帮助  8=WiFi连接
  */
@@ -106,8 +106,9 @@ void loopEscMenuMode() {
                 return;
             }
             else if (escIndex == 1) {
-                // 进入词库选择（先自动保存）
+                // 回到词源选择页（先自动保存）
                 autoSaveIfNeeded();
+                currentDir = currentWordRoot;
                 appMode = MODE_FILE_SELECT;
                 initFileSelectMode();
                 return;

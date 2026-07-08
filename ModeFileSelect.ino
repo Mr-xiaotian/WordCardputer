@@ -39,9 +39,6 @@ void initFileSelectMode()
             Serial.println("读取 chapter 列表失败");
             return;
         }
-        if (!files.empty()) {
-            files.insert(files.begin(), "全部");
-        }
     }
 
     drawFileSelect();
@@ -52,13 +49,15 @@ void initFileSelectMode()
  *
  * 调用通用菜单绘制函数 drawTextMenu，以列表形式展示当前层级的
  * source 或 chapter。该模式不再直接浏览 SD 卡真实文件，而是浏览
- * 数据库中的逻辑结构。若列表为空则显示提示文字。
+ * 数据库中的逻辑结构。根层标题显示“选择词源”，chapter 层显示
+ * “选择章节”。若列表为空则显示提示文字。
  */
 void drawFileSelect()
 {
+    String title = (currentDir == currentWordRoot) ? "选择词源" : "选择章节";
     drawTextMenu(
         canvas,
-        "选择词库",       // 标题
+        title,           // 标题
         files,           // 项目列表
         fileIndex,       // 当前选中
         fileScroll,      // 当前滚动起点
@@ -125,7 +124,7 @@ void loopFileSelectMode()
                 selectedFilePath = item;
             } else {
                 selectedSource = currentDir.substring(currentWordRoot.length() + 1);
-                selectedChapter = (item == "全部") ? "" : item;
+                selectedChapter = item;
                 selectedFilePath = selectedSource;
                 if (!selectedChapter.isEmpty()) {
                     selectedFilePath += "/" + selectedChapter;

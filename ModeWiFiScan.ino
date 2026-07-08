@@ -91,7 +91,7 @@ void drawPasswordOverlay() {
     canvas.setTextDatum(bottom_center);
     canvas.setTextColor(TFT_DARKGREY);
     canvas.setTextSize(1.0);
-    canvas.drawString("Enter 连接    ` 返回", canvas.width() / 2, canvas.height() - 4);
+    canvas.drawString("Enter 连接    Esc 返回", canvas.width() / 2, canvas.height() - 4);
 
     canvas.pushSprite(0, 0);
 }
@@ -128,7 +128,7 @@ void drawWiFiStatusPage() {
     canvas.setTextDatum(bottom_center);
     canvas.setTextColor(TFT_DARKGREY);
     canvas.setTextSize(1.0);
-    canvas.drawString("2/2", canvas.width() / 2, canvas.height() - 6);
+    // canvas.drawString("2/2", canvas.width() / 2, canvas.height() - 6);
 
     canvas.pushSprite(0, 0);
 }
