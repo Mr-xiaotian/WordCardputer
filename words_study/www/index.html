@@ -48,10 +48,6 @@ input[type=file]{display:none}
 input[type=range]{width:100%;height:36px;-webkit-appearance:none;appearance:none;background:transparent;cursor:pointer}
 input[type=range]::-webkit-slider-track{height:6px;background:#2a2a2a;border-radius:3px}
 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;background:#4fc3f7;border-radius:50%;margin-top:-8px}
-.number-group{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0}
-.number-group label{color:#888;font-size:13px}
-.number-group input{width:96px;padding:10px 12px;background:#111;border:1px solid #333;border-radius:6px;color:#e0e0e0;font-size:14px}
-.setting-hint{color:#666;font-size:12px;line-height:1.5}
 .info-row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #2a2a2a;font-size:13px}
 .info-label{color:#666}
 .status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
@@ -72,14 +68,14 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 <body>
 
 <nav>
-    <button class="active" onclick="switchTab('files')">词库管理</button>
+    <button class="active" onclick="switchTab('files')">文件管理</button>
     <button onclick="switchTab('stats')">学习统计</button>
     <button onclick="switchTab('settings')">设备设置</button>
 </nav>
 
 <section id="tab-files" class="active">
     <div class="toolbar">
-        <button class="btn btn-primary" onclick="document.getElementById('upload-input').click()">导入 JSON</button>
+        <button class="btn btn-primary" onclick="document.getElementById('upload-input').click()">上传文件</button>
         <input type="file" id="upload-input" accept=".json" multiple onchange="uploadFiles(this.files)">
         <button class="btn btn-ghost" onclick="loadFiles()">刷新</button>
     </div>
@@ -104,21 +100,6 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
             <input type="range" id="bri-slider" min="10" max="255" oninput="updateSetting('brightness',this.value)">
         </div>
     </div>
-    <h2>自动保存</h2>
-    <div class="card">
-        <div class="number-group">
-            <label for="auto-save-threshold">自动保存阈值</label>
-            <input
-                type="number"
-                id="auto-save-threshold"
-                min="1"
-                step="1"
-                inputmode="numeric"
-                oninput="updateSetting('autoSaveThreshold',this.value)"
-            >
-        </div>
-        <div class="setting-hint">学习数据累计变更达到该次数后自动写回数据库。</div>
-    </div>
     <h2>设备信息</h2>
     <div class="card" id="device-info"><div class="loading">加载中...</div></div>
 </section>
@@ -127,14 +108,12 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;heigh
 
 <script>
 let currentPath='';
-let currentRoot='';
-let currentLanguage='jp';
 let settingsTimer=null;
 
 function switchTab(name){
     document.querySelectorAll('nav button').forEach((b,i)=>{
         b.classList.toggle('active',b.textContent.includes(
-            name==='files'?'词库':name==='stats'?'统计':'设置'
+            name==='files'?'文件':name==='stats'?'统计':'设置'
         ));
     });
     document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
@@ -172,29 +151,26 @@ async function loadFiles(path){
         const url=currentPath?`/api/files?path=${encodeURIComponent(currentPath)}`:'/api/files';
         const r=await fetch(url);const d=await r.json();
         currentPath=d.path;
-        currentRoot=d.root||'';
-        currentLanguage=d.language||'jp';
-        renderBreadcrumb(d.path,d.root,d.language);
+        renderBreadcrumb(d.path);
         if(!d.items||d.items.length===0){
-            el.innerHTML=`<div class="empty">${d.path===d.root?'暂无词库':'暂无章节'}</div>`;return;
+            el.innerHTML='<div class="empty">此目录为空</div>';return;
         }
+        // sort: dirs first, then alpha
         d.items.sort((a,b)=>{
             if(a.isDir!==b.isDir)return a.isDir?-1:1;
             return a.name.localeCompare(b.name);
         });
         el.innerHTML=d.items.map(it=>{
-            const icon=it.kind==='source'?(it.isDir?'SRC':'DB'):'CH';
-            const meta=it.kind==='source'
-                ?(it.chapterCount>0?`${it.chapterCount} 章 · ${it.wordCount} 词`:`${it.wordCount} 词`)
-                :`${it.wordCount} 词`;
-            const delBtn=`<button class="btn btn-sm btn-danger" onclick="event.stopPropagation();deleteFile('${escape(d.path+'/'+it.name)}','${escape(it.kind||'item')}')">删除</button>`;
-            const dlBtn=`<button class="btn btn-sm btn-ghost" onclick="event.stopPropagation();downloadFile('${escape(d.path+'/'+it.name)}','${escape(it.name)}')">导出</button>`;
+            const icon=it.isDir?'📁':'📄';
+            const size=it.isDir?'':formatSize(it.size);
+            const delBtn=it.isDir?'':`<button class="btn btn-sm btn-danger" onclick="event.stopPropagation();deleteFile('${escape(d.path+'/'+it.name)}')">删除</button>`;
+            const dlBtn=it.isDir?'':`<button class="btn btn-sm btn-ghost" onclick="event.stopPropagation();downloadFile('${escape(d.path+'/'+it.name)}','${escape(it.name)}')">下载</button>`;
             const click=it.isDir?`onclick="loadFiles('${escape(d.path+'/'+it.name)}')"`
                 :'';
             return `<div class="file-item" ${click}>
                 <span class="file-icon">${icon}</span>
                 <span class="file-name">${esc(it.name)}</span>
-                <span class="file-size">${meta}</span>
+                <span class="file-size">${size}</span>
                 <div class="file-actions">${dlBtn}${delBtn}</div>
             </div>`;
         }).join('');
@@ -203,15 +179,11 @@ async function loadFiles(path){
     }
 }
 
-function renderBreadcrumb(path,root,language){
+function renderBreadcrumb(path){
     const el=document.getElementById('breadcrumb');
-    const realRoot=root||currentRoot||path;
-    const label=(language||currentLanguage)==='en'?'英语词库':'日语词库';
-    const parts=path.startsWith(realRoot)
-        ?path.substring(realRoot.length()).split('/').filter(Boolean)
-        :[];
-    let html=`<span onclick="loadFiles('${escape(realRoot)}')">${label}</span>`;
-    let acc=realRoot;
+    const parts=path.replace(/^\/words_study\/?/,'').split('/').filter(Boolean);
+    let html='<span onclick="loadFiles(\'/words_study\')">words_study</span>';
+    let acc='/words_study';
     parts.forEach((p,i)=>{
         acc+='/'+p;
         html+=' / ';
@@ -225,28 +197,21 @@ async function uploadFiles(fileList){
     for(const file of fileList){
         const fd=new FormData();fd.append('file',file);
         try{
-            const r=await fetch(`/api/files/upload?path=${encodeURIComponent(currentPath||currentRoot)}`,{method:'POST',body:fd});
-            const d=await r.json();
-            if(!r.ok||d.ok===false)throw new Error(d.error||'上传失败');
-            const label=d.chapter?`${d.source}/${d.chapter}`:d.source;
-            toast(`${label} 导入 ${d.imported||0} 条`);
-        }catch(e){toast(e.message||'导入失败');}
+            await fetch(`/api/files/upload?path=${encodeURIComponent(currentPath)}`,{method:'POST',body:fd});
+            toast(file.name+' 上传成功');
+        }catch(e){toast('上传失败');}
     }
     document.getElementById('upload-input').value='';
     loadFiles();
 }
 
-function deleteFile(path,kind){
+function deleteFile(path){
     path=unescape(path);
-    kind=unescape(kind||'item');
     const name=path.split('/').pop();
-    const label=kind==='source'?'整个词库':'该词库项';
-    confirm(`确定删除 ${esc(name)} 及其${label}数据？`,async()=>{
+    confirm(`确定删除 ${esc(name)} ?`,async()=>{
         try{
-            const r=await fetch(`/api/files?path=${encodeURIComponent(path)}`,{method:'DELETE'});
-            const d=await r.json();
-            if(!r.ok||d.ok===false)throw new Error(d.error||'删除失败');
-            toast(`已删除 ${d.deleted||0} 条记录`);loadFiles();
+            await fetch(`/api/files?path=${encodeURIComponent(path)}`,{method:'DELETE'});
+            toast('已删除');loadFiles();
         }catch(e){toast('删除失败');}
     });
 }
@@ -271,9 +236,8 @@ async function loadStats(){
             ov.innerHTML='<div class="empty">请先在设备上加载词库</div>';return;
         }
         const lvl=levelClass(d.avg);
-        const vocab=d.label||d.file||'';
         ov.innerHTML=`
-            <div class="stat-row"><span class="stat-label">词库</span><span class="stat-value">${esc(vocab)}</span></div>
+            <div class="stat-row"><span class="stat-label">词库</span><span class="stat-value">${esc(d.file)}</span></div>
             <div class="stat-row"><span class="stat-label">总数</span><span class="stat-value">${d.total}</span></div>
             <div class="stat-row"><span class="stat-label">平均分</span><span class="stat-value">${d.avg}</span></div>
             <div class="stat-row"><span class="stat-label">中位数</span><span class="stat-value">${d.median}</span></div>
@@ -309,17 +273,11 @@ async function loadSettings(){
         document.getElementById('vol-val').textContent=d.volume;
         document.getElementById('bri-slider').value=d.brightness;
         document.getElementById('bri-val').textContent=d.brightness;
-        document.getElementById('auto-save-threshold').value=d.autoSaveThreshold||1;
     }catch(e){}
 }
 
 function updateSetting(key,val){
     val=parseInt(val);
-    if(Number.isNaN(val))return;
-    if(key==='autoSaveThreshold'){
-        val=Math.max(1,val);
-        document.getElementById('auto-save-threshold').value=val;
-    }
     if(key==='volume')document.getElementById('vol-val').textContent=val;
     if(key==='brightness')document.getElementById('bri-val').textContent=val;
     clearTimeout(settingsTimer);

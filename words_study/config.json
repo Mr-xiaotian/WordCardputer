@@ -1,17 +1,1 @@
-﻿{
-  "version": 1,
-  "settings": {
-    "volume": 192,
-    "language": "jp",
-    "brightness": 200,
-    "dim_brightness": 40,
-    "idle_timeout_ms": 60000,
-    "auto_save_threshold": 5
-  },
-  "wifi": [
-    {
-      "ssid": "Elysium",
-      "pass": "xiaotiandaren"
-    }
-  ]
-}
+{"version":1,"settings":{"volume":202,"language":"en","brightness":200,"dim_brightness":40,"idle_timeout_ms":60000,"auto_save_threshold":5},"wifi":[{"ssid":"Elysium","pass":"xiaotiandaren"}]}
