@@ -25,9 +25,6 @@ int wrongCount = 0;
 bool dictShowSummary = false;
 bool useKatakana = false;
 
-// 错误回顾
-bool dictInReview = false; // 是否正在错误回顾
-
 /**
  * 初始化听写模式
  *
@@ -67,7 +64,6 @@ void initDictationMode()
 
     dictErrors.clear();
     dictShowSummary = false;
-    dictInReview = false;
 
     drawDictationInput();
     playAudioForWord(dictationPromptText(words[dictOrder[dictPos]]));
@@ -152,58 +148,11 @@ void drawDictationSummary()
 }
 
 /**
- * 绘制错误回顾页面
- *
- * 显示当前错误记录的正确答案（绿色）和用户的错误答案（红色），
- * 底部显示当前页码。若无错误记录则显示"没有错误记录"提示。
- * 支持左右翻页浏览所有错误，以及 Fn 键重播当前单词语音。
- */
-void drawDictationReviewPage()
-{
-    canvas.fillSprite(BLACK);
-
-    if (dictErrors.empty())
-    {
-        drawCenterString(canvas, "没有错误记录", TFT_DARKGREY, 1.2);
-        return;
-    }
-
-    DictError &e = dictErrors[reviewPos];
-    Word &w = words[e.wordIndex];
-
-    // 标题
-    canvas.setTextFont(&fonts::efontCN_16);
-    drawTopLeftString(canvas, "错误回顾", TFT_DARKGREY, 1.0);
-
-
-    // 正确答案
-    canvas.setTextFont(&fonts::efontCN_16);
-    canvas.setTextDatum(middle_center);
-    canvas.setTextColor(GREEN);
-    drawAutoFitString(canvas, dictationPromptText(w), canvas.width() / 2, canvas.height() / 2 - 25, 2.0);
-
-    // 你的答案
-    canvas.setTextColor(RED);
-    drawAutoFitString(canvas, e.wrong, canvas.width() / 2, canvas.height() / 2 + 20, 2.0);
-
-    // 页码
-    canvas.setTextDatum(bottom_center);
-    canvas.setTextSize(1.0);
-    canvas.setTextColor(TFT_DARKGREY);
-    canvas.drawString(
-        String(reviewPos + 1) + "/" + String(dictErrors.size()),
-        canvas.width() / 2, canvas.height() - 10);
-
-    canvas.pushSprite(0, 0);
-}
-
-/**
  * 听写模式的主循环函数
  *
  * 处理听写模式中的所有键盘输入和状态转换，包括：
  * - ESC 键（`）返回菜单
- * - 总结界面的 Enter 键进入错误回顾或返回菜单
- * - 错误回顾模式下的翻页（,/.）和重播（Fn）
+ * - 总结界面的 Enter 键进入独立错误回顾页或返回菜单
  * - 英语模式的字符输入、删除和答案提交
  * - 日语模式的罗马音输入、促音检测、假名候选、Shift 切换片假名
  * - Enter 键提交答案并判定正误，自动切换到下一个单词
@@ -241,48 +190,13 @@ void loopDictationMode()
                 }
                 else
                 {
-                    // 有错误 → 进入回顾模式
+                    // 有错误 → 进入独立回顾页面
                     dictShowSummary = false;
-                    dictInReview = true;
-                    reviewPos = 0;
-                    drawDictationReviewPage();
+                    appMode = MODE_DICTATION_REVIEW;
+                    initDictationReviewFromSession();
                 }
             }
             return;
-        }
-
-        // ========== 错误回顾模式 ==========
-        if (dictInReview)
-        {
-            // 左翻页
-            for (auto c : st.word)
-            {
-                if (c == ',')
-                {
-                    reviewPos = (reviewPos - 1 + dictErrors.size()) % dictErrors.size();
-                    drawDictationReviewPage();
-                }
-            }
-
-            // 右翻页
-            for (auto c : st.word)
-            {
-                if (c == '/')
-                {
-                    reviewPos = (reviewPos + 1) % dictErrors.size();
-                    drawDictationReviewPage();
-                }
-            }
-
-            // -------- Fn 键：重复播放当前单词音频 --------
-            if (st.fn)
-            {
-                DictError &e = dictErrors[reviewPos];
-                Word &w = words[e.wordIndex];
-                playAudioForWord(dictationPromptText(w));
-            }
-
-            return; // 防止进入正常输入逻辑
         }
 
         // -------- 字符输入（字母、确认键等）--------

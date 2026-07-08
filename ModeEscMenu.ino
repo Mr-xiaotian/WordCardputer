@@ -4,7 +4,7 @@
  *
  * 提供应用内全局菜单功能，用户可通过 ESC 键（`）随时呼出。
  * 菜单选项包括：学习统计、重新选择词库/语言、
- * 切换学习/听读/听写模式、查看按键帮助等。
+ * 切换学习/听读/听写模式、查看过往错题、查看按键帮助等。
  */
 
 // ========== ESC 菜单页面 ==========
@@ -16,6 +16,7 @@ std::vector<String> escItems = {
     "进入学习模式",
     "进入听读模式",
     "进入听写模式",
+    "查看过往错题",
     "按键帮助",
     "WiFi 连接",
 };
@@ -61,7 +62,8 @@ void drawEscMenu() {
  * - 分号键（;）向上移动光标，句号键（.）向下移动光标
  * - Enter 键执行选中的菜单项：
  *   0=学习统计  1=重新选择词库  2=重新选择语言
- *   3=学习模式  4=听读模式  5=听写模式  6=按键帮助  7=WiFi连接
+ *   3=学习模式  4=听读模式  5=听写模式  6=过往错题
+ *   7=按键帮助  8=WiFi连接
  */
 void loopEscMenuMode() {
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
@@ -80,6 +82,9 @@ void loopEscMenuMode() {
                 }
                 else if (previousMode == MODE_DICTATION) {
                     initDictationMode();
+                }
+                else if (previousMode == MODE_DICTATION_REVIEW) {
+                    drawDictationReviewPage();
                 }
                 return;
             }
@@ -133,12 +138,18 @@ void loopEscMenuMode() {
                 return;
             }
             else if (escIndex == 6) {
+                // 查看历史错题
+                appMode = MODE_DICTATION_REVIEW;
+                initDictationReviewHistoryMode();
+                return;
+            }
+            else if (escIndex == 7) {
                 // 按键帮助
                 appMode = MODE_KEY_HELP;
                 initKeyHelpMode();
                 return;
             }
-            else if (escIndex == 7) {
+            else if (escIndex == 8) {
                 // WiFi 连接
                 appMode = MODE_WIFI_SCAN;
                 initWiFiScanMode();

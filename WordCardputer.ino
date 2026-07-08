@@ -28,6 +28,7 @@ enum AppMode {
     MODE_STUDY,        // 学习模式
     MODE_ESC_MENU,     // ESC 菜单模式
     MODE_DICTATION,    // 听写模式
+    MODE_DICTATION_REVIEW, // 听写错误回顾模式
     MODE_LISTEN,       // 听读模式
     MODE_STATS,        // 学习统计模式
     MODE_WIFI_SCAN,    // WiFi 扫描连接模式
@@ -114,6 +115,18 @@ struct DictError
 std::vector<DictError> dictErrors;  // 听写错误列表
 int reviewPos = 0;                  // 当前错误回顾的索引
 
+/** 错误回顾页面条目，既可来自本轮听写，也可来自数据库历史记录 */
+struct DictationReviewEntry
+{
+    int wordDbId;      // 对应原词表主键，供后续扩展或定位
+    String correct;    // 正确答案
+    String wrong;      // 错误输入
+    String createdAt;  // 错误时间
+};
+std::vector<DictationReviewEntry> dictationReviewEntries;
+int dictationReviewIndex = 0;
+String dictationReviewTitle = "错误回顾";
+
 // ---------- 配置 ----------
 struct WiFiCredential {
     String ssid;
@@ -137,6 +150,12 @@ void loopEscMenuMode();
 // --- ModeDictation.ino ---
 void initDictationMode();
 void loopDictationMode();
+
+// --- ModeDictationReview.ino ---
+void drawDictationReviewPage();
+void initDictationReviewFromSession();
+void initDictationReviewHistoryMode();
+void loopDictationReviewMode();
 
 // --- ModeListen.ino ---
 void initListenMode();
@@ -169,6 +188,7 @@ bool loadWordsFromDB(const String &source, const String &chapter);
 bool saveCurrentWordsToDB();
 bool saveWordListToDB(const String &source, const String &chapter, const std::vector<Word> &list);
 bool saveDictationErrorsToDB(const std::vector<DictError> &errors);
+bool loadDictationReviewEntriesFromDB(std::vector<DictationReviewEntry> &items);
 bool loadSourceList(std::vector<String> &items);
 bool loadChapterList(const String &source, std::vector<String> &items);
 bool sourceHasChapters(const String &source);
@@ -333,6 +353,8 @@ void loop() {
         loopEscMenuMode();
     } else if (appMode == MODE_DICTATION) {
         loopDictationMode();
+    } else if (appMode == MODE_DICTATION_REVIEW) {
+        loopDictationReviewMode();
     } else if (appMode == MODE_LISTEN) {  
         loopListenMode();
     } else if (appMode == MODE_STATS) {

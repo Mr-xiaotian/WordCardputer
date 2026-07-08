@@ -755,6 +755,69 @@ bool saveDictationErrorsToDB(const std::vector<DictError> &errors)
 }
 
 /**
+ * 加载当前语言下的历史听写错误记录
+ *
+ * 结果按写入顺序倒序返回，最新记录在前。查询时会把错误表与原词表按
+ * `word_id` 关联，从而取出用于展示和重播的正确答案。
+ *
+ * @param items 输出的回顾条目列表
+ * @return true 查询成功；false 查询失败
+ */
+bool loadDictationReviewEntriesFromDB(std::vector<DictationReviewEntry> &items)
+{
+    items.clear();
+
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
+    if (!openVocabularyDb(&db)) {
+        return false;
+    }
+    if (!ensureDictationErrorTable(db)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    String correctColumn = (currentLanguage == LANG_JP) ? "w.jp" : "w.en";
+    String sql = String("SELECT e.word_id, e.wrong_text, e.created_at, ") +
+                 correctColumn +
+                 " FROM " + currentDictationErrorTable() + " e "
+                 "LEFT JOIN " + currentWordTable() + " w ON w.id = e.word_id "
+                 "ORDER BY e.rowid DESC";
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    while (true) {
+        int rc = sqlite3_step(stmt);
+        if (rc == SQLITE_ROW) {
+            DictationReviewEntry item;
+            item.wordDbId = sqlite3_column_int(stmt, 0);
+            item.wrong = sqliteColumnText(stmt, 1);
+            item.createdAt = sqliteColumnText(stmt, 2);
+            item.correct = sqliteColumnText(stmt, 3);
+            if (item.correct.isEmpty()) {
+                item.correct = "(原词已删除)";
+            }
+            items.push_back(item);
+            continue;
+        }
+        if (rc != SQLITE_DONE) {
+            Serial.printf("加载历史错题失败: %s\n", sqlite3_errmsg(db));
+            sqlite3_finalize(stmt);
+            sqlite3_close(db);
+            items.clear();
+            return false;
+        }
+        break;
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return true;
+}
+
+/**
  * 加载当前语言下的所有 source 列表
  *
  * 结果按不区分大小写的字母序返回，用于文件选择模式的根层菜单。
