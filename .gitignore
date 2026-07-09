@@ -14,3 +14,5 @@ fallback/
 .piohome_upload/
 .arduino-build/
 .venv/
+reports/
+old_data/
