@@ -179,8 +179,9 @@ void loopKeyHelpMode();
 
 // --- UtilsDb.ino ---
 // SQLite 访问、词库浏览、导入导出辅助。
-String currentDbFilePath();
 const char *currentWordTable();
+const char *currentSourceTable();
+const char *currentDictationErrorTable();
 String sqliteColumnText(sqlite3_stmt *stmt, int col);
 bool openVocabularyDb(sqlite3 **db);
 bool prepareStatement(sqlite3 *db, const String &sql, sqlite3_stmt **stmt);
@@ -193,7 +194,6 @@ bool loadSourceList(std::vector<String> &items);
 bool loadChapterList(const String &source, std::vector<String> &items);
 bool sourceHasChapters(const String &source);
 int normalizeScoreValue(int score);
-String fileStem(const String &filename);
 bool isValidVocabPath(const String &path);
 bool parseVocabPath(const String &path, bool &isRoot, String &source, String &chapter);
 bool deriveUploadTarget(const String &path, const String &filename, String &source, String &chapter);
@@ -205,7 +205,6 @@ void autoSaveIfNeeded();
 void markScoreDirty();
 int pickWeightedRandom();
 String dictationPromptText(const Word &w);
-String listenAudioText(const Word &w);
 String statsFileName(const String &path);
 void computeStatsFromWords();
 void setLanguage(StudyLanguage lang);
@@ -254,7 +253,6 @@ void drawSimpleTable(
 bool adjustVolume(char c);
 
 // --- UtilsConfig.ino ---
-String configFilePath();
 bool saveAppConfig();
 void loadAppConfig();
 
@@ -263,7 +261,6 @@ String getNtpTimeString();
 String rssiIndicator(int rssi);
 void processWiFiScanResults(int count);
 void attemptWiFiConnect();
-void loadSavedWiFiCredentials();
 void saveWiFiCredential(const String &ssid, const String &pass);
 String findSavedPassword(const String &ssid);
 

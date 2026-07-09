@@ -11,14 +11,7 @@
  * 同时兼容旧版 `/words_study/wifi.json`，首次读取时会自动迁移。
  */
 
-/**
- * 获取配置文件路径
- *
- * @return `/words_study/config.json`
- */
-String configFilePath() {
-    return "/words_study/config.json";
-}
+static const char *kConfigFilePath = "/words_study/config.json";
 
 /**
  * 从 JSON 数组读取 WiFi 凭据
@@ -90,8 +83,8 @@ bool saveAppConfig() {
         item["pass"] = c.pass;
     }
 
-    SD.remove(configFilePath());
-    File f = SD.open(configFilePath(), FILE_WRITE);
+    SD.remove(kConfigFilePath);
+    File f = SD.open(kConfigFilePath, FILE_WRITE);
     if (!f) {
         return false;
     }
@@ -114,7 +107,7 @@ bool saveAppConfig() {
  */
 void loadAppConfig() {
     bool loaded = false;
-    File f = SD.open(configFilePath());
+    File f = SD.open(kConfigFilePath);
     if (f) {
         DynamicJsonDocument doc(8192);
         DeserializationError err = deserializeJson(doc, f);

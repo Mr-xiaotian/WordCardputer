@@ -11,22 +11,6 @@
  */
 
 /**
- * 获取当前语言对应的 SQLite 数据库路径
- *
- * 由于 SQLite 库通过 VFS 访问 SD 卡文件，这里返回带挂载前缀的路径：
- * - 日语：`/sd/words_study/jp/jp_words.db`
- * - 英语：`/sd/words_study/en/en_words.db`
- *
- * @return 当前语言对应的数据库完整路径
- */
-String currentDbFilePath() {
-    if (currentLanguage == LANG_JP) {
-        return "/sd/words_study/jp/jp_words.db";
-    }
-    return "/sd/words_study/en/en_words.db";
-}
-
-/**
  * 获取当前语言对应的词表名称
  *
  * 日语与英语分表存储，避免字段互相干扰：
@@ -39,17 +23,21 @@ const char *currentWordTable() {
     return (currentLanguage == LANG_JP) ? "jp_words" : "en_words";
 }
 
+const char *currentSourceTable() {
+    return (currentLanguage == LANG_JP) ? "jp_source" : "en_source";
+}
+
 /**
  * 获取当前语言对应的听写错误表名
  *
  * 与词表一样，英语和日语分表保存，避免外键语义互相混淆：
- * - 日语：`jp_dictation_errors`
- * - 英语：`en_dictation_errors`
+ * - 日语：`jp_errors`
+ * - 英语：`en_errors`
  *
  * @return 当前语言对应的听写错误表名
  */
 const char *currentDictationErrorTable() {
-    return (currentLanguage == LANG_JP) ? "jp_dictation_errors" : "en_dictation_errors";
+    return (currentLanguage == LANG_JP) ? "jp_errors" : "en_errors";
 }
 
 /**
@@ -66,9 +54,11 @@ const char *currentDictationErrorTable() {
 bool ensureDictationErrorTable(sqlite3 *db) {
     String sql = String("CREATE TABLE IF NOT EXISTS ") + currentDictationErrorTable() +
                  " ("
+                 "id INTEGER PRIMARY KEY AUTOINCREMENT, "
                  "word_id INTEGER NOT NULL, "
                  "wrong_text TEXT NOT NULL, "
-                 "created_at TEXT NOT NULL"
+                 "created_at TEXT NOT NULL, "
+                 "FOREIGN KEY(word_id) REFERENCES " + String(currentWordTable()) + "(id) ON DELETE CASCADE"
                  ")";
     if (sqlite3_exec(db, sql.c_str(), nullptr, nullptr, nullptr) != SQLITE_OK) {
         Serial.printf("创建错题表失败: %s\n", sqlite3_errmsg(db));
@@ -107,7 +97,9 @@ String sqliteColumnText(sqlite3_stmt *stmt, int col) {
  */
 bool openVocabularyDb(sqlite3 **db) {
     *db = nullptr;
-    String dbPath = currentDbFilePath();
+    String dbPath = (currentLanguage == LANG_JP)
+        ? "/sd/words_study/jp/jp_words.db"
+        : "/sd/words_study/en/en_words.db";
     int rc = sqlite3_open(dbPath.c_str(), db);
     if (rc != SQLITE_OK) {
         Serial.printf("无法打开数据库: %s (%s)\n", dbPath.c_str(), *db ? sqlite3_errmsg(*db) : "unknown");
@@ -115,6 +107,12 @@ bool openVocabularyDb(sqlite3 **db) {
             sqlite3_close(*db);
             *db = nullptr;
         }
+        return false;
+    }
+    if (sqlite3_exec(*db, "PRAGMA foreign_keys = ON", nullptr, nullptr, nullptr) != SQLITE_OK) {
+        Serial.printf("启用外键失败: %s\n", sqlite3_errmsg(*db));
+        sqlite3_close(*db);
+        *db = nullptr;
         return false;
     }
     return true;
@@ -209,24 +207,6 @@ int normalizeScoreValue(int score) {
 }
 
 /**
- * 从文件名中提取不带扩展名的 stem
- *
- * 用于 Web 导入时把 JSON 文件名映射成 source / chapter。
- *
- * @param filename 原始文件名或路径
- * @return 去掉目录与扩展名后的名称
- */
-String fileStem(const String &filename) {
-    int slash = filename.lastIndexOf('/');
-    String base = (slash >= 0) ? filename.substring(slash + 1) : filename;
-    int dot = base.lastIndexOf('.');
-    if (dot > 0) {
-        base = base.substring(0, dot);
-    }
-    return base;
-}
-
-/**
  * 校验词库虚拟路径是否合法
  *
  * 运行时词库浏览已经不再直接暴露真实文件系统，只允许访问当前语言
@@ -318,7 +298,12 @@ bool deriveUploadTarget(const String &path, const String &filename, String &sour
         return false;
     }
 
-    String stem = fileStem(filename);
+    int slash = filename.lastIndexOf('/');
+    String stem = (slash >= 0) ? filename.substring(slash + 1) : filename;
+    int dot = stem.lastIndexOf('.');
+    if (dot > 0) {
+        stem = stem.substring(0, dot);
+    }
     if (stem.isEmpty()) {
         return false;
     }
@@ -458,15 +443,33 @@ bool loadWordsFromDB(const String &source, const String &chapter)
 
     String sql;
     if (currentLanguage == LANG_JP) {
-        sql = "SELECT id, jp, zh, kanji, romaji, tone, score "
-              "FROM jp_words "
-              "WHERE source = ?1 AND (?2 = '' OR chapter = ?2) "
-              "ORDER BY id";
+        if (chapter.isEmpty()) {
+            sql = "SELECT DISTINCT w.id, w.jp, w.zh, w.kanji, w.romaji, w.tone, w.score "
+                  "FROM jp_words w "
+                  "INNER JOIN jp_source s ON s.word_id = w.id "
+                  "WHERE s.source = ?1 "
+                  "ORDER BY w.id";
+        } else {
+            sql = "SELECT DISTINCT w.id, w.jp, w.zh, w.kanji, w.romaji, w.tone, w.score "
+                  "FROM jp_words w "
+                  "INNER JOIN jp_source s ON s.word_id = w.id "
+                  "WHERE s.source = ?1 AND s.chapter = ?2 "
+                  "ORDER BY w.id";
+        }
     } else {
-        sql = "SELECT id, en, zh, pos, phonetic, score "
-              "FROM en_words "
-              "WHERE source = ?1 AND (?2 = '' OR chapter = ?2) "
-              "ORDER BY id";
+        if (chapter.isEmpty()) {
+            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score "
+                  "FROM en_words w "
+                  "INNER JOIN en_source s ON s.word_id = w.id "
+                  "WHERE s.source = ?1 "
+                  "ORDER BY w.id";
+        } else {
+            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score "
+                  "FROM en_words w "
+                  "INNER JOIN en_source s ON s.word_id = w.id "
+                  "WHERE s.source = ?1 AND s.chapter = ?2 "
+                  "ORDER BY w.id";
+        }
     }
 
     if (!prepareStatement(db, sql, &stmt)) {
@@ -564,6 +567,10 @@ bool saveCurrentWordsToDB()
 
     bool ok = true;
     for (auto &w : words) {
+        if (w.dbId <= 0) {
+            continue;
+        }
+
         sqlite3_reset(stmt);
         sqlite3_clear_bindings(stmt);
         sqlite3_bind_int(stmt, 1, w.score);
@@ -605,71 +612,119 @@ bool saveCurrentWordsToDB()
 bool saveWordListToDB(const String &source, const String &chapter, const std::vector<Word> &list)
 {
     sqlite3 *db = nullptr;
-    sqlite3_stmt *stmt = nullptr;
+    sqlite3_stmt *upsertWordStmt = nullptr;
+    sqlite3_stmt *findWordIdStmt = nullptr;
+    sqlite3_stmt *upsertSourceStmt = nullptr;
     if (!openVocabularyDb(&db)) {
         return false;
     }
 
-    String sql;
+    String wordSql;
+    String findSql;
     if (currentLanguage == LANG_JP) {
-        sql = "INSERT INTO jp_words (jp, zh, kanji, romaji, tone, score, source, chapter) "
-              "VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8) "
-              "ON CONFLICT(source, chapter, jp) DO UPDATE SET "
-              "zh = excluded.zh, "
-              "kanji = excluded.kanji, "
-              "romaji = excluded.romaji, "
-              "tone = excluded.tone, "
-              "score = excluded.score";
+        wordSql = "INSERT INTO jp_words (jp, zh, kanji, romaji, tone, score) "
+                  "VALUES (?1, ?2, ?3, ?4, ?5, ?6) "
+                  "ON CONFLICT(jp, tone) DO UPDATE SET "
+                  "zh = excluded.zh, "
+                  "kanji = excluded.kanji, "
+                  "romaji = excluded.romaji, "
+                  "score = MAX(jp_words.score, excluded.score)";
+        findSql = "SELECT id FROM jp_words WHERE jp = ?1 AND tone = ?2";
     } else {
-        sql = "INSERT INTO en_words (en, zh, pos, phonetic, score, source, chapter) "
-              "VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7) "
-              "ON CONFLICT(source, chapter, en) DO UPDATE SET "
-              "zh = excluded.zh, "
-              "pos = excluded.pos, "
-              "phonetic = excluded.phonetic, "
-              "score = excluded.score";
+        wordSql = "INSERT INTO en_words (en, zh, pos, phonetic, score) "
+                  "VALUES (?1, ?2, ?3, ?4, ?5) "
+                  "ON CONFLICT(en) DO UPDATE SET "
+                  "zh = excluded.zh, "
+                  "pos = excluded.pos, "
+                  "phonetic = excluded.phonetic, "
+                  "score = MAX(en_words.score, excluded.score)";
+        findSql = "SELECT id FROM en_words WHERE en = ?1";
     }
 
-    if (!prepareStatement(db, sql, &stmt)) {
+    if (!prepareStatement(db, wordSql, &upsertWordStmt)) {
+        sqlite3_close(db);
+        return false;
+    }
+    if (!prepareStatement(db, findSql, &findWordIdStmt)) {
+        sqlite3_finalize(upsertWordStmt);
+        sqlite3_close(db);
+        return false;
+    }
+    String sourceSql = String("INSERT OR IGNORE INTO ") + currentSourceTable() +
+                       " (word_id, source, chapter) VALUES (?1, ?2, ?3)";
+    if (!prepareStatement(db, sourceSql, &upsertSourceStmt)) {
+        sqlite3_finalize(findWordIdStmt);
+        sqlite3_finalize(upsertWordStmt);
         sqlite3_close(db);
         return false;
     }
 
     if (sqlite3_exec(db, "BEGIN IMMEDIATE", nullptr, nullptr, nullptr) != SQLITE_OK) {
         Serial.printf("开启事务失败: %s\n", sqlite3_errmsg(db));
-        sqlite3_finalize(stmt);
+        sqlite3_finalize(upsertSourceStmt);
+        sqlite3_finalize(findWordIdStmt);
+        sqlite3_finalize(upsertWordStmt);
         sqlite3_close(db);
         return false;
     }
 
     bool ok = true;
     for (auto &w : list) {
-        sqlite3_reset(stmt);
-        sqlite3_clear_bindings(stmt);
+        sqlite3_reset(upsertWordStmt);
+        sqlite3_clear_bindings(upsertWordStmt);
         if (currentLanguage == LANG_JP) {
-            sqlite3_bind_text(stmt, 1, w.jp.c_str(), -1, SQLITE_TRANSIENT);
-            sqlite3_bind_text(stmt, 2, w.zh.c_str(), -1, SQLITE_TRANSIENT);
-            sqlite3_bind_text(stmt, 3, w.kanji.c_str(), -1, SQLITE_TRANSIENT);
-            sqlite3_bind_text(stmt, 4, w.romaji.c_str(), -1, SQLITE_TRANSIENT);
-            sqlite3_bind_int(stmt, 5, w.tone);
-            sqlite3_bind_int(stmt, 6, w.score);
-            sqlite3_bind_text(stmt, 7, source.c_str(), -1, SQLITE_TRANSIENT);
-            sqlite3_bind_text(stmt, 8, chapter.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(upsertWordStmt, 1, w.jp.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(upsertWordStmt, 2, w.zh.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(upsertWordStmt, 3, w.kanji.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(upsertWordStmt, 4, w.romaji.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_int(upsertWordStmt, 5, w.tone);
+            sqlite3_bind_int(upsertWordStmt, 6, w.score);
         } else {
-            sqlite3_bind_text(stmt, 1, w.en.c_str(), -1, SQLITE_TRANSIENT);
-            sqlite3_bind_text(stmt, 2, w.zh.c_str(), -1, SQLITE_TRANSIENT);
-            sqlite3_bind_text(stmt, 3, w.pos.c_str(), -1, SQLITE_TRANSIENT);
-            sqlite3_bind_text(stmt, 4, w.phonetic.c_str(), -1, SQLITE_TRANSIENT);
-            sqlite3_bind_int(stmt, 5, w.score);
-            sqlite3_bind_text(stmt, 6, source.c_str(), -1, SQLITE_TRANSIENT);
-            sqlite3_bind_text(stmt, 7, chapter.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(upsertWordStmt, 1, w.en.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(upsertWordStmt, 2, w.zh.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(upsertWordStmt, 3, w.pos.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(upsertWordStmt, 4, w.phonetic.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_int(upsertWordStmt, 5, w.score);
         }
 
-        int rc = sqlite3_step(stmt);
+        int rc = sqlite3_step(upsertWordStmt);
         if (rc != SQLITE_DONE) {
             Serial.printf("插入词条失败: %s\n", sqlite3_errmsg(db));
             ok = false;
             break;
+        }
+    }
+
+    if (ok) {
+        for (const auto &w : list) {
+            sqlite3_reset(findWordIdStmt);
+            sqlite3_clear_bindings(findWordIdStmt);
+            if (currentLanguage == LANG_JP) {
+                sqlite3_bind_text(findWordIdStmt, 1, w.jp.c_str(), -1, SQLITE_TRANSIENT);
+                sqlite3_bind_int(findWordIdStmt, 2, w.tone);
+            } else {
+                sqlite3_bind_text(findWordIdStmt, 1, w.en.c_str(), -1, SQLITE_TRANSIENT);
+            }
+
+            int rc = sqlite3_step(findWordIdStmt);
+            if (rc != SQLITE_ROW) {
+                Serial.printf("查询词条主键失败: %s\n", sqlite3_errmsg(db));
+                ok = false;
+                break;
+            }
+
+            int wordId = sqlite3_column_int(findWordIdStmt, 0);
+            sqlite3_reset(upsertSourceStmt);
+            sqlite3_clear_bindings(upsertSourceStmt);
+            sqlite3_bind_int(upsertSourceStmt, 1, wordId);
+            sqlite3_bind_text(upsertSourceStmt, 2, source.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(upsertSourceStmt, 3, chapter.c_str(), -1, SQLITE_TRANSIENT);
+            rc = sqlite3_step(upsertSourceStmt);
+            if (rc != SQLITE_DONE) {
+                Serial.printf("写入来源映射失败: %s\n", sqlite3_errmsg(db));
+                ok = false;
+                break;
+            }
         }
     }
 
@@ -679,7 +734,9 @@ bool saveWordListToDB(const String &source, const String &chapter, const std::ve
         sqlite3_exec(db, "ROLLBACK", nullptr, nullptr, nullptr);
     }
 
-    sqlite3_finalize(stmt);
+    sqlite3_finalize(upsertSourceStmt);
+    sqlite3_finalize(findWordIdStmt);
+    sqlite3_finalize(upsertWordStmt);
     sqlite3_close(db);
     return ok;
 }
@@ -827,7 +884,7 @@ bool loadDictationReviewEntriesFromDB(std::vector<DictationReviewEntry> &items)
  */
 bool loadSourceList(std::vector<String> &items)
 {
-    String sql = String("SELECT DISTINCT source FROM ") + currentWordTable() +
+    String sql = String("SELECT DISTINCT source FROM ") + currentSourceTable() +
                  " ORDER BY source COLLATE NOCASE";
     return loadSingleColumnList(sql, nullptr, items);
 }
@@ -844,7 +901,7 @@ bool loadSourceList(std::vector<String> &items)
  */
 bool loadChapterList(const String &source, std::vector<String> &items)
 {
-    String sql = String("SELECT DISTINCT chapter FROM ") + currentWordTable() +
+    String sql = String("SELECT DISTINCT chapter FROM ") + currentSourceTable() +
                  " WHERE source = ?1 AND chapter <> '' ORDER BY chapter COLLATE NOCASE";
     return loadSingleColumnList(sql, &source, items);
 }
@@ -867,7 +924,7 @@ bool sourceHasChapters(const String &source)
         return false;
     }
 
-    String sql = String("SELECT 1 FROM ") + currentWordTable() +
+    String sql = String("SELECT 1 FROM ") + currentSourceTable() +
                  " WHERE source = ?1 AND chapter <> '' LIMIT 1";
     if (!prepareStatement(db, sql, &stmt)) {
         sqlite3_close(db);

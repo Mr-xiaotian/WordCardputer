@@ -92,22 +92,6 @@ String dictationPromptText(const Word &w)
 }
 
 /**
- * 获取当前单词用于语音播放的文本
- *
- * 根据当前语言设置返回对应的音频文本。
- * 英语模式返回英文单词，日语模式返回日语假名。
- *
- * @param w 单词对象
- * @return 用于语音播放的文本字符串
- */
-String listenAudioText(const Word &w)
-{
-    if (currentLanguage == LANG_EN)
-        return w.en;
-    return w.jp;
-}
-
-/**
  * 从当前词库标签中提取用于显示的名称
  *
  * 迁移到数据库后，`selectedFilePath` 不再是真实文件路径，而是 UI 标签：
@@ -121,10 +105,9 @@ String listenAudioText(const Word &w)
  */
 String statsFileName(const String &path)
 {
-    if (!path.startsWith("/")) {
-        return path;
+    if (path.isEmpty()) {
+        return "";
     }
-
     int pos = path.lastIndexOf('/');
     if (pos >= 0 && pos + 1 < (int)path.length())
     {

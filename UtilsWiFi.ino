@@ -11,16 +11,6 @@
 #include <time.h>
 
 /**
- * 从 SD 卡加载已保存的 WiFi 凭据
- *
- * 从统一配置文件 `/words_study/config.json` 读取 WiFi 列表。
- * 同时兼容旧版 `wifi.json` 的迁移逻辑，具体实现由 UtilsConfig.ino 提供。
- */
-void loadSavedWiFiCredentials() {
-    loadAppConfig();
-}
-
-/**
  * 保存一组 WiFi 凭据到 SD 卡
  *
  * 若同名 SSID 已存在则更新密码，否则追加新条目。

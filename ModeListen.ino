@@ -164,7 +164,7 @@ void loopListenMode()
         if (listenPlayCount < 3)
         {
             // 第 1~3 次播放
-            playAudioForWord(listenAudioText(words[wordIndex]));
+            playAudioForWord(dictationPromptText(words[wordIndex]));
             listenPlayCount++;
             listenNextActionTime = now + listenRepeatInterval;
         }

@@ -31,11 +31,17 @@ bool streamWordListAsJson(const String &source, const String &chapter, const Str
 
     String sql;
     if (currentLanguage == LANG_JP) {
-        sql = "SELECT jp, zh, kanji, romaji, tone, score FROM jp_words "
-              "WHERE source = ?1 AND (?2 = '' OR chapter = ?2) ORDER BY id";
+        sql = "SELECT w.jp, w.zh, w.kanji, w.romaji, w.tone, w.score "
+              "FROM jp_words w "
+              "INNER JOIN jp_source s ON s.word_id = w.id "
+              "WHERE s.source = ?1 AND (?2 = '' OR s.chapter = ?2) "
+              "ORDER BY w.id";
     } else {
-        sql = "SELECT en, zh, pos, phonetic, score FROM en_words "
-              "WHERE source = ?1 AND (?2 = '' OR chapter = ?2) ORDER BY id";
+        sql = "SELECT w.en, w.zh, w.pos, w.phonetic, w.score "
+              "FROM en_words w "
+              "INNER JOIN en_source s ON s.word_id = w.id "
+              "WHERE s.source = ?1 AND (?2 = '' OR s.chapter = ?2) "
+              "ORDER BY w.id";
     }
 
     if (!prepareStatement(db, sql, &stmt)) {
@@ -180,7 +186,7 @@ void handleApiFiles() {
 
     if (isRoot) {
         String sql = String("SELECT source, COUNT(*), COUNT(DISTINCT NULLIF(chapter, '')) ")
-                   + "FROM " + currentWordTable()
+                   + "FROM " + currentSourceTable()
                    + " GROUP BY source ORDER BY source COLLATE NOCASE";
         if (!prepareStatement(db, sql, &stmt)) {
             sqlite3_close(db);
@@ -198,7 +204,7 @@ void handleApiFiles() {
             item["chapterCount"] = chapterCount;
         }
     } else if (chapter.isEmpty()) {
-        String totalSql = String("SELECT COUNT(*) FROM ") + currentWordTable() + " WHERE source = ?1";
+        String totalSql = String("SELECT COUNT(*) FROM ") + currentSourceTable() + " WHERE source = ?1";
         if (!prepareStatement(db, totalSql, &stmt)) {
             sqlite3_close(db);
             sendJsonError(500, "Query failed");
@@ -212,7 +218,7 @@ void handleApiFiles() {
         sqlite3_finalize(stmt);
         stmt = nullptr;
 
-        String chapterSql = String("SELECT chapter, COUNT(*) FROM ") + currentWordTable()
+        String chapterSql = String("SELECT chapter, COUNT(*) FROM ") + currentSourceTable()
                           + " WHERE source = ?1 AND chapter <> '' GROUP BY chapter ORDER BY chapter COLLATE NOCASE";
         if (!prepareStatement(db, chapterSql, &stmt)) {
             sqlite3_close(db);
@@ -337,6 +343,29 @@ void handleApiFileUploadData() {
 }
 
 /**
+ * 删除失去所有来源映射的孤儿词条
+ *
+ * source / chapter 删除发生在 `*_source` 表上。若某词条在删除后已经不再
+ * 属于任何 source，则一并清理主词表；依赖该词条的错题记录会通过外键级联删除。
+ *
+ * @param db 已打开的数据库句柄
+ * @return true 清理成功；false 执行失败
+ */
+bool deleteOrphanWords(sqlite3 *db) {
+    String sql = String("DELETE FROM ") + currentWordTable() +
+                 " WHERE id IN ("
+                 "SELECT w.id FROM " + String(currentWordTable()) + " w "
+                 "LEFT JOIN " + String(currentSourceTable()) + " s ON s.word_id = w.id "
+                 "WHERE s.word_id IS NULL"
+                 ")";
+    if (sqlite3_exec(db, sql.c_str(), nullptr, nullptr, nullptr) != SQLITE_OK) {
+        Serial.printf("[Web] 清理孤儿词条失败: %s\n", sqlite3_errmsg(db));
+        return false;
+    }
+    return true;
+}
+
+/**
  * DELETE /api/files?path=<virtual-path> — 删除 source 或 chapter
  */
 void handleApiFileDelete() {
@@ -357,9 +386,16 @@ void handleApiFileDelete() {
         return;
     }
 
-    String sql = String("DELETE FROM ") + currentWordTable()
+    if (sqlite3_exec(db, "BEGIN IMMEDIATE", nullptr, nullptr, nullptr) != SQLITE_OK) {
+        sqlite3_close(db);
+        sendJsonError(500, "Delete failed");
+        return;
+    }
+
+    String sql = String("DELETE FROM ") + currentSourceTable()
                + " WHERE source = ?1 AND (?2 = '' OR chapter = ?2)";
     if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_exec(db, "ROLLBACK", nullptr, nullptr, nullptr);
         sqlite3_close(db);
         sendJsonError(500, "Delete failed");
         return;
@@ -370,6 +406,7 @@ void handleApiFileDelete() {
     int rc = sqlite3_step(stmt);
     if (rc != SQLITE_DONE) {
         sqlite3_finalize(stmt);
+        sqlite3_exec(db, "ROLLBACK", nullptr, nullptr, nullptr);
         sqlite3_close(db);
         sendJsonError(500, "Delete failed");
         return;
@@ -377,6 +414,22 @@ void handleApiFileDelete() {
 
     int changes = sqlite3_changes(db);
     sqlite3_finalize(stmt);
+    stmt = nullptr;
+
+    if (!deleteOrphanWords(db)) {
+        sqlite3_exec(db, "ROLLBACK", nullptr, nullptr, nullptr);
+        sqlite3_close(db);
+        sendJsonError(500, "Delete failed");
+        return;
+    }
+
+    if (sqlite3_exec(db, "COMMIT", nullptr, nullptr, nullptr) != SQLITE_OK) {
+        sqlite3_exec(db, "ROLLBACK", nullptr, nullptr, nullptr);
+        sqlite3_close(db);
+        sendJsonError(500, "Delete failed");
+        return;
+    }
+
     sqlite3_close(db);
 
     DynamicJsonDocument doc(128);

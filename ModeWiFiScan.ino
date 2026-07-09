@@ -15,7 +15,6 @@ enum WiFiScanState {
     WIFI_SCANNING,
     WIFI_LIST,
     WIFI_PASSWORD,
-    WIFI_CONNECTING,
 };
 
 WiFiScanState wifiScanState = WIFI_SCANNING;
@@ -29,8 +28,6 @@ String wifiSelectedSSID = "";
 String wifiPasswordInput = "";
 
 bool wifiConnectSuccess = false;
-String wifiResultMessage = "";
-
 int wifiPage = 0;  // 0=列表页, 1=状态页（仅 WiFi 已连接时可用）
 
 /**
@@ -147,9 +144,7 @@ void initWiFiScanMode() {
     wifiPasswordInput = "";
     wifiSelectedSSID = "";
     wifiConnectSuccess = false;
-    wifiResultMessage = "";
-
-    loadSavedWiFiCredentials();
+    loadAppConfig();
 
     if (wifiConnected) {
         // WiFi 已连接：后台扫描填充列表，直接显示状态页
