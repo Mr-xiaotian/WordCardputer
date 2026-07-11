@@ -1,6 +1,6 @@
 # WordCardputer 文档索引
 
-> 最后更新日期: 2026/06/22
+> 最后更新日期: 2026/07/11
 
 本目录包含 WordCardputer 项目的详细技术文档。文档按源码模块组织，每篇文档对应一个 `.ino` 文件或一个主题。
 
@@ -11,7 +11,7 @@
 | 文档 | 说明 |
 |------|------|
 | [WordCardputer.md](WordCardputer.md) | 主程序入口、全局状态、`setup()` / `loop()` |
-| [DataFormat.md](DataFormat.md) | SD 卡目录结构、JSON 字段规范、音频文件要求 |
+| [DataFormat.md](DataFormat.md) | SD 卡目录结构、SQLite 数据库 schema、JSON 兼容格式、音频文件要求 |
 | [WebAPI.md](WebAPI.md) | Web 控制面板 HTTP API 完整规范 |
 | [PythonTools.md](PythonTools.md) | PC 端 Python 工具链使用说明 |
 
@@ -20,9 +20,10 @@
 | 文档 | 对应源码 | 说明 |
 |------|---------|------|
 | [ModeLangSelect.md](ModeLangSelect.md) | `ModeLangSelect.ino` | 启动语言选择 |
-| [ModeFileSelect.md](ModeFileSelect.md) | `ModeFileSelect.ino` | SD 卡词库浏览器 |
+| [ModeFileSelect.md](ModeFileSelect.md) | `ModeFileSelect.ino` | 词库浏览器（数据库驱动） |
 | [ModeStudy.md](ModeStudy.md) | `ModeStudy.ino` | 双面闪卡学习 |
 | [ModeDictation.md](ModeDictation.md) | `ModeDictation.ino` | 听写测试（日/英） |
+| [ModeDictationReview.md](ModeDictationReview.md) | `ModeDictationReview.ino` | 听写错题回顾页 |
 | [ModeListen.md](ModeListen.md) | `ModeListen.ino` | 自动循环听读 |
 | [ModeStats.md](ModeStats.md) | `ModeStats.ino` | 学习统计报表 |
 | [ModeEscMenu.md](ModeEscMenu.md) | `ModeEscMenu.ino` | 全局 ESC 菜单 |
@@ -33,7 +34,9 @@
 
 | 文档 | 对应源码 | 说明 |
 |------|---------|------|
-| [UtilsData.md](UtilsData.md) | `UtilsData.ino` | JSON 读写、加权抽词、自动保存 |
+| [UtilsData.md](UtilsData.md) | `UtilsData.ino` | 运行时词库状态、加权抽词、自动保存、统计计算 |
+| [UtilsDb.md](UtilsDb.md) | `UtilsDb.ino` | SQLite 数据库访问层、词库 CRUD、导入导出 |
+| [UtilsConfig.md](UtilsConfig.md) | `UtilsConfig.ino` | 设备配置持久化（config.json） |
 | [UtilsAudio.md](UtilsAudio.md) | `UtilsAudio.ino` | WAV 流式播放、音量调节 |
 | [UtilsMenu.md](UtilsMenu.md) | `UtilsMenu.ino` | 菜单与表格绘制 |
 | [UtilsString.md](UtilsString.md) | `UtilsString.ino` | 自适应文本、IPA 转 ASCII |
@@ -54,6 +57,7 @@
 
 ## 最近更新重点
 
+- **2026/07/11**：全面同步代码变更，新增 `ModeDictationReview.md`、`UtilsConfig.md`、`UtilsDb.md` 三份文档。更新主程序、ESC 菜单、数据管理、数据格式、WiFi、Web 服务器、Web API 和 Python 工具文档，反映 SQLite 数据库迁移、配置系统统一、错题回顾独立模式等重大重构。
 - 重写 `ModeStudy.md`、`ModeDictation.md`、`ModeListen.md`，修正与代码不一致的按键说明和语言支持描述。
 - 新增 `ModeKeyHelp.md`、`ModeWiFiScan.md`、`UtilsIme.md`。
 - 新增 `DataFormat.md`、`WebAPI.md`、`PythonTools.md` 三份主题文档。

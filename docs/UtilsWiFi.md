@@ -1,10 +1,10 @@
 # UtilsWiFi.ino
 
-> 最后更新日期: 2026/06/22
+> 最后更新日期: 2026/07/11
 
 ## 作用
 
-`UtilsWiFi.ino` 负责设备的 **WiFi 连接、凭据持久化、扫描结果处理、NTP 时间同步和省电管理**。是 Web 控制台和错题本时间戳功能的基础。
+`UtilsWiFi.ino` 负责设备的 **WiFi 连接、凭据持久化、扫描结果处理、NTP 时间同步和省电管理**。是 Web 控制台和错题本时间戳功能的基础。凭据已从独立 `wifi.json` 迁移到统一 `config.json`（详见 [UtilsConfig.md](UtilsConfig.md)）。
 
 ## 核心对象
 
@@ -17,8 +17,7 @@
 
 | 函数 | 作用 |
 |------|------|
-| `loadSavedWiFiCredentials()` | 从 `/words_study/wifi.json` 加载凭据 |
-| `saveWiFiCredential(ssid, pass)` | 保存或更新一组凭据 |
+| `saveWiFiCredential(ssid, pass)` | 保存或更新一组凭据，写入 `config.json` |
 | `findSavedPassword(ssid)` | 查找已保存密码 |
 | `processWiFiScanResults(count)` | 处理扫描结果：去重、排序、标记已保存 |
 | `attemptWiFiConnect()` | 尝试连接 WiFi，成功后启动 Web 服务器 |
@@ -54,19 +53,23 @@ flowchart TD
 
 ## 重要细节
 
-### 凭据存储格式
+### 凭据存储
 
-`/words_study/wifi.json`：
+> ⚠️ **已变更**：凭据不再存储于独立 `/words_study/wifi.json`，而是作为 `config.json` 的 `wifi` 数组。`saveWiFiCredential()` 通过 `saveAppConfig()` 统一写入。
+
+`config.json` 中的 WiFi 数组：
 
 ```json
-[
-  { "ssid": "MyHome", "pass": "password123" },
-  { "ssid": "Office", "pass": "office_wifi" }
-]
+{
+  "wifi": [
+    { "ssid": "MyHome", "pass": "password123" },
+    { "ssid": "Office", "pass": "office_wifi" }
+  ]
+}
 ```
 
 - 同名 SSID 更新密码，新 SSID 追加。
-- 保存前先 `SD.remove()` 旧文件，再写入新内容。
+- 保存通过 `saveAppConfig()` 统一处理。
 
 ### 时间同步
 
@@ -108,6 +111,6 @@ if (pass.length() > 0) {
 
 ## 注意事项
 
-- `loadSavedWiFiCredentials()` 在文件不存在或解析失败时静默忽略，不会报错。
-- `attemptWiFiConnect()` 在失败时会阻塞约 10 秒等待连接，期间 UI 显示“连接中...”。
+- `loadAppConfig()` 在设备启动时自动调用，负责加载 WiFi 凭据并兼容旧版 `wifi.json` 迁移。详见 [UtilsConfig.md](UtilsConfig.md)。
+- `attemptWiFiConnect()` 在失败时会阻塞约 10 秒等待连接，期间 UI 显示"连接中..."。
 - Web 服务器仅在首次连接成功后启动一次；后续断开并重新连接时不会重复启动（通过 `webServerRunning` 判断）。

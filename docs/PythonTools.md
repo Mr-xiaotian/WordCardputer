@@ -1,27 +1,24 @@
 # Python 工具链
 
-> 最后更新日期: 2026/06/22
+> 最后更新日期: 2026/07/11
 
 ## 作用
 
-`util/` 目录下的 Python 脚本用于在 PC 端 **生成词库音频、处理 WAV 文件、合并/去重/拆分 JSON 词库、分析掌握程度**。这些工具不运行在设备上，而是辅助用户准备 SD 卡数据。
+`utils/` 目录下的 Python 脚本用于在 PC 端 **生成词库音频、处理 WAV 文件、合并/去重/拆分 JSON 词库、分析掌握程度**。这些工具不运行在设备上，而是辅助用户准备 SD 卡数据。
 
 ## 环境准备
 
-在项目根目录创建并激活虚拟环境：
+项目使用 `uv` 管理 Python 依赖：
 
 ```bash
-python -m venv .venv
-.venv\Scripts\activate        # Windows
-# source .venv/bin/activate   # Linux/macOS
-pip install requests python-dotenv
+uv sync
 ```
 
 确保 `ffmpeg` 已安装并加入 PATH（`generate_tts_youdao` 需要）。
 
 ## 模块说明
 
-### `util/tts.py` — TTS 语音生成
+### `utils/tts.py` — TTS 语音生成
 
 | 函数 | 作用 |
 |------|------|
@@ -31,7 +28,7 @@ pip install requests python-dotenv
 #### MiniMax 示例
 
 ```python
-from util.tts import generate_tts_minimax
+from utils.tts import generate_tts_minimax
 from pathlib import Path
 
 ok, result = generate_tts_minimax(
@@ -46,7 +43,7 @@ print(result)
 #### 有道示例
 
 ```python
-from util.tts import generate_tts_youdao
+from utils.tts import generate_tts_youdao
 from pathlib import Path
 
 ok, result = generate_tts_youdao(
@@ -60,7 +57,7 @@ print(result)
 
 ---
 
-### `util/audio.py` — 音频处理
+### `utils/audio.py` — 音频处理
 
 | 函数 | 作用 |
 |------|------|
@@ -70,7 +67,7 @@ print(result)
 #### 批量裁剪示例
 
 ```python
-from util.audio import trim_leading_silence_in_folder
+from utils.audio import trim_leading_silence_in_folder
 from pathlib import Path
 
 summary = trim_leading_silence_in_folder(
@@ -99,7 +96,7 @@ print(summary)
 
 ---
 
-### `util/json_utils.py` — 词库 JSON 操作
+### `utils/json_utils.py` — 词库 JSON 操作
 
 | 函数 | 作用 |
 |------|------|
@@ -118,7 +115,7 @@ print(summary)
 #### 合并多个词库
 
 ```python
-from util.json_utils import collect_merged_entries
+from utils.json_utils import collect_merged_entries
 from pathlib import Path
 
 entries = collect_merged_entries(Path("words_study/jp/word"))
@@ -128,7 +125,7 @@ print(f"合并后共 {len(entries)} 个唯一词条")
 #### 拆分大词库
 
 ```python
-from util.json_utils import process_folder
+from utils.json_utils import process_folder
 from pathlib import Path
 
 process_folder(Path("words_study/jp/word/N5"), max_per_file=60)
@@ -139,7 +136,7 @@ process_folder(Path("words_study/jp/word/N5"), max_per_file=60)
 #### 检查缺失音频
 
 ```python
-from util.json_utils import extract_all_jp_from_folder, list_wav_filenames
+from utils.json_utils import extract_all_jp_from_folder, list_wav_filenames
 from pathlib import Path
 
 words = set(extract_all_jp_from_folder(Path("words_study/jp/word")))
@@ -150,7 +147,7 @@ print(f"缺失音频: {missing}")
 
 ---
 
-### `util/stats.py` — 词库统计分析
+### `utils/stats.py` — 词库统计分析
 
 | 函数 | 作用 |
 |------|------|
@@ -159,7 +156,7 @@ print(f"缺失音频: {missing}")
 #### 示例
 
 ```python
-from util.stats import analyze_vocab_mastery
+from utils.stats import analyze_vocab_mastery
 from pathlib import Path
 
 result = analyze_vocab_mastery(Path("words_study/en/word/Demo_Basics.json"))
@@ -189,8 +186,8 @@ print(result)
 
 ```python
 from pathlib import Path
-from util.json_utils import extract_all_jp_from_folder
-from util.tts import generate_tts_minimax
+from utils.json_utils import extract_all_jp_from_folder
+from utils.tts import generate_tts_minimax
 
 word_folder = Path("words_study/jp/word/N5")
 audio_folder = Path("words_study/jp/audio")
@@ -214,3 +211,4 @@ for w in words:
   - `tone` 字段冲突时置为 `-1`。
   - 其他字段用 `; ` 拼接不同值。
 - 批量生成音频前建议先用小批量测试，确认音色和语速符合预期。
+- 词库数据在设备端已迁移至 SQLite 数据库，PC 端 JSON 工具主要用于生成音频和准备导入数据。导入操作可通过 Web 控制面板完成。

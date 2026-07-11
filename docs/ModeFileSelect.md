@@ -1,75 +1,75 @@
 # ModeFileSelect.ino
 
-> 最后更新日期: 2026/06/22
+> 最后更新日期: 2026/07/11
 
 ## 作用
 
-`ModeFileSelect.ino` 实现 **SD 卡词库文件浏览器**。用户在选择语言后进入该模式，浏览 `/words_study/<lang>/word` 下的子目录与 JSON 词库文件，选中后加载并进入学习模式。
+`ModeFileSelect.ino` 实现**词库浏览器**。已在底层改为数据库驱动，不再直接浏览 SD 卡 JSON 文件。用户在选择语言后进入该模式，浏览 SQLite 数据库中的 source（词源）和 chapter（章节），选中后加载并进入学习模式。
 
 ## 核心对象
 
 | 对象 | 类型 | 说明 |
 |------|------|------|
-| `files` | `std::vector<String>` | 当前目录下的文件/文件夹列表 |
+| `files` | `std::vector<String>` | 当前层级下的 source 或 chapter 列表 |
 | `fileIndex` | `int` | 当前选中索引 |
 | `fileScroll` | `int` | 当前滚动偏移 |
-| `currentDir` | `String` | 文件浏览器当前目录 |
+| `currentDir` | `String` | 虚拟目录，用于区分根层（source）和子层（chapter） |
+| `selectedSource` | `String` | 选中的词库来源 |
+| `selectedChapter` | `String` | 选中的章节，空表示整个 source |
+| `selectedFilePath` | `String` | 显示标签（如 `Demo_Basics/Unit_1`） |
 
 ## 关键流程
 
 ```mermaid
 flowchart TD
-    A[initFileSelectMode] --> B{currentDir 是否在 currentWordRoot 下?}
-    B -->|否| C[重置为根目录]
-    B -->|是| D[打开当前目录]
-    D --> E[遍历文件]
-    E --> F[过滤 . / ..]
-    F --> G[区分文件夹与 JSON]
-    G --> H[排序: 文件夹优先]
-    H --> I[drawTextMenu]
-    I --> J{用户按键}
-    J -->|; / .| K[navigateMenu]
-    J -->|Enter| L{选中项类型}
-    L -->|文件夹/| M[进入子目录]
-    L -->|JSON| N[startStudyMode]
-    J -->|Del| O[返回上级目录]
+    A[initFileSelectMode] --> B{currentDir == currentWordRoot?}
+    B -->|是| C[loadSourceList → 展示 source 列表]
+    B -->|否| D[loadChapterList → 展示 chapter 列表]
+    C & D --> E[drawFileSelect 绘制菜单]
+    E --> F{用户按键}
+    F -->|; / .| G[navigateMenu]
+    F -->|Enter| H{当前层级?}
+    H -->|根层| I{有 chapter?}
+    I -->|是| J[进入子层浏览 chapter]
+    I -->|否| K[直接加载整个 source]
+    H -->|子层| L[加载 source/chapter]
+    K & L --> M[startStudyMode]
+    F -->|Del| N{在子层?}
+    N -->|是| O[返回根层]
+    N -->|否| P[无操作]
+    F -->|ESC| Q[自动保存 + 返回]
 ```
 
 ## 重要细节
 
-- **列表排序规则**：
-  - 文件夹排在文件前面。
-  - 同类型按字母顺序升序排列。
-- **目录保护**：`Del` 返回上级目录时，若当前已在 `currentWordRoot` 则不再回退，避免跳出词库根目录。
-- **文件过滤**：只识别 `.json` 文件；文件夹以 `/` 后缀标识。
-- **空目录处理**：若 `files` 为空，直接显示“无词库文件”提示并忽略后续输入。
+### 虚拟目录系统
+
+`currentDir` 不再指向 SD 卡真实路径，而是逻辑路径：
+- **根层**（`currentDir == currentWordRoot`）：显示所有 source 列表
+- **子层**（`currentDir == currentWordRoot/<source>`）：显示该 source 的 chapter 列表
+
+根据 `sourceHasChapters()` 判断 source 是否有子划分。无 chapter 的 source 直接加载。
+
+### 词库加载
+
+选中词库后通过 `startStudyMode()` 加载：
+- 设置 `selectedSource` 和 `selectedChapter`
+- 调用 `loadWordsFromDB()` 从数据库加载
+- 自动保存上一词库的进度
 
 ## 使用示例
 
-### 浏览并选择词库
+### 浏览并加载词库
 
-假设目录结构为：
-
-```
-/words_study/en/word/
-├── basics/
-│   └── day_01.json
-├── travel/
-│   └── airport.json
-└── review.json
-```
-
-1. 进入文件选择后看到：
-   ```
-   > basics/
-     travel/
-     review.json
-   ```
-2. 按 `.` 移动到 `basics/`，按 Enter 进入。
-3. 按 `.` 选中 `day_01.json`，按 Enter 开始学习。
-4. 按 Del 可返回上级目录。
+1. 选择语言后进入 root 层，看到所有 source 列表（如 `Demo_Basics`、`N5`）。
+2. 按 `;/.` 上下移动，Enter 选中。
+3. 若 source 有 chapter，进入子层浏览章节（如 `Unit_1`、`Unit_2`）。
+4. 选中 chapter 后开始学习。
+5. 在子层按 Del 返回根层。
 
 ## 注意事项
 
-- 选择 JSON 文件后，会调用 `startStudyMode()`，该函数会先 `autoSaveIfNeeded()` 保存上一个词库的进度，再加载新词库。
-- 文件列表不会递归显示子目录内容，必须一层层进入。
+- `selectedFilePath` 变量名保留旧命名，但现在只作为 UI 显示标签使用。
+- 真实的数据加载依据是 `selectedSource` 和 `selectedChapter`。
+- 空列表时显示"没有词库数据"提示。
+- 从文件选择切换词库时，`startStudyMode()` 会先自动保存旧词库进度。

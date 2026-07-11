@@ -1,10 +1,10 @@
 # ModeDictation.ino
 
-> 最后更新日期: 2026/06/22
+> 最后更新日期: 2026/07/11
 
 ## 作用
 
-`ModeDictation.ino` 实现 **听写测试模式**。系统按随机顺序播放单词发音，用户通过键盘输入答案；日语模式下使用内置罗马音→假名 IME，英语模式下直接输入字母。测试结束后展示正确/错误数量，并支持错题回顾与错题导出。
+`ModeDictation.ino` 实现 **听写测试模式**。系统按随机顺序播放单词发音，用户通过键盘输入答案；日语模式下使用内置罗马音→假名 IME，英语模式下直接输入字母。测试结束后展示正确/错误数量，并将错题存入数据库，用户可选择进入独立错误回顾页。
 
 ## 核心对象
 
@@ -17,9 +17,9 @@
 | `candidateKana` | `String` | 当前罗马音对应的候选假名 |
 | `dictEnInput` | `String` | 英语模式下已输入的字母 |
 | `useKatakana` | `bool` | 日语假名模式：平假名 / 片假名 |
-| `dictErrors` | `std::vector<DictError>` | 错误记录 |
+| `dictErrors` | `std::vector<DictError>` | 错误记录（含 wordIndex、wordDbId、wrong、createdAt） |
 | `dictShowSummary` | `bool` | 是否显示总结界面 |
-| `dictInReview` | `bool` | 是否处于错题回顾模式 |
+| `correctCount` / `wrongCount` | `int` | 正确/错误计数 |
 
 ## 关键流程
 
@@ -43,8 +43,12 @@ flowchart TD
     O & P --> Q[dictPos++]
     Q --> R{是否最后一题?}
     R -->|否| S[播放下一题音频]
-    R -->|是| T[保存错题词库]
+    R -->|是| T[saveDictationErrorsToDB]
     T --> U[drawDictationSummary]
+    U --> V{用户按 Enter}
+    V -->|无错题| W[返回 ESC 菜单]
+    V -->|有错题| X[initDictationReviewFromSession]
+    X --> Y[MODE_DICTATION_REVIEW]
 ```
 
 ## 重要细节
@@ -52,7 +56,7 @@ flowchart TD
 ### 英语输入
 
 - 合法字符：`a-z`、`A-Z`、`0-9`、撇号 `'`、连字符 `-`、下划线 `_`、空格。
-- 下划线 `_` 在提交时会被替换为空格。
+- 下划线 `_` 在输入时自动替换为空格。
 - 答案比对前调用 `normalizeEnglishAnswer()`：去首尾空、转小写、下划线变空格、合并连续空格。
 
 ### 日语 IME
@@ -63,11 +67,22 @@ flowchart TD
 - **平/片假名切换**：按 Shift 切换 `useKatakana`，并重新计算当前候选。
 - **删除优先级**：先删 `romajiBuffer` 末尾字母；缓冲区为空时删除 `commitText` 最后一个 UTF-8 字符。
 
+### 错误记录
+
+> ⚠️ **已变更**：错题不再导出为独立 JSON 文件，而是通过 `saveDictationErrorsToDB()` 写入 SQLite 数据库的 `*_dictation_errors` 表。
+
+每条错误记录包含：
+- `wordIndex`：对应 `words` 列表中的索引
+- `wordDbId`：对应原词表的数据库主键
+- `wrong`：用户输入的错误答案
+- `createdAt`：错误时间（`getNtpTimeString()`）
+
 ### 测试结算
 
-- 全部题目完成后自动调用 `saveDictationMistakesAsWordList()`，将错题保存到 `/words_study/<lang>/word/Mistake/原词库名(时间戳).json`。
-- 总结界面按 Enter：无错题则返回 ESC 菜单，有错题则进入错题回顾。
-- 错题回顾中：`,`/`/` 翻页，`Fn` 重播当前单词发音。
+- 全部题目完成后自动调用 `saveDictationErrorsToDB()`，将错题写入数据库。
+- 总结界面显示正确/错误计数，按 Enter 继续。
+- 无错题：直接返回 ESC 菜单。
+- 有错题：进入 `MODE_DICTATION_REVIEW`，调用 `initDictationReviewFromSession()` 展示本轮错题。
 
 ## 使用示例
 
@@ -89,8 +104,6 @@ flowchart TD
 
 ## 注意事项
 
-> ⚠️ **已修正**：旧文档写“英语听写暂未开放”，实际代码已完整支持英语听写。
-
 - 日语 IME 目前为 Level 1 实现，不支持完整的变体输入（如 `shi` 之外也可用 `si`，但表中没有 `fu` 以外的替代拼写）。遇到无法输入的单词，可通过 `;` 强制提交当前候选。
-- 错题本的文件名依赖 NTP 时间；若 WiFi 未连接，则使用 `millis()` 作为时间戳。
-- 在错题回顾模式下按 `Enter` 不会返回，必须按 `ESC` 才能退出到菜单。
+- 错题本的时间依赖 NTP 时间；若 WiFi 未连接，则使用 `millis()` 作为时间戳。
+- 错题回顾使用独立的 [ModeDictationReview.ino](ModeDictationReview.md) 页面，支持翻页和 Fn 重播语音。
