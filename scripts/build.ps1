@@ -4,7 +4,8 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$projectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$scriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$projectRoot = Split-Path -Parent $scriptRoot
 $buildOutputPath = if ([System.IO.Path]::IsPathRooted($BuildPath)) {
     $BuildPath
 } else {

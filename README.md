@@ -43,10 +43,10 @@ SD 卡根目录/
 
 ### 2. 编译与烧录
 
-**方法一：使用 build.ps1 脚本（推荐）**
+**方法一：使用 `scripts/` 下的 PowerShell 脚本（推荐）**
 
 ```powershell
-.\build.ps1
+.\scripts\build.ps1
 ```
 
 **方法二：手动编译**
@@ -62,9 +62,9 @@ SD 卡根目录/
 **烧录：**
 
 ```powershell
-.\build.ps1    # 仅编译
-.\upload.ps1   # 仅烧录（需先编译）
-.\flash.ps1    # 编译 + 烧录
+.\scripts\build.ps1    # 仅编译
+.\scripts\upload.ps1   # 仅烧录（需先编译）
+.\scripts\flash.ps1    # 编译 + 烧录
 ```
 
 ### 3. 使用设备
@@ -180,7 +180,10 @@ WordCardputer/
 │   ├── json_utils.py         #   词库 JSON 操作（合并、去重、拆分）
 │   └── stats.py              #   词库统计分析
 ├── words_study/              # SD 卡数据模板
-├── build.ps1 / flash.ps1     # 编译与烧录脚本
+├── scripts/                  # PowerShell 构建与烧录脚本
+│   ├── build.ps1             #   仅编译
+│   ├── upload.ps1            #   仅烧录
+│   └── flash.ps1             #   编译 + 烧录
 ├── platformio.ini            # PlatformIO 配置
 └── docs/                     # 详细技术文档（中文）
 ```
