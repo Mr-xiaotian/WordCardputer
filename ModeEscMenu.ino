@@ -11,6 +11,7 @@
 
 std::vector<String> escItems = {
     "学习统计",
+    "当前词表",
     "重新选择词源",
     "重新选择语言",
     "进入学习模式",
@@ -61,9 +62,9 @@ void drawEscMenu() {
  * - ESC 键（`）自动保存后返回先前模式
  * - 分号键（;）向上移动光标，句号键（.）向下移动光标
  * - Enter 键执行选中的菜单项：
- *   0=学习统计  1=重新选择词源  2=重新选择语言
- *   3=学习模式  4=听读模式  5=听写模式  6=过往错题
- *   7=按键帮助  8=WiFi连接
+ *   0=学习统计  1=当前词表  2=重新选择词源  3=重新选择语言
+ *   4=学习模式  5=听读模式  6=听写模式  7=过往错题
+ *   8=按键帮助  9=WiFi连接
  */
 void loopEscMenuMode() {
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
@@ -106,6 +107,11 @@ void loopEscMenuMode() {
                 return;
             }
             else if (escIndex == 1) {
+                appMode = MODE_WORD_TABLE;
+                initWordTableMode();
+                return;
+            }
+            else if (escIndex == 2) {
                 // 回到词源选择页（先自动保存）
                 autoSaveIfNeeded();
                 currentDir = currentWordRoot;
@@ -113,44 +119,44 @@ void loopEscMenuMode() {
                 initFileSelectMode();
                 return;
             }
-            else if (escIndex == 2) {
+            else if (escIndex == 3) {
                 // 重新选择语言（先自动保存）
                 autoSaveIfNeeded();
                 appMode = MODE_LANG_SELECT;
                 initLanguageSelectMode();
                 return;
             }
-            else if (escIndex == 3) {
+            else if (escIndex == 4) {
                 // 进入学习页面
                 appMode = MODE_STUDY;
                 drawStudyWord();
                 return;
             }
-            else if (escIndex == 4) {
+            else if (escIndex == 5) {
                 // 进入听读模式
                 appMode = MODE_LISTEN;
                 initListenMode();
                 return;
             }
-            else if (escIndex == 5) {
+            else if (escIndex == 6) {
                 // 进入听写模式
                 appMode = MODE_DICTATION;
                 initDictationMode();
                 return;
             }
-            else if (escIndex == 6) {
+            else if (escIndex == 7) {
                 // 查看历史错题
                 appMode = MODE_DICTATION_REVIEW;
                 initDictationReviewHistoryMode();
                 return;
             }
-            else if (escIndex == 7) {
+            else if (escIndex == 8) {
                 // 按键帮助
                 appMode = MODE_KEY_HELP;
                 initKeyHelpMode();
                 return;
             }
-            else if (escIndex == 8) {
+            else if (escIndex == 9) {
                 // WiFi 连接
                 appMode = MODE_WIFI_SCAN;
                 initWiFiScanMode();

@@ -31,6 +31,7 @@ enum AppMode {
     MODE_DICTATION_REVIEW, // 听写错误回顾模式
     MODE_LISTEN,       // 听读模式
     MODE_STATS,        // 学习统计模式
+    MODE_WORD_TABLE,   // 当前范围按分数词表模式
     MODE_WIFI_SCAN,    // WiFi 扫描连接模式
     MODE_KEY_HELP,     // 按键帮助模式
 };
@@ -164,6 +165,10 @@ void loopListenMode();
 // --- ModeStats.ino ---
 void initStatsMode();
 void loopStatsMode();
+
+// --- ModeWordTable.ino ---
+void initWordTableMode();
+void loopWordTableMode();
 
 // --- ModeLangSelect.ino ---
 void initLanguageSelectMode();
@@ -356,6 +361,8 @@ void loop() {
         loopListenMode();
     } else if (appMode == MODE_STATS) {
         loopStatsMode();
+    } else if (appMode == MODE_WORD_TABLE) {
+        loopWordTableMode();
     } else if (appMode == MODE_WIFI_SCAN) {
         loopWiFiScanMode();
     } else if (appMode == MODE_KEY_HELP) {
