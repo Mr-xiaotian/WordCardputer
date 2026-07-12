@@ -25,7 +25,6 @@ std::vector<String> escRootItems = {
 };
 
 std::vector<String> escVocabItems = {
-    "当前词表",
     "重新选择词源",
     "重新选择语言",
 };
@@ -241,18 +240,13 @@ void loopEscMenuMode() {
             }
             else if (escMenuGroup == ESC_MENU_VOCAB) {
                 if (escVocabIndex == 0) {
-                    appMode = MODE_WORD_TABLE;
-                    initWordTableMode();
-                    return;
-                }
-                else if (escVocabIndex == 1) {
                     autoSaveIfNeeded();
                     currentDir = currentWordRoot;
                     appMode = MODE_FILE_SELECT;
                     initFileSelectMode();
                     return;
                 }
-                else if (escVocabIndex == 2) {
+                else if (escVocabIndex == 1) {
                     autoSaveIfNeeded();
                     appMode = MODE_LANG_SELECT;
                     initLanguageSelectMode();

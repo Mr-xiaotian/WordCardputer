@@ -8,6 +8,7 @@
 
 // --------- 文件选择模式变量 ---------
 std::vector<String> files;
+std::vector<bool> fileExpandable;
 int fileIndex = 0;
 int fileScroll = 0;
 
@@ -21,6 +22,7 @@ int fileScroll = 0;
 void initFileSelectMode()
 {
     files.clear();
+    fileExpandable.clear();
     fileIndex = 0;
     fileScroll = 0;
     if (!currentDir.startsWith(currentWordRoot))
@@ -33,12 +35,17 @@ void initFileSelectMode()
             Serial.println("读取 source 列表失败");
             return;
         }
+        fileExpandable.reserve(files.size());
+        for (const auto &source : files) {
+            fileExpandable.push_back(sourceHasChapters(source));
+        }
     } else {
         String source = currentDir.substring(currentWordRoot.length() + 1);
         if (!loadChapterList(source, files)) {
             Serial.println("读取 chapter 列表失败");
             return;
         }
+        fileExpandable.assign(files.size(), false);
     }
 
     drawFileSelect();
@@ -55,10 +62,18 @@ void initFileSelectMode()
 void drawFileSelect()
 {
     String title = (currentDir == currentWordRoot) ? "选择词源" : "选择章节";
+    std::vector<String> displayItems = files;
+    if (currentDir == currentWordRoot) {
+        for (size_t i = 0; i < displayItems.size() && i < fileExpandable.size(); i++) {
+            if (fileExpandable[i]) {
+                displayItems[i] += " >";
+            }
+        }
+    }
     drawTextMenu(
         canvas,
         title,           // 标题
-        files,           // 项目列表
+        displayItems,    // 项目列表
         fileIndex,       // 当前选中
         fileScroll,      // 当前滚动起点
         visibleLines,    // 一屏行数
@@ -72,8 +87,9 @@ void drawFileSelect()
  * 处理以下键盘操作：
  * - 分号键（;）向上移动光标
  * - 句号键（.）向下移动光标
+ * - 斜杠键（/）在可展开项上进入 chapter 子层
  * - Enter 键选中当前项：source 可进入 chapter 或直接加载；chapter 则加载词库
- * - Delete 键返回 source 根层
+ * - 逗号键（,）和 ESC 键（`）从 chapter 子层返回 source 根层
  *
  * `currentDir` 在这里是“虚拟目录”：
  * - 根层：`currentWordRoot`
@@ -97,6 +113,27 @@ void loopFileSelectMode()
 
         for (auto c : status.word)
         {
+            if (c == '`' || c == ',')
+            {
+                if (currentDir != currentWordRoot) {
+                    currentDir = currentWordRoot;
+                    initFileSelectMode();
+                    return;
+                }
+            }
+
+            if (c == '/')
+            {
+                if (currentDir == currentWordRoot &&
+                    fileIndex >= 0 &&
+                    fileIndex < (int)fileExpandable.size() &&
+                    fileExpandable[fileIndex]) {
+                    currentDir = currentWordRoot + "/" + files[fileIndex];
+                    initFileSelectMode();
+                    return;
+                }
+            }
+
             if (c == ';')
             {
                 navigateMenu(fileIndex, fileScroll, files.size(), visibleLines, true);
@@ -113,7 +150,10 @@ void loopFileSelectMode()
             String item = files[fileIndex];
 
             if (currentDir == currentWordRoot) {
-                if (sourceHasChapters(item)) {
+                bool canExpand = fileIndex >= 0 &&
+                                 fileIndex < (int)fileExpandable.size() &&
+                                 fileExpandable[fileIndex];
+                if (canExpand) {
                     currentDir = currentWordRoot + "/" + item;
                     initFileSelectMode();
                     return;
@@ -134,14 +174,6 @@ void loopFileSelectMode()
             appMode = MODE_STUDY;
             startStudyMode();
             return;
-        }
-        
-        if (status.del) {
-            if (currentDir != currentWordRoot) {
-                currentDir = currentWordRoot;
-                initFileSelectMode();
-                return;
-            }
         }
 
         drawFileSelect();
