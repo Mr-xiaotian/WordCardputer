@@ -2,85 +2,123 @@
  * @file ModeKeyHelp.ino
  * @brief 按键帮助页面模块
  *
- * 提供分页的按键帮助说明界面，共包含三个页面：
- * 通用操作、学习模式操作和听写模式操作。
- * 用户可通过 ',' 和 '/' 键翻页浏览，按 '`' 键退出帮助。
+ * 提供按“分类 + 分类内分页”组织的帮助说明界面。
+ * 用户可通过 ';' 和 '.' 切换不同分类，通过 ',' 和 '/'
+ * 在当前分类内翻页，按 '`' 键退出帮助。
  */
 
 // ========== 按键帮助页面 ==========
 
-struct HelpPageData {
+struct HelpSectionData {
     const char *section;
-    std::vector<std::vector<String>> rows;
+    std::vector<std::vector<std::vector<String>>> pages;
 };
 
-std::vector<HelpPageData> helpPages = {
+std::vector<HelpSectionData> helpSections = {
     {
-        "通用",
+        "按键帮助",
         {
-            { "ESC(`)",  "打开/关闭菜单" },
-            { "; / .",   "音量加/减" },
-            { "Fn",      "播放发音" },
+            {
+                { "; / .",   "切换帮助分类" },
+                { ", / /",   "当前分类翻页" },
+            }
         }
     },
     {
         "通用",
         {
-            { ", / /",   "翻页(左/右)" },
+            {
+                { "ESC(`)",  "打开/关闭菜单" },
+            }
         }
     },
     {
         "学习模式",
         {
-            { "BtnA",    "显示/隐藏释义" },
-            { "Enter",   "记住(score+1)" },
-            { "Del",     "不熟(score-1)" },
+            {
+                { "BtnA",    "显示/隐藏释义" },
+                { "Enter",   "记住(score+1)" },
+                { "Del",     "不熟(score-1)" },
+            },
+            {
+                { "; / .",   "音量加/减" },
+                { "Fn",      "播放发音" },
+            }
         }
     },
     {
         "听写模式",
         {
-            { "字母键",  "输入答案" },
-            { "Enter",   "提交答案" },
-            { "Del",     "删除字符" },
+            {
+                { "字母键",  "输入答案" },
+                { "Enter",   "提交答案" },
+                { "Del",     "删除字符" },
+            },
+            {
+                { "Shift",   "平/片假名切换" },
+                { ";",       "确认当前假名" },
+                { "Fn",      "重播当前发音" },
+            },
+            {
+                { "; / .",   "音量加/减" },
+                { "Fn",      "播放发音" },
+            }
         }
     },
     {
-        "听写模式",
+        "当前词表",
         {
-            { "Shift",   "平/片假名切换" },
-            { ";",       "确认当前假名" },
+            {
+                { "; / .",   "切换分数组" },
+                { ", / /",   "当前分组翻页" },
+            }
+        }
+    },
+    {
+        "错题回顾",
+        {
+            {
+                { ", / /",   "切换错题" },
+                { "Fn",      "重播正确发音" },
+            }
         }
     },
 };
 
-/** 帮助页面总数 */
-const int helpTotalPages = 5;
+int helpSectionIndex = 0;
+int helpPageIndex = 0;
 
-int helpPage = 0;
+int helpSectionCount()
+{
+    return (int)helpSections.size();
+}
+
+int helpPageCountForCurrentSection()
+{
+    return (int)helpSections[helpSectionIndex].pages.size();
+}
 
 /**
- * 绘制指定页码的按键帮助页面
+ * 绘制当前按键帮助页面
  *
- * 使用表格形式渲染帮助内容，左上角显示页面名称，右上角显示子分类和页码，
- * 表格包含"按键"和"功能"两列，数据来自对应页码的帮助数组。
- *
- * @param page 要显示的页码索引（0 ~ helpTotalPages-1）
+ * 左上角显示页面名称，右上角显示“分类 + 分类内页码”，
+ * 例如“通用1/1”“听写模式2/2”。
  */
-void drawKeyHelpPage(int page) {
+void drawKeyHelpPage() {
     canvas.fillSprite(BLACK);
     canvas.setTextFont(&fonts::efontCN_16);
 
     drawTopLeftString(canvas, "按键帮助", GREEN, 1.2);
     drawTopRightString(
         canvas,
-        String(helpPages[page].section) + " " + String(page + 1) + "/" + String(helpTotalPages),
+        String(helpSections[helpSectionIndex].section) +
+            String(helpPageIndex + 1) + "/" + String(helpPageCountForCurrentSection()),
         TFT_DARKGREY,
         1.0
     );
 
     std::vector<String> headers = { "按键", "功能" };
-    drawSimpleTable(canvas, headers, helpPages[page].rows);
+    drawSimpleTable(canvas, headers, helpSections[helpSectionIndex].pages[helpPageIndex]);
 
     canvas.pushSprite(0, 0);
 }
@@ -88,11 +126,12 @@ void drawKeyHelpPage(int page) {
 /**
  * 初始化按键帮助模式
  *
- * 将页码重置为第一页并绘制帮助页面。
+ * 默认进入“按键帮助”分类第一页。
  */
 void initKeyHelpMode() {
-    helpPage = 0;
-    drawKeyHelpPage(helpPage);
+    helpSectionIndex = 0;
+    helpPageIndex = 0;
+    drawKeyHelpPage();
 }
 
 /**
@@ -100,8 +139,8 @@ void initKeyHelpMode() {
  *
  * 处理以下键盘操作：
  * - '`' 键（ESC）：返回 ESC 菜单
- * - ',' 键：切换到上一页（循环翻页）
- * - '/' 键：切换到下一页（循环翻页）
+ * - ';' / '.'：切换分类（循环）
+ * - ',' / '/'：在当前分类内翻页（循环）
  */
 void loopKeyHelpMode() {
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed()) {
@@ -115,18 +154,30 @@ void loopKeyHelpMode() {
                 initEscMenuMode();
                 return;
             }
+            if (c == ';') {
+                helpSectionIndex = (helpSectionIndex - 1 + helpSectionCount()) % helpSectionCount();
+                helpPageIndex = 0;
+                nav = true;
+            }
+            if (c == '.') {
+                helpSectionIndex = (helpSectionIndex + 1) % helpSectionCount();
+                helpPageIndex = 0;
+                nav = true;
+            }
             if (c == ',') {
-                helpPage = (helpPage - 1 + helpTotalPages) % helpTotalPages;
+                int pageCount = helpPageCountForCurrentSection();
+                helpPageIndex = (helpPageIndex - 1 + pageCount) % pageCount;
                 nav = true;
             }
             if (c == '/') {
-                helpPage = (helpPage + 1) % helpTotalPages;
+                int pageCount = helpPageCountForCurrentSection();
+                helpPageIndex = (helpPageIndex + 1) % pageCount;
                 nav = true;
             }
         }
 
         if (nav) {
-            drawKeyHelpPage(helpPage);
+            drawKeyHelpPage();
         }
     }
 }
