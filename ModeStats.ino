@@ -98,12 +98,7 @@ void drawStatsPage()
         };
         drawSimpleTable(
             canvas,
-            y,
-            lineHeight,
             headers,
-            colXs,
-            1.0,
-            1.1,
             rows
         );
     }
@@ -119,12 +114,7 @@ void drawStatsPage()
         };
         drawSimpleTable(
             canvas,
-            y,
-            lineHeight,
             headers,
-            colXs,
-            1.0,
-            1.1,
             rows
         );
     }

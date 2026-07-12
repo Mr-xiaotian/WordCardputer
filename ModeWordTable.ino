@@ -9,37 +9,8 @@
 
 int wordTableScore = 1;
 int wordTablePage = 0;
-const int wordTableRowsPerPage = 4;
+const int wordTableRowsPerPage = 3;
 std::vector<int> wordTableFilteredIndices;
-
-/**
- * 将单元格文本裁剪到指定像素宽度内。
- *
- * 若原文过长，则保留前部内容并追加 `...`，避免表格越列。
- */
-String fitWordTableCellText(const String &text, int maxWidth)
-{
-    if (text.isEmpty())
-    {
-        return "";
-    }
-    if (canvas.textWidth(text) <= maxWidth)
-    {
-        return text;
-    }
-
-    String clipped = text;
-    while (clipped.length() > 0)
-    {
-        removeLastUTF8Char(clipped);
-        String candidate = clipped + "...";
-        if (canvas.textWidth(candidate) <= maxWidth)
-        {
-            return candidate;
-        }
-    }
-    return "...";
-}
 
 /**
  * 重建当前 score 分组的词索引列表。
@@ -154,28 +125,14 @@ void drawWordTablePage()
     canvas.setTextDatum(top_left);
     canvas.setTextSize(1.0);
 
-    if (wordTableFilteredIndices.empty())
-    {
-        drawCenterString(canvas, "该分数组无单词", RED, 1.1);
-        return;
-    }
-
     const int pageStart = wordTablePage * wordTableRowsPerPage;
     const int pageEnd = min(pageStart + wordTableRowsPerPage, (int)wordTableFilteredIndices.size());
-    const int startY = 30;
-    const int rowHeight = 18;
-    const int wordColX = 6;
-    const int zhColX = 90;
-    const int scoreColX = 206;
-    const int wordColWidth = zhColX - wordColX - 8;
-    const int zhColWidth = scoreColX - zhColX - 8;
 
     std::vector<String> headers = {
         (currentLanguage == LANG_EN) ? "英文" : "日语",
         "中文",
         "分数"
     };
-    std::vector<int> colXs = {wordColX, zhColX, scoreColX};
     std::vector<std::vector<String>> rows;
 
     for (int i = pageStart; i < pageEnd; i++)
@@ -183,20 +140,15 @@ void drawWordTablePage()
         const Word &w = words[wordTableFilteredIndices[i]];
         String surface = (currentLanguage == LANG_EN) ? w.en : w.jp;
         rows.push_back({
-            fitWordTableCellText(surface, wordColWidth),
-            fitWordTableCellText(w.zh, zhColWidth),
+            surface,
+            w.zh,
             String(w.score)
         });
     }
 
     drawSimpleTable(
         canvas,
-        startY,
-        rowHeight,
         headers,
-        colXs,
-        1.0,
-        1.0,
         rows
     );
 

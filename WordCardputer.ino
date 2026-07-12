@@ -245,12 +245,7 @@ void drawTextMenu(
 );
 void drawSimpleTable(
     M5Canvas &cv,
-    int startY,
-    int rowHeight,
     const std::vector<String> &headers,
-    const std::vector<int> &colXs,
-    float headerSize,
-    float bodySize,
     const std::vector<std::vector<String>> &rows
 );
 
