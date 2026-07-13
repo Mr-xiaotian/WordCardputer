@@ -102,8 +102,9 @@ bool saveAppConfig() {
  * 从 config.json 加载配置
  *
  * 若 config.json 不存在，则尝试迁移旧版 wifi.json。
- * 无论是否存在旧配置，最终都会将当前内存中的默认值/迁移值
- * 写回到统一的 config.json。
+ * 仅在以下情况会回写统一配置文件：
+ * - `config.json` 不存在或解析失败，需要用默认值/迁移值重建
+ * - 仍检测到旧版 `wifi.json`，需要在迁移后收敛到 `config.json`
  */
 void loadAppConfig() {
     bool loaded = false;

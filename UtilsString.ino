@@ -6,6 +6,12 @@
  * 以及 IPA 国际音标 Unicode 符号到 ASCII 近似字符的转换功能。
  */
 
+/**
+ * 返回 UTF-8 当前起始字节对应字符的字节长度。
+ *
+ * @param c UTF-8 字符起始字节
+ * @return 该字符占用的字节数；无法识别时退化为 1
+ */
 static int _utf8CharLen(uint8_t c)
 {
     if ((c & 0x80) == 0x00)
@@ -19,6 +25,12 @@ static int _utf8CharLen(uint8_t c)
     return 1;
 }
 
+/**
+ * 去除换行结果首尾的空格与制表符。
+ *
+ * @param text 原始行文本
+ * @return 去掉首尾空白后的文本
+ */
 static String _trimWrappedLine(const String &text)
 {
     int start = 0;
@@ -35,6 +47,16 @@ static String _trimWrappedLine(const String &text)
     return text.substring(start, end);
 }
 
+/**
+ * 按给定最大宽度把文本拆分为多行。
+ *
+ * 逐字符累积宽度，遇到显式换行会强制分行；超宽时将当前行收束后另起一行。
+ *
+ * @param cv 目标画布，用于测量文本宽度
+ * @param text 待分行文本
+ * @param maxWidth 单行允许的最大像素宽度
+ * @return 按宽度拆分后的文本行数组
+ */
 static std::vector<String> _wrapTextLines(M5Canvas &cv, const String &text, int maxWidth)
 {
     std::vector<String> lines;

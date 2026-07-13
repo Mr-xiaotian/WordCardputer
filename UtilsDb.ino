@@ -23,6 +23,15 @@ const char *currentWordTable() {
     return (currentLanguage == LANG_JP) ? "jp_words" : "en_words";
 }
 
+/**
+ * 获取当前语言对应的 source 关联表名称。
+ *
+ * source / chapter 信息独立保存在关联表中：
+ * - 日语：`jp_source`
+ * - 英语：`en_source`
+ *
+ * @return 当前语言对应的 source 表名
+ */
 const char *currentSourceTable() {
     return (currentLanguage == LANG_JP) ? "jp_source" : "en_source";
 }
@@ -610,7 +619,8 @@ bool saveCurrentWordsToDB()
  * - 英语写入 `en_words`
  *
  * 若同一 `(source, chapter, jp/en)` 已存在，则执行 upsert，
- * 用新值覆盖原有正文和 score。
+ * 用新值覆盖原有正文；`score` 则保留原记录与导入值中的较大者，
+ * 避免导入操作意外降低已有熟练度。
  *
  * @param source  目标来源名
  * @param chapter 目标章节名

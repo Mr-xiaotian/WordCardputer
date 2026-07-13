@@ -14,6 +14,8 @@ int statsCounts[6] = {0, 0, 0, 0, 0, 0};
 String statsLevel = "";
 int statsPage = 0;
 
+// ===== 核心函数（init / draw / loop） =====
+
 /**
  * 初始化统计模式
  *

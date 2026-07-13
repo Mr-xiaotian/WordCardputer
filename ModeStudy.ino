@@ -3,7 +3,8 @@
  *
  * 实现类似 Anki 的双面闪卡学习功能。支持日语和英语两种语言的卡片显示，
  * 卡片正面/反面随机切换（Side A: 外语优先；Side B: 中文优先）。
- * 用户可通过键盘控制翻卡、调节音量、播放发音、以及调整熟练度评分。
+ * 学习模式包含“单词页”和“例句页”两张循环页面，用户可通过键盘控制翻卡、
+ * 例句显示、调节音量、播放发音，以及调整熟练度评分。
  */
 
 // 学习模式公共变量
@@ -16,6 +17,7 @@ bool studyHasExample(const Word &w);
 int studyPageCount(const Word &w);
 void drawStudyExamplePage(const Word &w);
 
+// ===== 核心函数（init / draw / loop） =====
 
 /**
  * 初始化学习模式并从数据库加载词库
@@ -52,9 +54,12 @@ void initStudyMode()
 /**
  * 绘制当前闪卡的完整画面
  *
- * 清屏后根据 currentLanguage 调用对应的语言绘制函数渲染卡片内容，
- * 左上角显示当前单词的熟练度评分，右上角在音量调节后短暂显示音量值。
- * 若词库为空则显示错误提示。
+ * 清屏后根据当前页面状态绘制单词页或例句页：
+ * - 单词页：根据 currentLanguage 调用对应语言的闪卡绘制函数
+ * - 例句页：显示例句原文或中文释义
+ *
+ * 同时左上角显示当前单词的熟练度评分，顶部居中显示页码，
+ * 右上角在音量调节后短暂显示音量值。若词库为空则显示错误提示。
  */
 void drawStudyWord()
 {
@@ -100,16 +105,45 @@ void drawStudyWord()
     canvas.pushSprite(0, 0);
 }
 
+// ===== 工具函数 =====
+
+/**
+ * 判断当前单词是否包含可展示的例句信息。
+ *
+ * 只要例句原文或例句中文任一存在，就允许学习模式切换到例句页。
+ *
+ * @param w 待检查的单词对象
+ * @return true 表示存在可展示的例句内容；false 表示仅显示单词页
+ */
 bool studyHasExample(const Word &w)
 {
     return !w.sentence.isEmpty() || !w.sentenceZh.isEmpty();
 }
 
+/**
+ * 获取当前单词在学习模式中的总页数。
+ *
+ * 无例句时仅显示单词页；有例句时显示“单词页 + 例句页”共两页。
+ *
+ * @param w 当前单词对象
+ * @return 当前单词对应的学习页总数
+ */
 int studyPageCount(const Word &w)
 {
     return studyHasExample(w) ? 2 : 1;
 }
 
+// ===== 核心绘制子函数 =====
+
+/**
+ * 绘制学习模式的例句页。
+ *
+ * 页面顶部显示“例句/例句中文”标题和当前单词表面形式，
+ * 主体区域显示完整例句正文，并在宽度不足时自动换行；
+ * 若高度不足，则逐步缩小字号但不会低于最小字号限制。
+ *
+ * @param w 当前要显示例句的单词对象
+ */
 void drawStudyExamplePage(const Word &w)
 {
     const String bodyText = studyShowSentenceZh

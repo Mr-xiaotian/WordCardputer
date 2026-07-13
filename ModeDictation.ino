@@ -25,6 +25,8 @@ int wrongCount = 0;
 bool dictShowSummary = false;
 bool useKatakana = false;
 
+// ===== 核心函数（init / draw / loop） =====
+
 /**
  * 初始化听写模式
  *
@@ -72,9 +74,11 @@ void initDictationMode()
 /**
  * 绘制听写答题界面
  *
- * 在屏幕上渲染当前听写输入状态。英语模式显示已输入的英文字母、
- * 音标和词性；日语模式显示已提交的假名加当前罗马音缓冲，
- * 以及候选假名提示。底部显示当前进度（第几个/总数）。
+ * 在屏幕上渲染当前听写输入状态。
+ * - 英语模式：显示当前已输入的英文答案
+ * - 日语模式：显示已提交的假名、当前罗马音缓冲和候选假名提示
+ *
+ * 底部显示当前进度（第几个/总数）。
  */
 void drawDictationInput()
 {
@@ -124,8 +128,8 @@ void drawDictationInput()
 /**
  * 绘制听写结果总结界面
  *
- * 在屏幕上显示本次听写的正确数和错误数。
- * 用户可按 Enter 键继续：若有错误则进入错误回顾，否则返回 ESC 菜单。
+ * 仅负责在屏幕上显示本次听写的正确数和错误数。
+ * 后续按键处理与页面跳转逻辑由 loopDictationMode() 负责。
  */
 void drawDictationSummary()
 {

@@ -7,13 +7,13 @@
  * 同时在屏幕上显示单词文本、注音和中文释义，支持音量调节。
  */
 
-// =============== 听读模式 ===============
-
 // 播放控制
 int listenPlayCount = 0;                         // 当前单词已经播放了几次（0~3）
 unsigned long listenNextActionTime = 0;          // 下一次动作的时间点
 const unsigned long listenRepeatInterval = 1200; // 每次播放之间的间隔（毫秒）
 const unsigned long listenNextWordDelay = 600;   // 播完3次后,切到下一个单词前等待的时间
+
+// ===== 核心函数（init / draw / loop） =====
 
 /**
  * 初始化听读模式
@@ -42,7 +42,7 @@ void initListenMode()
  * 绘制听读模式界面
  *
  * 在屏幕上渲染当前单词的详细信息。英语模式显示单词、音标和词性；
- * 日语模式显示日语文本和汉字读音。底部统一显示中文释义。
+ * 日语模式显示假名和汉字写法。底部统一显示中文释义。
  * 左上角标注"听读模式"，音量调节时右上角显示当前音量值。
  */
 void drawListenWord()

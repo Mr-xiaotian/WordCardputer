@@ -12,6 +12,8 @@ int wordTablePage = 0;
 const int wordTableRowsPerPage = 3;
 std::vector<int> wordTableFilteredIndices;
 
+// ===== 工具函数 =====
+
 /**
  * 重建当前 score 分组的词索引列表。
  */
@@ -99,6 +101,8 @@ void moveWordTableToFirstNonEmptyScore()
     wordTablePage = 0;
     rebuildWordTableFilteredIndices();
 }
+
+// ===== 核心函数（init / draw / loop） =====
 
 /**
  * 绘制当前词表页面。

@@ -89,15 +89,29 @@ std::vector<HelpSectionData> helpSections = {
 int helpSectionIndex = 0;
 int helpPageIndex = 0;
 
+// ===== 工具函数 =====
+
+/**
+ * 获取按键帮助中的分类总数。
+ *
+ * @return 当前帮助数据源中的分类数量
+ */
 int helpSectionCount()
 {
     return (int)helpSections.size();
 }
 
+/**
+ * 获取当前分类下的总页数。
+ *
+ * @return 当前分类的分页数量
+ */
 int helpPageCountForCurrentSection()
 {
     return (int)helpSections[helpSectionIndex].pages.size();
 }
+
+// ===== 核心函数（init / draw / loop） =====
 
 /**
  * 初始化按键帮助模式

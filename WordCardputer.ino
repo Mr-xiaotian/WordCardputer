@@ -84,8 +84,8 @@ int loopDelay = 30;                       // 动态延迟时间
  * 单词数据结构，同时兼容日语和英语词库字段
  *
  * 运行时统一使用一个内存结构承载两种语言的词条：
- * - 日语使用 `jp / zh / kanji / romaji / tone / score`
- * - 英语使用 `en / zh / pos / phonetic / score`
+ * - 日语使用 `jp / zh / kanji / romaji / sentence / sentenceZh / tone / score`
+ * - 英语使用 `en / zh / pos / phonetic / sentence / sentenceZh / score`
  *
  * `dbId` 用于把当前内存中的 score 直接回写到 SQLite 对应记录。
  */

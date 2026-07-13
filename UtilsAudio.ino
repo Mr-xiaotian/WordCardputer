@@ -38,7 +38,6 @@ bool adjustVolume(char c) {
  * @param path SD 卡上 WAV 文件的完整路径
  * @return true 播放成功；false 文件无法打开、格式不支持或找不到 data 块
  */
-// ------------------- 官方风格流式 WAV 播放 -------------------
 bool playWavStream(const String& path) {
     File file = SD.open(path);
     if (!file) {

@@ -43,6 +43,16 @@ int escVocabScroll = 0;
 int escModeIndex = 0;
 int escModeScroll = 0;
 
+// ===== 工具函数 =====
+
+/**
+ * 获取当前菜单分组对应的选项列表引用。
+ *
+ * 根菜单、词库子菜单、模式子菜单共用一套绘制与导航逻辑，
+ * 本函数用于把当前分组映射到实际的数据源。
+ *
+ * @return 当前分组对应的菜单项数组引用
+ */
 std::vector<String> &currentEscItems() {
     if (escMenuGroup == ESC_MENU_VOCAB) {
         return escVocabItems;
@@ -53,6 +63,14 @@ std::vector<String> &currentEscItems() {
     return escRootItems;
 }
 
+/**
+ * 获取当前菜单分组对应的选中下标引用。
+ *
+ * 这样 ESC 菜单在不同分组间切换时，可以复用统一的导航代码，
+ * 同时保留各分组独立的光标位置。
+ *
+ * @return 当前分组对应的选中索引引用
+ */
 int &currentEscIndex() {
     if (escMenuGroup == ESC_MENU_VOCAB) {
         return escVocabIndex;
@@ -63,6 +81,13 @@ int &currentEscIndex() {
     return escRootIndex;
 }
 
+/**
+ * 获取当前菜单分组对应的滚动起点引用。
+ *
+ * 用于在不同分组之间切换时保留各自的滚动位置，避免每次返回都从头开始。
+ *
+ * @return 当前分组对应的滚动索引引用
+ */
 int &currentEscScroll() {
     if (escMenuGroup == ESC_MENU_VOCAB) {
         return escVocabScroll;
@@ -73,6 +98,11 @@ int &currentEscScroll() {
     return escRootScroll;
 }
 
+/**
+ * 生成当前 ESC 菜单页面标题。
+ *
+ * @return 根菜单或对应子菜单的显示标题
+ */
 String escMenuTitle() {
     if (escMenuGroup == ESC_MENU_VOCAB) {
         return "词库相关";
@@ -83,6 +113,12 @@ String escMenuTitle() {
     return "菜单";
 }
 
+/**
+ * 从 ESC 菜单返回到先前模式。
+ *
+ * 返回前会先尝试自动保存学习进度，然后根据 previousMode
+ * 恢复对应模式的绘制或初始化逻辑。
+ */
 void returnFromEscMenu() {
     autoSaveIfNeeded();
     appMode = previousMode;
@@ -99,6 +135,8 @@ void returnFromEscMenu() {
         drawDictationReviewPage();
     }
 }
+
+// ===== 核心函数（init / draw / loop） =====
 
 /**
  * 初始化 ESC 菜单模式

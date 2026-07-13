@@ -12,6 +12,8 @@ std::vector<bool> fileExpandable;
 int fileIndex = 0;
 int fileScroll = 0;
 
+// ===== 核心函数（init / draw / loop） =====
+
 /**
  * 初始化文件选择模式，从数据库构建 source / chapter 列表
  *

@@ -30,6 +30,8 @@ String wifiPasswordInput = "";
 bool wifiConnectSuccess = false;
 int wifiPage = 0;  // 0=列表页, 1=状态页（仅 WiFi 已连接时可用）
 
+// ===== 核心函数（init / draw / loop） =====
+
 /**
  * 绘制扫描中提示
  */
