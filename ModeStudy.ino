@@ -8,14 +8,16 @@
  */
 
 // 学习模式公共变量
-bool showMeaning = false;      // 是否显示释义（翻卡状态）
-bool showAnkiSideA = true;     // true=先显示外语（Side A），false=先显示中文（Side B）
 int studyPage = 0;             // 0=单词页, 1=例句页
-bool studyShowSentenceZh = false; // 例句页下 BtnA 切换原句/中文
+bool showMeaning = false;      // 是否显示释义（单词页面）
+bool showSentenceZh = false;   // 是否显示中文例句（例句页面）
+bool showAnkiSideA = true;     // true=先显示外语（Side A），false=先显示中文（Side B）
 
 bool studyHasExample(const Word &w);
 int studyPageCount(const Word &w);
-void drawStudyExamplePage(const Word &w);
+void drawStudySentence(const Word &w);
+void drawEnglishSentence(const Word &w);
+void drawJapaneseSentence(const Word &w);
 
 // ===== 核心函数（init / draw / loop） =====
 
@@ -45,24 +47,14 @@ void initStudyMode()
     wordIndex = pickWeightedRandom();
     showMeaning = false;
     studyPage = 0;
-    studyShowSentenceZh = false;
+    showSentenceZh = false;
     if (currentLanguage == LANG_EN)
         showAnkiSideA = true;
-    drawStudyWord();
+    drawStudyMode();
 }
 
-/**
- * 绘制当前闪卡的完整画面
- *
- * 清屏后根据当前页面状态绘制单词页或例句页：
- * - 单词页：根据 currentLanguage 调用对应语言的闪卡绘制函数
- * - 例句页：显示例句原文或中文释义
- *
- * 同时左上角显示当前单词的熟练度评分，顶部居中显示页码，
- * 右上角在音量调节后短暂显示音量值。若词库为空则显示错误提示。
- */
-void drawStudyWord()
-{
+void drawStudyMode()
+{ 
     canvas.fillSprite(BLACK);
     canvas.setTextDatum(middle_center);
 
@@ -74,27 +66,17 @@ void drawStudyWord()
 
     Word &w = words[wordIndex];
 
-    if (studyPage == 1)
+    if (studyPage == 0)
     {
-        drawStudyExamplePage(w);
+        drawStudyWord(w);
     }
-    else if (currentLanguage == LANG_EN)
+    else if (studyPage == 1)
     {
-        drawEnglishWord(w);
-    }
-    else if (currentLanguage == LANG_JP)
-    {
-        drawJapaneseWord(w);
+        drawStudySentence(w);
     }
 
     // 熟练度提示
     drawTopLeftString(canvas, "Score: " + String(words[wordIndex].score), TFT_DARKGREY, 1.0);
-
-    // 页码提示
-    canvas.setTextDatum(top_center);
-    canvas.setTextColor(TFT_DARKGREY);
-    canvas.setTextSize(1.0);
-    canvas.drawString(String(studyPage + 1) + "/" + String(studyPageCount(w)), canvas.width() / 2, 8);
 
     // HUD 显示音量变化
     if (millis() < volumeMessageDeadline)
@@ -104,6 +86,115 @@ void drawStudyWord()
 
     canvas.pushSprite(0, 0);
 }
+
+/**
+ * 学习模式主循环 - 处理键盘输入
+ *
+ * 支持以下操作：
+ * - BtnA（物理按钮）：单词页切换释义；例句页切换例句/中文
+ * - ` (ESC)：打开 ESC 菜单
+ * - `,` / `/`：左右循环切换 单词页 / 例句页
+ * - `;` / `.`：增大/减小音量
+ * - Fn：播放当前单词发音
+ * - Enter：标记为"记住"，提升熟练度并跳到下一个单词
+ * - Del：标记为"不熟"，降低熟练度并跳到下一个单词
+ *
+ * Enter/Del 操作后会随机切换 Side A/B 并重新抽词。
+ */
+void loopStudyMode()
+{
+    // BtnA键 → 单词页翻卡 / 例句页切换中译
+    if (M5Cardputer.BtnA.wasPressed())
+    {
+        if (studyPage == 1 && studyHasExample(words[wordIndex]))
+        {
+            showSentenceZh = !showSentenceZh;
+        }
+        else
+        {
+            showMeaning = !showMeaning;
+        }
+        drawStudyMode();
+        userAction = true;
+    }
+
+    // 键盘操作
+    if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
+    {
+        Keyboard_Class::KeysState status = M5Cardputer.Keyboard.keysState();
+        userAction = true;
+
+        // 检测 esc 键
+        for (auto c : status.word)
+        {
+            if (c == '`')
+            {                           // ESC 键
+                previousMode = appMode; // 记录当前模式
+                appMode = MODE_ESC_MENU;
+                initEscMenuMode();
+                return;
+            }
+            else if (c == ';' || c == '.')
+            {
+                if (adjustVolume(c)) {
+                    drawStudyMode();
+                }
+            }
+            else if (c == ',' || c == '/')
+            {
+                if (studyHasExample(words[wordIndex]))
+                {
+                    int pageCount = studyPageCount(words[wordIndex]);
+                    if (c == '/')
+                    {
+                        studyPage = (studyPage + 1) % pageCount;
+                    }
+                    else
+                    {
+                        studyPage = (studyPage - 1 + pageCount) % pageCount;
+                    }
+                    drawStudyMode();
+                }
+            }
+        }
+
+        // fn = 播放音频
+        if (status.fn)
+        {
+            if (currentLanguage == LANG_JP)
+            {
+                playAudioForWord(words[wordIndex].jp);
+            }
+            else if (words[wordIndex].en.length() > 0)
+            {
+                playAudioForWord(words[wordIndex].en);
+            }
+        }
+
+        // Enter = 记住,提升熟练度
+        if (status.enter)
+        {
+            words[wordIndex].score = min(5, words[wordIndex].score + 1);
+            markScoreDirty();
+        }
+        // Del = 不熟,降低熟练度
+        else if (status.del)
+        {
+            words[wordIndex].score = max(1, words[wordIndex].score - 1);
+            markScoreDirty();
+        }
+        if (status.enter || status.del)
+        {
+            wordIndex = pickWeightedRandom();
+            // studyPage = 0;
+            showMeaning = false;
+            showSentenceZh = false;
+            showAnkiSideA = random(2);
+            drawStudyMode();
+        }
+    }
+}
+
 
 // ===== 工具函数 =====
 
@@ -136,53 +227,26 @@ int studyPageCount(const Word &w)
 // ===== 核心绘制子函数 =====
 
 /**
- * 绘制学习模式的例句页。
+ * 绘制当前闪卡的完整画面
  *
- * 页面顶部显示“例句/例句中文”标题和当前单词表面形式，
- * 主体区域显示完整例句正文，并在宽度不足时自动换行；
- * 若高度不足，则逐步缩小字号但不会低于最小字号限制。
+ * 清屏后根据当前页面状态绘制单词页或例句页：
+ * - 单词页：根据 currentLanguage 调用对应语言的闪卡绘制函数
+ * - 例句页：显示例句原文或中文释义
  *
- * @param w 当前要显示例句的单词对象
+ * 同时左上角显示当前单词的熟练度评分，顶部居中显示页码，
+ * 右上角在音量调节后短暂显示音量值。若词库为空则显示错误提示。
  */
-void drawStudyExamplePage(const Word &w)
+void drawStudyWord(const Word &w)
 {
-    const String bodyText = studyShowSentenceZh
-        ? (!w.sentenceZh.isEmpty() ? w.sentenceZh : w.zh)
-        : (!w.sentence.isEmpty() ? w.sentence : (currentLanguage == LANG_EN ? w.en : w.jp));
-    const String titleText = studyShowSentenceZh ? "例句中文" : "例句";
-    const String subText = (currentLanguage == LANG_EN) ? w.en : w.jp;
-
-    canvas.setTextFont(&fonts::efontCN_16);
-    canvas.setTextDatum(top_center);
-    canvas.setTextColor(studyShowSentenceZh ? YELLOW : CYAN);
-    canvas.setTextSize(1.2);
-    canvas.drawString(titleText, canvas.width() / 2, 34);
-
-    canvas.setTextFont(currentLanguage == LANG_JP ? &fonts::efontJA_16 : &fonts::efontCN_16);
-    canvas.setTextColor(TFT_DARKGREY);
-    canvas.setTextSize(1.0);
-    canvas.drawString(subText, canvas.width() / 2, 54);
-
-    canvas.setTextFont((currentLanguage == LANG_JP && !studyShowSentenceZh) ? &fonts::efontJA_16 : &fonts::efontCN_16);
-    canvas.setTextColor(studyShowSentenceZh ? YELLOW : WHITE);
-    drawWrappedTextBlock(
-        canvas,
-        bodyText,
-        10,
-        74,
-        canvas.width() - 20,
-        canvas.height() - 96,
-        1.45,
-        1.0f,
-        4
-    );
-
-    canvas.setTextDatum(bottom_center);
-    canvas.setTextColor(TFT_DARKGREY);
-    canvas.setTextSize(1.0);
-    canvas.drawString("BtnA 切换例句/中文", canvas.width() / 2, canvas.height() - 6);
+    if (currentLanguage == LANG_EN)
+    {
+        drawEnglishWord(w);
+    }
+    else if (currentLanguage == LANG_JP)
+    {
+        drawJapaneseWord(w);
+    }
 }
-
 
 /**
  * 绘制英语单词闪卡
@@ -193,7 +257,7 @@ void drawStudyExamplePage(const Word &w)
  *
  * @param w 要显示的单词引用
  */
-void drawEnglishWord(Word &w)
+void drawEnglishWord(const Word &w)
 {
     if (showAnkiSideA)
     {
@@ -249,7 +313,7 @@ void drawEnglishWord(Word &w)
  *
  * @param w 要显示的单词引用
  */
-void drawJapaneseWord(Word &w)
+void drawJapaneseWord(const Word &w)
 {
     if (showAnkiSideA)
     {
@@ -293,110 +357,133 @@ void drawJapaneseWord(Word &w)
     }
 }
 
+
 /**
- * 学习模式主循环 - 处理键盘输入
+ * 绘制学习模式的例句页。
  *
- * 支持以下操作：
- * - BtnA（物理按钮）：单词页切换释义；例句页切换例句/中文
- * - ` (ESC)：打开 ESC 菜单
- * - `,` / `/`：左右循环切换 单词页 / 例句页
- * - `;` / `.`：增大/减小音量
- * - Fn：播放当前单词发音
- * - Enter：标记为"记住"，提升熟练度并跳到下一个单词
- * - Del：标记为"不熟"，降低熟练度并跳到下一个单词
+ * 根据当前语言分发到英语或日语的例句绘制函数，
+ * 让例句页的结构与单词页保持一致。
  *
- * Enter/Del 操作后会随机切换 Side A/B 并重新抽词。
+ * @param w 当前要显示例句的单词对象
  */
-void loopStudyMode()
+void drawStudySentence(const Word &w)
 {
-    // BtnA键 → 单词页翻卡 / 例句页切换中译
-    if (M5Cardputer.BtnA.wasPressed())
+    if (currentLanguage == LANG_EN)
     {
-        if (studyPage == 1 && studyHasExample(words[wordIndex]))
-        {
-            studyShowSentenceZh = !studyShowSentenceZh;
-        }
-        else
-        {
-            showMeaning = !showMeaning;
-        }
-        drawStudyWord();
-        userAction = true;
+        drawEnglishSentence(w);
     }
-
-    // 键盘操作
-    if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
+    else if (currentLanguage == LANG_JP)
     {
-        Keyboard_Class::KeysState status = M5Cardputer.Keyboard.keysState();
-        userAction = true;
+        drawJapaneseSentence(w);
+    }
+}
 
-        // 检测 esc 键
-        for (auto c : status.word)
-        {
-            if (c == '`')
-            {                           // ESC 键
-                previousMode = appMode; // 记录当前模式
-                appMode = MODE_ESC_MENU;
-                initEscMenuMode();
-                return;
-            }
-            else if (c == ';' || c == '.')
-            {
-                if (adjustVolume(c)) {
-                    drawStudyWord();
-                }
-            }
-            else if (c == ',' || c == '/')
-            {
-                if (studyHasExample(words[wordIndex]))
-                {
-                    int pageCount = studyPageCount(words[wordIndex]);
-                    if (c == '/')
-                    {
-                        studyPage = (studyPage + 1) % pageCount;
-                    }
-                    else
-                    {
-                        studyPage = (studyPage - 1 + pageCount) % pageCount;
-                    }
-                    drawStudyWord();
-                }
-            }
-        }
+/**
+ * 绘制英语学习卡片的例句页。
+ *
+ * 页面上方显示英文单词，下方显示英文例句或对应中文释义。
+ * 正文区域会根据宽度自动换行，并在高度不足时自动缩小字号。
+ *
+ * @param w 当前要显示例句的英语单词对象
+ */
+void drawEnglishSentence(const Word &w)
+{
+    if (showSentenceZh)
+    {
+        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setTextColor(YELLOW);
+        canvas.setTextSize(1.2);
+        canvas.drawString(w.zh, canvas.width() / 2, 43);
 
-        // fn = 播放音频
-        if (status.fn)
-        {
-            if (currentLanguage == LANG_JP)
-            {
-                playAudioForWord(words[wordIndex].jp);
-            }
-            else if (words[wordIndex].en.length() > 0)
-            {
-                playAudioForWord(words[wordIndex].en);
-            }
-        }
+        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setTextColor(WHITE);
+        drawWrappedTextBlock(
+            canvas,
+            w.sentenceZh,
+            10,
+            64,
+            canvas.width() - 20,
+            canvas.height() - 96,
+            1.45,
+            1.0f,
+            4
+        );
 
-        // Enter = 记住,提升熟练度
-        if (status.enter)
-        {
-            words[wordIndex].score = min(5, words[wordIndex].score + 1);
-            markScoreDirty();
-        }
-        // Del = 不熟,降低熟练度
-        else if (status.del)
-        {
-            words[wordIndex].score = max(1, words[wordIndex].score - 1);
-            markScoreDirty();
-        }
-        if (status.enter || status.del)
-        {
-            wordIndex = pickWeightedRandom();
-            showMeaning = false;
-            studyPage = 0;
-            studyShowSentenceZh = false;
-            showAnkiSideA = random(2);
-            drawStudyWord();
-        }
+    }
+    else
+    {
+        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setTextColor(CYAN);
+        canvas.setTextSize(1.2);
+        canvas.drawString(w.en, canvas.width() / 2, 43);
+
+        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setTextColor(WHITE);
+        drawWrappedTextBlock(
+            canvas,
+            w.sentence,
+            10,
+            64,
+            canvas.width() - 20,
+            canvas.height() - 96,
+            1.45,
+            1.0f,
+            4
+        );
+    }
+}
+
+/**
+ * 绘制日语学习卡片的例句页。
+ *
+ * 页面上方显示日语词条，下方显示日语例句或对应中文释义。
+ * 日语原句使用日文字体，中文释义使用中文字体。
+ *
+ * @param w 当前要显示例句的日语单词对象
+ */
+void drawJapaneseSentence(const Word &w)
+{
+    if (showSentenceZh)
+    {
+        canvas.setTextFont(&fonts::efontJA_16);
+        canvas.setTextColor(YELLOW);
+        canvas.setTextSize(1.2);
+        canvas.drawString(w.zh, canvas.width() / 2, 43);
+
+        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setTextColor(WHITE);
+        drawWrappedTextBlock(
+            canvas,
+            w.sentenceZh,
+            10,
+            64,
+            canvas.width() - 20,
+            canvas.height() - 96,
+            1.45,
+            1.0f,
+            4
+        );
+
+    }
+    else
+    {
+        canvas.setTextFont(&fonts::efontJA_16);
+        canvas.setTextColor(CYAN);
+        canvas.setTextSize(1.2);
+        canvas.drawString(w.jp, canvas.width() / 2, 43);
+
+        canvas.setTextFont(&fonts::efontJA_16);
+        canvas.setTextColor(WHITE);
+        drawWrappedTextBlock(
+            canvas,
+            w.sentence,
+            10,
+            64,
+            canvas.width() - 20,
+            canvas.height() - 96,
+            1.45,
+            1.0f,
+            4
+        );
     }
 }

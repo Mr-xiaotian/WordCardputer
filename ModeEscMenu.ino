@@ -123,7 +123,7 @@ void returnFromEscMenu() {
     autoSaveIfNeeded();
     appMode = previousMode;
     if (previousMode == MODE_STUDY) {
-        drawStudyWord();
+        initStudyMode();
     }
     else if (previousMode == MODE_LISTEN) {
         initListenMode();
@@ -294,7 +294,7 @@ void loopEscMenuMode() {
             else if (escMenuGroup == ESC_MENU_MODE) {
                 if (escModeIndex == 0) {
                     appMode = MODE_STUDY;
-                    drawStudyWord();
+                    initStudyMode();
                     return;
                 }
                 else if (escModeIndex == 1) {
