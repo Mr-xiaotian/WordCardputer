@@ -98,6 +98,8 @@ struct Word {
     String en;       // 英语单词
     String pos;      // 词性（英语）
     String phonetic; // 音标（英语）
+    String sentence;   // 例句
+    String sentenceZh; // 例句中文释义
     int tone;        // 声调（日语）
     int score;       // 熟练度评分 1~5（数值越高越熟练）
 };
@@ -142,6 +144,7 @@ void initFileSelectMode();
 void loopFileSelectMode();
 
 // --- ModeStudy.ino ---
+void initStudyMode();
 void loopStudyMode();
 
 // --- ModeEscMenu.ino ---
@@ -213,7 +216,6 @@ String dictationPromptText(const Word &w);
 String statsFileName(const String &path);
 void computeStatsFromWords();
 void setLanguage(StudyLanguage lang);
-void startStudyMode();
 
 // --- UtilsString.ino ---
 void drawAutoFitString(M5Canvas &cv, const String &text,
@@ -221,6 +223,17 @@ void drawAutoFitString(M5Canvas &cv, const String &text,
 void drawTopLeftString(M5Canvas &cv, const String &text, uint16_t color, float size);
 void drawTopRightString(M5Canvas &cv, const String &text, uint16_t color, float size);
 void drawCenterString(M5Canvas &cv, const String &message, uint16_t color, float size);
+void drawWrappedTextBlock(
+    M5Canvas &cv,
+    const String &text,
+    int left,
+    int top,
+    int maxWidth,
+    int maxHeight,
+    float baseSize,
+    float minSize = 1.0f,
+    int lineGap = 4
+);
 bool isEnglishInputChar(char c);
 String normalizeEnglishAnswer(String s);
 

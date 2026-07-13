@@ -216,33 +216,3 @@ void setLanguage(StudyLanguage lang)
     selectedChapter = "";
     words.clear();
 }
-
-/**
- * 初始化学习模式并从数据库加载词库
- *
- * 加载新词库前先自动保存旧词库进度，然后根据当前选中的
- * `selectedSource` / `selectedChapter` 从数据库读取词条。
- * 加载成功后通过加权随机算法选取第一个单词并绘制闪卡。
- */
-void startStudyMode()
-{
-    autoSaveIfNeeded();
-
-    bool ok = loadWordsFromDB(selectedSource, selectedChapter);
-    if (!ok)
-    {
-        drawCenterString(canvas, "词库加载失败", RED, 1.2);
-        return;
-    }
-    else if (words.empty())
-    {
-        drawCenterString(canvas, "词库为空", RED, 1.2);
-        return;
-    }
-
-    wordIndex = pickWeightedRandom();
-    showMeaning = false;
-    if (currentLanguage == LANG_EN)
-        showAnkiSideA = true;
-    drawStudyWord();
-}

@@ -36,11 +36,12 @@ std::vector<HelpSectionData> helpSections = {
         "学习模式",
         {
             {
-                { "BtnA",    "显示/隐藏释义" },
+                { "BtnA",    "单词页翻卡/例句中切换中译" },
                 { "Enter",   "记住(score+1)" },
                 { "Del",     "不熟(score-1)" },
             },
             {
+                { ", /",     "左右循环切换页面" },
                 { "; / .",   "音量加/减" },
                 { "Fn",      "播放发音" },
             }
@@ -99,6 +100,17 @@ int helpPageCountForCurrentSection()
 }
 
 /**
+ * 初始化按键帮助模式
+ *
+ * 默认进入“按键帮助”分类第一页。
+ */
+void initKeyHelpMode() {
+    helpSectionIndex = 0;
+    helpPageIndex = 0;
+    drawKeyHelpPage();
+}
+
+/**
  * 绘制当前按键帮助页面
  *
  * 左上角显示页面名称，右上角显示“分类 + 分类内页码”，
@@ -121,17 +133,6 @@ void drawKeyHelpPage() {
     drawSimpleTable(canvas, headers, helpSections[helpSectionIndex].pages[helpPageIndex]);
 
     canvas.pushSprite(0, 0);
-}
-
-/**
- * 初始化按键帮助模式
- *
- * 默认进入“按键帮助”分类第一页。
- */
-void initKeyHelpMode() {
-    helpSectionIndex = 0;
-    helpPageIndex = 0;
-    drawKeyHelpPage();
 }
 
 /**

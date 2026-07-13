@@ -380,6 +380,8 @@ bool importJsonFileToDb(const String &jsonPath, const String &source, const Stri
         w.en = "";
         w.pos = "";
         w.phonetic = "";
+        w.sentence = "";
+        w.sentenceZh = "";
         w.tone = -1;
         w.score = normalizeScoreValue(obj["score"] | 3);
 
@@ -444,13 +446,13 @@ bool loadWordsFromDB(const String &source, const String &chapter)
     String sql;
     if (currentLanguage == LANG_JP) {
         if (chapter.isEmpty()) {
-            sql = "SELECT DISTINCT w.id, w.jp, w.zh, w.kanji, w.romaji, w.tone, w.score "
+            sql = "SELECT DISTINCT w.id, w.jp, w.zh, w.kanji, w.romaji, w.tone, w.score, w.sentence, w.sentence_zh "
                   "FROM jp_words w "
                   "INNER JOIN jp_source s ON s.word_id = w.id "
                   "WHERE s.source = ?1 "
                   "ORDER BY w.id";
         } else {
-            sql = "SELECT DISTINCT w.id, w.jp, w.zh, w.kanji, w.romaji, w.tone, w.score "
+            sql = "SELECT DISTINCT w.id, w.jp, w.zh, w.kanji, w.romaji, w.tone, w.score, w.sentence, w.sentence_zh "
                   "FROM jp_words w "
                   "INNER JOIN jp_source s ON s.word_id = w.id "
                   "WHERE s.source = ?1 AND s.chapter = ?2 "
@@ -458,13 +460,13 @@ bool loadWordsFromDB(const String &source, const String &chapter)
         }
     } else {
         if (chapter.isEmpty()) {
-            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score "
+            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score, w.sentence, w.sentence_zh "
                   "FROM en_words w "
                   "INNER JOIN en_source s ON s.word_id = w.id "
                   "WHERE s.source = ?1 "
                   "ORDER BY w.id";
         } else {
-            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score "
+            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score, w.sentence, w.sentence_zh "
                   "FROM en_words w "
                   "INNER JOIN en_source s ON s.word_id = w.id "
                   "WHERE s.source = ?1 AND s.chapter = ?2 "
@@ -492,6 +494,8 @@ bool loadWordsFromDB(const String &source, const String &chapter)
             w.en = "";
             w.pos = "";
             w.phonetic = "";
+            w.sentence = "";
+            w.sentenceZh = "";
             w.tone = -1;
             w.score = normalizeScoreValue(sqlite3_column_int(stmt, currentLanguage == LANG_JP ? 6 : 5));
 
@@ -501,6 +505,8 @@ bool loadWordsFromDB(const String &source, const String &chapter)
                 w.kanji = sqliteColumnText(stmt, 3);
                 w.romaji = sqliteColumnText(stmt, 4);
                 w.tone = sqlite3_column_int(stmt, 5);
+                w.sentence = sqliteColumnText(stmt, 7);
+                w.sentenceZh = sqliteColumnText(stmt, 8);
                 if (!w.jp.isEmpty()) {
                     words.push_back(w);
                 }
@@ -509,6 +515,8 @@ bool loadWordsFromDB(const String &source, const String &chapter)
                 w.zh = sqliteColumnText(stmt, 2);
                 w.pos = sqliteColumnText(stmt, 3);
                 w.phonetic = sqliteColumnText(stmt, 4);
+                w.sentence = sqliteColumnText(stmt, 6);
+                w.sentenceZh = sqliteColumnText(stmt, 7);
                 if (!w.en.isEmpty()) {
                     words.push_back(w);
                 }

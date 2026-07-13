@@ -9,6 +9,45 @@
 // 学习模式公共变量
 bool showMeaning = false;      // 是否显示释义（翻卡状态）
 bool showAnkiSideA = true;     // true=先显示外语（Side A），false=先显示中文（Side B）
+int studyPage = 0;             // 0=单词页, 1=例句页
+bool studyShowSentenceZh = false; // 例句页下 BtnA 切换原句/中文
+
+bool studyHasExample(const Word &w);
+int studyPageCount(const Word &w);
+void drawStudyExamplePage(const Word &w);
+
+
+/**
+ * 初始化学习模式并从数据库加载词库
+ *
+ * 加载新词库前先自动保存旧词库进度，然后根据当前选中的
+ * `selectedSource` / `selectedChapter` 从数据库读取词条。
+ * 加载成功后通过加权随机算法选取第一个单词并绘制闪卡。
+ */
+void initStudyMode()
+{
+    autoSaveIfNeeded();
+
+    bool ok = loadWordsFromDB(selectedSource, selectedChapter);
+    if (!ok)
+    {
+        drawCenterString(canvas, "词库加载失败", RED, 1.2);
+        return;
+    }
+    else if (words.empty())
+    {
+        drawCenterString(canvas, "词库为空", RED, 1.2);
+        return;
+    }
+
+    wordIndex = pickWeightedRandom();
+    showMeaning = false;
+    studyPage = 0;
+    studyShowSentenceZh = false;
+    if (currentLanguage == LANG_EN)
+        showAnkiSideA = true;
+    drawStudyWord();
+}
 
 /**
  * 绘制当前闪卡的完整画面
@@ -30,7 +69,11 @@ void drawStudyWord()
 
     Word &w = words[wordIndex];
 
-    if (currentLanguage == LANG_EN)
+    if (studyPage == 1)
+    {
+        drawStudyExamplePage(w);
+    }
+    else if (currentLanguage == LANG_EN)
     {
         drawEnglishWord(w);
     }
@@ -42,6 +85,12 @@ void drawStudyWord()
     // 熟练度提示
     drawTopLeftString(canvas, "Score: " + String(words[wordIndex].score), TFT_DARKGREY, 1.0);
 
+    // 页码提示
+    canvas.setTextDatum(top_center);
+    canvas.setTextColor(TFT_DARKGREY);
+    canvas.setTextSize(1.0);
+    canvas.drawString(String(studyPage + 1) + "/" + String(studyPageCount(w)), canvas.width() / 2, 8);
+
     // HUD 显示音量变化
     if (millis() < volumeMessageDeadline)
     {
@@ -49,6 +98,55 @@ void drawStudyWord()
     }
 
     canvas.pushSprite(0, 0);
+}
+
+bool studyHasExample(const Word &w)
+{
+    return !w.sentence.isEmpty() || !w.sentenceZh.isEmpty();
+}
+
+int studyPageCount(const Word &w)
+{
+    return studyHasExample(w) ? 2 : 1;
+}
+
+void drawStudyExamplePage(const Word &w)
+{
+    const String bodyText = studyShowSentenceZh
+        ? (!w.sentenceZh.isEmpty() ? w.sentenceZh : w.zh)
+        : (!w.sentence.isEmpty() ? w.sentence : (currentLanguage == LANG_EN ? w.en : w.jp));
+    const String titleText = studyShowSentenceZh ? "例句中文" : "例句";
+    const String subText = (currentLanguage == LANG_EN) ? w.en : w.jp;
+
+    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setTextDatum(top_center);
+    canvas.setTextColor(studyShowSentenceZh ? YELLOW : CYAN);
+    canvas.setTextSize(1.2);
+    canvas.drawString(titleText, canvas.width() / 2, 34);
+
+    canvas.setTextFont(currentLanguage == LANG_JP ? &fonts::efontJA_16 : &fonts::efontCN_16);
+    canvas.setTextColor(TFT_DARKGREY);
+    canvas.setTextSize(1.0);
+    canvas.drawString(subText, canvas.width() / 2, 54);
+
+    canvas.setTextFont((currentLanguage == LANG_JP && !studyShowSentenceZh) ? &fonts::efontJA_16 : &fonts::efontCN_16);
+    canvas.setTextColor(studyShowSentenceZh ? YELLOW : WHITE);
+    drawWrappedTextBlock(
+        canvas,
+        bodyText,
+        10,
+        74,
+        canvas.width() - 20,
+        canvas.height() - 96,
+        1.45,
+        1.0f,
+        4
+    );
+
+    canvas.setTextDatum(bottom_center);
+    canvas.setTextColor(TFT_DARKGREY);
+    canvas.setTextSize(1.0);
+    canvas.drawString("BtnA 切换例句/中文", canvas.width() / 2, canvas.height() - 6);
 }
 
 
@@ -165,9 +263,10 @@ void drawJapaneseWord(Word &w)
  * 学习模式主循环 - 处理键盘输入
  *
  * 支持以下操作：
- * - BtnA（物理按钮）：切换释义显示（翻卡）
+ * - BtnA（物理按钮）：单词页切换释义；例句页切换例句/中文
  * - ` (ESC)：打开 ESC 菜单
- * - ; / . ：增大/减小音量
+ * - `,` / `/`：左右循环切换 单词页 / 例句页
+ * - `;` / `.`：增大/减小音量
  * - Fn：播放当前单词发音
  * - Enter：标记为"记住"，提升熟练度并跳到下一个单词
  * - Del：标记为"不熟"，降低熟练度并跳到下一个单词
@@ -176,10 +275,17 @@ void drawJapaneseWord(Word &w)
  */
 void loopStudyMode()
 {
-    // BtnA键 → 切换释义
+    // BtnA键 → 单词页翻卡 / 例句页切换中译
     if (M5Cardputer.BtnA.wasPressed())
     {
-        showMeaning = !showMeaning;
+        if (studyPage == 1 && studyHasExample(words[wordIndex]))
+        {
+            studyShowSentenceZh = !studyShowSentenceZh;
+        }
+        else
+        {
+            showMeaning = !showMeaning;
+        }
         drawStudyWord();
         userAction = true;
     }
@@ -203,6 +309,22 @@ void loopStudyMode()
             else if (c == ';' || c == '.')
             {
                 if (adjustVolume(c)) {
+                    drawStudyWord();
+                }
+            }
+            else if (c == ',' || c == '/')
+            {
+                if (studyHasExample(words[wordIndex]))
+                {
+                    int pageCount = studyPageCount(words[wordIndex]);
+                    if (c == '/')
+                    {
+                        studyPage = (studyPage + 1) % pageCount;
+                    }
+                    else
+                    {
+                        studyPage = (studyPage - 1 + pageCount) % pageCount;
+                    }
                     drawStudyWord();
                 }
             }
@@ -237,6 +359,8 @@ void loopStudyMode()
         {
             wordIndex = pickWeightedRandom();
             showMeaning = false;
+            studyPage = 0;
+            studyShowSentenceZh = false;
             showAnkiSideA = random(2);
             drawStudyWord();
         }

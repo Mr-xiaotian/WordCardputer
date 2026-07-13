@@ -6,6 +6,81 @@
  * 以及 IPA 国际音标 Unicode 符号到 ASCII 近似字符的转换功能。
  */
 
+static int _utf8CharLen(uint8_t c)
+{
+    if ((c & 0x80) == 0x00)
+        return 1;
+    if ((c & 0xE0) == 0xC0)
+        return 2;
+    if ((c & 0xF0) == 0xE0)
+        return 3;
+    if ((c & 0xF8) == 0xF0)
+        return 4;
+    return 1;
+}
+
+static String _trimWrappedLine(const String &text)
+{
+    int start = 0;
+    int end = text.length();
+
+    while (start < end && (text[start] == ' ' || text[start] == '\t'))
+    {
+        start++;
+    }
+    while (end > start && (text[end - 1] == ' ' || text[end - 1] == '\t'))
+    {
+        end--;
+    }
+    return text.substring(start, end);
+}
+
+static std::vector<String> _wrapTextLines(M5Canvas &cv, const String &text, int maxWidth)
+{
+    std::vector<String> lines;
+    String line = "";
+
+    for (int i = 0; i < text.length();)
+    {
+        int charLen = _utf8CharLen((uint8_t)text[i]);
+        String ch = text.substring(i, i + charLen);
+        i += charLen;
+
+        if (ch == "\r")
+        {
+            continue;
+        }
+        if (ch == "\n")
+        {
+            lines.push_back(_trimWrappedLine(line));
+            line = "";
+            continue;
+        }
+
+        if (line.isEmpty() && (ch == " " || ch == "\t"))
+        {
+            continue;
+        }
+
+        String candidate = line + ch;
+        if (!line.isEmpty() && cv.textWidth(candidate) > maxWidth)
+        {
+            lines.push_back(_trimWrappedLine(line));
+            line = (ch == " " || ch == "\t") ? "" : ch;
+        }
+        else
+        {
+            line = candidate;
+        }
+    }
+
+    if (!line.isEmpty() || lines.empty())
+    {
+        lines.push_back(_trimWrappedLine(line));
+    }
+    return lines;
+}
+
 /**
  * 自适应字号绘制文本
  *
@@ -202,4 +277,63 @@ void drawCenterString(M5Canvas &cv, const String &message, uint16_t color, float
     cv.setTextSize(size);
     cv.drawString(message, cv.width() / 2, cv.height() / 2);
     cv.pushSprite(0, 0);
+}
+
+/**
+ * 在限定区域内按宽度自动换行绘制文本。
+ *
+ * 会先以 baseSize 尝试排版；如果总高度超出 maxHeight，
+ * 则逐步缩小字号直到适配或触达 minSize。
+ */
+void drawWrappedTextBlock(
+    M5Canvas &cv,
+    const String &text,
+    int left,
+    int top,
+    int maxWidth,
+    int maxHeight,
+    float baseSize,
+    float minSize,
+    int lineGap)
+{
+    if (text.isEmpty() || maxWidth <= 0 || maxHeight <= 0)
+    {
+        return;
+    }
+
+    float size = baseSize;
+    std::vector<String> lines;
+    int lineHeight = 0;
+    int totalHeight = 0;
+
+    while (true)
+    {
+        cv.setTextSize(size);
+        lines = _wrapTextLines(cv, text, maxWidth);
+        lineHeight = cv.fontHeight() + lineGap;
+        totalHeight = lineHeight * (int)lines.size() - lineGap;
+        if (totalHeight <= maxHeight || size <= minSize)
+        {
+            break;
+        }
+        size -= 0.1f;
+        if (size < minSize)
+        {
+            size = minSize;
+        }
+    }
+
+    cv.setTextDatum(top_left);
+    cv.setTextSize(size);
+
+    int y = top;
+    for (const String &line : lines)
+    {
+        if (y + cv.fontHeight() > top + maxHeight)
+        {
+            break;
+        }
+        cv.drawString(line, left, y);
+        y += lineHeight;
+    }
 }

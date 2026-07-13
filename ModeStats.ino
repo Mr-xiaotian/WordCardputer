@@ -15,6 +15,19 @@ String statsLevel = "";
 int statsPage = 0;
 
 /**
+ * 初始化统计模式
+ *
+ * 将页码重置为第一页，调用 computeStatsFromWords 计算统计数据，
+ * 然后绘制统计页面。
+ */
+void initStatsMode()
+{
+    statsPage = 0;
+    computeStatsFromWords();
+    drawStatsPage();
+}
+
+/**
  * 绘制统计页面（共 3 页）
  *
  * 根据 statsPage 变量渲染对应页面：
@@ -120,19 +133,6 @@ void drawStatsPage()
     }
 
     canvas.pushSprite(0, 0);
-}
-
-/**
- * 初始化统计模式
- *
- * 将页码重置为第一页，调用 computeStatsFromWords 计算统计数据，
- * 然后绘制统计页面。
- */
-void initStatsMode()
-{
-    statsPage = 0;
-    computeStatsFromWords();
-    drawStatsPage();
 }
 
 /**

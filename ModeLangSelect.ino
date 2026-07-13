@@ -8,6 +8,17 @@
  */
 
 /**
+ * 初始化语言选择模式
+ *
+ * 将语言选择索引重置为 0（默认选中第一项），并绘制语言选择菜单。
+ */
+void initLanguageSelectMode()
+{
+    langIndex = (currentLanguage == LANG_EN) ? 1 : 0;
+    drawLanguageSelect();
+}
+
+/**
  * 绘制语言选择菜单
  *
  * 使用 drawTextMenu 在屏幕上渲染语言选择列表，
@@ -26,17 +37,6 @@ void drawLanguageSelect()
         false,
         false
     );
-}
-
-/**
- * 初始化语言选择模式
- *
- * 将语言选择索引重置为 0（默认选中第一项），并绘制语言选择菜单。
- */
-void initLanguageSelectMode()
-{
-    langIndex = (currentLanguage == LANG_EN) ? 1 : 0;
-    drawLanguageSelect();
 }
 
 /**

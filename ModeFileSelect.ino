@@ -172,7 +172,7 @@ void loopFileSelectMode()
             }
 
             appMode = MODE_STUDY;
-            startStudyMode();
+            initStudyMode();
             return;
         }
 
