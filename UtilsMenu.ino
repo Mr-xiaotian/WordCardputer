@@ -1,8 +1,8 @@
 /**
- * MenuUtils.ino - 通用菜单与表格绘制工具
+ * MenuUtils.ino - 通用菜单绘制工具
  *
- * 提供可复用的 UI 组件函数，包括带滚动、选中高亮、电量显示和分页指示器的
- * 文本菜单，以及带表头和分隔线的简易表格渲染器。
+ * 提供可复用的 UI 组件函数，包括带滚动、选中高亮、
+ * 电量显示和分页指示器的文本菜单。
  */
 
 /**
@@ -125,103 +125,3 @@ void drawTextMenu(
     cv.pushSprite(0, 0);
 }
 
-/**
- * 绘制通用简易表格
- *
- * 在画布的指定位置绘制一个带表头和分隔线的表格。
- * 表头行使用灰色字体，数据行使用白色字体，表头下方绘制水平分隔线。
- * 列布局根据列数自动计算，每行的列数取该行数据和列数的较小值。
- *
- * @param cv 目标画布引用
- * @param headers 表头字符串列表
- * @param rows 二维字符串数组，每个子数组为一行数据
- */
-void drawSimpleTable(
-    M5Canvas &cv,
-    const std::vector<String> &headers,
-    const std::vector<std::vector<String>> &rows
-) {
-    cv.setTextDatum(top_left);
-    cv.setTextColor(TFT_DARKGREY);
-    int startY = 34;
-    int rowHeight = 22;
-    float headerSize = 1.0;
-    float bodySize = 1.1;
-    cv.setTextSize(headerSize);
-
-    int cols = (int)headers.size();
-    std::vector<int> colXs;
-    if (cols <= 1)
-    {
-        colXs = {8};
-    }
-    else if (cols == 2)
-    {
-        colXs = {8, 90};
-    }
-    else
-    {
-        colXs = {6, 90, 206};
-        cols = min(cols, (int)colXs.size());
-    }
-
-    for (int i = 0; i < cols; i++)
-    {
-        cv.drawString(headers[i], colXs[i], startY);
-    }
-
-    int lineY = startY + rowHeight - 4;
-    if (cols > 0)
-    {
-        cv.drawLine(colXs[0], lineY, cv.width() - colXs[0], lineY, TFT_DARKGREY);
-    }
-
-    cv.setTextColor(WHITE);
-    cv.setTextSize(bodySize);
-    int y = startY + rowHeight + 2;
-    for (size_t r = 0; r < rows.size(); r++)
-    {
-        const auto &row = rows[r];
-        int rowCols = min((int)row.size(), cols);
-        for (int c = 0; c < rowCols; c++)
-        {
-            int nextX = (c + 1 < cols) ? colXs[c + 1] : cv.width() - 6;
-            int maxWidth = max(8, nextX - colXs[c] - 8);
-            String cellText = fitWordTableCellText(cv, row[c], maxWidth);
-            cv.drawString(cellText, colXs[c], y);
-        }
-        y += rowHeight;
-    }
-}
-
-/**
- * 将单元格文本裁剪到指定像素宽度内。
- *
- * 若原文过长，则保留前部内容并追加 `...`，避免表格越列。
- */
-String fitWordTableCellText(
-    M5Canvas &cv, 
-    const String &text, 
-    int maxWidth
-) {
-    if (text.isEmpty())
-    {
-        return "";
-    }
-    if (canvas.textWidth(text) <= maxWidth)
-    {
-        return text;
-    }
-
-    String clipped = text;
-    while (clipped.length() > 0)
-    {
-        removeLastUTF8Char(clipped);
-        String candidate = clipped + "...";
-        if (canvas.textWidth(candidate) <= maxWidth)
-        {
-            return candidate;
-        }
-    }
-    return "...";
-}

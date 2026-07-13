@@ -243,6 +243,8 @@ void drawTextMenu(
     bool showBattery = true,
     bool showPager = true
 );
+
+// --- UtilsTable.ino ---
 void drawSimpleTable(
     M5Canvas &cv,
     const std::vector<String> &headers,
