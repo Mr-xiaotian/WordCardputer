@@ -15,4 +15,4 @@ fallback/
 .arduino-build/
 .venv/
 reports/
-old_data/
+backup/
