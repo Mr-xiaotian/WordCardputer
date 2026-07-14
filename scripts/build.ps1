@@ -55,9 +55,11 @@ if (Test-Path $coreSqliteLibrary) {
     $arguments += @("--library", $coreSqliteLibrary)
 }
 
-$arguments += $projectRoot
+$sketchPath = Join-Path $projectRoot "src\WordCardputer"
+$arguments += $sketchPath
 
 Write-Host "[Build] Project: $projectRoot"
+Write-Host "[Build] Sketch: $sketchPath"
 Write-Host "[Build] BuildPath: $buildOutputPath"
 Write-Host "[Build] FQBN: $fqbn"
 

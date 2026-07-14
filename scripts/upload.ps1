@@ -98,7 +98,7 @@ $arguments = @(
     $fqbn
     "--build-path"
     $buildOutputPath
-    $projectRoot
+    (Join-Path $projectRoot "src\WordCardputer")
 )
 
 Write-Host "[Upload] Project: $projectRoot"
