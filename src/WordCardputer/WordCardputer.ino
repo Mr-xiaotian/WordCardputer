@@ -23,6 +23,7 @@
 // --------- 模式定义 ----------
 /** 应用运行模式枚举，控制主循环中的分发逻辑 */
 enum AppMode {
+    MODE_SPLASH,       // 启动画面
     MODE_LANG_SELECT,  // 语言选择模式
     MODE_FILE_SELECT,  // 文件选择模式
     MODE_STUDY,        // 学习模式
@@ -42,7 +43,7 @@ enum StudyLanguage {
     LANG_EN
 };
 
-AppMode appMode = MODE_LANG_SELECT;          // 当前应用模式
+AppMode appMode = MODE_SPLASH;               // 当前应用模式
 AppMode previousMode = MODE_FILE_SELECT;     // 记录上一个模式（用于 ESC 菜单返回）
 
 // --------- 全局变量 ----------
@@ -184,6 +185,10 @@ void loopWiFiScanMode();
 // --- ModeKeyHelp.ino ---
 void initKeyHelpMode();
 void loopKeyHelpMode();
+
+// --- ModeSplash.ino ---
+void initSplashMode();
+void loopSplashMode();
 
 // --- UtilsDb.ino ---
 // SQLite 访问、词库浏览、导入导出辅助。
@@ -334,8 +339,8 @@ void setup() {
     canvas.createSprite(M5Cardputer.Display.width(), M5Cardputer.Display.height());
     canvas.setTextFont(&fonts::efontCN_16);
 
-    // 开始进入语言选择模式
-    initLanguageSelectMode();
+    // 开始进入启动画面
+    initSplashMode();
 }
 
 /**
@@ -352,7 +357,9 @@ void loop() {
     M5Cardputer.update();
     userAction = false;
 
-    if (appMode == MODE_LANG_SELECT) {
+    if (appMode == MODE_SPLASH) {
+        loopSplashMode();
+    } else if (appMode == MODE_LANG_SELECT) {
         loopLanguageSelectMode();
     } else if (appMode == MODE_FILE_SELECT) {
         loopFileSelectMode();
