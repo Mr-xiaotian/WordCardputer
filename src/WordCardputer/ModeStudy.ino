@@ -54,7 +54,7 @@ void initStudyMode()
 }
 
 void drawStudyMode()
-{ 
+{
     canvas.fillSprite(BLACK);
     canvas.setTextDatum(middle_center);
 
@@ -280,7 +280,7 @@ void drawEnglishWord(const Word &w)
             drawAutoFitString(canvas, w.zh, canvas.width() / 2, canvas.height() / 2 + 40, 1.5);
         }
     }
-    else 
+    else
     {
         // === 模式2：显示中文,隐藏英语 ===
         canvas.setTextFont(&fonts::efontCN_16);
@@ -403,8 +403,6 @@ void drawEnglishSentence(const Word &w)
             10,
             64,
             canvas.width() - 20,
-            canvas.height() - 96,
-            1.45,
             1.0f,
             4
         );
@@ -425,8 +423,6 @@ void drawEnglishSentence(const Word &w)
             10,
             64,
             canvas.width() - 20,
-            canvas.height() - 96,
-            1.45,
             1.0f,
             4
         );
@@ -458,8 +454,6 @@ void drawJapaneseSentence(const Word &w)
             10,
             64,
             canvas.width() - 20,
-            canvas.height() - 96,
-            1.45,
             1.0f,
             4
         );
@@ -480,8 +474,6 @@ void drawJapaneseSentence(const Word &w)
             10,
             64,
             canvas.width() - 20,
-            canvas.height() - 96,
-            1.45,
             1.0f,
             4
         );

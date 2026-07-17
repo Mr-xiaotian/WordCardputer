@@ -304,8 +304,13 @@ void drawCenterString(M5Canvas &cv, const String &message, uint16_t color, float
 /**
  * 在限定区域内按宽度自动换行绘制文本。
  *
- * 会先以 baseSize 尝试排版；如果总高度超出 maxHeight，
- * 则逐步缩小字号直到适配或触达 minSize。
+ * @param cv 目标画布引用
+ * @param text 要显示的文本
+ * @param left 文本块左边界
+ * @param top 文本块上边界
+ * @param maxWidth 文本块最大宽度
+ * @param fontSize 字号大小
+ * @param lineGap 行间距
  */
 void drawWrappedTextBlock(
     M5Canvas &cv,
@@ -313,48 +318,26 @@ void drawWrappedTextBlock(
     int left,
     int top,
     int maxWidth,
-    int maxHeight,
-    float baseSize,
-    float minSize,
+    float fontSize,
     int lineGap)
 {
-    if (text.isEmpty() || maxWidth <= 0 || maxHeight <= 0)
+    if (text.isEmpty() || maxWidth <= 0)
     {
         return;
     }
 
-    float size = baseSize;
     std::vector<String> lines;
     int lineHeight = 0;
-    int totalHeight = 0;
 
-    while (true)
-    {
-        cv.setTextSize(size);
-        lines = _wrapTextLines(cv, text, maxWidth);
-        lineHeight = cv.fontHeight() + lineGap;
-        totalHeight = lineHeight * (int)lines.size() - lineGap;
-        if (totalHeight <= maxHeight || size <= minSize)
-        {
-            break;
-        }
-        size -= 0.1f;
-        if (size < minSize)
-        {
-            size = minSize;
-        }
-    }
+    cv.setTextSize(fontSize);
+    lines = _wrapTextLines(cv, text, maxWidth);
+    lineHeight = cv.fontHeight() + lineGap;
 
     cv.setTextDatum(top_left);
-    cv.setTextSize(size);
 
     int y = top;
     for (const String &line : lines)
     {
-        if (y + cv.fontHeight() > top + maxHeight)
-        {
-            break;
-        }
         cv.drawString(line, left, y);
         y += lineHeight;
     }

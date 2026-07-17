@@ -229,11 +229,8 @@ void drawWrappedTextBlock(
     int left,
     int top,
     int maxWidth,
-    int maxHeight,
-    float baseSize,
-    float minSize = 1.0f,
-    int lineGap = 4
-);
+    float fontSize,
+    int lineGap);
 bool isEnglishInputChar(char c);
 String normalizeEnglishAnswer(String s);
 
@@ -367,7 +364,7 @@ void loop() {
         loopDictationMode();
     } else if (appMode == MODE_DICTATION_REVIEW) {
         loopDictationReviewMode();
-    } else if (appMode == MODE_LISTEN) {  
+    } else if (appMode == MODE_LISTEN) {
         loopListenMode();
     } else if (appMode == MODE_STATS) {
         loopStatsMode();
