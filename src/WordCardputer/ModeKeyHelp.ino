@@ -137,7 +137,7 @@ void drawKeyHelpPage() {
     drawTopLeftString(canvas, "按键帮助", GREEN, 1.2);
     drawTopRightString(
         canvas,
-        String(helpSections[helpSectionIndex].section) +
+        String(helpSections[helpSectionIndex].section) + " " +
             String(helpPageIndex + 1) + "/" + String(helpPageCountForCurrentSection()),
         TFT_DARKGREY,
         1.0

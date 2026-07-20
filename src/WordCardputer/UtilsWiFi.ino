@@ -49,7 +49,7 @@ String findSavedPassword(const String &ssid) {
 /**
  * 获取当前 NTP 时间的格式化字符串
  *
- * 返回格式为 "YY-MM-DD_HH-MM"（如 "26-03-30_16-28"）的时间字符串。
+ * 返回格式为 "YY-MM-DD HH:MM"（如 "26-03-30 16:28"）的时间字符串。
  * 如果 WiFi 未连接或 NTP 时间未同步，则使用 millis() 的值作为回退，
  * 返回开机以来的毫秒数字符串。
  *
@@ -59,7 +59,7 @@ String getNtpTimeString() {
     struct tm t;
     if (wifiConnected && getLocalTime(&t, 100)) {
         char buf[20];
-        snprintf(buf, sizeof(buf), "%02d-%02d-%02d_%02d-%02d",
+        snprintf(buf, sizeof(buf), "%02d-%02d-%02d %02d:%02d",
                  t.tm_year % 100, t.tm_mon + 1, t.tm_mday,
                  t.tm_hour, t.tm_min);
         return String(buf);
