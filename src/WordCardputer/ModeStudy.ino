@@ -186,10 +186,10 @@ void loopStudyMode()
         if (status.enter || status.del)
         {
             wordIndex = pickWeightedRandom();
-            // studyPage = 0;
+            studyPage = 0;
             showMeaning = false;
-            showSentenceZh = false;
             showAnkiSideA = random(2);
+            showSentenceZh = !showAnkiSideA;
             drawStudyMode();
         }
     }
