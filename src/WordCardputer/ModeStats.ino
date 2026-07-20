@@ -109,7 +109,6 @@ void drawStatsPage()
         int p2 = (int)round(statsCounts[2] * 100.0f / statsTotal);
         int p3 = (int)round(statsCounts[3] * 100.0f / statsTotal);
         std::vector<String> headers = {"等级", "数量", "占比"};
-        std::vector<int> colXs = {8, 92, 154};
         std::vector<std::vector<String>> rows = {
             {"1", String(statsCounts[1]), String(p1) + "%"},
             {"2", String(statsCounts[2]), String(p2) + "%"},
@@ -126,7 +125,6 @@ void drawStatsPage()
         int p4 = (int)round(statsCounts[4] * 100.0f / statsTotal);
         int p5 = (int)round(statsCounts[5] * 100.0f / statsTotal);
         std::vector<String> headers = {"等级", "数量", "占比"};
-        std::vector<int> colXs = {8, 92, 154};
         std::vector<std::vector<String>> rows = {
             {"4", String(statsCounts[4]), String(p4) + "%"},
             {"5", String(statsCounts[5]), String(p5) + "%"}

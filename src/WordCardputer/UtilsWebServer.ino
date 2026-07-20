@@ -475,9 +475,11 @@ void handleApiStats() {
     sendCorsHeaders();
     computeStatsFromWords();
 
+    String label = selectedSource;
+    if (!selectedChapter.isEmpty()) label += "/" + selectedChapter;
+
     DynamicJsonDocument doc(512);
-    doc["file"] = statsFileName(selectedFilePath);
-    doc["label"] = selectedFilePath;
+    doc["vocabLabel"] = label;
     doc["source"] = selectedSource;
     doc["chapter"] = selectedChapter;
     doc["total"] = statsTotal;
@@ -506,8 +508,10 @@ void handleApiSettingsGet() {
     doc["brightness"] = normalBrightness;
     doc["autoSaveThreshold"] = autoSaveThreshold;
     doc["language"] = (currentLanguage == LANG_JP) ? "jp" : "en";
-    doc["loadedFile"] = statsFileName(selectedFilePath);
-    doc["loadedVocab"] = selectedFilePath;
+    String label = selectedSource;
+    if (!selectedChapter.isEmpty()) label += "/" + selectedChapter;
+    doc["source"] = selectedSource;
+    doc["chapter"] = selectedChapter;
     doc["wifi"] = wifiConnected;
 
     String json;

@@ -97,7 +97,6 @@ void drawFileSelect()
  * - 根层：`currentWordRoot`
  * - 子层：`currentWordRoot/<source>`
  *
- * `selectedFilePath` 仍保留旧名字，但现在只作为显示标签使用，
  * 真实加载依据是 `selectedSource` 和 `selectedChapter`。
  */
 void loopFileSelectMode()
@@ -163,14 +162,9 @@ void loopFileSelectMode()
 
                 selectedSource = item;
                 selectedChapter = "";
-                selectedFilePath = item;
             } else {
                 selectedSource = currentDir.substring(currentWordRoot.length() + 1);
                 selectedChapter = item;
-                selectedFilePath = selectedSource;
-                if (!selectedChapter.isEmpty()) {
-                    selectedFilePath += "/" + selectedChapter;
-                }
             }
 
             appMode = MODE_STUDY;

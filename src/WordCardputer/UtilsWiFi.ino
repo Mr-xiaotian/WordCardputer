@@ -7,7 +7,6 @@
  * WiFi 连接成功后会自动同步 NTP 时间（UTC+8）。
  */
 
-#include <WiFi.h>
 #include <time.h>
 
 /**

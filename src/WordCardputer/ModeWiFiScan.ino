@@ -9,8 +9,6 @@
  * 可通过 ,/. 翻页随时查看 IP 地址。
  */
 
-#include <WiFi.h>
-
 enum WiFiScanState {
     WIFI_SCANNING,
     WIFI_LIST,
@@ -127,7 +125,6 @@ void drawWiFiStatusPage() {
     canvas.setTextDatum(bottom_center);
     canvas.setTextColor(TFT_DARKGREY);
     canvas.setTextSize(1.0);
-    // canvas.drawString("2/2", canvas.width() / 2, canvas.height() - 6);
 
     canvas.pushSprite(0, 0);
 }
@@ -157,7 +154,6 @@ void initWiFiScanMode() {
         // 异步扫描填充列表供翻页使用
         int count = WiFi.scanNetworks(false, false, false, 300);
         processWiFiScanResults(count);
-        wifiPage = 1;  // processWiFiScanResults 会设为 WIFI_LIST，保持在状态页
     } else {
         // 未连接：正常扫描流程
         wifiPage = 0;

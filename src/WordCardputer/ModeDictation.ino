@@ -96,8 +96,6 @@ void drawDictationInput()
     {
         canvas.setTextFont(&fonts::efontCN_16);
         drawAutoFitString(canvas, dictEnInput, canvas.width() / 2, canvas.height() / 2 - 10, 2.0);
-        Word &w = words[dictOrder[dictPos]];
-        String sub = asciiPhonetic(w.phonetic);
     }
     else if (currentLanguage == LANG_JP)
     {

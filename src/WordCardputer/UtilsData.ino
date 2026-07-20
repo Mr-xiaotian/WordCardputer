@@ -92,31 +92,6 @@ String dictationPromptText(const Word &w)
 }
 
 /**
- * 从当前词库标签中提取用于显示的名称
- *
- * 迁移到数据库后，`selectedFilePath` 不再是真实文件路径，而是 UI 标签：
- * - `source`
- * - `source/chapter`
- *
- * 这里仍保留原有“取最后一段”的行为，使统计页、Web 面板展示简洁名称。
- *
- * @param path 当前词库标签
- * @return 显示用名称
- */
-String statsFileName(const String &path)
-{
-    if (path.isEmpty()) {
-        return "";
-    }
-    int pos = path.lastIndexOf('/');
-    if (pos >= 0 && pos + 1 < (int)path.length())
-    {
-        return path.substring(pos + 1);
-    }
-    return path;
-}
-
-/**
  * 从当前词库计算学习统计数据
  *
  * 遍历所有单词，统计各等级（1-5）的数量、计算平均分和中位数，
@@ -211,7 +186,6 @@ void setLanguage(StudyLanguage lang)
         currentAudioRoot = "/words_study/en/audio";
     }
     currentDir = currentWordRoot;
-    selectedFilePath = "";
     selectedSource = "";
     selectedChapter = "";
     words.clear();
