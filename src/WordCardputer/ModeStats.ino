@@ -60,17 +60,21 @@ void drawStatsPage()
     {
         int labelX = 8;
         int valueX = 72;
-        String fileName = statsFileName(selectedFilePath);
+
+        String label = selectedSource;
+        if (!selectedChapter.isEmpty()) label += "/" + selectedChapter;
         canvas.setTextColor(TFT_DARKGREY);
-        canvas.drawString("词库", labelX, y);
+        canvas.drawString("词源", labelX, y);
         canvas.setTextColor(CYAN);
-        canvas.drawString(fileName, valueX, y);
+        canvas.drawString(label, valueX, y);
         y += lineHeight;
+
         canvas.setTextColor(TFT_DARKGREY);
         canvas.drawString("总数", labelX, y);
         canvas.setTextColor(WHITE);
         canvas.drawString(String(statsTotal), valueX, y);
         y += lineHeight;
+
         canvas.setTextColor(TFT_DARKGREY);
         canvas.drawString("平均", labelX, y);
         canvas.setTextColor(WHITE);
