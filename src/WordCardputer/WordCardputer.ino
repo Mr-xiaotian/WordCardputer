@@ -100,6 +100,8 @@ struct Word {
     String phonetic; // 音标（英语）
     String sentence;   // 例句
     String sentenceZh; // 例句中文释义
+    String root;       // 词根 ID 列表（逗号分隔）
+    String affix;      // 词缀 ID 列表（逗号分隔）
     int tone;        // 声调（日语）
     int score;       // 熟练度评分 1~5（数值越高越熟练）
 };
@@ -204,6 +206,9 @@ bool loadDictationReviewEntriesFromDB(std::vector<DictationReviewEntry> &items);
 bool loadSourceList(std::vector<String> &items);
 bool loadChapterList(const String &source, std::vector<String> &items);
 bool sourceHasChapters(const String &source);
+bool loadRootAffixNames(const String &idList, const char *table,
+                         const char *nameCol,
+                         std::vector<std::pair<String, String>> &out);
 int normalizeScoreValue(int score);
 bool isValidVocabPath(const String &path);
 bool parseVocabPath(const String &path, bool &isRoot, String &source, String &chapter);

@@ -469,13 +469,13 @@ bool loadWordsFromDB(const String &source, const String &chapter)
         }
     } else {
         if (chapter.isEmpty()) {
-            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score, w.sentence, w.sentence_zh "
+            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score, w.sentence, w.sentence_zh, w.root, w.affix "
                   "FROM en_words w "
                   "INNER JOIN en_source s ON s.word_id = w.id "
                   "WHERE s.source = ?1 "
                   "ORDER BY w.id";
         } else {
-            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score, w.sentence, w.sentence_zh "
+            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score, w.sentence, w.sentence_zh, w.root, w.affix "
                   "FROM en_words w "
                   "INNER JOIN en_source s ON s.word_id = w.id "
                   "WHERE s.source = ?1 AND s.chapter = ?2 "
@@ -505,6 +505,8 @@ bool loadWordsFromDB(const String &source, const String &chapter)
             w.phonetic = "";
             w.sentence = "";
             w.sentenceZh = "";
+            w.root = "";
+            w.affix = "";
             w.tone = -1;
             w.score = normalizeScoreValue(sqlite3_column_int(stmt, currentLanguage == LANG_JP ? 6 : 5));
 
@@ -526,6 +528,8 @@ bool loadWordsFromDB(const String &source, const String &chapter)
                 w.phonetic = sqliteColumnText(stmt, 4);
                 w.sentence = sqliteColumnText(stmt, 6);
                 w.sentenceZh = sqliteColumnText(stmt, 7);
+                w.root = sqliteColumnText(stmt, 8);
+                w.affix = sqliteColumnText(stmt, 9);
                 if (!w.en.isEmpty()) {
                     words.push_back(w);
                 }
@@ -955,4 +959,43 @@ bool sourceHasChapters(const String &source)
     sqlite3_finalize(stmt);
     sqlite3_close(db);
     return hasChapter;
+}
+
+/**
+ * 根据逗号分隔的 ID 列表查询词根/词缀的名称与释义。
+ *
+ * @param idList  逗号分隔的 ID 字符串，如 "23,156"
+ * @param table   要查询的表名："en_roots" 或 "en_affixes"
+ * @param nameCol 名称列名："root" 或 "affix"
+ * @param out     输出结果：{name, meaning} 的 vector
+ * @return 查询成功返回 true
+ */
+bool loadRootAffixNames(const String &idList, const char *table,
+                         const char *nameCol,
+                         std::vector<std::pair<String, String>> &out)
+{
+    out.clear();
+    if (idList.isEmpty()) return true;
+
+    sqlite3 *db = nullptr;
+    if (!openVocabularyDb(&db)) return false;
+
+    // 构造 IN (...) 查询
+    String sql = "SELECT " + String(nameCol) + ", meaning FROM " + String(table) + " WHERE id IN (" + idList + ")";
+
+    sqlite3_stmt *stmt = nullptr;
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    while (sqlite3_step(stmt) == SQLITE_ROW) {
+        String name = sqliteColumnText(stmt, 0);
+        String meaning = sqliteColumnText(stmt, 1);
+        out.push_back({name, meaning});
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return true;
 }

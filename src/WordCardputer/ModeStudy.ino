@@ -8,14 +8,17 @@
  */
 
 // 学习模式公共变量
-int studyPage = 0;             // 0=单词页, 1=例句页
+int studyPage = 0;             // 0=单词页, 1=例句页, 2=词根词缀页
 bool showMeaning = false;      // 是否显示释义（单词页面）
 bool showSentenceZh = false;   // 是否显示中文例句（例句页面）
 bool showAnkiSideA = true;     // true=先显示外语（Side A），false=先显示中文（Side B）
+bool showRoots = true;         // 词根词缀页：true=显示词根，false=显示词缀
 
 bool studyHasExample(const Word &w);
+bool studyHasRootAffix(const Word &w);
 int studyPageCount(const Word &w);
 void drawStudySentence(const Word &w);
+void drawStudyRootAffix(const Word &w);
 void drawEnglishSentence(const Word &w);
 void drawJapaneseSentence(const Word &w);
 
@@ -48,6 +51,7 @@ void initStudyMode()
     showMeaning = false;
     studyPage = 0;
     showSentenceZh = false;
+    showRoots = true;
     if (currentLanguage == LANG_EN)
         showAnkiSideA = true;
     drawStudyMode();
@@ -73,6 +77,10 @@ void drawStudyMode()
     else if (studyPage == 1)
     {
         drawStudySentence(w);
+    }
+    else if (studyPage == 2)
+    {
+        drawStudyRootAffix(w);
     }
 
     // 熟练度提示
@@ -103,10 +111,14 @@ void drawStudyMode()
  */
 void loopStudyMode()
 {
-    // BtnA键 → 单词页翻卡 / 例句页切换中译
+    // BtnA键 → 单词页翻卡 / 例句页切换中译 / 词根词缀页切换显示
     if (M5Cardputer.BtnA.wasPressed())
     {
-        if (studyPage == 1 && studyHasExample(words[wordIndex]))
+        if (studyPage == 2)
+        {
+            showRoots = !showRoots;
+        }
+        else if (studyPage == 1 && studyHasExample(words[wordIndex]))
         {
             showSentenceZh = !showSentenceZh;
         }
@@ -188,6 +200,7 @@ void loopStudyMode()
             wordIndex = pickWeightedRandom();
             studyPage = 0;
             showMeaning = false;
+            showRoots = true;
             showAnkiSideA = random(2);
             showSentenceZh = !showAnkiSideA;
             drawStudyMode();
@@ -212,16 +225,36 @@ bool studyHasExample(const Word &w)
 }
 
 /**
+ * 判断当前单词是否包含词根或词缀信息。
+ *
+ * 只要任一词根 ID 或词缀 ID 列表非空，就允许学习模式切换到词根词缀页。
+ *
+ * @param w 待检查的单词对象
+ * @return true 表示存在词根或词缀数据
+ */
+bool studyHasRootAffix(const Word &w)
+{
+    return !w.root.isEmpty() || !w.affix.isEmpty();
+}
+
+/**
  * 获取当前单词在学习模式中的总页数。
  *
- * 无例句时仅显示单词页；有例句时显示“单词页 + 例句页”共两页。
+ * 页数根据可用信息动态计算：
+ * - 无例句且无词根词缀：仅单词页（1 页）
+ * - 有例句无词根词缀：单词页 + 例句页（2 页）
+ * - 无例句有词根词缀：单词页 + 词根词缀页（2 页）
+ * - 两者均有：单词页 + 例句页 + 词根词缀页（3 页）
  *
  * @param w 当前单词对象
  * @return 当前单词对应的学习页总数
  */
 int studyPageCount(const Word &w)
 {
-    return studyHasExample(w) ? 2 : 1;
+    int count = 1;
+    if (studyHasExample(w)) count++;
+    if (studyHasRootAffix(w)) count++;
+    return count;
 }
 
 // ===== 核心绘制子函数 =====
@@ -478,4 +511,47 @@ void drawJapaneseSentence(const Word &w)
             4
         );
     }
+}
+
+/**
+ * 绘制学习模式的词根/词缀表页。
+ */
+void drawStudyRootAffix(const Word &w)
+{
+    if (showRoots && w.root.isEmpty() && !w.affix.isEmpty())
+        showRoots = false;
+    else if (!showRoots && w.affix.isEmpty() && !w.root.isEmpty())
+        showRoots = true;
+
+    const char *table = showRoots ? "en_roots" : "en_affixes";
+    const char *nameCol = showRoots ? "root" : "affix";
+    const String &idList = showRoots ? w.root : w.affix;
+
+    canvas.setTextFont(&fonts::efontCN_16);
+
+    if (idList.isEmpty())
+    {
+        canvas.setTextColor(TFT_DARKGREY);
+        canvas.setTextSize(1.0);
+        canvas.drawString("无数据", canvas.width() / 2, canvas.height() / 2);
+        return;
+    }
+
+    std::vector<std::pair<String, String>> items;
+    if (!loadRootAffixNames(idList, table, nameCol, items) || items.empty())
+    {
+        canvas.setTextColor(TFT_DARKGREY);
+        canvas.setTextSize(1.0);
+        canvas.drawString("查询失败", canvas.width() / 2, canvas.height() / 2);
+        return;
+    }
+
+    std::vector<String> headers = {showRoots ? "词根" : "词缀", "释义"};
+    std::vector<std::vector<String>> rows;
+    for (const auto &item : items)
+    {
+        rows.push_back({item.first, item.second});
+    }
+
+    drawSimpleTable(canvas, headers, rows);
 }
