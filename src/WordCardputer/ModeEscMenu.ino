@@ -25,8 +25,9 @@ std::vector<String> escRootItems = {
 };
 
 std::vector<String> escVocabItems = {
-    "重新选择词源",
     "重新选择语言",
+    "重新选择分类",
+    "重新选择词源",
 };
 
 std::vector<String> escModeItems = {
@@ -122,7 +123,10 @@ String escMenuTitle() {
 void returnFromEscMenu() {
     autoSaveIfNeeded();
     appMode = previousMode;
-    if (previousMode == MODE_STUDY) {
+    if (previousMode == MODE_CLASSIFY_SELECT) {
+        initClassifySelectMode();
+    }
+    else if (previousMode == MODE_STUDY) {
         initStudyMode();
     }
     else if (previousMode == MODE_LISTEN) {
@@ -172,7 +176,7 @@ void drawEscMenu() {
         items,
         index,
         scroll,
-        visibleLines   
+        visibleLines
     );
 }
 
@@ -279,15 +283,21 @@ void loopEscMenuMode() {
             else if (escMenuGroup == ESC_MENU_VOCAB) {
                 if (escVocabIndex == 0) {
                     autoSaveIfNeeded();
-                    currentDir = currentWordRoot;
-                    appMode = MODE_FILE_SELECT;
-                    initFileSelectMode();
+                    appMode = MODE_LANG_SELECT;
+                    initLanguageSelectMode();
                     return;
                 }
                 else if (escVocabIndex == 1) {
                     autoSaveIfNeeded();
-                    appMode = MODE_LANG_SELECT;
-                    initLanguageSelectMode();
+                    appMode = MODE_CLASSIFY_SELECT;
+                    initClassifySelectMode();
+                    return;
+                }
+                else if (escVocabIndex == 2) {
+                    autoSaveIfNeeded();
+                    currentDir = currentWordRoot;
+                    appMode = MODE_FILE_SELECT;
+                    initFileSelectMode();
                     return;
                 }
             }

@@ -87,8 +87,8 @@ void loopLanguageSelectMode()
             }
             setLanguage(lang);
             saveAppConfig();
-            appMode = MODE_FILE_SELECT;
-            initFileSelectMode();
+            appMode = MODE_CLASSIFY_SELECT;
+            initClassifySelectMode();
             return;
         }
     }
