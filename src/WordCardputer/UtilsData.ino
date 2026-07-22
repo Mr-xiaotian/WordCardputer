@@ -185,7 +185,7 @@ void setLanguage(StudyLanguage lang)
         currentWordRoot = "/words_study/en/word";
         currentAudioRoot = "/words_study/en/audio";
     }
-    currentDir = currentWordRoot;
+    currentSource = "";
     selectedSource = "";
     selectedChapter = "";
     words.clear();

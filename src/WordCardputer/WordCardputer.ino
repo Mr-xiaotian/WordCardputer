@@ -57,8 +57,8 @@ StudyLanguage currentLanguage = LANG_JP;     // 当前学习语言
 String currentWordRoot = "/words_study/jp/word";    // 当前词库浏览根（虚拟目录）
 String currentAudioRoot = "/words_study/jp/audio";  // 当前音频根目录
 
-String currentDir = "/words_study/jp/word";  // 词库浏览当前目录（虚拟目录）
-String selectedSource = "";                  // 当前词库来源
+String currentSource = "";   // 词库浏览当前 source（空=根层，展示 source 列表）
+String selectedSource = "";  // 用户最终选定的词库来源
 String selectedChapter = "";                 // 当前词库章节；空表示整个 source
 
 std::vector<String> langItems = {"日语", "英语"};  // 语言选择菜单项
@@ -149,6 +149,7 @@ void initClassifySelectMode();
 void loopClassifySelectMode();
 
 // --- ModeSourceSelect.ino ---
+// 浏览状态变量 currentSource（空=根层，非空=正在某 source 内浏览 chapter）
 void initFileSelectMode();
 void loopFileSelectMode();
 

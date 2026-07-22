@@ -295,7 +295,7 @@ void loopEscMenuMode() {
                 }
                 else if (escVocabIndex == 2) {
                     autoSaveIfNeeded();
-                    currentDir = currentWordRoot;
+                    currentSource = "";
                     appMode = MODE_FILE_SELECT;
                     initFileSelectMode();
                     return;
