@@ -1,10 +1,10 @@
-# ModeFileSelect.ino
+# ModeSourceSelect.ino
 
 > 最后更新日期: 2026/07/11
 
 ## 作用
 
-`ModeFileSelect.ino` 实现**词库浏览器**。已在底层改为数据库驱动，不再直接浏览 SD 卡 JSON 文件。用户在选择语言后进入该模式，浏览 SQLite 数据库中的 source（词源）和 chapter（章节），选中后加载并进入学习模式。
+`ModeSourceSelect.ino` 实现**词库浏览器**。已在底层改为数据库驱动，不再直接浏览 SD 卡 JSON 文件。用户在选择语言后进入该模式，浏览 SQLite 数据库中的 source（词源）和 chapter（章节），选中后加载并进入学习模式。
 
 ## 核心对象
 

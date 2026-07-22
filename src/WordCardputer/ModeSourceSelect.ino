@@ -1,5 +1,5 @@
 /**
- * @file ModeFileSelect.ino
+ * @file ModeSourceSelect.ino
  * @brief 文件选择模式
  *
  * 提供词库数据库中的 source / chapter 浏览和选择功能。
@@ -106,7 +106,7 @@ void loopFileSelectMode()
         delay(200);
         return;
     }
-    
+
     if (M5Cardputer.Keyboard.isChange() && M5Cardputer.Keyboard.isPressed())
     {
         auto status = M5Cardputer.Keyboard.keysState();

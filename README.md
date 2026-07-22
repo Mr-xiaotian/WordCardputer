@@ -155,7 +155,7 @@ WordCardputer/
 ├── WordCardputer.ino         # 主程序入口（全局变量、setup、loop）
 ├── Mode*.ino                 # 各功能模式
 │   ├── ModeLangSelect        #   语言选择
-│   ├── ModeFileSelect        #   词库浏览（数据库驱动）
+│   ├── ModeSourceSelect        #   词库浏览（数据库驱动）
 │   ├── ModeStudy             #   闪卡学习
 │   ├── ModeDictation         #   听写测试
 │   ├── ModeDictationReview   #   错题回顾

@@ -140,7 +140,7 @@ std::vector<WiFiCredential> savedWiFiList;
 
 // ---------- 函数声明（在其他 .ino 中实现） ----------
 
-// --- ModeFileSelect.ino ---
+// --- ModeSourceSelect.ino ---
 void initFileSelectMode();
 void loopFileSelectMode();
 

@@ -20,7 +20,7 @@
 | 文档 | 对应源码 | 说明 |
 |------|---------|------|
 | [ModeLangSelect.md](ModeLangSelect.md) | `ModeLangSelect.ino` | 启动语言选择 |
-| [ModeFileSelect.md](ModeFileSelect.md) | `ModeFileSelect.ino` | 词库浏览器（数据库驱动） |
+| [ModeSourceSelect.md](ModeSourceSelect.md) | `ModeSourceSelect.ino` | 词库浏览器（数据库驱动） |
 | [ModeStudy.md](ModeStudy.md) | `ModeStudy.ino` | 双面闪卡学习 |
 | [ModeDictation.md](ModeDictation.md) | `ModeDictation.ino` | 听写测试（日/英） |
 | [ModeDictationReview.md](ModeDictationReview.md) | `ModeDictationReview.ino` | 听写错题回顾页 |
