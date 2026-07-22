@@ -52,13 +52,11 @@ void initFileSelectMode()
  * 绘制文件选择菜单页面
  *
  * 调用通用菜单绘制函数 drawTextMenu，以列表形式展示当前层级的
- * source 或 chapter。该模式不再直接浏览 SD 卡真实文件，而是浏览
- * 数据库中的逻辑结构。根层标题显示"选择词源"，chapter 层显示
- * "选择章节"。若列表为空则显示提示文字。
+ * source 或 chapter。若列表为空则显示提示文字。
  */
 void drawFileSelect()
 {
-    String title = currentSource.isEmpty() ? "选择词源" : "选择章节";
+    String title = "选择词源";
     std::vector<String> displayItems = files;
     if (currentSource.isEmpty()) {
         for (size_t i = 0; i < displayItems.size() && i < fileExpandable.size(); i++) {
@@ -105,13 +103,16 @@ void loopFileSelectMode()
 
         for (auto c : status.word)
         {
-            if (c == '`' || c == ',')
+            if (c == '`')
             {
                 if (!currentSource.isEmpty()) {
                     currentSource = "";
                     initFileSelectMode();
                     return;
                 }
+                appMode = MODE_CLASSIFY_SELECT;
+                initClassifySelectMode();
+                return;
             }
 
             if (c == '/')
@@ -121,6 +122,15 @@ void loopFileSelectMode()
                     fileIndex < (int)fileExpandable.size() &&
                     fileExpandable[fileIndex]) {
                     currentSource = files[fileIndex];
+                    initFileSelectMode();
+                    return;
+                }
+            }
+
+            if (c == ',')
+            {
+                if (!currentSource.isEmpty()) {
+                    currentSource = "";
                     initFileSelectMode();
                     return;
                 }

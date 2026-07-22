@@ -62,6 +62,13 @@ void loopClassifySelectMode()
 
         for (auto c : st.word)
         {
+            if (c == '`')
+            {
+                appMode = MODE_LANG_SELECT;
+                initLanguageSelectMode();
+                return;
+            }
+
             if (c == ';')
             {
                 classifyIndex = (classifyIndex - 1 + classifyItems.size()) % classifyItems.size();
