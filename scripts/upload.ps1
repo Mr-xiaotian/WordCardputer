@@ -90,6 +90,7 @@ Set-Location $projectRoot
 
 $arguments = @(
     "upload"
+    "--verbose"
     "--port"
     $resolvedPort
     "--protocol"
