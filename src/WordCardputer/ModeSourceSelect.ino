@@ -13,6 +13,8 @@
 // --------- 文件选择模式变量 ---------
 std::vector<String> files;
 std::vector<bool> fileExpandable;
+String selectedSource = "";   // 该模式专属：用户选定的词库来源
+String selectedChapter = "";  // 该模式专属：用户选定的章节；空表示整个 source
 int fileIndex = 0;
 int fileScroll = 0;
 
@@ -168,6 +170,16 @@ void loopFileSelectMode()
                 selectedChapter = item;
             }
 
+            autoSaveIfNeeded();
+            if (!loadWordsBySource(selectedSource, selectedChapter) || words.empty()) {
+                drawCenterString(canvas, "词库加载失败", RED, 1.2);
+                delay(600);
+                drawFileSelect();
+                return;
+            }
+            vocabLabel = selectedChapter.isEmpty()
+                ? "chapter:" + selectedSource
+                : "chapter:" + selectedSource + "/" + selectedChapter;
             appMode = MODE_STUDY;
             initStudyMode();
             return;

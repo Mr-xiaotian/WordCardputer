@@ -428,7 +428,7 @@ bool importJsonFileToDb(const String &jsonPath, const String &source, const Stri
 }
 
 /**
- * 从 SQLite 数据库加载指定 source / chapter 的词库
+ * 按词源（source / chapter）从 SQLite 加载词库
  *
  * 根据当前语言选择 `jp_words` 或 `en_words`，并按以下规则取数：
  * - `source` 必须匹配
@@ -442,7 +442,7 @@ bool importJsonFileToDb(const String &jsonPath, const String &source, const Stri
  * @param chapter 章节名；空字符串表示整个来源
  * @return true 加载成功且非空；false 打开失败、SQL 失败或无有效词条
  */
-bool loadWordsFromDB(const String &source, const String &chapter)
+bool loadWordsBySource(const String &source, const String &chapter)
 {
     sqlite3 *db = nullptr;
     sqlite3_stmt *stmt = nullptr;
@@ -550,6 +550,132 @@ bool loadWordsFromDB(const String &source, const String &chapter)
     sqlite3_finalize(stmt);
     sqlite3_close(db);
     return !words.empty();
+}
+
+/**
+ * 按 Score 从 SQLite 加载词库（分批，每批最多 50 条）
+ *
+ * 直接查询单词主表，不涉及 source 关联表。
+ * 根据 score 筛选，按 id 排序，使用 LIMIT/OFFSET 实现分批加载。
+ *
+ * @param score      熟练度分数（1~5）
+ * @param groupIndex 分组索引（0-based），每组 50 条
+ * @return true 加载成功且非空；false 打开失败、SQL 失败或无有效词条
+ */
+bool loadWordsByScore(int score, int groupIndex)
+{
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
+    words.clear();
+
+    if (!openVocabularyDb(&db)) {
+        return false;
+    }
+
+    String sql;
+    if (currentLanguage == LANG_JP) {
+        sql = "SELECT id, jp, zh, kanji, romaji, tone, score, sentence, sentence_zh "
+              "FROM jp_words WHERE score = ?1 ORDER BY id LIMIT 50 OFFSET ?2";
+    } else {
+        sql = "SELECT id, en, zh, pos, phonetic, score, sentence, sentence_zh, root, affix "
+              "FROM en_words WHERE score = ?1 ORDER BY id LIMIT 50 OFFSET ?2";
+    }
+
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    sqlite3_bind_int(stmt, 1, score);
+    sqlite3_bind_int(stmt, 2, groupIndex * 50);
+
+    while (true) {
+        int rc = sqlite3_step(stmt);
+        if (rc == SQLITE_ROW) {
+            Word w;
+            w.dbId = sqlite3_column_int(stmt, 0);
+            w.jp = "";
+            w.zh = "";
+            w.kanji = "";
+            w.romaji = "";
+            w.en = "";
+            w.pos = "";
+            w.phonetic = "";
+            w.sentence = "";
+            w.sentenceZh = "";
+            w.root = "";
+            w.affix = "";
+            w.tone = -1;
+            w.score = normalizeScoreValue(sqlite3_column_int(stmt, currentLanguage == LANG_JP ? 6 : 5));
+
+            if (currentLanguage == LANG_JP) {
+                w.jp = sqliteColumnText(stmt, 1);
+                w.zh = sqliteColumnText(stmt, 2);
+                w.kanji = sqliteColumnText(stmt, 3);
+                w.romaji = sqliteColumnText(stmt, 4);
+                w.tone = sqlite3_column_int(stmt, 5);
+                w.sentence = sqliteColumnText(stmt, 7);
+                w.sentenceZh = sqliteColumnText(stmt, 8);
+                if (!w.jp.isEmpty()) {
+                    words.push_back(w);
+                }
+            } else {
+                w.en = sqliteColumnText(stmt, 1);
+                w.zh = sqliteColumnText(stmt, 2);
+                w.pos = sqliteColumnText(stmt, 3);
+                w.phonetic = sqliteColumnText(stmt, 4);
+                w.sentence = sqliteColumnText(stmt, 6);
+                w.sentenceZh = sqliteColumnText(stmt, 7);
+                w.root = sqliteColumnText(stmt, 8);
+                w.affix = sqliteColumnText(stmt, 9);
+                if (!w.en.isEmpty()) {
+                    words.push_back(w);
+                }
+            }
+            continue;
+        }
+
+        if (rc != SQLITE_DONE) {
+            Serial.printf("SQL 读取词库失败: %s\n", sqlite3_errmsg(db));
+            sqlite3_finalize(stmt);
+            sqlite3_close(db);
+            words.clear();
+            return false;
+        }
+        break;
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return !words.empty();
+}
+
+/**
+ * 一次性查询 Score 1~5 各级单词数
+ *
+ * @param counts 输出数组（至少 6 个元素，索引 1~5 有效）
+ */
+void loadScoreCounts(int *counts)
+{
+    for (int i = 1; i <= 5; i++) counts[i] = 0;
+
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
+    if (!openVocabularyDb(&db)) return;
+
+    String sql = String("SELECT score, COUNT(*) FROM ") + currentWordTable() +
+                 " WHERE score BETWEEN 1 AND 5 GROUP BY score";
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        return;
+    }
+    while (sqlite3_step(stmt) == SQLITE_ROW) {
+        int s = sqlite3_column_int(stmt, 0);
+        int c = sqlite3_column_int(stmt, 1);
+        if (s >= 1 && s <= 5) counts[s] = c;
+    }
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
 }
 
 /**

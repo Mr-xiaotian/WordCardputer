@@ -33,15 +33,7 @@ void drawJapaneseSentence(const Word &w);
  */
 void initStudyMode()
 {
-    autoSaveIfNeeded();
-
-    bool ok = loadWordsFromDB(selectedSource, selectedChapter);
-    if (!ok)
-    {
-        drawCenterString(canvas, "词库加载失败", RED, 1.2);
-        return;
-    }
-    else if (words.empty())
+    if (words.empty())
     {
         drawCenterString(canvas, "词库为空", RED, 1.2);
         return;

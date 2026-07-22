@@ -83,9 +83,13 @@ void loopClassifySelectMode()
 
         if (st.enter)
         {
-            // 当前仅"按词源分类"一项，直接进入词源选择
-            appMode = MODE_FILE_SELECT;
-            initFileSelectMode();
+            if (classifyIndex == 0) {
+                appMode = MODE_FILE_SELECT;
+                initFileSelectMode();
+            } else {
+                appMode = MODE_SCORE_SELECT;
+                initScoreSelectMode();
+            }
             return;
         }
     }

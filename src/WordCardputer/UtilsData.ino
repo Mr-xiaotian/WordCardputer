@@ -64,7 +64,7 @@ void markScoreDirty() {
  * 保存完成后重置脏标记和计数器。
  */
 void autoSaveIfNeeded() {
-    if (!scoresDirty || selectedSource.isEmpty() || words.empty()) return;
+    if (!scoresDirty || words.empty()) return;
 
     if (saveCurrentWordsToDB()) {
         Serial.println("[AutoSave] 进度已自动保存");
@@ -186,7 +186,6 @@ void setLanguage(StudyLanguage lang)
         currentAudioRoot = "/words_study/en/audio";
     }
     currentSource = "";
-    selectedSource = "";
-    selectedChapter = "";
+    vocabLabel = "";
     words.clear();
 }

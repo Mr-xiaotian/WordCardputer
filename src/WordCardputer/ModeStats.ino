@@ -61,12 +61,10 @@ void drawStatsPage()
         int labelX = 8;
         int valueX = 72;
 
-        String label = selectedSource;
-        if (!selectedChapter.isEmpty()) label += "/" + selectedChapter;
         canvas.setTextColor(TFT_DARKGREY);
         canvas.drawString("词源", labelX, y);
         canvas.setTextColor(CYAN);
-        canvas.drawString(label, valueX, y);
+        canvas.drawString(vocabLabel, valueX, y);
         y += lineHeight;
 
         canvas.setTextColor(TFT_DARKGREY);
