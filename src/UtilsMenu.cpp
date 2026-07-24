@@ -1,0 +1,124 @@
+/**
+ * UtilsMenu.cpp - 通用菜单绘制工具
+ */
+
+#include "globals.h"
+
+/**
+ * 菜单光标导航（带滚动和循环翻页）
+ *
+ * 向上或向下移动菜单光标，自动处理循环翻页和滚动窗口跟随。
+ * 从首项上翻到末项、从末项下翻到首项时自动调整滚动位置。
+ *
+ * @param index 当前选中索引（会被修改）
+ * @param scroll 当前滚动偏移（会被修改）
+ * @param itemCount 菜单项总数
+ * @param visible 一屏可见行数
+ * @param moveUp true 向上移动，false 向下移动
+ */
+void navigateMenu(int &index, int &scroll, int itemCount, int visible, bool moveUp) {
+    if (moveUp) {
+        index = (index - 1 + itemCount) % itemCount;
+        if (index == itemCount - 1) {
+            scroll = max(0, itemCount - visible);
+        } else if (index < scroll) {
+            scroll = index;
+        }
+    } else {
+        index = (index + 1) % itemCount;
+        if (index == 0) {
+            scroll = 0;
+        } else if (index >= scroll + visible) {
+            scroll = index - visible + 1;
+        }
+    }
+}
+
+/**
+ * 绘制通用可滚动文本菜单
+ *
+ * 在画布上绘制一个完整的菜单界面，包含：
+ * - 左上角绿色标题
+ * - 右上角电池电量百分比（可选）
+ * - 带高亮选中项的可滚动列表（选中项显示为黄色带 ">" 前缀）
+ * - 右下角"当前/总数"分页指示器（当列表超出一屏时显示，可选）
+ * - 列表为空时显示自定义提示文字
+ *
+ * @param cv 目标画布引用
+ * @param title 菜单标题文本
+ * @param items 菜单项字符串列表
+ * @param selectedIndex 当前选中项的索引
+ * @param scrollIndex 当前滚动偏移（列表中第一个可见项的索引）
+ * @param visibleLines 一屏最多显示的行数
+ * @param emptyText 列表为空时显示的提示文字，默认"无项目"
+ * @param showBattery 是否在右上角显示电池电量，默认 true
+ * @param showPager 是否在右下角显示分页信息，默认 true
+ */
+void drawTextMenu(
+    M5Canvas &cv,
+    const String &title,                  // 标题文本
+    const std::vector<String> &items,     // 菜单项
+    int selectedIndex,                    // 当前选中下标
+    int scrollIndex,                      // 当前滚动起始下标
+    int visibleLines,                     // 一屏显示多少行
+    const String &emptyText,              // 没有项目时显示的文字
+    bool showBattery,                     // 是否显示右上角电量
+    bool showPager                        // 是否显示右下角分页
+) {
+    cv.fillSprite(BLACK);
+    cv.setFont(&fonts::efontCN_16);
+
+    // 标题（左上角）
+    drawTopLeftString(cv, title, GREEN, 1.2);
+
+    // 电量 + WiFi 状态（右上角）
+    if (showBattery) {
+        int batteryLevel = M5Cardputer.Power.getBatteryLevel();
+        String hud = "";
+        if (wifiConnected) hud += "WIFI ";
+        hud += String(batteryLevel) + "%";
+        drawTopRightString(cv, hud, TFT_DARKGREY, 1.0);
+    }
+
+    // 列表区域
+    cv.setTextDatum(top_left);
+    cv.setTextSize(1.2);
+
+    const int lineHeight = 24;
+    const int startY     = 40;
+
+    if (items.empty()) {
+        // 没有任何项目时的提示
+        cv.setTextColor(RED);
+        cv.setTextDatum(middle_center);
+        cv.drawString(emptyText, cv.width() / 2, cv.height() / 2);
+        cv.setTextDatum(top_left);
+    } else {
+        int end = min(scrollIndex + visibleLines, (int)items.size());
+        for (int i = scrollIndex; i < end; i++) {
+            int y = startY + (i - scrollIndex) * lineHeight;
+            if (i == selectedIndex) {
+                cv.setTextColor(YELLOW);
+                cv.drawString("> " + items[i], 8, y);
+            } else {
+                cv.setTextColor(WHITE);
+                cv.drawString("  " + items[i], 8, y);
+            }
+        }
+    }
+
+    // 右下角分页：当前/总数
+    if (showPager && items.size() > (size_t)visibleLines) {
+        cv.setTextColor(TFT_DARKGREY);
+        cv.setTextDatum(bottom_right);
+        cv.setTextSize(1.0);
+        cv.drawString(
+            String(selectedIndex + 1) + "/" + String(items.size()),
+            cv.width() - 8,
+            cv.height() - 8
+        );
+        cv.setTextDatum(top_left);  // 恢复
+    }
+
+    cv.pushSprite(0, 0);
+}
