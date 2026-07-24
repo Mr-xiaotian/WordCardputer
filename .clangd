@@ -1,0 +1,22 @@
+# clangd config for PlatformIO ESP32 project
+# Note: M5Stack library headers use complex templates that clang
+# can't fully resolve. These false positives don't affect actual builds.
+
+CompileFlags:
+  CompilationDatabase: .
+  Remove:
+    - "-mlongcalls"
+    - "-fno-tree-switch-conversion"
+    - "-fstrict-volatile-bitfields"
+    - "-fno-jump-tables"
+    - "-freorder-blocks"
+    - "-fstack-protector"
+    - "-fexceptions"
+    - "-fno-rtti"
+    - -mfix-esp32-psram-cache-issue
+    - -mfix-esp32-psram-cache-strategy=memw
+
+Diagnostics:
+  Suppress:
+    - "drv_unknown_argument"
+  UnusedIncludes: None

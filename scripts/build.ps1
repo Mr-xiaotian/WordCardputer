@@ -12,5 +12,12 @@ Set-Location $projectRoot
 Write-Host "[PlatformIO Build] Environment: $Env"
 Write-Host "[PlatformIO Build] Project: $projectRoot"
 
+pio run -e $Env -t compiledb
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+# Fix compile_commands.json for clangd (.ino -> per-file entries)
+uv run python temp/fix_compile_db.py compile_commands.json
+if ($LASTEXITCODE -ne 0) { Write-Host "[WARN] compile_commands.json post-process failed" }
+
 pio run -e $Env
 exit $LASTEXITCODE

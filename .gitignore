@@ -16,3 +16,5 @@ fallback/
 .venv/
 reports/
 backup/
+
+compile_commands.json
