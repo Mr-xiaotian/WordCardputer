@@ -9,6 +9,34 @@
  * - 单元格超宽裁剪
  */
 
+// --- 前向声明（PlatformIO 不会自动生成 .ino 原型） ---
+int _buildSimpleTableLayout(
+    M5Canvas &cv,
+    const std::vector<String> &headers,
+    const std::vector<std::vector<String>> &rows,
+    float headerSize,
+    float bodySize,
+    std::vector<int> &colXs,
+    std::vector<int> &colWidths);
+void _drawSimpleTableHeader(
+    M5Canvas &cv,
+    const std::vector<String> &headers,
+    const std::vector<int> &colXs,
+    const std::vector<int> &colWidths,
+    int cols,
+    int startY,
+    int rowHeight,
+    float headerSize);
+void _drawSimpleTableRows(
+    M5Canvas &cv,
+    const std::vector<std::vector<String>> &rows,
+    const std::vector<int> &colXs,
+    const std::vector<int> &colWidths,
+    int cols,
+    int startY,
+    int rowHeight,
+    float bodySize);
+
 /**
  * 绘制通用简易表格
  *
