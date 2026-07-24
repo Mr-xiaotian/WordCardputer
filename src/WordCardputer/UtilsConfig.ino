@@ -41,7 +41,7 @@ bool loadLegacyWiFiConfig() {
         return false;
     }
 
-    DynamicJsonDocument doc(4096);
+    JsonDocument doc;
     DeserializationError err = deserializeJson(doc, f);
     f.close();
     if (err || !doc.is<JsonArray>()) {
@@ -65,10 +65,10 @@ bool loadLegacyWiFiConfig() {
  * @return true 保存成功；false 写文件失败
  */
 bool saveAppConfig() {
-    DynamicJsonDocument doc(8192);
+    JsonDocument doc;
     doc["version"] = 1;
 
-    JsonObject settings = doc.createNestedObject("settings");
+    JsonObject settings = doc["settings"].to<JsonObject>();
     settings["volume"] = soundVolume;
     settings["language"] = (currentLanguage == LANG_JP) ? "jp" : "en";
     settings["brightness"] = normalBrightness;
@@ -76,9 +76,9 @@ bool saveAppConfig() {
     settings["idle_timeout_ms"] = idleTimeout;
     settings["auto_save_threshold"] = autoSaveThreshold;
 
-    JsonArray wifi = doc.createNestedArray("wifi");
+    JsonArray wifi = doc["wifi"].to<JsonArray>();
     for (auto &c : savedWiFiList) {
-        JsonObject item = wifi.createNestedObject();
+        JsonObject item = wifi.add<JsonObject>();
         item["ssid"] = c.ssid;
         item["pass"] = c.pass;
     }
@@ -110,7 +110,7 @@ void loadAppConfig() {
     bool loaded = false;
     File f = SD.open(kConfigFilePath);
     if (f) {
-        DynamicJsonDocument doc(8192);
+        JsonDocument doc;
         DeserializationError err = deserializeJson(doc, f);
         f.close();
         if (!err && doc.is<JsonObject>()) {

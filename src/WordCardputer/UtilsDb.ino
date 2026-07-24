@@ -358,7 +358,7 @@ bool importJsonFileToDb(const String &jsonPath, const String &source, const Stri
         capacity = 16384;
     }
 
-    DynamicJsonDocument doc(capacity);
+    JsonDocument doc;
     DeserializationError err = deserializeJson(doc, f);
     f.close();
     if (err) {

@@ -61,7 +61,7 @@ bool streamWordListAsJson(const String &source, const String &chapter, const Str
     while (true) {
         int rc = sqlite3_step(stmt);
         if (rc == SQLITE_ROW) {
-            DynamicJsonDocument item(512);
+            JsonDocument item;
             if (currentLanguage == LANG_JP) {
                 item["jp"] = sqliteColumnText(stmt, 0);
                 item["zh"] = sqliteColumnText(stmt, 1);
@@ -164,11 +164,11 @@ void handleApiFiles() {
         path = currentWordRoot;
     }
 
-    DynamicJsonDocument doc(4096);
+    JsonDocument doc;
     doc["path"] = path;
     doc["root"] = currentWordRoot;
     doc["language"] = (currentLanguage == LANG_JP) ? "jp" : "en";
-    JsonArray items = doc.createNestedArray("items");
+    JsonArray items = doc["items"].to<JsonArray>();
     bool isRoot = false;
     String source;
     String chapter;
@@ -195,7 +195,7 @@ void handleApiFiles() {
         }
 
         while (sqlite3_step(stmt) == SQLITE_ROW) {
-            JsonObject item = items.createNestedObject();
+            JsonObject item = items.add<JsonObject>();
             int chapterCount = sqlite3_column_int(stmt, 2);
             item["name"] = sqliteColumnText(stmt, 0);
             item["kind"] = "source";
@@ -227,14 +227,14 @@ void handleApiFiles() {
         }
         sqlite3_bind_text(stmt, 1, source.c_str(), -1, SQLITE_TRANSIENT);
 
-        JsonObject allItem = items.createNestedObject();
+        JsonObject allItem = items.add<JsonObject>();
         allItem["name"] = "全部";
         allItem["kind"] = "chapter";
         allItem["isDir"] = false;
         allItem["wordCount"] = totalCount;
 
         while (sqlite3_step(stmt) == SQLITE_ROW) {
-            JsonObject item = items.createNestedObject();
+            JsonObject item = items.add<JsonObject>();
             item["name"] = sqliteColumnText(stmt, 0);
             item["kind"] = "chapter";
             item["isDir"] = false;
@@ -262,7 +262,7 @@ void handleApiFileUpload() {
         return;
     }
 
-    DynamicJsonDocument doc(256);
+    JsonDocument doc;
     doc["ok"] = true;
     doc["source"] = uploadTargetSource;
     doc["chapter"] = uploadTargetChapter;
@@ -432,7 +432,7 @@ void handleApiFileDelete() {
 
     sqlite3_close(db);
 
-    DynamicJsonDocument doc(128);
+    JsonDocument doc;
     doc["ok"] = true;
     doc["deleted"] = changes;
     String json;
@@ -475,13 +475,13 @@ void handleApiStats() {
     sendCorsHeaders();
     computeStatsFromWords();
 
-    DynamicJsonDocument doc(512);
+    JsonDocument doc;
     doc["vocabLabel"] = vocabLabel;
     doc["total"] = statsTotal;
     doc["avg"] = round(statsAvg * 100) / 100.0;
     doc["median"] = round(statsMedian * 100) / 100.0;
     doc["level"] = statsLevel;
-    JsonObject counts = doc.createNestedObject("counts");
+    JsonObject counts = doc["counts"].to<JsonObject>();
     for (int i = 1; i <= 5; i++) {
         counts[String(i)] = statsCounts[i];
     }
@@ -498,7 +498,7 @@ void handleApiStats() {
  */
 void handleApiSettingsGet() {
     sendCorsHeaders();
-    DynamicJsonDocument doc(256);
+    JsonDocument doc;
     doc["volume"] = soundVolume;
     doc["brightness"] = normalBrightness;
     doc["autoSaveThreshold"] = autoSaveThreshold;
@@ -522,31 +522,31 @@ void handleApiSettingsGet() {
  */
 void handleApiSettingsPost() {
     sendCorsHeaders();
-    DynamicJsonDocument doc(256);
+    JsonDocument doc;
     DeserializationError err = deserializeJson(doc, server.arg("plain"));
     if (err) {
         sendJsonError(400, "Invalid JSON");
         return;
     }
 
-    if (doc.containsKey("volume")) {
+    if (!doc["volume"].isNull()) {
         soundVolume = constrain(doc["volume"].as<int>(), 0, 255);
         M5.Speaker.setVolume(soundVolume);
     }
-    if (doc.containsKey("brightness")) {
+    if (!doc["brightness"].isNull()) {
         normalBrightness = constrain(doc["brightness"].as<int>(), 10, 255);
         dimBrightness = min(dimBrightness, normalBrightness);
         if (!isDimmed) {
             M5Cardputer.Display.setBrightness(normalBrightness);
         }
     }
-    if (doc.containsKey("autoSaveThreshold")) {
+    if (!doc["autoSaveThreshold"].isNull()) {
         autoSaveThreshold = max(1, doc["autoSaveThreshold"].as<int>());
     }
     saveAppConfig();
 
     // 返回当前值
-    DynamicJsonDocument res(192);
+    JsonDocument res;
     res["ok"] = true;
     res["volume"] = soundVolume;
     res["brightness"] = (int)normalBrightness;
@@ -563,7 +563,7 @@ void handleApiSettingsPost() {
  */
 void handleApiDevice() {
     sendCorsHeaders();
-    DynamicJsonDocument doc(256);
+    JsonDocument doc;
     doc["ip"] = WiFi.localIP().toString();
     doc["freeHeap"] = ESP.getFreeHeap();
     doc["uptime"] = millis() / 1000;

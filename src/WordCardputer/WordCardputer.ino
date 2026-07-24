@@ -355,7 +355,7 @@ void setup() {
 
     // 初始化显示
     canvas.createSprite(M5Cardputer.Display.width(), M5Cardputer.Display.height());
-    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setFont(&fonts::efontCN_16);
 
     // 开始进入启动画面
     initSplashMode();

@@ -68,7 +68,7 @@ void drawTextMenu(
     bool showPager                        // 是否显示右下角分页
 ) {
     cv.fillSprite(BLACK);
-    cv.setTextFont(&fonts::efontCN_16);
+    cv.setFont(&fonts::efontCN_16);
 
     // 标题（左上角）
     drawTopLeftString(cv, title, GREEN, 1.2);

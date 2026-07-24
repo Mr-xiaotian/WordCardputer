@@ -110,7 +110,7 @@ void moveWordTableToFirstNonEmptyScore()
 void drawWordTablePage()
 {
     canvas.fillSprite(BLACK);
-    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setFont(&fonts::efontCN_16);
     drawTopLeftString(canvas, "当前词表", GREEN, 1.2);
     drawTopRightString(
         canvas,

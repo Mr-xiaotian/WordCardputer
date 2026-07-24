@@ -60,7 +60,7 @@ void drawListenWord()
 
     if (currentLanguage == LANG_EN)
     {
-        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setFont(&fonts::efontCN_16);
         canvas.setTextColor(CYAN);
         drawAutoFitString(canvas, w.en, canvas.width() / 2, canvas.height() / 2 - 25, 2.2);
 
@@ -81,7 +81,7 @@ void drawListenWord()
     else if (currentLanguage == LANG_JP)
     {
         // 显示日语（中间偏上）
-        canvas.setTextFont(&fonts::efontJA_16);
+        canvas.setFont(&fonts::efontJA_16);
         canvas.setTextColor(CYAN);
         drawAutoFitString(canvas, w.jp, canvas.width() / 2, canvas.height() / 2 - 25, 2.2);
 
@@ -95,7 +95,7 @@ void drawListenWord()
     }
 
     // 显示中文（中间偏下）
-    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setFont(&fonts::efontCN_16);
     canvas.setTextColor(YELLOW);
     drawAutoFitString(canvas, w.zh, canvas.width() / 2, canvas.height() / 2 + 40, 1.5); // 显示中文释义
 

@@ -287,7 +287,7 @@ void drawEnglishWord(const Word &w)
     if (showAnkiSideA)
     {
         // === 模式1：显示英语,隐藏中文 ===
-        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setFont(&fonts::efontCN_16);
         canvas.setTextColor(CYAN);
         drawAutoFitString(canvas, w.en, canvas.width() / 2, canvas.height() / 2 - 25, 2.2);
 
@@ -300,7 +300,7 @@ void drawEnglishWord(const Word &w)
 
         if (showMeaning)
         {
-            canvas.setTextFont(&fonts::efontCN_16);
+            canvas.setFont(&fonts::efontCN_16);
             canvas.setTextColor(YELLOW);
             drawAutoFitString(canvas, w.zh, canvas.width() / 2, canvas.height() / 2 + 40, 1.5);
         }
@@ -308,13 +308,13 @@ void drawEnglishWord(const Word &w)
     else
     {
         // === 模式2：显示中文,隐藏英语 ===
-        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setFont(&fonts::efontCN_16);
         canvas.setTextColor(YELLOW);
         drawAutoFitString(canvas, w.zh, canvas.width() / 2, canvas.height() / 2 - 25, 2.0); // 显示中文释义主行
 
         if (w.pos.length() > 0)
         {
-            canvas.setTextFont(&fonts::efontCN_16);
+            canvas.setFont(&fonts::efontCN_16);
             canvas.setTextColor(ORANGE);
             canvas.setTextSize(1.4);
             canvas.drawString(w.pos, canvas.width() / 2, canvas.height() / 2 + 5);
@@ -322,7 +322,7 @@ void drawEnglishWord(const Word &w)
 
         if (showMeaning)
         {
-            canvas.setTextFont(&fonts::efontCN_16);
+            canvas.setFont(&fonts::efontCN_16);
             canvas.setTextColor(CYAN);
             drawAutoFitString(canvas, w.en, canvas.width() / 2, canvas.height() / 2 + 40, 1.8); // 显示英语原文
         }
@@ -343,7 +343,7 @@ void drawJapaneseWord(const Word &w)
     if (showAnkiSideA)
     {
         // === 模式1：显示日语,隐藏中文 ===
-        canvas.setTextFont(&fonts::efontJA_16);
+        canvas.setFont(&fonts::efontJA_16);
         canvas.setTextColor(CYAN);
         drawAutoFitString(canvas, w.jp, canvas.width() / 2, canvas.height() / 2 - 25, 2.2); // 自动适配
 
@@ -353,7 +353,7 @@ void drawJapaneseWord(const Word &w)
 
         if (showMeaning)
         {
-            canvas.setTextFont(&fonts::efontCN_16);
+            canvas.setFont(&fonts::efontCN_16);
             canvas.setTextColor(YELLOW);
             drawAutoFitString(canvas, w.zh, canvas.width() / 2, canvas.height() / 2 + 40, 1.5); // 显示中文释义
         }
@@ -361,13 +361,13 @@ void drawJapaneseWord(const Word &w)
     else
     {
         // === 模式2：显示中文,隐藏日语 ===
-        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setFont(&fonts::efontCN_16);
         canvas.setTextColor(YELLOW);
         drawAutoFitString(canvas, w.zh, canvas.width() / 2, canvas.height() / 2 - 25, 2.0); // 显示中文释义主行
 
         if (w.kanji.length() > 0)
         {
-            canvas.setTextFont(&fonts::efontJA_16);
+            canvas.setFont(&fonts::efontJA_16);
             canvas.setTextColor(ORANGE);
             canvas.setTextSize(1.4);
             canvas.drawString(w.kanji, canvas.width() / 2, canvas.height() / 2 + 5);
@@ -375,7 +375,7 @@ void drawJapaneseWord(const Word &w)
 
         if (showMeaning)
         {
-            canvas.setTextFont(&fonts::efontJA_16);
+            canvas.setFont(&fonts::efontJA_16);
             canvas.setTextColor(CYAN);
             drawAutoFitString(canvas, w.jp, canvas.width() / 2, canvas.height() / 2 + 40, 1.8); // 显示日语原文
         }
@@ -415,12 +415,12 @@ void drawEnglishSentence(const Word &w)
 {
     if (showSentenceZh)
     {
-        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setFont(&fonts::efontCN_16);
         canvas.setTextColor(YELLOW);
         canvas.setTextSize(1.2);
         canvas.drawString(w.zh, canvas.width() / 2, 43);
 
-        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setFont(&fonts::efontCN_16);
         canvas.setTextColor(WHITE);
         drawWrappedTextBlock(
             canvas,
@@ -435,12 +435,12 @@ void drawEnglishSentence(const Word &w)
     }
     else
     {
-        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setFont(&fonts::efontCN_16);
         canvas.setTextColor(CYAN);
         canvas.setTextSize(1.2);
         canvas.drawString(w.en, canvas.width() / 2, 43);
 
-        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setFont(&fonts::efontCN_16);
         canvas.setTextColor(WHITE);
         drawWrappedTextBlock(
             canvas,
@@ -466,12 +466,12 @@ void drawJapaneseSentence(const Word &w)
 {
     if (showSentenceZh)
     {
-        canvas.setTextFont(&fonts::efontJA_16);
+        canvas.setFont(&fonts::efontJA_16);
         canvas.setTextColor(YELLOW);
         canvas.setTextSize(1.2);
         canvas.drawString(w.zh, canvas.width() / 2, 43);
 
-        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setFont(&fonts::efontCN_16);
         canvas.setTextColor(WHITE);
         drawWrappedTextBlock(
             canvas,
@@ -486,12 +486,12 @@ void drawJapaneseSentence(const Word &w)
     }
     else
     {
-        canvas.setTextFont(&fonts::efontJA_16);
+        canvas.setFont(&fonts::efontJA_16);
         canvas.setTextColor(CYAN);
         canvas.setTextSize(1.2);
         canvas.drawString(w.jp, canvas.width() / 2, 43);
 
-        canvas.setTextFont(&fonts::efontJA_16);
+        canvas.setFont(&fonts::efontJA_16);
         canvas.setTextColor(WHITE);
         drawWrappedTextBlock(
             canvas,
@@ -519,7 +519,7 @@ void drawStudyRootAffix(const Word &w)
     const char *nameCol = showRoots ? "root" : "affix";
     const String &idList = showRoots ? w.root : w.affix;
 
-    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setFont(&fonts::efontCN_16);
 
     if (idList.isEmpty())
     {

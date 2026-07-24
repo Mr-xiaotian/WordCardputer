@@ -63,7 +63,7 @@ void drawPasswordOverlay() {
     canvas.fillRect(0, 60, canvas.width(), canvas.height() - 60, BLACK);
     canvas.drawLine(4, 62, canvas.width() - 4, 62, TFT_DARKGREY);
 
-    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setFont(&fonts::efontCN_16);
     canvas.setTextDatum(top_left);
 
     // SSID
@@ -101,7 +101,7 @@ void drawPasswordOverlay() {
  */
 void drawWiFiStatusPage() {
     canvas.fillSprite(BLACK);
-    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setFont(&fonts::efontCN_16);
 
     drawTopLeftString(canvas, "WiFi 状态", GREEN, 1.2);
 

@@ -84,7 +84,7 @@ void drawDictationInput()
 {
     canvas.fillSprite(BLACK);
 
-    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setFont(&fonts::efontCN_16);
     if (currentLanguage == LANG_EN)
         drawTopLeftString(canvas, "英语听写", TFT_DARKGREY, 1.0);
     else if (currentLanguage == LANG_JP)
@@ -94,12 +94,12 @@ void drawDictationInput()
     canvas.setTextColor(WHITE);
     if (currentLanguage == LANG_EN)
     {
-        canvas.setTextFont(&fonts::efontCN_16);
+        canvas.setFont(&fonts::efontCN_16);
         drawAutoFitString(canvas, dictEnInput, canvas.width() / 2, canvas.height() / 2 - 10, 2.0);
     }
     else if (currentLanguage == LANG_JP)
     {
-        canvas.setTextFont(&fonts::efontJA_16);
+        canvas.setFont(&fonts::efontJA_16);
         canvas.setTextSize(2.0);
         String mainLine = commitText + romajiBuffer;
         drawAutoFitString(canvas, mainLine, canvas.width() / 2, canvas.height() / 2 - 10, 2.0);
@@ -132,7 +132,7 @@ void drawDictationInput()
 void drawDictationSummary()
 {
     canvas.fillSprite(BLACK);
-    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setFont(&fonts::efontCN_16);
 
     drawTopLeftString(canvas, "听写总结", TFT_DARKGREY, 1.0);
 

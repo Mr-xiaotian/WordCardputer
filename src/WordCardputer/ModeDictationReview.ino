@@ -20,7 +20,7 @@
 void drawDictationReviewPage()
 {
     canvas.fillSprite(BLACK);
-    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setFont(&fonts::efontCN_16);
 
     if (dictationReviewEntries.empty())
     {
@@ -35,7 +35,7 @@ void drawDictationReviewPage()
     drawTopRightString(canvas, entry.createdAt, TFT_DARKGREY, 1.0);
 
     canvas.setTextDatum(middle_center);
-    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setFont(&fonts::efontCN_16);
     canvas.setTextColor(GREEN);
     drawAutoFitString(canvas, entry.correct, canvas.width() / 2, canvas.height() / 2 - 25, 2.0);
 

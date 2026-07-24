@@ -132,7 +132,7 @@ void initKeyHelpMode() {
  */
 void drawKeyHelpPage() {
     canvas.fillSprite(BLACK);
-    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setFont(&fonts::efontCN_16);
 
     drawTopLeftString(canvas, "按键帮助", GREEN, 1.2);
     drawTopRightString(

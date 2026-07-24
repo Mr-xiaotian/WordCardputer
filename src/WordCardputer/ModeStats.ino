@@ -41,7 +41,7 @@ void initStatsMode()
 void drawStatsPage()
 {
     canvas.fillSprite(BLACK);
-    canvas.setTextFont(&fonts::efontCN_16);
+    canvas.setFont(&fonts::efontCN_16);
     drawTopLeftString(canvas, "学习统计", GREEN, 1.2);
     drawTopRightString(canvas, String(statsPage + 1) + "/3", TFT_DARKGREY, 1.0);
 
