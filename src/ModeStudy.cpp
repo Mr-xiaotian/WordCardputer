@@ -135,9 +135,9 @@ void loopStudyMode()
             }
             else if (c == ',' || c == '/')
             {
-                if (studyHasExample(words[wordIndex]))
+                int pageCount = studyPageCount(words[wordIndex]);
+                if (pageCount > 1)
                 {
-                    int pageCount = studyPageCount(words[wordIndex]);
                     if (c == '/')
                     {
                         studyPage = (studyPage + 1) % pageCount;
