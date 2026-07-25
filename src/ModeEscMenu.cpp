@@ -104,6 +104,9 @@ static void returnFromEscMenu() {
     else if (previousMode == MODE_DICTATION_REVIEW) {
         drawDictationReviewPage();
     }
+    else if (previousMode == MODE_CLOCK) {
+        initClockMode();
+    }
 }
 
 /**
@@ -243,6 +246,11 @@ void loopEscMenuMode() {
                 else if (escRootIndex == 6) {
                     appMode = MODE_WIFI_SCAN;
                     initWiFiScanMode();
+                    return;
+                }
+                else if (escRootIndex == 7) {
+                    appMode = MODE_CLOCK;
+                    initClockMode();
                     return;
                 }
             }

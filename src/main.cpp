@@ -84,6 +84,8 @@ void loop() {
         loopWiFiScanMode();
     } else if (appMode == MODE_KEY_HELP) {
         loopKeyHelpMode();
+    } else if (appMode == MODE_CLOCK) {
+        loopClockMode();
     }
 
     // -------- Web 服务器处理 --------

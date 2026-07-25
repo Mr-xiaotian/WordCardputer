@@ -74,6 +74,7 @@ std::vector<String> escRootItems = {
     "查看过往错题",
     "按键帮助",
     "WiFi 连接",
+    "时间",
 };
 std::vector<String> escVocabItems = {
     "重新选择语言",

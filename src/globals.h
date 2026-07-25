@@ -41,6 +41,7 @@ enum AppMode {
     MODE_WORD_TABLE,
     MODE_WIFI_SCAN,
     MODE_KEY_HELP,
+    MODE_CLOCK,
 };
 
 enum StudyLanguage {
@@ -302,6 +303,10 @@ void loopLanguageSelectMode();
 // --- ModeWiFiScan ---
 void initWiFiScanMode();
 void loopWiFiScanMode();
+
+// --- ModeClock ---
+void initClockMode();
+void loopClockMode();
 
 // --- ModeKeyHelp ---
 void initKeyHelpMode();
