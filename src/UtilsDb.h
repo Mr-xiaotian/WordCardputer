@@ -17,6 +17,8 @@ bool saveCurrentWordsToDB();
 bool saveWordListToDB(const String &source, const String &chapter, const std::vector<Word> &list);
 bool saveDictationErrorsToDB(const std::vector<DictError> &errors);
 bool loadDictationReviewEntriesFromDB(std::vector<DictationReviewEntry> &items);
+bool loadWordsByIds(const std::vector<int> &ids);
+bool deleteDictationError(int errorId);
 bool loadSourceList(std::vector<String> &items);
 bool loadChapterList(const String &source, std::vector<String> &items);
 bool sourceHasChapters(const String &source);

@@ -39,12 +39,6 @@ static void drawListenWord()
         drawAutoFitString(canvas, w.en, canvas.width() / 2, canvas.height() / 2 - 25, 2.2);
 
         String sub = asciiPhonetic(w.phonetic);
-        if (w.pos.length() > 0)
-        {
-            if (sub.length() > 0)
-                sub += "  ";
-            sub += w.pos;
-        }
         if (sub.length() > 0)
         {
             canvas.setTextColor(GREEN);

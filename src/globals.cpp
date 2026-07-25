@@ -160,7 +160,9 @@ std::vector<HelpSectionData> helpSections = {
         {
             {
                 { ", / /",   "切换错题" },
+                { "BtnA",    "单词详情/错误对照" },
                 { "Fn",      "重播正确发音" },
+                { "Del",     "删除当前错题" },
             }
         }
     },

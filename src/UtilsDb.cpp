@@ -985,7 +985,7 @@ bool loadDictationReviewEntriesFromDB(std::vector<DictationReviewEntry> &items)
     }
 
     String correctColumn = (currentLanguage == LANG_JP) ? "w.jp" : "w.en";
-    String sql = String("SELECT e.word_id, e.wrong_text, e.created_at, ") +
+    String sql = String("SELECT e.id, e.word_id, e.wrong_text, e.created_at, ") +
                  correctColumn +
                  " FROM " + currentDictationErrorTable() + " e "
                  "LEFT JOIN " + currentWordTable() + " w ON w.id = e.word_id "
@@ -999,10 +999,11 @@ bool loadDictationReviewEntriesFromDB(std::vector<DictationReviewEntry> &items)
         int rc = sqlite3_step(stmt);
         if (rc == SQLITE_ROW) {
             DictationReviewEntry item;
-            item.wordDbId = sqlite3_column_int(stmt, 0);
-            item.wrong = sqliteColumnText(stmt, 1);
-            item.createdAt = sqliteColumnText(stmt, 2);
-            item.correct = sqliteColumnText(stmt, 3);
+            item.errorId = sqlite3_column_int(stmt, 0);
+            item.wordDbId = sqlite3_column_int(stmt, 1);
+            item.wrong = sqliteColumnText(stmt, 2);
+            item.createdAt = sqliteColumnText(stmt, 3);
+            item.correct = sqliteColumnText(stmt, 4);
             if (item.correct.isEmpty()) {
                 item.correct = "(原词已删除)";
             }
@@ -1025,7 +1026,149 @@ bool loadDictationReviewEntriesFromDB(std::vector<DictationReviewEntry> &items)
 }
 
 /**
- * 加载当前语言下的所有 source 列表
+ * 按词条 ID 列表从数据库加载单词到全局 words 向量
+ *
+ * 用于错题回顾等需要按 ID 精确加载的场景。
+ * 会先清空 words，然后逐条查询对应词条信息。
+ *
+ * @param ids 要加载的词条主键列表
+ * @return true 至少加载到一条有效词条；false 全部失败或无输入
+ */
+bool loadWordsByIds(const std::vector<int> &ids)
+{
+    words.clear();
+    if (ids.empty()) {
+        return false;
+    }
+
+    sqlite3 *db = nullptr;
+    if (!openVocabularyDb(&db)) {
+        return false;
+    }
+
+    // 构建 IN 子句
+    String idList;
+    for (size_t i = 0; i < ids.size(); i++) {
+        if (i > 0) idList += ",";
+        idList += String(ids[i]);
+    }
+
+    String sql;
+    if (currentLanguage == LANG_JP) {
+        sql = String("SELECT id, jp, zh, kanji, romaji, tone, score, sentence, sentence_zh "
+                      "FROM ") + currentWordTable() +
+              " WHERE id IN (" + idList + ") ORDER BY id";
+    } else {
+        sql = String("SELECT id, en, zh, pos, phonetic, score, sentence, sentence_zh, root, affix "
+                      "FROM ") + currentWordTable() +
+              " WHERE id IN (" + idList + ") ORDER BY id";
+    }
+
+    sqlite3_stmt *stmt = nullptr;
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    while (true) {
+        int rc = sqlite3_step(stmt);
+        if (rc == SQLITE_ROW) {
+            Word w;
+            w.dbId = sqlite3_column_int(stmt, 0);
+            w.jp = "";
+            w.zh = "";
+            w.kanji = "";
+            w.romaji = "";
+            w.en = "";
+            w.pos = "";
+            w.phonetic = "";
+            w.sentence = "";
+            w.sentenceZh = "";
+            w.root = "";
+            w.affix = "";
+            w.tone = -1;
+            w.score = normalizeScoreValue(sqlite3_column_int(stmt, currentLanguage == LANG_JP ? 6 : 5));
+
+            if (currentLanguage == LANG_JP) {
+                w.jp = sqliteColumnText(stmt, 1);
+                w.zh = sqliteColumnText(stmt, 2);
+                w.kanji = sqliteColumnText(stmt, 3);
+                w.romaji = sqliteColumnText(stmt, 4);
+                w.tone = sqlite3_column_int(stmt, 5);
+                w.sentence = sqliteColumnText(stmt, 7);
+                w.sentenceZh = sqliteColumnText(stmt, 8);
+                if (!w.jp.isEmpty()) words.push_back(w);
+            } else {
+                w.en = sqliteColumnText(stmt, 1);
+                w.zh = sqliteColumnText(stmt, 2);
+                w.pos = sqliteColumnText(stmt, 3);
+                w.phonetic = sqliteColumnText(stmt, 4);
+                w.sentence = sqliteColumnText(stmt, 6);
+                w.sentenceZh = sqliteColumnText(stmt, 7);
+                w.root = sqliteColumnText(stmt, 8);
+                w.affix = sqliteColumnText(stmt, 9);
+                if (!w.en.isEmpty()) words.push_back(w);
+            }
+            continue;
+        }
+        if (rc != SQLITE_DONE) {
+            Serial.printf("按ID加载词库失败: %s\n", sqlite3_errmsg(db));
+            sqlite3_finalize(stmt);
+            sqlite3_close(db);
+            words.clear();
+            return false;
+        }
+        break;
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return !words.empty();
+}
+
+/**
+从数据库中删除指定 ID 的错题记录
+ *
+ * @param errorId 错题记录的主键
+ * @return true 删除成功；false 删除失败
+ */
+bool deleteDictationError(int errorId)
+{
+    if (errorId <= 0) {
+        return false;
+    }
+
+    sqlite3 *db = nullptr;
+    sqlite3_stmt *stmt = nullptr;
+    if (!openVocabularyDb(&db)) {
+        return false;
+    }
+    if (!ensureDictationErrorTable(db)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    String sql = String("DELETE FROM ") + currentDictationErrorTable() +
+                 " WHERE id = ?1";
+    if (!prepareStatement(db, sql, &stmt)) {
+        sqlite3_close(db);
+        return false;
+    }
+
+    sqlite3_bind_int(stmt, 1, errorId);
+    int rc = sqlite3_step(stmt);
+    bool ok = (rc == SQLITE_DONE);
+    if (!ok) {
+        Serial.printf("删除错题失败: %s\n", sqlite3_errmsg(db));
+    }
+
+    sqlite3_finalize(stmt);
+    sqlite3_close(db);
+    return ok;
+}
+
+/**
+加载当前语言下的所有 source 列表
  *
  * 结果按不区分大小写的字母序返回，用于文件选择模式的根层菜单。
  *
