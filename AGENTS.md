@@ -19,6 +19,6 @@
 - 对数据库的改动需要经过我的同意
 - 数据库备份文件存放在 backup 目录下
 
-## 工具
+## 脚本文件
 - 编译可使用 scripts/build.ps1 脚本.
 - 上传可使用 scripts/upload.ps1 脚本.
