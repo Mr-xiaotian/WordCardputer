@@ -4,6 +4,8 @@ import subprocess
 import requests
 from typing import Tuple
 from pathlib import Path
+import sqlite3
+import time
 from dotenv import load_dotenv
 
 
@@ -143,3 +145,65 @@ def generate_tts_youdao(text: str, output_path: str | Path) -> Tuple[bool, str]:
     except Exception as e:
         temp_mp3.unlink(missing_ok=True)
         return False, str(e)
+
+
+def fill_missing_audio(
+    db_path: str = "words_study/en/en_words.db",
+    audio_dir: str | Path = "words_study/en/audio",
+    delay: float = 0.5,
+) -> Tuple[int, int]:
+    """
+    读取英语词库，为没有音频的单词生成有道TTS音频。
+
+    :param db_path: SQLite 数据库路径
+    :param audio_dir: 音频文件存放目录
+    :param delay: 每次请求间隔（秒），避免被限流
+    :return: (成功数, 失败数)
+    """
+    audio_dir = Path(audio_dir)
+    audio_dir.mkdir(parents=True, exist_ok=True)
+
+    # 读取已有的音频文件（不含扩展名）
+    existing = {f.stem.lower() for f in audio_dir.iterdir() if f.suffix == ".wav"}
+    print(f"已有音频: {len(existing)} 个")
+
+    # 从数据库读取所有单词
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.execute("SELECT en FROM en_words ORDER BY id")
+    all_words = [r[0].strip() for r in cursor.fetchall()]
+    conn.close()
+
+    print(f"词库总计: {len(all_words)} 个单词")
+
+    # 筛选出缺少音频的
+    missing = [w for w in all_words if w.lower() not in existing]
+    print(f"缺少音频: {len(missing)} 个单词")
+
+    if not missing:
+        print("所有单词均有音频，无需处理。")
+        return 0, 0
+
+    success = 0
+    fail = 0
+
+    for i, word in enumerate(missing, 1):
+        output_path = audio_dir / f"{word}.wav"
+        ok, msg = generate_tts_youdao(word, output_path)
+
+        if ok:
+            success += 1
+            print(f"[{i}/{len(missing)}] ✅ {word}")
+        else:
+            fail += 1
+            print(f"[{i}/{len(missing)}] ❌ {word}: {msg}")
+
+        if i < len(missing):
+            time.sleep(delay)
+
+    print(f"\n完成: 成功 {success}, 失败 {fail}")
+    return success, fail
+
+if __name__ == "__main__":
+    # 生成所有缺失的音频
+    success, fail = fill_missing_audio()
