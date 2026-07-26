@@ -136,7 +136,9 @@ def trim_leading_silence_in_folder(
 
 
 if __name__ == "__main__":
-    # trim_leading_silence_in_folder(r"D:\Project\WordCardputer\words_study\en\audio")
+    summary = trim_leading_silence_in_folder(r"D:\Project\WordCardputer\words_study\en\audio")
+    print(summary)
+
     # trim_leading_silence_wav(r"D:\Project\WordCardputer\words_study\en\audio\abreast.wav",
     #                          r"D:\Project\WordCardputer\words_study\en\audio\abreast_trimed.wav")
     pass
