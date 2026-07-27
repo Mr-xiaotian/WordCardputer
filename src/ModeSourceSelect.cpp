@@ -174,8 +174,8 @@ void loopFileSelectMode()
                 return;
             }
             vocabLabel = selectedChapter.isEmpty()
-                ? "chapter:" + selectedSource
-                : "chapter:" + selectedSource + "/" + selectedChapter;
+                ? selectedSource
+                : selectedSource + "/" + selectedChapter;
             appMode = MODE_STUDY;
             initStudyMode();
             return;

@@ -179,7 +179,7 @@ void loopScoreSelectMode()
             }
             int start = groupListIndex * 50 + 1;
             int end = min(groupListIndex * 50 + 50, scoreWordCounts[selectedScore]);
-            vocabLabel = "score:" + String(selectedScore) + "/" + String(start) + "-" + String(end);
+            vocabLabel = String(selectedScore) + "/" + String(start) + "-" + String(end);
             appMode = MODE_STUDY;
             initStudyMode();
         }
