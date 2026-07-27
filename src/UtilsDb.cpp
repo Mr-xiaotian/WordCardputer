@@ -79,6 +79,69 @@ static bool ensureDictationErrorTable(sqlite3 *db) {
 }
 
 /**
+ * 从关联表批量填充 Word.root / Word.affix 字段
+ *
+ * 在 loadWordsBySource / loadWordsByScore / loadWordsByIds 完成
+ * 主查询后调用，用一次批量查询将词根/词缀 ID 重新拼接为逗号串，
+ * 保持 Word 结构体和上层展示代码不变。
+ *
+ * 仅英语模式生效；日语模式直接返回。
+ *
+ * @param db    已打开的数据库句柄
+ * @param words 已加载的单词列表（有 dbId），原地修改 root/affix
+ */
+static void populateRootAffixFromJunction(sqlite3 *db, std::vector<Word> &words) {
+    if (currentLanguage != LANG_EN || words.empty()) return;
+
+    // 构建 word_id IN (...) 列表
+    String idList;
+    for (size_t i = 0; i < words.size(); i++) {
+        if (i > 0) idList += ",";
+        idList += String(words[i].dbId);
+    }
+
+    // 查询词根关联
+    {
+        String sql = "SELECT word_id, root_id FROM en_word_roots WHERE word_id IN (" + idList + ")";
+        sqlite3_stmt *stmt = nullptr;
+        if (prepareStatement(db, sql, &stmt)) {
+            while (sqlite3_step(stmt) == SQLITE_ROW) {
+                int wordId = sqlite3_column_int(stmt, 0);
+                int rootId = sqlite3_column_int(stmt, 1);
+                for (auto &w : words) {
+                    if (w.dbId == wordId) {
+                        if (!w.root.isEmpty()) w.root += ",";
+                        w.root += String(rootId);
+                        break;
+                    }
+                }
+            }
+            sqlite3_finalize(stmt);
+        }
+    }
+
+    // 查询词缀关联
+    {
+        String sql = "SELECT word_id, affix_id FROM en_word_affixes WHERE word_id IN (" + idList + ")";
+        sqlite3_stmt *stmt = nullptr;
+        if (prepareStatement(db, sql, &stmt)) {
+            while (sqlite3_step(stmt) == SQLITE_ROW) {
+                int wordId = sqlite3_column_int(stmt, 0);
+                int affixId = sqlite3_column_int(stmt, 1);
+                for (auto &w : words) {
+                    if (w.dbId == wordId) {
+                        if (!w.affix.isEmpty()) w.affix += ",";
+                        w.affix += String(affixId);
+                        break;
+                    }
+                }
+            }
+            sqlite3_finalize(stmt);
+        }
+    }
+}
+
+/**
  * 从 SQLite 查询结果中读取文本列
  *
  * SQLite 的 `sqlite3_column_text()` 返回 `unsigned char*`，
@@ -471,13 +534,13 @@ bool loadWordsBySource(const String &source, const String &chapter)
         }
     } else {
         if (chapter.isEmpty()) {
-            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score, w.sentence, w.sentence_zh, w.root, w.affix "
+            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score, w.sentence, w.sentence_zh "
                   "FROM en_words w "
                   "INNER JOIN en_source s ON s.word_id = w.id "
                   "WHERE s.source = ?1 "
                   "ORDER BY w.id";
         } else {
-            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score, w.sentence, w.sentence_zh, w.root, w.affix "
+            sql = "SELECT DISTINCT w.id, w.en, w.zh, w.pos, w.phonetic, w.score, w.sentence, w.sentence_zh "
                   "FROM en_words w "
                   "INNER JOIN en_source s ON s.word_id = w.id "
                   "WHERE s.source = ?1 AND s.chapter = ?2 "
@@ -530,8 +593,6 @@ bool loadWordsBySource(const String &source, const String &chapter)
                 w.phonetic = sqliteColumnText(stmt, 4);
                 w.sentence = sqliteColumnText(stmt, 6);
                 w.sentenceZh = sqliteColumnText(stmt, 7);
-                w.root = sqliteColumnText(stmt, 8);
-                w.affix = sqliteColumnText(stmt, 9);
                 if (!w.en.isEmpty()) {
                     words.push_back(w);
                 }
@@ -550,6 +611,7 @@ bool loadWordsBySource(const String &source, const String &chapter)
     }
 
     sqlite3_finalize(stmt);
+    populateRootAffixFromJunction(db, words);
     sqlite3_close(db);
     return !words.empty();
 }
@@ -579,7 +641,7 @@ bool loadWordsByScore(int score, int groupIndex)
         sql = "SELECT id, jp, zh, kanji, romaji, tone, score, sentence, sentence_zh "
               "FROM jp_words WHERE score = ?1 ORDER BY id LIMIT 50 OFFSET ?2";
     } else {
-        sql = "SELECT id, en, zh, pos, phonetic, score, sentence, sentence_zh, root, affix "
+        sql = "SELECT id, en, zh, pos, phonetic, score, sentence, sentence_zh "
               "FROM en_words WHERE score = ?1 ORDER BY id LIMIT 50 OFFSET ?2";
     }
 
@@ -628,8 +690,6 @@ bool loadWordsByScore(int score, int groupIndex)
                 w.phonetic = sqliteColumnText(stmt, 4);
                 w.sentence = sqliteColumnText(stmt, 6);
                 w.sentenceZh = sqliteColumnText(stmt, 7);
-                w.root = sqliteColumnText(stmt, 8);
-                w.affix = sqliteColumnText(stmt, 9);
                 if (!w.en.isEmpty()) {
                     words.push_back(w);
                 }
@@ -648,6 +708,7 @@ bool loadWordsByScore(int score, int groupIndex)
     }
 
     sqlite3_finalize(stmt);
+    populateRootAffixFromJunction(db, words);
     sqlite3_close(db);
     return !words.empty();
 }
@@ -1059,7 +1120,7 @@ bool loadWordsByIds(const std::vector<int> &ids)
                       "FROM ") + currentWordTable() +
               " WHERE id IN (" + idList + ") ORDER BY id";
     } else {
-        sql = String("SELECT id, en, zh, pos, phonetic, score, sentence, sentence_zh, root, affix "
+        sql = String("SELECT id, en, zh, pos, phonetic, score, sentence, sentence_zh "
                       "FROM ") + currentWordTable() +
               " WHERE id IN (" + idList + ") ORDER BY id";
     }
@@ -1105,8 +1166,6 @@ bool loadWordsByIds(const std::vector<int> &ids)
                 w.phonetic = sqliteColumnText(stmt, 4);
                 w.sentence = sqliteColumnText(stmt, 6);
                 w.sentenceZh = sqliteColumnText(stmt, 7);
-                w.root = sqliteColumnText(stmt, 8);
-                w.affix = sqliteColumnText(stmt, 9);
                 if (!w.en.isEmpty()) words.push_back(w);
             }
             continue;
@@ -1122,11 +1181,13 @@ bool loadWordsByIds(const std::vector<int> &ids)
     }
 
     sqlite3_finalize(stmt);
+    populateRootAffixFromJunction(db, words);
     sqlite3_close(db);
     return !words.empty();
 }
 
 /**
+ * 删除指定错题记录
 从数据库中删除指定 ID 的错题记录
  *
  * @param errorId 错题记录的主键
