@@ -25,3 +25,7 @@
 ## 脚本文件
 - 编译可使用 scripts/build.ps1 脚本.
 - 上传可使用 scripts/upload.ps1 脚本.
+
+## 数据文件
+
+- 可以复用的数据文件存放在 data 目录下.

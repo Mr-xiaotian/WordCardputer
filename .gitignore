@@ -6,6 +6,7 @@ _preview.ipynb
 .env
 
 logs/
+data/
 
 .arduino-cli/
 fallback/
