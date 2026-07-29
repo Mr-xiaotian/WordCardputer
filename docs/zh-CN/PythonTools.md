@@ -1,6 +1,6 @@
 # Python 工具链
 
-> 最后更新日期: 2026/07/11
+> 最后更新日期: 2026/07/29
 
 ## 作用
 
@@ -24,6 +24,7 @@ uv sync
 |------|------|
 | `generate_tts_minimax(text, output_path, ...)` | 调用 MiniMax T2A API 生成 WAV |
 | `generate_tts_youdao(text, output_path)` | 抓取有道词典发音并转 WAV |
+| `fill_missing_audio(db_path, audio_dir, delay)` | 读取英语词库，为缺少音频的单词批量生成有道 TTS 音频 |
 
 #### MiniMax 示例
 
@@ -51,6 +52,19 @@ ok, result = generate_tts_youdao(
     output_path=Path("words_study/en/audio/apple.wav"),
 )
 print(result)
+```
+
+#### 批量补全缺失音频
+
+```python
+from utils.tts import fill_missing_audio
+
+success, fail = fill_missing_audio(
+    db_path="words_study/en/en_words.db",
+    audio_dir="words_study/en/audio",
+    delay=0.5,
+)
+print(f"成功: {success}, 失败: {fail}")
 ```
 
 > 需要在 `.env` 中配置 `API_KEY` 才能使用 MiniMax。
@@ -103,22 +117,52 @@ print(summary)
 | `load_json_list(path)` | 读取 JSON 并校验顶层为列表 |
 | `extract_field_values(path, field)` | 提取指定字段 |
 | `extract_jp_fields(path)` / `extract_en_fields(path)` | 提取 `jp` / `en` 字段 |
-| `extract_all_*_from_folder(folder)` | 遍历文件夹提取并去重 |
+| `extract_all_values_from_folder(folder, field)` | 遍历文件夹提取指定字段并去重 |
+| `extract_all_jp_from_folder(folder)` / `extract_all_en_from_folder(folder)` | 遍历文件夹提取并去重 |
 | `list_wav_filenames(folder)` | 列出 WAV 文件名（不含扩展名） |
-| `collect_merged_entries(folder)` | 合并多个 JSON 为一个大词典 |
-| `apply_merge_and_rewrite(folder)` | 合并后写回每个 JSON |
-| `filter_json_by_jp_difference(a, b)` | 保留 a 中相对 b 的差集 |
-| `dedupe_json_by_jp(folder)` | 按 `jp` 去重 |
+| `collect_merged_entries_by_key(folder, key_field, ...)` | 通用合并：按指定 key 字段聚合 |
+| `collect_merged_entries(folder)` | 合并多个日本语 JSON 为一个大词典（键为 `jp`） |
+| `collect_merged_entries_en(folder)` | 合并多个英语 JSON 为一个大词典（键为 `en`） |
+| `apply_merge_and_rewrite_by_key(folder, key_field, ...)` | 通用合并后写回每个 JSON |
+| `apply_merge_and_rewrite(folder)` | 日语合并后写回 |
+| `apply_merge_and_rewrite_en(folder)` | 英语合并后写回 |
+| `filter_json_by_key_difference(a, b, key_field)` | 保留 a 中相对 b 的差集 |
+| `filter_json_by_jp_difference(a, b)` / `filter_json_by_en_difference(a, b)` | 按 `jp` / `en` 差集过滤 |
+| `dedupe_json_by_key(folder, key_field)` | 按 key 字段去重 |
+| `dedupe_json_by_jp(folder)` / `dedupe_json_by_en(folder)` | 按 `jp` / `en` 去重 |
 | `split_json_file(path, max_per_file)` | 按数量拆分大词库 |
 | `process_folder(folder, max_per_file)` | 批量拆分文件夹内 JSON |
 
-#### 合并多个词库
+#### 常用工作流示例
+
+```python
+from utils.json_utils import extract_all_jp_from_folder, list_wav_filenames
+from pathlib import Path
+
+# 检查缺失音频
+words = set(extract_all_jp_from_folder(Path("words_study/jp/word")))
+audios = set(list_wav_filenames(Path("words_study/jp/audio")))
+missing = words - audios
+print(f"缺失音频: {missing}")
+```
+
+#### 合并日语词库
 
 ```python
 from utils.json_utils import collect_merged_entries
 from pathlib import Path
 
 entries = collect_merged_entries(Path("words_study/jp/word"))
+print(f"合并后共 {len(entries)} 个唯一词条")
+```
+
+#### 合并英语词库
+
+```python
+from utils.json_utils import collect_merged_entries_en
+from pathlib import Path
+
+entries = collect_merged_entries_en(Path("words_study/en/word"))
 print(f"合并后共 {len(entries)} 个唯一词条")
 ```
 
@@ -132,18 +176,6 @@ process_folder(Path("words_study/jp/word/N5"), max_per_file=60)
 ```
 
 执行后会生成 `xxx_part1.json`、`xxx_part2.json` 等文件。
-
-#### 检查缺失音频
-
-```python
-from utils.json_utils import extract_all_jp_from_folder, list_wav_filenames
-from pathlib import Path
-
-words = set(extract_all_jp_from_folder(Path("words_study/jp/word")))
-audios = set(list_wav_filenames(Path("words_study/jp/audio")))
-missing = words - audios
-print(f"缺失音频: {missing}")
-```
 
 ---
 

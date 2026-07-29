@@ -1,6 +1,6 @@
 # Web API 规范
 
-> 最后更新日期: 2026/07/11
+> 最后更新日期: 2026/07/29
 
 ## 作用
 
@@ -48,7 +48,7 @@
 **参数：**
 
 | 参数 | 类型 | 必填 | 说明 |
-|------|------|------|------|
+|------|------|:----:|------|
 | `path` | string | 否 | 虚拟路径，默认 `currentWordRoot` |
 
 **示例请求：**
@@ -57,7 +57,7 @@
 # 浏览根层（列出所有 source）
 GET /api/files?path=/words_study/en/word
 
-# 浏览 source 层（列出 Chapter）
+# 浏览 source 层（列出 chapter）
 GET /api/files?path=/words_study/en/word/Demo_Basics
 ```
 
@@ -96,7 +96,7 @@ GET /api/files?path=/words_study/en/word/Demo_Basics
 **参数：**
 
 | 参数 | 类型 | 必填 | 说明 |
-|------|------|------|------|
+|------|------|:----:|------|
 | `path` | string | 否 | 目标虚拟路径，影响 source/chapter 推导 |
 
 **请求体：** multipart/form-data，`file` 字段。
@@ -126,7 +126,7 @@ curl -X POST 'http://192.168.1.105/api/files/upload?path=/words_study/en/word/De
 **参数：**
 
 | 参数 | 类型 | 必填 | 说明 |
-|------|------|------|------|
+|------|------|:----:|------|
 | `path` | string | 是 | 要删除的虚拟路径 |
 
 **示例请求：**
@@ -148,7 +148,7 @@ DELETE /api/files?path=/words_study/en/word/Demo_Basics/Unit_1
 **参数：**
 
 | 参数 | 类型 | 必填 | 说明 |
-|------|------|------|------|
+|------|------|:----:|------|
 | `path` | string | 是 | 要导出的虚拟路径 |
 
 **示例请求：**
@@ -171,10 +171,7 @@ GET /api/files/download?path=/words_study/en/word/Demo_Basics
 
 ```json
 {
-  "file": "Unit_1",
-  "label": "Demo_Basics/Unit_1",
-  "source": "Demo_Basics",
-  "chapter": "Unit_1",
+  "vocabLabel": "Demo_Basics/Unit_1",
   "total": 25,
   "avg": 3.25,
   "median": 3,
@@ -189,12 +186,14 @@ GET /api/files/download?path=/words_study/en/word/Demo_Basics
 }
 ```
 
-**新增字段：**
-| 字段 | 说明 |
-|------|------|
-| `label` | 完整词库标签（`source/chapter` 或 `source`） |
-| `source` | 词库来源标识 |
-| `chapter` | 章节标识，空字符串表示整个 source |
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| `vocabLabel` | string | 当前词库标签（`source/chapter` 或 `Level/total`） |
+| `total` | int | 总单词数 |
+| `avg` | float | 平均分 |
+| `median` | float | 中位数 |
+| `level` | string | 掌握程度标签 |
+| `counts` | object | 各分值数量统计（键为 "1"~"5"） |
 
 ---
 
@@ -212,17 +211,19 @@ GET /api/files/download?path=/words_study/en/word/Demo_Basics
   "brightness": 200,
   "autoSaveThreshold": 5,
   "language": "en",
-  "loadedFile": "Unit_1",
-  "loadedVocab": "Demo_Basics/Unit_1",
+  "vocabLabel": "Demo_Basics/Unit_1",
   "wifi": true
 }
 ```
 
-**新增字段：**
-| 字段 | 说明 |
-|------|------|
-| `autoSaveThreshold` | 自动保存触发次数阈值 |
-| `loadedVocab` | 当前词库完整标签 |
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| `volume` | int | 扬声器音量 0~255 |
+| `brightness` | int | 屏幕亮度 10~255 |
+| `autoSaveThreshold` | int | 自动保存触发次数阈值 |
+| `language` | string | 当前语言 `"jp"` 或 `"en"` |
+| `vocabLabel` | string | 当前词库完整标签 |
+| `wifi` | bool | WiFi 连接状态 |
 
 #### `POST /api/settings`
 
@@ -231,10 +232,10 @@ GET /api/files/download?path=/words_study/en/word/Demo_Basics
 **请求体：**
 
 | 字段 | 类型 | 范围 | 说明 |
-|------|------|------|------|
+|------|------|:----:|------|
 | `volume` | int | 0~255 | 扬声器音量 |
 | `brightness` | int | 10~255 | 屏幕亮度 |
-| `autoSaveThreshold` | int | ≥1 | 自动保存触发次数（新增） |
+| `autoSaveThreshold` | int | ≥1 | 自动保存触发次数 |
 
 **示例请求：**
 
@@ -287,5 +288,6 @@ Access-Control-Allow-Headers: Content-Type
 - 词库操作（浏览、上传、删除、导出）均通过 SQLite 数据库执行，不再直接操作 SD 卡文件系统中的 JSON 文件。
 - 上传大文件时采用 multipart 分块，先写入临时文件再导入数据库，导入成功后自动清理。
 - `/api/stats` 在词库未加载时返回 `total: 0`。
+- `/api/stats` 响应使用 `vocabLabel` 字段（而非旧版的 `label` / `loadedVocab` 字段名）。
 - Web 服务器在 `loop()` 末尾非阻塞处理请求，频繁刷新浏览器不会明显影响设备交互。
 - 删除操作使用 SQLite 事务（BEGIN IMMEDIATE → DELETE → COMMIT），保证数据一致性。

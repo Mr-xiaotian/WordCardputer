@@ -1,28 +1,29 @@
 # ModeSourceSelect.ino
 
-> 最后更新日期: 2026/07/11
+> 最后更新日期: 2026/07/29
 
 ## 作用
 
-`ModeSourceSelect.ino` 实现**词库浏览器**。已在底层改为数据库驱动，不再直接浏览 SD 卡 JSON 文件。用户在选择语言后进入该模式，浏览 SQLite 数据库中的 source（词源）和 chapter（章节），选中后加载并进入学习模式。
+`ModeSourceSelect.ino` 实现**词库浏览器**。已在底层改为数据库驱动，不再直接浏览 SD 卡 JSON 文件。用户在分类选择后进入该模式，浏览 SQLite 数据库中的 source（词源）和 chapter（章节），选中后加载并进入学习模式。ESC 返回分类选择模式。
 
 ## 核心对象
 
 | 对象 | 类型 | 说明 |
 |------|------|------|
 | `files` | `std::vector<String>` | 当前层级下的 source 或 chapter 列表 |
+| `fileExpandable` | `std::vector<bool>` | 标记 source 是否可展开进入 chapter 子层 |
 | `fileIndex` | `int` | 当前选中索引 |
 | `fileScroll` | `int` | 当前滚动偏移 |
-| `currentDir` | `String` | 虚拟目录，用于区分根层（source）和子层（chapter） |
 | `selectedSource` | `String` | 选中的词库来源 |
 | `selectedChapter` | `String` | 选中的章节，空表示整个 source |
-| `selectedFilePath` | `String` | 显示标签（如 `Demo_Basics/Unit_1`） |
+
+> `currentDir` 和 `selectedFilePath` 已在重构中移除，不再使用。
 
 ## 关键流程
 
 ```mermaid
 flowchart TD
-    A[initFileSelectMode] --> B{currentDir == currentWordRoot?}
+    A[initFileSelectMode] --> B{currentSource 为空?}
     B -->|是| C[loadSourceList → 展示 source 列表]
     B -->|否| D[loadChapterList → 展示 chapter 列表]
     C & D --> E[drawFileSelect 绘制菜单]
@@ -33,43 +34,58 @@ flowchart TD
     I -->|是| J[进入子层浏览 chapter]
     I -->|否| K[直接加载整个 source]
     H -->|子层| L[加载 source/chapter]
-    K & L --> M[startStudyMode]
-    F -->|Del| N{在子层?}
-    N -->|是| O[返回根层]
-    N -->|否| P[无操作]
-    F -->|ESC| Q[自动保存 + 返回]
+    K & L --> M[set vocabLabel → startStudyMode]
+    F -->|/| N{根层且可展开?}
+    N -->|是| O[currentSource = 选中项<br/>initFileSelectMode]
+    F -->|, / Del| P{在子层?}
+    P -->|是| Q[currentSource = 空<br/>返回根层]
+    F -->|ESC `| R{在子层?}
+    R -->|是| S[currentSource = 空<br/>返回根层]
+    R -->|否| T[返回 MODE_CLASSIFY_SELECT]
 ```
 
 ## 重要细节
 
-### 虚拟目录系统
+### Source/Chapter 树形结构
 
-`currentDir` 不再指向 SD 卡真实路径，而是逻辑路径：
-- **根层**（`currentDir == currentWordRoot`）：显示所有 source 列表
-- **子层**（`currentDir == currentWordRoot/<source>`）：显示该 source 的 chapter 列表
+浏览状态由全局变量 `currentSource` 维护：
+- **根层**（`currentSource` 为空）：显示所有 source 列表
+- **子层**（`currentSource` 为某 source）：显示该 source 的 chapter 列表
 
 根据 `sourceHasChapters()` 判断 source 是否有子划分。无 chapter 的 source 直接加载。
 
-### 词库加载
+### 词库加载与标签
 
-选中词库后通过 `startStudyMode()` 加载：
+选中词库后：
 - 设置 `selectedSource` 和 `selectedChapter`
-- 调用 `loadWordsFromDB()` 从数据库加载
+- 调用 `loadWordsBySource()` 从数据库加载
+- 设置 `vocabLabel` 为 `selectedSource/chapter` 格式用于显示
 - 自动保存上一词库的进度
+
+### 导航操作
+
+| 按键 | 根层操作 | 子层操作 |
+|------|---------|---------|
+| `;` / `.` | 上/下移动光标 | 同左 |
+| `/` | 进入可展开 source 的子层 | 无操作 |
+| `,` / Del | 无操作 | 返回根层 |
+| `` ` `` | 返回 `MODE_CLASSIFY_SELECT` | 先返回根层，再按一次返回分类选择 |
 
 ## 使用示例
 
 ### 浏览并加载词库
 
-1. 选择语言后进入 root 层，看到所有 source 列表（如 `Demo_Basics`、`N5`）。
-2. 按 `;/.` 上下移动，Enter 选中。
-3. 若 source 有 chapter，进入子层浏览章节（如 `Unit_1`、`Unit_2`）。
-4. 选中 chapter 后开始学习。
-5. 在子层按 Del 返回根层。
+1. 选择语言后进入分类选择，选择"按词源分类"。
+2. 进入根层看到所有 source 列表（如 `Demo_Basics`、`N5`）。
+3. 按 `;/.` 上下移动，按 `/` 或 Enter 进入有 `>` 标记的 source。
+4. 进入子层浏览章节（如 `Unit_1`、`Unit_2`）。
+5. 按 Enter 选中 chapter 开始学习。
+6. 在子层按 `,` 或 Del 返回根层。
+7. 按 `` ` `` 返回分类选择模式。
 
 ## 注意事项
 
-- `selectedFilePath` 变量名保留旧命名，但现在只作为 UI 显示标签使用。
-- 真实的数据加载依据是 `selectedSource` 和 `selectedChapter`。
+- 真实的数据加载依据是 `selectedSource` 和 `selectedChapter`，不再依赖路径字符串。
 - 空列表时显示"没有词库数据"提示。
-- 从文件选择切换词库时，`startStudyMode()` 会先自动保存旧词库进度。
+- 从文件选择切换词库时，`loadWordsBySource()` 会先自动保存旧词库进度。
+- 有 chapter 的 source 在列表中显示 `>` 后缀（如 `Demo_Basics >`），可展开浏览。

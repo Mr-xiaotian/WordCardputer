@@ -1,10 +1,12 @@
 # UtilsMenu.ino
 
-> 最后更新日期: 2026/06/22
+> 最后更新日期: 2026/07/29
 
 ## 作用
 
-`UtilsMenu.ino` 是项目的 **通用 UI 渲染工具库**。提供可滚动菜单、简易表格等标准化组件，确保语言选择、文件选择、ESC 菜单、统计页面等视觉风格一致。
+`UtilsMenu.ino` 是项目的 **通用 UI 渲染工具库**。提供可滚动菜单等标准化组件，确保语言选择、文件选择、ESC 菜单等视觉风格一致。
+
+> 通用表格绘制功能已迁移至 [UtilsTable.ino](UtilsTable.md)。
 
 ## 核心函数
 
@@ -12,7 +14,6 @@
 |------|------|
 | `navigateMenu(...)` | 处理菜单光标移动与滚动窗口跟随 |
 | `drawTextMenu(...)` | 绘制带标题、电量、分页的通用菜单 |
-| `drawSimpleTable(...)` | 绘制带表头和分隔线的表格 |
 
 ## 关键流程
 
@@ -60,12 +61,6 @@ flowchart LR
 | `showBattery` | 右上角是否显示电量/WiFi |
 | `showPager` | 右下角是否显示分页 |
 
-### `drawSimpleTable` 行为
-
-- 表头使用 `TFT_DARKGREY`，下方绘制水平分隔线。
-- 数据行使用白色，按 `colXs` 指定的 X 坐标左对齐。
-- 列数取 `headers` 与 `colXs` 的较小值；每行列数取该行数据与列数的较小值。
-
 ## 使用示例
 
 ### 绘制语言选择菜单
@@ -84,21 +79,8 @@ drawTextMenu(
 );
 ```
 
-### 绘制统计表格
-
-```cpp
-std::vector<String> headers = {"等级", "数量", "占比"};
-std::vector<int> colXs = {8, 92, 154};
-std::vector<std::vector<String>> rows = {
-    {"1", "12", "20%"},
-    {"2", "8",  "13%"},
-    {"3", "10", "17%"}
-};
-drawSimpleTable(canvas, 34, 22, headers, colXs, 1.0, 1.1, rows);
-```
-
 ## 注意事项
 
 - `visibleLines` 在 `WordCardputer.ino` 中定义为 4，因此所有菜单默认一屏显示 4 行。
 - 电量显示格式为 `WIFI 85%`（WiFi 连接时）或 `85%`（未连接时）。
-- 表格的 `rowHeight` 需根据字体大小和行间距合理设置，避免文字重叠。
+

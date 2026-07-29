@@ -21,7 +21,7 @@
 | `findSavedPassword(ssid)` | 查找已保存密码 |
 | `processWiFiScanResults(count)` | 处理扫描结果：去重、排序、标记已保存 |
 | `attemptWiFiConnect()` | 尝试连接 WiFi，成功后启动 Web 服务器 |
-| `getNtpTimeString()` | 返回 `YY-MM-DD_HH-MM` 格式时间 |
+| `getNtpTimeString()` | 返回 `YY-MM-DD HH:MM` 格式时间 |
 | `rssiIndicator(rssi)` | RSSI 转可视化信号强度 |
 
 ## 关键流程
@@ -55,7 +55,7 @@ flowchart TD
 
 ### 凭据存储
 
-> ⚠️ **已变更**：凭据不再存储于独立 `/words_study/wifi.json`，而是作为 `config.json` 的 `wifi` 数组。`saveWiFiCredential()` 通过 `saveAppConfig()` 统一写入。
+WiFi 凭据统一存储在 `config.json` 的 `wifi` 数组中，`saveWiFiCredential()` 通过 `saveAppConfig()` 写入。旧版 `/words_study/wifi.json` 的兼容迁移逻辑见 [UtilsConfig.md](UtilsConfig.md)。
 
 `config.json` 中的 WiFi 数组：
 

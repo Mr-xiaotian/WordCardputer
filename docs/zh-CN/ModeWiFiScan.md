@@ -1,6 +1,6 @@
 # ModeWiFiScan.ino
 
-> 最后更新日期: 2026/06/22
+> 最后更新日期: 2026/07/29
 
 ## 作用
 
@@ -10,7 +10,7 @@
 
 | 对象 | 类型 | 说明 |
 |------|------|------|
-| `WiFiScanState` | `enum` | `WIFI_SCANNING` / `WIFI_LIST` / `WIFI_PASSWORD` / `WIFI_CONNECTING` |
+| `WiFiScanState` | `enum` | `WIFI_SCANNING` / `WIFI_LIST` / `WIFI_PASSWORD_INPUT` / `WIFI_CONNECTING` / `WIFI_STATUS` |
 | `wifiScanState` | `WiFiScanState` | 当前子状态 |
 | `wifiSSIDs` | `std::vector<String>` | 显示用网络列表（含信号指示） |
 | `wifiRawSSIDs` | `std::vector<String>` | 纯 SSID 列表 |
@@ -28,11 +28,12 @@ stateDiagram-v2
     [*] --> STATUS: 已连接
     STATUS --> LIST: , /
     LIST --> STATUS: , / （已连接时）
-    LIST --> PASSWORD: Enter + 无保存密码
+    LIST --> PASSWORD_INPUT: Enter + 无保存密码
     LIST --> CONNECTING: Enter + 有保存密码
-    PASSWORD --> CONNECTING: Enter
+    PASSWORD_INPUT --> CONNECTING: Enter
     CONNECTING --> STATUS: 成功
     CONNECTING --> LIST: 失败
+    LIST --> STATUS: 已连接时 ,/ /
 ```
 
 ## 重要细节
@@ -42,12 +43,20 @@ stateDiagram-v2
 - 去重：同名 SSID 保留信号最强的一条。
 - 排序：按 RSSI 从高到低排列。
 - 标记：已保存密码的 SSID 前显示 `★`。
-- 信号指示：`[###]`（强 > -50 dBm）、`[## ]`（中 > -70 dBm）、`[#  ]`（弱）。
+### 已连接状态双页
+
+- WiFi 已连接时，`wifiPage` 支持 0（列表页）和 1（状态页）之间切换。
+- 状态页显示 SSID、IP 地址和 Web 控制台运行状态。
+- 未连接时 `,/` 键在列表页无效果。
+
+### 信号指示
+
+`[###]`（强 > -50 dBm）、`[## ]`（中 > -70 dBm）、`[#  ]`（弱）。
 
 ### 连接流程
 
 1. 选择 SSID 后，若已保存密码则自动填充并尝试连接。
-2. 若未保存密码，进入密码输入覆盖层。
+2. 若未保存密码，进入密码输入覆盖层（`WIFI_PASSWORD_INPUT`）。
 3. 密码输入支持可打印 ASCII 字符（` ` ~ `~`），按 Del 删除。
 4. 按 Enter 调用 `attemptWiFiConnect()`，超时 10 秒。
 5. 连接成功后：

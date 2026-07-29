@@ -1,10 +1,10 @@
 # UtilsString.ino
 
-> 最后更新日期: 2026/06/22
+> 最后更新日期: 2026/07/29
 
 ## 作用
 
-`UtilsString.ino` 是项目的 **字符串处理与高级文本绘制工具库**。提供自适应字号绘制、屏幕四角文本绘制、IPA 音标到 ASCII 的转换，以及英语听写答案规范化。
+`UtilsString.ino` 是项目的 **字符串处理与高级文本绘制工具库**。提供自适应字号绘制、屏幕四角文本绘制、自动换行文本块绘制、IPA 音标到 ASCII 的转换，以及英语听写答案规范化。
 
 ## 核心函数
 
@@ -14,6 +14,7 @@
 | `drawTopLeftString(cv, text, color, size)` | 左上角绘制 |
 | `drawTopRightString(cv, text, color, size)` | 右上角绘制 |
 | `drawCenterString(cv, message, color, size)` | 屏幕中央提示 |
+| `drawWrappedTextBlock(cv, text, left, top, maxWidth, fontSize, lineGap)` | 在限定区域内按宽度自动换行绘制文本 |
 | `asciiPhonetic(s)` | 将 IPA 音标 Unicode 字符转为 ASCII 近似 |
 | `isEnglishInputChar(c)` | 判断字符是否可输入英语答案 |
 | `normalizeEnglishAnswer(s)` | 规范化英语答案用于比对 |
@@ -58,6 +59,7 @@ flowchart TD
   - `_` 替换为空格
   - 合并连续空格为单个空格
 - **IPA 处理**：按 UTF-8 双字节模式匹配；无法识别的多字节字符会被跳过。
+- **自动换行文本块**：`drawWrappedTextBlock()` 按指定最大宽度自动换行，识别 UTF-8 字符边界，遇到显式 `\n` 强制分行，能正确处理中/日/英文混排场景。
 
 ## 使用示例
 
@@ -82,8 +84,19 @@ String correct    = normalizeEnglishAnswer(words[idx].en);
 bool isCorrect = (userAnswer == correct);
 ```
 
+### 自动换行文本块
+
+```cpp
+drawWrappedTextBlock(canvas, sentence,
+    8, 60,          // left, top
+    canvas.width() - 16, // maxWidth
+    1.0,            // fontSize
+    4);             // lineGap
+```
+
 ## 注意事项
 
 - `drawAutoFitString()` 在文本为空时直接返回，不会清空或影响画布其他内容。
 - IPA 转换是近似处理，会丢失部分发音细节，但足以在屏幕上显示可读的发音提示。
 - `normalizeEnglishAnswer()` 不处理标点符号，因此英语词库中若包含逗号、句点等符号，需保证标准答案与用户输入都经过相同处理。
+- `drawWrappedTextBlock()` 在 `maxWidth <= 0` 或文本为空时直接返回；行首连续空白会自动跳过，避免产生奇怪的缩进。

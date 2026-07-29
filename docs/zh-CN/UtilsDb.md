@@ -1,6 +1,6 @@
 # UtilsDb.ino
 
-> 最后更新日期: 2026/07/11
+> 最后更新日期: 2026/07/29
 
 ## 作用
 
@@ -18,7 +18,9 @@ CREATE TABLE IF NOT EXISTS jp_words (
     kanji TEXT DEFAULT '',
     romaji TEXT DEFAULT '',
     tone INTEGER DEFAULT 0,
-    score INTEGER DEFAULT 3
+    score INTEGER DEFAULT 3,
+    sentence TEXT DEFAULT '',
+    sentence_zh TEXT DEFAULT ''
 );
 
 CREATE TABLE IF NOT EXISTS jp_source (
@@ -29,12 +31,12 @@ CREATE TABLE IF NOT EXISTS jp_source (
     FOREIGN KEY (word_id) REFERENCES jp_words(id)
 );
 
-CREATE TABLE IF NOT EXISTS jp_dictation_errors (
+CREATE TABLE IF NOT EXISTS jp_errors (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     word_id INTEGER NOT NULL,
-    wrong TEXT NOT NULL,
+    wrong_text TEXT NOT NULL,
     created_at TEXT NOT NULL,
-    FOREIGN KEY (word_id) REFERENCES jp_words(id)
+    FOREIGN KEY (word_id) REFERENCES jp_words(id) ON DELETE CASCADE
 );
 ```
 
@@ -47,7 +49,9 @@ CREATE TABLE IF NOT EXISTS en_words (
     zh TEXT NOT NULL,
     pos TEXT DEFAULT '',
     phonetic TEXT DEFAULT '',
-    score INTEGER DEFAULT 3
+    score INTEGER DEFAULT 3,
+    sentence TEXT DEFAULT '',
+    sentence_zh TEXT DEFAULT ''
 );
 
 CREATE TABLE IF NOT EXISTS en_source (
@@ -58,12 +62,29 @@ CREATE TABLE IF NOT EXISTS en_source (
     FOREIGN KEY (word_id) REFERENCES en_words(id)
 );
 
-CREATE TABLE IF NOT EXISTS en_dictation_errors (
+CREATE TABLE IF NOT EXISTS en_errors (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     word_id INTEGER NOT NULL,
-    wrong TEXT NOT NULL,
+    wrong_text TEXT NOT NULL,
     created_at TEXT NOT NULL,
-    FOREIGN KEY (word_id) REFERENCES en_words(id)
+    FOREIGN KEY (word_id) REFERENCES en_words(id) ON DELETE CASCADE
+);
+
+-- 英语词根/词缀关联表
+CREATE TABLE IF NOT EXISTS en_word_roots (
+    word_id INTEGER NOT NULL,
+    root_id INTEGER NOT NULL,
+    PRIMARY KEY (word_id, root_id),
+    FOREIGN KEY (word_id) REFERENCES en_words(id) ON DELETE CASCADE,
+    FOREIGN KEY (root_id) REFERENCES en_roots(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS en_word_affixes (
+    word_id INTEGER NOT NULL,
+    affix_id INTEGER NOT NULL,
+    PRIMARY KEY (word_id, affix_id),
+    FOREIGN KEY (word_id) REFERENCES en_words(id) ON DELETE CASCADE,
+    FOREIGN KEY (affix_id) REFERENCES en_affixes(id) ON DELETE CASCADE
 );
 ```
 
@@ -74,6 +95,8 @@ CREATE TABLE IF NOT EXISTS en_dictation_errors (
 | 日语 | `/words_study/jp/jp_words.db` |
 | 英语 | `/words_study/en/en_words.db` |
 
+> ⚠️ **注意**：数据库文件使用 `DELETE` journal 模式（非 WAL），这是由单片机的 SQLite 库兼容性决定的。
+
 ## 核心函数
 
 ### 表名映射
@@ -82,7 +105,7 @@ CREATE TABLE IF NOT EXISTS en_dictation_errors (
 |------|--------|
 | `currentWordTable()` | `"jp_words"` 或 `"en_words"` |
 | `currentSourceTable()` | `"jp_source"` 或 `"en_source"` |
-| `currentDictationErrorTable()` | `"jp_dictation_errors"` 或 `"en_dictation_errors"` |
+| `currentDictationErrorTable()` | `"jp_errors"` 或 `"en_errors"` |
 
 ### 数据库操作
 
@@ -91,13 +114,16 @@ CREATE TABLE IF NOT EXISTS en_dictation_errors (
 | `openVocabularyDb(&db)` | 打开当前语言的 SQLite 数据库 |
 | `prepareStatement(db, sql, &stmt)` | 准备 SQL 语句，失败时打印错误日志 |
 | `sqliteColumnText(stmt, col)` | 安全获取列的文本值 |
-| `ensureDictationErrorTable(db)` | 确保当前语言的听写错误表存在 |
+| `normalizeScoreValue(score)` | 将 score 钳位到 1~5 范围 |
 
 ### 词库读写
 
 | 函数 | 作用 |
 |------|------|
-| `loadWordsFromDB(source, chapter)` | 按 source/chapter 筛选加载词库到 `words` |
+| `loadWordsBySource(source, chapter)` | 按 source/chapter 筛选加载词库到 `words` |
+| `loadWordsByScore(score, groupIndex)` | 按熟练度分组加载词库（每批最多 50 条） |
+| `loadScoreCounts(counts)` | 一次性查询 Score 1~5 各级单词数 |
+| `loadWordsByIds(ids)` | 按 ID 列表加载词条到 `words` |
 | `saveCurrentWordsToDB()` | 将当前 `words` 的 score 批量回写到数据库 |
 | `saveWordListToDB(source, chapter, list)` | 将词库列表导入数据库（upsert） |
 | `importJsonFileToDb(jsonPath, source, chapter, &count, &error)` | 从 JSON 文件导入到数据库 |
@@ -124,12 +150,13 @@ CREATE TABLE IF NOT EXISTS en_dictation_errors (
 |------|------|
 | `saveDictationErrorsToDB(errors)` | 将听写错误批量写入数据库 |
 | `loadDictationReviewEntriesFromDB(items)` | 从数据库加载历史错题回顾列表 |
+| `deleteDictationError(errorId)` | 删除指定 ID 的错题记录 |
 
-### 辅助
+### 词根/词缀查询
 
 | 函数 | 作用 |
 |------|------|
-| `normalizeScoreValue(score)` | 将 score 钳位到 1~5 范围 |
+| `loadRootAffixNames(idList, table, nameCol, &out)` | 根据逗号分隔的 ID 列表查询词根/词缀的名称与释义 |
 
 ## 关键流程
 
@@ -137,15 +164,18 @@ CREATE TABLE IF NOT EXISTS en_dictation_errors (
 
 ```mermaid
 flowchart TD
-    A[loadWordsFromDB] --> B[openVocabularyDb]
+    A[loadWordsBySource] --> B[openVocabularyDb]
     B --> C{source 有 chapter?}
     C -->|是| D[SELECT 带 source + chapter 过滤]
     C -->|否| E[SELECT 带 source 过滤]
     D & E --> F[遍历结果集]
-    F --> G[构造 Word 对象]
-    G --> H[加入 words 列表]
+    F --> G[构造 Word 对象<br/>（不含 root/affix）]
+    G --> H[populateRootAffixFromJunction<br/>批量填充 root/affix ID]
     H --> I[关闭数据库]
+    I --> J[返回 words]
 ```
+
+> `root` 和 `affix` 不再直接存储在 `en_words` 表中，而是通过关联表 `en_word_roots` 和 `en_word_affixes` 存储。加载时通过 `populateRootAffixFromJunction()` 一次批量查询填充到 `Word` 结构体中。
 
 ### JSON 导入流程
 
@@ -169,11 +199,32 @@ flowchart LR
     C --> D[标记完成]
 ```
 
+### 错题回顾加载流程
+
+```mermaid
+flowchart TD
+    A[loadDictationReviewEntriesFromDB] --> B[SELECT e.id, e.word_id,<br/>e.wrong_text, e.created_at,<br/>w.jp/en AS correct]
+    B --> C[构造 DictationReviewEntry]
+    C --> D[填写 errorId / wordDbId / wrong / createdAt / correct]
+    D --> E[items 列表]
+```
+
+> 查询结果按 `rowid DESC` 倒序，最新记录在前。`errorId` 对应错题表的 `id` 列，用于后续的 `deleteDictationError()` 调用。
+
 ## 重要细节
 
 ### Word ID 与 dbId
 
-每个 `Word` 结构体包含 `dbId` 字段，记录该单词在数据库中的主键。`loadWordsFromDB()` 会填充此字段，`saveCurrentWordsToDB()` 通过 `dbId` 进行 UPDATE 操作。
+每个 `Word` 结构体包含 `dbId` 字段，记录该单词在数据库中的主键。`loadWordsBySource()` 等加载函数会填充此字段，`saveCurrentWordsToDB()` 通过 `dbId` 进行 UPDATE 操作。
+
+### 词根/词缀关联表设计
+
+英语词根和词缀不再直接存储在 `en_words` 表的 `root`/`affix` 列中，改为通过 `en_word_roots` 和 `en_word_affixes` 两张关联表以多对多关系存储。加载流程分为两步：
+
+1. 主查询 SELECT 除 `root`/`affix` 之外的所有字段到 `Word` 结构体
+2. `populateRootAffixFromJunction()` 通过 `word_id IN (...)` 批量查询关联表，将词根/词缀 ID 重新拼接为逗号字符串填入 `Word.root` / `Word.affix`
+
+上层展示代码（如学习模式中的词根词缀显示）通过 `loadRootAffixNames()` 将逗号分隔的 ID 列表解析为具体的名称和释义文本。
 
 ### UPSERT 策略
 
@@ -187,14 +238,26 @@ flowchart LR
 - `normalizeScoreValue()`：score < 1 → 1，score > 5 → 5。
 - 加载时自动应用，写回时也会校验。
 
+### 数据库 journal 模式
+
+- 数据库文件使用 `DELETE` journal 模式（非 WAL），单片机的 SQLite 库无法读取 WAL 模式的文件。
+- `saveWordListToDB()` 在导入时使用事务，确保数据一致性。
+
 ## 使用示例
 
 ### 加载词库
 
 ```cpp
 std::vector<Word> words;
-loadWordsFromDB("Demo_Basics", "");        // 加载整个 source
-loadWordsFromDB("Lesson", "Unit_1");       // 加载 source 的特定 chapter
+loadWordsBySource("Demo_Basics", "");        // 加载整个 source
+loadWordsBySource("Lesson", "Unit_1");       // 加载 source 的特定 chapter
+```
+
+### 按 ID 列表加载词条
+
+```cpp
+std::vector<int> ids = {101, 205, 307};
+loadWordsByIds(ids);  // 按 ID 批量加载到 words
 ```
 
 ### 导入 JSON
@@ -222,9 +285,16 @@ for (auto &s : sources) {
 }
 ```
 
+### 删除错题
+
+```cpp
+deleteDictationError(errorId);  // 从数据库中删除指定错题记录
+```
+
 ## 注意事项
 
-- 数据库文件通过 SQLite 的 WAL 模式访问，支持并发读写。
+- 数据库文件使用 `DELETE` journal 模式，不可切换为 WAL（单片机 SQLite 库限制）。
 - `saveWordListToDB()` 在导入时使用事务，确保数据一致性。
 - `openVocabularyDb()` 失败时会打印 Serial 错误日志并返回 `false`。
 - 虚拟路径格式为 `/words_study/<lang>/word`，内部通过 `parseVocabPath()` 解析为 source/chapter。
+- `deleteDictationError()` 只删除错题记录，不影响原词条。
