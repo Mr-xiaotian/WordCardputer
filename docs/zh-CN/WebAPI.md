@@ -1,6 +1,6 @@
 # Web API 规范
 
-> 最后更新日期: 2026/07/29
+> 最后更新日期: 2026/09/01
 
 ## 作用
 
@@ -14,6 +14,8 @@
 | 端口 | 80 |
 | Base URL | `http://<设备IP>` |
 | CORS | 已启用，允许任意来源 |
+| 路由注册位置 | `src/UtilsWebServer.cpp` → `initWebServer()` |
+| CORS 预检路由 | 所有 `/api/*` 端点都注册了 `OPTIONS` 预检（`handleOptions`） |
 
 ## 通用响应格式
 
@@ -30,6 +32,27 @@
 ```
 
 ## 路由详情
+
+### 路由总览
+
+| 路径 | 方法 | 处理函数 | 说明 |
+|------|------|---------|------|
+| `/` | `GET` | `handleRoot` | 返回 SD 卡 `index.html` |
+| `/api/files` | `GET` | `handleApiFiles` | 浏览 source / chapter |
+| `/api/files` | `DELETE` | `handleApiFileDelete` | 删除 source 或 chapter（事务） |
+| `/api/files` | `OPTIONS` | `handleOptions` | CORS 预检 |
+| `/api/files/upload` | `POST` | `handleApiFileUpload` (+ `handleApiFileUploadData` 上传分块) | 导入 JSON 词库 |
+| `/api/files/upload` | `OPTIONS` | `handleOptions` | CORS 预检 |
+| `/api/files/download` | `GET` | `handleApiFileDownload` | 导出 source / chapter 为 JSON |
+| `/api/files/download` | `OPTIONS` | `handleOptions` | CORS 预检 |
+| `/api/stats` | `GET` | `handleApiStats` | 当前词库统计 |
+| `/api/stats` | `OPTIONS` | `handleOptions` | CORS 预检 |
+| `/api/settings` | `GET` | `handleApiSettingsGet` | 读取设备设置 |
+| `/api/settings` | `POST` | `handleApiSettingsPost` | 修改设备设置 |
+| `/api/settings` | `OPTIONS` | `handleOptions` | CORS 预检 |
+| `/api/device` | `GET` | `handleApiDevice` | 设备运行信息 |
+| `/api/device` | `OPTIONS` | `handleOptions` | CORS 预检 |
+| 其他 | 任意 | `handleNotFound` | 404 + `{"ok":false,"error":"Not found"}` |
 
 ### 页面
 
@@ -286,8 +309,15 @@ Access-Control-Allow-Headers: Content-Type
 ## 注意事项
 
 - 词库操作（浏览、上传、删除、导出）均通过 SQLite 数据库执行，不再直接操作 SD 卡文件系统中的 JSON 文件。
-- 上传大文件时采用 multipart 分块，先写入临时文件再导入数据库，导入成功后自动清理。
+- 上传大文件时采用 multipart 分块，分四个阶段回调 `handleApiFileUploadData()`：
+  - `UPLOAD_FILE_START`：根据 `path` 与文件名推导 `source` / `chapter`，并创建 `/words_study/.upload_<millis>.json` 临时文件
+  - `UPLOAD_FILE_WRITE`：按分块写入临时文件
+  - `UPLOAD_FILE_END`：关闭临时文件，调用 `importJsonFileToDb()` 导入数据库，成功后 `SD.remove()` 删除临时文件
+  - `UPLOAD_FILE_ABORTED`：清理临时文件，置 `uploadError = "上传已中止"`
+- 删除 source / chapter 后会自动调用 `deleteOrphanWords()` 清理 `*_words` 表中已不属于任何来源的孤儿词条；错题记录通过 `ON DELETE CASCADE` 自动清理。
 - `/api/stats` 在词库未加载时返回 `total: 0`。
-- `/api/stats` 响应使用 `vocabLabel` 字段（而非旧版的 `label` / `loadedVocab` 字段名）。
+- `/api/stats` 响应使用 `vocabLabel` 字段（而非旧版的 `label` / `loadedVocab` 字段名）。`avg` / `median` 会被服务端 `round(x * 100) / 100.0` 保留 2 位小数。
+- `/api/settings` 的 `POST` 请求体必须是合法 JSON（`Content-Type: application/json`），任意字段缺失都不会报错，对未提供的字段保持现状；`volume` 钳位 0~255，`brightness` 钳位 10~255 并确保 `dimBrightness <= normalBrightness`，`autoSaveThreshold` 至少为 1。
+- `/api/device` 的 `uptime` 字段单位为**秒**（`millis() / 1000`）。
 - Web 服务器在 `loop()` 末尾非阻塞处理请求，频繁刷新浏览器不会明显影响设备交互。
-- 删除操作使用 SQLite 事务（BEGIN IMMEDIATE → DELETE → COMMIT），保证数据一致性。
+- 删除操作使用 SQLite 事务（`BEGIN IMMEDIATE` → `DELETE FROM *_source` → `deleteOrphanWords()` → `COMMIT`），保证数据一致性。任何阶段失败都会 `ROLLBACK` 并返回 500。

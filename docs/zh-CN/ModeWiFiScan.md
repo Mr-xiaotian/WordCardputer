@@ -1,6 +1,6 @@
 # ModeWiFiScan.ino
 
-> 最后更新日期: 2026/07/29
+> 最后更新日期: 2026/09/01
 
 ## 作用
 
@@ -10,8 +10,8 @@
 
 | 对象 | 类型 | 说明 |
 |------|------|------|
-| `WiFiScanState` | `enum` | `WIFI_SCANNING` / `WIFI_LIST` / `WIFI_PASSWORD_INPUT` / `WIFI_CONNECTING` / `WIFI_STATUS` |
-| `wifiScanState` | `WiFiScanState` | 当前子状态 |
+| `WiFiScanState` | `enum` | `WIFI_SCANNING` / `WIFI_LIST` / `WIFI_PASSWORD_INPUT`（`WIFI_CONNECTING` / `WIFI_STATUS` 在源码中定义但未使用） |
+| `wifiScanState` | `WiFiScanState` | 当前子状态，实际只用到前 3 个值 |
 | `wifiSSIDs` | `std::vector<String>` | 显示用网络列表（含信号指示） |
 | `wifiRawSSIDs` | `std::vector<String>` | 纯 SSID 列表 |
 | `wifiListIndex` | `int` | 列表选中索引 |
@@ -25,16 +25,13 @@
 stateDiagram-v2
     [*] --> SCANNING: 未连接
     SCANNING --> LIST: processWiFiScanResults
-    [*] --> STATUS: 已连接
-    STATUS --> LIST: , /
-    LIST --> STATUS: , / （已连接时）
+    [*] --> LIST: 已连接 (wifiPage=1 切换)
     LIST --> PASSWORD_INPUT: Enter + 无保存密码
-    LIST --> CONNECTING: Enter + 有保存密码
-    PASSWORD_INPUT --> CONNECTING: Enter
-    CONNECTING --> STATUS: 成功
-    CONNECTING --> LIST: 失败
-    LIST --> STATUS: 已连接时 ,/ /
+    PASSWORD_INPUT --> LIST: attemptWiFiConnect
+    LIST --> LIST: 翻页 , / (wifiPage 0/1)
 ```
+
+> **注意**：`WIFI_CONNECTING` 与 `WIFI_STATUS` 是枚举中预定义的状态，但实际代码并不使用它们切换 `wifiScanState`——连接过程是阻塞的，连接结果直接由 `wifiConnectSuccess` 与 `wifiPage` 体现。
 
 ## 重要细节
 

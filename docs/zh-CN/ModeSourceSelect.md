@@ -1,6 +1,6 @@
 # ModeSourceSelect.ino
 
-> 最后更新日期: 2026/07/29
+> 最后更新日期: 2026/09/01
 
 ## 作用
 
@@ -37,7 +37,7 @@ flowchart TD
     K & L --> M[set vocabLabel → startStudyMode]
     F -->|/| N{根层且可展开?}
     N -->|是| O[currentSource = 选中项<br/>initFileSelectMode]
-    F -->|, / Del| P{在子层?}
+    F -->|,| P{在子层?}
     P -->|是| Q[currentSource = 空<br/>返回根层]
     F -->|ESC `| R{在子层?}
     R -->|是| S[currentSource = 空<br/>返回根层]
@@ -68,7 +68,7 @@ flowchart TD
 |------|---------|---------|
 | `;` / `.` | 上/下移动光标 | 同左 |
 | `/` | 进入可展开 source 的子层 | 无操作 |
-| `,` / Del | 无操作 | 返回根层 |
+| `,` | 无操作 | 返回根层 |
 | `` ` `` | 返回 `MODE_CLASSIFY_SELECT` | 先返回根层，再按一次返回分类选择 |
 
 ## 使用示例
@@ -80,7 +80,7 @@ flowchart TD
 3. 按 `;/.` 上下移动，按 `/` 或 Enter 进入有 `>` 标记的 source。
 4. 进入子层浏览章节（如 `Unit_1`、`Unit_2`）。
 5. 按 Enter 选中 chapter 开始学习。
-6. 在子层按 `,` 或 Del 返回根层。
+6. 在子层按 `,` 返回根层。
 7. 按 `` ` `` 返回分类选择模式。
 
 ## 注意事项

@@ -1,10 +1,12 @@
 # Python 工具链
 
-> 最后更新日期: 2026/07/29
+> 最后更新日期: 2026/09/01
 
 ## 作用
 
 `utils/` 目录下的 Python 脚本用于在 PC 端 **生成词库音频、处理 WAV 文件、合并/去重/拆分 JSON 词库、分析掌握程度**。这些工具不运行在设备上，而是辅助用户准备 SD 卡数据。
+
+包入口 `utils/__init__.py` 统一 re-export 了所有公共函数，因此推荐按 `from utils.xxx import ...` 方式引用，而不是直接 import 子模块。
 
 ## 环境准备
 
@@ -22,9 +24,9 @@ uv sync
 
 | 函数 | 作用 |
 |------|------|
-| `generate_tts_minimax(text, output_path, ...)` | 调用 MiniMax T2A API 生成 WAV |
-| `generate_tts_youdao(text, output_path)` | 抓取有道词典发音并转 WAV |
-| `fill_missing_audio(db_path, audio_dir, delay)` | 读取英语词库，为缺少音频的单词批量生成有道 TTS 音频 |
+| `generate_tts_minimax(text, output_path, ...)` | 调用 MiniMax T2A v2 接口（`https://api.minimax.io/v1/t2a_v2`）生成 WAV。默认模型 `speech-2.6-turbo`、默认声音 `Japanese_DecisivePrincess`、默认采样率 32000、比特率 128000、声道 1、情感 `calm` |
+| `generate_tts_youdao(text, output_path)` | 抓取有道词典发音（`https://dict.youdao.com/dictvoice?audio=...&type=2`），通过 ffmpeg 转 16 kHz / 单声道 / `pcm_s16le` WAV |
+| `fill_missing_audio(db_path, audio_dir, delay)` | 读取英语 `en_words` 表，为缺少音频的单词批量生成有道 TTS 音频，串行带 `delay` 秒间隔避免被限流，返回 `(成功数, 失败数)` |
 
 #### MiniMax 示例
 
@@ -112,26 +114,28 @@ print(summary)
 
 ### `utils/json_utils.py` — 词库 JSON 操作
 
+> 所有函数均以 JSON **文件**（不是 SQLite）为操作目标，列表形式顶层。
+
 | 函数 | 作用 |
 |------|------|
 | `load_json_list(path)` | 读取 JSON 并校验顶层为列表 |
 | `extract_field_values(path, field)` | 提取指定字段 |
 | `extract_jp_fields(path)` / `extract_en_fields(path)` | 提取 `jp` / `en` 字段 |
-| `extract_all_values_from_folder(folder, field)` | 遍历文件夹提取指定字段并去重 |
+| `extract_all_values_from_folder(folder, field)` | 遍历文件夹（`rglob`）提取指定字段，去重并排序返回 |
 | `extract_all_jp_from_folder(folder)` / `extract_all_en_from_folder(folder)` | 遍历文件夹提取并去重 |
-| `list_wav_filenames(folder)` | 列出 WAV 文件名（不含扩展名） |
-| `collect_merged_entries_by_key(folder, key_field, ...)` | 通用合并：按指定 key 字段聚合 |
-| `collect_merged_entries(folder)` | 合并多个日本语 JSON 为一个大词典（键为 `jp`） |
-| `collect_merged_entries_en(folder)` | 合并多个英语 JSON 为一个大词典（键为 `en`） |
-| `apply_merge_and_rewrite_by_key(folder, key_field, ...)` | 通用合并后写回每个 JSON |
-| `apply_merge_and_rewrite(folder)` | 日语合并后写回 |
+| `list_wav_filenames(folder)` | 列出 `*.wav` 文件名（不含扩展名） |
+| `collect_merged_entries_by_key(folder, key_field, score_field, tone_field)` | 通用合并：按指定 key 字段聚合 |
+| `collect_merged_entries(folder)` | 合并多个日本语 JSON（键为 `jp`，启用 `tone` 冲突处理） |
+| `collect_merged_entries_en(folder)` | 合并多个英语 JSON（键为 `en`，不处理 `tone`） |
+| `apply_merge_and_rewrite_by_key(folder, key_field, score_field, tone_field)` | 通用合并后写回每个 JSON |
+| `apply_merge_and_rewrite(folder)` | 日语合并后写回（与上面同义） |
 | `apply_merge_and_rewrite_en(folder)` | 英语合并后写回 |
-| `filter_json_by_key_difference(a, b, key_field)` | 保留 a 中相对 b 的差集 |
+| `filter_json_by_key_difference(a, b, key_field)` | 保留 a 中相对 b 的差集，并写回 a |
 | `filter_json_by_jp_difference(a, b)` / `filter_json_by_en_difference(a, b)` | 按 `jp` / `en` 差集过滤 |
-| `dedupe_json_by_key(folder, key_field)` | 按 key 字段去重 |
+| `dedupe_json_by_key(folder, key_field)` | 按 key 字段去重（`glob` 不递归），写回 |
 | `dedupe_json_by_jp(folder)` / `dedupe_json_by_en(folder)` | 按 `jp` / `en` 去重 |
-| `split_json_file(path, max_per_file)` | 按数量拆分大词库 |
-| `process_folder(folder, max_per_file)` | 批量拆分文件夹内 JSON |
+| `split_json_file(path, max_per_file)` | 按数量拆分大词库（生成 `<stem>_part<N>.json`） |
+| `process_folder(folder, max_per_file)` | 批量拆分文件夹内 JSON（仅顶层 `*.json`，不递归） |
 
 #### 常用工作流示例
 
@@ -236,11 +240,15 @@ for w in words:
 
 ## 注意事项
 
-- `.env` 文件包含 API Key，不应提交到版本控制。
-- `generate_tts_youdao` 依赖 ffmpeg 将 MP3 转为 WAV，请确保 ffmpeg 可用。
-- `collect_merged_entries` 合并规则：
-  - `score` 字段取最大值。
-  - `tone` 字段冲突时置为 `-1`。
-  - 其他字段用 `; ` 拼接不同值。
+- `.env` 文件包含 API Key，不应提交到版本控制。`generate_tts_minimax` 依赖 `API_KEY` 环境变量（由 `python-dotenv` 的 `load_dotenv()` 加载）。
+- `generate_tts_youdao` 依赖 ffmpeg 将有道返回的 MP3 转为 16 kHz / 单声道 / `pcm_s16le` WAV（`ffmpeg -y -i in.mp3 -ar 16000 -ac 1 -c:a pcm_s16le out.wav`），请确保 ffmpeg 可用。
+- `collect_merged_entries` 合并规则（`collect_merged_entries_by_key` 实现）：
+  - `score` 字段取最大值（按 `max(old, val)` 合并）。
+  - `tone` 字段冲突时按以下规则：仅当 old/val 都不为 -1 且不同才置为 `-1`；否则保留非 -1 的值。
+  - 英语合并 (`collect_merged_entries_en`) 默认 `tone_field=None`，不参与合并规则。
+  - 其他字段用 `; ` 拼接不同值（且不会重复）。
+- `process_folder` 与 `dedupe_json_by_key` 只匹配顶层 `*.json`（`folder.glob`），而 `extract_all_values_from_folder` / `collect_merged_entries_by_key` 递归子目录（`folder.rglob`）。
+- `fill_missing_audio` 通过 `SELECT en FROM en_words` 加载词表并按词去重比较 audio 目录中现有 `.wav` 的 stem（大小写不敏感）。它仅适用于英语词库（默认路径 `words_study/en/en_words.db`）。
 - 批量生成音频前建议先用小批量测试，确认音色和语速符合预期。
 - 词库数据在设备端已迁移至 SQLite 数据库，PC 端 JSON 工具主要用于生成音频和准备导入数据。导入操作可通过 Web 控制面板完成。
+- `stats.py` 的 `analyze_vocab_mastery` 当前对每个 JSON 文件独立分析；score 字段缺失或非数值类型时按 3 处理。

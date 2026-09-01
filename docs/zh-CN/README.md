@@ -1,6 +1,6 @@
 # WordCardputer 文档索引
 
-> 最后更新日期: 2026/07/29
+> 最后更新日期: 2026/09/01
 
 本目录包含 WordCardputer 项目的详细技术文档。文档按源码模块组织，每篇文档对应一个 `.cpp` / `.h` 文件或一个主题。
 
@@ -10,7 +10,7 @@
 
 | 文档 | 说明 |
 |------|------|
-| [WordCardputer.md](WordCardputer.md) | 主程序入口、全局状态、`setup()` / `loop()` |
+| [WordCardputer.md](WordCardputer.md) | 主程序入口（`main.cpp` + `globals.cpp`/`.h`）、全局状态、`setup()` / `loop()` |
 | [DataFormat.md](DataFormat.md) | SD 卡目录结构、SQLite 数据库 schema、JSON 兼容格式、音频文件要求 |
 | [WebAPI.md](WebAPI.md) | Web 控制面板 HTTP API 完整规范 |
 | [PythonTools.md](PythonTools.md) | PC 端 Python 工具链使用说明 |
@@ -63,6 +63,12 @@
 
 ## 最近更新重点
 
+- **2026/09/01**：核心与跨领域同步。
+  - `WordCardputer.md`：明确 C++ 加载/导入默认 `tone = -1`，将 `loadWordsFromDB()` 重命名提示为 `loadWordsBySource()` / `loadWordsByScore()` / `loadWordsByIds()`，新增听写错误表短名 `jp_errors` / `en_errors` 的说明。
+  - `DataFormat.md`：修正听写错误事件表名为 `jp_errors` / `en_errors`（旧文档使用 `*_dictation_errors`）；将所有 DDL 标注为 `⚠️ 待确认`（C++ 源码不含 CREATE TABLE，仅 `ensureDictationErrorTable()` 会运行时建表）；新增数据库表名汇总表；数据流图补充错题/孤儿清理分支。
+  - `WebAPI.md`：新增路由总览表（包含所有 OPTIONS 预检与 `handleNotFound`），补充上传分块四阶段、删除事务细节、`avg/median` 保留 2 位小数、`/api/settings` 字段钳位与 `/api/device.uptime` 单位（秒）。
+  - `PythonTools.md`：补齐 `utils/__init__.py` re-export 说明；明确 `generate_tts_minimax` 默认参数（模型 `speech-2.6-turbo`、采样率 32000、比特率 128000、声道 1、情感 `calm`）和实际 API 地址；明确 `generate_tts_youdao` 实际转码规格；明确 `process_folder` / `dedupe_json_by_key` 不递归而 `extract_all_*` / `collect_merged_entries*` 递归；明确英语合并不处理 `tone`。
+  - 索引同步更新。
 - **2026/07/29**：同步新增的 5 个模式（ModeSplash、ModeClassifySelect、ModeScoreSelect、ModeWordTable、ModeClock），更新全局变量表、AppMode 列表与结构体定义。修正 DataFormat.md 中数据库表结构（新增 `sentence`/`sentence_zh` 列、词根词缀关联表），修正听写错误表列名 `wrong` → `wrong_text`，修正 journal 模式 WAL → DELETE。修正 WebAPI.md 中 `/api/stats` 和 `/api/settings` 响应字段名为 `vocabLabel`。更新 PythonTools.md 新增 `fill_missing_audio` 及英语 JSON 工具函数。更新索引文档。
 - **2026/07/11**：全面同步代码变更，新增 `ModeDictationReview.md`、`UtilsConfig.md`、`UtilsDb.md` 三份文档。更新主程序、ESC 菜单、数据管理、数据格式、WiFi、Web 服务器、Web API 和 Python 工具文档，反映 SQLite 数据库迁移、配置系统统一、错题回顾独立模式等重大重构。
 - 重写 `ModeStudy.md`、`ModeDictation.md`、`ModeListen.md`，修正与代码不一致的按键说明和语言支持描述。

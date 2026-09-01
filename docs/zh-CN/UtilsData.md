@@ -1,6 +1,6 @@
 # UtilsData.ino
 
-> 最后更新日期: 2026/07/11
+> 最后更新日期: 2026/09/01
 
 ## 作用
 
@@ -13,11 +13,9 @@
 | `pickWeightedRandom()` | 基于熟练度的加权随机抽词（不熟悉的词更常出现） |
 | `markScoreDirty()` | 标记 score 已变更，累计至 `autoSaveThreshold` 时触发自动保存 |
 | `autoSaveIfNeeded()` | 若存在未保存变更，调用 `saveCurrentWordsToDB()` 写回数据库 |
-| `setLanguage(lang)` | 切换语言并更新词库/音频根目录，重置已选 source/chapter |
-| `startStudyMode()` | 自动保存旧进度、加载当前词库、抽取首词 |
+| `setLanguage(lang)` | 切换语言并更新词库/音频根目录，重置 `currentSource` / `vocabLabel` |
 | `dictationPromptText(w)` | 获取当前语言下用于听写的文本（`en` 或 `jp`） |
 | `computeStatsFromWords()` | 计算平均分、中位数、等级分布与掌握程度评价 |
-| `statsFileName(path)` | 从路径中提取显示用名称 |
 
 ## 关键流程
 
@@ -64,17 +62,12 @@ flowchart TD
 
 `setLanguage()` 切换语言时执行：
 - 更新 `currentWordRoot` / `currentAudioRoot` 路径
-- 重置 `currentDir`、`selectedSource`、`selectedChapter`
-- 清空 `words` 列表和 `wordIndex`
-- Web API 浏览列表随之更新
+- 重置 `currentSource`、`vocabLabel`
+- 清空 `words` 列表（`wordIndex` 由调用方重置）
 
 ### score 规范化
 
 `computeStatsFromWords()` 中 score 超出 1~5 范围时默认按 3 处理。正常 score 值由数据库层的 `normalizeScoreValue()` 保证在合法范围内。
-
-### statsFileName
-
-由于迁移到数据库后 `selectedFilePath` 不再是真实文件路径，`statsFileName()` 通过截取最后一段 `/` 后的文本作为显示名，供统计页和 Web 面板使用。
 
 ## 使用示例
 
@@ -102,6 +95,6 @@ Serial.printf("平均分: %.2f, 中位数: %.1f, 评价: %s\n",
 
 ## 注意事项
 
-- 词库加载（`loadWordsFromDB()`）和保存（`saveCurrentWordsToDB()`）已移至 [UtilsDb.ino](UtilsDb.md)，本模块仅负责内存中的运行时逻辑。
-- `autoSaveIfNeeded()` 在 `selectedSource.isEmpty()` 或 `words.empty()` 时直接返回，避免空操作。
-- `startStudyMode()` 内部已包含 `autoSaveIfNeeded()`，因此从文件选择切换词库时无需额外保存。
+- 词库加载（`loadWordsBySource()` / `loadWordsByScore()`）和保存（`saveCurrentWordsToDB()`）已移至 [UtilsDb.ino](UtilsDb.md)，本模块仅负责内存中的运行时逻辑。
+- `autoSaveIfNeeded()` 在 `words.empty()` 时直接返回，避免空操作。
+- 切换词库前的自动保存由各 Mode 的 `init*` 流程自行调用 `autoSaveIfNeeded()`，本模块不再提供 `startStudyMode()` 包装。

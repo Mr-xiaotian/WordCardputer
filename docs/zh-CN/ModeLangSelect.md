@@ -1,6 +1,6 @@
 # ModeLangSelect.ino
 
-> 最后更新日期: 2026/07/29
+> 最后更新日期: 2026/09/01
 
 ## 作用
 
@@ -28,7 +28,7 @@ flowchart LR
 
 ## 重要细节
 
-- **路径绑定**：确认选择后调用 `setLanguage()`，该函数在 `UtilsData.ino` 中实现，会同步更新：
+- **路径绑定**：确认选择后调用 `setLanguage()`，该函数在 [UtilsData.md](UtilsData.md) 中实现，会同步更新：
   - `currentWordRoot`
   - `currentAudioRoot`
   - `currentSource`

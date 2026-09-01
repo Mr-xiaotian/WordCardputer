@@ -1,6 +1,6 @@
 # UtilsDb.ino
 
-> 最后更新日期: 2026/07/29
+> 最后更新日期: 2026/09/01
 
 ## 作用
 
@@ -228,10 +228,12 @@ flowchart TD
 
 ### UPSERT 策略
 
-`saveWordListToDB()` 使用两步操作实现导入：
-1. 先查询是否已存在相同 `(jp/en, source, chapter)` 的单词
-2. 若存在则更新，不存在则插入
-3. 同时维护 `*_source` 关联表
+`saveWordListToDB()` 使用 SQLite 原生 `ON CONFLICT` 语法实现 upsert：
+
+- 日语：以 `(jp, tone)` 作为冲突键；命中则用新值覆盖 `zh / kanji / romaji`，`score` 取 `MAX(原值, 新值)`。
+- 英语：以 `(en)` 作为冲突键；命中则用新值覆盖 `zh / pos / phonetic`，`score` 取 `MAX(原值, 新值)`。
+
+随后通过 `SELECT id WHERE ...` 取到主键，再用 `INSERT OR IGNORE` 写入 `*_source` 关联表，确保 `(source, chapter, word_id)` 映射不重复。整个流程放在一个 `BEGIN IMMEDIATE` 事务中。
 
 ### score 规范化
 

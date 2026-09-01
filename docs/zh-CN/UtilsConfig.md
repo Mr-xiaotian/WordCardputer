@@ -1,6 +1,6 @@
 # UtilsConfig.ino
 
-> 最后更新日期: 2026/07/11
+> 最后更新日期: 2026/09/01
 
 ## 作用
 
@@ -107,6 +107,6 @@ M5.Speaker.setVolume(soundVolume);      // 同步音量
 
 ## 注意事项
 
-- 配置文件通过 `DynamicJsonDocument(8192)` 解析，总大小不超过 8KB。
+- 配置文件通过 ArduinoJson v7 的 `JsonDocument` 解析（自动堆分配），按需扩展。
 - 旧版 `wifi.json` 迁移是单向操作，迁移后旧文件会被删除。
 - 若 `config.json` 解析失败且无旧版文件，所有配置使用代码中的默认值并写入新配置文件。

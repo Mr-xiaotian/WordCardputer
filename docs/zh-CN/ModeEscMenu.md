@@ -1,6 +1,6 @@
 # ModeEscMenu.ino
 
-> 最后更新日期: 2026/07/29
+> 最后更新日期: 2026/09/01
 
 ## 作用
 
@@ -159,6 +159,6 @@ flowchart TD
 ## 注意事项
 
 - 各分组滚动位置独立保存：`escRootScroll`、`escVocabScroll`、`escModeScroll`。
-- 从菜单进入学习模式时不会重新初始化 `wordIndex`，因此会回到之前学习的单词；进入听读/听写会重新初始化。
+- 从菜单进入学习/听读/听写等模式时都会调用对应的 `init*` 函数重新初始化，包括学习模式中通过 `pickWeightedRandom()` 重新抽取 `wordIndex`。
 - 菜单列表超过 `visibleLines`（4 项）时，`drawTextMenu()` 会自动分页显示。
 - 菜单不再包含独立的"保存进度"选项；自动保存机制通过 `markScoreDirty()` / `autoSaveIfNeeded()` 在切换词源/语言/退出时自动触发。

@@ -1,10 +1,10 @@
 # WordCardputer.ino
 
-> 最后更新日期: 2026/07/29
+> 最后更新日期: 2026/09/01
 
 ## 作用
 
-`WordCardputer.ino` 是整个单词学习机的**主程序入口**。它定义全局状态、数据结构、硬件配置，并实现 Arduino 标准的 `setup()` 与 `loop()` 生命周期。所有模式（Mode）与工具（Utils）模块通过函数声明在此汇总，由 `loop()` 根据当前 `appMode` 统一分发。
+`WordCardputer.ino` 是整个单词学习机的**主程序入口**（实际源码拆分为 `main.cpp` + `globals.cpp` + `globals.h`）。它定义全局状态、数据结构、硬件配置，并实现 Arduino 标准的 `setup()` 与 `loop()` 生命周期。所有模式（Mode）与工具（Utils）模块通过函数声明在此汇总，由 `loop()` 根据当前 `appMode` 统一分发。
 
 ## 核心对象
 
@@ -54,7 +54,7 @@ MODE_WIFI_SCAN → MODE_KEY_HELP → MODE_CLOCK
 | `sentenceZh` | `String` | 例句中文释义 |
 | `root` | `String` | 词根 ID 列表（逗号分隔，仅英语） |
 | `affix` | `String` | 词缀 ID 列表（逗号分隔，仅英语） |
-| `tone` | `int` | 声调编号，-1 表示无/未知 |
+| `tone` | `int` | 声调编号，-1 表示无/未知（C++ 加载/导入默认值为 -1） |
 | `score` | `int` | 熟练度 1~5 |
 
 ### DictError 结构体
@@ -350,5 +350,6 @@ void loopXxxMode();
 - `loopDelay` 在省电模式下变长，因此学习/听写等依赖键盘响应的模式应通过 `M5Cardputer.update()` 和 `Keyboard.isChange()` 自行保证实时性，不依赖固定 loop 周期。
 - `M5Cardputer.BtnA` 与 `M5Cardputer.Keyboard` 分属两个体系，在 `loop*` 类函数中不要把两者的检查进行嵌套。
 - Web 服务器 `handleWebServer()` 在主循环末尾调用，即使未连接 WiFi 也会检查一次 `webServerRunning` 标志，开销极小。
-- `Word` 结构体中的 `dbId` 字段是数据库主键，用于 score 回写；`loadWordsFromDB()` 会填充此字段。
+- `Word` 结构体中的 `dbId` 字段是数据库主键，用于 score 回写；`loadWordsBySource()` / `loadWordsByScore()` / `loadWordsByIds()` 会填充此字段。
 - `Word.root` 和 `Word.affix` 字段存储的是逗号分隔的 ID 列表，需要通过 `loadRootAffixNames()` 查询 `en_roots` / `en_affixes` 表获取名称和释义。
+- 听写错误事件表实际表名为 `jp_errors` / `en_errors`（短名），由 `currentDictationErrorTable()` 返回；不再使用 `*_dictation_errors` 长名。
